@@ -1,0 +1,28 @@
+.radius {
+  border-radius: 50% 40% 35%;
+  animation: radius 10s linear infinite;
+  transform: scale(1);
+}
+
+@keyframes radius {
+  0% {
+    border-radius: 50% 40% 35%;
+    transform: scale(1);
+  }
+  25% {
+    border-radius: 40% 35% 40%;
+    transform: scale(1.02);
+  }
+  50% {
+    border-radius: 35% 40% 50%;
+    transform: scale(1);
+  }
+  75% {
+    border-radius: 40% 50% 40%;
+    transform: scale(0.98);
+  }
+  100% {
+    border-radius: 50% 40% 35%;
+    transform: scale(1);
+  }
+}
