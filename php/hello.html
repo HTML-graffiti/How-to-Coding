@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>PHP: Hypertext Preprocessor</title>
+<meta name="description" content="PHP: Hypertext Preprocessor by Kazuma Sasajima">
+<meta name="keywords" content="how,to,coding">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/coding/hello/open_close.js"></script>
+<link rel="stylesheet" href="/coding/hello/about.css"/>
+<link rel="stylesheet" href="/coding/hello/close_open.css"/>
+<style type="text/css">
+#main {zoom:1.5;}
+pre, code {
+  display:block;
+  width:80%;
+  max-width:45vw;
+  font-size:1vw;
+}
+.support {
+  font-size:1.25vw;
+  padding:0.5% 2.5%;
+  margin:5% 0 10%;
+}
+.back {
+  font-size:1.25vw;
+  padding:0; margin:0;
+}
+.support a,
+.back a {
+  text-decoration:none;
+  color:#000;
+  cursor:pointer;
+  padding:0.5vw 1.5vw;
+  line-height:4vw;
+  border:0.1vw solid;
+  border-radius:2.5rem;
+}
+.support a {margin:0.5vw;}
+@media screen and (max-width: 500px){
+.support {zoom:0.75;}
+}
+</style>
+</head>
+<body>
+<div id="contents">
+<div id="main">
+<h1>PHP: Hypertext Preprocessor</h1>
+<p>
+<a href="https://www.php.net/manual/ja/" target="_blank" rel="noopener noreferrer">PHP マニュアル</a>
+<a href="http://www.php.gr.jp/" target="_blank" rel="noopener noreferrer">日本 PHP ユーザ会</a>
+</p>
+</div>
+
+<div id="hello">
+<pre>
+<code>
+<math>
+<![CDATA[
+初歩的な例：PHPを使ってHTMLにコードを埋め込む
+
+<?php
+echo "PHP: Hypertext Preprocessor";
+?>
+]]>
+</math>
+</code>
+</pre>
+
+<p>PHP を HTML に埋め込み、<u data-click="csv">ページの内容を生成</u> したり、<u data-click="submit">フォームからデータを取得</u> したり、動的にウェブサイトを構築することが出来ます。
+</p>
+<p><span>※ PHP を使用する文書ファイルの拡張子は、.html ではなく .php を用います。</span></p>
+<div id="csv" class="open">
+<p><br/>
+CSVに書き込んだ内容を、HTMLに呼び出す<br/>
+<a href="/coding/php/csv/" target="_blank" rel="noopener noreferrer">/coding/php/csv/</a></p></div>
+<div id="submit" class="open">
+<p><br/>
+フォームから内容を取得し、CSVに書き込む<br/>
+<a href="/coding/submit/" target="_blank" rel="noopener noreferrer">/coding/submit/</a></p>
+<p><br/>
+自動返信機能付き投稿フォーム<br/>
+<a href="/coding/submit/contact/" target="_blank" rel="noopener noreferrer">/coding/submit/contact/</a></p>
+</div>
+</div>
+</div>
+</body>
+</html>

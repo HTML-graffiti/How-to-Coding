@@ -1,0 +1,78 @@
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/coding/hello/close_open.css"/>
+<link rel="stylesheet" type="text/css" href="/coding/css/popup.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/coding/hello/open_close.js"></script>
+<script src="/coding/js/randomcolor.js"></script>
+
+<title> ___ | How to Coding </title>
+<style type="text/css">
+    #hello p {zoom:0.75;}
+    #hello p span {
+      zoom:0.5;
+      display:block;
+      border:1px solid;
+      margin:2.5vw 0;
+      line-height:200%;
+      padding:2.5vw;
+      width:90%;
+  }
+.support {
+  font-size:1.25vw;
+  padding:0.5% 2.5%;
+  margin:5% 0 10%;
+}
+.back {
+  font-size:1.25vw;
+  padding:0; margin:0;
+}
+.support a,
+.back a {
+  text-decoration:none;
+  color:#000;
+  cursor:pointer;
+  padding:0.5vw 1.5vw;
+  line-height:4vw;
+  border:0.1vw solid;
+  border-radius:2.5rem;
+}
+.support a {margin:0.5vw;}
+@media screen and (max-width: 500px){
+.support {zoom:0.55;}
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+})
+$(function() {
+  $('a').hover(function() {
+	  $(this).css({'background':getRumRgba()});
+  }, function() {
+	  $(this).css({'background':''});
+  });
+});
+</script>
+</head>
+<body>
+<div id="contents">
+<div id="hello">
+<p><a href="/coding/">How to Coding</a><br/>Title<br/>
+<i>一回約___時間 | 料金</i>
+<span>音ビル(大阪・北加賀屋) または、オンライン(Whereby) を会場に、___ ワークショップを開催します。</span>
+</p>
+<p><i>ワークショップの注文は、下記のコンタクトフォームより承ります。<br/>
+「内容 | Comment」欄に、ワークショップを希望する日時と場所（音ビルまたはオンライン）を記入し、お気軽にお問い合わせください。</i></p>
+</div>
+</div>
+<p class="support">Support
+<a onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">Donation</a>
+<br/>by
+<a href="http://creative-community.pe.hu/coding/">Kazuma Sasajima</a>
+</p>
+</body>
+</html>

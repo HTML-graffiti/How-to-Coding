@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title> CSV to PHP | creative-community.pe.hu </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/coding/js/randomcolor.js"></script>
+<script src="/coding/hello/open_close.js"></script>
+<script type="text/javascript">
+$(function(){
+	jQuery('#right').css({'background':getRumRgba()});
+});
+
+$(function(){
+    $("#hello").load("hello.html");
+    $("#about").load("about.html");
+    $("#order").load("/coding/submit/order/form.html");
+    $("#about_php").load("/coding/php/about.html");
+})
+</script>
+<link rel="stylesheet" href="/coding/cover/style.css"/>
+<link rel="stylesheet" href="/coding/submit/form.css"/>
+<link rel="stylesheet" href="/coding/hello/about.css"/>
+<link rel="stylesheet" href="/coding/hello/close_open.css"/>
+<style type="text/css">
+@font-face {
+  font-family: "NewYork";
+  src: url("/coding/fontbook/NewYork.otf");
+}
+#title {font-family:"NewYork";}
+#main,#order {zoom:1.5;}
+#sample {border:solid 0.1vw; padding:2.5%; width:90%;}
+</style>
+</head>
+<body>
+<h1 id="title">CSV to PHP | creative-community.pe.hu</h1>
+<div id="cover">
+<div id="left">
+<div id="hello"></div>
+<div id="order"></div>
+</div>
+<div id="right">
+<div id="about_php"></div>
+<div id="about"></div>
+</div>
+</div>
+<div class="popup" id="contactform" style="display:none;">
+<p><iframe src="/coding/submit/order/"></iframe></p>
+<span class="close" onclick="obj=document.getElementById('contactform').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
+</div>
+<div class="popup" id="support" style="display:none;">
+<p><iframe src="http://vg.pe.hu/jp/cm/support.html"></iframe></p>
+<span class="close" onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
+</div>
+</body>
+</html>
