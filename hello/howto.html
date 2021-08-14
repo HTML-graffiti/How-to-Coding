@@ -1,0 +1,166 @@
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="about.css"/>
+<link rel="stylesheet" href="close_open.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="open_close.js"></script>
+
+<title> The Page About How to Coding This Page </title>
+<style type="text/css">
+  pre, code {
+    display:block;
+    width:100%;
+    font-size:1.25vw;
+    overflow-x:auto;
+  }
+  #contents {
+    width:90%;
+    margin:auto;
+    font-size:1vw;
+  }
+  #right #contents #hello {
+    font-size:2vw;
+  }
+@media screen and (max-width: 500px){
+}
+</style>
+</head>
+<body>
+<div id="contents">
+<div id="hello">
+<p>本を読むようにテキストが表示される挨拶ページ<br/>
+<a href="sample.html" target="_blank" rel="noopener noreferrer">Demo</a></p>
+<i>BODY要素</i>
+<pre><code><math><![CDATA[
+<div id="hello">
+<b>Hello こんにちは</b>
+<p>This is The <u data-click="how">Page</u>
+<b id="how" class="open">About
+<u data-click="to">How to Coding</u>
+<i id="to" class="open">
+<a href="/" target="_blank" rel="noopener noreferrer">This Page</a>
+</i>
+</p>
+</div>
+]]></math></code></pre>
+<p>id="hello" と名付けた
+<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/div" target="_blank" rel="noopener noreferrer">DIV: コンテンツ分割要素</a>
+の中にある
+<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/p" target="_blank" rel="noopener noreferrer">P: 段落要素</a>
+の中に、テキストを装飾する3つの要素
+<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/u" target="_blank" rel="noopener noreferrer">U: 非言語的注釈 (下線) 要素</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/b" target="_blank" rel="noopener noreferrer">B: 注目付け要素</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/i" target="_blank" rel="noopener noreferrer">I: 興味深いテキスト要素</a>
+を用意し、<u data-click="css">CSS</u>
+と
+<u data-click="js">JavaScript</u>
+で 表示／非表示を指定します。</p>
+<hr/>
+<p><u data-click="click_open">＜u data-click="ID名"＞<b id="click_open" class="open">
+この中に書いたテキストをクリックすると</b>＜/u＞</u></p>
+<p>CSSで非表示にしてた <u data-click="click_inside">id="ID名" class="open"</u> 要素 <b id="click_inside" class="open">が JavaCcript によって表示されます。</b></p>
+<i>※ 非表示要素を表示するトリガーとなる U要素の data-click="ID名" と 非表示要素の id="ID名" を揃え、HTML内にあるその他の要素に同じ ID名 を使わないように注意しましょう。</i>
+<hr/>
+<div id="css" class="open">
+<br/>
+<i>close_open.css</i>
+<pre><code><math><![CDATA[
+#hello {
+  font-size:5vw;
+  display:block;
+}
+#hello .open {display:none;}
+
+#hello p {
+  margin:0.5rem 0 1rem;
+  font-size:75%;
+}
+#hello a {
+  display:inline-block;
+  font-size:75%;
+  text-decoration:none;
+  color:#000;
+  padding:0.25rem 0.75rem;
+  margin:0.5rem 0;
+  border:0.1vw solid;
+  border-radius:2.5rem;
+}
+#hello b {
+  font-weight:400;
+  padding:0.25vw;
+}
+#hello u {
+  font-weight:400;
+  font-style:italic;
+  text-decoration: none;
+  padding:0.125vw;
+  border-bottom:0.25vw solid;
+  cursor:help;
+}
+#hello i {
+  vertical-align: sub;
+  font-size:55%;
+}
+]]></math></code></pre>
+<p>※ ここでは、要素の表示／非表示に関連するCSSのみを解説します。</p>
+<br/>
+<code><math><![CDATA[
+#hello .open {display:none;}
+]]></math></code>
+<p>要素の表示方法を指示する <a href="https://developer.mozilla.org/ja/docs/Web/CSS/display" target="_blank" rel="noopener noreferrer">DISPLAYプロパティ</a>
+を
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/display#display_none" target="_blank" rel="noopener noreferrer">display:none;</a>
+と指定し、ID名 #hello 内にある CLASS名 .open 要素を非表示にします。</p>
+<p>CSSプロパティ DISPLAY については
+<a href="/coding/html/divspan/" target="_blank" rel="noopener noreferrer">/html/divspan/</a>
+で解説します。</p>
+<br/>
+<code><math><![CDATA[
+#hello u {cursor:help;}
+]]></math></code>
+<p>非表示要素を表示するトリガーとなる ID名 #hello 要素内のU要素 に マウスを置くとカーソルが？に変化します。
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/cursor" target="_blank" rel="noopener noreferrer">CURSORプロパティ</a></p>
+<hr/>
+</div>
+
+<div id="js" class="open">
+<p><i>open_close.js</i><br/>
+<pre><code><math><![CDATA[
+$(function(){
+    $("#hello u").on("click", function(){
+    var id = $(this).data("click");
+    $("#" + id).show(100);
+    })
+});
+]]></math></code></pre><br/>
+</p>
+<p>
+<code><math><![CDATA[
+$("#hello u").on("click", function(){
+]]></math></code>
+<a href="https://js.studio-kingdom.com/jquery/events/on" target="_blank" rel="noopener noreferrer">.on()</a>
+#hello u をクリックすると
+</p>
+<p>
+<code><math><![CDATA[
+var id = $(this).data("click");
+]]></math></code>
+<a href="https://js.studio-kingdom.com/jquery/data/data" target="_blank" rel="noopener noreferrer">.data()</a>
+data-click がクリックされた こと・data-click="ID名"を確認し
+</p>
+<p>
+<code><math><![CDATA[
+$("#" + id).show(100);
+]]></math></code>
+<a href="https://js.studio-kingdom.com/jquery/effects/show" target="_blank" rel="noopener noreferrer">.show()</a>
+data-click="ID名" と同じ ID名の要素を 速度(100)で 表示する
+</p>
+<p><i>JavaCcriptについてはまだ勉強中で、これで合っているのかちゃんとわかっていません。</i></p>
+</div>
+
+</div>
+</div>
+</body>
+</html>
