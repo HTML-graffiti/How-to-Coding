@@ -1,0 +1,127 @@
+a {
+  color:Teal;
+  font-weight:700;
+  text-decoration: underline dotted red;
+}
+a:hover {
+  background:Teal;
+  color:#fff;
+}
+
+h1 {
+  font-weight:100;
+  font-size:10vw;
+}
+h2 {
+  font-weight:200;
+  text-align:right;
+  text-emphasis: filled red;
+-webkit-text-emphasis: filled red;
+}
+h3 {
+  font-size:12.5vw;
+  width:25vw;
+  text-align: center;
+  text-align-last: left;
+  word-break: break-all;
+  float:right;
+  border:dashed 1px;
+}
+h4 {
+  font-size: xxx-large;
+  font-style: oblique 50deg;
+  font-stretch: 200%;
+  text-indent: 15%;
+  font-variant: small-caps;
+  text-shadow: blue 2px 5px;
+  text-decoration: green wavy underline;
+}
+h5 {
+  font-size:50%;
+  line-height:5vh;
+  letter-spacing:5vw;
+  text-align: right;
+  background:#eee;
+  text-transform: uppercase;
+
+}
+h6 {
+  display:inline;
+  background:#eee;
+  font-weight:900;
+  text-transform: uppercase;
+  word-spacing: -.4ch;
+}
+
+b {
+  font-size:150%;
+}
+i {
+  background:gold;
+  color:#fff;
+}
+q {font-size:75%;}
+
+s {
+  background:red;
+  color:pink;
+}
+small,
+strong {
+  color:lightcoral;
+  background:navy;
+}
+sub,
+sup {
+  font-size:20px;
+}
+
+
+.special {
+  background:powderblue;
+  text-align:center;
+  animation: 3s linear 1s infinite alternate slidein;
+  white-space: break-spaces;
+  color-adjust: exact;
+}
+
+.special a {
+  text-decoration:none;
+  border-radius:50%;
+  margin:2rem;
+  display:inline-block;
+  background:linen;
+}
+
+
+#about {
+  animation: 3s infinite rotate;
+  color-adjust: economy;
+}
+
+#about b {
+  display:block;
+  color:violet;
+}
+#about i {
+  background:firebrick;
+}
+#about q {
+  display:inline-block;
+  zoom:250%;
+  animation: 3s linear 1s infinite alternate slidein;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slidein {
+  from { transform: scale(0.5); }
+  to   { transform: scale(1); }
+}

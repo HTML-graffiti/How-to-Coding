@@ -1,0 +1,138 @@
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/coding/hello/close_open.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/coding/hello/open_close.js"></script>
+
+<title> ✍ Submit Form | creative-community.pe.hu </title>
+<style type="text/css">
+  pre, code {
+    display:block;
+    width:auto;
+    max-width:45rem;
+    font-size:1.25vw;
+  }
+  #contents {
+    width:95%;
+    margin:2rem auto;
+    font-size:1vw;
+  }
+  #contents #hello {font-size:2vw;}
+@media screen and (max-width: 500px){
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("#").load("");
+})
+</script>
+</head>
+<body>
+<div id="contents">
+<div id="hello">
+<a>主なフォーム部品</a><br/>
+<p>フォームを構成する <u data-click="body">BODY要素</u> を解説します。</p>
+<div id="body" class="open">
+<i>サンプルコード</i>
+<code><math><![CDATA[
+<form action="complete.php" method="post" id="form">
+</form>
+]]></math></code>
+<p>内に、フォームを構築する部品のコードを記述します。</p>
+<p><a href="http://www.htmq.com/html5/form.shtml" target="_blank" rel="noopener noreferrer">FORM要素</a>　formの開始タグ内に記述している <b>action="complete.php"</b> は、フォームのデータを送信後、移動するリンク先を指定するコードです。
+<b>method="post"</b> は、本文としてデータを送信するコードです。
+<i>methodについては、ちゃんと理解していません。</i></p>
+<hr/>
+</div>
+<p><u data-click="all">コードを見る</u></p>
+<div id="all" class="open">
+<pre><code><math><![CDATA[
+<form action="complete.php" method="post" id="form">
+<input type="date" name="date" required>
+<input type="text" name="title" placeholder="タイトル" required>
+<textarea name="text" placeholder="説明文" required></textarea>
+<input type="password" placeholder="パスワード" name="password">
+<p class="radio">Link（1つだけ選択が可能）
+<input type="radio" name="link" value="block" required>あり
+<input type="radio" name="link" value="none" checked="checked" required>なし
+</p>
+<p class="radio">（複数選択が可能）
+<input type="checkbox" name="checkbox" value="a" required>a
+<input type="checkbox" name="checkbox" value="b" required>b
+<input type="checkbox" name="checkbox" value="c" required>c
+</p>
+<input type="text" name="url" placeholder="リンク先のURL">
+
+<select name="tag">
+<option value="">（1つだけ選択が可能）</option>
+<option value="a">A</option>
+<option value="b">B</option>
+<option value="c">C</option>
+</select>
+<button type="submit">投稿 POST</button>
+</form>
+]]></math></code></pre>
+
+<p>主なフォーム部品<br/>
+日付選択フォーム（input type="date"）・テキストフォーム（input type="text"）・パスワードフォーム（input type="password"）・ラジオボタン（input type="radio"）・チェックボックス（input type="checkbox"）<br/>複数行の入力欄（textarea）<br/>プルダウンメニュー（select | option）<br/>送信ボタン（button type="submit"）</p>
+<p>
+詳しくは、
+<a href="https://www.tagindex.com/html5/form/form.html" target="_blank" rel="noopener noreferrer">HTML5/フォーム/form要素 入力フォームを作る</a>
+<a href="http://www.htmq.com/html5/input.shtml" target="_blank" rel="noopener noreferrer">input要素 フォームを構成する様々な入力部品</a>
+を参照ください。</p>
+
+<p>フォーム部品共通のルール<br/>
+開始タグに <b>required</b> と記述したフォームは、入力必須<br/>
+<b>placeholder</b>="<i>ここに入力したテキストが、例として空欄フォームに表示される</i>"<br/>
+<b>value</b>="<i>ここに入力したテキストは、初期入力値となる。（valueで初期入力値を指定した場合、テキストフォーム／入力欄を未記入のまま送信すると、設定した初期入力値が記録されます。）<br/>※ ラジオボタン・チェックボックス・プルダウンメニューなどのフォームで選択した結果は、valueで設定した初期入力値が記録されます。</i>"
+</p>
+<hr/>
+</div>
+<br/>
+<a>フォームを装飾するCSS</a><br/>
+<p>
+使用したCSSプロパティは
+<a href="https://devdocs.io/css/padding" target="_blank" rel="noopener noreferrer">padding</a>
+<a href="https://devdocs.io/css/margin" target="_blank" rel="noopener noreferrer">margin</a>
+<a href="https://devdocs.io/css/width" target="_blank" rel="noopener noreferrer">width</a>
+<a href="https://devdocs.io/css/height" target="_blank" rel="noopener noreferrer">height</a>
+<a href="https://devdocs.io/css/border" target="_blank" rel="noopener noreferrer">border</a>
+<a href="https://devdocs.io/css/border-radius" target="_blank" rel="noopener noreferrer">border-radius</a>
+<a href="https://devdocs.io/css/font-size" target="_blank" rel="noopener noreferrer">font-size</a>
+です。</p>
+<p>特にこだわったスタイリングではなく、全てのフォーム部品をウインドウサイズに合わせているだけのシンプルなCSSです。</p>
+<p><u data-click="css">コードを見る</u></p>
+<pre id="css" class="open"><code><math><![CDATA[
+#form {
+  overflow-x:hidden;
+  padding:2.5% 0;
+}
+#form input[type="date"],
+#form input[type="text"],
+#form input[type="password"],
+#form input[type="url"],
+#form input[type="reset"],
+#form textarea,
+#form button,
+#form select,
+#form .radio {
+  font-size:1rem;
+  border:1px solid;
+  border-radius:0.25rem;
+  padding:2%;
+  margin:1.25% 2.5%;
+  width:90%;
+}
+#form textarea {height:10rem;}
+#form button,
+#form select
+{width:95%;}
+]]></math></code></pre>
+</div>
+</div>
+</body>
+</html>

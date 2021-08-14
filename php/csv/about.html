@@ -1,0 +1,145 @@
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/coding/hello/close_open.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/coding/hello/open_close.js"></script>
+
+<title> About | CSV to PHP </title>
+<style type="text/css">
+  pre, code {
+    display:block;
+    width:auto;
+    max-width:45rem;
+    font-size:1.25vw;
+  }
+  #contents {
+    width:95%;
+    margin:2rem auto;
+    font-size:1vw;
+  }
+  #contents #hello {font-size:2vw;}
+@media screen and (max-width: 500px){
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("#").load("");
+})
+</script>
+</head>
+<body>
+<div id="contents">
+<div id="hello">
+<b>解説</b><br/>
+<p><u data-click="row">＜?=h($row[0])?＞</u> 部分に、<u data-click="csv_php">CSV</u> に記述した内容を呼び出す <u data-click="php">PHP</u> です。</p>
+<p><i>※ カレンダーやリストページなど、表示内容を変更し、レイアウトを繰り返すことに適したコードです。</i></p>
+<hr/>
+
+<div id="row" class="open">
+<p>例えば、</p>
+<code>＜span＞A＜/span＞</code>
+<code>＜span＞B＜/span＞</code>
+<code>＜span＞C＜/span＞</code>
+<p>のように、HTML内に異なる内容の同じ要素を繰り返す場合、HTMLから編集したい箇所を探し、その部分を書き換えることが必要です。</p>
+<p>このコードは、頻繁にコードを書き換えたい箇所に <u data-click="body">PHP</u> を埋め込み、CSVファイルを書き換えるだけで指定の箇所を簡単に更新／編集するためのコードです。</p>
+<div id="body" class="open">
+<pre><code><math><![CDATA[
+<?php if (!empty($rows)): ?>
+<?php foreach ($rows as $row): ?>
+<span><?=h($row[0])?></span>
+<?php endforeach; ?>
+<?php else: ?>
+<?php endif; ?>
+
+]]></math></code></pre>
+<p>
+BODY要素内の
+<code>＜span＞text＜/span＞</code>を表示したい箇所に、上記のコードを記述します。</p>
+<p><code>?php</code>で始まる複数の行は、CSVを呼び出すために必要なコードです。<br/>この数行は編集しないで、このまま使用してください。深く理解しなくても問題ないです。</p>
+<p>CSVを編集すると、</p>
+<code><math><![CDATA[
+<span><?=h($row[0])?></span>
+]]></math></code>
+<p>が繰り返され、<b>＜?=h($row[0])?＞</b> 部分にCSVに記述したテキストが呼び出されます。<br/>
+この仕様により、簡単に項目を増やしたり減らしたり、項目の内容を書き換えることが出来ます。</p>
+</div>
+<hr/>
+</div>
+
+<div id="php" class="open">
+<p>PHPファイルの冒頭に、CSVを呼び出すための <u data-click="first">PHP</u>を記述します。</p>
+<pre id="first" class="open"><code><math><![CDATA[
+<?php
+function h($str) {
+    return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+}
+
+$text = (string)filter_input(INPUT_POST, 'text');
+
+$fp = fopen('log.csv', 'a+b');
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    flock($fp, LOCK_EX);
+    fputcsv($fp, [$text,]);
+    rewind($fp);
+}
+flock($fp, LOCK_SH);
+while ($row = fgetcsv($fp)) {
+    $rows[] = $row;
+}
+flock($fp, LOCK_UN);
+fclose($fp);
+
+?>
+
+]]></math></code></pre>
+<p>重要な部分は、<u data-click="fopen">「$fp = fopen('log.csv', 'a+b');」</u> と、<u data-click="INPUT_POST">「$text = (string)filter_input(INPUT_POST, 'text');」</u>・<u data-click="fputcsv">「fputcsv($fp, [$text,]);」</u>の3箇所です。</p>
+<p>このコードのすべてを理解しようと思うと、難しいと感じてしまうと思います。<br/>すべてを理解しなくても、この3箇所を理解するだけで、様々なウェブサイトを作成することが出来ます。
+</p>
+<p id="fopen" class="open">
+<i>$fp = fopen('ファイル名.csv', 'a+b');</i><br/>
+PHPに呼び出すCSVファイル名を指定するコードです。<br/>（Sampleページでは、log.csvというファイルを呼び出しています。）</p>
+<div id="INPUT_POST" class="open">
+<p><i>$項目名 = (string)filter_input(INPUT_POST, '項目名');</i><br/>
+PHPを用いて呼び出したいCSVに記述する項目を指示します。<br/>（Sampleページでは、textという項目名のテキストを呼び出しています。）</p>
+<p>※ 重要 ※<br/>
+項目名は、どんな英単語でも構いません。<br/>
+$ の後 と '' 内 の項目名が同じでなければうまく動作しません。</p>
+</div>
+<div id="fputcsv" class="open">
+<p><i>fputcsv($fp, [$項目名,]);</i><br/>
+fputcsv($fp, のあとの []内を例に、CSVに呼び出テキストを記入します。</p>
+<p>※ 重要 ※<br/>
+fputcsv($fp, のあとの [$項目名] と、<br/>先に説明した、<code>$項目名 = (string)filter_input(INPUT_POST, '項目名'); </code>すべての項目名が同じ英単語でなければ、うまく動作しません。</p>
+</div>
+<hr/>
+</div>
+
+<div id="csv_php" class="open">
+<pre>
+<p>log.csv</p>
+<code><math><![CDATA[
+logという名前の,
+CSVファイルに,
+入力したテキストが,
+改行ごとに,
+spanタグで区切られ,
+HTMLに呼び出される,
+PHP,
+
+]]></math></code></pre>
+<p>
+改行ごとに<code>＜span＞＜?=h($row[0])?＞＜/span＞</code>が生成され、<b>＜?=h($row[0])?＞</b> 部分にCSVのテキストが呼び出され、Sampleページに表示されます。</p>
+<hr/>
+</div>
+
+<p>
+※ このPHPコードを応用し、複数の項目を呼び出すことや、掲示板を作成することができます。
+</p>
+</div>
+</div>
+</body>
+</html>

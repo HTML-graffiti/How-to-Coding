@@ -1,0 +1,137 @@
+<?php
+function h($str) {
+    return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+}
+$title = (string)filter_input(INPUT_POST, 'title');
+$language = (string)filter_input(INPUT_POST, 'language');
+$status = (string)filter_input(INPUT_POST, 'status');
+$contents = (string)filter_input(INPUT_POST, 'contents');
+$link = (string)filter_input(INPUT_POST, 'link');
+
+$fp = fopen('index.csv', 'a+b');
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    flock($fp, LOCK_EX);
+    fputcsv($fp, [$title, $language, $status, $contents, $link,]);
+    rewind($fp);
+}
+
+flock($fp, LOCK_SH);
+while ($row = fgetcsv($fp)) {
+    $rows[] = $row;
+}
+flock($fp, LOCK_UN);
+fclose($fp);
+
+?>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title> Update | How to Coding </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/coding/submit/org/org.js"></script>
+<script src="/coding/js/randomcolor.js"></script>
+<script src="/coding/js/smoothscroll.js"></script>
+<script type="text/javascript">
+$(function(){
+	jQuery('body').css({'background':getRumRgba()});
+});
+
+$(function() {
+  $('.list li').hover(function() {
+	  $(this).css({'background':getRumRgba()});
+  }, function() {
+	  $(this).css({'background':''});
+  });
+});
+
+$(function(){
+    $("#howto").load("/coding/update/about.html");
+})
+</script>
+<link rel="stylesheet" href="/coding/submit/org/book.css"/>
+<link rel="stylesheet" href="/coding/css/radius.css"/>
+<style type="text/css">
+.list #done {
+  zoom:1.5;
+  padding:1rem 1.25rem;
+}
+.list li span {
+  animation:2s ease-in infinite fontmotion;
+}
+</style>
+</head>
+<body>
+<div id="header">
+<a href="/coding/update/">Update</a>
+<a href="/coding/">How to Coding</a>
+</div>
+
+<form id="org">
+<div class="search-box language">
+<ul>
+<li>
+<input type="radio" name="language" value="website" id="website">
+<label for="website" class="label">Website</label></li>
+<li>
+<input type="radio" name="language" value="css" id="css">
+<label for="css" class="label">CSS</label></li>
+<li>
+<input type="radio" name="language" value="js" id="js">
+<label for="js" class="label">JavaScript</label></li>
+<li>
+<input type="radio" name="language" value="php" id="php">
+<label for="php" class="label">PHP</label></li>
+<li>
+<input type="radio" name="language" value="etc" id="etc">
+<label for="etc" class="label">ETC.</label></li>
+</ul>
+</div>
+<div class="search-box status">
+<ul>
+<li>
+<input type="radio" name="status" value="done" id="done">
+<label for="done" class="label">My Works</label></li>
+<li>
+<input type="radio" name="status" value="basic" id="basic">
+<label for="basic" class="label">Basic</label></li>
+<li>
+<input type="radio" name="status" value="guide" id="guide">
+<label for="guide" class="label">Guide</label></li>
+<li>
+<input type="radio" name="status" value="library" id="library">
+<label for="library" class="label">Library</label></li>
+<li>
+<input type="radio" name="status" value="tools" id="tools">
+<label for="tools" class="label">Tools</label></li>
+<li>
+<input type="radio" name="status" value="hints" id="hints">
+<label for="hints" class="label">Hints</label></li>
+</ul>
+</div>
+<div class="reset">
+<input type="reset" name="reset" value="RESET" class="reset-button">
+</div>
+</form>
+
+<ul class="list">
+<?php if (!empty($rows)): ?>
+<?php foreach ($rows as $row): ?>
+<li id="<?=h($row[2])?>" class="list_item list_toggle radius" data-language="<?=h($row[1])?>" data-status="<?=h($row[2])?>">
+<span><?=h($row[0])?></span>
+<p><?=h($row[3])?></p>
+<a href="<?=h($row[4])?>" target="_blank" rel="noopener noreferrer"></a>
+</li>
+<?php endforeach; ?>
+<?php else: ?>
+<li id="<?=h($row[2])?>" class="list_item list_toggle radius" data-language="<?=h($row[1])?>" data-status="<?=h($row[2])?>">
+<span>Title</span>
+<p>contents</p>
+<a href="<?=h($row[4])?>" target="_blank" rel="noopener noreferrer"></a>
+</li>
+<?php endif; ?>
+</ul>
+<div id="howto"></div>
+</body>
+</html>

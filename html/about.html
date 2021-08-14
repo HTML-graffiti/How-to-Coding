@@ -1,0 +1,74 @@
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/coding/hello/close_open.css"/>
+<link rel="stylesheet" type="text/css" href="/coding/css/popup.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/coding/hello/open_close.js"></script>
+<script src="/coding/js/randomcolor.js"></script>
+<title> About | HyperText Markup Language </title>
+<style type="text/css">
+#hello p {zoom:0.75;}
+#hello p span {
+  zoom:0.5;
+  display:block;
+  border:1px solid;
+  margin:2.5vw 0;
+  line-height:200%;
+  padding:2.5vw;
+  width:90%;
+}
+.support {
+  font-size:1.25vw;
+  padding:0.5% 2.5%;
+  margin:5% 0 10%;
+}
+.back {
+  font-size:1.25vw;
+  padding:0; margin:0;
+}
+.support a,
+.back a {
+  text-decoration:none;
+  color:#000;
+  cursor:pointer;
+  padding:0.5vw 1.5vw;
+  line-height:4vw;
+  border:0.1vw solid;
+  border-radius:2.5rem;
+}
+.support a {margin:0.5vw;}
+#hello iframe {width:95%; height:25vw;}
+@media screen and (max-width: 500px){
+.support {zoom:0.55;}
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+$("#workshop").load("workshop.html");
+})
+$(function() {
+  $('a').hover(function() {
+	  $(this).css({'background':getRumRgba()});
+  }, function() {
+	  $(this).css({'background':''});
+  });
+});
+</script>
+</head>
+<body>
+<div id="contents">
+<div id="hello">
+<p>HTMLの基本<br/>
+<i>ローレル・シュヴルストの解説映像を元に、HTMLの基本についてをこのページにまとめました。</i></p>
+<p><iframe src="https://www.youtube.com/embed/CkzbI1Tv_rQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<div id="workshop"></div>
+<p><span>このワークショップはページにまとめたHTMLの基本を詳しく解説し、HTMに対する難しそう・理解できそうというネガティブなイメージをほぐすことが目標です。<br/>
+  ※ 急に何かを完成させようと意気込むのではなく、まずはHTMLと楽しくふれあい、ウェブページを作りましょう。</span></p>
+</div>
+</div>
+</body>
+</html>

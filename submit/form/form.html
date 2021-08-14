@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>✍ Submit Form | creative-community.pe.hu</title>
+<meta name="description" content="form要素 入力フォームを作る
+ by Kazuma Sasajima">
+<meta name="keywords" content="form要素,入力フォーム,作り方">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/coding/submit/form.css"/>
+<link rel="stylesheet" href="/coding/hello/about.css"/>
+<style type="text/css">
+</style>
+</head>
+<body>
+<div id="contents">
+<div id="main">
+<h1>入力フォームを作る</h1>
+<p>
+<a href="https://www.tagindex.com/html5/form/form.html" target="_blank" rel="noopener noreferrer">HTML5/フォーム/form要素 入力フォームを作る</a>
+<a href="http://www.htmq.com/html5/input.shtml" target="_blank" rel="noopener noreferrer">input要素 フォームを構成する様々な入力部品</a>
+</p>
+</div>
+</div>
+<div>
+<p class="writing">✍ 投稿フォーム | Submit Form</p>
+<form action="complete.php" method="post" id="form">
+<input type="date" name="date" required>
+<input type="text" name="title" placeholder="タイトル" required>
+<textarea name="text" placeholder="説明文" required></textarea>
+<input type="password" placeholder="パスワード" name="password">
+<p class="radio">Link（1つだけ選択が可能）
+<input type="radio" name="link" value="block" required>あり
+<input type="radio" name="link" value="none" checked="checked" required>なし
+</p>
+<p class="radio">（複数選択が可能）
+<input type="checkbox" name="checkbox" value="a" required>a
+<input type="checkbox" name="checkbox" value="b" required>b
+<input type="checkbox" name="checkbox" value="c" required>c
+</p>
+<input type="text" name="url" placeholder="リンク先のURL">
+
+<select name="tag">
+<option value="">（1つだけ選択が可能）</option>
+<option value="a">A</option>
+<option value="b">B</option>
+<option value="c">C</option>
+</select>
+<button type="submit">投稿 POST</button>
+</form>
+</div>
+</body>

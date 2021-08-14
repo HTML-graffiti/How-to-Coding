@@ -1,0 +1,147 @@
+html, body {
+  font-size: 1vw;
+  letter-spacing: 0.05rem;
+  margin: 0; padding: 0;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+b {
+  font-size: 3vw;
+  font-weight: normal;
+}
+u {font-size: 150%;}
+hr {clear:both; border: 0 none; padding:0;}
+
+.featured,
+.calendar {
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap:         wrap;
+  -webkit-align-items: normal;
+  align-items: normal;
+  margin: 0; padding: 0;
+  list-style-type: none;
+}
+
+.featured a {
+  color: gold;
+  font-size: 2vw;
+  padding: 0.5vw;
+  margin-right: 1vw;
+  line-height:5vw;
+  border: 1px solid gold;
+}
+.featured a:hover {
+  background:gold;
+  color: #fff;
+}
+.featured li {
+  font-size: 1vw;
+  float: left;
+  width: auto;
+  padding: 0 2% 2%;
+}
+
+.calendar li {
+  font-size: 1vw;
+  float: left;
+  width: 10%;
+  padding: 2%;
+}
+
+.open p {font-size: 1.25vw;}
+.open .hour {
+  font-size: 0.5vw;
+  color: blue;
+  font-weight: bolder;
+}
+.open .to b {
+  font-size: 1.25vw;
+  color: #fff;
+  background-color: blue;
+}
+.open .to b:after {
+  content: "OPEN";
+}
+.open .to u:after {
+  content: "12:00 - 6pm";
+}
+.open .show b {
+  font-size: 1.25vw;
+  color: #fff;
+  background-color: green;
+}
+.open .show u {
+  color: green;
+  font-weight:500;
+  background-color: #fff;
+  text-decoration:none;
+}
+.open .show b:after {
+  content: "Show";
+}
+.open .show .title {
+  color: green;
+  display:block;
+  margin-top:1vw;
+  font-style:italic;
+  text-decoration:underline;
+}
+.open .start span:after,
+.open .end span:after {
+  color: #fff;
+  background:green;
+  display:block;
+  margin-top:1vw;
+}
+.open .start span:after {
+  content: "FIRST DAY";
+}
+.open .end span:after {
+  content: "LAST DAY";
+}
+.open .run:after {
+  color: green;
+  content: "→";
+  display:block;
+}
+
+.open .topic {
+  font-size: 1.25vw;
+  border:0.5vw dotted #000;
+  width:100%;
+}
+.open .topic .price {
+  font-size: 1vw;
+  display:inline-block;
+  margin-top: 1vw;
+}
+.open .pickup {
+  color:#000;
+  border:0.5vw solid red;
+  border-radius:50%;
+}
+.open .pickup u {
+  font-size:2.5vw;
+}
+
+.sat {color:blue;}
+.sun {color:red;}
+
+.closeday p,
+.empty p,
+.empty .day,
+.open .none,
+.open .close,
+.open .run .title
+{display:none;}
+
+.closeday .day:after {
+  content: "Closed";
+  display:block;
+  margin-top:1.25vw;
+  font-size: 2vw;
+  text-align: center;
+}
