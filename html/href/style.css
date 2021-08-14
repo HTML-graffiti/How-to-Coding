@@ -1,0 +1,28 @@
+
+      #click a {
+        display:block;
+        width:90%;
+        height:90vh;
+        margin:5vh auto;
+        font-size:2rem;
+        text-align:center;
+        line-height:90vh;
+      }
+      #click a:hover,
+      #click a:visited {
+        filter: invert(1);
+      }
+      #click a:active {
+        filter: invert(100%);
+      }
+      #click .none {
+        text-decoration:none;
+      }
+      #click .border {
+        border:solid;
+      }
+      #click .radius {
+        border:dashed;
+        border-radius: 2.5rem;
+        box-shadow: 1rem 1rem 1rem #000;
+      }

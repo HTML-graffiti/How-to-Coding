@@ -1,0 +1,163 @@
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/coding/hello/about.css"/>
+<link rel="stylesheet" href="/coding/hello/close_open.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/coding/hello/open_close.js"></script>
+<title> The Page About How to Coding This Page </title>
+<style type="text/css">
+  pre, code {
+    display:block;
+    width:100%;
+    font-size:1.25vw;
+    overflow-x:auto;
+  }
+  #contents {
+    width:90%;
+    margin:auto;
+    font-size:1vw;
+  }
+  #right #contents #hello {
+    font-size:2vw;
+  }
+@media screen and (max-width: 500px){
+}
+</style>
+</head>
+<body>
+<div id="contents">
+<div id="hello">
+<p>
+DIVとSPAN要素はとても似ています。<br/>
+どちらもHTML内のコンテンツを区分するための要素で、大きな違いは
+<u data-click="display">DISPLAYプロパティの値</u>
+です。</p>
+
+<div id="display" class="open">
+  <p><a href="https://developer.mozilla.org/ja/docs/Web/CSS/display" target="_blank" rel="noopener noreferrer">DISPLAY</a>
+  は、要素の表示方法を指示するCSSプロパティです。</p>
+  <p>
+  <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Block-level_elements" target="_blank" rel="noopener noreferrer">display:block;</a>
+  は、要素の上下にスペースを生成し、要素を一つの段落として区分する ブロックレベル要素 として表示します。<br/>
+  <i><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/div" target="_blank" rel="noopener noreferrer">DIV要素</a>
+  のデフォルトは display:block; です。</i></p>
+  <p>
+  <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Inline_elements" target="_blank" rel="noopener noreferrer">display:inline;</a>
+  は、一つの文章の中にある要素を「」のように区切るため、ブロックレベル要素と異なり、要素は新しい行から始まらず、上下にスペースを作りません。<br/>
+  <i><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/span" target="_blank" rel="noopener noreferrer">SPAN要素</a>
+  のデフォルトは display:inline; です。</i></p>
+  <p>※block では指定できる、要素の大きさ 幅（width）と高さ（height）、文字の位置（text-align・vertical-align）などの指定が、inlineでは出来ません。</p>
+<br/>
+  <p><b>display:inline-block;</b>
+  は、新しい行から始まらず、前後にスペースを作らないinlineと同じ表示方法で、ブロック要素と同じようにCSSプロパティを加えることができるディプレイプロパティ値です。<br/>
+  <i>例えば、IMG要素のデフォルトは display:inline-block; です。</i></p>
+  <p><i>※inline では指定できない、要素の大きさ 幅（width）と高さ（height）、文字の位置（text-align・vertical-align）などの指定が、inline-block では可能になります。</i></p>
+  <p><a href="https://xov.jp/e/820/" target="_blank" rel="noopener noreferrer">曖昧になりがちなインライン要素とインラインブロック要素とブロック要素の違い</a></p>
+</div>
+
+<p><u data-click="html">コードを見る</u></p>
+<hr/>
+<div id="html" class="open">
+<p><a href="hello.html" target="_blank" rel="noopener noreferrer">hello.html</a></p>
+<p>これは、DIVとSPAN要素を羅列したHTMLです。</p>
+<pre><code><math><![CDATA[
+  <div class="pc">div class="pc"</div>
+  <span class="pc">span class="pc"</span>
+
+  <div class="mobile">div class="mobile"</div>
+  <span class="mobile">span class="mobile"</span>
+
+  <div class="both">div class="both"
+    <span class="both">span class="both"</span>
+    <span class="pc">span class="pc"</span>
+    <span class="mobile">span class="mobile"</span>
+  </div>
+
+  <div class="pc">div class="pc"
+    <span class="both">span class="both"</span>
+    <span class="pc">span class="pc"</span>
+    <span class="mobile">span class="mobile"</span>
+  </div>
+
+  <div class="mobile">div class="mobile"
+    <span class="both">span class="both"</span>
+    <span class="pc">span class="pc"</span>
+    <span class="mobile">span class="mobile"</span>
+  </div>
+]]></math></code></pre>
+<p>上記のHTMLのように、DIV要素の中にSPAN要素を記述し、ブロック要素の中にあるインライン要素をスタイリングすることはありますが、
+逆に、SPAN要素の中にDIV要素を記述する、インライン要素の中にブロック要素を加えることは一般的ではありません。</p>
+<hr/>
+</div>
+
+<p>ページ左に埋め込んだウェブページは、DIVとSPAN要素に「.both」「.pc」「.mobile」とCLASS名をつけ、ディスプレイレベル（プロパティ値）の違いをCSSでスタイリングしたウェブページです。</p>
+<p><u data-click="css">コードを見る</u></p>
+<hr/>
+<div id="css" class="open">
+<p><a href="style.css" target="_blank" rel="noopener noreferrer">style.css</a></p>
+<p>これは、DIVとSPAN要素を羅列したHTMLです。</p>
+<pre><code><math><![CDATA[
+  span {
+    font-size:1rem;
+    border:solid 1px;
+  }
+  .both {
+    color:#fff;
+    background:#000;
+  }
+  .pc {
+    color:green;
+    background:yellow;
+  }
+  .mobile {
+    color:red;
+    background:blue;
+  }
+  .mobile {display:none;}
+
+
+  @media screen and (max-width: 500px){
+    .mobile {display:block;}
+    .pc {display:none;}
+
+    span {
+      padding:1rem;
+      margin:1rem;
+    }
+    .both {
+      font-size:2rem;
+    }
+    .mobile {
+      font-size:3rem;
+    }
+  }
+]]></math></code></pre>
+<p>CLASS名「.both」要素の背景色は黒・文字色は白
+<br/>CLASS名「.pc」要素の背景色は緑・文字色は黄
+<br/>CLASS名「.mobile」要素の背景色は赤・文字色は青
+<br/>にスタイリングしています。</p>
+<p>※ 加えて、CLASS名「.mobile」要素のディスプレイレベルを
+display:none;
+に指定しているため、ウインドウサイズ 500px 以上のブラウザでは、要素が表示されません。</p>
+<br/>
+<p><code><math><![CDATA[
+@media screen and (max-width: 500px){
+]]></math></code>
+より下は、ウインドウサイズ 500px 以下のブラウザに対応するCSSです。</p>
+<p>ウインドウサイズ 500px 以下のブラウザでは、CLASS名が
+.mobile の要素はSPAN要素でもブロックレベル要素として表示されます。</p>
+<p>※ 加えて、CLASS名「.pc」要素のディスプレイレベルを
+display:none;
+に指定しているため、ウインドウサイズ 500px 以下のブラウザでは、要素が表示されません。</p>
+<p><i>そのほか、CLASS名によってフォントサイズが変化するようにCSSを記述しています。</i></p>
+<hr/>
+</div>
+<div id="hello">
+<p>以上がDIVとSPAN要素の違い、また、表示方法を指定するCSSプロパティ・ディスプレイ値の解説です。</p>
+</div>
+
+</div>
+</body>
+</html>

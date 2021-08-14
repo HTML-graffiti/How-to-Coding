@@ -1,0 +1,157 @@
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/coding/hello/about.css"/>
+<link rel="stylesheet" href="/coding/hello/close_open.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/coding/hello/open_close.js"></script>
+<title> The Page About How to Coding This Page </title>
+<style type="text/css">
+  pre, code {
+    display:block;
+    width:100%;
+    font-size:1vw;
+    overflow-x:auto;
+  }
+  #contents {
+    width:90%;
+    margin:auto;
+    font-size:1vw;
+  }
+  #right #contents #hello {
+    font-size:2vw;
+  }
+@media screen and (max-width: 500px){
+}
+</style>
+</head>
+<body>
+<div id="contents">
+<div id="hello">
+<a href="hello.html" target="_blank" rel="noopener noreferrer">A要素とCLASS・ID属性</a>
+<p>このページでは、別のウェブページ、ファイル、メールアドレス、同一ページ内の場所へのハイパーリンクを作成するために使用する
+  <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/a" target="_blank" rel="noopener noreferrer">A: アンカー要素</a>
+  についてと、要素を装飾するために特定の名前をつけるグローバル属性と呼ばれるHTML言語
+  <a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/class" target="_blank" rel="noopener noreferrer">CLASS</a>
+  と
+  <a href="https://developer.mozilla.org/ja/docs/Web/SVG/Attribute/id" target="_blank" rel="noopener noreferrer">ID</a>
+  についてを解説します。</p>
+<i><u data-click="html">HTMLを見る</u></i><br/>
+<div id="html" class="open">
+  <p>このHTMLのBODY要素は、ID名CLICKと名付けたP要素と、その中にある複数のCLASS・ID名がついたA要素で構成されています。</p>
+  <pre><code><math><![CDATA[
+    <a href="/coding/html/href/howto.html" target="_blank" rel="noopener noreferrer">A</a>
+    <p id="click">
+      <a id="one" class="none" href="#two">click</a>
+      <a id="two" class="randomcolor border" href="#three">click</a>
+      <a id="three" class="randombg" href="#four">click</a>
+      <a id="four" class="border" href="#five">click</a>
+      <a id="five" class="randomcolor randombg radius none" href="#one">click</a>
+    </p>
+  ]]></math></code></pre>
+  <p>HTML内に、同じ属性名をつけること／一つの要素に複数の属性名をつけることができるCLASS属性に対して、同じID名を同じHTML内で使用することは適切ではありません。
+    <br/>加えて、ID属性の大きな特徴は、A要素をのリンク先として指定できることです。このページ内のA要素をクリックするとページ内のIDへ移動するようにA要素とID名がリンクします。</p>
+    <p>※ ID名 CLICK の前に記述したA要素は、target="_blank" rel="noopener noreferrer" と記述することで、リンク先を別タブで表示するように指定しています。</p>
+  <hr/>
+</div>
+<i><u data-click="css">CSSを見る</u></i><br/>
+  <div id="css" class="open">
+    <p>CSSでスタイリングを行わない場合、A要素には下線が付き、文字色は青で表示されます。<br/>
+    また、そのA要素のリンク先にすでに訪問したことがある場合、文字・下線は紫色で表示されます。</p>
+    <p>はじめに、ID名#CLICK内のA要素をフルディスプレイサイズで表示するため、
+      <a href="https://developer.mozilla.org/ja/docs/Web/CSS/display" target="_blank" rel="noopener noreferrer">display</a>
+      <a href="https://developer.mozilla.org/ja/docs/Web/CSS/width" target="_blank" rel="noopener noreferrer">width</a>
+      <a href="https://developer.mozilla.org/ja/docs/Web/CSS/height" target="_blank" rel="noopener noreferrer">height</a>
+      <a href="https://developer.mozilla.org/ja/docs/Web/CSS/margin" target="_blank" rel="noopener noreferrer">margin</a>
+      のプロパティ値を記述。<br/>
+    次に、
+    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/font-size" target="_blank" rel="noopener noreferrer">font-size</a>
+    を記述し、要素の真ん中に文字を表示するように
+    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/text-align" target="_blank" rel="noopener noreferrer">text-align</a>
+    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/line-height" target="_blank" rel="noopener noreferrer">line-height</a>
+    のプロパティ値を記述。</p>
+    <pre><code><math><![CDATA[
+      #click a {
+        display:block;
+        width:90%;
+        height:90vh;
+        margin:5vh auto;
+        font-size:2rem;
+        text-align:center;
+        line-height:90vh;
+      }
+      ]]></math></code></pre>
+      <p>A要素の上をカーソル (マウスポインター) がホバー (通過)した時
+        <a href="https://developer.mozilla.org/ja/docs/Web/CSS/:hover" target="_blank" rel="noopener noreferrer">:hover</a>
+        、リンク先にすでに訪問したことがある場合
+        <a href="https://developer.mozilla.org/ja/docs/Web/CSS/:visited" target="_blank" rel="noopener noreferrer">:visite</a>
+        、A要素をクリックした際
+        <a href="https://developer.mozilla.org/ja/docs/Web/CSS/:active" target="_blank" rel="noopener noreferrer">:active</a>
+        に、要素の色が反転するようにCSSのfilterプロパティ値
+        <a href="https://developer.mozilla.org/ja/docs/Web/CSS/filter-function/invert()" target="_blank" rel="noopener noreferrer">invert()</a>
+        を記述しスタイリング</p>
+      <pre><code><math><![CDATA[
+      #click a:hover,
+      #click a:visited {
+        filter: invert(1);
+      }
+      #click a:active {
+        filter: invert(100%);
+      }
+      ]]></math></code></pre>
+      <p>最後に、CLASS名の違いを明確にするため、CLASS名NONEの装飾
+        <a href="https://developer.mozilla.org/ja/docs/Web/CSS/text-decoration" target="_blank" rel="noopener noreferrer">text-decoration</a>
+        を消し、CLASS名BORDERを線
+        <a href="https://developer.mozilla.org/ja/docs/Web/CSS/border" target="_blank" rel="noopener noreferrer">border</a>
+        で囲い、CLASS名RADIUSを角が丸い点線で囲み、影をつける
+        <a href="https://developer.mozilla.org/ja/docs/Web/CSS/border" target="_blank" rel="noopener noreferrer">border</a>
+        <a href="https://developer.mozilla.org/ja/docs/Web/CSS/border-radius" target="_blank" rel="noopener noreferrer">border-radius</a>
+        <a href="https://developer.mozilla.org/ja/docs/Web/CSS/box-shadow" target="_blank" rel="noopener noreferrer">box-shadow</a>
+        CSSを記述</p>
+      <pre><code><math><![CDATA[
+      #click .none {
+        text-decoration:none;
+      }
+      #click .border {
+        border:solid;
+      }
+      #click .radius {
+        border:dashed;
+        border-radius: 2.5rem;
+        box-shadow: 1rem 1rem 1rem #000;
+      }
+    ]]></math></code></pre>
+    <p>以上がA要素とCLASS・ID属性の解説です。</p>
+    <hr/>
+  </div>
+  <i><u data-click="js">ページを更新するごとにランダムで色が変化するJavaScript</u></i><br/>
+    <div id="js" class="open">
+      <p>JavaScriptについてはまだ勉強中で、説明するほど理解できていません。</p>
+      <pre><code><math><![CDATA[
+        function getRumRgba(){
+          var clr = 'rgba(';
+          for(i=0; i < 3; i++){
+            clr = clr + Math.floor( Math.random()*255) + ',';
+          }
+          clr = clr + Math.floor( Math.random()*10)/10 + ')';
+          return clr;
+        }
+        ]]></math></code></pre>
+        <p>色コードをRGBで指定し、1から255までの数字をランダムで生成し、</p>
+        <pre><code><math><![CDATA[
+          $(function(){
+            jQuery('.randombg').css({'background':getRumRgba()});
+          });
+          
+          $(function(){
+            jQuery('.randomcolor').css({'color':getRumRgba()});
+          })
+          ]]></math></code></pre>
+      <p>クラス名.randombgの背景色／クラス名.randomcolorの文字色を指定しています。</p>
+      <hr/>
+    </div>
+</div>
+</div>
+</body>
+</html>
