@@ -9,25 +9,25 @@
     <title>mouse drag scrollable 2</title>
     <style type="text/css">
 
-      .library h1,
-      .library u {
+      .schedule h1,
+      .schedule u {
         font-family: "游ゴシック","YuGothic","Yu Gothic","游ゴシック体";
       }
-      .library b,
-      .library i {
+      .schedule b,
+      .schedule i {
         font-family: "YuMincho","Yu Mincho","游明朝体";
       }
-      .library h1 {
+      .schedule h1 {
         font-size:200%;
         font-weight: 500;
         color:blue;
       }
-      .library a {
+      .schedule a {
         background:limegreen;
         color:blue;
       }
 
-      .library hr {
+      .schedule hr {
         clear:both;
         padding:0.25rem 0;
         border-bottom:0.15rem dotted blue;
@@ -45,7 +45,7 @@
 
   </head>
   <body>
-    <div class="library">
+    <div class="library schedule">
       <b class="left">left</b>
       <b class="right">right</b>
       <h1 class="right">H1</h1>
