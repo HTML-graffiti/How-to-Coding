@@ -17,13 +17,6 @@
       .library i {
         font-family: "YuMincho","Yu Mincho","游明朝体";
       }
-      .library li{
-        background:#fff;
-        font-size:1rem;
-        padding: 2.5vh 1rem;
-        font-family: monospace;
-        color:limegreen;
-      }
       .library h1 {
         font-size:200%;
         font-weight: 500;
