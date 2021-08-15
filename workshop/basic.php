@@ -27,8 +27,7 @@
         color:blue;
       }
 
-      hr {
-        border:none;
+      .library hr {
         clear:both;
         padding:0.25rem 0;
         border-bottom:0.15rem dotted blue;
