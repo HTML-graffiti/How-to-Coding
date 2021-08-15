@@ -13,6 +13,8 @@
     })
     $(function(){
     	jQuery('.library li').css({'background':getRumRgba()});
+      jQuery('.library::-webkit-scrollbar').css({'background':getRumRgba()});
+      jQuery('.library li::-webkit-scrollbar').css({'background':getRumRgba()});
     });
     </script>
     <title>Workshop | How to Coding</title>
@@ -43,7 +45,7 @@
         color:#000;
       }
       .library a {
-        filter: invert(1);
+        background:limegreen;
         color:blue;
       }
       .library hr {
@@ -57,7 +59,6 @@
       .library li::-webkit-scrollbar{
         width: 0.25rem;
         height: 2.5vh;
-        background: blue;
       }
       .library::-webkit-scrollbar-track,
       .library li::-webkit-scrollbar-track{
