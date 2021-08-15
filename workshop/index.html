@@ -27,28 +27,32 @@
     }
     .NewYork {font-family:"NewYork";}
 
-      .library h1,
-      .library u {
-        font-family:;
-      }
       .library b,
-      .library i {
+      .library i,
+      .library h1 {
         font-family: "NewYork";
-        text-shadow:0 0 0.1rem #fff;
       }
       .library h1 {
         font-size:200%;
         font-weight: 500;
-        text-shadow:0 0 0.1rem #000; 
       }
+      .library b,
+      .library i,
+      .library h1 {
+        text-shadow:0 0 0.1rem #000;
+      }
+      .infomation b,
+      .infomation h1 {
+        filter: invert(100%);
+      }
+      .library u {
+        font-family:;
+      }
+
       .library li {
         font-size:1rem;
         padding: 2.5vh 1rem;
         font-family: monospace;
-        filter: invert(100%);
-      }
-      .infomation b,
-      .infomation h1 {
         filter: invert(100%);
       }
       .library hr {
