@@ -6,10 +6,14 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="/coding/js/randomrgba.js"></script>
     <script type="text/javascript">
     $(function(){
         $("#basic").load("/coding/workshop/basic.html");
     })
+    $(function(){
+    	jQuery('.library li').css({'background':getRumRgba()});
+    });
     </script>
     <title>Workshop | How to Coding</title>
     <style type="text/css">
