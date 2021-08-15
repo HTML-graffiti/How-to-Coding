@@ -17,6 +17,8 @@
       jQuery('.library a').css({'color':getRumRgba()});
       jQuery('.library a').css({'background':getRumRgba()});
       jQuery('.ramdombg').css({'background':getRumRgba()});
+      jQuery('.library::-webkit-scrollbar').css({'background':getRumRgba()});
+      jQuery('.library li::-webkit-scrollbar').css({'background':getRumRgba()});
     });
     </script>
     <title>Workshop | How to Coding</title>
@@ -72,7 +74,6 @@
       .library li::-webkit-scrollbar{
         width: 0.25rem;
         height: 2.5vh;
-        background: #fff;
       }
       .library::-webkit-scrollbar-track,
       .library li::-webkit-scrollbar-track{
@@ -81,7 +82,7 @@
       .library::-webkit-scrollbar-thumb,
       .library li::-webkit-scrollbar-thumb{
         border: none;
-        background: #000;
+        background: #fff;
       }
 
     </style>
