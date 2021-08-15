@@ -15,6 +15,7 @@
       jQuery('body').css({'background':getRumRgba()});
       jQuery('.library li').css({'color':getRumRgba()});
       jQuery('.library a').css({'color':getRumRgba()});
+      jQuery('.library hr').css({'border-bottom':getRumRgba()});
       jQuery('.ramdombg').css({'background':getRumRgba()});
       jQuery('.library a').css({'color':getRumRgba()});
     });
@@ -66,6 +67,8 @@
         border:none;
         clear:both;
         padding:1rem 0 0.25rem;
+        border-bottom:0.15rem dotted;
+        filter: invert(50%);
       }
 
       .library::-webkit-scrollbar,
