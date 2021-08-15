@@ -20,6 +20,7 @@ $(function(){
 	$("#about").load("about.html");
 	$("#library").load("library.html");
 	$("#mobile").load("/coding/mobile.html");
+	$("#order").load("/coding/submit/order/form.html");
 })
 </script>
 <link rel="stylesheet" href="/coding/cover/style.css"/>
@@ -51,7 +52,9 @@ margin:5% 0 10%;
 
 @media screen and (max-width: 500px){
 #left #hello,
-#right #about
+#right #about,
+#right #library,
+#right #order
 {display:none;}
 .support {zoom:0.55;}
 #mobile {
@@ -77,13 +80,12 @@ margin:5% 0 10%;
 <p class="support">Workshop
 <a onclick="obj=document.getElementById('about_workshop').style; obj.display=(obj.display=='none')?'block':'none';">More Info</a>
 </p>
-</div>
-<div id="library"></div>
-<div id="contents">
 <span class="support">Support
 <a onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">Donation</a>
 </span>
 </div>
+<div id="library"></div>
+<div id="order"></div>
 </div>
 </div>
 <div class="popup" id="contactform" style="display:none;">
