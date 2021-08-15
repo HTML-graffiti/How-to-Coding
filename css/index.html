@@ -73,6 +73,11 @@ margin:5% 0 10%;
 </div>
 <div id="right">
 <div id="about"></div>
+<div id="contents">
+<p class="support">Workshop
+<a onclick="obj=document.getElementById('workshop').style; obj.display=(obj.display=='none')?'block':'none';">More Info</a>
+</p>
+</div>
 <div id="library"></div>
 <div id="contents">
 <p class="support">Support
@@ -84,6 +89,10 @@ margin:5% 0 10%;
 <div class="popup" id="contactform" style="display:none;">
 <p><iframe src="/coding/submit/order/"></iframe></p>
 <span class="close" onclick="obj=document.getElementById('contactform').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
+</div>
+<div class="popup" id="support" style="display:none;">
+<p><iframe src="/coding/workshop/"></iframe></p>
+<span class="close" onclick="obj=document.getElementById('workshop').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
 </div>
 <div class="popup" id="support" style="display:none;">
 <p><iframe src="http://vg.pe.hu/jp/cm/support.html"></iframe></p>
