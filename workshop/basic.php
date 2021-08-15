@@ -6,7 +6,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-    <title>mouse drag scrollable 2</title>
+    <title>Basic | Workshop</title>
     <style type="text/css">
 
     </style>
