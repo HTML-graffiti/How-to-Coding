@@ -26,6 +26,7 @@
         background:limegreen;
         color:blue;
       }
+
       .library hr {
         border:none;
         clear:both;
