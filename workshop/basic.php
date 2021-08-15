@@ -27,7 +27,7 @@
         color:blue;
       }
 
-      .library hr {
+      hr {
         border:none;
         clear:both;
         padding:0.25rem 0;
