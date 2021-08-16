@@ -2,98 +2,86 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title> A CLASS ID | HyperText Markup Language </title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript">
-$(function(){
-    $("#").load("");
-})
-</script>
 <link rel="stylesheet" href="/coding/hello/about.css"/>
+<link rel="stylesheet" href="/coding/hello/close_open.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/coding/hello/open_close.js"></script>
+<title> The Page About How to Coding This Page </title>
 <style type="text/css">
+  pre, code {
+    display:block;
+    width:100%;
+    font-size:1vw;
+    overflow-x:auto;
+  }
+  #contents {
+    width:90%;
+    margin:auto;
+    font-size:1vw;
+  }
+  #right #contents #hello {
+    font-size:2vw;
+  }
+@media screen and (max-width: 500px){
+}
 </style>
 </head>
 <body>
-<div id="main">
-<p>CSS</p>
-<p>
-<a href="https://devdocs.io/css/css_fonts/">Fonts</a>
-</p>
-</div>
+<div id="contents">
 <div id="hello">
-<p>
-<!--
-<a href="___">___.css</a>
--->
-<a href="https://devdocs.io/css/font">font</a>
-<a href="https://devdocs.io/css/font-style">font-style</a>
-<a href="https://devdocs.io/css/font-family">font-family</a>
-<a href="https://devdocs.io/css/font-size">font-size</a>
-<a href="https://devdocs.io/css/font-stretch">font-stretch</a>
-<a href="https://devdocs.io/css/font-variant">font-variant</a>
-<a href="https://devdocs.io/css/font-weight">font-weight</a>
-<a href="https://devdocs.io/css/line-height">line-height</a>
-</p>
-<p>以上は、フォントや文字の大きさ・太さ・字間などをスタイリングするために使用するCSSプロパティ一覧です。</p>
+<a href="hello.html" target="_blank" rel="noopener noreferrer">A要素とCLASS・ID属性</a>
+<p>このページでは、別のウェブページ、ファイル、メールアドレス、同一ページ内の場所へのハイパーリンクを作成するために使用する
+  <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/a" target="_blank" rel="noopener noreferrer">A: アンカー要素</a>
+  についてと、要素を装飾するために特定の名前をつけるグローバル属性と呼ばれるHTML言語
+  <a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/class" target="_blank" rel="noopener noreferrer">CLASS</a>
+  と
+  <a href="https://developer.mozilla.org/ja/docs/Web/SVG/Attribute/id" target="_blank" rel="noopener noreferrer">ID</a>
+  についてを解説します。</p>
+<i><u data-click="html">HTMLを見る</u></i><br/>
+<div id="html" class="open">
+  <p>このHTMLのBODY要素は、ID名CLICKと名付けたP要素と、その中にある複数のCLASS・ID名がついたA要素で構成されています。</p>
+  <pre><code><math><![CDATA[
+    <a href="/coding/html/href/howto.html" target="_blank" rel="noopener noreferrer">A</a>
+    <p id="click">
+      <a id="one" class="none" href="#two">click</a>
+      <a id="two" class="randomcolor border" href="#three">click</a>
+      <a id="three" class="randombg" href="#four">click</a>
+      <a id="four" class="border" href="#five">click</a>
+      <a id="five" class="randomcolor randombg radius none" href="#one">click</a>
+    </p>
+  ]]></math></code></pre>
+  <p>HTML内に、同じ属性名をつけること／一つの要素に複数の属性名をつけることができるCLASS属性に対して、同じID名を同じHTML内で使用することは適切ではありません。
+    <br/>加えて、ID属性の大きな特徴は、A要素をのリンク先として指定できることです。このページ内のA要素をクリックするとページ内のIDへ移動するようにA要素とID名がリンクします。</p>
+    <p>※ ID名 CLICK の前に記述したA要素は、target="_blank" rel="noopener noreferrer" と記述することで、リンク先を別タブで表示するように指定しています。</p>
+  <hr/>
 </div>
-<div id="main">
-<p>CSS</p>
-<p>
-<a href="https://devdocs.io/css/css_text_decoration">Text Decoration</a>
-</p>
+  <i><u data-click="getRumRgba">ページを更新するごとにランダムで色が変化するJavaScript</u></i><br/>
+    <div id="getRumRgba" class="open">
+      <p>JavaScriptについてはまだ勉強中で、説明するほど理解できていません。</p>
+      <pre><code><math><![CDATA[
+        function getRumRgba(){
+          var clr = 'rgba(';
+          for(i=0; i < 3; i++){
+            clr = clr + Math.floor( Math.random()*255) + ',';
+          }
+          clr = clr + Math.floor( Math.random()*10)/10 + ')';
+          return clr;
+        }
+        ]]></math></code></pre>
+        <p>色コードをRGBで指定し、1から255までの数字をランダムで生成し、</p>
+        <pre><code><math><![CDATA[
+          $(function(){
+            jQuery('.randombg').css({'background':getRumRgba()});
+          });
+          
+          $(function(){
+            jQuery('.randomcolor').css({'color':getRumRgba()});
+          })
+          ]]></math></code></pre>
+      <p>クラス名.randombgの背景色／クラス名.randomcolorの文字色を指定しています。</p>
+      <hr/>
+    </div>
 </div>
-<div id="hello">
-<p>
-<!--
-<a href="___">___.css</a>
--->
-<a href="https://devdocs.io/css/letter-spacing">letter-spacing</a>
-<a href="https://devdocs.io/css/text-align">text-align</a>
-<a href="https://devdocs.io/css/text-decoration">text-decoration</a>
-<a href="https://devdocs.io/css/text-decoration-skip-ink">text-decoration-skip-ink</a>
-<a href="https://devdocs.io/css/text-decoration-style">text-decoration-style</a>
-<a href="https://devdocs.io/css/text-emphasis">text-emphasis</a>
-<a href="https://devdocs.io/css/text-indent">text-indent</a>
-<a href="https://devdocs.io/css/text-shadow">text-shadow</a>
-<a href="https://devdocs.io/css/text-transform">text-transform</a>
-<a href="https://devdocs.io/css/white-space">white-space</a>
-<a href="https://devdocs.io/css/word-break">word-break</a>
-<a href="https://devdocs.io/css/word-spacing">word-spacing</a>
-</p>
-<p>以上は、文字を線や点で装飾したり、影をつけたり、文字の見え方をスタイリングするために使用するCSSプロパティ一覧です。</p>
-</div>
-<div id="main">
-<p>CSS</p>
-<p>
-<a href="https://devdocs.io/css/css_color">Color</a>
-</p>
-</div>
-<div id="hello">
-<p>
-<!--
-<a href="___">___.css</a>
--->
-<a href="https://devdocs.io/css/color">color</a>
-<a href="https://devdocs.io/css/background-color">background-color</a>
-</p>
-<p>
-<a href="https://devdocs.io/css/color-adjust">color-adjust</a>
-<a href="https://devdocs.io/css/color_value">color_value</a>
-<a href="https://devdocs.io/css/mix-blend-mode">mix-blend-mode</a>
-<a href="https://devdocs.io/css/opacity">opacity</a>
-</p>
-<p>以上は、色をスタイリングするために使用するCSSプロパティ一覧です。</p>
-</div>
-<div id="main">
-<p>Specific</p>
-<p>
-<a href="https://devdocs.io/css-filter-effects/">Filter Effects</a>
-<a href="https://devdocs.io/css-Transforms/">Transforms</a>
-</p>
-</div>
-<div id="hello">
-<p>以上は、アニメーションの作成など、より専門的なスタイリングに関係するCSSプロパティ一覧です。</p>
 </div>
 </body>
 </html>
