@@ -7,20 +7,6 @@
 <title> A CLASS ID | HyperText Markup Language </title>
 <link rel="stylesheet" href="style.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-<script src="/coding/js/randomrgba.js"></script>
-<script type="text/javascript">
-
-$(function(){
-	jQuery('.randombg').css({'background':getRumRgba()});
-});
-
-$(function(){
-	jQuery('.randomcolor').css({'color':getRumRgba()});
-})
-
-</script>
-
 <script type="text/javascript">
 $(function(){
     $("#hello").load("hello.html");
@@ -65,25 +51,5 @@ html {scroll-behavior: smooth;}
 <p><iframe src="http://vg.pe.hu/jp/cm/support.html"></iframe></p>
 <span class="close" onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
 </div>
-
-<!-- スムーズスクロール部分の記述 -->
-<script>
-$(function(){
-   // #で始まるアンカーをクリックした場合に処理
-   $('a[href^=#]').click(function() {
-      // スクロールの速度
-      var speed = 1000; // ミリ秒
-      // アンカーの値取得
-      var href= $(this).attr("href");
-      // 移動先を取得
-      var target = $(href == "#" || href == "" ? 'html' : href);
-      // 移動先を数値で取得
-      var position = target.offset().top;
-      // スムーススクロール
-      $('body,html').animate({scrollTop:position}, speed, 'swing');
-      return false;
-   });
-});
-</script>
 </body>
 </html>
