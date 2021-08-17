@@ -34,6 +34,11 @@
   
   video {
   transform: matrix(1, 1.1, -1, 1, 10, 10);
+  transition:1s all;
+  }
+  video:hover {
+  transform: matrix(0, 0, 0, 0, 0, 0);
+  transition:1s all;
   }
   
   audio {
