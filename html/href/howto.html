@@ -41,7 +41,6 @@
 <div id="html" class="open">
   <p>このHTMLのBODY要素は、ID名CLICKと名付けたP要素と、その中にある複数のCLASS・ID名がついたA要素で構成されています。</p>
   <pre><code><math><![CDATA[
-    <a href="/coding/html/href/howto.html" target="_blank" rel="noopener noreferrer">A</a>
     <p id="click">
       <a id="one" class="none" href="#two">click</a>
       <a id="two" class="border" href="#three">click</a>
@@ -49,10 +48,11 @@
       <a id="four" class="border" href="#five">click</a>
       <a id="five" class="radius" href="#one">click</a>
     </p>
+  <a class="demo" href="/coding/html/href/hello.html" target="_blank" rel="noopener noreferrer">HTMLのみ（CSSをリンクしない場合）の表示を見る</a>
   ]]></math></code></pre>
   <p>同じHTML内に、同じCLASS名の要素を作ること／一つの要素に複数のCLASS名をつけることができるCLASS属性に対して、同じHTML内で同じID名の要素を作ること／一つの要素に複数のID名をつけることは適切ではありません。
     <br/>加えて、ID属性の大きな特徴は、A要素のリンク先にID名を指定できることです。左ページ内のA要素は異なるID名がついたA要素とリンクし、A要素をクリックするとリンクしたA要素へページ内を移動します。</p>
-    <p>※ ID名 CLICK の前に記述したA要素は、target="_blank" rel="noopener noreferrer" と記述することで、リンク先を別タブで表示するように指定しています。</p>
+    <p>※ ID名 CLICK のあとに記述したA要素は、target="_blank" rel="noopener noreferrer" と記述することで、リンク先を別タブで表示するように指定しています。</p>
   <hr/>
 </div>
 <i><u data-click="css">CSSを見る</u></i><br/>
