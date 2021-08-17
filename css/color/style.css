@@ -1,0 +1,28 @@
+#demo div,
+#demo span {
+  padding:2.5%;
+}
+#demo div {
+  border: thick double;
+  border-radius: 25% 10%;
+}
+#demo span {
+  disolay:inline-block;
+  border: 2px dashed;
+  border-radius: 50% 20% / 10% 40%;
+}
+
+#demo div {
+color:#000;
+background-color:#fff;
+}
+
+#demo .pc {
+mix-blend-mode: color-dodge;
+}
+#demo .mobile {
+mix-blend-mode: multiply;
+}
+#demo .both {
+mix-blend-mode: luminosity;
+}
