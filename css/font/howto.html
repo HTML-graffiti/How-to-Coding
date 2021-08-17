@@ -39,7 +39,6 @@ $("#library").load("library.html");
 <div id="hello">
 <p>代表的なテキスト要素を並べた<a href="/coding/html/text/hello.html">HTML</a>のフォントをスタイリングする<u data-click="CSS">CSS</u>を解説します。</p>
 <div id="CSS" class="open">
-<div id="library"></div>
 
 <p>要素のフォントファミリ名・総称ファミリ名を<u data-click="font-family">font-family</u>で指定します。</p>
 <div id="font-family" class="open">
@@ -92,7 +91,7 @@ h5, h6, q, small, sup {font-style: oblique;}
 p, u {font-style: oblique -45deg;}
 ]]></math></code></pre>
 
-プロパティ値<br/>
+<p>プロパティ値<br/>
 <u data-click="normal">normal</u>
 <span id="normal" class="open"><br/>normal に分類されているフォントを選択します。<br/></span>
 <u data-click="italic">italic</u>
@@ -105,6 +104,24 @@ p, u {font-style: oblique -45deg;}
 <hr/>
 </div>
 
+<p>フォントの <u data-click="size-weight">大きさ・太さ</u> を指定します。</p>
+<div id="size-weight" class="open">
+例<pre><code><math><![CDATA[
+h1, h2, strong {font-size:2rem; font-weight:500;}
+h3, h4, samp, sub {font-size:2vw; font-weight:100;}
+h5, h6, q, small, sup {font-size:125%; font-weight:900;}
+]]></math></code></pre>
+
+<p>プロパティ<br/>
+<u data-click="font-size">font-size</u>
+<span id="font-size" class="open"><br/>フォントの大きさを定義します。<br/></span>
+<u data-click="font-weight">font-weight</u>
+<span id="font-weight" class="open"><br/>フォントの太さ (あるいは重み) を指定します。<br/></span>
+</p>
+<hr/>
+</div>
+
+<div id="library"></div>
 </div>
 
 </div>
