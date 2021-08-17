@@ -17,12 +17,11 @@ border-radius: 50% 20% / 10% 40%;
 
 #demo div {
 color:#000;
-background: radial-gradient(#e66465, #9198e5);
+background-color: radial-gradient(#e66465, #9198e5);
 }
 #demo span {
-background: -webkit-linear-gradient(#eee, #333);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+color:#000;
+background-color: radial-gradient(#9198e5, #e66465);
 }
 
 #demo .pc {
@@ -33,4 +32,17 @@ mix-blend-mode: multiply;
 }
 #demo .both {
 mix-blend-mode: luminosity;
+}
+
+#demo span:hover {
+filter: invert(1);
+}
+#demo .pc {
+filter: invert(0);
+}
+#demo .mobile {
+filter: invert(0.5);
+}
+#demo .both {
+filter: invert(1);
 }
