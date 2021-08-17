@@ -1,0 +1,33 @@
+
+  img {width:33%;}
+  
+  .grayscale {
+  filter: grayscale(100%);
+  transition:.5s all;
+  }
+  .sepia {
+  filter: sepia(100%);
+  transition:.5s all;
+  }
+  .contrast {
+  filter: contrast(500%);
+  transition:.5s all;
+  }
+  .grayscale:hover {
+  filter: grayscale(0%);
+  transition:.5s all;
+  }
+  .sepia:hover {
+  filter: sepia(0%);
+  transition:.5s all;
+  }
+  .contrast:hover {
+  filter: contrast(0%);
+  transition:.5s all;
+  }
+
+  video,
+  audio {
+  width:80%;
+  margin:2.5% 10%;
+  }
