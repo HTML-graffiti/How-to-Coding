@@ -37,19 +37,17 @@ $(function(){
 <a>主なフォーム部品</a><br/>
 <p>フォームを構成する <u data-click="body">BODY要素</u> を解説します。</p>
 <div id="body" class="open">
-<i>サンプルコード</i>
+<p><a href="http://www.htmq.com/html5/form.shtml" target="_blank" rel="noopener noreferrer">FORM要素</a> 内に、フォームを構築する部品のコードを記述します。</p>
 <code><math><![CDATA[
 <form action="complete.php" method="post" id="form">
 </form>
 ]]></math></code>
-<p>内に、フォームを構築する部品のコードを記述します。</p>
-<p><a href="http://www.htmq.com/html5/form.shtml" target="_blank" rel="noopener noreferrer">FORM要素</a>　formの開始タグ内に記述している <b>action="complete.php"</b> は、フォームのデータを送信後、移動するリンク先を指定するコードです。
-<b>method="post"</b> は、本文としてデータを送信するコードです。
-<i>methodについては、ちゃんと理解していません。</i></p>
-<hr/>
+<p>formの開始タグ内に記述している <b>action="complete.php"</b> は、フォームのデータを送信後、移動するリンク先を指定するコードです。
+<b>method="post"</b> については、ちゃんと理解していません。</i></p>
 </div>
 <p><u data-click="all">コードを見る</u></p>
 <div id="all" class="open">
+<i>form.html</i>
 <pre><code><math><![CDATA[
 <form action="complete.php" method="post" id="form">
 <input type="date" name="date" required>
@@ -78,7 +76,8 @@ $(function(){
 ]]></math></code></pre>
 
 <p>主なフォーム部品<br/>
-日付選択フォーム（input type="date"）・テキストフォーム（input type="text"）・パスワードフォーム（input type="password"）・ラジオボタン（input type="radio"）・チェックボックス（input type="checkbox"）<br/>複数行の入力欄（textarea）<br/>プルダウンメニュー（select | option）<br/>送信ボタン（button type="submit"）</p>
+日付選択フォーム（input type="date"）・テキストフォーム（input type="text"）・パスワードフォーム（input type="password"）・ラジオボタン（input type="radio"）・チェックボックス（input type="checkbox"）
+<br/>複数行の入力欄（textarea）<br/>プルダウンメニュー（select | option）<br/>送信ボタン（button type="submit"）</p>
 <p>
 詳しくは、
 <a href="https://www.tagindex.com/html5/form/form.html" target="_blank" rel="noopener noreferrer">HTML5/フォーム/form要素 入力フォームを作る</a>
@@ -88,7 +87,8 @@ $(function(){
 <p>フォーム部品共通のルール<br/>
 開始タグに <b>required</b> と記述したフォームは、入力必須<br/>
 <b>placeholder</b>="<i>ここに入力したテキストが、例として空欄フォームに表示される</i>"<br/>
-<b>value</b>="<i>ここに入力したテキストは、初期入力値となる。（valueで初期入力値を指定した場合、テキストフォーム／入力欄を未記入のまま送信すると、設定した初期入力値が記録されます。）<br/>※ ラジオボタン・チェックボックス・プルダウンメニューなどのフォームで選択した結果は、valueで設定した初期入力値が記録されます。</i>"
+<b>value</b>="<i>ここに入力したテキストは、初期入力値となる。（valueで初期入力値を指定した場合、テキストフォーム／入力欄を未記入のまま送信すると、設定した初期入力値が記録されます。）<br/>
+※ ラジオボタン・チェックボックス・プルダウンメニューなどのフォームで選択した結果は、valueで設定した初期入力値が記録されます。</i>"
 </p>
 <hr/>
 </div>
@@ -106,7 +106,8 @@ $(function(){
 です。</p>
 <p>特にこだわったスタイリングではなく、全てのフォーム部品をウインドウサイズに合わせているだけのシンプルなCSSです。</p>
 <p><u data-click="css">コードを見る</u></p>
-<pre id="css" class="open"><code><math><![CDATA[
+<pre id="css" class="open">
+<i>form.css</i><code><math><![CDATA[
 #form {
   overflow-x:hidden;
   padding:2.5% 0;
