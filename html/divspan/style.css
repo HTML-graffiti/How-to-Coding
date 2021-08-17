@@ -2,10 +2,6 @@ span {
   font-size:1rem;
   border:solid 1px;
 }
-.both {
-  color:#fff;
-  background:#000;
-}
 .pc {
   color:green;
   background:yellow;
