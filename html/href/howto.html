@@ -57,10 +57,10 @@
 </div>
 <i><u data-click="css">CSSを見る</u></i><br/>
   <div id="css" class="open">
-    <p>ID名#CLICK内のA要素をフルディスプレイサイズで表示するCSS</p>
+    <p>ID名#CLICK内のA要素をフルディスプレイサイズで表示し、要素の上下に空白を作るCSS</p>
     <pre><code><math><![CDATA[
       #click a {
-        display:block;
+        display:inline-block;
         width:90%;
         height:90vh;
         margin:5vh auto;
@@ -72,23 +72,22 @@
       <a href="https://developer.mozilla.org/ja/docs/Web/CSS/height" target="_blank" rel="noopener noreferrer">height</a>
       <a href="https://developer.mozilla.org/ja/docs/Web/CSS/margin" target="_blank" rel="noopener noreferrer">margin</a>
       </p>
-    <p>ID名#CLICK内のA要素内のテキストを中央に表示するCSS</p>
+    <p>ID名#CLICK内のA要素のテキストをフォントサイズ2remで要素の中央に表示するCSS</p>
     <pre><code><math><![CDATA[
       #click a {
         font-size:2rem;
         text-align:center;
-        line-height:90vh;
+        vertical-align:middle;
       }
       ]]></math></code></pre>
     <p><a href="https://developer.mozilla.org/ja/docs/Web/CSS/font-size" target="_blank" rel="noopener noreferrer">font-size</a>
     <a href="https://developer.mozilla.org/ja/docs/Web/CSS/text-align" target="_blank" rel="noopener noreferrer">text-align</a>
-    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/line-height" target="_blank" rel="noopener noreferrer">line-height</a>
-    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/color" target="_blank" rel="noopener noreferrer">color</a></p>
+    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/vertical-align" target="_blank" rel="noopener noreferrer">vertical-align</a>
       <p>CLASS名NONEの装飾
         <a href="https://developer.mozilla.org/ja/docs/Web/CSS/text-decoration" target="_blank" rel="noopener noreferrer">text-decoration</a>
         を消し、CLASS名BORDERを線
         <a href="https://developer.mozilla.org/ja/docs/Web/CSS/border" target="_blank" rel="noopener noreferrer">border</a>
-        で囲い、CLASS名RADIUSを角が丸い点線で囲み、影をつける</p>
+        で囲い、CLASS名RADIUSを角が丸い点線で囲み、影をつけるCSS</p>
       <pre><code><math><![CDATA[
       #click .none {
         text-decoration:none;
