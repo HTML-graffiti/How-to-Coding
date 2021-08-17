@@ -10,7 +10,7 @@
 <script src="/coding/hello/open_close.js"></script>
 <script type="text/javascript">
 $(function(){
-    $("#").load("");
+    $("#library").load("library.html");
 })
 </script>
 <link rel="stylesheet" href="/coding/hello/about.css"/>
@@ -55,15 +55,16 @@ Guide
   </div>
   
 <div id="hello">
-<p><a href="http://creative-community.pe.hu/coding/html/" target="_blank" rel="noopener noreferrer">HTML</a> 内にある要素のスタイリングを行う言語が <u data-click="css">CSS</u> です。
-<br/><i id="css" class="open">例えばウェブサイトを家だと考えた場合、必要な部屋の数・机・棚・椅子などをHTMLで記述し、それらの色や形、どこに置くかなどをCSSで指定するというイメージです。</i></p>
+<p><u data-click="css">CSS</u> は、ウェブページのスタイルを指定するための言語です。
+<br/><i id="css" class="open">例えばウェブサイトを家だと考えた場合、必要な部屋の数・机・棚・椅子などを <a href="http://creative-community.pe.hu/coding/html/" target="_blank" rel="noopener noreferrer">HTML</a>
+に記述し、それらの色や形、どこに何を置くかなどをCSSでスタイリングします。</i></p>
 </div>
 <div id="hello">
-<p>CSSは、<u data-click="head">HEAD要素内</u>
-<span id="head" class="open">＜style＞ここにCSSを記述します＜/style＞</span>
-、または、制作したCSSファイルを <u data-click="link">HTMLにLINK</u>
-<span id="link" class="open">HEAD要素内に＜link href="CSSファイル名" rel="stylesheet"＞を記述</span>
-します。</p>
+<p>CSSは、HTML の <u data-click="head">HEAD要素内</u>
+<span id="head" class="open">＜style＞ここにCSSを記述＜/style＞</span>
+に記述、または、CSSファイルを <u data-click="link">HTMLにLINK</u>
+<span id="link" class="open">HEAD要素内に＜link href="CSSファイル名" rel="stylesheet"＞</span>
+し、HTMLと組み合わせて使用します。</p>
 <hr/>
 <p>CSSの記述方法</p>
 <pre><code><math><![CDATA[
@@ -79,19 +80,21 @@ Guide
 <a href="https://devdocs.io/css/font-size" target="_blank" rel="noopener noreferrer">文字サイズ</a>を「72px」に、
 <a href="https://devdocs.io/css/padding" target="_blank" rel="noopener noreferrer">要素内の余白</a>を「10px」に、
 <a href="https://devdocs.io/css/padding" target="_blank" rel="noopener noreferrer">要素外の右に余白</a>を「20px」
-に指定するCSSコードです。</p>
-<p><i>要素名「セレクター (Selector)」、要素の規則「宣言 (Declaration)」を{　}内に記述します。
-<br/>「宣言 (Declaration)」は、要素をスタイル付けするための方法「プロパティ (Property)」:「プロパティ値 (Property value)」;を記述します。</i></p>
+に指定するCSSです。</p>
+<p><i>どの部分に対してのCSSなのかを、要素名「セレクター (Selector)」で表し、どんなスタイリングを行うかを、要素の規則「宣言 (Declaration)」で指示します。
+<br/>「宣言 (Declaration)」には、要素をスタイル付けするための方法「プロパティ (Property)」:「プロパティ値 (Property value)」;を記述します。</i></p>
 <ul>
   <li><p>規則セットは中括弧  <b>{　}</b> で囲む</p></li>
   <li><p>宣言内では、コロン <b>:</b> を使用してプロパティと値を分離する</p></li>
   <li><p>規則セット内でセミコロン <b>;</b> を使用して、それぞれの宣言と次の規則を区切る</p></li>
-<p><span>以上3つのルールを理解できれば、あとはいろいろなCSSプロパティを知り、スタイリングを楽しむだけです。</span></p>
+<p><span>以上3つのルールを理解できれば、CSSの基本は完璧です。
+<br/>下記の目次から様々なCSSプロパティとHTMLの関係を学んでいきましょう。</span></p>
 </ul>
+<div id="library"></div>
 </div>
 <hr/>
 <div id="hello">
-<p>要素名で規則を宣言する他に、HTML内の要素に共通の属性名をつける
+<p>要素名で規則を宣言する他に、要素に特定の名前をつけるグローバル属性と呼ばれるHTML言語
   <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/class" target="_blank" rel="noopener noreferrer">CLASS</a> と
   <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/id" target="_blank" rel="noopener noreferrer">ID</a>
   を用いて規則を宣言することもできます。</p>
@@ -121,8 +124,10 @@ Guide
     /* CSS here */
   }
 ]]></math></code></pre></p>
-<p>と規則を宣言し、要素ではなく属性名で共通のスタイルを付けることもできます。</p>
-<p><i>CSSでは、CLASS名を「.CLASS名」 と記述し、ID名を「#ID名」と記述します。</i></p>
+<p>要素名ではなく属性名で共通のスタイルを付けることもできます。</p>
+<p><i>CSSでは、CLASS名を「.CLASS名」 と記述し、ID名を「#ID名」と記述<br/>
+※ 詳しくは、<a href="/coding/html/href/" target="_blank" rel="noopener noreferrer">A要素とCLASS・ID属性</a>
+ページで解説します。</i></p>
 </div>
 
 </body>
