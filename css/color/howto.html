@@ -71,7 +71,12 @@ border-radius: 50% 20% / 10% 40%;
 例<pre><code><math><![CDATA[
 div {
 color:#000;
-background-color:#fff;
+background-color: radial-gradient(#e66465, #9198e5);
+}
+span {
+background: -webkit-linear-gradient(#eee, #333);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 .pc {
