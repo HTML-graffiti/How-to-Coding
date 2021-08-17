@@ -29,7 +29,7 @@ background: radial-gradient(#9198e5, #e66465);
 mix-blend-mode: color-dodge;
 }
 #demo .mobile {
-mix-blend-mode: multiply;
+mix-blend-mode: luminosity;
 }
 
 #demo span:hover {
