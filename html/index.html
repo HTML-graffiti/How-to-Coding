@@ -18,7 +18,6 @@ $(function(){
 $(function(){
 	$("#hello").load("hello.html");
 	$("#about").load("about.html");
-	$("#link").load("link.html");
 	$("#order").load("/coding/submit/order/form.html");
 	$("#mobile").load("/coding/mobile.html");
 })
@@ -53,7 +52,6 @@ margin:5% 0 10%;
 
 @media screen and (max-width: 500px){
 #left #hello,
-#right #link,
 #right #order,
 #right .support
 {display:none;}
@@ -82,7 +80,6 @@ margin:5% 0 10%;
 <a onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">Donation</a>
 </p>
 </div>
-<div id="link"></div>
 <div id="order"></div>
 </div>
 </div>
