@@ -38,6 +38,3 @@ filter: invert(1);
 #demo .pc {
 filter: invert(0);
 }
-#demo .mobile {
-filter: invert(0.5);
-}
