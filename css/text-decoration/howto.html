@@ -1,0 +1,89 @@
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/coding/hello/about.css"/>
+<link rel="stylesheet" href="/coding/hello/close_open.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/coding/hello/open_close.js"></script>
+
+<title> Text Decoration | Cascading Style Sheets </title>
+<style type="text/css">
+  pre, code {
+    display:block;
+    width:100%;
+    font-size:0.75vw;
+    overflow-x:auto;
+  }
+  #contents {
+    width:90%;
+    margin: auto;
+    font-size:1vw;
+  }
+  #contents #hello {
+    font-size:2vw;
+  }
+@media screen and (max-width: 500px){
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+$("#library").load("library.html");
+})
+</script>
+</head>
+<body>
+<div id="contents">
+<div id="hello">
+<p>代表的なテキスト要素を並べた<a href="/coding/html/text/hello.html">HTML</a>のフォントをスタイリングする<u data-click="CSS">CSS</u>を解説します。</p>
+<div id="CSS" class="open">
+
+<p><u data-click="font-style">font-style</u> 通常体 (normal)、筆記体 (italic)、斜体 (oblique) のどれでフォントをスタイリングするかを指定します。</p>
+<div id="font-style" class="open">
+例<pre><code><math><![CDATA[
+h1, h2, b, s, strong {font-style: normal;}
+h3, h4, i, samp, sub {font-style: italic;}
+h5, h6, q, small, sup {font-style: oblique;}
+p, u {font-style: oblique -45deg;}
+]]></math></code></pre>
+
+<p>プロパティ値<br/>
+<u data-click="normal">normal</u>
+<span id="normal" class="open"><br/>normal に分類されているフォントを選択します。<br/></span>
+<u data-click="italic">italic</u>
+<span id="italic" class="open"><br/>本質的に筆記体であり、スタイル付けされていない書体より水平方向の幅が小さいのが一般的です。<br/></span>
+<u data-click="oblique">oblique</u>
+<span id="oblique" class="open"><br/>たいてい、通常のフェイスを傾けただけです。<br/></span>
+<u data-click="deg">oblique -90 ~ 90 deg</u>
+<span id="deg" class="open"><br/>oblique として分類されているフォントを選択し、テキストの傾きの角度を指定します。<br/></span>
+</p>
+<hr/>
+</div>
+
+<div id="library"></div>
+</div>
+</div>
+<hr/>
+<div id="main">
+<p>My Works</p>
+<p>
+<a href="/coding/fontbook/css/fontmotion.css/">fontmotion.css</a>
+</p>
+</div>
+<div id="hello">
+<p>
+CLASS名 .fontmotion 要素のフォントが変化するアニメーションCSSを作成しました。</p>
+<p>HEAD内に</p>
+<pre><code><math><![CDATA[<link rel="stylesheet" href="http://creative-community.pe.hu/coding/fontbook/css/fontmotion.css"/>]]></math></code></pre>
+<p>と記述し、アニメーションを追加したい要素に <b>class="fontmotion"</b>
+と名前をつけると動作します。<br/>
+ご自由にご使用ください。
+</p>
+</div>
+</div>
+
+
+</body>
+</html>
