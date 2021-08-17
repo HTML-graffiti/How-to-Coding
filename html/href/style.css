@@ -1,12 +1,12 @@
 
       #click a {
-        display:block;
+        display:inline-block;
         width:90%;
         height:90vh;
         margin:5vh auto;
         font-size:2rem;
         text-align:center;
-        line-height:90vh;
+        vertical-align:middle;
       }
       #click .none {
         text-decoration:none;
