@@ -1,5 +1,5 @@
-#click, .demo {display:block;}
-#click a {display:inline-block;}
+#click, .demo {display:block; color:#000;}
+#click a {display:inline-block; color:#000;}
 
 #click, .demo {
 padding:10%;
