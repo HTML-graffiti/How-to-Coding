@@ -40,7 +40,6 @@ $("#library").load("library.html");
 <p>要素を装飾するために特定の名前をつけるグローバル属性と呼ばれるHTML言語を並べた <a href="/coding/html/href/hello.html">HTML</a>
 の表示位置・余白・囲い線などをスタイリングする <u data-click="CSS">CSS</u> を解説します。</p>
 <div id="CSS" class="open">
-
 <p>このページの左に埋め込まれた
 <a href="/coding/html/href/hello.html">HTML</a>
 内のすべての要素の
@@ -65,13 +64,11 @@ margin:auto;
 width:75%;
 }
 .demo {
-height:2.5rem;
+height:5rem;
 }
 #click a {
 padding:1% 2.5%;
 margin:2.5%;
-width:5rem;
-height:5rem;
 }
 ]]></math></code></pre>
 <p>プロパティ値<br/>
@@ -104,6 +101,25 @@ height:5rem;
 </p>
 </div>
 <hr/>
+
+<p>要素内のテキストの表示位置 <u data-click="align">CSS</u> をスタイリングします。</p>
+<div id="align" class="open">
+例<pre><code><math><![CDATA[
+.demo {
+text-align:center;
+vertical-align: middle;
+}
+]]></math></code></pre>
+
+<p>プロパティ値<br/>
+<u data-click="text-align">text-align</u>
+<span id="text-align" class="open"><br/>ブロック要素または表セルボックスの水平方向の配置を設定します。<br/></span>
+<u data-click="vertical-align">vertical-align</u>
+<span id="vertical-align" class="open"><br/>インラインボックス、インラインブロック、表セルボックスの垂直方向の配置を設定します。<br/></span>
+</p>
+</div>
+<hr/>
+ 
 </div>
 
 <div id="library"></div>
