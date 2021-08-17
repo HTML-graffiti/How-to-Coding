@@ -15,7 +15,8 @@ $(function(){
 
 $(function(){
     $("#left").load("hello.html");
-    $("#right").load("org.html");
+    $("#howto").load("org.html");
+	$("#order").load("/coding/submit/order/form.html");
 })
 </script>
 <link rel="stylesheet" href="style.css"/>
@@ -33,11 +34,18 @@ $(function(){
 <h1 id="title">The Coverpage | creative-community.pe.hu</h1>
 <div id="cover">
 <div id="left"></div>
-<div id="right"></div>
+<div id="right">
+<div id="howto"></div>
+<div id="order"></div>
+</div>
 </div>
 <div class="popup" id="support" style="display:none;">
 <p><iframe src="http://vg.pe.hu/jp/cm/support.html"></iframe></p>
 <span class="close" onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
+</div>
+<div class="popup" id="contactform" style="display:none;">
+<p><iframe src="/coding/submit/order/"></iframe></p>
+<span class="close" onclick="obj=document.getElementById('contactform').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
 </div>
 </body>
 </html>
