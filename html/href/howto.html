@@ -151,33 +151,6 @@ $(function(){
           ]]></math></code></pre>
       <hr/>
     </div>
-  
-  <i><u data-click="js">ページを更新するごとにランダムで色が変化するJavaScript</u></i><br/>
-    <div id="js" class="open">
-      <p>JavaScriptについてはまだ勉強中で、説明するほど理解できていません。</p>
-      <pre><code><math><![CDATA[
-        function getRumRgba(){
-          var clr = 'rgba(';
-          for(i=0; i < 3; i++){
-            clr = clr + Math.floor( Math.random()*255) + ',';
-          }
-          clr = clr + Math.floor( Math.random()*10)/10 + ')';
-          return clr;
-        }
-        ]]></math></code></pre>
-        <p>色コードをRGBで指定し、1から255までの数字をランダムで生成し、</p>
-        <pre><code><math><![CDATA[
-          $(function(){
-            jQuery('.randombg').css({'background':getRumRgba()});
-          });
-          
-          $(function(){
-            jQuery('.randomcolor').css({'color':getRumRgba()});
-          })
-          ]]></math></code></pre>
-      <p>クラス名.randombgの背景色／クラス名.randomcolorの文字色を指定しています。</p>
-      <hr/>
-    </div>
 </div>
 </div>
 </body>
