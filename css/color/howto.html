@@ -74,9 +74,8 @@ color:#000;
 background-color: radial-gradient(#e66465, #9198e5);
 }
 span {
-background: -webkit-linear-gradient(#eee, #333);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+color:#000;
+background-color: radial-gradient(#9198e5, #e66465);
 }
 
 .pc {
@@ -137,6 +136,15 @@ mix-blend-mode: luminosity;
 <a href="https://developer.mozilla.org/ja/docs/Web/CSS/filter-function/invert()" target="_blank" rel="noopener noreferrer">invert()</a></p>
 <pre><code><math><![CDATA[
 span:hover {
+filter: invert(1);
+}
+.pc {
+filter: invert(0);
+}
+.mobile {
+filter: invert(0.5);
+}
+.both {
 filter: invert(1);
 }
 ]]></math></code></pre>
