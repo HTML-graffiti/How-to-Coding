@@ -40,6 +40,7 @@ $("#library").load("library.html");
 <p>要素を装飾するために特定の名前をつけるグローバル属性と呼ばれるHTML言語を並べた <a href="/coding/html/href/hello.html">HTML</a>
 の表示位置・余白・囲い線などをスタイリングする <u data-click="CSS">CSS</u> を解説します。</p>
 <div id="CSS" class="open">
+<hr/>
 <p>このページの左に埋め込まれた
 <a href="/coding/html/href/hello.html">HTML</a>
 内のすべての要素の
@@ -81,7 +82,6 @@ margin:2.5%;
 <u data-click="padding">padding</u>
 <span id="padding" class="open"><br/>要素の内部に追加の領域を作成します。<br/></span>
 </p>
-<hr/>
 <div id="main">
 <p>Library of</p>
 <p>
@@ -103,7 +103,7 @@ margin:2.5%;
 <hr/>
 </div>
 
-<p>要素内のテキストの表示位置 <u data-click="align">CSS</u> をスタイリングします。</p>
+<p>要素内のテキストの <u data-click="align">表示位置</u> をスタイリングします。</p>
 <div id="align" class="open">
 例<pre><code><math><![CDATA[
 .demo {
@@ -112,32 +112,103 @@ vertical-align: middle;
 }
 ]]></math></code></pre>
 
-<p>プロパティ値<br/>
+<p>
 <u data-click="text-align">text-align</u>
 <span id="text-align" class="open"><br/>ブロック要素または表セルボックスの水平方向の配置を設定します。<br/></span>
 <u data-click="vertical-align">vertical-align</u>
 <span id="vertical-align" class="open"><br/>インラインボックス、インラインブロック、表セルボックスの垂直方向の配置を設定します。<br/></span>
+<u data-click="text-indent">text-indent</u>
+<span id="text-indent" class="open"><br/>ブロック内のテキストの行の前に置く空白 (字下げ) の幅を設定します。<br/></span>
 </p>
 <hr/>
 </div>
 
-<p>要素／テキストを <u data-click="align">線で囲う</u> をスタイリングします。</p>
-<div id="align" class="open">
+<p><u data-click="text-decoration">テキストデコレーション</u> をスタイリングします。</p>
+<div id="text-decoration" class="open">
 例<pre><code><math><![CDATA[
 .demo {
-text-align:center;
-vertical-align: middle;
+text-decoration:#000 underline dotted 5px;
+text-decoration-skip-ink: none;
+text-emphasis: filled red;
+-webkit-text-emphasis: filled red;
+}
+.border {
+text-decoration:blue underline overline 10px;
+text-decoration-skip-ink: auto;
+}
+.radius {
+text-decoration:red wavy underline 2px;
+text-decoration-skip-ink: none;
+text-emphasis: 'x';
+-webkit-text-emphasis: 'x';
+}
+.none {
+text-decoration:none;
 }
 ]]></math></code></pre>
-
-<p>プロパティ値<br/>
-<u data-click="text-align">text-align</u>
-<span id="text-align" class="open"><br/>ブロック要素または表セルボックスの水平方向の配置を設定します。<br/></span>
-<u data-click="vertical-align">vertical-align</u>
-<span id="vertical-align" class="open"><br/>インラインボックス、インラインブロック、表セルボックスの垂直方向の配置を設定します。<br/></span>
+<p>
+<u data-click="decoration">text-decoration</u>
+<span id="decoration" class="open"><br/>テキストの装飾的な線の表示を設定します。<br/></span>
+<u data-click="skip-ink">text-decoration-skip-ink</u>
+<span id="skip-ink" class="open"><br/>上線や下線が文字のアセンダーやディセンダーを通過するときにどのように引くのかを指定します。<br/></span>
+<u data-click="text-emphasis">text-emphasis</u>
+<span id="text-emphasis" class="open"><br/> (空白や制御文字を除く) テキストに圏点を適用します。<br/></span>
 </p>
 <hr/>
 </div>
+
+<p><u data-click="spacing">字間</u> と <u data-click="text-transform">大文字・小文字</u> をスタイリングします。</p>
+<div id="spacing" class="open">
+例<pre><code><math><![CDATA[
+.demo {
+letter-spacing: 100%;
+word-spacing: 100%;
+}
+.border {
+letter-spacing: 150%;
+word-spacing: 50%;
+white-space: pre-wrap;
+}
+.radius {
+letter-spacing: 75%;
+word-spacing: 125%;
+white-space: break-spaces;
+}
+]]></math></code></pre>
+<p>
+<u data-click="letter-spacing">letter-spacing</u>
+<span id="letter-spacing" class="open"><br/>テキストの水平方向の字間のスペースに関する挙動を設定します。<br/></span>
+<u data-click="word-spacing">word-spacing</u>
+<span id="word-spacing" class="open"><br/>タグや単語の間隔に関する挙動を指定します。<br/></span>
+<u data-click="word-break">word-break</u>
+<span id="word-break" class="open"><br/>改行しなければテキストがコンテンツボックスからあふれる場合に、ブラウザーが改行を挿入するかどうかを指定します。<br/></span>
+<u data-click="white-space">white-space</u>
+<span id="white-space" class="open"><br/>要素内のホワイトスペースをどのように扱うかを設定します。<br/></span>
+</p>
+</div>
+
+<div id="text-transform" class="open">
+例<pre><code><math><![CDATA[
+.demo {
+text-transform: capitalize;
+}
+.border {
+text-transform: uppercase;
+}
+.radius {
+text-transform: lowercase;
+}
+.none {
+text-transform: none;
+}
+]]></math></code></pre>
+<p>
+<u data-click="transform">text-transform</u>
+<span id="transform" class="open"><br/>要素のテキストを大文字表記する方法を指定します。<br/></span>
+</p>
+<hr/>
+</div>
+
 
 <div id="library"></div>
 </div>
@@ -148,17 +219,16 @@ vertical-align: middle;
 <div id="main">
 <p>My Works</p>
 <p>
-<a href="/coding/fontbook/css/fontmotion.css/">fontmotion.css</a>
+<a href="/coding/js/randomrgba.js">randomrgba.js</a>
 </p>
 </div>
 <div id="hello">
 <p>
-CLASS名 .fontmotion 要素のフォントが変化するアニメーションCSSを作成しました。</p>
-<p>HEAD内に</p>
-<pre><code><math><![CDATA[<link rel="stylesheet" href="http://creative-community.pe.hu/coding/fontbook/css/fontmotion.css"/>]]></math></code></pre>
-<p>と記述し、アニメーションを追加したい要素に <b>class="fontmotion"</b>
-と名前をつけると動作します。<br/>
-ご自由にご使用ください。
+ページを更新するごとにランダムで色が変化するJavaScriptを作成しました。
+</p>
+<p>使用方法は、
+<a href="/coding/css/color/">A要素とCLASS・ID属性</a>
+に掲載します。
 </p>
 </div>
 </div>
