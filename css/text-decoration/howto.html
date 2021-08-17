@@ -51,16 +51,28 @@ $("#library").load("library.html");
 
 <div id="display" class="open">
 例<pre><code><math><![CDATA[
-#click {display:block;}
-#click a, .demo {display:inline-block;}
+#click, .demo {display:block;}
+#click a {display:inline-block;}
 ]]></math></code></pre>
 <p>CSSプロパティ「ディスプレイ」については、<a href="/coding/html/divspan/">DIVとSPAN要素</a> で詳しく解説します。</p>
 </div>
 
 <div id="size" class="open">
 例<pre><code><math><![CDATA[
-#click {display:block;}
-#click a, .demo {display:inline-block;}
+#click, .demo {
+padding:10%;
+margin:auto;
+width:75%;
+}
+.demo {
+height:2.5rem;
+}
+#click a {
+padding:1% 2.5%;
+margin:2.5%;
+width:5rem;
+height:5rem;
+}
 ]]></math></code></pre>
 <p>プロパティ値<br/>
 <u data-click="width">width</u>
@@ -74,6 +86,10 @@ $("#library").load("library.html");
 </p>
 <hr/>
 <div id="main">
+<p>Library of</p>
+<p>
+<a href="/coding/css/">CSS</a>
+</p>
 </div>
 <div id="hello">
 <p>
