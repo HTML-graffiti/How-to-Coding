@@ -37,28 +37,56 @@ $("#library").load("library.html");
 <body>
 <div id="contents">
 <div id="hello">
-<p>代表的なテキスト要素を並べた<a href="/coding/html/text/hello.html">HTML</a>のフォントをスタイリングする<u data-click="CSS">CSS</u>を解説します。</p>
+<p>要素を装飾するために特定の名前をつけるグローバル属性と呼ばれるHTML言語を並べた <a href="/coding/html/href/hello.html">HTML</a>
+の表示位置・余白・囲い線などをスタイリングする <u data-click="CSS">CSS</u> を解説します。</p>
 <div id="CSS" class="open">
 
-<p><u data-click="font-style">font-style</u> 通常体 (normal)、筆記体 (italic)、斜体 (oblique) のどれでフォントをスタイリングするかを指定します。</p>
-<div id="font-style" class="open">
-例<pre><code><math><![CDATA[
-h1, h2, b, s, strong {font-style: normal;}
-h3, h4, i, samp, sub {font-style: italic;}
-h5, h6, q, small, sup {font-style: oblique;}
-p, u {font-style: oblique -45deg;}
-]]></math></code></pre>
+<p>このページの左に埋め込まれた
+<a href="/coding/html/href/hello.html">HTML</a>
+内のすべての要素の
+<u data-click="display">ディスプレイ値</u>
+を <b>display:inline-block</b>
+または、<b>display:block</b>
+に指定し、要素の <u data-click="size">大きさ・余白</u> をスタイリングします。</p>
 
+<div id="display" class="open">
+例<pre><code><math><![CDATA[
+#click {display:block;}
+#click a, .demo {display:inline-block;}
+]]></math></code></pre>
+<p>CSSプロパティ「ディスプレイ」については、<a href="/coding/html/divspan/">DIVとSPAN要素</a> で詳しく解説します。</p>
+</div>
+
+<div id="size" class="open">
+例<pre><code><math><![CDATA[
+#click {display:block;}
+#click a, .demo {display:inline-block;}
+]]></math></code></pre>
 <p>プロパティ値<br/>
-<u data-click="normal">normal</u>
-<span id="normal" class="open"><br/>normal に分類されているフォントを選択します。<br/></span>
-<u data-click="italic">italic</u>
-<span id="italic" class="open"><br/>本質的に筆記体であり、スタイル付けされていない書体より水平方向の幅が小さいのが一般的です。<br/></span>
-<u data-click="oblique">oblique</u>
-<span id="oblique" class="open"><br/>たいてい、通常のフェイスを傾けただけです。<br/></span>
-<u data-click="deg">oblique -90 ~ 90 deg</u>
-<span id="deg" class="open"><br/>oblique として分類されているフォントを選択し、テキストの傾きの角度を指定します。<br/></span>
+<u data-click="width">width</u>
+<span id="width" class="open"><br/>要素の幅を設定します。<br/></span>
+<u data-click="height">height</u>
+<span id="height" class="open"><br/>要素の高さを指定します。<br/></span>
+<u data-click="margin">margin</u>
+<span id="margin" class="open"><br/>要素の周りに追加の領域を作成します。<br/></span>
+<u data-click="padding">padding</u>
+<span id="padding" class="open"><br/>要素の内部に追加の領域を作成します。<br/></span>
 </p>
+<hr/>
+<div id="main">
+</div>
+<div id="hello">
+<p>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/width">width</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/min-width">min-width</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/max-width">max-width</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/height">height</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/min-height">min-height</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/max-height">max-height</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/margin">margin</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/padding">padding</a>
+</p>
+</div>
 <hr/>
 </div>
 
