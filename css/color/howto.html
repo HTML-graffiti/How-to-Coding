@@ -1,0 +1,71 @@
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/coding/hello/about.css"/>
+<link rel="stylesheet" href="/coding/hello/close_open.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/coding/hello/open_close.js"></script>
+<title> Color | Cascading Style Sheets </title>
+<style type="text/css">
+  pre, code {
+    display:block;
+    width:100%;
+    font-size:1vw;
+    overflow-x:auto;
+  }
+  #contents {
+    width:90%;
+    margin:auto;
+    font-size:1vw;
+  }
+  #right #contents #hello {
+    font-size:2vw;
+  }
+@media screen and (max-width: 500px){
+}
+</style>
+</head>
+<body>
+<div id="contents">
+<div id="hello">
+      <p>要素の上をカーソル (マウスポインター) がホバー (通過)した時
+        <a href="https://developer.mozilla.org/ja/docs/Web/CSS/:hover" target="_blank" rel="noopener noreferrer">:hover</a>
+        に、要素の色が反転するようCSSのfilterプロパティ値
+        <a href="https://developer.mozilla.org/ja/docs/Web/CSS/filter-function/invert()" target="_blank" rel="noopener noreferrer">invert()</a></p>
+      <pre><code><math><![CDATA[
+      #:hover {
+        filter: invert(1);
+      }
+      ]]></math></code></pre>
+  
+  <i><u data-click="js">ページを更新するごとにランダムで色が変化するJavaScript</u></i><br/>
+    <div id="js" class="open">
+      <p>JavaScriptについてはまだ勉強中で、説明するほど理解できていません。</p>
+      <pre><code><math><![CDATA[
+        function getRumRgba(){
+          var clr = 'rgba(';
+          for(i=0; i < 3; i++){
+            clr = clr + Math.floor( Math.random()*255) + ',';
+          }
+          clr = clr + Math.floor( Math.random()*10)/10 + ')';
+          return clr;
+        }
+        ]]></math></code></pre>
+        <p>色コードをRGBで指定し、1から255までの数字をランダムで生成し、</p>
+        <pre><code><math><![CDATA[
+          $(function(){
+            jQuery('.クラス名').css({'background':getRumRgba()});
+          });
+          
+          $(function(){
+            jQuery('.クラス名').css({'color':getRumRgba()});
+          })
+          ]]></math></code></pre>
+      <p>クラス名.randombgの背景色／クラス名.randomcolorの文字色を指定しています。</p>
+      <hr/>
+    </div>
+</div>
+</div>
+</body>
+</html>
