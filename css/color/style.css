@@ -1,20 +1,23 @@
+#demo {
+padding:2.5%;
+}
 #demo div,
 #demo span {
-  padding:2.5%;
+padding:2.5%;
 }
 #demo div {
-  border: thick double;
-  border-radius: 25% 10%;
+border: thick double;
+border-radius: 25% 10%;
 }
 #demo span {
-  disolay:inline-block;
-  border: 2px dashed;
-  border-radius: 50% 20% / 10% 40%;
+disolay:inline-block;
+border: 2px dashed;
+border-radius: 50% 20% / 10% 40%;
 }
 
 #demo div {
 color:#000;
-background-color: radial-gradient(#e66465, #9198e5);
+background: radial-gradient(#e66465, #9198e5);
 }
 #demo span {
 background: -webkit-linear-gradient(#eee, #333);
