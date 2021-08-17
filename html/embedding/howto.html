@@ -31,37 +31,117 @@
 <div id="hello">
 <a href="howto.html">マルチメディアとその埋め込み方</a>
 <p><a href="https://developer.mozilla.org/ja/docs/Learn/HTML/Multimedia_and_embedding" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>
-  を参照し、HTMLにマルチメディアを埋め込みます。</p>
-<p><u data-click="___">HTML</u> と <u data-click="___">CSS</u></p>
-<div id="___" class="open">
-  <p>解説</p>
+  を参考に、ウェブページにマルチメディアを埋め込みます。</p>
+
+<p>画像を埋め込む <u data-click="img">HTML</u> と 画像をスタイリングする <u data-click="img_css">CSS</u></p>
+<div id="img" class="open">
+  <p>画像埋め込み要素 IMG の src 属性に埋め込みたい画像へのパスを入れます。<br/>
+  alt 属性は画像のテキストによる説明で、必須ではありませんがアクセシビリティのために非常に有用です。 </p>
   <pre><code><math><![CDATA[
+<img class="grayscale" src="http://praytimes.pe.hu/img/inn/000.JPG" alt="プレイタイムズ">
+<img class="sepia" src="http://praytimes.pe.hu/img/inn/004.JPG" alt="キラキラゴッド">
+<img class="contrast" src="http://praytimes.pe.hu/img/inn/006.JPG" alt="スーツケースとズボン">
   ]]></math></code></pre>
-  <p></p>
+  <p>加えて、画像に異なる視覚効果を加えるため、CLASS名をつけています。</p>
 </div>
-<div id="___" class="open">
-  <p>解説</p>
+<div id="img_css" class="open">
+  <p>3つの画像を横並びに表示するように画像の幅を33%に指定</p>
   <pre><code><math><![CDATA[
+  img {width:33%;}
+  
+  .grayscale {
+  filter: grayscale(100%);
+  transition:.5s all;
+  }
+  .sepia {
+  filter: sepia(100%);
+  transition:.5s all;
+  }
+  .contrast {
+  filter: contrast(500%);
+  transition:.5s all;
+  }
+  .grayscale:hover {
+  filter: grayscale(0%);
+  transition:.5s all;
+  }
+  .sepia:hover {
+  filter: sepia(0%);
+  transition:.5s all;
+  }
+  .contrast:hover {
+  filter: contrast(0%);
+  transition:.5s all;
+  }
   ]]></math></code></pre>
-  <p></p>
+  <p>filterプロパティとtransitionプロパティで視覚効果アニメーションをスタイリングします。</p>
 </div>
 <div id="main">
-<p>タイトル</p>
+<p>HTML の画像</p>
 <p>
-<a href="">URL</a>
+<a href="https://developer.mozilla.org/ja/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML">Images　in　HTML</a>
 </p>
 </div>
 <div id="hello">
 <p>
 HTML<br/>
-<a href="___">要素</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/img">img</a>
 </p>
 <p>
 CSS<br/>
-<a href="___">プロパティ</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/width">width</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/filter">filter</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/transition">transition</a>
+</p>
+<hr/>
+</div>
+
+<p>動画と音声を埋め込む <u data-click="img">HTML</u> と スタイリングする <u data-click="img_css">CSS</u></p>
+<div id="img" class="open">
+  <p>動画埋め込み要素 VIDEO・埋め込み音声要素 AUDIO の src 属性の中に表示したいメディアへのパスを含めます。<br/>
+  開始タグ内に controls と記述するとコントロールインターフェイスが表示されます。<br>
+  その他にも、自動再生 autoplay、繰り返し loop、ミュート muted、全画面表示禁止 playsinlineなどの属性をつけることができます。</p>
+  <pre><code><math><![CDATA[
+<video controls autoplay loop muted playsinline>
+  <source src="https://praytimes.pe.hu/img/inn.mov" type="video/mov">
+  Sorry, your browser doesn't support embedded videos.
+</video>
+
+<audio autoplay loop>
+  <source src="http://la.chottocrazy.pe.hu/collection/female%201.mp3" type="audio/mp3">
+  Sorry, your browser doesn't support embedded Audios.
+</audio>
+  ]]></math></code></pre>
+</div>
+<div id="img_css" class="open">
+  <p>動画と音声の幅を80%に指定し、中央に揃うよう要素の外側に空白を追加します。</p>
+  <pre><code><math><![CDATA[
+  video,
+  audio {
+  width:80%;
+  margin:2.5% 10%;
+  }
+  ]]></math></code></pre>
+</div>
+<div id="main">
+<p>動画と音声のコンテンツ</p>
+<p>
+<a href="https://developer.mozilla.org/ja/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content">Video and Audio content</a>
 </p>
 </div>
+<div id="hello">
+<p>
+HTML<br/>
+<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/video">video</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/audio">audio</a>
+</p>
+<p>
+CSS<br/>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/width">width</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/margin">margin</a>
+</p>
 <hr/>
+</div>
 
 </div>
 </div>
