@@ -8,13 +8,6 @@
         text-align:center;
         line-height:90vh;
       }
-      #click a:hover,
-      #click a:visited {
-        filter: invert(1);
-      }
-      #click a:active {
-        filter: invert(100%);
-      }
       #click .none {
         text-decoration:none;
       }
