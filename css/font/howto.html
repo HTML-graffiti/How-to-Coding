@@ -69,17 +69,38 @@ OSごとの表示の違いも確認できるので、とても便利です。</p
 -->
 主な総称ファミリ名<br/>
 <u data-click="serif">serif</u>
-<span id="serif" class="open">明朝体（終わりが止めや払い、または実際の活字のセリフの形をした角を持つ字形です。）<br/></span>
+<span id="serif" class="open"><br/>明朝体（終わりが止めや払い、または実際の活字のセリフの形をした角を持つ字形です。）<br/></span>
 <u data-click="sans-serif">sans-serif</u>
-<span id="sans-serif" class="open">ゴシック体（平たい角の端を持つ字形です。）<br/></span>
+<span id="sans-serif" class="open"><br/>ゴシック体（平たい角の端を持つ字形です。）<br/></span>
 <u data-click="cursive">cursive</u>
-<span id="cursive" class="open">筆記体（続け書き、もしくは、イタリック体の特性以上に、その他の筆記体の特性があります。）<br/></span>
+<span id="cursive" class="open"><br/>筆記体（続け書き、もしくは、イタリック体の特性以上に、その他の筆記体の特性があります。）<br/></span>
 <u data-click="fantasy">fantasy</u>
-<span id="fantasy" class="open">fantasy フォントは、遊び心に溢れた文字表現を含む、主として装飾的なフォントです。<br/></span>
+<span id="fantasy" class="open"><br/>fantasy フォントは、遊び心に溢れた文字表現を含む、主として装飾的なフォントです。<br/></span>
 <u data-click="monospace">monospace</u>
-<span id="monospace" class="open">すべての字が同じ幅を持つ字形です。</span>
+<span id="monospace" class="open"><br/>すべての字が同じ幅を持つ字形です。<br/></span>
 </p>
 </div>
+</div>
+
+<p><u data-click="font-style">font-style</u> 通常体 (normal)、筆記体 (italic)、斜体 (oblique) のどれでフォントをスタイリングするかを指定します。</p>
+<div id="font-family" class="open">
+例<pre><code><math><![CDATA[
+h1, h2, b, s, strong {font-style: normal;}
+h3, h4, i, samp, sub {font-style: italic;}
+h5, h6, q, small, sup {font-style: oblique;}
+p, u {font-style: oblique -45deg;}
+]]></math></code></pre>
+
+プロパティ値<br/>
+<u data-click="normal">normal</u>
+<span id="normal" class="open"><br/>normal に分類されているフォントを選択します。<br/></span>
+<u data-click="italic">italic</u>
+<span id="italic" class="open"><br/>本質的に筆記体であり、スタイル付けされていない書体より水平方向の幅が小さいのが一般的です。<br/></span>
+<u data-click="oblique">oblique</u>
+<span id="oblique" class="open"><br/>たいてい、通常のフェイスを傾けただけです。<br/></span>
+<u data-click="deg">oblique -90 ~ 90 deg</u>
+<span id="deg" class="open"><br/>oblique として分類されているフォントを選択し、テキストの傾きの角度を指定します。<br/></span>
+</p>
 </div>
 
 </div>
