@@ -1,0 +1,11 @@
+p {font-family: "Arial", serif;}
+h1, h2, b, s, strong {font-family: "Open Sans", "Fira Sans", "Lucida Sans", "Lucida Sans Unicode", "Trebuchet MS", "Liberation Sans", "Nimbus Sans L", sans-serif;}
+h3, h4, i, samp, sub {font-family: "Brush Script MT", "Brush Script Std", "Lucida Calligraphy", "Lucida Handwriting", "Apple Chancery", cursive;}
+h5, h6, q, small, sup {font-family: Papyrus, Herculanum, Party LET, Curlz MT, Harrington, fantasy;}
+u {font-family: monospace;}
+
+h1, h2, b, s, strong {font-style: normal;}
+h3, h4, i, samp, sub {font-style: italic;}
+h5, h6, q, small, sup {font-style: oblique;}
+p, u {font-style: oblique -45deg;}
+
