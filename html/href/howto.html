@@ -82,24 +82,6 @@
         line-height:90vh;
       }
       ]]></math></code></pre>
-      <p>A要素の上をカーソル (マウスポインター) がホバー (通過)した時
-        <a href="https://developer.mozilla.org/ja/docs/Web/CSS/:hover" target="_blank" rel="noopener noreferrer">:hover</a>
-        、リンク先にすでに訪問したことがある場合
-        <a href="https://developer.mozilla.org/ja/docs/Web/CSS/:visited" target="_blank" rel="noopener noreferrer">:visite</a>
-        、A要素をクリックした際
-        <a href="https://developer.mozilla.org/ja/docs/Web/CSS/:active" target="_blank" rel="noopener noreferrer">:active</a>
-        に、要素の色が反転するようにCSSのfilterプロパティ値
-        <a href="https://developer.mozilla.org/ja/docs/Web/CSS/filter-function/invert()" target="_blank" rel="noopener noreferrer">invert()</a>
-        を記述しスタイリング</p>
-      <pre><code><math><![CDATA[
-      #click a:hover,
-      #click a:visited {
-        filter: invert(1);
-      }
-      #click a:active {
-        filter: invert(100%);
-      }
-      ]]></math></code></pre>
       <p>最後に、CLASS名の違いを明確にするため、CLASS名NONEの装飾
         <a href="https://developer.mozilla.org/ja/docs/Web/CSS/text-decoration" target="_blank" rel="noopener noreferrer">text-decoration</a>
         を消し、CLASS名BORDERを線
