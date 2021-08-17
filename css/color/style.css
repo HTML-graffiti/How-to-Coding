@@ -17,11 +17,11 @@ border-radius: 50% 20% / 10% 40%;
 
 #demo div {
 color:#000;
-background-color: radial-gradient(#e66465, #9198e5);
+background: radial-gradient(#e66465, #9198e5);
 }
 #demo span {
 color:#000;
-background-color: radial-gradient(#9198e5, #e66465);
+background: radial-gradient(#9198e5, #e66465);
 }
 
 #demo .pc {
