@@ -30,9 +30,9 @@
 <div id="contents">
 <div id="hello">
 <a href="howto.html">A要素とCLASS・ID属性</a>
-<p>このページでは、別のウェブページ、ファイル、メールアドレス、同一ページ内の場所へのハイパーリンクを作成するために使用する
+<p>このページでは、別のウェブページ、ファイル、メールアドレス、同一ページ内の要素へのハイパーリンクを作成する
   <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/a" target="_blank" rel="noopener noreferrer">A: アンカー要素</a>
-  についてと、要素に特定の名前をつけるグローバル属性と呼ばれるHTML言語
+  と、要素に特定の名前をつけるグローバル属性と呼ばれるHTML言語
   <a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/class" target="_blank" rel="noopener noreferrer">CLASS</a>
   と
   <a href="https://developer.mozilla.org/ja/docs/Web/SVG/Attribute/id" target="_blank" rel="noopener noreferrer">ID</a>
@@ -51,12 +51,13 @@
   <a class="demo" href="/coding/html/href/hello.html" target="_blank" rel="noopener noreferrer">HTMLのみ（CSSをリンクしない場合）の表示を見る</a>
   ]]></math></code></pre>
   <p>同じHTML内に、同じCLASS名の要素を作ること／一つの要素に複数のCLASS名をつけることができるCLASS属性に対して、同じHTML内で同じID名の要素を作ること／一つの要素に複数のID名をつけることは適切ではありません。
-    <br/>加えて、ID属性の大きな特徴は、A要素のリンク先にID名を指定できることです。左ページ内のA要素は異なるID名がついたA要素とリンクし、A要素をクリックするとリンクしたA要素へページ内を移動します。</p>
-    <p>※ ID名 CLICK のあとに記述したA要素は、target="_blank" rel="noopener noreferrer" と記述することで、リンク先を別タブで表示するように指定しています。</p>
+    <br/>加えて、ID属性の大きな特徴は、A要素のリンク先にID名を指定できることです。</p>
+    <p>※ 左ページ内のA要素は、ID名がついたA要素とリンクしているため、A要素をクリックするとリンクしたA要素へページ内を移動します。</p>
   <hr/>
 </div>
 <i><u data-click="css">CSSを見る</u></i><br/>
   <div id="css" class="open">
+    <p><i>※ CSSでは、ID名を「#ID名」CLASS名を「.CLASS名」 と記述します。</i></p>
     <p>ID名#CLICK内のA要素をフルディスプレイサイズで表示し、要素の上下に空白を作るCSS</p>
     <pre><code><math><![CDATA[
       #click a {
@@ -85,11 +86,11 @@
     <a href="https://developer.mozilla.org/ja/docs/Web/CSS/text-align" target="_blank" rel="noopener noreferrer">text-align</a>
     <a href="https://developer.mozilla.org/ja/docs/Web/CSS/vertical-align" target="_blank" rel="noopener noreferrer">vertical-align</a>
     <a href="https://developer.mozilla.org/ja/docs/Web/CSS/line-height" target="_blank" rel="noopener noreferrer">line-height</a>
-      <p>CLASS名NONEの装飾
+      <p>ID名#CLICK内にあるCLASS名.NONEの装飾
         <a href="https://developer.mozilla.org/ja/docs/Web/CSS/text-decoration" target="_blank" rel="noopener noreferrer">text-decoration</a>
-        を消し、CLASS名BORDERを線
+        を消し、ID名#CLICK内にあるCLASS名.BORDERを線
         <a href="https://developer.mozilla.org/ja/docs/Web/CSS/border" target="_blank" rel="noopener noreferrer">border</a>
-        で囲い、CLASS名RADIUSを角が丸い点線で囲み、影をつけるCSS</p>
+        で囲い、ID名#CLICK内にあるCLASS名.RADIUSを角が丸い点線で囲み、影をつけるCSS</p>
       <pre><code><math><![CDATA[
       #click .none {
         text-decoration:none;
@@ -112,26 +113,9 @@
   
   <i><u data-click="smoothscroll">スムーススクロール</u></i><br/>
     <div id="smoothscroll" class="open">
-      <p>ページ内リンク先へ動的に移動するスムーススクロールという仕様を実現するJavaScript</p>
+      <p>ページ内のリンク先へ動的に移動するスムーススクロールという仕様を実現するCSS</p>
       <pre><code><math><![CDATA[
-<script>
-$(function(){
-   // #で始まるアンカーをクリックした場合に処理
-   $('a[href^=#]').click(function() {
-      // スクロールの速度
-      var speed = 1000; // ミリ秒
-      // アンカーの値取得
-      var href= $(this).attr("href");
-      // 移動先を取得
-      var target = $(href == "#" || href == "" ? 'html' : href);
-      // 移動先を数値で取得
-      var position = target.offset().top;
-      // スムーススクロール
-      $('body,html').animate({scrollTop:position}, speed, 'swing');
-      return false;
-   });
-});
-</script>
+html {scroll-behavior: smooth;}
           ]]></math></code></pre>
       <hr/>
     </div>
