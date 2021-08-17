@@ -4,6 +4,7 @@ padding:2.5%;
 #demo div,
 #demo span {
 padding:2.5%;
+font-size:2rem;
 }
 #demo div {
 border: thick double;
