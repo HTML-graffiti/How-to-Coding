@@ -57,20 +57,6 @@
 </div>
 <i><u data-click="css">CSSを見る</u></i><br/>
   <div id="css" class="open">
-    <p>CSSでスタイリングを行わない場合、A要素には下線が付き、文字色は青で表示されます。<br/>
-    また、そのA要素のリンク先にすでに訪問したことがある場合、文字・下線は紫色で表示されます。</p>
-    <p>はじめに、ID名#CLICK内のA要素をフルディスプレイサイズで表示するため、
-      <a href="https://developer.mozilla.org/ja/docs/Web/CSS/display" target="_blank" rel="noopener noreferrer">display</a>
-      <a href="https://developer.mozilla.org/ja/docs/Web/CSS/width" target="_blank" rel="noopener noreferrer">width</a>
-      <a href="https://developer.mozilla.org/ja/docs/Web/CSS/height" target="_blank" rel="noopener noreferrer">height</a>
-      <a href="https://developer.mozilla.org/ja/docs/Web/CSS/margin" target="_blank" rel="noopener noreferrer">margin</a>
-      のプロパティ値を記述。<br/>
-    次に、
-    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/font-size" target="_blank" rel="noopener noreferrer">font-size</a>
-    を記述し、要素の真ん中に文字を表示するように
-    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/text-align" target="_blank" rel="noopener noreferrer">text-align</a>
-    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/line-height" target="_blank" rel="noopener noreferrer">line-height</a>
-    のプロパティ値を記述。</p>
     <pre><code><math><![CDATA[
       #click a {
         display:block;
@@ -80,9 +66,21 @@
         font-size:2rem;
         text-align:center;
         line-height:90vh;
+        color:#000;
       }
       ]]></math></code></pre>
-      <p>CLASS名の違いを明確にするため、CLASS名NONEの装飾
+    <p>ID名#CLICK内のA要素をフルディスプレイサイズで表示するCSSプロパティ
+      <a href="https://developer.mozilla.org/ja/docs/Web/CSS/display" target="_blank" rel="noopener noreferrer">display</a>
+      <a href="https://developer.mozilla.org/ja/docs/Web/CSS/width" target="_blank" rel="noopener noreferrer">width</a>
+      <a href="https://developer.mozilla.org/ja/docs/Web/CSS/height" target="_blank" rel="noopener noreferrer">height</a>
+      <a href="https://developer.mozilla.org/ja/docs/Web/CSS/margin" target="_blank" rel="noopener noreferrer">margin</a>
+      </p>
+      <p>
+    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/font-size" target="_blank" rel="noopener noreferrer">font-size</a>
+    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/text-align" target="_blank" rel="noopener noreferrer">text-align</a>
+    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/line-height" target="_blank" rel="noopener noreferrer">line-height</a>
+    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/color" target="_blank" rel="noopener noreferrer">color</a></p>
+      <p>加えて、CLASS名の違いを明確にするため、CLASS名NONEの装飾
         <a href="https://developer.mozilla.org/ja/docs/Web/CSS/text-decoration" target="_blank" rel="noopener noreferrer">text-decoration</a>
         を消し、CLASS名BORDERを線
         <a href="https://developer.mozilla.org/ja/docs/Web/CSS/border" target="_blank" rel="noopener noreferrer">border</a>
@@ -90,7 +88,7 @@
         <a href="https://developer.mozilla.org/ja/docs/Web/CSS/border" target="_blank" rel="noopener noreferrer">border</a>
         <a href="https://developer.mozilla.org/ja/docs/Web/CSS/border-radius" target="_blank" rel="noopener noreferrer">border-radius</a>
         <a href="https://developer.mozilla.org/ja/docs/Web/CSS/box-shadow" target="_blank" rel="noopener noreferrer">box-shadow</a>
-        CSSを記述</p>
+        CSS</p>
       <pre><code><math><![CDATA[
       #click .none {
         text-decoration:none;
@@ -104,7 +102,6 @@
         box-shadow: 1rem 1rem 1rem #000;
       }
     ]]></math></code></pre>
-    <p>以上がA要素とCLASS・ID属性の解説です。</p>
     <hr/>
   </div>
   
