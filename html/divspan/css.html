@@ -48,7 +48,7 @@ DIVとSPAN要素はとても似ています。<br/>
   は、一つの文章の中にある要素を「」のように区切るため、ブロックレベル要素と異なり、要素は新しい行から始まらず、上下にスペースを作りません。<br/>
   <i><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/span" target="_blank" rel="noopener noreferrer">SPAN要素</a>
   のデフォルトは display:inline; です。</i></p>
-  <p>※block では指定できる、要素の大きさ 幅（width）と高さ（height）、文字の位置（text-align・vertical-align）などの指定が、inlineでは出来ません。</p>
+  <p><i>※block では指定できる、要素の大きさ 幅（width）と高さ（height）、文字の位置（text-align・vertical-align）などの指定が、inlineでは出来ません。</i></p>
 <br/>
   <p><b>display:inline-block;</b>
   は、新しい行から始まらず、前後にスペースを作らないinlineと同じ表示方法で、ブロック要素と同じようにCSSプロパティを加えることができるディプレイプロパティ値です。<br/>
@@ -97,15 +97,10 @@ DIVとSPAN要素はとても似ています。<br/>
 <hr/>
 <div id="css" class="open">
 <p><a href="style.css" target="_blank" rel="noopener noreferrer">style.css</a></p>
-<p>これは、DIVとSPAN要素を羅列したHTMLです。</p>
 <pre><code><math><![CDATA[
   span {
     font-size:1rem;
     border:solid 1px;
-  }
-  .both {
-    color:#fff;
-    background:#000;
   }
   .pc {
     color:green;
@@ -134,7 +129,7 @@ DIVとSPAN要素はとても似ています。<br/>
     }
   }
 ]]></math></code></pre>
-<p>CLASS名「.both」要素の背景色は黒・文字色は白
+<p>CLASS名「.both」要素の背景色・文字色はJavaScriptによりランダム生成
 <br/>CLASS名「.pc」要素の背景色は緑・文字色は黄
 <br/>CLASS名「.mobile」要素の背景色は赤・文字色は青
 <br/>にスタイリングしています。</p>
