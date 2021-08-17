@@ -40,10 +40,50 @@ $("#library").load("library.html");
 <p>代表的なテキスト要素を並べた<a href="/coding/html/text/hello.html">HTML</a>のフォントをスタイリングする<u data-click="CSS">CSS</u>を解説します。</p>
 <div id="CSS" class="open">
 <div id="library"></div>
-<pre><code><math><![CDATA[
- CSS
+
+<p>要素のフォントファミリ名・総称ファミリ名を<u data-click="font-family">font-family</u>で指定します。</p>
+<div id="font-family" class="open">
+<p>要素名 {font-family:"フォントファミリ名",総称フォント名;}<br/>
+のように要素ごとのフォントをCSSを記述します。</p>
+<p>複数の要素に同じスタイリングを指定する／代替フォントを指定する場合は<br/>
+要素名,要素名 {font-family:"フォントファミリ名","フォントファミリ名",総称フォント名;}<br/>
+のように , で要素名／フォント名を区切り、連続して要素名／フォント名を記述。（最後の要素名／フォント名のあとに , をつけるとCSSが動作しません。最後の要素名／フォント名のあとには , をつけないように注意しましょう。）</p>
+例<pre><code><math><![CDATA[
+p {font-family: "Arial", serif;}
+h1, h2, b, s, strong {font-family: "Open Sans", "Fira Sans", "Lucida Sans", "Lucida Sans Unicode", "Trebuchet MS", "Liberation Sans", "Nimbus Sans L", sans-serif;}
+h3, h4, i, samp, sub {font-family: "Brush Script MT", "Brush Script Std", "Lucida Calligraphy", "Lucida Handwriting", "Apple Chancery", cursive;}
+h5, h6, q, small, sup {font-family: Papyrus, Herculanum, Party LET, Curlz MT, Harrington, fantasy;}
+u {font-family: monospace;}
 ]]></math></code></pre>
+
+<div id="main">
+<p>Tools</p>
+<p><a href="https://mimi.moe.in/nmp/fonts/allfonts">全標準フォント一覧</a></p>
 </div>
+<p>Mac・Windowsの標準フォントファミリ一覧できるウェブサイトです。<br/>
+OSごとの表示の違いも確認できるので、とても便利です。</p>
+</div>
+<div id="hello">
+<p>
+<!--
+<a href="___">___.css</a>
+-->
+主な総称ファミリ名
+<u data-click="serif">serif</u>
+<span id="serif" class="open">明朝体（終わりが止めや払い、または実際の活字のセリフの形をした角を持つ字形です。）</span>
+<u data-click="sans-serif">sans-serif</u>
+<span id="sans-serif" class="open">ゴシック体（平たい角の端を持つ字形です。）</span>
+<u data-click="cursive">cursive</u>
+<span id="cursive" class="open">筆記体（続け書き、もしくは、イタリック体の特性以上に、その他の筆記体の特性があります。）</span>
+<u data-click="fantasy">fantasy</u>
+<span id="fantasy" class="open">fantasy フォントは、遊び心に溢れた文字表現を含む、主として装飾的なフォントです。</span>
+<u data-click="monospace">monospace</u>
+<span id="monospace" class="open">すべての字が同じ幅を持つ字形です。</span>
+</p>
+</div>
+
+</div>
+
 </div>
 </div>
 </body>
