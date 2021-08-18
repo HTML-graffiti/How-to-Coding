@@ -31,6 +31,8 @@ html,body {
   margin:1.25% 2.5%;
   width:90%;
 }
+#form button
+{font-size:1.5rem;}
 #form textarea {height:20rem;}
 #form button,
 #form select,
