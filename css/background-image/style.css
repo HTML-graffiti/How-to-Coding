@@ -14,6 +14,11 @@ body {
   top: 50%; left: 50%;
   animation: 3s ease-in 1.5s reverse both running fontout;
 }
+.cover h1 u {
+  font-size:75%;
+  display:inline-block;
+  padding:2.5vw 0;
+}
 
 @keyframes slidein {
   from {height: 55vw; max-height:100vh;}
@@ -44,33 +49,8 @@ body {
 .wide {
   min-height:55vw;
 }
-h1 u {
-  font-size:75%;
-  display:inline-block;
-  padding:2.5vw 0;
-}
 .wide {
   font-family:monospace;
-}
-.wide h1 {
-  font-size:4.5vw;
-  margin:0; padding:2.5vw;
-}
-.wide p {
-  font-size:2.5vw;
-  margin:0; padding:0 2.5vw;
-}
-.wide a {
-  color:#000;
-  background:#fff;
-  font-weight:900;
-  text-decoration:none;
-}
-.wide a:hover {
-  filter: invert(1);
-}
-.wide h1 a {
-  font-size:200%;
 }
 .cover .left,
 .cover .right {
@@ -121,4 +101,37 @@ h1 u {
 .cover,
 .wide {
   background-size: cover;
+}
+#infomation iframe {
+  position: absolute;
+  z-index: 0;
+  border:none;
+  top:0; left:0;
+  width:100%;
+  height:100%;
+}
+#infomation h1 {
+  z-index:1;
+  font-size:3vw;
+  position: absolute;
+  width:75%;
+  margin:0; padding:0;
+  top: 50%; left: 50%;
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+}
+#infomation p {
+  font-size:2.5vw;
+  margin:0; padding:0 2.5vw;
+}
+#infomation a {
+  font-size:75%;
+  color:#000;
+  background-color:rgba(255,255,255,0.75);
+  font-weight:500;
+  border-bottom:2px solid;
+  text-decoration:none;
+}
+#infomation a:hover {
+  filter: invert(1);
 }
