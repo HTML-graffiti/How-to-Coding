@@ -11,6 +11,7 @@
   .grayscale {
   filter: grayscale(100%);
   transition:.5s all;
+  transform-origin: left;
   }
   .sepia {
   filter: sepia(100%);
@@ -19,6 +20,7 @@
   .contrast {
   filter: contrast(500%);
   transition:.5s all;
+  transform-origin: right;
   }
   .grayscale:hover {
   filter: grayscale(0%);
