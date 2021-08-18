@@ -112,12 +112,9 @@ CSS<br/>
   開始タグ内に controls と記述するとコントロールインターフェイスが表示されます。<br>
   その他にも、自動再生 autoplay、繰り返し loop、ミュート muted、全画面表示禁止 playsinlineなどの属性をつけることができます。</p>
   <pre><code><math><![CDATA[
-<video loop autoplay muted>
-  <source src="https://praytimes.pe.hu/img/inn.mov">
-  Sorry, your browser doesn't support embedded videos.
-</video>
+<video src="http://vg.pe.hu/jp/dm/pr/sample.mov" loop autoplay muted></video>
 
-<audio autoplay loop>
+<audio controls>
   <source src="http://la.chottocrazy.pe.hu/collection/female%201.mp3" type="audio/mp3">
   Sorry, your browser doesn't support embedded Audios.
 </audio>
@@ -160,6 +157,57 @@ CSS<br/>
 <a href="https://developer.mozilla.org/ja/docs/Web/CSS/margin">margin</a>
 <a href="https://developer.mozilla.org/ja/docs/Web/CSS/transform">transform</a>
 <a href="https://developer.mozilla.org/ja/docs/Web/CSS/transform-function">transform-function</a>
+</p>
+<hr/>
+</div>
+
+<p>HTML ページに他のページを埋め込む <u data-click="iframe">iframeとobject</u> 要素 と <u data-click="object">CSS</u></p>
+<div id="iframe" class="open">
+  <p></p>
+  <pre><code><math><![CDATA[
+<iframe src="http://newlifecollection.pe.hu/sign/">
+  Sorry, your browser doesn't support embedded iframe.
+</iframe>
+
+<object data="http://goout.pe.hu/relax/essay.pdf" type="application/pdf" typemustmatch>
+  Sorry, your browser doesn't support embedded odject.
+</object>
+  ]]></math></code></pre>
+  <p>???</p>
+</div>
+<div id="img_css" class="open">
+  <p>???</p>
+  <pre><code><math><![CDATA[
+  iframe {
+  width:75%;
+  margin:auto;
+  }
+  
+  object {
+  width:100%;
+  height:100vh;
+  }
+  ]]></math></code></pre>
+  <p>???</p>
+</div>
+<div id="main">
+<p>HTML の画像</p>
+<p>
+<a href="https://developer.mozilla.org/ja/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML">Images　in　HTML</a>
+</p>
+</div>
+<div id="hello">
+<p>
+HTML<br/>
+<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/img">img</a>
+</p>
+<p>
+CSS<br/>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/width">width</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/position">position</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/z-index">z-index</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/filter">filter</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/transition">transition</a>
 </p>
 <hr/>
 </div>
