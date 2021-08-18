@@ -29,7 +29,7 @@
   transition:.5s all;
   }
   .contrast:hover {
-  filter: contrast(0%);
+  filter: contrast(100%);
   transition:.5s all;
   }
 
