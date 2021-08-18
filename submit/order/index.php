@@ -83,6 +83,16 @@ if( !empty($_POST['btn_confirm']) ) {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <style type="text/css">
+@font-face {
+  font-family: "NewYork";
+  src: url("/coding/fontbook/NewYork.otf");
+}
+@font-face {
+  font-family: "ipaexm";
+  src: url("http://creative-community.pe.hu/coding/fontbook/family/IPAex/ipaexm.ttf");
+}
+html, .reset-button {font-family:"NewYork", "ipaexm", serif;}
+
 #contents #main {font-size:2.5vw;}
 #contents #main p {width:auto; display:block;}
 #contents #confirm {
