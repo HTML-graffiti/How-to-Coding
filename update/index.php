@@ -53,6 +53,11 @@ $(function(){
 <link rel="stylesheet" href="/coding/submit/org/book.css"/>
 <link rel="stylesheet" href="/coding/css/radius.css"/>
 <style type="text/css">
+@font-face {
+  font-family: "NewYork";
+  src: url("/coding/fontbook/NewYork.otf");
+}
+#header {font-family:"NewYork";}
 .list #done {
   zoom:1.5;
   padding:1rem 1.25rem;
