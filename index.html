@@ -16,7 +16,7 @@ $(function(){
 });
 
 $(function(){
-    $("#hello").load("/coding/hello.html");
+    $("#greeting").load("/coding/hello.html");
     $("#update").load("/coding/update/about.html");
 		$("#top_basic").load("/coding/workshop/top.html");
 		$("#html").load("/coding/html/link.html");
@@ -57,8 +57,9 @@ $(function(){
 #mobile {display:none;}
 
 @media screen and (max-width: 500px){
-#left #hello,
-#left #top_basic,
+#left #greeting,
+#left #contents,
+#right #update,
 #right #hello,
 #right #css,
 #right #order {display:none;}
@@ -78,14 +79,16 @@ $(function(){
 <h1 id="title">How to Coding | creative-community.pe.hu</h1>
 <div id="cover">
 <div id="left">
-<div id="hello"></div>
+<div id="greeting"></div>
+<div id="contents">
 <div id="top_basic"></div>
+</div>
 <div id="mobile"></div>
 </div>
 <div id="right">
+<div id="update"></div>
 <div id="contents">
 <div id="hello">
-<div id="update"></div>
 <div id="html"></div>
 <div id="css"></div>
 </div>
