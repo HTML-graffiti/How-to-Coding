@@ -17,4 +17,4 @@ h1, h2, strong {font-stretch:50%; font-variant: normal;}
 h3, h4, samp, sub {font-stretch:75%; font-variant: small-caps common-ligatures tabular-nums;}
 h5, h6, q, small, sup {font-stretch:125%; font-variant: all-small-caps no-common-ligatures oldstyle-nums;}
 
-#demo {padding:5% 5% 0;}
+#demo {padding:10% 10% 0;}
