@@ -47,7 +47,7 @@ $(function() {
 });
 
 $(function(){
-    $("#howto").load("/coding/update/about.html");
+    $("#").load("");
 })
 </script>
 <link rel="stylesheet" href="/coding/submit/org/book.css"/>
@@ -141,6 +141,5 @@ html, .reset-button {font-family:"NewYork", "ipaexm", serif;}
 </li>
 <?php endif; ?>
 </ul>
-<div id="howto"></div>
 </body>
 </html>
