@@ -90,7 +90,19 @@ if( !empty($_POST['btn_confirm']) ) {
   font-family: "ipaexm";
   src: url("http://creative-community.pe.hu/coding/fontbook/family/IPAex/ipaexm.ttf");
 }
-html, .reset-button {font-family:"NewYork", "ipaexm", serif;}
+html,
+#form input[type="date"],
+#form input[type="name"],
+#form input[type="text"],
+#form input[type="url"],
+#form input[type="email"],
+#form input[type="reset"],
+#form input[type="password"],
+#form input[type="submit"],
+#form textarea,
+#form button,
+#form select,
+#form .radio {font-family:"NewYork", "ipaexm", serif;}
 
 #contents #main {font-size:2.5vw;}
 #contents #main p {width:auto; display:block;}
