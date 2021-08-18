@@ -1,6 +1,6 @@
 
   img {width:30%;}
-  img:hover {width:100%;}
+  img:hover {transform: scale(3);}
   
   .grayscale {
   filter: grayscale(100%);
