@@ -45,10 +45,17 @@
   <p>加えて、画像に異なる視覚効果を加えるため、CLASS名をつけています。</p>
 </div>
 <div id="img_css" class="open">
-  <p>3つの画像を横並びに表示するように画像の幅を33%に指定</p>
+  <p>3つの画像を横並びに表示するように画像の幅を30%に指定<br/>
+  position・z-index・transformプロパティでホバー時に画像サイズ／重ね順が変化するCSSを記述します。</p>
   <pre><code><math><![CDATA[
-  img {width:30%;}
-  img:hover {width:100%;}
+  img {
+    width:30%;
+    position:relative;
+}
+  img:hover {
+    z-index:10;
+    transform: scale(2.5);
+}
   
   .grayscale {
   filter: grayscale(100%);
@@ -71,11 +78,11 @@
   transition:.5s all;
   }
   .contrast:hover {
-  filter: contrast(0%);
+  filter: contrast(100%);
   transition:.5s all;
   }
   ]]></math></code></pre>
-  <p>filterプロパティとtransitionプロパティで視覚効果アニメーションをスタイリングします。</p>
+  <p>加えて、filter・transitionプロパティで視覚効果アニメーションをスタイリングします。</p>
 </div>
 <div id="main">
 <p>HTML の画像</p>
@@ -91,20 +98,22 @@ HTML<br/>
 <p>
 CSS<br/>
 <a href="https://developer.mozilla.org/ja/docs/Web/CSS/width">width</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/position">position</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/z-index">z-index</a>
 <a href="https://developer.mozilla.org/ja/docs/Web/CSS/filter">filter</a>
 <a href="https://developer.mozilla.org/ja/docs/Web/CSS/transition">transition</a>
 </p>
 <hr/>
 </div>
 
-<p>動画と音声を埋め込む <u data-click="img">HTML</u> と スタイリングする <u data-click="img_css">CSS</u></p>
-<div id="img" class="open">
+<p>動画と音声を埋め込む <u data-click="video">HTML</u> と スタイリングする <u data-click="audio">CSS</u></p>
+<div id="video" class="open">
   <p>動画埋め込み要素 VIDEO・埋め込み音声要素 AUDIO の src 属性の中に表示したいメディアへのパスを含めます。<br/>
   開始タグ内に controls と記述するとコントロールインターフェイスが表示されます。<br>
   その他にも、自動再生 autoplay、繰り返し loop、ミュート muted、全画面表示禁止 playsinlineなどの属性をつけることができます。</p>
   <pre><code><math><![CDATA[
-<video controls autoplay loop muted playsinline>
-  <source src="https://praytimes.pe.hu/img/inn.mov" type="video/mov">
+<video loop autoplay muted>
+  <source src="https://praytimes.pe.hu/img/inn.mov">
   Sorry, your browser doesn't support embedded videos.
 </video>
 
@@ -114,7 +123,7 @@ CSS<br/>
 </audio>
   ]]></math></code></pre>
 </div>
-<div id="img_css" class="open">
+<div id="audio" class="open">
   <p>動画と音声の幅を40%に指定し、中央に揃うよう要素の外側に空白を追加します。</p>
   <pre><code><math><![CDATA[
   video,
