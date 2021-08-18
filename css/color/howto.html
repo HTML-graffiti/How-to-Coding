@@ -155,31 +155,31 @@ filter: invert(75%);
 <p>JavaScript</p>
 <p><a href="/coding/js/randomrgba.js">randomrgba.js</a></p>
 </div>
-  <i><u data-click="js">ページを更新するごとにランダムで色が変化するJavaScript</u></i><br/>
-    <div id="js" class="open">
-      <p>JavaScriptについてはまだ勉強中で、説明するほど理解できていません。</p>
-      <pre><code><math><![CDATA[
-        function getRumRgba(){
-          var clr = 'rgba(';
-          for(i=0; i < 3; i++){
-            clr = clr + Math.floor( Math.random()*255) + ',';
-          }
-          clr = clr + Math.floor( Math.random()*10)/10 + ')';
-          return clr;
-        }
-        ]]></math></code></pre>
-        <p>色コードをRGBで指定し、1から255までの数字をランダムで生成し、</p>
-        <pre><code><math><![CDATA[
-          $(function(){
-            jQuery('要素').css({'background':getRumRgba()});
-          });
-          
-          $(function(){
-            jQuery('要素').css({'color':getRumRgba()});
-          })
-          ]]></math></code></pre>
-      <p>指示した要素の背景色／文字色をスタイリングしています。</p>
-    </div>
+<i><u data-click="js">ページを更新するごとにランダムで色が変化するJavaScript</u></i><br/>
+<div id="js" class="open">
+<p>JavaScriptについてはまだ勉強中で、説明するほど理解できていません。</p>
+<pre><code><math><![CDATA[
+function getRumRgba(){
+var clr = 'rgba(';
+for(i=0; i < 3; i++){
+clr = clr + Math.floor( Math.random()*255) + ',';
+}
+clr = clr + Math.floor( Math.random()*10)/10 + ')';
+return clr;
+}
+]]></math></code></pre>
+<p>色コードをRGBで指定し、1から255までの数字をランダムで生成し、</p>
+<pre><code><math><![CDATA[
+$(function(){
+jQuery('要素').css({'background':getRumRgba()});
+});
+
+$(function(){
+jQuery('要素').css({'color':getRumRgba()});
+})
+]]></math></code></pre>
+<p>指示した要素の背景色／文字色をスタイリングしています。</p>
+</div>
 </div>
 </div>
 </body>
