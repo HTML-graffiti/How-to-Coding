@@ -78,7 +78,6 @@ if( !empty($_POST['btn_confirm']) ) {
 <title>Contact | creative-community.pe.hu</title>
 <link rel="stylesheet" href="/coding/hello/about.css"/>
 <link rel="stylesheet" href="/coding/submit/form.css"/>
-<link rel="stylesheet" href="/coding/fontbook/css/fontmotion.css"/>
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
