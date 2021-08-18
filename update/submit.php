@@ -46,7 +46,7 @@ $("#").load("");
   src: url("http://creative-community.pe.hu/coding/fontbook/family/IPAex/ipaexm.ttf");
 }
 
-html {font-family:"NewYork", "ipaexm", serif;}
+html, button {font-family:"NewYork", "ipaexm", serif;}
 </style>
 </head>
 <body>
