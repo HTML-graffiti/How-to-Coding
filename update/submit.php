@@ -41,7 +41,12 @@ $("#").load("");
   font-family: "NewYork";
   src: url("/coding/fontbook/NewYork.otf");
 }
-#header {font-family:"NewYork";}
+@font-face {
+  font-family: "ipaexm";
+  src: url("http://creative-community.pe.hu/coding/fontbook/family/IPAex/ipaexm.ttf");
+}
+
+html {font-family:"NewYork", "ipaexm", serif;}
 </style>
 </head>
 <body>
