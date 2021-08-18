@@ -57,7 +57,7 @@ $(function(){
   font-family: "NewYork";
   src: url("/coding/fontbook/NewYork.otf");
 }
-#header {font-family:"NewYork";}
+#header, #org {font-family:"NewYork";}
 .list #done {
   zoom:1.5;
   padding:1rem 1.25rem;
