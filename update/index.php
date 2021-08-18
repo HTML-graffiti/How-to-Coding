@@ -57,7 +57,11 @@ $(function(){
   font-family: "NewYork";
   src: url("/coding/fontbook/NewYork.otf");
 }
-#header, #org {font-family:"NewYork";}
+@font-face {
+  font-family: "ipaexm";
+  src: url("http://creative-community.pe.hu/coding/fontbook/family/IPAex/ipaexm.ttf");
+}
+html {font-family:"NewYork", "ipaexm", serif;}
 .list #done {
   zoom:1.5;
   padding:1rem 1.25rem;
