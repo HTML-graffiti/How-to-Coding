@@ -37,6 +37,11 @@ $("#").load("");
 </script>
 <link rel="stylesheet" href="/coding/submit/org/book.css"/>
 <style type="text/css">
+@font-face {
+  font-family: "NewYork";
+  src: url("/coding/fontbook/NewYork.otf");
+}
+#header {font-family:"NewYork";}
 </style>
 </head>
 <body>
