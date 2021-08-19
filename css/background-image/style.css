@@ -3,18 +3,18 @@ body {
   padding:0; margin:0;
 }
 
-.cover {
+#cover {
   max-height:100vh;
   animation: 3s ease-in 1.5s reverse both running slidein;
 }
-.cover h1 {
+#cover h1 {
   font-size:3vw;
   position: absolute;
   margin:0; padding:0;
   top: 50%; left: 50%;
   animation: 3s ease-in 1.5s reverse both running fontout;
 }
-.cover h1 u {
+#cover h1 u {
   font-size:75%;
   display:inline-block;
   padding:2.5vw 0;
@@ -35,7 +35,7 @@ body {
   }
 }
 
-.cover,
+#cover,
 .wide {
   position: relative;
   clear:both;
@@ -52,16 +52,16 @@ body {
 .wide {
   font-family:monospace;
 }
-.cover .left,
-.cover .right {
+#cover .left,
+#cover .right {
   font-size:2vw;
   padding:1.25vw;
 }
-.cover .left {
+#cover .left {
   float:left;
   text-align:left;
 }
-.cover .right {
+#cover .right {
   float:right;
   text-align:right;
 }
@@ -98,7 +98,7 @@ body {
 .triple,
 .square,
 .double,
-.cover,
+#cover,
 .wide {
   background-size: cover;
 }
