@@ -121,10 +121,6 @@ body {
   -webkit-transform:translate(-50%,-50%);
   transform:translate(-50%,-50%);
 }
-#infomation p {
-  font-size:2.5vw;
-  margin:0; padding:0 2.5vw;
-}
 #infomation a {
   font-size:75%;
   color:#000;
@@ -135,4 +131,10 @@ body {
 }
 #infomation a:hover {
   filter: invert(1);
+}
+#infomation span {
+  font-size:55%;
+  display:block;
+  margin-top:1rem; padding:2.5%;
+  border:2px solid;
 }
