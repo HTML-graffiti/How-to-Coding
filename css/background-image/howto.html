@@ -1,69 +1,269 @@
+<html lang="ja">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <style type="text/css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/coding/hello/about.css"/>
+<link rel="stylesheet" href="/coding/hello/close_open.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/coding/hello/open_close.js"></script>
 
-    .cover {
-      font-family: "Yu Gothic UI";
-      background:#fff;
-    }
-    .cover h1 {
-      text-shadow:0 0 0.5vw #fff;
-      color:#000;
-      font-family:monospace;
-    }
+<title> background-image:url(); | Cascading Style Sheets </title>
+<style type="text/css">
+  pre, code {
+    display:block;
+    width:100%;
+    font-size:0.55vw;
+    overflow-x:auto;
+  }
+  #contents {
+    width:90%;
+    margin: auto;
+    font-size:1vw;
+  }
+  #contents #hello {
+    font-size:2vw;
+  }
+@media screen and (max-width: 500px){
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+$("#library").load("library.html");
+})
+</script>
+</head>
+<body>
+<div id="contents">
+<div id="hello">
+<p><u data-click="template">ウェブテンプレート</u></p>
+<p><a href="hello.html">Sample</a></p><br/>
+<p>CSSプロパティ background-image:url(); を使って、要素の背景に横長・縦長・正方形の画像を埋め込み、ダウンロードされづらいフォトアルバムページを作る</p>
 
-    .double {
-      background-image:url(img/double.jpg);
-    }
-    .triple {
-      background-image:url(img/triple.jpg);
-    }
-    .square {
-      background-image:url(img/wide.jpg);
-    }
-    .one {
-      background-image:url(img/wide.jpg);
-    }
-  
-  </style>
-  <link rel="stylesheet" type="text/css" href="http://creative-community.pe.hu/coding/css/background-image/style.css" />
-  <title>background-image:url();</title>
-  </head>
-  <body>
-  <div class="cover">
-    <span class="left">ウェブテンプレート<br/>写真日記</span>
-    <span class="right">ダウンロード<br/>会員限定</span>
-    <h1><u>Web Template</u><br/>
-      . {<br/>
-      background-image:url();<br/>
-      }
-    </h1>
-  </div>
-  <div class="full">
-    <span class="square"></span>
-    <span class="square"></span>
-  </div>
-  <div class="height">
-    <span class="double"></span>
-    <span class="double"></span>
-  </div>
-  <div class="height">
-    <span class="triple"></span>
-    <span class="triple"></span>
-    <span class="triple"></span>
-  </div>
-  <div class="wide">
-    <h1><u>ウェブテンプレート</u></h1>
-    <p>CSSを使って要素の背景に画像をスタイリングし、フォトアルバムのようなウェブページを作るテンプレートを制作しました。</p>
-    <p>正方形・縦長・横長の３パターンで画像を表示し、積み木のように積み上がっていくようにスタイリングしました。</p>
-    <p>加えて、クラス名COVER要素に、幕のように上がるアニメーションCSS（パソコンフルサイズでは動作しません）を記述しています。</p>
-    <h1><u>Members Only</u><br/><a href="http://newlifecollection.pe.hu/members/webtemplate/background-image.zip">Download</a></h1>
-    <p>Index.htmlのHead内と、Body内を編集し、ページに表示する画像を指定しご使用ください。</p>
-    <p>※ CSSの基本は、ウェブページ「<a href="http://creative-community.pe.hu/coding/css/">CSSの基本</a>」をご参照ください。</p>
-    <h1>テンプレートのダウンロードには会員制ウェブサイト<a href="http://newlifecollection.pe.hu/">ニューライフコレクション</a>のIDとPasswordが必要となります。<br/>
-    ※ ニューライフコレクションへの入会は無料です。上記リンク先よりお気軽にご入会ください。</h1>
-  </div>
-  <div class="wide one"></div>
-  </body>
+<div id="template" class="open">
+<p>このテンプレートは、<u data-click="html">index.html</u>・<u data-click="css">style.css</u>の2つのファイルで構成されます。<br/>
+<i>※ ウェブページに表示する画像は、それぞれにご用意ください。</i></p>
+<div id="html" class="open">
+<p>独自ページを制作するために編集が必要な箇所は、<u data-click="head">HEAD</u>・<u data-click="cover">CLASS="COVER"</u>・<u data-click="infomation">ID="INFOMATION"</u> の3箇所です。</p>
+<div id="head" class="open">
+<p>HEAD要素内の以下の部分を編集し、ページタイトル・ページに表示する画像、フォントなどを編集します。</p>
+<pre><code><i>HEAD</i><math><![CDATA[
+<meta name="description" content="ページの説明">
+<title>ページタイトル</title>
+<style type="text/css">
+
+.cover {
+font-family: "フォントファミリ名";
+}
+.cover h1 {
+text-shadow:0 0 0.5vw #fff;
+color:#000;
+font-family: "フォントファミリ名";
+}
+
+#infomation h1 {
+text-shadow:0 0 0.5vw #000;
+color:#fff;
+font-family: "フォントファミリ名";
+}
+#infomation span {
+text-shadow:0 0 0.5vw #000;
+box-shadow:0 0 0.5vw #000;
+}
+
+.one {background-image:url(画像URL);}
+.two {background-image:url(画像URL);}
+.three {background-image:url(画像URL);}
+.four {background-image:url(画像URL);}
+.five {background-image:url(画像URL);}
+.six {background-image:url(画像URL);}
+.seven {background-image:url(画像URL);}
+.eight {background-image:url(画像URL);}
+</style>
+]]></math></code></pre>
+</div>
+
+<div id="cover" class="open">
+<p>ページ最上部に表示する情報を記述します。</p>
+<pre><code><i>CLASS="COVER"</i><math><![CDATA[
+<div class="cover one">
+<span class="left">span class="left"</span>
+<span class="right">span class="right"</span>
+<h1><u>サブタイトル</u><br/>
+. {<br/>
+タイトル<br/>
+}
+</h1>
+</div>
+]]></math></code></pre>
+<br/>
+</div>
+<div id="infomation" class="open">
+<p>ページ最下部に表示する情報を記述します。</p>
+<pre><code><i>ID="INFOMATION"</i><math><![CDATA[
+<div id="infomation" class="wide">
+<h1>#INFOMATION H1<br/>
+<a href="">A</a><br/>
+<span>SPAN</span></h1>
+<iframe src=""></iframe>
+</div>
+]]></math></code></pre>
+</div>
+
+</div>
+
+<div id="css" class="open">
+<p>INDEX.HTML に <a href="http://creative-community.pe.hu/coding/css/background-image/style.css">STYLE.CSS</a> をリンクし、ページをスタイリングします。<br/>
+<i>※ STYLE.CSS の編集は必要ありません。INDEX.HTMLと同じリポジトリ（フォルダ）に STYLE.CSS STYLE.CSS を公開しご使用ください。</i></p>
+<pre><code><i>STYLE.CSS</i><math><![CDATA[
+body {
+  font-family:monospace;
+  padding:0; margin:0;
+}
+
+.cover {
+  max-height:100vh;
+  animation: 3s ease-in 1.5s reverse both running slidein;
+}
+.cover h1 {
+  font-size:3vw;
+  position: absolute;
+  margin:0; padding:0;
+  top: 50%; left: 50%;
+  animation: 3s ease-in 1.5s reverse both running fontout;
+}
+.cover h1 u {
+  font-size:75%;
+  display:inline-block;
+  padding:2.5vw 0;
+}
+
+@keyframes slidein {
+  from {height: 55vw; max-height:100vh;}
+  to   {height: 100vh;}
+}
+@keyframes fontout {
+  from {
+  -webkit-transform:translate(-50%,-50%) scale(1, 1.5);
+  transform:translate(-50%,-50%) scale(1, 1.5);
+  }
+  to   {
+  -webkit-transform:translate(-50%,-50%) scale(1,2.5);
+  transform:translate(-50%,-50%) scale(1,2.5);
+  }
+}
+
+.cover,
+.wide {
+  position: relative;
+  clear:both;
+  padding:0;
+  margin:0;
+  width:100%;
+}
+.cover {
+  height:55vw;
+}
+.wide {
+  min-height:55vw;
+}
+.wide {
+  font-family:monospace;
+}
+.cover .left,
+.cover .right {
+  font-size:2vw;
+  padding:1.25vw;
+}
+.cover .left {
+  float:left;
+  text-align:left;
+}
+.cover .right {
+  float:right;
+  text-align:right;
+}
+.square {
+  float:left;
+  width:50%;
+  height:50vw;
+  margin:0; padding:0;
+}
+.height {
+  float:left;
+  width:50%;
+  margin:0; padding:0;
+}
+.double {
+  display:block;
+  width:100%;
+  height:75vw;
+  margin:0; padding:0;
+}
+.triple {
+  display:block;
+  width:100%;
+  height:50vw;
+  margin:0; padding:0;
+}
+
+.cover,
+.height span,
+.full span,
+.wide {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.triple,
+.square,
+.double,
+.cover,
+.wide {
+  background-size: cover;
+}
+#infomation iframe {
+  position: absolute;
+  z-index: 0;
+  border:none;
+  top:0; left:0;
+  width:100%;
+  height:100%;
+}
+#infomation h1 {
+  z-index:1;
+  font-size:3vw;
+  position: absolute;
+  width:75%;
+  margin:0; padding:0;
+  top: 50%; left: 50%;
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+}
+#infomation a {
+  font-size:75%;
+  color:#000;
+  background-color:rgba(255,255,255,0.75);
+  font-weight:500;
+  border-bottom:2px solid;
+  text-decoration:none;
+}
+#infomation a:hover {
+  filter: invert(1);
+}
+#infomation span {
+  font-size:55%;
+  display:block;
+  margin-top:1rem; padding:2.5%;
+  border:2px solid;
+}
+
+]]></math></code></pre>
+</div>
+
+</div>
+
+</div>
+</div>
+</body>
+</html>
