@@ -72,7 +72,7 @@ html, .reset-button {font-family:"NewYork", "ipaexm", serif;}
 #bg_link {
   position:fixed;
   z-index:100;
-  bottom:0;
+  top:0;
   right:0;
   color:#000;
   line-height:1.5rem;
@@ -100,7 +100,6 @@ print "".date("m.d.y H:i",$mod);
 </i></span>
 
 <div id="header">
-<a href="/coding/update/">Update</a>
 <a href="/coding/">How to Coding</a>
 </div>
 
