@@ -69,9 +69,36 @@ html, .reset-button {font-family:"NewYork", "ipaexm", serif;}
 .list li span {
   animation:2s ease-in infinite fontmotion;
 }
+#bg_link {
+  position:fixed;
+  z-index:100;
+  bottom:0;
+  right:0;
+  color:#000;
+  line-height:1.5rem;
+  letter-spacing:.1rem;
+  font-family:"NewYork", "ipaexm", serif;
+  font-size:0.9rem;
+  text-decoration:none;
+  display:inline-block;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+	transition:.5s all;
+}
+#bg_link i {padding:0.5rem 0.25rem;}
 </style>
 </head>
 <body>
+
+<span id="bg_link">
+Update <i>
+<?php
+$mod = filemtime("index.csv");
+date_default_timezone_set('Asia/Tokyo');
+print "".date("m.d.y H:i",$mod);
+?>
+</i></span>
+
 <div id="header">
 <a href="/coding/update/">Update</a>
 <a href="/coding/">How to Coding</a>
