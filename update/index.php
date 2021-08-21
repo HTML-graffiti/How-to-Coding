@@ -77,6 +77,7 @@ html, .reset-button {font-family:"NewYork", "ipaexm", serif;}
   color:#000;
   line-height:1.5rem;
   letter-spacing:.1rem;
+  padding:0.5rem 0.25rem;
   font-family:"NewYork", "ipaexm", serif;
   font-size:0.9rem;
   text-decoration:none;
