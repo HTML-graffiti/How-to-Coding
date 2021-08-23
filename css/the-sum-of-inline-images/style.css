@@ -71,6 +71,7 @@ a:hover {
 #hello a {
   text-decoration: none;
 }
+#contents u,
 #hello u {
   text-decoration: none;
   white-space: nowrap;
