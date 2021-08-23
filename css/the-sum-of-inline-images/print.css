@@ -12,9 +12,8 @@
   }
 #contents h1 i {
     position:absolute;
-    height: 90vh;
     top:1.25vw;
-    right:12.5vw;
+    right:0;
     display: inline-block;
     font-size: 4.5vw;
     font-family: "Great Vibes", cursive;
