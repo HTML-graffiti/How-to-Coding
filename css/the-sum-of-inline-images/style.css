@@ -100,3 +100,37 @@ a:hover {
 #credit a {
   text-decoration: underline dotted;
 }
+
+
+@media screen and (max-width: 750px){
+    #hello {
+      position: relative;
+      z-index: 1;
+      width: 90%;
+      padding: 0 5% 15vw;
+      font-size: 2rem;
+      line-height: 200%;
+      font-weight: 500;
+    }
+    #hello u {
+      padding:0.25rem 1rem;
+      border-radius: 2rem;
+    }
+    #hello .link {
+      font-family: "Times New Roman", Symbol;
+      font-size: 110%;
+      font-style: oblique 45deg;
+    }
+    #hello .image {
+      height: 2rem;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+      display: inline-block;
+      transition: all 0.5s ease-out;
+      transform: scale(1.5);
+    }
+  #hello .image:hover {
+    transform: scale(2.5);
+    transform-origin: center;
+  }
+    }
