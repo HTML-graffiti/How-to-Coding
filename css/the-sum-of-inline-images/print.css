@@ -20,4 +20,10 @@
     font-weight: 555;
     transform: scale(1, 4.5);
   }
+  .print_only {display: none;}
+    
+  @media print {
+  .print_only {display: block;}
+  .no_print {display: none;}
+  }
   
