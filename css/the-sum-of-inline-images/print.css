@@ -13,6 +13,7 @@
   }
 #contents h1 i {
     position:absolute;
+    height: 100%;
     top:1.25vw;
     right:12.5vw;
     display: inline-block;
