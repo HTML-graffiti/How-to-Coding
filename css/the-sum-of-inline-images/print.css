@@ -10,7 +10,7 @@
   }
 #contents h1 i {
     position:fixed;
-    top:0;
+    top:1.25vw;
     right:12.5vw;
     display: inline-block;
     font-size: 4.5vw;
