@@ -5,10 +5,6 @@
 #credit {
     height: 33vw;
     margin:auto;
-    display: table-cell;
-    vertical-align: bottom;
-    text-align: justify;
-    text-align: justify-all;
   }
   #contents h1 i {
     position:absolute;
