@@ -12,6 +12,7 @@ a:hover {
 }
 #contents {
   position: relative;
+  padding-bottom: 2.5vw;
 }
 
 #contents h1,
