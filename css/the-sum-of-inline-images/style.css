@@ -65,12 +65,12 @@ a:hover {
 }
 #hello .image {
   position: relative;
-  height: 5.5vw;
-  margin-bottom: -1vw;
-  margin-left: 1.25vw;
-  margin-right: 1.25vw;
+  height: 4.5vw;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
   display: inline-block;
   transition: all 0.5s ease-out;
+  transform: scale(1.25);
 }
 #hello .image:hover {
   transform: scale(4.5);
