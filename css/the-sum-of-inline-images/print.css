@@ -1,0 +1,11 @@
+#contents {
+    height: 100vw;
+  }
+  #credit {
+    height: 33vw;
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: justify;
+    text-align: justify-all;
+  }
+  
