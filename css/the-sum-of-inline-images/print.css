@@ -4,7 +4,8 @@
   }
 #credit {
     height: 32.1vw;
-    width:100%;
+    width:95%;
+    margin:auto;
     display: table-cell;
     vertical-align: bottom;
     text-align: justify;
