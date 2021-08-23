@@ -85,7 +85,7 @@ a:hover {
 #hello .image:hover {
   z-index:10;
   transform: scale(4.5);
-  transform-origin: left;
+  transform-origin: center left;
   transition: all 0.25s ease-out;
 }
 #hello .image img {
