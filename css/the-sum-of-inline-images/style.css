@@ -121,13 +121,13 @@ a:hover {
       z-index: 1;
       width: 90%;
       padding: 5% 5% 15vw;
-      font-size: 2rem;
+      font-size: 1.5rem;
       line-height: 200%;
       font-weight: 500;
     }
     #hello u {
       padding:0.25rem 1rem;
-      border-radius: 2rem;
+      border-radius: 1.5rem;
     }
     #hello .link {
       font-family: "Times New Roman", Symbol;
@@ -135,7 +135,7 @@ a:hover {
       font-style: oblique 45deg;
     }
     #hello .image {
-      height: 2rem;
+      height: 1.5rem;
       margin-left: 1.5rem;
       margin-right: 1.5rem;
       display: inline-block;
@@ -143,7 +143,7 @@ a:hover {
       transform: scale(1.5);
     }
   #hello .image:hover {
-    transform: scale(2.5);
+    transform: scale(3);
     transform-origin: center;
   }
 }
