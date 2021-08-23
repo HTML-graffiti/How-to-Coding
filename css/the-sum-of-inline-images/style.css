@@ -22,7 +22,6 @@ a:hover {
   font-stretch: condensed;
   font-variant: common-ligatures tabular-nums;
   letter-spacing: -0.1vw;
-  line-height: 150%;
 }
 
 #contents p a,
@@ -115,6 +114,8 @@ a:hover {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
+
+#credit p {line-height: 150%;}
 
 
 @media screen and (max-width: 750px){
