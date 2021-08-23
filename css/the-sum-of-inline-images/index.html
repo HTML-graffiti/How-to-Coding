@@ -17,6 +17,7 @@
 
     <!-- import the webpage's javascript file -->
     <script src="random.js"></script>
+    <script src="poptext.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
@@ -25,7 +26,7 @@
       <p>複数の写真をテキスト内に埋め込んだウェブページ</p>
       <div id="hello">
         div id="hello" in div id="contents"
-        <u><a href="#">u & a href="#"</a></u>
+        <u>u <a onMouseover='poptext="poptext";popvisible=1;' onMouseOut="popvisible=0;">a onMouseover='poptext="poptext";popvisible=1;' onMouseOut="popvisible=0;"</a></u>
         #contents #hello
         <a class="link">a class="link"</a>  span class="image"
         <span class="image">
