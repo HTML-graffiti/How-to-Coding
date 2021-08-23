@@ -45,14 +45,14 @@ a:hover {
 }
 #contents p {
   font-size: 2.5vw;
-  padding: 0 2.5vw;
-  width:80%;
+  padding: 2.5vw 0;
+  line-height: 100%;
 }
 #hello {
   position: relative;
   z-index: 1;
   width: 80%;
-  padding: 5vw 2.5vw 15vw;
+  padding: 0 2.5vw 15vw;
   font-family: "Arial", sans-serif;
   font-size: 4.5vw;
   line-height: 200%;
