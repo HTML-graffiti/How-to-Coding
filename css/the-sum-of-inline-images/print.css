@@ -1,11 +1,21 @@
 #contents {
     height: 100vw;
   }
-  #credit {
+#credit {
     height: 33vw;
     display: table-cell;
     vertical-align: bottom;
     text-align: justify;
     text-align: justify-all;
+  }
+#contents h1 i {
+    position:fixed;
+    bottom:2.5vw;
+    right:12.5vw;
+    display: inline-block;
+    font-size: 4.5vw;
+    font-family: "Great Vibes", cursive;
+    font-weight: 555;writing-mode: vertical-rl;
+    transform: scale(4.5, 1);
   }
   
