@@ -46,12 +46,7 @@ a:hover {
   background: #000;
 }
 #contents h1 i {
-  display: inline-block;
-  padding-top: 2.5vw;
-  font-size: 4.5vw;
-  font-family: "Great Vibes", cursive;
-  font-weight: 555;
-  transform: scale(1, 2.5);
+  display: none;
 }
 #contents p {
   font-size: 2.5vw;
