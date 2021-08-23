@@ -19,5 +19,6 @@
     font-size: 4.5vw;
     font-family: "Great Vibes", cursive;
     font-weight: 555;
+    transform: scale(1, 4.5);
   }
   
