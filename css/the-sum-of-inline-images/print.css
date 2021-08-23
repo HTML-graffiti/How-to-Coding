@@ -3,8 +3,8 @@
   max-height: 100vw;
   }
 #credit {
-  border:solid;
-    height: 33vw;
+    height: 32.1vw;
+    width:100%;
     display: table-cell;
     vertical-align: bottom;
     text-align: justify;
