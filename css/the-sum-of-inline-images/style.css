@@ -107,6 +107,7 @@ a:hover {
   padding: 2.5vw;
   margin: 0;
   font-size: 2.5vw;
+  line-height: 150%;
   word-spacing: 0.5vw;
   flex-wrap: wrap;
   display: -webkit-flex;
@@ -114,8 +115,6 @@ a:hover {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-
-#credit p {line-height: 200%;}
 
 
 @media screen and (max-width: 750px){
