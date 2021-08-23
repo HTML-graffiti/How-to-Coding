@@ -5,6 +5,7 @@
 #credit {
     height: 33vw;
     margin:auto;
+    padding: 0;
     display: table-cell;
     vertical-align: bottom;
     text-align: justify;
