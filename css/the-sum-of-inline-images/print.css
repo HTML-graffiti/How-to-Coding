@@ -5,6 +5,8 @@
 #credit {
     height: 33vw;
     margin:auto;
+    display: table-cell;
+    vertical-align: bottom;
   }
   #contents h1 i {
     position:absolute;
