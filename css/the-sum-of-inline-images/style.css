@@ -94,7 +94,7 @@ a:hover {
 
 #credit {
   position: relative;
-  padding: 2.5%;
+  padding: 2.5vw;
   margin: 0;
   font-stretch: condensed;
   font-variant: common-ligatures tabular-nums;
@@ -143,4 +143,4 @@ a:hover {
     transform: scale(2.5);
     transform-origin: center;
   }
-    }
+}
