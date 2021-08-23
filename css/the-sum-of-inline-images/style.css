@@ -34,6 +34,7 @@ a:hover {
   padding: 0 2.5vw 1.25vw;
   position: relative;
   font-weight: 500;
+  line-height: 2.5vw;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
