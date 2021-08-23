@@ -1,5 +1,6 @@
 body,
-#contents {
+#contents,
+#credit p {
   padding: 0;
   margin: 0;
 }
