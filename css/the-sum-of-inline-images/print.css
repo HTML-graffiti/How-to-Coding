@@ -10,10 +10,10 @@
     text-align: justify;
     text-align: justify-all;
   }
-#contents h1 i {
+  #contents h1 i {
     position:absolute;
     top:1.25vw;
-    right:0;
+    right:2.5vw;
     display: inline-block;
     font-size: 4.5vw;
     font-family: "Great Vibes", cursive;
