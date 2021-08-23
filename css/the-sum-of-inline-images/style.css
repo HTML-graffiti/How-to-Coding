@@ -12,7 +12,6 @@ a:hover {
 }
 #contents {
   position: relative;
-  padding-bottom: 2.5vw;
 }
 
 #contents h1,
@@ -107,7 +106,7 @@ a:hover {
 #credit {
   position: relative;
   padding: 2.5vw;
-  margin: 0;
+  margin:2.5vw 0 0;
   font-size: 2.5vw;
   line-height: 150%;
   word-spacing: 0.5vw;
