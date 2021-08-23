@@ -144,6 +144,6 @@ a:hover {
     }
   #hello .image:hover {
     transform: scale(3);
-    transform-origin: center;
+    transform-origin: bottom center;
   }
 }
