@@ -1,12 +1,13 @@
 #a4 {
   max-height: 100vh;
-  background: #ccc;
   }
 #contents {
   position:relative;
   top:0;
   height: 100vw;
   padding: 0 0 4.5vw;
+  color:#fff;
+  background: #000;
   }
 #credit {
     height: 37vw;
