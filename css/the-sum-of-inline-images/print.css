@@ -29,6 +29,12 @@
   #hello {
     padding: 0 0 15vw;0
   }
+  #hello .image {
+    height: 4.5vw;
+    margin-left: 2vw;
+    margin-right: 3vw;
+    transform: scale(2);
+  }
   .print_only {display: none;}
     
   @media print {
