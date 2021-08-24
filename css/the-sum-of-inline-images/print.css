@@ -29,7 +29,8 @@
   #contents h1 b {
     position:absolute;
     top:0;
-    right:0;
+    left:0;
+    line-height: 100%;
   }
   .print_only {display: none;}
     
