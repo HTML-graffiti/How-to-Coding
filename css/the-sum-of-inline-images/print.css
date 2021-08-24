@@ -26,12 +26,6 @@
     font-weight: 555;
     transform: scale(1, 4.5);
   }
-  #contents h1 b {
-    position:absolute;
-    top:0;
-    left:0;
-    line-height: 100%;
-  }
   .print_only {display: none;}
     
   @media print {
