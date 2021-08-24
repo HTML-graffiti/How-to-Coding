@@ -31,9 +31,9 @@
   }
   #hello .image {
     height: 4.5vw;
-    margin-bottom: 0.5vw;
-    margin-left: 2.5vw;
-    margin-right: 3.5vw;
+    margin-top: -1vw;
+    margin-left: 3vw;
+    margin-right: 4vw;
     transform: scale(2);
   }
   .print_only {display: none;}
