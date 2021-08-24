@@ -26,6 +26,9 @@
     font-weight: 555;
     transform: scale(1, 4.5);
   }
+  #hello {
+    padding: 0 0 15vw;0
+  }
   .print_only {display: none;}
     
   @media print {
