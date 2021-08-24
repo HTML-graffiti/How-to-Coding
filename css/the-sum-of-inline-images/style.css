@@ -10,9 +10,6 @@ a {
 a:hover {
   color: #FF5733;
 }
-#contents {
-  position: relative;
-}
 
 #contents h1,
 #contents p,
@@ -29,10 +26,12 @@ a:hover {
   text-decoration: underline dotted;
 }
 
+#contents {
+  position: relative;
+}
 #contents h1 {
   font-size: 2.5vw;
   padding: 0 2.5vw 1.25vw;
-  position: relative;
   font-weight: 500;
   line-height: 2.5vw;
   display: flex;
@@ -62,7 +61,7 @@ a:hover {
   width: 80%;
   padding: 0 2.5vw 15vw;
   font-family: "Arial", sans-serif;
-  font-size: 4.5vw;
+  font-size: 2.5vw;
   line-height: 200%;
   font-weight: 500;
 }
