@@ -33,7 +33,7 @@
     height: 4.5vw;
     top: -1vw;
     margin-left: 3.5vw;
-    margin-right: 4.5vw;
+    margin-right: 4vw;
     transform: scale(1.75);
   }
   .print_only {display: none;}
