@@ -1,6 +1,7 @@
 .infomation {
   position: fixed;
   padding:25vh 1rem 0;
+  min-width: 25vw;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   z-index:1;
