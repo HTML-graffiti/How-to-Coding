@@ -1,67 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title> Position | Cascading Style Sheets </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/coding/js/randomcolor.js"></script>
+<script type="text/javascript">
+$(function(){
+	jQuery('#right').css({'background':getRumRgba()});
+});
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>Title | VG CTLG</title>
-    <meta
-      name="description"
-      content="Infomation"
-    />
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="../style.css" />
-    <link type="text/css" media="print" rel="stylesheet" href="../print.css" />
-
+$(function(){
+	$("#hello").load("hello.html");
+	$("#about").load("howto.html");
+	$("#mobile").load("/coding/mobile.html");
+	$("#order").load("/coding/submit/order/form.html");
+})
+</script>
+<link rel="stylesheet" href="/coding/cover/style.css"/>
+<link rel="stylesheet" href="/coding/mobile/style.css"/>
 <style type="text/css">
-  
+@font-face {
+  font-family: "NewYork";
+  src: url("/coding/fontbook/NewYork.otf");
+}
+#title {font-family:"NewYork";}
+
+#mobile {display:none;}
+.support {
+font-size:1.25vw;
+padding:0.5% 2.5%;
+margin:5% 0 10%;
+}
+.support a,
+.back a {
+  text-decoration:none;
+  color:#000;
+  cursor:pointer;
+  padding:0.5vw 1.5vw;
+  line-height:4vw;
+  border:0.1vw solid;
+  border-radius:2.5rem;
+}
+.support a {margin:0.5vw;}
+
+@media screen and (max-width: 500px){
+#left #hello,
+#right #about,
+#right #library,
+#right #order
+{display:none;}
+.support {zoom:0.55;}
+#mobile {
+  display:block;
+  position:fixed;
+  padding:0; margin:0;
+  width:100%; height:100vh;
+  top:0; left:0;
+}
+}
 </style>
-
-    <script src="random.js" defer></script>
-  </head>
-  <body>
-    <div id="portrait" class="random"></div>
-    <a class="back no_print" onclick="history.back(-1);return false;" style="font-size:10vw; border:none;">↵</a>
-    
-    <div class="infomation no_print">
-      <a class="click" onclick="obj=document.getElementById('question').style; obj.display=(obj.display=='none')?'block':'none';">10Q</a>
-      
-      <p class=""><b>VG CTLG</b><br/>
-        <a href="#" target="_blank" rel="noopener noreferrer">Title</a><br/>
-        <a href="/publication/value/book/" target="_blank" rel="noopener noreferrer">大切なもの</a>
-      </p>
-
-    </div>
-    
-    <div class="popup" id="question" style="display:none;">
-      <p><iframe src=""></iframe></p>
-      <span class="close" onclick="obj=document.getElementById('question').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
-    </div>
-    
-<div id="who">
-<ruby class="title">
-<rb>Title</rb>
-<rt>題名</rt>
-</ruby>
-
-<div class="link no_print">
-  <a href="https://twitter.com/___" target="_blank" rel="noopener noreferrer">Twitter</a>
-  <a href="https://www.instagram.com/___/" target="_blank" rel="noopener noreferrer">Instagram</a>
-  <a href="https://___.bandcamp.com/" target="_blank" rel="noopener noreferrer">Bandcamp</a>
-  <a href="https://soundcloud.com/___" target="_blank" rel="noopener noreferrer">Soundcloud</a>
-  <a href="https://www.youtube.com/channel/___" target="_blank" rel="noopener noreferrer">YouTube</a>
-  <a href="https://qr.quel.jp/url.php" target="_blank" rel="noopener noreferrer">Website</a>
+</head>
+<body>
+<h1 id="title">Position | Cascading Style Sheets</h1>
+<div id="cover">
+<div id="left">
+<div id="hello"></div>
+<div id="mobile"></div>
 </div>
-
-<img class="qr" src="qr.png">
-
-</div>
-<p class="nlc no_print">
-  <a href="http://newlifecollection.com/?word=___" target="_blank" rel="noopener noreferrer">View The Collection</a>
+<div id="right">
+<div id="about"></div>
+<div id="contents">
+<p class="support">Support
+<a onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">Donation</a>
 </p>
-    
-  </body>
+</div>
+<div id="order"></div>
+</div>
+</div>
+<div class="popup" id="contactform" style="display:none;">
+<p><iframe src="/coding/submit/order/"></iframe></p>
+<span class="close" onclick="obj=document.getElementById('contactform').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
+</div>
+<div class="popup" id="support" style="display:none;">
+<p><iframe src="http://vg.pe.hu/jp/cm/support.html"></iframe></p>
+<span class="close" onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
+</div>
+</body>
 </html>
