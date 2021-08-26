@@ -5,7 +5,7 @@
   filter: drop-shadow(16px 16px 20px red) invert(75%);
 }
 .infomation {
-  filter: grayscale(25%) contrast(200%);
+  filter: grayscale(25%) contrast(200%) hue-rotate(45deg);
 }
 
 .infomation a {
