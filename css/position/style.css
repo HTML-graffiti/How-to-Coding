@@ -1,5 +1,5 @@
 .infomation {
-  position: absolute;
+  position: fixed;
   padding:25vh 1rem 0;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
@@ -7,7 +7,7 @@
   background:#FF5733;
 }
 #who {
-  position: relative;
+  position: absolute;
   top:0; left:0;
   z-index:2;
   display:block;
@@ -18,7 +18,7 @@
   box-shadow:0 0 10px #FF5733;
 }
 .back {
-  position: fixed;
+  position: relative;
   z-index: 3;
   top:1rem; right:2rem;
   color:#FF5733;
