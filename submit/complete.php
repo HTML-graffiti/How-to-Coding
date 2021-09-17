@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
-<title>📝 Complete | creative-community.pe.hu</title>
+<title>📝 Let's Creat a Lists of the Things about You</title>
 <link rel="stylesheet" href="form.css"/>
-<meta http-equiv="refresh" content="3;URL=index.html">
 <style type="text/css">
 html, body {padding:0; margin:0;}
 #foot {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
-<title>✍ 投稿フォーム | creative-community.pe.hu</title>
+<title>✍ Let's Creat a Lists of the Things about You</title>
 <link rel="stylesheet" href="form.css"/>
 <style type="text/css">
 </style>
