@@ -22,12 +22,9 @@ fclose($fp);
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<title>CSV to PHP | creative-community.pe.hu</title>
-<meta name="description" content="CSVファイルに書き込んだ内容を、HTMLに呼び出す by Kazuma Sasajima">
-<meta name="keywords" content="CSV,to,PHP,Coding">
+<title>CSV | Personal Home Page Tools</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style></style>
 </head>
 <body>
 <?php if (!empty($rows)): ?>
