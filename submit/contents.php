@@ -53,9 +53,9 @@ $(function(){
 </li>
 <?php endif; ?>
 <li class="item">
-<p class="name">投稿フォーム</p>
-<span class="title">submit.php</span>
-<a class="link" href="submit.php" target="_blank" rel="noopener noreferrer"></a>
+<p class="name">投稿する</p>
+<span class="title"></span>
+<a class="link" href="submit.php" target="_parent"></a>
 </li>
 </ul>
 </div>
