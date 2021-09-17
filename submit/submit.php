@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
-<title>✍ Let's Creat a Lists of the Things about You</title>
+<title>✍ 投稿フォーム</title>
 <link rel="stylesheet" href="form.css"/>
 <style type="text/css">
 </style>
@@ -11,9 +11,8 @@
 <p class="writing">✍ 投稿フォーム</p>
 <section id="form">
 <form action="complete.php" method="post">
-<input type="text" name="name" placeholder="タイトル" required>
-<input type="text" name="title" placeholder="URL" required>
-<input type="url" name="link" placeholder="URL" required>
+<input type="text" name="name" placeholder="一言コメント" required>
+<input type="text" name="title" placeholder="名前" required>
 <button type="submit">投稿 POST</button>
 </form>
 </section>

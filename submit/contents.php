@@ -44,11 +44,19 @@ $(function(){
 <li class="item">
 <p class="name"><?=h($row[0])?></p>
 <span class="title"><?=h($row[1])?></span>
-<a class="link" href="<?=h($row[2])?>" target="_blank" rel="noopener noreferrer"></a>
 </li>
 <?php endforeach; ?>
 <?php else: ?>
+<li class="item">
+<p class="name">一言コメント</p>
+<span class="title">名前</span>
+</li>
 <?php endif; ?>
+<li class="item">
+<p class="name">投稿フォーム</p>
+<span class="title">submit.php</span>
+<a class="link" href="submit.php" target="_blank" rel="noopener noreferrer"></a>
+</li>
 </ul>
 </div>
 </body>
