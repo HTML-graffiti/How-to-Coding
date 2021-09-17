@@ -18,5 +18,4 @@ const random = [
   window.setInterval(function() {
     sentenceGenerator();
   }, 2000);
-  sentenceGenerator();
   
