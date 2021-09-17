@@ -33,35 +33,35 @@ if( !empty($_POST['btn_confirm']) ) {
 
 	// ヘッダー情報を設定
 	$header = "MIME-Version: 1.0\n";
-	$header .= "From: creative-community.pe.hu <we.are.pe.hu@gmail.com>\n";
-	$header .= "Reply-To: creative-community.pe.hu <we.are.pe.hu@gmail.com>\n";
+	$header .= "From: creative, community space ∧°┐ <we.are.pe.hu@gmail.com>\n";
+	$header .= "Reply-To: creative, community space ∧°┐ <we.are.pe.hu@gmail.com>\n";
 
 	// 件名を設定
-	$auto_reply_subject = 'Contact | creative-community.pe.hu';
+	$auto_reply_subject = 'Contact | creative, community space ∧°┐ ';
 
 	// 本文を設定
-	$auto_reply_text = "Thank You for Contact | creative-community.pe.hu\n\n";
+	$auto_reply_text = "How to Coding | creative, community space ∧°┐\n\n";
 	$auto_reply_text .= "あなたの名前 | Your Name\n" . $_POST['name'] . "\n\n";
 	$auto_reply_text .= "内容 | Comment\n" . nl2br($_POST['contact']) . "\n\n\n";
 	$auto_reply_text .= "Posted on " . date("m-d-Y H:i") . "\n";
-	$auto_reply_text .= "creative-community.pe.hu";
+	$auto_reply_text .= "creative-community.space/coding/";
 
 	// メール送信
 	mb_send_mail( $_POST['email'], $auto_reply_subject, $auto_reply_text, $header);
 
 	// 運営側へ送るメールの件名
-	$admin_reply_subject = "Contact | creative-community.pe.hu";
+	$admin_reply_subject = "Contact | creative, community space ∧°┐";
 
 	// 本文を設定
-	$admin_reply_text = "Contact Form | creative-community.pe.hu\n\n\n";
+	$admin_reply_text = "Contact Form | creative, community space ∧°┐\n\n\n";
 	$admin_reply_text .= "Name\n" . $_POST['name'] . "\n";
 	$admin_reply_text .= "Email\n" . $_POST['email'] . "\n\n";
 	$admin_reply_text .= "Comment\n" . nl2br($_POST['contact']) . "\n\n\n";
 	$admin_reply_text .= "Posted on " . date("m-d-Y H:i") . "\n";
-	$admin_reply_text .= "creative-community.pe.hu";
+	$admin_reply_text .= "creative-community.space/coding/";
 
 	// 運営側へメール送信
-	mb_send_mail( 'sorryforthedelayinsending@vg.pe.hu', $admin_reply_subject, $admin_reply_text, $header);
+	mb_send_mail( 'admin@vg.pe.hu', $admin_reply_subject, $admin_reply_text, $header);
 
 	} else {
 		$page_flag = 0;
@@ -75,7 +75,7 @@ if( !empty($_POST['btn_confirm']) ) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | creative-community.pe.hu</title>
+<title>Contact | creative-community.space</title>
 <link rel="stylesheet" href="/coding/hello/about.css"/>
 <link rel="stylesheet" href="/coding/submit/form.css"/>
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
@@ -88,7 +88,7 @@ if( !empty($_POST['btn_confirm']) ) {
 }
 @font-face {
   font-family: "ipaexm";
-  src: url("http://creative-community.pe.hu/coding/fontbook/family/IPAex/ipaexm.ttf");
+  src: url("/coding/fontbook/family/IPAex/ipaexm.ttf");
 }
 html,
 #form input[type="date"],

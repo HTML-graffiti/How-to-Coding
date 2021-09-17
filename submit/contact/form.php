@@ -75,7 +75,7 @@ if( !empty($_POST['btn_confirm']) ) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | creative-community.space</title>
+<title>Contact | Personal Home Page Tools</title>
 <link rel="stylesheet" href="/coding/submit/form.css"/>
 <link rel="stylesheet" href="/coding/fontbook/css/fontmotion.css"/>
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
