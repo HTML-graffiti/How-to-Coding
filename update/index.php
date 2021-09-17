@@ -49,7 +49,7 @@ $(function() {
 });
 
 $(function(){
-	$("#update").load("/coding/update/about.html");
+	$("#").load("");
 })
 </script>
 <link rel="stylesheet" href="/coding/submit/org/book.css"/>
@@ -171,6 +171,5 @@ print "".date("m.d.y H:i",$mod);
 </li>
 <?php endif; ?>
 </ul>
-<div id="update"></div>
 </body>
 </html>
