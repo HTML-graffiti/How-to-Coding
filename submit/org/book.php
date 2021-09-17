@@ -7,7 +7,7 @@ $contents = (string)filter_input(INPUT_POST, 'contents');
 $tag = (string)filter_input(INPUT_POST, 'tag');
 $label = (string)filter_input(INPUT_POST, 'label');
 
-$fp = fopen('think.csv', 'a+b');
+$fp = fopen('book.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$title, $contents, $tag, $label,]);
@@ -27,7 +27,7 @@ fclose($fp);
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title> ORG | How to Coding </title>
+<title> 自分にまつわる事柄のリストページ </title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="org.js"></script>
 <script type="text/javascript">
@@ -44,42 +44,29 @@ fclose($fp);
 </style>
 </head>
 <body>
-<div id="header">
-<a href="index.html" target="_blank" rel="noopener noreferrer">ORG</a>
-<a href="submit.php" target="_blank" rel="noopener noreferrer">Submit</a>
-</div>
 
 <form id="org">
 <div class="search-box tag">
 <ul>
 <li>
-<input type="radio" name="tag" value="one" id="one">
-<label for="one" class="label">1</label></li>
+<input type="radio" name="tag" value="bookcover" id="bookcover">
+<label for="bookcover" class="label">開いた本のようなページ</label></li>
 <li>
-<input type="radio" name="tag" value="two" id="two">
-<label for="two" class="label">2</label></li>
+<input type="radio" name="tag" value="book" id="book">
+<label for="book" class="label">本を読むようにテキストが表示される挨拶ページ</label></li>
 <li>
-<input type="radio" name="tag" value="three" id="three">
-<label for="three" class="label">3</label></li>
-<li>
-<input type="radio" name="tag" value="four" id="four">
-<label for="four" class="label">4</label></li>
-<li>
-<input type="radio" name="tag" value="five" id="five">
-<label for="five" class="label">5</label></li>
+<input type="radio" name="tag" value="list" id="list">
+<label for="list" class="label">自分にまつわる事柄のリストページ</label></li>
 </ul>
 </div>
 <div class="search-box status">
 <ul>
 <li>
 <input type="radio" name="label" value="a" id="a">
-<label for="a" class="label">A</label></li>
+<label for="a" class="label">使用例</label></li>
 <li>
 <input type="radio" name="label" value="b" id="b">
-<label for="b" class="label">B</label></li>
-<li>
-<input type="radio" name="label" value="c" id="c">
-<label for="c" class="label">C</label></li>
+<label for="b" class="label">応用編</label></li>
 </ul>
 </div>
 <div class="reset">
@@ -93,12 +80,14 @@ fclose($fp);
 <li id="<?=h($row[3])?>" class="list_item list_toggle" data-tag="<?=h($row[2])?>" data-label="<?=h($row[3])?>">
 <span><?=h($row[0])?></span>
 <p><?=h($row[1])?></p>
+<a href="<?=h($row[1])?>" target="_blank" rel="noopener noreferrer"></a>
 </li>
 <?php endforeach; ?>
 <?php else: ?>
 <li id="<?=h($row[3])?>" class="list_item list_toggle" data-tag="<?=h($row[2])?>" data-label="<?=h($row[3])?>">
 <span>Title</span>
 <p>contents</p>
+<a href="<?=h($row[1])?>" target="_blank" rel="noopener noreferrer"></a>
 </li>
 <?php endif; ?>
 </ul>
