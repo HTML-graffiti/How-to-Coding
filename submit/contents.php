@@ -54,7 +54,7 @@ $(function(){
 <?php endif; ?>
 <li class="item">
 <p class="name">投稿する</p>
-<span class="title"></span>
+<span class="title">Post</span>
 <a class="link" href="submit.php" target="_parent"></a>
 </li>
 </ul>
