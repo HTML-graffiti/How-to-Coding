@@ -16,7 +16,6 @@ $(function(){
 $(function(){
     $("#hello").load("hello.html");
     $("#about").load("about.html");
-    $("#order").load("/coding/submit/order/form.html");
     $("#about_php").load("/coding/php/about.html");
 })
 </script>
@@ -39,20 +38,11 @@ $(function(){
 <div id="cover">
 <div id="left">
 <div id="hello"></div>
-<div id="about_php"></div>
 </div>
 <div id="right">
+<div id="about_php"></div>
 <div id="about"></div>
-<div id="order"></div>
 </div>
-</div>
-<div class="popup" id="contactform" style="display:none;">
-<p><iframe src="/coding/submit/order/"></iframe></p>
-<span class="close" onclick="obj=document.getElementById('contactform').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
-</div>
-<div class="popup" id="support" style="display:none;">
-<p><iframe src="/support/"></iframe></p>
-<span class="close" onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
 </div>
 </body>
 </html>
