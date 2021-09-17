@@ -59,8 +59,9 @@ $(function(){
 }
 @font-face {
   font-family: "ipaexm";
-  src: url("http://creative-community.pe.hu/coding/fontbook/family/IPAex/ipaexm.ttf");
+  src: url("/coding/fontbook/family/IPAex/ipaexm.ttf");
 }
+body {overflow-x:0;}
 html, .reset-button {font-family:"NewYork", "ipaexm", serif;}
 .list #done {
   zoom:1.5;
