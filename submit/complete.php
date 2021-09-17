@@ -3,6 +3,7 @@
 <meta charset="UTF-8">
 <title>📝 Let's Creat a Lists of the Things about You</title>
 <link rel="stylesheet" href="form.css"/>
+<meta http-equiv="refresh" content="3;URL=index.html">
 <style type="text/css">
 html, body {padding:0; margin:0;}
 #foot {
