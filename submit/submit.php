@@ -1,3 +1,27 @@
+<?php
+
+function h($str) {
+    return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+}
+
+$name = (string)filter_input(INPUT_POST, 'name');
+$title = (string)filter_input(INPUT_POST, 'title');
+$link = (string)filter_input(INPUT_POST, 'link');
+
+$fp = fopen('log.csv', 'a+b');
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    flock($fp, LOCK_EX);
+    fputcsv($fp, [$name, $title, $link]);
+    rewind($fp);
+}
+flock($fp, LOCK_SH);
+while ($row = fgetcsv($fp)) {
+    $rows[] = $row;
+}
+flock($fp, LOCK_UN);
+fclose($fp);
+
+?>
 <!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
