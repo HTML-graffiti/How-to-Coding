@@ -11,11 +11,11 @@ const random = [
     console.log(random);
     return random;
   }
-  function sentenceGenerator() {
-    var sentence = `<img src="${randomImg(random)}">`;
-    document.querySelector(".random").innerHTML = sentence;
+  function imgGenerator() {
+    var img = `<img src="${randomImg(random)}">`;
+    document.querySelector(".random").innerHTML = img;
   }
   window.setInterval(function() {
-    sentenceGenerator();
+    imgGenerator();
   }, 2000);
   
