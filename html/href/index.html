@@ -4,13 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="このページでは、別のウェブページ、ファイル、メールアドレス、同一ページ内の要素へのハイパーリンクを作成する A: アンカー要素 と、要素に特定の名前をつけるグローバル属性と呼ばれるHTML言語 CLASS と ID についてを解説します。">
+
 <title> A CLASS ID | HyperText Markup Language </title>
 <link rel="stylesheet" href="style.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
     $("#demo").load("hello.html");
-	$("#howto").load("howto.html");
+    $("#howto").load("howto.html");
     $("#html_link").load("/coding/html/link.html");
     $("#order").load("/coding/submit/order/form.html");
 })
@@ -48,7 +50,7 @@ html {scroll-behavior: smooth;}
 <span class="close" onclick="obj=document.getElementById('contactform').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
 </div>
 <div class="popup" id="support" style="display:none;">
-<p><iframe src="http://vg.pe.hu/jp/cm/support.html"></iframe></p>
+<p><iframe src="/support/"></iframe></p>
 <span class="close" onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
 </div>
 </body>
