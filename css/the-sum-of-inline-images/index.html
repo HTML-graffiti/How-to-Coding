@@ -1,75 +1,55 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title> the sum of inline images </title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="/coding/js/randomcolor.js"></script>
-<script type="text/javascript">
-$(function(){
-	jQuery('#right').css({'background':getRumRgba()});
-});
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-$(function(){
-	$("#sum").load("hello.html");
-	$("#howto").load("howto.html");
-	$("#order").load("/coding/submit/order/form.html");
-})
-</script>
-<link rel="stylesheet" href="/coding/cover/style.css"/>
-<link rel="stylesheet" href="/coding/mobile/style.css"/>
-<link rel="stylesheet" href="/coding/css/popup.css"/>
-<style type="text/css">
-@font-face {
-  font-family: "NewYork";
-  src: url("/coding/fontbook/NewYork.otf");
-}
-#title {font-family:"NewYork";}
+    <title>the sum of inline images</title>
 
-.support {
-font-size:1.25vw;
-padding:0.5% 2.5%;
-margin:5% 0 10%;
-}
-.support a,
-.back a {
-  text-decoration:none;
-  color:#000;
-  cursor:pointer;
-  padding:0.5vw 1.5vw;
-  line-height:4vw;
-  border:0.1vw solid;
-  border-radius:2.5rem;
-}
-.support a {margin:0.5vw;}
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="print.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
 
-</style>
-</head>
-<body>
-<h1 id="title">the sum of inline images</h1>
-<div id="cover">
-<div id="left">
-<div id="sum"></div>
-</div>
-<div id="right">
-<div id="howto"></div>
-<div id="contents">
-<p class="support">Support
-<a onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">Donation</a>
-</p>
-</div>
-<div id="order"></div>
-</div>
-</div>
-<div class="popup" id="contactform" style="display:none;">
-<p><iframe src="/coding/submit/order/"></iframe></p>
-<span class="close" onclick="obj=document.getElementById('contactform').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
-</div>
-<div class="popup" id="support" style="display:none;">
-<p><iframe src="/support/"></iframe></p>
-<span class="close" onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
-</div>
-</body>
+    <!-- import the webpage's javascript file -->
+    <script src="random.js"></script>
+    <script src="poptext.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="contents">
+      <h1><b>the sum of inline images</b> <i>HTML/CSS/JS</i></h1>
+      <p>複数の写真をテキスト内に埋め込んだウェブページ</p>
+      <div id="hello">
+        div id="hello" in div id="contents"
+        <u>u <a onMouseover='poptext="poptext.js";popvisible=1;' onMouseOut="popvisible=0;">a</a></u>
+        #contents #hello
+        <a class="link">a class="link"</a> span class="image"
+        <span class="image">
+          <img
+            src="https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_960_720.jpg"
+          />
+        </span>
+
+        <u>u</u>
+        <a class="link">a class="link"</a>
+        <span class="image">
+          <img
+            src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_960_720.jpg"
+          />
+        </span> img src="#"
+        <u>link</u> rel="stylesheet" type="text/css"
+        <span class="image">
+          <img
+            src="https://cdn.pixabay.com/photo/2013/02/20/11/30/autumn-83761_960_720.jpg"
+          />
+        </span>
+        media="print" href="<a class="link">print.css</a>"
+      </div>
+    </div>
+  </body>
 </html>
