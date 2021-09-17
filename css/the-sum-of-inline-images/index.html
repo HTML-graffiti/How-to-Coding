@@ -19,6 +19,17 @@
     <script src="random.js"></script>
     <script src="poptext.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+    $(function(){
+      jQuery('#right').css({'background':getRumRgba()});
+    });
+    
+    $(function(){
+      $("#howto").load("howto.html");
+      $("#css_library").load("/coding/css/library.html");
+    })
+    </script>
   </head>
   <body>
     <div id="contents">
@@ -49,6 +60,8 @@
         </span>
         media="print" href="<a class="link">print.css</a>"
       </div>
+      <div id="howto"></div>
+      <div id="css_library"></div>
     </div>
   </body>
 </html>
