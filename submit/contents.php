@@ -25,7 +25,7 @@ fclose($fp);
 <!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
-<title>📝  List of The Website of Listing somethings</title>
+<title>📝  投稿一覧</title>
 <link rel="stylesheet" href="form.css"/>
 <script type="text/javascript">
 $(function(){
@@ -37,7 +37,7 @@ $(function(){
 </head>
 <body>
 <div id="contents">
-<p class="writing">📝 List of The Website of Listing somethings</p>
+<p class="writing">📝 投稿一覧</p>
 <ul id="list">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>

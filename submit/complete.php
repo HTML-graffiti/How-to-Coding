@@ -25,7 +25,7 @@ fclose($fp);
 <!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
-<title>📝 Let's Creat a Lists of the Things about You</title>
+<title>📝 投稿完了</title>
 <link rel="stylesheet" href="form.css"/>
 <meta http-equiv="refresh" content="3;URL=index.html">
 <style type="text/css">
