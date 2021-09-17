@@ -37,15 +37,15 @@ $("#library").load("library.html");
 <body>
 <div id="contents">
 <div id="hello">
-<p><u data-click="template">使い方</u></p>
+<p><u data-click="template">CSSプロパティ background-image:url(); を使って、要素の背景に画像を埋め込み、ダウンロードされづらいフォトアルバムページを作る</u></p>
 <p><a href="hello.html">Sample</a></p>
 <div id="template" class="open">
-<p>このテンプレートは、<u data-click="html">index.html</u>・<u data-click="css">style.css</u>の2つのファイルで構成されます。<br/>
-<i>※ ウェブページに表示する画像は、それぞれにご用意ください。</i></p>
+<p>このページは、<u data-click="html">index.html</u>と、index.htmlをスタイリングする<u data-click="css">style.css</u>の2つのファイルで構成されます。<br/>
+<i>※ 表示する画像は、それぞれにご用意ください。</i></p>
 <div id="html" class="open">
-<p>独自ページを制作するために編集が必要な箇所は、<u data-click="head">HEAD</u>・<u data-click="cover">CLASS="COVER"</u>・<u data-click="infomation">ID="INFOMATION"</u> の3箇所です。</p>
+<p>独自のページを制作するために編集が必要な箇所は、index.html内の<u data-click="head">HEAD要素</u>と、<u data-click="cover">CLASS="COVER"</u>・<u data-click="infomation">ID="INFOMATION"</u>内の文字情報の3箇所です。</p>
 <div id="head" class="open">
-<p>HEAD要素内の以下の部分を編集し、ページタイトル・ページに表示する画像、フォントなどを編集します。</p>
+<p>まず、HEAD要素内の以下の部分を編集し、ページタイトル・ページに表示する画像、フォントなどを指定します。</p>
 <pre><code><i>HEAD</i><math><![CDATA[
 <meta name="description" content="ページの説明">
 <title>ページタイトル</title>
@@ -85,7 +85,7 @@ background-color:rgba(255,255,255,0.25);
 </div>
 
 <div id="cover" class="open">
-<p>ページ最上部に表示する情報を記述します。</p>
+<p>次に、ページ最上部に表示する情報を記述します。</p>
 <pre><code><i>CLASS="COVER"</i><math><![CDATA[
 <div class="cover one">
 <span class="left">左上</span>
@@ -98,7 +98,7 @@ background-color:rgba(255,255,255,0.25);
 <br/>
 </div>
 <div id="infomation" class="open">
-<p>ページ最下部に表示する情報を記述します。</p>
+<p>最後に、ページ最下部に表示する情報を記述します。</p>
 <pre><code><i>ID="INFOMATION"</i><math><![CDATA[
 <div id="infomation" class="wide">
 <h1>#INFOMATION H1<br/>
@@ -112,8 +112,8 @@ background-color:rgba(255,255,255,0.25);
 </div>
 
 <div id="css" class="open">
-<p>INDEX.HTML に <a href="http://creative-community.space/coding/css/background-image/style.css">STYLE.CSS</a> をリンクし、ページをスタイリングします。<br/>
-<i>※ STYLE.CSS の編集は必要ありません。INDEX.HTMLと同じリポジトリ（フォルダ）に STYLE.CSS STYLE.CSS を公開しご使用ください。</i></p>
+<p>INDEX.HTML に <a href="/coding/css/background-image/style.css">STYLE.CSS</a> をリンクし、ページをスタイリングします。<br/>
+<i>※ STYLE.CSS の編集は必要ありません。INDEX.HTMLと同じリポジトリ（フォルダ）に STYLE.CSS を公開しご使用ください。</i></p>
 <pre><code><i>STYLE.CSS</i><math><![CDATA[
 body {
   font-family:monospace;
@@ -262,8 +262,6 @@ body {
 </div>
 
 <br/>
-<p>CSSプロパティ background-image:url(); を使って、要素の背景に横長・縦長・正方形の画像を埋め込み、ダウンロードされづらいフォトアルバムページを作る</p>
-
 </div>
 </div>
 </body>
