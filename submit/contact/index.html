@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title> Contact Form | creative-community.pe.hu </title>
+<title> Contact Form | creative-community.space </title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="/coding/js/randomcolor.js"></script>
 <script type="text/javascript">
@@ -48,7 +48,7 @@ $(function(){
 </style>
 </head>
 <body>
-<h1 id="title">Contact Form | creative-community.pe.hu</h1>
+<h1 id="title">Contact Form | creative-community.space</h1>
 <div id="cover">
 <div id="left">
 <div id="contents">
@@ -100,28 +100,28 @@ if( !empty($_POST['btn_confirm']) ) {
 	$header .= "Reply-To: Name <noreply@email>\n";
 
 	// 件名を設定
-	$auto_reply_subject = 'Contact | creative-community.pe.hu';
+	$auto_reply_subject = 'Contact | creative-community.space';
 
 	// 本文を設定
-	$auto_reply_text = "Thank You for Contact | creative-community.pe.hu\n\n";
+	$auto_reply_text = "Thank You for Contact | creative-community.space\n\n";
 	$auto_reply_text .= "Date " . date("Y-m-d H:i") . "\n";
 	$auto_reply_text .= "Your Name " . $_POST['name'] . "\n\n";
 	$auto_reply_text .= "Comment\n" . nl2br($_POST['contact']) . "\n\n";
-	$auto_reply_text .= "creative-community.pe.hu";
+	$auto_reply_text .= "creative-community.space";
 
 	// メール送信
 	mb_send_mail( $_POST['email'], $auto_reply_subject, $auto_reply_text, $header);
 
 	// 運営側へ送るメールの件名
-	$admin_reply_subject = "Contact | creative-community.pe.hu";
+	$admin_reply_subject = "Contact | creative-community.space";
 
 	// 本文を設定
-	$admin_reply_text = "Thank You for Contact | creative-community.pe.hu\n\n";
+	$admin_reply_text = "Thank You for Contact | creative-community.space\n\n";
 	$admin_reply_text .= "Date：" . date("Y-m-d H:i") . "\n";
 	$admin_reply_text .= "Name：" . $_POST['name'] . "\n";
 	$admin_reply_text .= "Email：" . $_POST['email'] . "\n\n";
 	$admin_reply_text .= "Comment\n" . nl2br($_POST['contact']) . "\n\n";
-	$admin_reply_text .= "creative-community.pe.hu";
+	$admin_reply_text .= "creative-community.space";
 
 	// 運営側へメール送信
 	mb_send_mail( 'noreply@email', $admin_reply_subject, $admin_reply_text, $header);
@@ -137,7 +137,7 @@ if( !empty($_POST['btn_confirm']) ) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | creative-community.pe.hu</title>
+<title>Contact | creative-community.space</title>
 <link rel="stylesheet" href="/coding/css/form.css"/>
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -206,7 +206,7 @@ if( !empty($_POST['btn_confirm']) ) {
 <span class="close" onclick="obj=document.getElementById('contactform').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
 </div>
 <div class="popup" id="support" style="display:none;">
-<p><iframe src="http://vg.pe.hu/jp/cm/support.html"></iframe></p>
+<p><iframe src="/support/"></iframe></p>
 <span class="close" onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
 </div>
 </body>

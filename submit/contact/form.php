@@ -37,20 +37,20 @@ if( !empty($_POST['btn_confirm']) ) {
 	$header .= "Reply-To: Name <noreply@email>\n";
 
 	// 件名を設定
-	$auto_reply_subject = 'Contact | creative-community.pe.hu';
+	$auto_reply_subject = 'Contact | creative-community.space';
 
 	// 本文を設定
-	$auto_reply_text = "Thank You for Contact | creative-community.pe.hu\n\n";
+	$auto_reply_text = "Thank You for Contact | creative-community.space\n\n";
 	$auto_reply_text .= "Date " . date("Y-m-d H:i") . "\n";
 	$auto_reply_text .= "Your Name " . $_POST['name'] . "\n\n";
 	$auto_reply_text .= "Comment\n" . nl2br($_POST['contact']) . "\n\n";
-	$auto_reply_text .= "creative-community.pe.hu";
+	$auto_reply_text .= "creative-community.space";
 
 	// メール送信
 	mb_send_mail( $_POST['email'], $auto_reply_subject, $auto_reply_text, $header);
 
 	// 運営側へ送るメールの件名
-	$admin_reply_subject = "Contact | creative-community.pe.hu";
+	$admin_reply_subject = "Contact | creative-community.space";
 
 	// 本文を設定
 	$admin_reply_text = "Thank You for Contact | creative-community.pe.hu\n\n";
@@ -58,7 +58,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	$admin_reply_text .= "Name：" . $_POST['name'] . "\n";
 	$admin_reply_text .= "Email：" . $_POST['email'] . "\n\n";
 	$admin_reply_text .= "Comment\n" . nl2br($_POST['contact']) . "\n\n";
-	$admin_reply_text .= "creative-community.pe.hu";
+	$admin_reply_text .= "creative-community.space";
 
 	// 運営側へメール送信
 	mb_send_mail( 'noreply@email', $admin_reply_subject, $admin_reply_text, $header);
@@ -75,7 +75,7 @@ if( !empty($_POST['btn_confirm']) ) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | creative-community.pe.hu</title>
+<title>Contact | creative-community.space</title>
 <link rel="stylesheet" href="/coding/submit/form.css"/>
 <link rel="stylesheet" href="/coding/fontbook/css/fontmotion.css"/>
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
