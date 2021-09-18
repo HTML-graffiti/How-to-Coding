@@ -4,7 +4,9 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/coding/hello/open_close.js"></script>
 
+<link rel="stylesheet" href="/coding/hello/close_open.css"/>
 <title> The Coverpage that Seems Like a cover of the book </title>
 <style type="text/css">
 #hello {
@@ -64,41 +66,99 @@ $(function(){
 <div id="contents">
 <div id="hello">
 <a href="hello.html">開いた本のようなウェブページ</a>
-<p><u>Index.html</u> 内に、
-ID名#left・#rightと名付けた2つのDIV要素を記述し、<u>JavaScript</u> によって2つの異なるウェブページを呼び出し、
-開いた本のように <u>CSS</u> でスタイリングするテンプレートを制作しました。<hr/></p>
-<div id="index">
+<p><u data-click="index">Index.html</u> のBODY内に、
+ID名#cover のDIV 要素を記述し、その中に、#left・#rightと名付けた2つのDIV要素を記述ます。<br/>
+加えて、背表紙に当たるID名 #title　と名付けたH1要素を記述。以上が開いた本のようなウェブページのベースとなります。</p>
+<div id="index" class="open">
 <i>Index.html</i>
 <pre><code><math><![CDATA[
-  <!DOCTYPE html>
-   <html lang="ja">
-   <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title> Put in The Title of this page </title>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <script type="text/javascript">
-   $(function(){
-       $("#left").load("hello.html");
-       $("#right").load("book.php");
-   })
-   </script>
-
-   <link rel="stylesheet" href="style.css"/>
-
-   <style type="text/css">
-   </style>
-   </head>
    <body>
-   <h1 id="title">Put in The Title of this page</h1>
    <div id="cover">
    <div id="left"></div>
    <div id="right"></div>
    </div>
+   <h1 id="title">Put in The Title of this page</h1>
    </body>
-   </html>
 ]]></math></code></pre>
+<hr/>
 </div>
+<p>#coverを<u>CSS</u> でスタイリングするテンプレートを制作しました。<hr/></p>
+<div id="js" class="open">
+  <i>CSS</i>
+  <pre><code><math><![CDATA[
+    body {padding:0; margin:0;}
+    #cover {
+      position:relative;
+      top:0; left:0;
+      width:100%;
+      height:100vh;
+      padding:0; margin:0;
+    }
+    #left,
+    #right {
+      display:block;
+      overflow-y:auto;
+      position:relative;
+      background-size: 200% 200%;
+      animation: gradientBG 5s ease-in-out infinite;
+    }
+    #left {
+      float: left;
+      width: 57.5%;
+      height: 100%;
+      -webkit-transform: rotate(10deg) skew(10deg, 0);
+      -moz-transform: rotate(10deg) skew(10deg, 0);
+      -ms-transform: rotate(10deg) skew(10deg, 0);
+      -o-transform: rotate(10deg) skew(10deg, 0);
+      transform: rotate(10deg) skew(10deg, 0);
+    }
+    #left #contents {
+      padding: 12.5% 5% 0 5%;
+      font-size:2.5rem;
+      font-weight:400;
+    }
+    #right {
+      float: right;
+      width:35%;
+      height: 100%;
+      -webkit-transform: rotate(-16.5deg) skew(-16.5deg, 0);
+      -moz-transform: rotate(-16.5deg) skew(-16.5deg, 0);
+      -ms-transform: rotate(-16.5deg) skew(-16.5deg, 0);
+      -o-transform: rotate(-16.5deg) skew(-16.5deg, 0);
+      transform: rotate(-16.5deg) skew(-16.5deg, 0);
+    }
+    #right #contents {
+      padding:15% 2.5% 0;
+    }
+
+    #title {
+      position:fixed;
+      z-index:2;
+      height:90%;
+      display:inline-block;
+      pointer-events:none;
+      top:4.5vw;
+      left:57.5%;
+      padding:2.5% 1.25%;
+      font-size:2rem;
+      font-weight:500;
+      writing-mode:vertical-rl;
+    }
+  
+    @media screen and (max-width: 1000px){
+    #title {left:55.5%;}
+    }
+    @media screen and (max-width: 600px){
+    #title {font-size:5.5vw; left:54.5%;}
+    #right {width:30%;}
+    }
+  
+  ]]></math></code></pre>
+  </hr>
+  </div>
+
+<p><u>JavaScript</u> によって2つの異なるウェブページを呼び出し、
+開いた本のように <u>CSS</u> でスタイリングするテンプレートを制作しました。<hr/></p>
 
 <div id="js" class="open">
 <i>CSS</i>
