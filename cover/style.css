@@ -23,7 +23,7 @@ body {padding:0; margin:0;}
 #right {
   display:block;
   overflow-y:auto;
-  position:relative;
+  position:absolute;
   background-size: 200% 200%;
   animation: gradientBG 5s ease-in-out infinite;
 }
