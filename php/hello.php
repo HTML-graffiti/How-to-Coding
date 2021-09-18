@@ -59,18 +59,15 @@ pre, code {
 PHP は、主に HTML に埋め込み使用する、プログラミング言語です。</p>
 <p>動的に <u data-click="php">ページの内容を生成</u> したり、<u data-click="submit">フォームからデータを取得</u> したり、データベースを作成・管理することに適しています。</p>
 <div id="php" class="open">
-<p><br/>
-<?php
-  echo "このテキストは、PHPで出力されたテキストです。";
-?>
-</p>
 <pre>
 <code>
 <math>
 <![CDATA[
-＜?php
-echo "PHP: Hypertext Preprocessor";
-?＞
+<?php
+echo "このテキストは、PHPで出力されたテキストです。
+
+";
+?>
 ]]>
 </math>
 </code>
