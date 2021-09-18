@@ -54,29 +54,28 @@ pre, code {
 </div>
 
 <div id="hello">
-<pre>
-<code>
-<math>
-<![CDATA[
-<?php
-echo "PHP: Hypertext Preprocessor";
-?>
-]]>
-</math>
-</code>
-</pre>
 
 <p>
-PHP: Hypertext Preprocessor
-は、主に HTML に埋め込み使用する、プログラミング言語です。</p>
+PHP は、主に HTML に埋め込み使用する、プログラミング言語です。</p>
 <p>動的に <u data-click="php">ページの内容を生成</u> したり、<u data-click="submit">フォームからデータを取得</u> したり、データベースを作成・管理することに適しています。</p>
 <div id="php" class="open">
 <p><br/>
-
-  <?php
-  echo "ここに表示されるテキストは、PHPで出力されたテキストです。開始および終了の処理命令で囲まれており、これによって PHP モード の切り替えを行います。";
-  ?>
+<?php
+  echo "ここに表示されるテキストは、PHPで出力されたテキストです。";
+?>
 </p>
+  <pre>
+    <code>
+    <math>
+    <![CDATA[
+    <?php
+    echo "PHP: Hypertext Preprocessor";
+    ?>
+    ]]>
+    </math>
+    </code>
+    </pre>
+<p>PHP のコードは特別な 開始および終了の処理命令 <?php と ?> で囲まれており、これによって "PHP モード" の切り替えを行います。</p>
 </div>
 <div id="submit" class="open">
 <p><br/>
