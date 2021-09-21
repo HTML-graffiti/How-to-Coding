@@ -182,7 +182,7 @@ html,
 <input id="name" type="name" name="name" placeholder="あなたの名前 | Your Name" value="<?php if( !empty($_POST['name']) ){ echo $_POST['name']; } ?>" required>
 <input id="email" type="email" name="email" placeholder="メールアドレス | Email" value="<?php if( !empty($_POST['email']) ){ echo $_POST['email']; } ?>" required>
 <br/>
-<textarea name="contact" placeholder="内容 | Comment"><?php if( !empty($_POST['contact']) ){ echo $_POST['contact']; } ?></textarea>
+<textarea name="contact" placeholder="内容 | Comment" required><?php if( !empty($_POST['contact']) ){ echo $_POST['contact']; } ?></textarea>
 <p><input type="submit" name="btn_confirm" value="Submit"></p>
 </form>
 </section>
