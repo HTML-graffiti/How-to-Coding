@@ -33,14 +33,14 @@ if( !empty($_POST['btn_confirm']) ) {
 
 	// ヘッダー情報を設定
 	$header = "MIME-Version: 1.0\n";
-	$header .= "From: creative, community space ∧°┐ <we.are.pe.hu@gmail.com>\n";
-	$header .= "Reply-To: creative, community space ∧°┐ <we.are.pe.hu@gmail.com>\n";
+	$header .= "From: ∧°┐ <we.are.pe.hu@gmail.com>\n";
+	$header .= "Reply-To: ∧°┐ <we.are.pe.hu@gmail.com>\n";
 
 	// 件名を設定
-	$auto_reply_subject = 'Contact | creative, community space ∧°┐ ';
+	$auto_reply_subject = 'Contact | How to Coding ';
 
 	// 本文を設定
-	$auto_reply_text = "How to Coding | creative, community space ∧°┐\n\n";
+	$auto_reply_text = "Contact | How to Coding\n\n";
 	$auto_reply_text .= "あなたの名前 | Your Name\n" . $_POST['name'] . "\n\n";
 	$auto_reply_text .= "内容 | Comment\n" . nl2br($_POST['contact']) . "\n\n\n";
 	$auto_reply_text .= "Posted on " . date("m-d-Y H:i") . "\n";
@@ -50,10 +50,10 @@ if( !empty($_POST['btn_confirm']) ) {
 	mb_send_mail( $_POST['email'], $auto_reply_subject, $auto_reply_text, $header);
 
 	// 運営側へ送るメールの件名
-	$admin_reply_subject = "Contact | creative, community space ∧°┐";
+	$admin_reply_subject = "Contact | How to Coding";
 
 	// 本文を設定
-	$admin_reply_text = "Contact Form | creative, community space ∧°┐\n\n\n";
+	$admin_reply_text = "Contact | How to Coding\n\n\n";
 	$admin_reply_text .= "Name\n" . $_POST['name'] . "\n";
 	$admin_reply_text .= "Email\n" . $_POST['email'] . "\n\n";
 	$admin_reply_text .= "Comment\n" . nl2br($_POST['contact']) . "\n\n\n";
@@ -165,16 +165,6 @@ html,
 </div>
 </form>
 
-<?php elseif( $page_flag === 2 ): ?>
-<div id="contents">
-<div id="hello">
-<h1 class="fontmotion">Thank You for Contacts</h1>
-<p>お問い合わせありがとうございます。</p>
-<p>フォームに入力いただいたメールアドレスまで、お問い合わせ内容を自動返信いたします。<br/>自動返信メールが届かなかった場合は、お手数ですが、we.are.pe.hu@gmail.com まで改めてご連絡ください。</p>
-</div>
-</div>
-
-<?php else: ?>
 <section>
 <form action="" method="post">
 
