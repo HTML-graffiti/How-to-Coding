@@ -40,9 +40,10 @@ if( !empty($_POST['btn_confirm']) ) {
 	$auto_reply_subject = 'Contact | How to Coding ';
 
 	// 本文を設定
-	$auto_reply_text = "Contact | How to Coding\n\n";
+	$auto_reply_text = "お問い合わせありがとうございます\n\n";
 	$auto_reply_text .= "あなたの名前 | Your Name\n" . $_POST['name'] . "\n\n";
 	$auto_reply_text .= "内容 | Comment\n" . nl2br($_POST['contact']) . "\n\n\n";
+	$auto_reply_text = "お問い合わせ内容について、近日中にご返信します。今しばらくお待ちください。\n\n";
 	$auto_reply_text .= "Posted on " . date("m-d-Y H:i") . "\n";
 	$auto_reply_text .= "creative-community.space/coding/";
 
@@ -61,7 +62,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	$admin_reply_text .= "creative-community.space/coding/";
 
 	// 運営側へメール送信
-	mb_send_mail( 'admin@vg.pe.hu', $admin_reply_subject, $admin_reply_text, $header);
+	mb_send_mail( 'hello@vg.pe.hu', $admin_reply_subject, $admin_reply_text, $header);
 
 	} else {
 		$page_flag = 0;
@@ -165,6 +166,16 @@ html,
 </div>
 </form>
 
+<?php elseif( $page_flag === 2 ): ?>
+<div id="contents">
+<div id="hello">
+<h1 class="fontmotion">Thank You for Contacts</h1>
+<p>お問い合わせありがとうございます。</p>
+<p>フォームに入力いただいたメールアドレスまで、お問い合わせ内容を自動返信いたします。<br/>自動返信メールが届かなかった場合は、お手数ですが、we.are.pe.hu@gmail.com まで改めてご連絡ください。</p>
+</div>
+</div>
+
+<?php else: ?>
 <section>
 <form action="" method="post">
 
