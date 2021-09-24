@@ -35,7 +35,7 @@ $(function(){
 $("#").load("");
 })
 </script>
-<link rel="stylesheet" href="/coding/submit/org/book.css"/>
+<link rel="stylesheet" href="/coding/submit/org/form.css"/>
 <style type="text/css">
 @font-face {
   font-family: "NewYork";
@@ -43,7 +43,7 @@ $("#").load("");
 }
 @font-face {
   font-family: "ipaexm";
-  src: url("http://creative-community.pe.hu/coding/fontbook/family/IPAex/ipaexm.ttf");
+  src: url("/coding/fontbook/family/IPAex/ipaexm.ttf");
 }
 
 html, button {font-family:"NewYork", "ipaexm", serif;}
