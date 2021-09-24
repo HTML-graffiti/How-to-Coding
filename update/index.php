@@ -52,7 +52,7 @@ $(function(){
 	$("#").load("");
 })
 </script>
-<link rel="stylesheet" href="/coding/submit/org/book.css"/>
+<link rel="stylesheet" href="/coding/submit/org/form.css"/>
 <link rel="stylesheet" href="/coding/css/radius.css"/>
 <style type="text/css">
 @font-face {
