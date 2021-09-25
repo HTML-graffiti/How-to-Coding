@@ -62,7 +62,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	$admin_reply_text .= "creative-community.space/coding/";
 
 	// 運営側へメール送信
-	mb_send_mail( 'weare@vg.pe.hu', $admin_reply_subject, $admin_reply_text, $header);
+	mb_send_mail( 'pehu@creative-community.space', $admin_reply_subject, $admin_reply_text, $header);
 
 	} else {
 		$page_flag = 0;
