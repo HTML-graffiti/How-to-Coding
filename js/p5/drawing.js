@@ -22,8 +22,8 @@ function setup() {
   // delay.process(poly, 0.50, 0.5, 2300);
   // reverb.process(delay, 4, 2);
 
-let i = 0;
-let cts = ['c','r','e', 'a', 't','i', 'v', 'e','-','c', 'o', 'm','m','u','n','i','t','y','.','s','p','a','c','e']
+let i = 0; 
+let cts = ['𝕄','𝕖','𝕞','𝕓','𝕖','𝕣','𝕤','','𝕆','𝕟','𝕝','𝕪']
 
 for (let y = 0; y < H - (gridSpacing * 2); y += gridSpacing) {
   for (let x = gridSpacing; x < W - gridSpacing; x += gridSpacing) {
@@ -31,7 +31,7 @@ for (let y = 0; y < H - (gridSpacing * 2); y += gridSpacing) {
       let p
       if(window.chrome){
         if(i > cts.length-1){
-          p = createP("❀");
+          p = createP("");
         }else{
           p = createP(cts[i]);
           p.class('sound-warning')
