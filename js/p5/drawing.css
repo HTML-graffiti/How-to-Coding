@@ -6,7 +6,7 @@ html, body {
 
 @font-face {
   font-family: "inscrutable";
-  src: url(/font/inscrutable.otf);
+  src: url(/coding/fontbook/family/inscrutable.otf);
 }
 
 canvas {

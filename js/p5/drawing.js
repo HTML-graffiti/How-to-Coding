@@ -4,7 +4,7 @@ let poly;
 let delay;
 let reverb;
 
-let notes = ["C","F","G","A","D","B"]
+let notes = ["A","C","D","E","F","G"]
 
 let octave = 4
 let direction = 1
@@ -23,7 +23,7 @@ function setup() {
   // reverb.process(delay, 4, 2);
 
 let i = 0;
-let cts = ['ℌ','𝔗','𝔐', '𝔏', '','𝔤', '𝔯', '𝔞','𝔣','𝔣', '𝔦', '𝔱','𝔦']
+let cts = ['c','r','e', 'a', 't','i', 'v', 'e','-','c', 'o', 'm','m','u','n','i','t','y','.','s','p','a','c','e']
 
 for (let y = 0; y < H - (gridSpacing * 2); y += gridSpacing) {
   for (let x = gridSpacing; x < W - gridSpacing; x += gridSpacing) {
@@ -72,8 +72,8 @@ function changeEmoji() {
 //utility function
 function randomEmoji() {
 
-  let emojis = ['W','e','S','u','p','p','o','r','t', 'y', 'o',' u', 'r', 'A','m','a', 'z', 'i','n','g', 'a', 'n',' d', 'C', 'r','e','a', 't', 'i','v','e', 'C', 'h','a','l', 'l', 'e','n','g','e','s']
-  let creature = ['W','e','a','r','e','t','h','e','C', 'h', 'o',' t', 't', 'o','C', 'r', 'a','z','y']
+  let emojis = ['c','r','e', 'a', 't','i', 'v', 'e','-','c', 'o', 'm','m','u','n','i','t','y','.','s','p','a','c','e']
+  let creature = ['M','e','n','b','e','r','s','','O', 'n', 'l',' y']
 
   let output;
 
