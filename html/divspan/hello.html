@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>DIV SPAN | HyperText Markup Language</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="/coding/js/randomrgba.js"></script>
+<script type="text/javascript">
+$(function(){
+  jQuery('.both').css({'background':getRumRgba()});
+});
+$(function(){
+  jQuery('.both').css({'color':getRumRgba()});
+})
+</script>
+</head>
+<body>
+<p><a href="/coding/html/divspan/hello.html">HTMLのみ（CSSをリンクしない場合）の表示を見る</a></p>
+
+<div class="pc">div class="pc"</div>
+<span class="pc">span class="pc"</span>
+
+<div class="mobile">div class="mobile"</div>
+<span class="mobile">span class="mobile"</span>
+
+<div class="both">div class="both"
+  <span class="both">span class="both"</span>
+  <span class="pc">span class="pc"</span>
+  <span class="mobile">span class="mobile"</span>
+</div>
+
+<div class="pc">div class="pc"
+  <span class="both">span class="both"</span>
+  <span class="pc">span class="pc"</span>
+  <span class="mobile">span class="mobile"</span>
+</div>
+
+<div class="mobile">div class="mobile"
+  <span class="both">span class="both"</span>
+  <span class="pc">span class="pc"</span>
+  <span class="mobile">span class="mobile"</span>
+</div>
+</body>
+</html>

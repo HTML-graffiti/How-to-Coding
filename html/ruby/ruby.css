@@ -1,0 +1,76 @@
+#jp {
+  position: relative;
+  z-index: 1;
+  width: 95%;
+  max-width: 550px;
+  float: right;
+  height: 80vh;
+  font-size: 1.25rem;
+  line-height: 150%;
+  padding: 7.5% 2.5% 5%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  writing-mode: vertical-rl;
+  overflow-x:auto;
+  font-family: "SimSong", "MS Mincho", selif;
+}
+#jp ruby {
+  position: relative;
+  border-right: 2px solid #FF5733;
+  line-height: 250%;
+  position: relative;
+}
+#jp [data-ruby]::before {
+  content: attr(data-ruby);
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  margin: auto;
+  height: 30vh;
+  color: #FF5733;
+  font-size: 0.5em;
+  line-height: 100%;
+}
+
+#en {
+  position: relative;
+  z-index: 1;
+  width: 95%;
+  max-width: 550px;
+  float: left;
+  font-size: 1rem;
+  line-height: 150%;
+  padding: 5% 2.5%;
+  margin: auto;
+  font-family: "SimSong", "MS Mincho", selif;
+}
+#en ruby {
+  position: relative;
+  border-bottom: 2px solid #FF5733;
+  line-height: 400%;
+  position: relative;
+}
+#en [data-ruby]::before {
+  content: attr(data-ruby);
+  position: absolute;
+  top: 1.25rem;
+  left: 0;
+  margin: auto;
+  width: 40vw;
+  color: #FF5733;
+  font-size: 0.5em;
+  line-height: 100%;
+}
+
+@media print {
+  #jp {
+    height: 95vw;
+  }
+  #jp [data-ruby]::before {
+    height: 40vw;
+  }
+  #en {
+    height: 20vw;
+  }
+}
