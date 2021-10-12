@@ -1,0 +1,68 @@
+#click, .demo {display:block; color:#000;}
+#click a {display:inline-block; color:#000;}
+
+#click, .demo {
+padding:10%;
+margin:auto;
+width:75%;
+}
+.demo {
+height:5rem;
+}
+#click a {
+padding:1% 2.5%;
+margin:2.5%;
+}
+
+.demo, #click {
+text-align:center;
+vertical-align: middle;
+}
+
+.demo {
+text-decoration:#000 underline dotted 5px;
+text-decoration-skip-ink: none;
+text-emphasis: filled red;
+-webkit-text-emphasis: filled red;
+}
+.border {
+text-decoration:blue underline overline 10px;
+text-decoration-skip-ink: auto;
+}
+.radius {
+text-decoration:red wavy underline 2px;
+text-decoration-skip-ink: none;
+text-emphasis: 'x';
+-webkit-text-emphasis: 'x';
+}
+.none {
+text-decoration:none;
+}
+
+.demo {
+letter-spacing: 100%;
+word-spacing: 100%;
+}
+.border {
+letter-spacing: 150%;
+word-spacing: 50%;
+white-space: pre-wrap;
+}
+.radius {
+letter-spacing: 75%;
+word-spacing: 125%;
+white-space: break-spaces;
+}
+
+.demo {
+text-transform: capitalize;
+}
+.border {
+text-transform: uppercase;
+}
+.radius {
+text-transform: lowercase;
+}
+.none {
+text-transform: none;
+}

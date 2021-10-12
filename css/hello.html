@@ -1,0 +1,134 @@
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Basic of HTML">
+<meta name="keywords" content="how,to,coding">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title> CSS | Cascading Style Sheets </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/coding/hello/open_close.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("#library").load("library.html");
+})
+</script>
+<link rel="stylesheet" href="/coding/hello/about.css"/>
+<link rel="stylesheet" href="/coding/hello/close_open.css"/>
+<style type="text/css">
+#main {zoom:1.5;}
+  pre, code {
+    display:block;
+    width:100%;
+    overflow-x:auto;
+    font-size:1.25vw;
+  }
+  #contents {
+    width:90%;
+    margin:auto;
+    font-size:1vw;
+  }
+</style>
+</head>
+<body>
+<div id="contents">
+<div id="main">
+<h1>Original <a href="https://youtu.be/BUZIaTHm_oE" target="_blank" rel="noopener noreferrer">Basics of CSS - YouTube</a></h1>
+<p>
+Guide
+<a href="https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank" rel="noopener noreferrer">CSS の基本</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS" target="_blank" rel="noopener noreferrer">CSS: カスケーディングスタイルシート</a>
+</div>
+
+<div id="main">
+  <p>
+  Library<br/>
+  <a href="https://devdocs.io/css/" target="_blank" rel="noopener noreferrer">DevDocs CSS</a><br/>
+  <a href="https://cssreference.io/" target="_blank" rel="noopener noreferrer">CSS Reference</a>
+  </p>
+  <p>
+  Specific Guide<br/>
+  <a href="https://developer.mozilla.org/ja/docs/Learn/CSS/Building_blocks/Selectors" target="_blank" rel="noopener noreferrer">CSS セレクター</a><br/>
+  <a href="https://developer.mozilla.org/ja/docs/Web/CSS/Pseudo-classes" target="_blank" rel="noopener noreferrer">擬似クラス Pseudo-classes</a><br/>
+  <a href="https://developer.mozilla.org/ja/docs/Web/CSS/Specificity" target="_blank" rel="noopener noreferrer">詳細度 Specificity</a></p>
+  
+  </div>
+  
+<div id="hello">
+<p><u data-click="css">CSS</u> は、ウェブページのスタイルを指定するための言語です。
+<br/><i id="css" class="open">例えばウェブサイトを家だと考えた場合、必要な部屋の数・机・棚・椅子などを <a href="http://creative-community.pe.hu/coding/html/" target="_blank" rel="noopener noreferrer">HTML</a>
+に記述し、それらの色や形、どこに何を置くかなどをCSSでスタイリングします。</i></p>
+</div>
+<div id="hello">
+<p>CSSは、HTML の <u data-click="head">HEAD要素内</u>
+<span id="head" class="open">＜style＞ここにCSSを記述＜/style＞</span>
+または、CSSファイルを <u data-click="link">HTMLにLINK</u>
+<span id="link" class="open">＜link href="CSSファイル名.css" rel="stylesheet"＞</span>
+して使用します。</p>
+<hr/>
+<p><u>CSSの記述方法</u></p>
+<p>これは、「P要素」の
+<a href="https://devdocs.io/css/color" target="_blank" rel="noopener noreferrer">色</a>を「緑」に、
+<a href="https://devdocs.io/css/font-size" target="_blank" rel="noopener noreferrer">文字サイズ</a>を「72px」に、
+<a href="https://devdocs.io/css/padding" target="_blank" rel="noopener noreferrer">要素内の余白</a>を「10px」に、
+<a href="https://devdocs.io/css/padding" target="_blank" rel="noopener noreferrer">要素外の右に余白</a>を「20px」
+に指定するCSSです。</p>
+<pre><code><math><![CDATA[
+  p {
+    color: green;
+    font-size: 72px;
+    padding: 10px;
+    margin-right: 20px;
+  }
+]]></math></code></pre>
+<p><i>どの部分に対してのCSSなのかを、要素名「セレクター (Selector)」で表し、どんなスタイリングを行うかを、要素の規則「宣言 (Declaration)」で指示します。
+<br/>「宣言 (Declaration)」には、要素をスタイル付けするための方法「プロパティ (Property)」:「プロパティ値 (Property value)」;を記述します。</i></p>
+<ul>
+  <li><p>規則セットは中括弧  <b>{　}</b> で囲む</p></li>
+  <li><p>宣言内では、コロン <b>:</b> を使用してプロパティと値を分離する</p></li>
+  <li><p>規則セット内でセミコロン <b>;</b> を使用して、それぞれの宣言と次の規則を区切る</p></li>
+<p><span>以上3つのルールを理解できれば、CSSの基本は完璧です。
+<br/>下記の目次から様々なCSSプロパティとHTMLの関係を学んでいきましょう。</span></p>
+</ul>
+<div id="library"></div>
+</div>
+<hr/>
+<div id="hello">
+<p><u>CLASSとID</u></p>
+<p>要素名で規則を宣言する他に、要素に特定の名前をつけるグローバル属性と呼ばれるHTML言語
+  <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/class" target="_blank" rel="noopener noreferrer">CLASS</a> と
+  <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/id" target="_blank" rel="noopener noreferrer">ID</a>
+  を用いて規則を宣言することもできます。</p>
+  <br/>
+  <p>例えば、</p>
+  <pre><code><math><![CDATA[
+    <div class="special">
+      <!-- HTML here -->
+    </div>
+
+    <div id="about">
+      <!-- HTML here -->
+    </div>
+
+    <p class="special">クラス名スペシャルのP要素</p>
+
+    <p id="about">ID名アバウトのP要素</p>
+  ]]></math></code></pre>
+<p>のように、異なる要素に共通の属性名をつけ、</p>
+<p>
+<pre><code><math><![CDATA[
+  .special {
+    /* CSS here */
+  }
+
+  #about {
+    /* CSS here */
+  }
+]]></math></code></pre></p>
+<p>要素名ではなく属性名で要素をスタイリングします。</p>
+<p><i>※ 詳しくは、<a href="/coding/html/href/" target="_blank" rel="noopener noreferrer">A要素とCLASS・ID属性</a>
+ページで解説します。</i></p>
+</div>
+
+</body>
+</html>

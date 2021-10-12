@@ -1,0 +1,140 @@
+body {
+  font-family:monospace;
+  padding:0; margin:0;
+}
+
+.cover {
+  max-height:100vh;
+  animation: 3s ease-in 1.5s reverse both running slidein;
+}
+.cover h1 {
+  font-size:3vw;
+  position: absolute;
+  margin:0; padding:0;
+  top: 50%; left: 50%;
+  animation: 3s ease-in 1.5s reverse both running fontout;
+}
+.cover h1 u {
+  font-size:75%;
+  display:inline-block;
+  padding:2.5vw 0;
+}
+
+@keyframes slidein {
+  from {height: 55vw; max-height:100vh;}
+  to   {height: 100vh;}
+}
+@keyframes fontout {
+  from {
+  -webkit-transform:translate(-50%,-50%) scale(1, 1.5);
+  transform:translate(-50%,-50%) scale(1, 1.5);
+  }
+  to   {
+  -webkit-transform:translate(-50%,-50%) scale(1,2.5);
+  transform:translate(-50%,-50%) scale(1,2.5);
+  }
+}
+
+.cover,
+.wide {
+  position: relative;
+  clear:both;
+  padding:0;
+  margin:0;
+  width:100%;
+}
+.cover {
+  height:55vw;
+}
+.wide {
+  min-height:55vw;
+}
+.wide {
+  font-family:monospace;
+}
+.cover .left,
+.cover .right {
+  font-size:2vw;
+  padding:1.25vw;
+}
+.cover .left {
+  float:left;
+  text-align:left;
+}
+.cover .right {
+  float:right;
+  text-align:right;
+}
+.square {
+  float:left;
+  width:50%;
+  height:50vw;
+  margin:0; padding:0;
+}
+.height {
+  float:left;
+  width:50%;
+  margin:0; padding:0;
+}
+.double {
+  display:block;
+  width:100%;
+  height:75vw;
+  margin:0; padding:0;
+}
+.triple {
+  display:block;
+  width:100%;
+  height:50vw;
+  margin:0; padding:0;
+}
+
+.cover,
+.height span,
+.full span,
+.wide {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.triple,
+.square,
+.double,
+.cover,
+.wide {
+  background-size: cover;
+}
+#infomation iframe {
+  position: absolute;
+  z-index: 0;
+  border:none;
+  top:0; left:0;
+  width:100%;
+  height:100%;
+}
+#infomation h1 {
+  z-index:1;
+  font-size:3vw;
+  position: absolute;
+  width:75%;
+  margin:0; padding:0;
+  top: 50%; left: 50%;
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+}
+#infomation a {
+  font-size:75%;
+  color:#000;
+  background-color:rgba(255,255,255,0.75);
+  font-weight:500;
+  border-bottom:2px solid;
+  text-decoration:none;
+}
+#infomation a:hover {
+  filter: invert(1);
+}
+#infomation span {
+  font-size:55%;
+  display:block;
+  margin-top:1rem; padding:2.5%;
+  border:2px solid;
+}
