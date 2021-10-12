@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+    $("#part2").load("part2.html");
+    })
+    </script>
+    <title>mousedragscrollable</title>
+    <style type="text/css">
+    body {background: #fff;}
+      .text,
+      .half {
+        color:limegreen;
+        font-family: "ＭＳ 明朝","MS Mincho";
+      }
+      .text .title {
+        font-family: "Script","Savoye LET",cursive;
+      }
+      .text i,
+      .half i {
+        font-family: "YuGothic","Yu Gothic","游ゴシック体";
+      }
+      .text a,
+      .text b,
+      .half a,
+      .half b {
+        color:#fff;
+        background:blue;
+      }
+      
+      .photos::-webkit-scrollbar{
+        width: 1rem;
+        height: 1.5rem;
+        background: #fff;
+      }
+      .photos::-webkit-scrollbar-track{
+        border: 0.15rem solid limegreen;
+      }
+      .photos::-webkit-scrollbar-thumb{
+        background: limegreen;
+        border: 0.15rem solid limegreen;
+      }
+      #part2 {margin-top: 2.5rem;}
+    </style>
+
+    <meta
+      name="description"
+      content="https://www.it-the-best.com/entry/javascript-technic-mousedragscroll"
+    />
+    
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/coding/js/mousedragscrollable/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/coding/js/mousedragscrollable/scrollable.js"></script>
+  
+  </head>
+  <body>
+    <div class="text">
+    <u>Web Template</u>
+    <h1 class="title">mouse drag scrollable</h1>
+    <b>index.html</b>
+    <b>style.css</b>
+    <b>scrollable.js</b>
+    +
+  <b>img</b>
+    </div>
+    <ul class="mousedragscrollable photos">
+      <li><img src="img/001.jpg" alt=""></li>
+      <li><img src="img/002.jpg" alt=""></li>
+      <li><img src="img/003.jpg" alt=""></li>
+      <li><img src="img/004.jpg" alt=""></li>
+      <li><img src="img/005.jpg" alt=""></li>
+      <li><img src="img/006.jpg" alt=""></li>
+      <li><img src="img/007.jpg" alt=""></li>
+    </ul>
+    <div class="text">
+    <h1 class="title"><a href="part1.html">Part One</a></h1>
+    </div>
+    <div id="part2"></div>
+    <script>
+        $(".mousedragscrollable").mousedragscrollable(); 
+    </script>
+
+  </body>
+</html>
