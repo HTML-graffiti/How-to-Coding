@@ -1,0 +1,176 @@
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/coding/hello/open_close.js"></script>
+
+<link rel="stylesheet" href="/coding/hello/close_open.css"/>
+<title> The Coverpage that Seems Like a cover of the book </title>
+<style type="text/css">
+#hello {
+  font-size:5vw;
+  display:block;
+}
+#hello a {
+  display:inline-block;
+  font-size:75%;
+  text-decoration:none;
+  color:#000;
+  padding:0.25rem 0.75rem;
+  margin:0.5rem 0;
+  border:0.1vw solid;
+  border-radius:2.5rem;
+}
+#hello b {
+  font-weight:400;
+  padding:0.25vw;
+}
+#hello u {
+  font-weight:400;
+  font-style:italic;
+  text-decoration: none;
+  padding:0.125vw;
+  border-bottom:0.25vw solid;
+}
+#hello i {
+  vertical-align: sub;
+  font-size:55%;
+}
+  pre, code {
+    display:block;
+    width:auto;
+    max-width:45rem;
+    font-size:1.25vw;
+    overflow-x:auto;
+  }
+  #contents {
+    width:90%;
+    margin: auto;
+    font-size:1vw;
+  }
+  #contents #hello {
+    font-size:2vw;
+  }
+@media screen and (max-width: 500px){
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="contents">
+<div id="hello">
+<a href="hello.html">開いた本のようなウェブページ</a>
+<p><u data-click="index">Index.html</u> のBODY内に、
+ID名#cover のDIV 要素を記述し、その中に、#left・#rightと名付けた2つのDIV要素を記述ます。<br/>
+加えて、背表紙に当たるID名 #title　と名付けたH1要素を記述。以上が開いた本のようなウェブページのベースとなります。</p>
+<div id="index" class="open">
+<i>Index.html</i>
+<pre><code><math><![CDATA[
+  <body>
+  <div id="cover">
+  <div id="left"></div>
+  <div id="right"></div>
+  </div>
+  <h1 id="title">Put in The Title of this page</h1>
+  </body>
+]]></math></code></pre>
+<hr/>
+</div>
+<p>画面フルサイズに固定した#cover要素の中にある#leftと#right要素を、<u data-click="css">CSS</u> で 開いた本のようにスタイリングします。<br/>
+ここでは、詳しい解説は省略し、CSSコードのみを紹介します。</p>
+<div id="css" class="open">
+  <i>CSS</i>
+  <pre><code><math><![CDATA[
+    body {padding:0; margin:0;}
+    #cover {
+      position:fixed;
+      top:0; left:0;
+      width:100%;
+      height:100vh;
+      padding:0; margin:0;
+    }
+    #left,
+    #right {
+      display:block;
+      overflow-y:auto;
+      position:relative;
+      background-size: 200% 200%;
+      animation: gradientBG 5s ease-in-out infinite;
+    }
+    #left {
+      float: left;
+      width: 57.5%;
+      height: 100%;
+      -webkit-transform: rotate(10deg) skew(10deg, 0);
+      -moz-transform: rotate(10deg) skew(10deg, 0);
+      -ms-transform: rotate(10deg) skew(10deg, 0);
+      -o-transform: rotate(10deg) skew(10deg, 0);
+      transform: rotate(10deg) skew(10deg, 0);
+    }
+    #left #contents {
+      padding: 12.5% 5% 0 5%;
+      font-size:2.5rem;
+      font-weight:400;
+    }
+    #right {
+      float: right;
+      width:35%;
+      height: 100%;
+      -webkit-transform: rotate(-16.5deg) skew(-16.5deg, 0);
+      -moz-transform: rotate(-16.5deg) skew(-16.5deg, 0);
+      -ms-transform: rotate(-16.5deg) skew(-16.5deg, 0);
+      -o-transform: rotate(-16.5deg) skew(-16.5deg, 0);
+      transform: rotate(-16.5deg) skew(-16.5deg, 0);
+    }
+    #right #contents {
+      padding:15% 2.5% 0;
+    }
+    
+    #title {
+      position:fixed;
+      z-index:2;
+      height:90%;
+      display:inline-block;
+      pointer-events:none;
+      top:4.5vw;
+      left:57.5%;
+      padding:2.5% 1.25%;
+      font-size:2rem;
+      font-weight:500;
+      writing-mode:vertical-rl;
+    }
+    
+    @media screen and (max-width: 1000px){
+    #title {left:55.5%;}
+    }
+    @media screen and (max-width: 600px){
+    #title {font-size:5.5vw; left:54.5%;}
+    #right {width:30%;}
+    }
+    
+  ]]></math></code></pre>
+  <hr/>
+  </div>
+
+<p>最後に、<u data-click="js">JavaScript</u> を使って、#left・#right要素に、ふたつのウェブページを埋め込みます。<br/>
+  $("ページを埋め込みたい箇所の #ID名").load("埋め込みたいページのURL");" を記述します。</p>
+
+<div id="js" class="open">
+<i>JavaScript</i>
+<pre><code><math><![CDATA[
+  <script type="text/javascript">
+    $(function(){
+      $("#right").load("book.php");
+      $("#left").load("hello.html");
+    })
+  </script>
+]]></math></code></pre>
+<hr/>
+</div>
+<a href="https://creative-community.space/coding/sample/">Sample Page</a>
+</div>
+</div>
+</body>
+</html>

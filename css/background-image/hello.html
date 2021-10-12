@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="CSSプロパティ background-image:url(); を使って、要素の背景に横長・縦長・正方形の画像を埋め込み、ダウンロードされづらいフォトアルバムページを作る。">
+  <title>background-image:url();</title>
+  <style type="text/css">
+
+    .cover {
+      font-family: "Yu Gothic UI";
+    }
+    .cover h1 {
+      text-shadow:0 0 0.5vw #fff;
+      color:#000;
+      font-family:monospace;
+    }
+    #infomation h1 {
+      text-shadow:0 0 0.5vw #000;
+      color:#fff;
+      font-family:monospace;
+    }
+    #infomation span {
+      color:#000;
+      text-shadow:0 0 0.5vw #fff;
+      box-shadow:0 0 0.5vw #fff;
+      background-color:rgba(255,255,255,0.25);
+    }
+
+    .one {
+      background-image:url(img/wide.jpg);
+    }
+    .two {
+      background-image:url(img/double.jpg);
+    }
+    .three {
+      background-image:url(img/double.jpg);
+    }
+    .four {
+      background-image:url(img/triple.jpg);
+    }
+    .five {
+      background-image:url(img/triple.jpg);
+    }
+    .six {
+      background-image:url(img/triple.jpg);
+    }
+    .seven {
+      background-image:url(img/wide.jpg);
+    }
+    .eight {
+      background-image:url(img/wide.jpg);
+    }
+  
+  </style>
+  <link rel="stylesheet" type="text/css" href="http://creative-community.space/coding/css/background-image/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+  <div class="cover one">
+    <span class="left">ウェブテンプレート</span>
+    <span class="right">写真日記</span>
+    <h1><u>Web Template</u><br/>
+      . {<br/>
+      background-image:url();<br/>
+      }
+    </h1>
+  </div>
+
+  <div class="height">
+    <span class="double two"></span>
+    <span class="double three"></span>
+  </div>
+  <div class="height">
+    <span class="triple four"></span>
+    <span class="triple five"></span>
+    <span class="triple six"></span>
+  </div>
+
+  <div class="full">
+    <span class="square seven"></span>
+    <span class="square eight"></span>
+  </div>
+
+  <div id="infomation" class="wide">
+    <h1>#INFOMATION H1<br/>
+    <a href="">A</a><br/>
+    <span>SPAN</span></h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!4v1629335129143!6m8!1m7!1sMtyIYj4M5uKfD64XOOhLsQ!2m2!1d34.76766546286213!2d135.5254027162448!3f291.42897408221313!4f-2.8860826067198673!5f1.299169533619291" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  </body>
+</html>

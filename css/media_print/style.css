@@ -1,0 +1,30 @@
+#who {
+  filter: hue-rotate(90deg);
+}
+.back {
+  filter: drop-shadow(16px 16px 20px red) invert(75%);
+}
+.infomation {
+  filter: grayscale(25%) contrast(200%) hue-rotate(45deg);
+}
+
+.infomation a {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  text-decoration:none;
+}
+.title rb {
+  letter-spacing:2.5rem;
+}
+
+.link a {
+  filter: invert(100%);
+}
+  
+  .no_print {
+    display:none;
+  }
