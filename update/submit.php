@@ -28,7 +28,7 @@ fclose($fp);
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title> Submit | VG Coding Club </title>
+<title> Submit | How to Coding </title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
@@ -51,7 +51,7 @@ html, button {font-family:"NewYork", "ipaexm", serif;}
 </head>
 <body>
 <div id="header">
-<a href="/coding/">VG Coding Club</a>
+<a href="/coding/">How to Coding</a>
 <a href="/coding/update/">Update</a>
 </div>
 <form action="complete.php" id="org" method="post" target="_parent">

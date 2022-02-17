@@ -30,7 +30,7 @@ fclose($fp);
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="description" content="これまでに制作したウェブページ、コーディングのヒント・便利なツールなどをリストアップします。">
 
-<title> Update | VG Coding Club </title>
+<title> Update | How to Coding </title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="/coding/submit/org/org.js"></script>
 <script src="/coding/js/randomcolor.js"></script>
@@ -104,7 +104,7 @@ print "".date("m.d.y H:i",$mod);
 </i></span>
 
 <div id="header">
-<a href="/coding/">VG Coding Club</a>
+<a href="/coding/">How to Coding</a>
 </div>
 
 <form id="org">

@@ -76,7 +76,7 @@ if( !empty($_POST['btn_confirm']) ) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | VG Coding Club</title>
+<title>Contact | How to Coding</title>
 <link rel="stylesheet" href="/coding/hello/about.css"/>
 <link rel="stylesheet" href="/coding/submit/form.css"/>
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
