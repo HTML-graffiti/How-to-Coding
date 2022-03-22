@@ -1,0 +1,90 @@
+* { box-sizing: border-box; }
+
+body {
+  background: #fff;
+  margin: 0;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+#content {
+  margin-top: 1.5em;
+  padding-top: 1.25em;
+  padding-bottom: 2.5em;
+}
+
+#content h2 {
+  display: inline;
+  font-size: 95%;
+  border: 0;
+  padding-left: 0.5rem;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+#content h3 {
+  display: inline-block;
+  margin-bottom: 1.5em;
+}
+#content details summary i,
+details .content u {
+  display: inline;
+  float: right;
+  padding: 0.5rem 0 0;
+  font-size: 75%;
+}
+
+details {
+  padding: 0;
+  font-size: 1.25rem;
+  transition: all 1000ms ease;
+}
+
+details summary {
+  cursor: pointer;
+  transition: all 1000ms ease;
+  position: relative;
+  padding: 0 0.5rem;
+  font-size: 2rem;
+  background-color: #fffbe6;
+}
+
+details summary:hover {
+  background: #43B149;
+  color: #fff;
+  transition: all 500ms ease;
+}
+details[open] summary:hover {
+  background: #fff;
+  color: #43B149;
+  transition: all 500ms ease;
+}
+
+details .content {
+  padding: 1.25rem;
+  position: relative;
+  font-size: 1rem;
+}
+
+#content a {
+  color: black;
+  border-bottom: 1px dashed #000;
+  text-decoration: none;
+  transition: all 1500ms ease;
+}
+
+#content a:hover {
+  background: #fffbe6;
+}
+
+
+@media screen and (max-width: 800px) {
+}

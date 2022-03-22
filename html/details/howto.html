@@ -1,0 +1,112 @@
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/coding/hello/about.css"/>
+<link rel="stylesheet" href="/coding/hello/close_open.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/coding/hello/open_close.js"></script>
+<title> DETAILS SUMMARY | HyperText Markup Language </title>
+<style type="text/css">
+  pre, code {
+    display:block;
+    width:100%;
+    font-size:1vw;
+    overflow-x:auto;
+  }
+  #contents {
+    width:90%;
+    margin:auto;
+    font-size:1vw;
+  }
+  #right #contents #hello {
+    font-size:2vw;
+  }
+@media screen and (max-width: 500px){
+}
+</style>
+</head>
+<body>
+<div id="contents">
+<div id="hello">
+<a href="howto.html">DETAILS要素とSUMMARY要素</a>
+<p>このページでは、折りたたみウィジェットを作成する
+  <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/details" target="_blank" rel="noopener noreferrer">詳細折りたたみ要素</a>
+  と
+  <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/summary" target="_blank" rel="noopener noreferrer">概要明示要素</a>
+  についてを解説します。</p>
+<i><u data-click="html">HTMLを見る</u></i><br/>
+<div id="html" class="open">
+  <p>このHTMLのBODY要素は、ID名CLICKと名付けたP要素と、その中にある複数のCLASS・ID名がついたA要素で構成されています。</p>
+  <pre><code><math><![CDATA[
+    <details open>
+      <summary>
+        <h2>DETAILS</h2>
+      </summary>
+      <div class="content">
+        <h3>SUMMARY</h3>
+        <u>U要素</u><br>
+        <p>P要素</p>
+        <a href="___" target="_blank">A要素</a><br>
+        <br>
+      </div>
+    </details>
+  ]]></math></code></pre>
+  <p>準備中</p>
+  <hr/>
+</div>
+<i><u data-click="css">CSSを見る</u></i><br/>
+  <div id="css" class="open">
+    <pre><code><math><![CDATA[
+      details {
+        padding: 0;
+        font-size: 1.25rem;
+        transition: all 1000ms ease;
+      }
+      
+      details summary {
+        cursor: pointer;
+        transition: all 1000ms ease;
+        position: relative;
+        padding: 0 0.5rem;
+        font-size: 2rem;
+        background-color: #fffbe6;
+      }
+      
+      details summary:hover {
+        background: #43B149;
+        color: #fff;
+        transition: all 500ms ease;
+      }
+      details[open] summary:hover {
+        background: #fff;
+        color: #43B149;
+        transition: all 500ms ease;
+      }
+      
+      details .content {
+        padding: 1.25rem;
+        position: relative;
+        font-size: 1rem;
+      }
+      
+      #content a {
+        color: black;
+        border-bottom: 1px dashed #000;
+        text-decoration: none;
+        transition: all 1500ms ease;
+      }
+      
+      #content a:hover {
+        background: #fffbe6;
+      }
+      ]]></math></code></pre>
+    <p>
+      <a href="https://developer.mozilla.org/ja/docs/Web/CSS/" target="_blank" rel="noopener noreferrer">display</a>
+    </p>
+    <hr/>
+  </div>
+</div>
+</div>
+</body>
+</html>
