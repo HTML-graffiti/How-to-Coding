@@ -16,13 +16,7 @@ a {
   text-decoration: none;
 }
 
-#content {
-  margin-top: 1.5em;
-  padding-top: 1.25em;
-  padding-bottom: 2.5em;
-}
-
-#content h2 {
+h2 {
   display: inline;
   font-size: 95%;
   border: 0;
@@ -30,11 +24,11 @@ a {
   text-transform: uppercase;
   font-weight: normal;
 }
-#content h3 {
+h3 {
   display: inline-block;
   margin-bottom: 1.5em;
 }
-#content details summary i,
+details summary i,
 details .content u {
   display: inline;
   float: right;
