@@ -2,8 +2,7 @@
 #grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 2.5%;
-  margin: 2.5%;
+  padding: 2.5vh 2.5%;
   font-size: 2vw;
   font-family: "YuGothic","Yu Gothic","游ゴシック体", sans-serif;
 }
