@@ -62,13 +62,13 @@
 
 @keyframes bggradient{
   0% {
-    background-position: 0% 50%;
+    background:linear-gradient(90deg, #b3cbf6,#FFC778,#eee);
   }
   50% {
-    background-position: 100% 50%;
+    background:linear-gradient(0deg, #b3cbf6,#FFC778,#eee);
   }
   100% {
-    background-position: 0% 50%;
+    background:linear-gradient(-90deg, #b3cbf6,#FFC778,#eee);
   }
 }
 
