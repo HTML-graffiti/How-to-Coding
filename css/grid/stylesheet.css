@@ -9,7 +9,7 @@
 }
 #grid div {
   position: relative;
-  padding:10vh 0;
+  padding:7vh 0;
   margin:0;
   border-collapse: collapse;
   transition:10s all;
@@ -22,7 +22,7 @@
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 3;
-  padding:5%;
+  padding:2.5vh;
 }
 #grid div:nth-of-type(2n) {
   filter: invert(10%);
