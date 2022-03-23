@@ -25,7 +25,6 @@
   grid-row-start: 1;
   grid-row-end: 3;
   padding:5%;
-  background:#fff;
 }
 #grid div:nth-of-type(2n) {
   filter: invert(10%);
