@@ -39,23 +39,28 @@
     <a href="https://developer.mozilla.org/ja/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML" target="_blank" rel="noopener noreferrer">メタデータ: META要素</a>
     など、検索エンジンでページを上位にできる可能性がある情報（この行為に対する用語は Search Engine Optimization (検索エンジン最適化) または
     <a href="https://developer.mozilla.org/ja/docs/Glossary/SEO" target="_blank" rel="noopener noreferrer">SEO</a>
-    といいます）や、CSSやサイトのアイコン(favicon)などの外部のリソースとの関係を指定する
+    といいます）や、CSSやサイトのアイコン(favicon)などの外部のリソースとの関係
     <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/link" target="_blank" rel="noopener noreferrer">LINK: 外部リソースへのリンク要素</a>
-    などを記述します。
+    を指定するなど、ブラウザーには表示されないけど重要な情報を記述し、HTMLについてよい基礎を与えます。
   </p>
   <pre><code><math><![CDATA[
-    <p id="click">
-      <a id="one" class="none" href="#two">click</a>
-      <a id="two" class="border" href="#three">click</a>
-      <a id="three" class="radius" href="#four">click</a>
-      <a id="four" class="border" href="#five">click</a>
-      <a id="five" class="radius" href="#one">click</a>
-    </p>
-  <a class="demo" href="/coding/html/href/hello.html" target="_blank" rel="noopener noreferrer">HTMLのみ（CSSをリンクしない場合）の表示を見る</a>
+    <head>
+    <title>ここにページタイトルを記述する</title>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="文書の作者名">
+    <meta name="description" content="HTMLを誰が書いたのか、どんなウェブサイトなのかとか、ここに記入した情報が検索サイトの説明欄などに表示されます。">
+    
+    <link rel="icon" href="画像データURL">
+    <link rel="stylesheet" href="css"/>
+    
+    <style>
+    <-- ここにCSSを記述 -->
+    </style>
+    </head>
   ]]></math></code></pre>
-  <p>同じHTML内に、同じCLASS名の要素を作ること／一つの要素に複数のCLASS名をつけることができるCLASS属性に対して、同じHTML内で同じID名の要素を作ること／一つの要素に複数のID名をつけることは適切ではありません。
-    <br/>加えて、ID属性の大きな特徴は、A要素のリンク先にID名を指定できることです。</p>
-    <p>※ 左ページ内のA要素は、ID名がついたA要素とリンクしているため、A要素をクリックするとリンクしたA要素へページ内を移動します。</p>
   <hr/>
 </div>
 <i><u data-click="css">CSSを見る</u></i><br/>
