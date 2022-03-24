@@ -1,19 +1,65 @@
-<!DOCTYPE html>
 <html lang="ja">
 <head>
-<title>HEAD | HyperText Markup Language</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../hello/about.css"/>
+<link rel="stylesheet" href="../../hello/close_open.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../../hello/open_close.js"></script>
+<title> HEAD | HyperText Markup Language </title>
+<style type="text/css">
+  pre, code {
+    display:block;
+    width:100%;
+    font-size:1vw;
+    overflow-x:auto;
+  }
+  #contents {
+    width:90%;
+    margin:auto;
+    font-size:1vw;
+  }
+  #right #contents #hello {
+    font-size:2vw;
+  }
+@media screen and (max-width: 500px){
+}
+</style>
 </head>
 <body>
-  <p id="click">
-      <a id="one" class="none" href="#two">click</a>
-      <a id="two" class="border" href="#three">click</a>
-      <a id="three" class="radius" href="#four">click</a>
-      <a id="four" class="border" href="#five">click</a>
-      <a id="five" class="radius" href="#one">click</a>
-  </p>
-  <a class="demo" href="/coding/html/href/hello.html" target="_blank" rel="noopener noreferrer">HTMLのみ（CSSをリンクしない場合）の表示を見る</a>
+<div id="contents">
+<div id="hello">
+<p><a href="hello.html">コードを見る</a></p>
+<pre><code><math><![CDATA[
+  <head>
+    <title>ここにページタイトルを記述する</title>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="作者名">
+    <meta name="description" content="ページの説明">
+    
+    <link rel="icon" href="画像データURL">
+    <link rel="stylesheet" href="css"/>
+    
+    <style>
+      <-- ここにCSSを記述 -->
+    </style>
+  </head>
+]]></math></code></pre>
+<p><i>※ 重要 ※ </i></p>
+<p>文字化けを防ぐため、meta charset="UTF-8" と記述する<br/>
+※ HTML内で使用されている言語「LANG属性」を日本語に指定 ＜html lang="ja"＞ することをおすすめします。（langはlanguageの略。jaはjapaneseの略。）</p>
+
+<p>
+  <a href="https://developer.mozilla.org/ja/docs/Web/CSS/display" target="_blank" rel="noopener noreferrer">display</a>
+  <a href="https://developer.mozilla.org/ja/docs/Web/CSS/width" target="_blank" rel="noopener noreferrer">width</a>
+  <a href="https://developer.mozilla.org/ja/docs/Web/CSS/height" target="_blank" rel="noopener noreferrer">height</a>
+  <a href="https://developer.mozilla.org/ja/docs/Web/CSS/margin" target="_blank" rel="noopener noreferrer">margin</a>
+</p>
+<hr/>
+</div>
+</div>
 </body>
 </html>
