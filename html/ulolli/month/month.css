@@ -1,26 +1,36 @@
 html, body {
   font-size: 1vw;
-  letter-spacing: 0.05rem;
   margin: 0; padding: 0;
-  font-family: 'Noto Sans JP', sans-serif;
 }
 a {text-decoration: none;}
-u {font-size: 150%;}
 hr {clear:both; border: 0 none; padding:0;}
 
 .featured,
 .calendar {
+  display: flex;
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;
-  flex-wrap:         wrap;
+  flex-wrap: wrap;
   -webkit-align-items: normal;
   align-items: normal;
   margin: 0; padding: 0;
   list-style-type: none;
 }
 
-.featured b {
-  font-size: 200%;
+.featured li {
+  font-size: 1vw;
+  float: left;
+  width: auto;
+  padding: 0 2.5% 2.5%;
+}
+.featured h1 {
+  font-size: 300%;
+  font-weight: normal;
+  margin: 2vw 0 1vw;
+}
+.featured h2 {
+  font-size: 150%;
+  margin: 2.5vw 0 1.25vw;
   font-weight: normal;
 }
 .featured span {
@@ -28,60 +38,71 @@ hr {clear:both; border: 0 none; padding:0;}
   margin-right: 1vw;
 }
 .featured a {
-  color: blue;
-  font-size: 2vw;
+  color: #000;
+  font-size: 125%;
   padding: 0.25vw 0.5vw;
   margin-right: 0.5vw;
-  line-height:250%;
-  border: 1px solid blue;
+  line-height:200%;
+  border: 1px solid #000;
 }
 .featured a:hover {
   background:blue;
   color: #fff;
-}
-.featured li {
-  font-size: 1vw;
-  float: left;
-  width: auto;
-  padding: 0 2.5% 2%;
 }
 
 .calendar li {
   font-size: 1vw;
   float: left;
   width: 10%;
-  padding: 2%;
+  margin: 1% 2%;
   position: relative;
 }
-
-.calendar p {
-  padding: 0;
-  margin: 1vw;
+.calendar h1 {
+  font-size: 5vw;
   text-align: center;
+  margin: 0;
 }
-.calendar .day {
-  font-size: 4vw;
+.calendar p {
+  position: absolute;
+  margin:0; padding:0;
+  top:50%; left:50%;
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+}
+.calendar b {
+  font-weight: normal;
 }
 .calendar .sp b {
-  border: 0.45vw solid red;
+  border: 0.45vw solid #000;
   border-radius: 50%;
-  width: 5.5vw;
-  height: 5.5vw;
+  width: 7.5vw;
+  height: 7.5vw;
   display: inline-block;
 }
 .topic {
-  font-size: 1.25vw;
+  font-size: 1.5vw;
 }
 .sp .topic {
+  position: absolute;
+  margin:0; padding:0;
+  top:25%; left:50%;
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+}
+.sp .topic u {
+  color:red;
+  font-weight: bold;
+  text-decoration: none;
+}
+.note .topic {
   position: absolute;
   margin:0; padding:0;
   top:75%; left:50%;
   -webkit-transform:translate(-50%,-50%);
   transform:translate(-50%,-50%);
 }
-.sp .topic u {
-  background: #fff;
-  padding: 0;
+.note .topic u {
+  color:#000;
 }
 .none .topic {
   display: none;

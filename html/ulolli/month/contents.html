@@ -30,15 +30,12 @@ fclose($fp);
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="png">
-<link rel="stylesheet" href="calender.css"/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="month.css"/>
 </head>
 <body>
 <ul class="featured">
-<li><h1><b> ○月<br>Month</b></h1></li>
-<li><h1>FEATURED</h1>
+<li><h1>○月<br>Month</h1></li>
+<li><h2>FEATURED</h2>
 <span>Day (week) <a href="#">Title</a></span>
 </li>
 </ul>
@@ -47,13 +44,13 @@ fclose($fp);
 <?php foreach ($rows as $row): ?>
 <li class="<?=h($row[1])?> <?=h($row[2])?>">
   <p class="topic"><u><?=h($row[3])?></u></p>
-  <p class="day"><b><?=h($row[0])?></b></p>
+  <h1 class="day"><b><?=h($row[0])?></b></h1>
 </li>
 <?php endforeach; ?>
 <?php else: ?>
 <li class="week sp">
   <p class="topic"><u>Name</u></p>
-  <p class="day"><b>0</b></p>
+  <h1 class="day"><b>0</b></h1>
 </li>
 <?php endif; ?>
 </ol>
