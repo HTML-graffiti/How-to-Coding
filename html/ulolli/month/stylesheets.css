@@ -50,15 +50,17 @@ hr {clear:both; border: 0 none; padding:0;}
   font-size: 1vw;
   float: left;
   width: 10%;
-  padding: 0 2%;
+  padding: 2%;
   position: relative;
 }
 
 .calendar p {
-  font-size: 4vw;
   padding: 0;
   margin: 1vw;
   text-align: center;
+}
+.calendar .day {
+  font-size: 4vw;
 }
 .calendar .sp b {
   border: 0.45vw solid red;
@@ -69,11 +71,13 @@ hr {clear:both; border: 0 none; padding:0;}
 }
 .topic {
   font-size: 1.25vw;
-  width:100%;
 }
 .sp .topic {
   position: absolute;
-  width: 100%;
+  margin:0; padding:0;
+  top:0%; left:50%;
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
 }
 .none .topic {
   display: none;
