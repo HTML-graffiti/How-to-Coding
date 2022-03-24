@@ -7,13 +7,6 @@
 <meta name="author" content="Kazuma Sasajima">
 <meta name="description" content="このページでは、ウェブページの基礎となるBODY要素の中に記述する代表的な要素を解説します。">
 
-<script>
-  function update(online) {
-    document.getElementById('status').textContent =
-      online ? 'Online' : 'Offline';
-  }
- </script>
-
 <title> BODY | HyperText Markup Language </title>
 <link rel="stylesheet" href="body.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -36,9 +29,7 @@ $(function(){
 html {scroll-behavior: smooth;}
 </style>
 </head>
-<body ononline="update(true)"
-      onoffline="update(false)"
-      onload="update(navigator.onLine)">
+<body>
 <h1 id="title">BODY | HyperText Markup Language</h1>
 <div id="cover">
 <div id="left">
