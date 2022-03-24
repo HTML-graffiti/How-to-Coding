@@ -2,11 +2,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/coding/hello/about.css"/>
-<link rel="stylesheet" href="/coding/hello/close_open.css"/>
+<link rel="stylesheet" href="../../hello/about.css"/>
+<link rel="stylesheet" href="../../hello/close_open.css"/>
+<script src="../../hello/open_close.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="/coding/hello/open_close.js"></script>
-<title> A CLASS ID | HyperText Markup Language </title>
+<title> HEAD | HyperText Markup Language </title>
 <style type="text/css">
   pre, code {
     display:block;
@@ -29,17 +29,20 @@
 <body>
 <div id="contents">
 <div id="hello">
-<a href="howto.html">A要素とCLASS・ID属性</a>
-<p>このページでは、別のウェブページ、ファイル、メールアドレス、同一ページ内の要素へのハイパーリンクを作成する
-  <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/a" target="_blank" rel="noopener noreferrer">A: アンカー要素</a>
-  と、要素に特定の名前をつけるグローバル属性と呼ばれるHTML言語
-  <a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/class" target="_blank" rel="noopener noreferrer">CLASS</a>
-  と
-  <a href="https://developer.mozilla.org/ja/docs/Web/SVG/Attribute/id" target="_blank" rel="noopener noreferrer">ID</a>
-  についてを解説します。</p>
-<i><u data-click="html">HTMLを見る</u></i><br/>
-<div id="html" class="open">
-  <p>このHTMLのBODY要素は、ID名CLICKと名付けたP要素と、その中にある複数のCLASS・ID名がついたA要素で構成されています。</p>
+<a href="howto.html">HEADって何？</a>
+<p>HTML の文書の <u data-click="about">head</u> 部分は、ページが読み込まれてもウェブブラウザーには表示されない部分です。</p>
+
+<div id="about" class="open">
+  <p>例えば、 タイトルバーやページのタブに表示される文書の題名を定義する
+    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/title" target="_blank" rel="noopener noreferrer">TITLE: 文書題名要素</a>、
+    HTMLの作成者・説明を記述、HTML文書の文字コードを指定する
+    <a href="https://developer.mozilla.org/ja/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML" target="_blank" rel="noopener noreferrer">メタデータ: META要素</a>
+    など、検索エンジンでページを上位にできる可能性がある情報（この行為に対する用語は Search Engine Optimization (検索エンジン最適化) または
+    <a href="https://developer.mozilla.org/ja/docs/Glossary/SEO" target="_blank" rel="noopener noreferrer">SEO</a>
+    といいます）や、CSSやサイトのアイコン(favicon)などの外部のリソースとの関係を指定する
+    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/link" target="_blank" rel="noopener noreferrer">LINK: 外部リソースへのリンク要素</a>
+    などを記述します。
+  </p>
   <pre><code><math><![CDATA[
     <p id="click">
       <a id="one" class="none" href="#two">click</a>
