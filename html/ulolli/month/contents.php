@@ -36,7 +36,7 @@ fclose($fp);
 <ul class="featured">
 <li><h1>○月<br>Month</h1></li>
 <li><h2>FEATURED</h2>
-<span>Day (week) <a href="#">Title</a></span>
+<span>Demo <a href="coutents.php">coutents.php</a></span>
 </li>
 </ul>
 <ol class="calendar">
