@@ -1,19 +1,63 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<title>A CLASS ID | HyperText Markup Language</title>
+<title>BODY | HyperText Markup Language</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+ function update(online) {
+   document.getElementById('status').textContent =
+     online ? 'Online' : 'Offline';
+ }
+</script>
+
 </head>
-<body>
-  <p id="click">
-      <a id="one" class="none" href="#two">click</a>
-      <a id="two" class="border" href="#three">click</a>
-      <a id="three" class="radius" href="#four">click</a>
-      <a id="four" class="border" href="#five">click</a>
-      <a id="five" class="radius" href="#one">click</a>
-  </p>
-  <a class="demo" href="/coding/html/href/hello.html" target="_blank" rel="noopener noreferrer">HTMLのみ（CSSをリンクしない場合）の表示を見る</a>
+<body ononline="update(true)"
+      onoffline="update(false)"
+      onload="update(navigator.onLine)">
+
+<header id="header">
+  <h1>You are: <a id="status" href="https://momdo.github.io/html/sections.html#the-body-element" target="_parent">(Unknown)</a></h1>
+
+  <nav id="nav">
+    <ol>
+      <li><a>BODY</a></li>
+      <li><a href="#header">HEADER</a></li>
+      <li><a href="#nav">NAV</a></li>
+      <li><a href="#main">MAIN</a></li>
+      <li><a href="#section">SECTION</a></li>
+      <li><a href="#footer">FOOTER</a></li>
+      <li><a href="#address">ADDRESS</a></li>
+    </ol>
+  </nav>
+
+</header>
+
+<main id="main">
+  <p>MAIN 要素</p>
+  <a href="https://momdo.github.io/html/grouping-content.html#the-main-element" target="_parent"></a>
+
+<section id="section">
+  <p>SECTION: 汎用セクション要素</p>
+  <a href="https://momdo.github.io/html/sections.html#the-section-element" target="_parent"></a>
+</section>
+
+</main>
+
+<main hidden>
+ <h1>HIDDEN</h1>
+</main>
+
+<footer id="footer">
+
+  <address id="address">
+    <p>
+    <a href="tel:+81117">時報</a>
+    </p>
+  </address>
+
+</footer>
 </body>
 </html>
