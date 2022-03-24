@@ -75,9 +75,13 @@ hr {clear:both; border: 0 none; padding:0;}
 .sp .topic {
   position: absolute;
   margin:0; padding:0;
-  top:0%; left:50%;
+  top:75%; left:50%;
   -webkit-transform:translate(-50%,-50%);
   transform:translate(-50%,-50%);
+}
+.sp .topic u {
+  background: #fff;
+  padding: 0;
 }
 .none .topic {
   display: none;
