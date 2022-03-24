@@ -1,0 +1,23 @@
+html {scroll-behavior: smooth;}
+
+      #click a {
+        display:inline-block;
+        width:90%;
+        height:90vh;
+        margin:5vh auto;
+        font-size:2rem;
+        text-align:center;
+        vertical-align:middle;
+        line-height:90vh;
+      }
+      #click .none {
+        text-decoration:none;
+      }
+      #click .border {
+        border:solid;
+      }
+      #click .radius {
+        border:dashed;
+        border-radius: 2.5rem;
+        box-shadow: 1rem 1rem 1rem #000;
+      }
