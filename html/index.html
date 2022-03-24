@@ -8,7 +8,7 @@
 
 <title> HTML | HyperText Markup Language </title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="/coding/js/randomcolor.js"></script>
+<script src="../js/randomcolor.js"></script>
 <script type="text/javascript">
 $(function(){
 	jQuery('#left').css({'background':getRumRgba()});
@@ -21,16 +21,16 @@ $(function(){
 	$("#hello").load("hello.html");
 	$("#about").load("about.html");
 	$("#link").load("link.html");
-	$("#order").load("/coding/submit/order/form.html");
-	$("#mobile").load("/coding/mobile.html");
+	$("#order").load("../submit/order/form.html");
+	$("#mobile").load("../mobile.html");
 })
 </script>
-<link rel="stylesheet" href="/coding/cover/style.css"/>
-<link rel="stylesheet" href="/coding/mobile/style.css"/>
+<link rel="stylesheet" href="../cover/style.css"/>
+<link rel="stylesheet" href="../mobile/style.css"/>
 <style type="text/css">
 @font-face {
   font-family: "NewYork";
-  src: url("/coding/fontbook/NewYork.otf");
+  src: url("../fontbook/NewYork.otf");
 }
 #title {font-family:"NewYork";}
 
@@ -89,11 +89,11 @@ margin:5% 0 10%;
 </div>
 </div>
 <div class="popup" id="contactform" style="display:none;">
-<p><iframe src="/coding/submit/order/"></iframe></p>
+<p><iframe src="../submit/order/"></iframe></p>
 <span class="close" onclick="obj=document.getElementById('contactform').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
 </div>
 <div class="popup" id="about_workshop" style="display:none;">
-<p><iframe src="/coding/workshop/"></iframe></p>
+<p><iframe src="../workshop/"></iframe></p>
 <span class="close" onclick="obj=document.getElementById('about_workshop').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
 </div>
 <div class="popup" id="support" style="display:none;">
