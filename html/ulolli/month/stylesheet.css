@@ -51,6 +51,7 @@ hr {clear:both; border: 0 none; padding:0;}
   float: left;
   width: 10%;
   padding: 0 2%;
+  position: relative;
 }
 
 .calendar p {
@@ -69,6 +70,13 @@ hr {clear:both; border: 0 none; padding:0;}
 .topic {
   font-size: 1.25vw;
   width:100%;
+}
+.sp .topic {
+  position: absolute;
+  width: 100%;
+}
+.none .topic {
+  display: none;
 }
 
 .sat .day {color:blue;}

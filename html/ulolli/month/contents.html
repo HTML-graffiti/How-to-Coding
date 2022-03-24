@@ -30,7 +30,7 @@ fclose($fp);
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="png">
-<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="stylesheet.css"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
@@ -46,13 +46,13 @@ fclose($fp);
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <li class="<?=h($row[1])?> <?=h($row[2])?>">
-  <p><u class="topic"><?=h($row[3])?></u></p>
+  <p class="topic"><u><?=h($row[3])?></u></p>
   <p class="day"><b><?=h($row[0])?></b></p>
 </li>
 <?php endforeach; ?>
 <?php else: ?>
-<li class="fri sp">
-  <p><u class="topic">Name</u></p>
+<li class="fri none">
+  <p class="topic"><u>Name</u></p>
   <p class="day"><b>0</b></p>
 </li>
 <?php endif; ?>
