@@ -1,0 +1,79 @@
+html, body {
+  font-size: 1vw;
+  letter-spacing: 0.05rem;
+  margin: 0; padding: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+a {text-decoration: none;}
+u {font-size: 150%;}
+hr {clear:both; border: 0 none; padding:0;}
+
+.featured,
+.calendar {
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap:         wrap;
+  -webkit-align-items: normal;
+  align-items: normal;
+  margin: 0; padding: 0;
+  list-style-type: none;
+}
+
+.featured b {
+  font-size: 200%;
+  font-weight: normal;
+}
+.featured span {
+  display: inline-block;
+  margin-right: 1vw;
+}
+.featured a {
+  color: blue;
+  font-size: 2vw;
+  padding: 0.25vw 0.5vw;
+  margin-right: 0.5vw;
+  line-height:250%;
+  border: 1px solid blue;
+}
+.featured a:hover {
+  background:blue;
+  color: #fff;
+}
+.featured li {
+  font-size: 1vw;
+  float: left;
+  width: auto;
+  padding: 0 2.5% 2%;
+}
+
+.calendar li {
+  font-size: 1vw;
+  float: left;
+  width: 10%;
+  padding: 0 2%;
+}
+
+.calendar p {
+  font-size: 4vw;
+  padding: 0;
+  margin: 1vw;
+  text-align: center;
+}
+.calendar .sp b {
+  border: 0.45vw solid red;
+  border-radius: 50%;
+  width: 5.5vw;
+  height: 5.5vw;
+  display: inline-block;
+}
+.topic {
+  font-size: 1.25vw;
+  width:100%;
+}
+
+.sat .day {color:blue;}
+.sun .day {color:red;}
+
+.empty b,
+.empty p
+{display:none;}
