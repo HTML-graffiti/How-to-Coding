@@ -6,21 +6,21 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title> This Page can or cannot be browse from You </title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="/coding/js/randomcolor.js"></script>
+<script src="../js/randomcolor.js"></script>
 <script type="text/javascript">
 $(function(){
 	jQuery('#right').css({'background':getRumRgba()});
 });
 
 $(function(){
-    $("#canbe").load("/coding/mobile/canbe.html");
-    $("#about").load("/coding/mobile/about.html");
-    $("#mobile").load("/coding/mobile.html");
-    $("#order").load("/coding/submit/order/form.html");
+    $("#canbe").load("../mobile/canbe.html");
+    $("#about").load("../mobile/about.html");
+    $("#mobile").load("../mobile.html");
+    $("#order").load("../submit/order/form.html");
 })
 </script>
-<link rel="stylesheet" href="/coding/cover/style.css"/>
-<link rel="stylesheet" href="/coding/css/popup.css"/>
+<link rel="stylesheet" href="../cover/style.css"/>
+<link rel="stylesheet" href="../css/popup.css"/>
 <style type="text/css">
 @font-face {
   font-family: "NewYork";
@@ -29,7 +29,7 @@ $(function(){
 #title {font-family:"NewYork";}
 #left {overflow-x: hidden;}
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 900px){
 #left #canbe {display:none;}
 #right #about {pointer-events:none;}
 }
@@ -55,7 +55,7 @@ $(function(){
 </div>
 
 <div class="popup" id="contactform" style="display:none;">
-<p><iframe src="/coding/submit/order/"></iframe></p>
+<p><iframe src="../submit/order/"></iframe></p>
 <span class="close" onclick="obj=document.getElementById('contactform').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
 </div>
 <div class="popup" id="support" style="display:none;">

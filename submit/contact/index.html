@@ -17,6 +17,7 @@ $(function(){
     $("#php").load("form.php");
     $("#about").load("about.html");
     $("#php_index").load("/coding/php/about.html");
+    $("#mobile").load("/coding/mobile.html");
 })
 </script>
 <link rel="stylesheet" href="/coding/cover/style.css"/>
@@ -45,12 +46,31 @@ $(function(){
   padding:2.5% 5%;
   margin:5% 2.5% 10%;
 }
+#mobile {display:none;}
+
+@media screen and (max-width: 900px){
+#left #contents,
+#left #php,
+#left #code,
+#right #php_index,
+#right #about
+{display:none;}
+
+#mobile {
+  display:block;
+  position:fixed;
+  padding:0; margin:0;
+  width:100%; height:100vh;
+  top:0; left:0;
+}
+}
 </style>
 </head>
 <body>
 <h1 id="title">Contact | Personal Home Page Tools</h1>
 <div id="cover">
 <div id="left">
+<div id="mobile"></div>
 <div id="contents">
 <div id="main">
 <h1 class="fontmotion">使用例 | e.g.</h1>

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title> The Coverpage That Seems Like a cover of the book </title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="/coding/js/randomcolor.js"></script>
+<script src="../js/randomcolor.js"></script>
 <script type="text/javascript">
 $(function(){
     jQuery('#left').css({'background':getRumRgba()});
@@ -16,15 +16,15 @@ $(function(){
 $(function(){
     $("#left").load("hello.html");
     $("#howto").load("org.html");
-	$("#order").load("/coding/submit/order/form.html");
+    $("#order").load("../submit/order/form.html");
 })
 </script>
 <link rel="stylesheet" href="style.css"/>
-<link rel="stylesheet" href="/coding/css/popup.css"/>
+<link rel="stylesheet" href="../css/popup.css"/>
 <style type="text/css">
 @font-face {
   font-family: "NewYork";
-  src: url("/coding/fontbook/NewYork.otf");
+  src: url("../fontbook/NewYork.otf");
 }
 #title {font-family:"NewYork";}
 #coding {zoom:1.5;}
@@ -44,7 +44,7 @@ $(function(){
 <span class="close" onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
 </div>
 <div class="popup" id="contactform" style="display:none;">
-<p><iframe src="/coding/submit/order/"></iframe></p>
+<p><iframe src="../submit/order/"></iframe></p>
 <span class="close" onclick="obj=document.getElementById('contactform').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
 </div>
 </body>

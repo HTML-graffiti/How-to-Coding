@@ -29,7 +29,7 @@ html, body {padding:0; margin:0;}
   font-weight:500;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 900px){
 #canbe {display:none;}
 #mobile {
   display:block;

@@ -8,7 +8,7 @@
 
 <title> Let's Creat a Lists of the Things about You </title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="/coding/js/randomcolor.js"></script>
+<script src="../js/randomcolor.js"></script>
 <script type="text/javascript">
 $(function(){
 	jQuery('#left').css({'background':getRumRgba()});
@@ -19,23 +19,23 @@ $(function(){
     $("#hello").load("hello.html");
     $("#about").load("about.html");
     $("#contents").load("contents.php");
-    $("#mobile").load("/coding/mobile.html");
-    $("#order").load("/coding/submit/order/form.html");
-    $("#php_index").load("/coding/php/about.html");
+    $("#mobile").load("../mobile.html");
+    $("#order").load("../submit/order/form.html");
+    $("#php_index").load("../php/about.html");
 })
 </script>
-<link rel="stylesheet" href="/coding/cover/style.css"/>
+<link rel="stylesheet" href="../cover/style.css"/>
 <link rel="stylesheet" href="form.css"/>
-<link rel="stylesheet" href="/coding/css/popup.css"/>
+<link rel="stylesheet" href="../css/popup.css"/>
 <style type="text/css">
 @font-face {
   font-family: "NewYork";
-  src: url("/coding/fontbook/NewYork.otf");
+  src: url("../fontbook/NewYork.otf");
 }
 #title {font-family:"NewYork";}
 #mobile {display:none;}
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 900px){
 #left #hello,
 #left #php_index,
 #right #contents,
@@ -43,7 +43,6 @@ $(function(){
 #right #order
 {display:none;}
 
-#contents {zoom:0.55;}
 #mobile {
   display:block;
   position:fixed;
@@ -70,11 +69,11 @@ $(function(){
 </div>
 
 <div class="popup" id="contactform" style="display:none;">
-<p><iframe src="/coding/submit/order/"></iframe></p>
+<p><iframe src="../submit/order/"></iframe></p>
 <span class="close" onclick="obj=document.getElementById('contactform').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
 </div>
 <div class="popup" id="support" style="display:none;">
-<p><iframe src="http://vg.pe.hu/jp/cm/support.html"></iframe></p>
+<p><iframe src="/support/"></iframe></p>
 <span class="close" onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
 </div>
 </body>

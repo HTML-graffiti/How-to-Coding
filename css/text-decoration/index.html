@@ -14,6 +14,7 @@ $(function(){
     $("#demo").load("/coding/html/href/hello.html");
     $("#css_library").load("/coding/css/library.html");
     $("#order").load("/coding/submit/order/form.html");
+    $("#mobile").load("/coding/mobile.html");
 })
 </script>
 <link rel="stylesheet" href="style.css"/>
@@ -26,6 +27,21 @@ $(function(){
   src: url("/coding/fontbook/NewYork.otf");
 }
 #title {font-family:"NewYork";}
+#mobile {display:none;}
+
+@media screen and (max-width: 900px){
+#left #demo,
+#left #css_library,
+#right
+{display:none;}
+#mobile {
+  display:block;
+  position:fixed;
+  padding:0; margin:0;
+  width:100%; height:100vh;
+  top:0; left:0;
+}
+}
 
 </style>
 </head>
@@ -35,6 +51,7 @@ $(function(){
 <div id="left">
 <div id="demo"></div>
 <div id="css_library"></div>
+<div id="mobile"></div>
 </div>
 <div id="right">
 <div id="howto"></div>

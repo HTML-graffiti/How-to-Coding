@@ -17,22 +17,22 @@ $(function(){
 $(function(){
     $("#hello").load("hello.html");
     $("#about").load("about.html");
-    $("#order").load("/coding/submit/order/form.html");
-    $("#mobile").load("/coding/mobile.html");
+    $("#order").load("../submit/order/form.html");
+    $("#mobile").load("../mobile.html");
 })
 </script>
-<link rel="stylesheet" href="/coding/cover/style.css"/>
-<link rel="stylesheet" href="/coding/mobile/style.css"/>
+<link rel="stylesheet" href="../cover/style.css"/>
+<link rel="stylesheet" href="../mobile/style.css"/>
 <style type="text/css">
 @font-face {
   font-family: "NewYork";
-  src: url("/coding/fontbook/NewYork.otf");
+  src: url("../fontbook/NewYork.otf");
 }
 #title {font-family:"NewYork";}
 
 #mobile {display:none;}
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 900px){
 #left #hello,
 #right #about,
 #right #order
@@ -60,7 +60,7 @@ $(function(){
 </div>
 </div>
 <div class="popup" id="contactform" style="display:none;">
-<p><iframe src="/coding/submit/order/"></iframe></p>
+<p><iframe src="../submit/order/"></iframe></p>
 <span class="close" onclick="obj=document.getElementById('contactform').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
 </div>
 <div class="popup" id="support" style="display:none;">
