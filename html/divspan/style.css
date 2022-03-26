@@ -12,7 +12,7 @@ span {
 }
 .mobile {display:none;}
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 900px){
   .mobile {display:block;}
   .pc {display:none;}
 
