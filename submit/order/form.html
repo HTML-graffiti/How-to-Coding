@@ -1,29 +1,44 @@
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/coding/css/about.css"/>
-<title> Contact Form | How to Coding </title>
-<style type="text/css">
-@font-face {
-  font-family: "NewYork";
-  src: url("/coding/fontbook/NewYork.otf");
-}
-.NewYork {font-family:"NewYork";}
-#contents #main span {
-  display:inline-block;
-  padding:1.25% 2.5%;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Form | How to Coding </title>
+    <style type="text/css">
+        @font-face {
+            font-family: "NewYork";
+            src: url("/coding/fontbook/NewYork.otf");
+        }
+        
+        .NewYork {
+            font-family: "NewYork";
+        }
+        
+        #contents h1 {
+            font-size: 2vw;
+            padding: 1.25% 2.5%;
+            margin: 0;
+        }
+        
+        #contents #main span {
+            display: inline-block;
+            padding: 1vw 2.5vw;
+            border: 0.1vw solid;
+            border-radius: 5.5vw;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
 
-<div id="contents" onclick="obj=document.getElementById('contactform').style; obj.display=(obj.display=='none')?'block':'none';">
-<h1 class="NewYork">Contact Form</h1>
-<div id="main">
-<span>このウェブサイトについての質問、ウェブサイト制作・ワークショップ開催のご依頼などのお問い合わせは、こちらのフォームよりご連絡ください。</span>
-</div>
-</div>
+    <div id="contents" onclick="obj=document.getElementById('contactform').style; obj.display=(obj.display=='none')?'block':'none';">
+        <h1 class="NewYork">Contact Form</h1>
+        <div id="main">
+            <span>このウェブサイトについての質問、ウェブサイト制作・ワークショップ開催のご依頼などのお問い合わせは、こちらのフォームよりご連絡ください。</span>
+        </div>
+    </div>
 </body>
+
 </html>
