@@ -1,0 +1,181 @@
+#pseudo-elements p::before {
+    content: '<p>';
+}
+
+#pseudo-elements p::after {
+    content: '</p>';
+}
+
+hgroup {
+    font-family: monospace;
+}
+
+#pseudo-elements h1::before {
+    content: '<h1>';
+}
+
+#pseudo-elements h1::after {
+    content: '</h1>';
+}
+
+#pseudo-elements h1 {
+    font-size: 6vw;
+}
+
+#pseudo-elements h2::before {
+    content: '<h2>';
+}
+
+#pseudo-elements h2::after {
+    content: '</h2>';
+}
+
+#pseudo-elements h2 {
+    font-size: 5vw;
+}
+
+#pseudo-elements h3::before {
+    content: '<h3>';
+}
+
+#pseudo-elements h3::after {
+    content: '</h3>';
+}
+
+#pseudo-elements h3 {
+    font-size: 4vw;
+}
+
+#pseudo-elements h4::before {
+    content: '<h4>';
+}
+
+#pseudo-elements h4::after {
+    content: '</h4>';
+}
+
+#pseudo-elements h4 {
+    font-size: 3vw;
+}
+
+#pseudo-elements h5::before {
+    content: '<h5>';
+}
+
+#pseudo-elements h5::after {
+    content: '</h5>';
+}
+
+#pseudo-elements h5 {
+    font-size: 2vw;
+}
+
+#pseudo-elements h6::before {
+    content: '<h6>';
+}
+
+#pseudo-elements h6::after {
+    content: '</h6>';
+}
+
+#pseudo-elements h6 {
+    font-size: 1vw;
+}
+
+#pseudo-elements span {
+    display: block;
+    font-size: 2vw;
+}
+
+#pseudo-elements b,
+#pseudo-elements i,
+#pseudo-elements u,
+#pseudo-elements s,
+#pseudo-elements q,
+#pseudo-elements samp,
+#pseudo-elements small,
+#pseudo-elements strong,
+#pseudo-elements sub,
+#pseudo-elements sup {
+    margin-right: 1vw;
+}
+
+#pseudo-elements b::before {
+    content: '<b>';
+}
+
+#pseudo-elements b::after {
+    content: '</b>';
+}
+
+#pseudo-elements i::before {
+    content: '<i>';
+}
+
+#pseudo-elements i::after {
+    content: '</i>';
+}
+
+#pseudo-elements u::before {
+    content: '<u>';
+}
+
+#pseudo-elements u::after {
+    content: '</u>';
+}
+
+#pseudo-elements s::before {
+    content: '<s>';
+}
+
+#pseudo-elements s::after {
+    content: '</s>';
+}
+
+#pseudo-elements q::before {
+    content: '<q>';
+}
+
+#pseudo-elements q::after {
+    content: '</q>';
+}
+
+#pseudo-elements samp::before {
+    content: '<samp>';
+}
+
+#pseudo-elements samp::after {
+    content: '</samp>';
+}
+
+#pseudo-elements small::before {
+    content: '<small>';
+}
+
+#pseudo-elements small::after {
+    content: '</small>';
+}
+
+#pseudo-elements strong::before {
+    content: '<strong>';
+}
+
+#pseudo-elements strong::after {
+    content: '</strong>';
+}
+
+#pseudo-elements sub::before {
+    content: '<sub>';
+}
+
+#pseudo-elements sub::after {
+    content: '</sub>';
+}
+
+#pseudo-elements sup::before {
+    content: '<sup>';
+}
+
+#pseudo-elements sup::after {
+    content: '</sup>';
+}
