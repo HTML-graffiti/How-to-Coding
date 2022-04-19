@@ -1,48 +1,68 @@
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../../hello/about.css"/>
-<link rel="stylesheet" href="../../hello/close_open.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="../../hello/open_close.js"></script>
-<title> HEAD | HyperText Markup Language </title>
-<style type="text/css">
-  pre, code {
-    display:block;
-    width:100%;
-    font-size:1vw;
-    overflow-x:auto;
-  }
-  #contents {
-    width:90%;
-    margin:auto;
-    font-size:1vw;
-  }
-  #right #contents #hello {
-    font-size:2vw;
-  }
-</style>
-</head>
-<body>
-<div id="contents">
-<div id="hello">
-<a href="howto.html">HEADって何？</a>
-<p>HTML の文書の <u data-click="about">head</u> 部分は、ページが読み込まれてもウェブブラウザーには表示されない部分です。</p>
 
-<div id="about" class="open">
-  <p>例えば、 タイトルバーやページのタブに表示される文書の題名を定義する
-    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/title" target="_blank" rel="noopener noreferrer">TITLE: 文書題名要素</a>、
-    HTMLの作成者・説明を記述、HTML文書の文字コードを指定する
-    <a href="https://developer.mozilla.org/ja/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML" target="_blank" rel="noopener noreferrer">メタデータ: META要素</a>
-    など、検索エンジンでページを上位にできる可能性がある情報（この行為に対する用語は Search Engine Optimization (検索エンジン最適化) または
-    <a href="https://developer.mozilla.org/ja/docs/Glossary/SEO" target="_blank" rel="noopener noreferrer">SEO</a>
-    といいます）や、CSSやサイトのアイコン(favicon)などの外部のリソースとの関係
-    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/link" target="_blank" rel="noopener noreferrer">LINK: 外部リソースへのリンク要素</a>
-    を指定するなど、HTMLについてよい基礎を与えます。
-  </p>
-</div>
-</div>
-</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../hello/about.css" />
+    <link rel="stylesheet" href="../../hello/close_open.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../hello/open_close.js"></script>
+    <title> HEAD | HyperText Markup Language </title>
+    <style type="text/css">
+        pre,
+        code {
+            display: block;
+            width: 100%;
+            font-size: 1vw;
+            overflow-x: auto;
+        }
+        
+        h1 {
+            font-family: "NewYork";
+            font-weight: 500;
+        }
+        
+        .hints {
+            padding: 0 0 4.5%;
+        }
+        
+        #contents {
+            width: 90%;
+            margin: auto;
+            font-size: 1vw;
+        }
+        
+        #right #contents #hello {
+            font-size: 2vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contents">
+        <div class="hints">
+            <h1>Hints</h1>
+            <p>
+                <a href="https://momdo.github.io/html/semantics.html#the-html-element" target="_blank" rel="noopener noreferrer">HTML Living Standard</a>
+                <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/head" target="_blank" rel="noopener noreferrer">文書メタデータ (ヘッダー) 要素</a>
+                <a href="https://www.w3.org/International/questions/qa-html-encoding-declarations.ja" target="_blank" rel="noopener noreferrer">HTMLで文字エンコーディングを指定する</a>
+                <a href="https://qiita.com/ryounagaoka/items/045b2808a5ed43f96607" target="_blank" rel="noopener noreferrer">もう逃げない。HTMLのviewportをちゃんと理解する</a>
+            </p>
+        </div>
+        <div id="hello">
+            <p>HTML の文書の <u data-click="about">head</u> 部分は、ページが読み込まれてもウェブブラウザには表示されない部分です。</p>
+
+            <div id="about" class="open">
+                <p>例えば、 タイトルバーやページのタブに表示される文書の題名を定義する
+                    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/title" target="_blank" rel="noopener noreferrer">TITLE: 文書題名要素</a>、 HTMLの作成者・説明を記述、HTML文書の文字コードを指定する
+                    <a href="https://developer.mozilla.org/ja/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML" target="_blank" rel="noopener noreferrer">メタデータ: META要素</a> など、検索エンジンでページを上位にできる可能性がある情報（この行為に対する用語は Search Engine Optimization
+                    (検索エンジン最適化) または
+                    <a href="https://developer.mozilla.org/ja/docs/Glossary/SEO" target="_blank" rel="noopener noreferrer">SEO</a> といいます）や、CSSやサイトのアイコン(favicon)などの外部のリソースとの関係
+                    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/link" target="_blank" rel="noopener noreferrer">LINK: 外部リソースへのリンク要素</a> を指定するなど、HTMLについてよい基礎を与えます。
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
