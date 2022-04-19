@@ -42,8 +42,8 @@
         }
         
         @media screen and (max-width: 900px) {
+            #left #css_library,
             #left #demo,
-            #left #contents,
             #right {
                 display: none;
             }
@@ -66,19 +66,9 @@
     <div id="cover">
         <div id="left">
             <div id="demo"></div>
-            <div id="contents">
-                <div id="main">
-                    <p>Font Book</p>
-                    <p>
-                        <a href="/coding/fontbook/">/coding/fontbook/</a>
-                    </p>
-                </div>
-                <div id="hello">
-                    <p>インターネットで見つけたお気に入りのフォントコレクション</p>
-                </div>
-                <br/>
-            </div>
+            <div id="css_library"></div>
             <div id="mobile"></div>
+            <br/>
         </div>
         <div id="right">
             <div id="howto"></div>
@@ -86,6 +76,7 @@
                 <p class="support">Support
                     <a onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">Donation</a>
                 </p>
+                <br/>
             </div>
         </div>
     </div>
