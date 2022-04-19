@@ -171,10 +171,10 @@ button:hover {
 }
 
 .list li {
-    font-size: 1rem;
+    font-size: 1.25rem;
     position: relative;
     clear: both;
-    padding: 0.5rem 2.5vw;
+    padding: 1rem 2.5vw;
     transition: .5s all;
 }
 
