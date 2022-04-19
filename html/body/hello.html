@@ -1,53 +1,39 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<title>BODY | HyperText Markup Language</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="stylesheet.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<script>
- function update(online) {
-   document.getElementById('status').textContent =
-     online ? 'Online' : 'Offline';
- }
-</script>
+<head>
+    <title>BODY | HyperText Markup Language</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css" />
 
 </head>
-<body ononline="update(true)"
-      onoffline="update(false)"
-      onload="update(navigator.onLine)">
 
-<header id="header">
-  <h1>You are: <a id="status" href="hello.html" target="_parent">(Unknown)</a></h1>
+<body>
 
-  <nav id="nav">
-    <ol>
-      <li><a>BODY</a></li>
-      <li><a href="#header">HEADER</a></li>
-      <li><a href="#nav">NAV</a></li>
-      <li><a href="#main">MAIN</a></li>
-      <li><a href="#footer">FOOTER</a></li>
-      <li><a href="#address">ADDRESS</a></li>
-    </ol>
-  </nav>
+    <header id="header">
 
-</header>
+        <nav id="nav">
+            <ol>
+                <li><a>HEAD 要素</a></li>
+                <li><a href="#main">MAIN 要素</a></li>
+                <li><a href="#footer">FOOTER 要素</a></li>
+            </ol>
+        </nav>
 
-<main id="main">
-  <p>MAIN 要素</p>
-  <a href="https://momdo.github.io/html/grouping-content.html#the-main-element" target="_parent"></a>
-</main>
+    </header>
 
-<footer id="footer">
+    <main id="main">
+        MAIN 要素
+    </main>
 
-  <address id="address">
-    <p>
-      <a href="mailto:we.are.pe.hu@gmail.com">email</a>
-    </p>
-  </address>
+    <footer id="footer">
 
-</footer>
+        <address id="address">
+          <p><a href="hello.html">FOOTER 要素</a></p>
+        </address>
+
+    </footer>
 </body>
+
 </html>

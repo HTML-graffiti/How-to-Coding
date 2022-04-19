@@ -1,150 +1,160 @@
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../../hello/about.css"/>
-<link rel="stylesheet" href="../../hello/close_open.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="../../hello/open_close.js"></script>
-<title> BODY | HyperText Markup Language </title>
-<style type="text/css">
-  pre, code {
-    display:block;
-    width:100%;
-    font-size:1vw;
-    overflow-x:auto;
-  }
-  #contents {
-    width:90%;
-    margin:auto;
-    font-size:1vw;
-  }
-  #right #contents #hello {
-    font-size:2vw;
-  }
-@media screen and (max-width: 500px){
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../hello/about.css" />
+    <link rel="stylesheet" href="../../hello/close_open.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../hello/open_close.js"></script>
+    <title> BODY | HyperText Markup Language </title>
+    <style type="text/css">
+        pre,
+        code {
+            display: block;
+            width: 100%;
+            font-size: 1vw;
+            overflow-x: auto;
+        }
+        
+        #contents {
+            width: 90%;
+            margin: auto;
+            font-size: 1vw;
+        }
+        
+        #right #contents #hello {
+            font-size: 2vw;
+        }
+        
+        @media screen and (max-width: 500px) {}
+    </style>
 </head>
+
 <body>
-<div id="contents">
-<div id="hello">
-<a href="howto.html">本文要素</a>
-<p>このページでは、HTML の内 ブラウザに表示されるBODY要素の中に記述する代表的な要素を解説します。</p>
-<i><u data-click="html">もっと詳しく</u></i><br/>
-<div id="html" class="open">
-<p><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/body" target="_parent">BODY: 文書の本文要素</a></p>
-<pre><code><math><![CDATA[
-  <header id="header">
-    <nav id="nav">
-      <ol>
-        <li><a>BODY</a></li>
-        <li><a href="#header">HEADER</a></li>
-        <li><a href="#nav">NAV</a></li>
-        <li><a href="#main">MAIN</a></li>
-        <li><a href="#footer">FOOTER</a></li>
-        <li><a href="#address">ADDRESS</a></li>
-      </ol>
-    </nav>
-  </header>
-  
-  <main id="main">
-    <p>MAIN 要素</p>
-    <a href="https://momdo.github.io/html/grouping-content.html#the-main-element" target="_parent"></a>
-  </main>
-  
-  <footer id="footer">
-  
-    <address id="address">
-      <p>
-        <a href="mailto:we.are.pe.hu@gmail.com">email</a>
-      </p>
-    </address>
-  
-  </footer>
+    <div id="contents">
+        <div id="hello">
+            <a href="howto.html">本文要素</a>
+            <p>このページでは、HTML の内 ブラウザに表示されるBODY要素の中に記述する代表的な要素を解説します。</p>
+            <i><u data-click="html">もっと詳しく</u></i><br/>
+            <div id="html" class="open">
+                <p><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/body" target="_parent">BODY: 文書の本文要素</a></p>
+                <pre><code><math><![CDATA[
+    <header id="header">
+
+        <nav id="nav">
+            <ol>
+                <li><a>HEAD 要素</a></li>
+                <li><a href="#main">MAIN 要素</a></li>
+                <li><a href="#footer">FOOTER 要素</a></li>
+            </ol>
+        </nav>
+
+    </header>
+
+    <main id="main">
+        MAIN 要素
+    </main>
+
+    <footer id="footer">
+
+        <address id="address">
+          <p><a href="hello.html">FOOTER 要素</a></p>
+        </address>
+
+    </footer>
 ]]></math></code></pre>
-<p>
-  <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/header" target="_parent">HEADER</a>
-  は、ページの見出し や
-  <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/nav" target="_parent">NAV: ナビゲーションセクション要素</a>
-  など、導入的なコンテンツを記述する、一般的にBODY要素の冒頭にある要素です。
-</p>
-<i><u data-click="nav_css">NAV要素をスタイルングするCSS</u></i><br/>
-<div id="nav_css" class="open">
-<pre><code><math><![CDATA[
-  nav {
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    padding: 5vh 0 2.5vh;
-  }
-  nav ol {
+                <p>一般的には、HEAD要素にメニュー、MAIN要素に主要な内容、FOOTER要素にコピーライトなどのクレジットを記述します。</p>
+            </div>
+            <hr/>
+            <p>
+                <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/header" target="_parent">HEADER</a> は、一般的にBODY要素の冒頭にある要素です。<br/>ページの見出し や
+                <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/nav" target="_parent">NAV: ナビゲーションセクション要素</a> など、導入的なコンテンツを記述します。
+            </p>
+            <i><u data-click="nav_css">NAV要素をスタイルングするCSS</u></i><br/>
+            <div id="nav_css" class="open">
+                <pre><code><math><![CDATA[
+nav ol {
     list-style-type: none;
     padding-left: 0;
-  }
-  nav li {
+}
+
+nav li {
     display: inline-block;
-  }
-  nav a::after {
+}
+
+nav a::after {
     display: inline-block;
     color: #000;
     content: '>';
     font-size: 80%;
     font-weight: bold;
     padding: 0 3px;
-  }
+}
 ]]></math></code></pre>
-<p>メニュー、目次、索引などを記述するリスト要素については
-  <a href="/coding/html/ulolli/" target="_blank" rel="noopener noreferrer">Ul Ol Li</a>
-  ページを参照ください。
-</p>
-</div>
-<hr/>
-<p>
-  <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/main" target="_parent">MAIN</a>
-  は、BODY要素の主要な内容を表す要素です。<br/>
-  HTML内には hidden 属性が指定されていない MAIN要素を2つ以上置くことはできません。
-</p>
-<p><i>※ 要素名の後に
+                <p>メニュー、目次、索引などを記述するリスト要素については
+                    <a href="/coding/html/ulolli/" target="_blank" rel="noopener noreferrer">Ul Ol Li</a> ページを参照ください。
+                </p>
+            </div>
+            <hr/>
+            <p>
+                <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/main" target="_parent">MAIN</a> は、HTML5/HTML Living Standardから導入された新要素。BODY要素の主要な内容を表します。
+                <br/> HTML内には hidden 属性が指定されていない MAIN要素を2つ以上置くことはできません。
+            </p>
+            <p><i>※ 要素名の後に
   <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/hidden" target="_parent">hidden</a>
   と記述すると、要素を非表示にすることができます。</i>
-</p>
-<i><u data-click="main_css">MAIN要素をスタイルングするCSS</u></i><br/>
-<div id="main_css" class="open">
-<pre><code><math><![CDATA[
-  main {
-    padding: relative;
+            </p>
+            <i><u data-click="main_css">MAIN要素をスタイルングするCSS</u></i><br/>
+            <div id="main_css" class="open">
+                <pre><code><math><![CDATA[
+main {
     height: 100vh;
-    color: #fff;
+    color: #000;
     display: grid;
+    background-color: #ccc;
     place-items: center;
-  }
-  main a {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.25);
-  }
-  main a:hover {
-    filter: blur(2rem);
-  }
+}
 ]]></math></code></pre>
-<p>要素内の中央にテキストをスタイリングするCSSについては
-  <a href="/coding/css/grid/" target="_blank" rel="noopener noreferrer">Grid Layout</a>
-  ページを参照ください。
-</p>
-</div>
-<hr/>
-<p>
-  <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/footer" target="_parent">FOOTER</a>
-  は、一般的にBODY要素の最後に表示する、著作者に関する情報や
-  <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/address" target="_parent">ADDRESS: 連絡先要素</a>
-  などを記述する要素です。
-</p>
-<hr/>
-</div>
-</div>
-</div>
+                <p>要素内の中央にテキストをスタイリングするCSSについては
+                    <a href="/coding/css/grid/" target="_blank" rel="noopener noreferrer">Grid Layout</a> ページを参照ください。
+                </p>
+            </div>
+            <hr/>
+            <p>
+                <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/footer" target="_parent">FOOTER</a> は、一般的にBODY要素の最後に表示する、著作者に関する情報や
+                <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/address" target="_parent">ADDRESS: 連絡先要素</a> などを記述する要素です。
+            </p>
+            <i><u data-click="footer_css">FOOTER要素をスタイルングするCSS</u></i><br/>
+            <div id="footer_css" class="open">
+                <pre><code><math><![CDATA[
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    display: block;
+    padding: 5vh 2.5%;
+    background-color: #000;
+}
+
+address {
+    font-size: 2rem;
+    font-family: fantasy;
+}
+
+address a[href^="mailto"]::before {
+    content: "📧 ";
+}
+]]></math></code></pre>
+                <p>要素全体にリンクを広げるCSSについては
+                    <a href="/coding/html/href/" target="_blank" rel="noopener noreferrer">A要素とCLASS・ID属性</a> ページを参照ください。
+                </p>
+            </div>
+            <hr/>
+        </div>
+    </div>
 </body>
+
 </html>
