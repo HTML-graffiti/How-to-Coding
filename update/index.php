@@ -83,7 +83,6 @@ fclose($fp);
             
             .list #done {
                 zoom: 1.5;
-                padding: 1rem 1.25rem;
             }
             
             .list li span {
