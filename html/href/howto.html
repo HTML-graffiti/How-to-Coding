@@ -1,116 +1,133 @@
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../../hello/about.css"/>
-<link rel="stylesheet" href="../../hello/close_open.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="../../hello/open_close.js"></script>
-<title> A CLASS ID | HyperText Markup Language </title>
-<style type="text/css">
-  pre, code {
-    display:block;
-    width:100%;
-    font-size:1vw;
-    overflow-x:auto;
-  }
-  #contents {
-    width:90%;
-    margin:auto;
-    font-size:1vw;
-  }
-  #right #contents #hello {
-    font-size:2vw;
-  }
-@media screen and (max-width: 500px){
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../hello/about.css" />
+    <link rel="stylesheet" href="../../hello/close_open.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../hello/open_close.js"></script>
+    <title> A CLASS ID | HyperText Markup Language </title>
+    <style type="text/css">
+        pre,
+        code {
+            display: block;
+            width: 100%;
+            font-size: 1vw;
+            overflow-x: auto;
+        }
+        
+        #contents {
+            width: 90%;
+            margin: auto;
+            font-size: 1vw;
+        }
+        
+        #right #contents #hello {
+            font-size: 2vw;
+        }
+        
+        @media screen and (max-width: 500px) {}
+    </style>
 </head>
+
 <body>
-<div id="contents">
-<div id="hello">
-<a href="howto.html">A要素とCLASS・ID属性</a>
-<p>このページでは、別のウェブページ、ファイル、メールアドレス、同一ページ内の要素へのハイパーリンクを作成する
-  <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/a" target="_blank" rel="noopener noreferrer">A: アンカー要素</a>
-  と、要素に特定の名前をつけるグローバル属性と呼ばれるHTML言語
-  <a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/class" target="_blank" rel="noopener noreferrer">CLASS</a>
-  と
-  <a href="https://developer.mozilla.org/ja/docs/Web/SVG/Attribute/id" target="_blank" rel="noopener noreferrer">ID</a>
-  についてを解説します。</p>
-<i><u data-click="html">HTMLを見る</u></i><br/>
-<div id="html" class="open">
-  <p>このHTMLのBODY要素は、ID名CLICKと名付けたP要素と、その中にある複数のCLASS・ID名がついたA要素で構成されています。</p>
-  <pre><code><math><![CDATA[
+    <div id="contents">
+        <div id="hello">
+            <a href="howto.html">A要素とCLASS・ID属性</a>
+            <p>このページでは、別のウェブページ、ファイル、メールアドレス、同一ページ内の要素へのハイパーリンクを作成する
+                <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/a" target="_blank" rel="noopener noreferrer">A: アンカー要素</a> と、要素に特定の名前をつけるグローバル属性と呼ばれるHTML言語
+                <a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/class" target="_blank" rel="noopener noreferrer">CLASS</a> と
+                <a href="https://developer.mozilla.org/ja/docs/Web/SVG/Attribute/id" target="_blank" rel="noopener noreferrer">ID</a> についてを解説します。
+            </p>
+            <i><u data-click="html">HTMLを見る</u></i><br/>
+            <div id="html" class="open">
+                <p>このHTMLのBODY要素には、ID名CLICKと名付けたP要素と、その中にある複数のCLASS・ID名がついたA要素があります。</p>
+                <pre><code><math><![CDATA[
     <p id="click">
-      <a id="one" class="none" href="#two">click</a>
-      <a id="two" class="border" href="#three">click</a>
-      <a id="three" class="radius" href="#four">click</a>
-      <a id="four" class="border" href="#five">click</a>
-      <a id="five" class="radius" href="#one">click</a>
+        <a id="one" class="shadow" href="#two">click</a>
+        <a id="two" class="solid none radius" href="#three">click</a>
+        <a id="three" class="double shadow" href="#four">click</a>
+        <a id="four" class="dotted radius none" href="#five">click</a>
+        <a id="five" class="radius none shadow" href="#one" .html ">click</a>
     </p>
-  <a class="demo" href="hello.html" target="_blank" rel="noopener noreferrer">HTMLのみ（CSSをリンクしない場合）の表示を見る</a>
   ]]></math></code></pre>
-  <p>同じHTML内に、同じCLASS名の要素を作ること／一つの要素に複数のCLASS名をつけることができるCLASS属性に対して、同じHTML内で同じID名の要素を作ること／一つの要素に複数のID名をつけることは適切ではありません。
-    <br/>加えて、ID属性の大きな特徴は、A要素のリンク先にID名を指定できることです。</p>
-    <p>※ 左ページ内のA要素は、ID名がついたA要素とリンクしているため、A要素をクリックするとリンクしたA要素へページ内を移動します。</p>
-  <hr/>
-</div>
-<i><u data-click="css">CSSを見る</u></i><br/>
-  <div id="css" class="open">
-    <p><i>※ CSSでは、ID名を「#ID名」CLASS名を「.CLASS名」 と記述します。</i></p>
-    <p>ID名#CLICK内のA要素をフルディスプレイサイズで表示し、要素の上下に空白を作るCSS</p>
-    <pre><code><math><![CDATA[
-      #click a {
-        display:inline-block;
-        width:90%;
-        height:90vh;
-        margin:5vh auto;
-      }
+                <p>同じHTML内に、同じCLASS名の要素を作ること／一つの要素に複数のCLASS名をつけることができるCLASS属性に対して、同じHTML内で同じID名の要素を作ること／一つの要素に複数のID名をつけることは適切ではありません。
+                    <br/>加えて、ID属性の大きな特徴は、A要素のリンク先にID名を指定できることです。</p>
+                <p>※ このページ内のA要素は、ID名がついたA要素とリンクしているため、A要素をクリックするとリンクしたA要素へページ内を移動します。</p>
+                <hr/>
+            </div>
+            <i><u data-click="css">CSSを見る</u></i><br/>
+            <div id="css" class="open">
+                <p><i>※ CSSでは、ID名を「#ID名」CLASS名を「.CLASS名」 と記述します。</i></p>
+                <p>ID名#CLICK内のA要素をフルディスプレイサイズで表示し、要素の上下に空白を作るCSS</p>
+                <pre><code><math><![CDATA[
+#click a {
+    display: inline-block;
+    width: 90%;
+    height: 90vh;
+    padding: 2.5vh 2.5%;
+    margin: 2.5vh auto;
+}
       ]]></math></code></pre>
-    <p>
-      <a href="https://developer.mozilla.org/ja/docs/Web/CSS/display" target="_blank" rel="noopener noreferrer">display</a>
-      <a href="https://developer.mozilla.org/ja/docs/Web/CSS/width" target="_blank" rel="noopener noreferrer">width</a>
-      <a href="https://developer.mozilla.org/ja/docs/Web/CSS/height" target="_blank" rel="noopener noreferrer">height</a>
-      <a href="https://developer.mozilla.org/ja/docs/Web/CSS/margin" target="_blank" rel="noopener noreferrer">margin</a>
-      </p>
-    <p>ID名#CLICK内のA要素のテキストをフォントサイズ2remで要素の中央に表示するCSS</p>
-    <pre><code><math><![CDATA[
-      #click a {
-        font-size:2rem;
-        text-align:center;
-        vertical-align:middle;
-        line-height:90vh;
-      }
+                <p>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/display" target="_blank" rel="noopener noreferrer">display</a>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/width" target="_blank" rel="noopener noreferrer">width</a>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/height" target="_blank" rel="noopener noreferrer">height</a>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/padding" target="_blank" rel="noopener noreferrer">padding</a>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/margin" target="_blank" rel="noopener noreferrer">margin</a>
+                </p>
+                <br/>
+                <p>ID名#CLICK内のA要素のテキストを要素の中央に表示するCSS</p>
+                <pre><code><math><![CDATA[
+#click a {
+    font-size: 5vw;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90vh;
+}
       ]]></math></code></pre>
-    <p><a href="https://developer.mozilla.org/ja/docs/Web/CSS/font-size" target="_blank" rel="noopener noreferrer">font-size</a>
-    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/text-align" target="_blank" rel="noopener noreferrer">text-align</a>
-    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/vertical-align" target="_blank" rel="noopener noreferrer">vertical-align</a>
-    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/line-height" target="_blank" rel="noopener noreferrer">line-height</a></p>
-      <p>ID名#CLICK内にあるCLASS名.NONEの装飾
-        <a href="https://developer.mozilla.org/ja/docs/Web/CSS/text-decoration" target="_blank" rel="noopener noreferrer">text-decoration</a>
-        を消し、ID名#CLICK内にあるCLASS名.BORDERを線
-        <a href="https://developer.mozilla.org/ja/docs/Web/CSS/border" target="_blank" rel="noopener noreferrer">border</a>
-        で囲い、ID名#CLICK内にあるCLASS名.RADIUSを角が丸い点線で囲み、影をつけるCSS</p>
-      <pre><code><math><![CDATA[
-      #click .none {
-        text-decoration:none;
-      }
-      #click .border {
-        border:solid;
-      }
-      #click .radius {
-        border:dashed;
-        border-radius: 2.5rem;
-        box-shadow: 1rem 1rem 1rem #000;
-      }
+                <p><a href="https://developer.mozilla.org/ja/docs/Web/CSS/font-size" target="_blank" rel="noopener noreferrer">font-size</a>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/text-align" target="_blank" rel="noopener noreferrer">text-align</a>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/vertical-align" target="_blank" rel="noopener noreferrer">vertical-align</a>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/line-height" target="_blank" rel="noopener noreferrer">line-height</a></p>
+                <br/>
+                <p>ID名#CLICK内にあるA要素をCLASS名によって装飾する
+                </p>
+                <pre><code><math><![CDATA[
+#click .none {
+    text-decoration: none;
+}
+
+#click .solid {
+    border: solid;
+}
+
+#click .double {
+    border: double;
+}
+
+#click .dotted {
+    border: dotted;
+}
+
+#click .shadow {
+    box-shadow: 1rem 1rem 1rem #000;
+}
+
+#click .radius {
+    border-radius: 2.5rem;
+}
     ]]></math></code></pre>
-        <p><a href="https://developer.mozilla.org/ja/docs/Web/CSS/border" target="_blank" rel="noopener noreferrer">border</a>
-        <a href="https://developer.mozilla.org/ja/docs/Web/CSS/border-radius" target="_blank" rel="noopener noreferrer">border-radius</a>
-        <a href="https://developer.mozilla.org/ja/docs/Web/CSS/box-shadow" target="_blank" rel="noopener noreferrer">box-shadow</a>
-        </p>
-    <hr/>
-  </div>
-</div>
-</div>
+                <p><a href="https://developer.mozilla.org/ja/docs/Web/CSS/border" target="_blank" rel="noopener noreferrer">border</a>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/border-radius" target="_blank" rel="noopener noreferrer">border-radius</a>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/box-shadow" target="_blank" rel="noopener noreferrer">box-shadow</a>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/text-decoration" target="_blank" rel="noopener noreferrer">text-decoration</a>
+                </p>
+                <hr/>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

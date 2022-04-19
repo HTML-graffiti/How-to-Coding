@@ -1,0 +1,42 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#click a {
+    display: inline-block;
+    width: 90%;
+    height: 90vh;
+    padding: 2.5vh 2.5%;
+    margin: 2.5vh auto;
+}
+
+#click a {
+    font-size: 5vw;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90vh;
+}
+
+#click .none {
+    text-decoration: none;
+}
+
+#click .solid {
+    border: solid;
+}
+
+#click .double {
+    border: double;
+}
+
+#click .dotted {
+    border: dotted;
+}
+
+#click .shadow {
+    box-shadow: 1rem 1rem 1rem #000;
+}
+
+#click .radius {
+    border-radius: 2.5rem;
+}
