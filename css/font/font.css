@@ -1,0 +1,108 @@
+p,
+h4 {
+    font-family: Arial, sans-serif;
+}
+
+h1,
+h5 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2,
+h6 {
+    font-family: 'Comic Sans MS', cursive;
+}
+
+h3,
+span {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1,
+h5,
+b,
+s,
+strong {
+    font-style: normal;
+}
+
+h2,
+i,
+samp,
+sub {
+    font-style: italic;
+}
+
+h3,
+h6,
+q,
+small,
+sup {
+    font-style: oblique;
+}
+
+h4 {
+    font-style: oblique -90deg;
+}
+
+h1 {
+    font-size: 5vw;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 4em;
+    font-weight: lighter;
+}
+
+h1 {
+    font-stretch: condensed;
+    font-variant: 500;
+    line-height: normal;
+}
+
+h2 {
+    font-stretch: 50%;
+    font-variant: normal;
+    line-height: 2;
+}
+
+h3 {
+    font-stretch: expanded;
+    font-variant: no-common-ligatures proportional-nums;
+    line-height: 150%;
+    animation: 5s linear infinite fontmotion;
+}
+
+h4 {
+    font-stretch: ultra-expanded;
+    font-variant: common-ligatures tabular-nums;
+    line-height: 50%;
+}
+
+h5 {
+    font-stretch: 100%;
+    font-variant: small-caps slashed-zero;
+    line-height: 100%;
+}
+
+h6 {
+    font-stretch: 25%;
+    font-variant: common-ligatures small-caps;
+    line-height: 2.5;
+    animation: 2.5s linear infinite fontmotion;
+}
+
+#demo {
+    padding: 10% 10% 0;
+}

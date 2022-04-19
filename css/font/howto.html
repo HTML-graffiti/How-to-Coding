@@ -1,174 +1,250 @@
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/coding/hello/about.css"/>
-<link rel="stylesheet" href="/coding/hello/close_open.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="/coding/hello/open_close.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../hello/about.css" />
+    <link rel="stylesheet" href="../../hello/close_open.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../hello/open_close.js"></script>
 
-<title> Font | Cascading Style Sheets </title>
-<style type="text/css">
-  pre, code {
-    display:block;
-    width:100%;
-    font-size:0.75vw;
-    overflow-x:auto;
-  }
-  #contents {
-    width:90%;
-    margin: auto;
-    font-size:1vw;
-  }
-  #contents #hello {
-    font-size:2vw;
-  }
-@media screen and (max-width: 500px){
-}
-</style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript">
-$(function(){
-$("#library").load("library.html");
-})
-</script>
+    <title> Font | Cascading Style Sheets </title>
+    <style type="text/css">
+        pre,
+        code {
+            display: block;
+            width: 100%;
+            font-size: 1.25vw;
+            overflow-x: auto;
+        }
+        
+        #contents {
+            width: 90%;
+            margin: auto;
+            font-size: 1vw;
+        }
+        
+        #contents #hello {
+            font-size: 2vw;
+        }
+        
+        @media screen and (max-width: 500px) {}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#library").load("library.html");
+        })
+    </script>
 </head>
+
 <body>
-<div id="contents">
-<div id="hello">
-<p>代表的なテキスト要素を並べた<a href="/coding/html/text/hello.html">HTML</a>のフォントをスタイリングする<u data-click="CSS">CSS</u>を解説します。</p>
-<div id="CSS" class="open">
+    <div id="contents">
+        <div id="library"></div>
+        <br/>
+        <div id="hello">
+            <p><a href="/coding/html/text/hello.html">テキスト要素</a>の書体をスタイリングする<u data-click="CSS">CSS</u>を解説します。</p>
+            <div id="CSS" class="open">
 
-<p>要素のフォントファミリ名・総称ファミリ名を<u data-click="font-family">font-family</u>で指定します。</p>
-<div id="font-family" class="open">
-<p>要素名 {font-family:"フォントファミリ名",総称フォント名;}<br/>
-のように要素ごとのフォントをCSSを記述します。</p>
-<p>複数の要素に同じスタイリングを指定する／代替フォントを指定する場合は<br/>
-要素名,要素名 {font-family:"フォントファミリ名","フォントファミリ名",総称フォント名;}<br/>
-のように , で要素名／フォント名を区切り、連続して要素名／フォント名を記述。（最後の要素名／フォント名のあとに , をつけるとCSSが動作しません。最後の要素名／フォント名のあとには , をつけないように注意しましょう。）</p>
-<pre><code><math><![CDATA[
-p {font-family: "Arial", serif;}
-h1, h2, b, s, strong {font-family: "Open Sans", "Fira Sans", "Lucida Sans", "Lucida Sans Unicode", "Trebuchet MS", "Liberation Sans", "Nimbus Sans L", sans-serif;}
-h3, h4, i, samp, sub {font-family: "Brush Script MT", "Brush Script Std", "Lucida Calligraphy", "Lucida Handwriting", "Apple Chancery", cursive;}
-h5, h6, q, small, sup {font-family: Papyrus, Herculanum, Party LET, Curlz MT, Harrington, fantasy;}
-u {font-family: monospace;}
+                <p><u data-click="font-family">font-family</u><br/>要素のフォントファミリ名・総称ファミリ名をスタイリングする
+                </p>
+                <div id="font-family" class="open">
+                    <p>要素名 {font-family:"フォントファミリ名",総称フォント名;}</p>
+                    <p><i>複数の要素に同じスタイリングを指定する／代替フォントを指定する場合</i><br/>要素名,要素名 {font-family:"フォントファミリ名","フォントファミリ名",総称フォント名;}</p>
+                    <p>連続して要素名／フォント名を記述する場合は、 , で要素名／フォント名を区切る。<br/><i>（最後の要素名／フォント名のあとに , をつけるとCSSが動作しません。最後の要素名／フォント名のあとには , をつけないように注意しましょう。）</i></p>
+                    <pre><code><math><![CDATA[
+p,
+h4 {
+    font-family: Arial, sans-serif;
+}
+
+h1,
+h5 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2,
+h6 {
+    font-family: 'Comic Sans MS', cursive;
+}
+
+h3,
+span {
+    font-family: 'Courier New', Courier, monospace;
+}
 ]]></math></code></pre>
 
-<div id="main">
-<p>Tools</p>
-<p><a href="https://mimi.moe.in/nmp/fonts/allfonts">全標準フォント一覧</a></p>
-</div>
-<p>Mac・Windowsの標準フォントファミリ一覧できるウェブサイトです。<br/>
-OSごとの表示の違いも確認できるので、とても便利です。</p>
-<div id="hello">
-<p>
-<!--
-<a href="___">___.css</a>
--->
-主な総称ファミリ名<br/>
-<u data-click="serif">serif</u>
-<span id="serif" class="open"><br/>明朝体（終わりが止めや払い、または実際の活字のセリフの形をした角を持つ字形です。）<br/></span>
-<u data-click="sans-serif">sans-serif</u>
-<span id="sans-serif" class="open"><br/>ゴシック体（平たい角の端を持つ字形です。）<br/></span>
-<u data-click="cursive">cursive</u>
-<span id="cursive" class="open"><br/>筆記体（続け書き、もしくは、イタリック体の特性以上に、その他の筆記体の特性があります。）<br/></span>
-<u data-click="fantasy">fantasy</u>
-<span id="fantasy" class="open"><br/>fantasy フォントは、遊び心に溢れた文字表現を含む、主として装飾的なフォントです。<br/></span>
-<u data-click="monospace">monospace</u>
-<span id="monospace" class="open"><br/>すべての字が同じ幅を持つ字形です。<br/></span>
-</p>
-</div>
-<hr/>
-</div>
+                    <div id="main">
+                        <p>Tools</p>
+                        <p><a href="https://mimi.moe.in/nmp/fonts/allfonts">全標準フォント一覧</a></p>
+                    </div>
+                    <p>Mac・Windowsの標準フォントファミリ一覧できるウェブサイトです。<br/> OSごとの表示の違いも確認できるので、とても便利です。
+                    </p>
+                    <div id="hello">
+                        <p>
+                            主な総称ファミリ名<br/>
+                            <u data-click="serif">serif</u>
+                            <span id="serif" class="open"><br/>明朝体（終わりが止めや払い、または実際の活字のセリフの形をした角を持つ字形です。）<br/></span>
+                            <u data-click="sans-serif">sans-serif</u>
+                            <span id="sans-serif" class="open"><br/>ゴシック体（平たい角の端を持つ字形です。）<br/></span>
+                            <u data-click="cursive">cursive</u>
+                            <span id="cursive" class="open"><br/>筆記体（続け書き、もしくは、イタリック体の特性以上に、その他の筆記体の特性があります。）<br/></span>
+                            <u data-click="fantasy">fantasy</u>
+                            <span id="fantasy" class="open"><br/>fantasy フォントは、遊び心に溢れた文字表現を含む、主として装飾的なフォントです。<br/></span>
+                            <u data-click="monospace">monospace</u>
+                            <span id="monospace" class="open"><br/>すべての字が同じ幅を持つ字形です。<br/></span>
+                        </p>
+                    </div>
+                    <br/>
+                    <hr/>
+                </div>
 
-<p><u data-click="font-style">font-style</u> 通常体 (normal)、筆記体 (italic)、斜体 (oblique) のどれでフォントをスタイリングするかを指定します。</p>
-<div id="font-style" class="open">
-<pre><code><math><![CDATA[
-h1, h2, b, s, strong {font-style: normal;}
-h3, h4, i, samp, sub {font-style: italic;}
-h5, h6, q, small, sup {font-style: oblique;}
-p, u {font-style: oblique -45deg;}
+                <p><u data-click="font-style">font-style</u><br/>フォントの書体「通常体 (normal)、筆記体 (italic)、斜体 (oblique) 」を指定する</p>
+                <div id="font-style" class="open">
+                    <pre><code><math><![CDATA[
+h1,
+h5,
+b,
+s,
+strong {
+    font-style: normal;
+}
+
+h2,
+i,
+samp,
+sub {
+    font-style: italic;
+}
+
+h3,
+h6,
+q,
+small,
+sup {
+    font-style: oblique;
+}
+
+h4 {
+    font-style: oblique -90deg;
+}
 ]]></math></code></pre>
 
-<p>プロパティ値<br/>
-<u data-click="normal">normal</u>
-<span id="normal" class="open"><br/>normal に分類されているフォントを選択します。<br/></span>
-<u data-click="italic">italic</u>
-<span id="italic" class="open"><br/>本質的に筆記体であり、スタイル付けされていない書体より水平方向の幅が小さいのが一般的です。<br/></span>
-<u data-click="oblique">oblique</u>
-<span id="oblique" class="open"><br/>たいてい、通常のフェイスを傾けただけです。<br/></span>
-<u data-click="deg">oblique -90 ~ 90 deg</u>
-<span id="deg" class="open"><br/>oblique として分類されているフォントを選択し、テキストの傾きの角度を指定します。<br/></span>
-</p>
-<hr/>
-</div>
+                    <p>プロパティ値<br/>
+                        <u data-click="normal">normal</u>
+                        <span id="normal" class="open"><br/>normal に分類されているフォントを選択します。<br/></span>
+                        <u data-click="italic">italic</u>
+                        <span id="italic" class="open"><br/>本質的に筆記体であり、スタイル付けされていない書体より水平方向の幅が小さいのが一般的です。<br/></span>
+                        <u data-click="oblique">oblique</u>
+                        <span id="oblique" class="open"><br/>たいてい、通常のフェイスを傾けただけです。<br/></span>
+                        <u data-click="deg">oblique -90 ~ 90 deg</u>
+                        <span id="deg" class="open"><br/>oblique として分類されているフォントを選択し、テキストの傾きの角度を指定します。<br/></span>
+                    </p>
+                    <hr/>
+                </div>
 
-<p>フォントの <u data-click="size-weight">大きさ・太さ</u> を指定します。</p>
-<div id="size-weight" class="open">
-<pre><code><math><![CDATA[
-h1, h2, strong {font-size:2rem; font-weight:500;}
-h3, h4, samp, sub {font-size:2vw; font-weight:100;}
-h5, h6, q, small, sup {font-size:125%; font-weight:900;}
+                <p><u data-click="size-weight">フォントの大きさ・太さ</u></p>
+                <div id="size-weight" class="open">
+                    <pre><code><math><![CDATA[
+h1 {
+    font-size: 5vw;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 4em;
+    font-weight: lighter;
+}
 ]]></math></code></pre>
 
-<p>プロパティ<br/>
-<u data-click="font-size">font-size</u>
-<span id="font-size" class="open"><br/>フォントの大きさを定義します。<br/></span>
-<u data-click="font-weight">font-weight</u>
-<span id="font-weight" class="open"><br/>フォントの太さ (あるいは重み) を指定します。<br/></span>
-</p>
-<hr/>
-</div>
+                    <p>プロパティ<br/>
+                        <u data-click="font-size">font-size</u>
+                        <span id="font-size" class="open"><br/>フォントの大きさを定義します。<br/></span>
+                        <u data-click="font-weight">font-weight</u>
+                        <span id="font-weight" class="open"><br/>フォントの太さ (あるいは重み) を指定します。<br/></span>
+                    </p>
+                    <hr/>
+                </div>
 
-<p>フォントの <u data-click="specific">変化形</u> を指定します。</p>
-<div id="specific" class="open">
-<pre><code><math><![CDATA[
-h1, h2, strong {font-stretch:50%; font-variant: normal;}
-h3, h4, samp, sub {font-stretch:75%; font-variant: small-caps common-ligatures tabular-nums;}
-h5, h6, q, small, sup {font-stretch:125%; font-variant: all-small-caps no-common-ligatures oldstyle-nums;}
+                <p><u data-click="specific">変化形</u></p>
+                <div id="specific" class="open">
+                    <pre><code><math><![CDATA[
+h1 {
+    font-stretch: condensed;
+    font-variant: 500;
+    line-height: normal;
+}
+
+h2 {
+    font-stretch: 50%;
+    font-variant: normal;
+    line-height: 2.5;
+}
+
+h3 {
+    font-stretch: expanded;
+    font-variant: no-common-ligatures proportional-nums;
+    line-height: 150%;
+}
+
+h4 {
+    font-stretch: ultra-expanded;
+    font-variant: common-ligatures tabular-nums;
+    line-height: 2;
+}
+
+h5 {
+    font-stretch: 100%;
+    font-variant: small-caps slashed-zero;
+    line-height: 100%;
+}
+
+h6 {
+    font-stretch: 25%;
+    font-variant: common-ligatures small-caps;
+    line-height: 50%;
+}
 ]]></math></code></pre>
 
-<p>プロパティ<br/>
-<u data-click="font-stretch">font-stretch</u>
-<span id="font-stretch" class="open"><br/>フォントファミリによっては追加のフェイスを提供しており、通常より狭い文字 (condensed フェイス)、通常より広い文字 (expanded フェイス) などを指定できます。<br/></span>
-<u data-click="font-variant">font-variant</u>
-<span id="font-variant" class="open"><br/>CSS の一括指定プロパティで、フォントのすべての変化形を設定することができます。<br/></span>
-</p>
-<hr/>
-</div>
-
-<div id="library"></div>
-</div>
-</div>
-<hr/>
-<div id="main">
-<p>My Works</p>
-<p>
-<a href="/coding/fontbook/css/fontmotion.css">fontmotion.css</a>
-</p>
-</div>
-<div id="hello">
-<p>
-CLASS名 .fontmotion 要素のフォントが変化するアニメーションCSSを作成しました。</p>
-<p>HEAD内に</p>
-<pre><code><math><![CDATA[<link rel="stylesheet" href="https://creative-community.space/coding/fontbook/css/fontmotion.css"/>]]></math></code></pre>
-<p>と記述し、アニメーションを追加したい要素のクラス名を <b>class="fontmotion"</b>
-と指定します。
-</p>
-</div>
-<hr/>
-<div id="main">
-<p>Font Book</p>
-<p>
-<a href="/coding/fontbook/">/coding/fontbook/</a>
-</p>
-</div>
-<div id="hello">
-<p>インターネットで見つけたお気に入りのフォントのコレクションページを制作しました。</p>
-</div>
-</div>
+                    <p>プロパティ<br/>
+                        <u data-click="font-stretch">font-stretch</u>
+                        <span id="font-stretch" class="open"><br/>フォントファミリによっては追加のフェイスを提供しており、通常より狭い文字 (condensed フェイス)、通常より広い文字 (expanded フェイス) などを指定できます。<br/></span>
+                        <u data-click="font-variant">font-variant</u>
+                        <span id="font-variant" class="open"><br/>CSS の一括指定プロパティで、フォントのすべての変化形を設定することができます。<br/></span>
+                    </p>
+                    <hr/>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div id="main">
+            <p>My Works</p>
+            <p>
+                <a href="/coding/fontbook/css/fontmotion.css">fontmotion.css</a>
+            </p>
+        </div>
+        <div id="hello">
+            <p>
+                CLASS名 .fontmotion 要素のフォントが変化するアニメーションCSSを作成しました。</p>
+            <p>HEAD内に</p>
+            <pre><code><math><![CDATA[<link rel="stylesheet" href="https://creative-community.space/coding/css/font/fontmotion.css"/>]]></math></code></pre>
+            <p>と記述し、アニメーションを追加したい要素のクラス名に <b>class="fontmotion"</b> を追加すると、アニメーションが動作します。
+            </p>
+        </div>
+    </div>
 
 
 </body>
+
 </html>
