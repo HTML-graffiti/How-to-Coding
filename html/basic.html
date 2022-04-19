@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Link | HyperText Markup Language </title>
+    <title> Index | HyperText Markup Language </title>
     <style type="text/css">
-        #contents #main {
+        .menu {
             font-size: 1.5vw;
             width: 100%;
+            max-width: 1000px;
+            margin: auto;
             display: flex;
             flex-direction: row;
         }
         
-        #contents #main p {
+        .menu div {
             display: inline-block;
             padding: 1.25% 2.5%;
             width: 42%;
             margin: 0;
         }
         
-        #contents a {
+        .menu div p {
+            margin: 0.5rem 0;
+        }
+        
+        .menu a {
             display: inline-block;
             text-decoration: none;
             color: #000;
-        }
-        
-        #contents p a {
             padding: 0.5vw 1.25vw;
             margin: 0.25vw 0.5vw;
             border: 0.1vw solid;
@@ -38,29 +41,39 @@
 
 <body>
     <div id="contents">
-        <div id="main">
-            <p>How to Coding</p>
-            <p>
-                <a href="/coding/html/">HyperText Markup Language</a>
-            </p>
+        <div class="menu">
+            <div>
+                <p>HyperText Markup Language<br/>
+                    <a href="/coding/html/" target="_parent">HTMLの基本</a></p>
+            </div>
+            <div>
+                <p>BODY要素<br/>
+                    <a href="/coding/html/body/" target="_parent">/coding/html/body/</a></p>
+                <p>HEAD要素<br/>
+                    <a href="/coding/html/head/" target="_parent">/coding/html/head/</a></p>
+            </div>
         </div>
-        <div id="main">
-            <p>
-                テキスト要素<br/>
-                <a href="/coding/html/text/">/coding/html/text/</a><br/> アンカー要素
-                <br/>
-                <a href="/coding/html/href/">/coding/html/href/</a><br/> DIVとSPAN要素
-                <br/>
-                <a href="/coding/html/divspan/">/coding/html/divspan/</a>
-            </p>
-            <p>
-                リスト要素<br/>
-                <a href="/coding/html/ulolli/">/coding/html/ulolli/</a><br/> フォーム部品
-                <br/>
-                <a href="/coding/submit/form/">/coding/submit/form/</a><br/> マルチメディアの埋め込み
-                <br/>
-                <a href="/coding/html/embedding/">/coding/html/embedding/</a>
-            </p>
+        <div class="menu">
+            <div>
+                <p>テキスト要素<br/>
+                    <a href="/coding/html/text/" target="_parent">/coding/html/text/</a></p>
+                <p>アンカー要素<br/>
+                    <a href="/coding/html/href/" target="_parent">/coding/html/href/</a></p>
+                <p>DIVとSPAN要素<br/>
+                    <a href="/coding/html/divspan/" target="_parent">/coding/html/divspan/</a></p>
+                <p>マルチメディアの埋め込み<br/>
+                    <a href="/coding/html/embedding/" target="_parent">/coding/html/embedding/</a></p>
+            </div>
+            <div>
+                <p>リスト要素<br/>
+                    <a href="/coding/html/ulolli/" target="_parent">/coding/html/ulolli/</a></p>
+                <p>フォーム部品<br/>
+                    <a href="/coding/html/form/" target="_parent">/coding/html/form/</a></p>
+                <p>ルビ要素<br/>
+                    <a href="/coding/html/ruby/" target="_parent">/coding/html/ruby/</a></p>
+                <p>詳細折りたたみ要素<br/>
+                    <a href="/coding/html/details/" target="_parent">/coding/html/details/</a></p>
+            </div>
         </div>
     </div>
 </body>
