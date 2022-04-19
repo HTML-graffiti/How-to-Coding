@@ -59,7 +59,7 @@ fclose($fp);
                 $("#").load("");
             })
         </script>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="index.css" />
         <link rel="stylesheet" href="../css/radius.css" />
         <style type="text/css">
             @font-face {

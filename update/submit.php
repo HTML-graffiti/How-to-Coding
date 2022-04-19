@@ -36,7 +36,7 @@ fclose($fp);
                 $("#").load("");
             })
         </script>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="index.css" />
         <style type="text/css">
             @font-face {
                 font-family: "NewYork";
