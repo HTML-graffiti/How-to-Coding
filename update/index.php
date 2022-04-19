@@ -35,7 +35,6 @@ fclose($fp);
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="../submit/org/org.js"></script>
         <script src="../js/randomcolor.js"></script>
-        <script src="../js/smoothscroll.js"></script>
         <script type="text/javascript">
             $(function() {
                 jQuery('body').css({
