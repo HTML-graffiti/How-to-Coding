@@ -1,127 +1,181 @@
-a {
-  color:Teal;
-  font-weight:700;
-  text-decoration: underline dotted red;
-}
-a:hover {
-  background:Teal;
-  color:#fff;
+#left p::before {
+    content: '<p>';
 }
 
-h1 {
-  font-weight:100;
-  font-size:10vw;
-}
-h2 {
-  font-weight:200;
-  text-align:right;
-  text-emphasis: filled red;
--webkit-text-emphasis: filled red;
-}
-h3 {
-  font-size:12.5vw;
-  width:25vw;
-  text-align: center;
-  text-align-last: left;
-  word-break: break-all;
-  float:right;
-  border:dashed 1px;
-}
-h4 {
-  font-size: xxx-large;
-  font-style: oblique 50deg;
-  font-stretch: 200%;
-  text-indent: 15%;
-  font-variant: small-caps;
-  text-shadow: blue 2px 5px;
-  text-decoration: green wavy underline;
-}
-h5 {
-  font-size:50%;
-  line-height:5vh;
-  letter-spacing:5vw;
-  text-align: right;
-  background:#eee;
-  text-transform: uppercase;
-
-}
-h6 {
-  display:inline;
-  background:#eee;
-  font-weight:900;
-  text-transform: uppercase;
-  word-spacing: -.4ch;
+#left p::after {
+    content: '</p>';
 }
 
-b {
-  font-size:150%;
-}
-i {
-  background:gold;
-  color:#fff;
-}
-q {font-size:75%;}
-
-s {
-  background:red;
-  color:pink;
-}
-small,
-strong {
-  color:lightcoral;
-  background:navy;
-}
-sub,
-sup {
-  font-size:20px;
+hgroup {
+    font-family: monospace;
 }
 
-
-.special {
-  background:powderblue;
-  text-align:center;
-  animation: 3s linear 1s infinite alternate slidein;
-  white-space: break-spaces;
-  color-adjust: exact;
+#left h1::before {
+    content: '<h1>';
 }
 
-.special a {
-  text-decoration:none;
-  border-radius:50%;
-  margin:2rem;
-  display:inline-block;
-  background:linen;
+#left h1::after {
+    content: '</h1>';
 }
 
-
-#about {
-  animation: 3s infinite rotate;
-  color-adjust: economy;
+#left h1 {
+    font-size: 6vw;
 }
 
-#about b {
-  display:block;
-  color:violet;
-}
-#about i {
-  background:firebrick;
-}
-#about q {
-  display:inline-block;
-  zoom:250%;
-  animation: 3s linear 1s infinite alternate slidein;
+#left h2::before {
+    content: '<h2>';
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#left h2::after {
+    content: '</h2>';
 }
 
-@keyframes slidein {
-  from { transform: scale(0.5); }
-  to   { transform: scale(1); }
+#left h2 {
+    font-size: 5vw;
+}
+
+#left h3::before {
+    content: '<h3>';
+}
+
+#left h3::after {
+    content: '</h3>';
+}
+
+#left h3 {
+    font-size: 4vw;
+}
+
+#left h4::before {
+    content: '<h4>';
+}
+
+#left h4::after {
+    content: '</h4>';
+}
+
+#left h4 {
+    font-size: 3vw;
+}
+
+#left h5::before {
+    content: '<h5>';
+}
+
+#left h5::after {
+    content: '</h5>';
+}
+
+#left h5 {
+    font-size: 2vw;
+}
+
+#left h6::before {
+    content: '<h6>';
+}
+
+#left h6::after {
+    content: '</h6>';
+}
+
+#left h6 {
+    font-size: 1vw;
+}
+
+#left span {
+    display: block;
+    font-size: 2vw;
+}
+
+#left b,
+#left i,
+#left u,
+#left s,
+#left q,
+#left samp,
+#left small,
+#left strong,
+#left sub,
+#left sup {
+    margin-right: 1vw;
+}
+
+#left b::before {
+    content: '<b>';
+}
+
+#left b::after {
+    content: '</b>';
+}
+
+#left i::before {
+    content: '<i>';
+}
+
+#left i::after {
+    content: '</i>';
+}
+
+#left u::before {
+    content: '<u>';
+}
+
+#left u::after {
+    content: '</u>';
+}
+
+#left s::before {
+    content: '<s>';
+}
+
+#left s::after {
+    content: '</s>';
+}
+
+#left q::before {
+    content: '<q>';
+}
+
+#left q::after {
+    content: '</q>';
+}
+
+#left samp::before {
+    content: '<samp>';
+}
+
+#left samp::after {
+    content: '</samp>';
+}
+
+#left small::before {
+    content: '<small>';
+}
+
+#left small::after {
+    content: '</small>';
+}
+
+#left strong::before {
+    content: '<strong>';
+}
+
+#left strong::after {
+    content: '</strong>';
+}
+
+#left sub::before {
+    content: '<sub>';
+}
+
+#left sub::after {
+    content: '</sub>';
+}
+
+#left sup::before {
+    content: '<sup>';
+}
+
+#left sup::after {
+    content: '</sup>';
 }
