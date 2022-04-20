@@ -1,0 +1,66 @@
+#click {
+    display: block;
+    scroll-behavior: smooth;
+}
+
+#click a {
+    display: inline-block;
+    font-size: 2.5vw;
+    width: 90%;
+    height: 10vh;
+    line-height: 10vh;
+    padding: 2.5vh 2.5%;
+    margin: 2vh auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#click a:hover {
+    border-radius: 2.5rem;
+    box-shadow: 1rem 1rem 1rem #000;
+}
+
+.none {
+    text-decoration: #000 underline solid;
+    text-decoration-skip-ink: auto;
+    text-emphasis: filled red;
+    -webkit-text-emphasis: filled red;
+}
+
+.double {
+    text-decoration: blue underline overline 2px double;
+    text-decoration-skip-ink: none;
+}
+
+.dotted {
+    text-decoration: #000 line-through 5px dashed;
+    text-decoration-skip-ink: none;
+    text-emphasis: 'x' red;
+    -webkit-text-emphasis: 'x' red;
+}
+
+.shadow {
+    text-indent: 2vw;
+    letter-spacing: 0.5vw;
+}
+
+.none {
+    white-space: pre-wrap;
+    word-spacing: 120%;
+    word-break: break-all;
+}
+
+.shadow {
+    text-transform: uppercase;
+    text-shadow: 0.5vw 1vw 0.5vw #000;
+}
+
+.solid {
+    text-transform: capitalize;
+    text-shadow: -0.75vw -0.5vw 0 red;
+}
+
+.dotted {
+    text-transform: lowercase;
+    text-shadow: 0.25vw 0.25vw blue, -0.5vw -0.25vw #000, 0 0 2vw red;
+}
