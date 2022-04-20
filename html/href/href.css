@@ -57,6 +57,7 @@ a:focus {
 
 #click .dotted {
     border: dotted;
+    border-collapse: separate;
 }
 
 #click .shadow {

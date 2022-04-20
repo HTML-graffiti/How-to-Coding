@@ -44,7 +44,6 @@
             <a href="about.html">代表的なテキスト要素</a>
             <p>このページでは、代表的な<u data-click="html">テキスト要素</u>を解説します。</p>
             <div id="html" class="open">
-                <div id="library"></div>
                 <pre><code><math><![CDATA[
     <p>: 段落要素</p>
 
@@ -75,8 +74,152 @@
   </span>
   ]]></math></code></pre>
                 <hr/>
-                <p><u>CSS</u><br/>疑似要素を使って文字を挿入する <a href="/css/before-after/">::before ::after</a></p>
+                <p>
+                    <u data-click="before-after">CSS</u><br/>選択した要素の最初と最後に擬似要素
+                    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/::before">::before (:before)</a>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/::after">::after (:after)</a> を生成。
+                </p>
+                <div id="before-after" class="open">
+                    <pre><code><math><![CDATA[
+#pseudo-elements p::before {
+    content: '<p>';
+}
+
+#pseudo-elements p::after {
+    content: '</p>';
+}
+
+#pseudo-elements h1::before {
+    content: '<h1>';
+}
+
+#pseudo-elements h1::after {
+    content: '</h1>';
+}
+
+#pseudo-elements h2::before {
+    content: '<h2>';
+}
+
+#pseudo-elements h2::after {
+    content: '</h2>';
+}
+
+#pseudo-elements h3::before {
+    content: '<h3>';
+}
+
+#pseudo-elements h3::after {
+    content: '</h3>';
+}
+
+#pseudo-elements h4::before {
+    content: '<h4>';
+}
+
+#pseudo-elements h4::after {
+    content: '</h4>';
+}
+
+#pseudo-elements h5::before {
+    content: '<h5>';
+}
+
+#pseudo-elements h5::after {
+    content: '</h5>';
+}
+
+#pseudo-elements h6::before {
+    content: '<h6>';
+}
+
+#pseudo-elements h6::after {
+    content: '</h6>';
+}
+
+#pseudo-elements b::before {
+    content: '<b>';
+}
+
+#pseudo-elements b::after {
+    content: '</b>';
+}
+
+#pseudo-elements i::before {
+    content: '<i>';
+}
+
+#pseudo-elements i::after {
+    content: '</i>';
+}
+
+#pseudo-elements u::before {
+    content: '<u>';
+}
+
+#pseudo-elements u::after {
+    content: '</u>';
+}
+
+#pseudo-elements s::before {
+    content: '<s>';
+}
+
+#pseudo-elements s::after {
+    content: '</s>';
+}
+
+#pseudo-elements q::before {
+    content: '<q>';
+}
+
+#pseudo-elements q::after {
+    content: '</q>';
+}
+
+#pseudo-elements samp::before {
+    content: '<samp>';
+}
+
+#pseudo-elements samp::after {
+    content: '</samp>';
+}
+
+#pseudo-elements small::before {
+    content: '<small>';
+}
+
+#pseudo-elements small::after {
+    content: '</small>';
+}
+
+#pseudo-elements strong::before {
+    content: '<strong>';
+}
+
+#pseudo-elements strong::after {
+    content: '</strong>';
+}
+
+#pseudo-elements sub::before {
+    content: '<sub>';
+}
+
+#pseudo-elements sub::after {
+    content: '</sub>';
+}
+
+#pseudo-elements sup::before {
+    content: '<sup>';
+}
+
+#pseudo-elements sup::after {
+    content: '</sup>';
+}
+  ]]></math></code></pre>
+                </div>
             </div>
+            <div id="library"></div>
         </div>
     </div>
 </body>
