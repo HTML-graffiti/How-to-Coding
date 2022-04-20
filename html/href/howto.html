@@ -35,7 +35,7 @@
     <div id="contents">
         <div id="hello">
             <a href="howto.html">A要素とCLASS・ID属性</a>
-            <p>このページでは、別のウェブページ、ファイル、メールアドレス、同一ページ内の要素へのハイパーリンクを作成する
+            <p>このページでは、別のウェブページやファイル、同一ページ内の要素へのハイパーリンクを作成する
                 <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/a" target="_blank" rel="noopener noreferrer">A: アンカー要素</a> と、要素に特定の名前をつけるグローバル属性と呼ばれるHTML言語
                 <a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/class" target="_blank" rel="noopener noreferrer">CLASS</a> と
                 <a href="https://developer.mozilla.org/ja/docs/Web/SVG/Attribute/id" target="_blank" rel="noopener noreferrer">ID</a> についてを解説します。
@@ -52,7 +52,7 @@
         <a id="five" class="radius none shadow" href="#one" .html ">click</a>
     </p>
   ]]></math></code></pre>
-                <p>同じHTML内に、同じCLASS名の要素を作ること／一つの要素に複数のCLASS名をつけることができるCLASS属性に対して、同じHTML内で同じID名の要素を作ること／一つの要素に複数のID名をつけることは適切ではありません。
+                <p>同じHTML内に、同じCLASS名の要素を作ること／一つの要素に複数のCLASS名をつけることができるCLASS属性に対して、同じHTML内で同じID名をつけること／一つの要素に複数のID名をつけることは適切ではありません。
                     <br/>加えて、ID属性の大きな特徴は、A要素のリンク先にID名を指定できることです。</p>
                 <p>※ このページ内のA要素は、ID名がついたA要素とリンクしているため、A要素をクリックするとリンクしたA要素へページ内を移動します。</p>
                 <hr/>
@@ -62,6 +62,9 @@
                 <p><i>※ CSSでは、ID名を「#ID名」CLASS名を「.CLASS名」 と記述します。</i></p>
                 <p>ID名#CLICK内のA要素をフルディスプレイサイズで表示し、要素の上下に空白を作るCSS</p>
                 <pre><code><math><![CDATA[
+#click {
+    display: block;
+}
 #click a {
     display: inline-block;
     width: 90%;
@@ -77,6 +80,8 @@
                     <a href="https://developer.mozilla.org/ja/docs/Web/CSS/padding" target="_blank" rel="noopener noreferrer">padding</a>
                     <a href="https://developer.mozilla.org/ja/docs/Web/CSS/margin" target="_blank" rel="noopener noreferrer">margin</a>
                 </p>
+                <p>CSSプロパティ「ディスプレイ」については、<a href="/coding/html/divspan/">DIVとSPAN要素</a> で詳しく解説します。</p>
+                <p>要素の大きさ・余白について、<a href="/coding/mobile/">コンピューターとモバイルで表示内容を変える</a> で詳しく解説します。</p>
                 <br/>
                 <p>ID名#CLICK内のA要素のテキストを要素の中央に表示するCSS</p>
                 <pre><code><math><![CDATA[
@@ -87,13 +92,75 @@
     line-height: 90vh;
 }
       ]]></math></code></pre>
-                <p><a href="https://developer.mozilla.org/ja/docs/Web/CSS/font-size" target="_blank" rel="noopener noreferrer">font-size</a>
+                <p>プロパティ値<br/>
+                    <u data-click="font-size">font-size</u>
+                    <span id="font-size" class="open"><br/>文字の大きさを指定するプロパティ<br/></span>
+                    <u data-click="text-align">text-align</u>
+                    <span id="text-align" class="open"><br/>水平方向の配置を設定するプロパティ<br/></span>
+                    <u data-click="vertical-align">vertical-align</u>
+                    <span id="vertical-align" class="open"><br/>垂直方向の配置を設定するプロパティ<br/></span>
+                    <u data-click="line-height">line-height</u>
+                    <span id="line-height" class="open"><br/>テキストの行間の高さを指定するプロパティ<br/></span>
+                </p>
+                <p>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/font-size" target="_blank" rel="noopener noreferrer">font-size</a>
                     <a href="https://developer.mozilla.org/ja/docs/Web/CSS/text-align" target="_blank" rel="noopener noreferrer">text-align</a>
                     <a href="https://developer.mozilla.org/ja/docs/Web/CSS/vertical-align" target="_blank" rel="noopener noreferrer">vertical-align</a>
-                    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/line-height" target="_blank" rel="noopener noreferrer">line-height</a></p>
-                <br/>
-                <p>ID名#CLICK内にあるA要素をCLASS名によって装飾する
+                    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/line-height" target="_blank" rel="noopener noreferrer">line-height</a>
                 </p>
+            </div>
+            <br/>
+            <p><a>アンカー要素をスタイリングするCSS</a></p>
+            <pre><code><math><![CDATA[
+a {
+    text-decoration: underline;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    background: yellow;
+}
+
+a:active {
+    color: red;
+}
+
+a:focus {
+    outline: solid;
+}
+]]></math></code></pre>
+            <p>アンカー要素には、
+                <a href="https://developer.mozilla.org/ja/docs/Web/CSS/Pseudo-classes" target="_blank" rel="noopener noreferrer">擬似クラス</a> と呼ばれる選択された要素に対して特定の状態を指定するCSSがデフォルトで指定されています。
+                <br/>
+                <u data-click="link">:link</u>
+                <span id="link" class="open"><br/>まだ訪問していないA要素<br/></span>
+                <u data-click="visited">:visited</u>
+                <span id="visited" class="open"><br/>すでに訪問したリンクを含むA要素<br/></span>
+                <u data-click="hover">:hover</u>
+                <span id="hover" class="open"><br/>カーソル (マウスポインター) を要素の上でかざしたとき<br/></span>
+                <u data-click="active">:active</u>
+                <span id="active" class="open"><br/>アクティブ化されている要素（主ボタンを押し下げたとき）<br/></span>
+                <u data-click="focus">:focus</u>
+                <span id="focus" class="open"><br/>フォーカスを持っている要素（要素をクリックやタップをしたり、キーボードの <kbd>Tab</kbd> キーで選択したりしたとき）<br/></span>
+            </p>
+            <p><a href="https://developer.mozilla.org/ja/docs/Web/CSS/:link" target="_blank" rel="noopener noreferrer">:link</a>
+                <a href="https://developer.mozilla.org/ja/docs/Web/CSS/:visited" target="_blank" rel="noopener noreferrer">:visited</a>
+                <a href="https://developer.mozilla.org/ja/docs/Web/CSS/:hover" target="_blank" rel="noopener noreferrer">:hover</a>
+                <a href="https://developer.mozilla.org/ja/docs/Web/CSS/:active" target="_blank" rel="noopener noreferrer">:active</a>
+                <a href="https://developer.mozilla.org/ja/docs/Web/CSS/:focus" target="_blank" rel="noopener noreferrer">:focus</a>
+            </p>
+            <br/>
+            <p>
+                <u data-click="border">要素に境界線をスタイリングするCSS</u>
+            </p>
+            <div id="border" class="open">
                 <pre><code><math><![CDATA[
 #click .none {
     text-decoration: none;
@@ -119,12 +186,27 @@
     border-radius: 2.5rem;
 }
     ]]></math></code></pre>
+                <p>
+                    <u data-click="border-style">border</u>
+                    <span id="border-style" class="open"><br/>要素の境界を設定するプロパティ<br/></span>
+                    <u data-click="border-radius">border-radius</u>
+                    <span id="border-radius" class="open"><br/>要素の境界の外側の角を丸めるプロパティ<br/></span>
+                    <u data-click="border-width">border-width</u>
+                    <span id="border-width" class="open"><br/>要素の境界の幅を設定するプロパティ<br/></span>
+                    <u data-click="border-collapse">border-collapse</u>
+                    <span id="border-collapse" class="open"><br/>セルが境界を共有するか分離するかを設定設定するプロパティ<br/></span>
+                    <u data-click="border-spacing">border-spacing</u>
+                    <span id="border-spacing" class="open"><br/>隣り合うセルの境界同士の間隔を定めるプロパティ<br/></span>
+                </p>
                 <p><a href="https://developer.mozilla.org/ja/docs/Web/CSS/border" target="_blank" rel="noopener noreferrer">border</a>
                     <a href="https://developer.mozilla.org/ja/docs/Web/CSS/border-radius" target="_blank" rel="noopener noreferrer">border-radius</a>
-                    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/box-shadow" target="_blank" rel="noopener noreferrer">box-shadow</a>
-                    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/text-decoration" target="_blank" rel="noopener noreferrer">text-decoration</a>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/border-width" target="_blank" rel="noopener noreferrer">border-width</a>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/border-collapse" target="_blank" rel="noopener noreferrer">border-collapse</a>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/border-spacing" target="_blank" rel="noopener noreferrer">border-spacing</a>
                 </p>
-                <hr/>
+                <p>テキストを装飾するCSSプロパティは
+                    <a href="/coding/css/text-decoration/" target="_blank" rel="noopener noreferrer">text-decoration</a> で詳しく解説します。
+                </p>
             </div>
         </div>
     </div>

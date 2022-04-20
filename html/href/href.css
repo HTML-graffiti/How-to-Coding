@@ -18,6 +18,30 @@
     line-height: 90vh;
 }
 
+a {
+    text-decoration: underline;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    color: red;
+}
+
+a:focus {
+    outline: none;
+}
+
 #click .none {
     text-decoration: none;
 }
@@ -28,6 +52,7 @@
 
 #click .double {
     border: double;
+    border-spacing: 2.5vw;
 }
 
 #click .dotted {
