@@ -1,0 +1,40 @@
+#demo {
+    padding: 10vh 2.5% 0;
+}
+
+#demo div,
+#demo span {
+    font-size: 5vw;
+}
+
+#demo div {
+    border: thick double;
+}
+
+#demo span {
+    border: 2px dashed;
+}
+
+.pc {
+    color: #000;
+    background-color: #fff;
+    mix-blend-mode: hard-light;
+}
+
+.mobile {
+    color: red;
+    background-color: hsla(0, 0%, 0%, .75);
+    mix-blend-mode: difference;
+}
+
+span:hover {
+    filter: invert(1);
+}
+
+.pc {
+    filter: invert(0);
+}
+
+.mobile {
+    filter: invert(75%);
+}
