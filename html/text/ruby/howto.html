@@ -1,56 +1,123 @@
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/coding/hello/about.css"/>
-<link rel="stylesheet" href="/coding/hello/close_open.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="/coding/hello/open_close.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../hello/about.css" />
+    <link rel="stylesheet" href="../../../hello/close_open.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../../hello/open_close.js"></script>
 
-<title> Ruby | HyperText Markup Language </title>
-<style type="text/css">
-  pre, code {
-    display:block;
-    width:100%;
-    font-size:0.55vw;
-    overflow-x:auto;
-  }
-  #contents {
-    width:90%;
-    margin: auto;
-    font-size:1vw;
-  }
-  #contents #hello {
-    font-size:2vw;
-  }
-</style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript">
-$(function(){
-$("#").load("");
-})
-</script>
+    <title> Ruby | HyperText Markup Language </title>
+    <style type="text/css">
+        pre,
+        code {
+            display: block;
+            width: 100%;
+            font-size: 0.55vw;
+            overflow-x: auto;
+        }
+        
+        #contents {
+            width: 90%;
+            margin: auto;
+            font-size: 1vw;
+        }
+        
+        #contents #hello {
+            font-size: 2vw;
+        }
+    </style>
 </head>
+
 <body>
-<div id="contents">
-<div id="hello">
-<a href="howto.html">RUBY 要素</a>
-<p>[準備中]<br/>ベーステキストの上、下、隣に描画される小さな注釈をつけるルビ要素を解説します。</p>
-<div id="html" class="open">
-<div id="library"></div>
-<pre><code><math><![CDATA[
-
+    <div id="contents">
+        <div id="hello">
+            <a href="howto.html">RUBY 要素</a>
+            <p>ベーステキストの上、下、隣に描画される小さな注釈をつける要素</p>
+            <p>ここでは、ルビを振るテキストの範囲全体を、
+                <u data-click="ruby">RUBY要素</u> で囲み、RP要素・RT要素を使ってルビを振る方法と、開始タグ内に属性data-ruby="ルビ"を記述してルビを振る方法を解説します。
+            </p>
+            <div id="ruby" class="open">
+                <p>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/ruby" target="_blank">RUBY</a>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/rp" target="_blank">RP: ルビのフォールバック用括弧要素</a>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/rt" target="_blank">RT: ルビ文字列要素</a>
+                </p>
+                <pre><code><math><![CDATA[
+          <p>
+              The
+              <ruby>
+            ruby
+            <rp>(</rp><rt>HyperText Markup Language element</rt><rp>)</rp>
+          </ruby> represents small annotations that are rendered above, below, or next to base text, usually used for showing the pronunciation of East Asian characters.
+          </p>
+  ]]></math></code></pre>
+                <p>ルビを振る文字全体をRUBYで囲み、ルビの前後の()を含むRP要素を記述、ルビをRT要素で囲みます。</p>
+                <p>この方法だと要素が多く複雑なので、CSSを用いてシンプルにした記述方法も併せて紹介します。</p>
+                <hr/>
+            </div>
+            <pre><code><math><![CDATA[
+<p>
+<ruby data-ruby="The HTML ruby element">
+  ルビ
+</ruby> はベーステキストの上、下、隣に
+<ruby data-ruby="びょうが">
+  描画
+</ruby> される小さな
+<br />
+<ruby data-ruby="本文の語句や文章をとりあげてその意味を解説すること。また、その解説したもの。注。注解。">
+  注釈
+</ruby> で、よく東アジアの文字の
+<ruby data-ruby="音、特に、言語の音声を発すること。 また、その音声の出し方。 はついん。">
+  発音
+</ruby> を表すのに使われます。
+</p>
+<p>
+    他の種類の注釈にも使われることがありますが、この使い方はあまり一般的ではありません。
+</p>
 ]]></math></code></pre>
-<hr/>
-</div>
-<div id="CSS" class="open">
-<div id="css_links"></div>
-<pre><code><math><![CDATA[
+            <p>ルビを振りたい文字をRUBY要素で囲み、開始タグ内に属性data-ruby="ルビ"を記述。</p>
+            <p>ルビを<u data-click="data-ruby">CSS</u> 擬似要素を用いて、表示したい位置にスタイリングします。</p>
 
+            <div id="data-ruby" class="open">
+                <p>
+                    <a href="https://qiita.com/myzkyy/items/5f735808b45ba8dbf588" target="_blank">CSSでデザイン調整可能なルビ</a>
+                </p>
+                <pre><code><math><![CDATA[
+ruby {
+    position: relative;
+    font-size: 1.25rem;
+    line-height: 150%;
+}
+
+[data-ruby]::before {
+    content: attr(data-ruby);
+    position: absolute;
+    font-size: 50%;
+    line-height: 100%;
+}
 ]]></math></code></pre>
-</div>
-</div>
-</div>
+                <p>以上が、レラティブポジションのRUBY要素に、アブソリュートポジションの擬似要素を生成し、ルビを振るCSSです。</p>
+            </div>
+            <br/>
+
+            <p><u data-click="writing-mode">縦書きレイアウト</u></p>
+            <p>テキストの行のレイアウトをプロパティ
+                <a href="https://developer.mozilla.org/ja/docs/Web/CSS/text-orientation" target="_blank">writing-mode</a> で縦書きに指定し、プロパティ
+                <a href="https://developer.mozilla.org/ja/docs/Web/CSS/text-orientation" target="_blank">text-orientation</a> で行内のテキストの向きを設定する。
+            </p>
+            <div id="writing-mode" class="open">
+                <pre><code><math><![CDATA[
+ruby {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+]]></math></code></pre>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
