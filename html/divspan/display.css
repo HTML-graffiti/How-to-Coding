@@ -1,0 +1,29 @@
+span {
+    font-size: 50%;
+    border: solid 1px;
+}
+
+.pc {
+    color: green;
+    background: yellow;
+}
+
+.mobile {
+    color: red;
+    background: blue;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .mobile {
+        display: block;
+        font-size: 12vw;
+        word-break: break-all;
+    }
+    .pc {
+        display: none;
+    }
+}
