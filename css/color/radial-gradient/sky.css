@@ -1,0 +1,23 @@
+:root {
+    --main-color: #000;
+    --sub-color: #fff;
+    --bg-gradation: linear-gradient(-90deg, #B3CBF6, #FFC778, #EEE);
+}
+
+body {
+    background: var(--bg-gradation);
+    background-size: 400% 400%;
+    animation: sky 10s ease infinite;
+}
+
+@keyframes sky {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

@@ -1,1 +1,205 @@
-<a href="https://cssgradient.io/">CSS Gradient</a>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>Radial Gradient | Cascading Style Sheets</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Peace for Future">
+
+    <link rel="stylesheet" href="sky.css" />
+    <link rel="stylesheet" href="rainbow.css" />
+
+    <style>
+        h2,
+        .rainbow {
+            text-align: center;
+            font-family: 'Futura', "MS Mincho", "SimSong", monospace;
+        }
+        
+        h2 {
+            font-weight: 100;
+            font-size: 5vw;
+            margin-bottom: 2.5vw;
+        }
+        
+        .howto {
+            width: 75%;
+            padding: 1rem;
+            margin: 1rem auto;
+            background-color: var(--sub-color);
+        }
+        
+        .howto a {
+            display: inline-block;
+            text-decoration: none;
+            color: #000;
+            padding: 0.5rem 1rem;
+            margin: 0 0 0 0.5rem;
+            border: 1px solid;
+            border-radius: 2.5rem;
+            font-size: 55%;
+        }
+        
+        pre {
+            word-break: break-all;
+            width: 75%;
+            padding: 0 2rem;
+            margin: auto;
+            overflow: auto;
+            text-align: left;
+            border: 2px solid;
+            border-image: linear-gradient(-90deg, #EEE, #FFC778, #B3CBF6);
+            border-image-slice: 1;
+            background-color: rgba(255, 255, 255, 0.75);
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="rainbow">Radial Gradient</h2>
+
+    <div class="howto">
+        <p>
+            <u>グラデーションカラーをスタイリングするCSS</u>
+        </p>
+        <p>
+            <a href="https://developer.mozilla.org/ja/docs/Web/CSS/gradient">gradient()</a>
+            <a href="https://developer.mozilla.org/ja/docs/Web/CSS/gradient/linear-gradient">linear-gradient()</a>
+            <a href="https://developer.mozilla.org/ja/docs/Web/CSS/background-size">background-size</a>
+        </p>
+        <p>
+            <u>Tools</u>
+            <a href="https://cssgradient.io/">CSS Gradient</a>
+            <a href="https://developer.mozilla.org/ja/docs/Web/CSS/Using_CSS_custom_properties">CSS カスタムプロパティ</a>
+        </p>
+    </div>
+
+    <pre><code><math><![CDATA[
+:root {
+    --bg-gradation: linear-gradient(-90deg, #B3CBF6, #FFC778, #EEE);
+}
+
+body {
+    background: var(--bg-gradation);
+    background-size: 400% 400%;
+    animation: sky 10s ease infinite;
+}
+
+@keyframes sky {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+    ]]></math></code></pre>
+
+    <p class="rainbow">七色に変化する文字色をスタイリングするCSS</p>
+
+    <pre><code><math><![CDATA[
+.rainbow span:nth-child(7n+1) {
+    color: red;
+    animation: rainbow 7s step-start infinite;
+    animation-delay: -1s;
+}
+
+.rainbow span:nth-child(7n+2) {
+    color: orange;
+    animation: rainbow 7s step-start infinite;
+    animation-delay: -2s;
+}
+
+.rainbow span:nth-child(7n+3) {
+    color: yellow;
+    animation: rainbow 7s step-start infinite;
+    animation-delay: -3s;
+}
+
+.rainbow span:nth-child(7n+4) {
+    color: green;
+    animation: rainbow 7s step-start infinite;
+    animation-delay: -4s;
+}
+
+.rainbow span:nth-child(7n+5) {
+    color: skyblue;
+    animation: rainbow 7s step-start infinite;
+    animation-delay: -5s;
+}
+
+.rainbow span:nth-child(7n+6) {
+    color: blue;
+    animation: rainbow 7s step-start infinite;
+    animation-delay: -6s;
+}
+
+.rainbow span:nth-child(7n+7) {
+    color: purple;
+    animation: rainbow 7s step-start infinite;
+    animation-delay: -7s;
+}
+
+@keyframes rainbow {
+    14% {
+        color: red;
+    }
+    28.2% {
+        color: orange;
+    }
+    42.4% {
+        color: yellow;
+    }
+    56.5% {
+        color: green;
+    }
+    70.6% {
+        color: skyblue;
+    }
+    84.8% {
+        color: blue;
+    }
+    100% {
+        color: purple;
+    }
+}
+    ]]></math></code></pre>
+
+    <p class="rainbow">指定要素を文字単位でマークアップするスクリプト</p>
+
+    <pre><code><math><![CDATA[
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(".rainbow").children().addBack().contents().each(function() {
+        if (this.nodeType == 3) {
+            var $this = $(this);
+            $this.replaceWith($this.text().replace(/(\S)/g, "<span>$&</span>"));
+        }
+    });
+</script>
+    ]]></math></code></pre>
+    <div id="css_library"></div>
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $("#css_library").load("/coding/css/library.html");
+    })
+    $(".rainbow").children().addBack().contents().each(function() {
+        if (this.nodeType == 3) {
+            var $this = $(this);
+            $this.replaceWith($this.text().replace(/(\S)/g, "<span>$&</span>"));
+        }
+    });
+</script>
+
+</html>
