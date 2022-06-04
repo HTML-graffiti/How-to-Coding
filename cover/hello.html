@@ -160,11 +160,13 @@
                 <hr/>
             </div>
 
-            <p>最後に、<u data-click="js">JavaScript</u> を使って、#left・#right要素に、ふたつのウェブページを埋め込みます。<br/> $("ページを埋め込みたい箇所の #ID名").load("埋め込みたいページのURL");" を記述します。</p>
+            <p>最後に、<u data-click="js">JavaScript</u> (jQuery) を使って、#left・#right要素に、ふたつのウェブページを埋め込みます。<br/> $("ページを埋め込みたい箇所の #ID名").load("埋め込みたいページのURL");" を記述します。</p>
 
             <div id="js" class="open">
                 <i>JavaScript</i>
                 <pre><code><math><![CDATA[
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 
   <script type="text/javascript">
     $(function(){
       $("#right").load("book.php");
