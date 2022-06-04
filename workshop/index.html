@@ -67,25 +67,9 @@
 <body>
     <div id="foot">
         <div class="inside">
-            <h1><span id="rename"></span></h1>
+            <h1><span id="rename">HTML<br/>graffiti</span></h1>
         </div>
     </div>
-    <script>
-        var text = ["HTML graffiti"];
-        var counter = 0;
-        var elem = document.getElementById("rename");
-        var inst = setInterval(change, 750);
-
-        elem.innerHTML = text[counter];
-
-        function change() {
-            elem.innerHTML = text[counter];
-            counter++;
-            if (counter >= text.length) {
-                counter = 0;
-            }
-        };
-    </script>
 
     <div id="marquee">
 
