@@ -1,62 +1,82 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title> ORG | How to Coding </title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="/coding/js/randomcolor.js"></script>
-<script type="text/javascript">
-$(function(){
-	jQuery('#left').css({'background':getRumRgba()});
-});
-$(function(){
-	jQuery('#right').css({'background':getRumRgba()});
-});
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> ORG | How to Coding </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/coding/js/randomcolor.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            jQuery('#left').css({
+                'background': getRumRgba()
+            });
+        });
+        $(function() {
+            jQuery('#right').css({
+                'background': getRumRgba()
+            });
+        });
 
-$(function(){
-    $("#org").load("book.php");
-    $("#template").load("/coding/cover/org.html");
-    $("#about").load("/coding/submit/about.html");
-    $("#order").load("/coding/submit/order/form.html");
-})
-</script>
-<link rel="stylesheet" href="/coding/cover/style.css"/>
-<link rel="stylesheet" href="/coding/css/popup.css"/>
-<style type="text/css">
-@font-face {
-  font-family: "NewYork";
-  src: url("/coding/fontbook/NewYork.otf");
-}
-#title {font-family:"NewYork";}
-#left{overflow-x: hidden;}
-
-@media screen and (max-width: 500px){
-#contents {zoom:0.55;}
-}
-</style>
+        $(function() {
+            $("#org").load("book.php");
+            $("#template").load("/coding/cover/org.html");
+            $("#about").load("/coding/submit/about.html");
+            $("#order").load("/coding/submit/order/form.html");
+            $("#mobile").load("/coding/mobile.html");
+        })
+    </script>
+    <link rel="stylesheet" href="/coding/cover/style.css" />
+    <link rel="stylesheet" href="/coding/css/popup.css" />
+    <style type="text/css">
+        @font-face {
+            font-family: "NewYork";
+            src: url("/coding/fontbook/NewYork.otf");
+        }
+        
+        #title {
+            font-family: "NewYork";
+        }
+        
+        #left {
+            overflow-x: hidden;
+        }
+        
+        @media screen and (max-width: 900px) {
+            #left #org,
+            #left #about,
+            #right #template,
+            #right #order {
+                display: none;
+            }
+        }
+    </style>
 </head>
-<body>
-<h1 id="title">ORG | How to Coding</h1>
-<div id="cover">
-<div id="left">
-<div id="org"></div>
-<div id="about"></div>
-</div>
-<div id="right">
-<div id="template"></div>
-<div id="order"></div>
-</div>
-</div>
 
-<div class="popup" id="support" style="display:none;">
-<p><iframe src="/support/"></iframe></p>
-<span class="close" onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
-</div>
-<div class="popup" id="contactform" style="display:none;">
-<p><iframe src="/coding/submit/order/"></iframe></p>
-<span class="close" onclick="obj=document.getElementById('contactform').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
-</div>
+<body>
+    <h1 id="title">ORG | How to Coding</h1>
+    <div id="cover">
+        <div id="left">
+            <div id="org"></div>
+            <div id="about"></div>
+            <div id="mobile"></div>
+        </div>
+        <div id="right">
+            <div id="template"></div>
+            <div id="order"></div>
+        </div>
+    </div>
+
+    <div class="popup" id="support" style="display:none;">
+        <p><iframe src="/support/"></iframe></p>
+        <span class="close" onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
+    </div>
+    <div class="popup" id="contactform" style="display:none;">
+        <p><iframe src="/coding/submit/order/"></iframe></p>
+        <span class="close" onclick="obj=document.getElementById('contactform').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
+    </div>
 </body>
+
 </html>
