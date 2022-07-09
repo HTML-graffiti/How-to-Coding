@@ -21,6 +21,7 @@
         $period = new DatePeriod(
           date_create('first day of this month', timezone_open($timeZone)),
           new DateInterval('P1D'),
+          date_create('last day of this month +1 second', timezone_open($timeZone))
         );
 
         $location = timezone_open($timeZone)->getLocation();
