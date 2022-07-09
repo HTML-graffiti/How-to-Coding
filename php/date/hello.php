@@ -88,16 +88,18 @@
         <b>
         <?php
         date_default_timezone_set('Asia/Tokyo');
-        echo date("a g i s");
+        echo date("G A g i s");
         ?>
         <br/>
         <?php
         date_default_timezone_set('Asia/Tokyo');
-        echo date("A h i s");
+        echo date("H a h i s");
         ?>
       </b>
-        <br/>a: 午前または午後（小文字）
+        <br/>G: 時。24時間単位(1桁はゼロ無し)
+        <br/>H: 時。数字。24 時間単位(ゼロ詰め)
         <br/>A: 午前または午後（大文字）
+        <br/>a: 午前または午後（小文字）
         <br/>g: 時。12時間単位(1桁はゼロ無し)
         <br/>h: 時。数字。12 時間単位(ゼロ詰め)
         <br/>i: 分(ゼロ詰め)
