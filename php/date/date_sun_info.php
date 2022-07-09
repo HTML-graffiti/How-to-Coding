@@ -19,7 +19,8 @@
         $timeZone = 'Asia/Tokyo';
 
         $period = new DatePeriod(
-          date_create('first day of this month', timezone_open($timeZone))
+          date_create('first day of this month', timezone_open($timeZone)),
+          new DateInterval('P1D')
         );
 
         $location = timezone_open($timeZone)->getLocation();
