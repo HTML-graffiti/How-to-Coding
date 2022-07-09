@@ -16,13 +16,14 @@
         <br/>
         <b>
         <?php
+ 
 date_default_timezone_set('Asia/Tokyo');
 $now = time();
 $latitude = 34.6165;
 $longitude = 135.4855;
 
-echo 'sunrise: ' . date_sunrise($now, SUNFUNCS_RET_STRING, $latitude, $longitude) . "\n";
-echo 'sunset: ' . date_sunset($now, SUNFUNCS_RET_STRING, $latitude, $longitude) . "\n";
+echo 'sunrise: ' . date_sunrise($now, SUNFUNCS_RET_STRING, $latitude, $longitude) . PHP_EOL;
+echo 'sunset: ' . date_sunset($now, SUNFUNCS_RET_STRING, $latitude, $longitude) . PHP_EOL;
 }
         ?>
       </b>
@@ -32,6 +33,7 @@ echo 'sunset: ' . date_sunset($now, SUNFUNCS_RET_STRING, $latitude, $longitude) 
         <br/>
         <b>
         <?php
+ 
 date_default_timezone_set('Asia/Tokyo');
 $now = time();
 $latitude = 34.6165;
