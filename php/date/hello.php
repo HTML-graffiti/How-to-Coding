@@ -88,12 +88,12 @@
         <b>
         <?php
         date_default_timezone_set('Asia/Tokyo');
-        echo date("G A g i s v u");
+        echo date("G A g i s");
         ?>
         <br/>
         <?php
         date_default_timezone_set('Asia/Tokyo');
-        echo date("H a h i s v u");
+        echo date("H a h i s");
         ?>
       </b>
         <br/>G: 時。24時間単位(1桁はゼロ無し)
@@ -104,8 +104,6 @@
         <br/>h: 時。数字。12 時間単位(ゼロ詰め)
         <br/>i: 分(ゼロ詰め)
         <br/>s: 秒(ゼロ詰め)
-        <br/>v: ミリ秒(ゼロ詰め)
-        <br/>u: マイクロ秒(ゼロ詰め)
     </p>
 </body>
 
