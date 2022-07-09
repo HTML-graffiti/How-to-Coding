@@ -43,7 +43,7 @@
         <br/>r: RFC2822 フォーマット日付
     </p>
     <p>
-        <sup>echo date("全日付")</sup>
+        <sup>echo date("日 | 曜日")</sup>
         <br/>
         <b>
         <?php
