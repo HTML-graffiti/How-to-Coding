@@ -31,7 +31,7 @@ fclose($fp);
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="description" content="これまでに制作したウェブページ、コーディングのヒント・便利なツールなどをリストアップします。">
 
-        <title> Update | HTML graffiti </title>
+        <title> How to Coding | creative-community.space </title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="../submit/org/org.js"></script>
         <script src="../js/randomcolor.js"></script>
@@ -114,14 +114,15 @@ fclose($fp);
 
     <body>
 
-        <span id="bg_link">
-Update <i>
-<?php
-$mod = filemtime("index.csv");
-date_default_timezone_set('Asia/Tokyo');
-print "".date("m.d.y H:i",$mod);
-?>
-</i></span>
+        <span id="bg_link">Update 
+            <i>
+                <?php
+                $mod = filemtime("index.csv");
+                date_default_timezone_set('Asia/Tokyo');
+                print "".date("m.d.y H:i",$mod);
+                ?>
+            </i>
+        </span>
 
         <div id="header">
             <a href="/coding/">How to Coding</a>
