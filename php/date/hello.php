@@ -12,7 +12,7 @@
 
 <body>
     <p>
-        <sup>echo date("e O T Z")</sup>
+        <sup>echo date("タイムゾーン")</sup>
         <br/>
         <b>
         <?php
