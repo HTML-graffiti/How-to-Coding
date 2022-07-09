@@ -16,7 +16,7 @@
         <br/>
         <b>
         <?php
-        $sun_info = date_sun_info(strtotime("2006-12-12"), 34.616575, 135.485586);
+        $sun_info = date_sun_info(strtotime("Y-m-d"), 34.616575, 135.485586);
         foreach ($sun_info as $key => $val) {
           echo "$key: " . date("H:i:s", $val) . "\n";
         }
