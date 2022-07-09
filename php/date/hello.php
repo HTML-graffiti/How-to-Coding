@@ -11,7 +11,8 @@
 </head>
 
 <body>
-    <p>echo date("e O T Z")
+    <p>
+        <sup>echo date("e O T Z")</sup>
         <br/>
         <b>
         <?php
