@@ -16,7 +16,6 @@
         <br/>
         <b>
         <?php
- 
 date_default_timezone_set('Asia/Tokyo');
 $now = time();
 $latitude = 34.6165;
@@ -33,7 +32,6 @@ echo 'sunset: ' . date_sunset($now, SUNFUNCS_RET_STRING, $latitude, $longitude) 
         <br/>
         <b>
         <?php
- 
 date_default_timezone_set('Asia/Tokyo');
 $now = time();
 $latitude = 34.6165;
