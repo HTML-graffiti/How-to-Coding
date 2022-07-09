@@ -11,7 +11,14 @@
 </head>
 
 <body>
-<p class="ip">IP <?php echo $_SERVER['REMOTE_ADDR']; ?></p>
+<p class="ip">
+<?php
+echo 'HOST : '. $_SERVER['REMOTE_HOST']."<br/>";
+echo 'IP : '. $_SERVER['REMOTE_ADDR']."<br/>";
+echo 'USER : '. $_SERVER['REMOTE_USER']."<br/>";
+echo 'VER : '. $_SERVER['SERVER_PROTOCOL']."<br/>";
+?>
+</p>
 </body>
 
 </html>
