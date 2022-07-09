@@ -23,7 +23,7 @@ $longitude = 135.4855;
 
 $sun_info = date_sun_info($today, $latitude, $longitude);
 foreach ($sun_info as $key => $val) {
-  echo "$key: " . date('g:i:s A', $val) . " | \n";
+  echo "$key: " . date('g:i:s A', $val) . "<br/>";
 }
         ?>
       </b>
