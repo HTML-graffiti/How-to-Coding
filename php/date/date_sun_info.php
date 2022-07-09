@@ -17,28 +17,19 @@
         <b>
         <?php
  
- $lon = 34.6165;
- $lat = 135.4855;
-  
- echo date("D M d Y"). ', sunrise time : ' . date_sunrise(
-     time(),
-     SUNFUNCS_RET_STRING,
-     $lat,
-     $lon,
-     90,
-     9
- );
-  
- echo "<br>";
-  
- echo date("D M d Y"). ', sunset time : ' . date_sunset(
-     time(),
-     SUNFUNCS_RET_STRING,
-     $lat,
-     $lon,
-     90,
-     9
- );
+date_default_timezone_set('Asia/Tokyo');
+$now = time();
+$latitude = 34.6165;
+$longitude = 135.4855;
+
+echo 'sunrise: ' . date_sunrise($now, SUNFUNCS_RET_STRING, $latitude, $longitude) . PHP_EOL;
+echo 'sunset: ' . date_sunset($now, SUNFUNCS_RET_STRING, $latitude, $longitude) . PHP_EOL;
+
+echo str_repeat('-', 40) . PHP_EOL;
+$sun_info = date_sun_info($now, $latitude, $longitude);
+foreach ($sun_info as $key => $val) {
+    echo "$key: " . date('H:i:s', $val) . PHP_EOL;
+}
         ?>
       </b>
     </p>
