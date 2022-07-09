@@ -16,11 +16,11 @@
         <b>
         <?php
         date_default_timezone_set('Asia/Tokyo');
-        echo date("e");
-        echo date("I");
-        echo date("O");
-        echo date("T");
-        echo date("Z");
+        echo date("e ");
+        echo date("I ");
+        echo date("O ");
+        echo date("T ");
+        echo date("Z ");
         ?>
       </b>
         <br/>e: タイムゾーン識別子
