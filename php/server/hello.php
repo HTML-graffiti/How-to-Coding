@@ -15,8 +15,8 @@
 <?php
 echo 'USER : '. $_SERVER['HTTP_USER_AGENT']."<br/>";
 echo 'IP : '. $_SERVER['REMOTE_ADDR']."<br/>";
-echo 'USER : '. $_SERVER['REMOTE_USER']."<br/>";
 echo 'SERVER : '. $_SERVER['SERVER_NAME']."<br/>";
+echo 'PROTOCOL : '. $_SERVER['SERVER_PROTOCOL']."<br/>";
 ?>
 </p>
 </body>
