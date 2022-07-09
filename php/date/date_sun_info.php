@@ -16,7 +16,6 @@
         <br/>
         <b>
         <?php
- 
 date_default_timezone_set('Asia/Tokyo');
 $now = time();
 $latitude = 34.6165;
