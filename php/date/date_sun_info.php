@@ -30,8 +30,8 @@
         foreach ($period as $day) {
           $sunInfo = date_sun_info(
             $day->getTimeStamp(),
-            $location['34.6165'],
-            $location['135.4855']
+            $location['latitude'],
+            $location['longitude']
           );
     
           printf('%s%9s%8s' . PHP_EOL,
