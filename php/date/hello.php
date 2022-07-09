@@ -16,10 +16,18 @@
         <b>
         <?php
         date_default_timezone_set('Asia/Tokyo');
-        echo date("e I O T Z");
+        echo date("e");
+        echo date("I");
+        echo date("O");
+        echo date("T");
+        echo date("Z");
         ?>
       </b>
-        <br/> echo date("e I O T Z");
+        <br/>e: タイムゾーン識別子
+        <br/>I: サマータイム中か否か
+        <br/>O: グリニッジ標準時(GMT)との時間差
+        <br/>T: このマシーンのタイムゾーンの設定
+        <br/>Z: タイムゾーンのオフセット秒数
     </p>
 </body>
 
