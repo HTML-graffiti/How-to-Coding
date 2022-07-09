@@ -13,10 +13,10 @@
 <body>
 <p class="ip">
 <?php
-echo 'HOST : '. $_SERVER['REMOTE_HOST']."<br/>";
+echo 'USER : '. $_SERVER['HTTP_USER_AGENT']."<br/>";
 echo 'IP : '. $_SERVER['REMOTE_ADDR']."<br/>";
 echo 'USER : '. $_SERVER['REMOTE_USER']."<br/>";
-echo 'VER : '. $_SERVER['SERVER_PROTOCOL']."<br/>";
+echo 'SERVER : '. $_SERVER['SERVER_NAME']."<br/>";
 ?>
 </p>
 </body>
