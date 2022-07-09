@@ -16,10 +16,32 @@
         <br/>
         <b>
         <?php
-        $sun_info = date_sun_info(strtotime("2022-07-09"), 34.6165, 135.4855);
-        foreach ($sun_info as $key => $val) {
-          echo "$key: " . date("H:i:s", $val) . "\n";
-        }
+$timeZone = 'Asia/Tokyo';
+// $timeZone = 'America/New_York';
+// $timeZone = 'Europe/Oslo';
+
+$period = new DatePeriod(
+    date_create('first day of this month', timezone_open($timeZone)),
+    new DateInterval('P1D'),
+    date_create('last day of this month +1 second', timezone_open($timeZone))
+);
+
+$location = timezone_open($timeZone)->getLocation();
+printf('%10s%9s%8s' . PHP_EOL, 'date', 'sunrise', 'sunset');
+
+foreach ($period as $day) {
+    $sunInfo = date_sun_info(
+        $day->getTimeStamp(),
+        $location['latitude'],
+        $location['longitude']
+    );
+
+    printf('%s%9s%8s' . PHP_EOL,
+        $day->format('Y-m-d'),
+        $day->setTimeStamp($sunInfo['sunrise'])->format('H:i'),
+        $day->setTimeStamp($sunInfo['sunset'])->format('H:i')
+    );
+}
         ?>
       </b>
     </p>
