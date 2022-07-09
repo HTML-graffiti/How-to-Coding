@@ -53,12 +53,13 @@
         <br/>
         <?php
         date_default_timezone_set('Asia/Tokyo');
-        echo date("j l");
+        echo date("jS l");
         ?>
       </b>
         <br/>d: 日。2桁の数字(ゼロ詰め)
         <br/>D: 曜日。3文字のテキスト形式
         <br/>j: 日。(1桁はゼロ無し)
+        <br/>S: 序数を表すサフィックス
         <br/>l: 曜日。フルスペル形式
     </p>
     <p>
