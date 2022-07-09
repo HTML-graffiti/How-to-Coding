@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <hr/>
     <p>
         <sup>date_sun_info</sup>
         <br/>
