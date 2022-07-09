@@ -25,6 +25,23 @@
         <br/>T: このマシーンのタイムゾーンの設定
         <br/>Z: タイムゾーンのオフセット秒数
     </p>
+    <p>
+        <sup>echo date("全日付")</sup>
+        <br/>
+        <b>
+        <?php
+        date_default_timezone_set('Asia/Tokyo');
+        echo date("c");
+        ?>
+        <br/>
+        <?php
+        date_default_timezone_set('Asia/Tokyo');
+        echo date("r");
+        ?>
+      </b>
+        <br/>c: ISO8601 フォーマット日付
+        <br/>r: RFC2822 フォーマット日付
+    </p>
 </body>
 
 </html>
