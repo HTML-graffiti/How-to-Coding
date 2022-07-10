@@ -1,49 +1,54 @@
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/coding/hello/close_open.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="/coding/hello/open_close.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/coding/hello/close_open.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/coding/hello/open_close.js"></script>
 
-<title> リストページ／投稿フォームの作り方 | How to Coding </title>
-<style type="text/css">
-  pre, code {
-    display:block;
-    width:auto;
-    font-size:1.25vw;
-  }
-  #contents {
-    width:80%;
-    margin:2rem auto;
-    font-size:1.25vw;
-  }
-  #contents #hello {font-size:2vw;}
-@media screen and (max-width: 500px){
-}
-</style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript">
-$(function(){
-})
-</script>
+    <title> リストページ／投稿フォームの作り方 | How to Coding </title>
+    <style type="text/css">
+        pre,
+        code {
+            display: block;
+            width: auto;
+            font-size: 1.25vw;
+        }
+        
+        #contents {
+            width: 80%;
+            margin: 2rem auto;
+            font-size: 1.25vw;
+        }
+        
+        #contents #hello {
+            font-size: 2vw;
+        }
+        
+        @media screen and (max-width: 500px) {}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {})
+    </script>
 </head>
-<body>
-<div id="contents">
-<div id="hello">
-<i><a>リストページ／投稿フォームの作り方</a></i><br/>
-3つの PHPファイル <u data-click="listing">contents.php</u> <u data-click="ideas">submit.php</u> <u data-click="complete">complete.php</u> を使用し、リストページ／投稿フォームを作ります。<hr/>
-<p>このページでは、PHPの動作のみを解説します。<br/>HTML・CSS については、別ページで解説します。</p>
-<div>
-<p>まず、<a href="/coding/php/csv/">テキストファイルの内容を、HTMLに呼び出す</a> を応用し、CSVに記録した複数の項目を呼び出す <u data-click="first">PHPコード</u>
-を、リストページ／投稿フォームに使用する全てのHTML
-<b>contents.php</b> <b>submit.php</b> <b>complete.php</b>
-の冒頭に記述します。<br>
-</p>
 
-<div id="first" class="open">
-<pre>
+<body>
+    <div id="contents">
+        <div id="hello">
+            <i><a>リストページ／投稿フォームの作り方</a></i><br/> 3つの PHPファイル <u data-click="listing">contents.php</u> <u data-click="ideas">submit.php</u> <u data-click="complete">complete.php</u> を使用し、リストページ／投稿フォームを作ります。
+            <hr/>
+            <p>このページでは、PHPの動作のみを解説します。<br/>HTML・CSS については、別ページで解説します。</p>
+            <div>
+                <p>まず、<a href="/coding/php/csv/">テキストファイルの内容を、HTMLに呼び出す</a> を応用し、CSVに記録した複数の項目を呼び出す <u data-click="first">PHPコード</u> を、リストページ／投稿フォームに使用する全てのHTML
+                    <b>contents.php</b> <b>submit.php</b> <b>complete.php</b> の冒頭に記述します。
+                    <br>
+                </p>
+
+                <div id="first" class="open">
+                    <pre>
 <code><math><![CDATA[
   <?php
 
@@ -71,32 +76,30 @@ $(function(){
   ?>
 ]]></math></code></pre>
 
-<p><u><i>解説</i></u><br/>
-記述方法は、<a href="/coding/php/csv/">テキストファイルの内容を、HTMLに呼び出す</a> の応用です。<br/>
-<br/><u data-click="fputcsv">「$項目名」から始まる複数の行と、「fputcsv($fp, [$項目名, $項目名, $項目名]);」</u>の2箇所が重要な箇所です。
-</p>
-<div id="fputcsv" class="open">
-<i>「$項目名」と「fputcsv($fp, [$項目名, $項目名, $項目名]);」</i><br/>
-呼び出したい項目の数だけ、「$項目名」で始まるコードを記述します。<br/>今回用意したSample ページでは「名前（$name）」「タイトル（$title）」「リンク（$link）」の3つの項目を呼び出し、内容を生成するため「$項目名」で始まる3つの行があります。
-<p>fputcsv($fp, のあとの [　]内に、
-<code>＜$項目名 = (string)filter_input(INPUT_POST, '項目名');＞</code>
-の項目名と同じ項目名を <b>,</b> で区切り、記述します。<br/>
-この場合は、[　]内に <b>$name, $title, $link</b> と記述します。
-</p>
+                    <p><u><i>解説</i></u><br/> 記述方法は、
+                        <a href="/coding/php/csv/">テキストファイルの内容を、HTMLに呼び出す</a> の応用です。<br/>
+                        <br/><u data-click="fputcsv">「$項目名」から始まる複数の行と、「fputcsv($fp, [$項目名, $項目名, $項目名]);」</u>の2箇所が重要な箇所です。
+                    </p>
+                    <div id="fputcsv" class="open">
+                        <i>「$項目名」と「fputcsv($fp, [$項目名, $項目名, $項目名]);」</i><br/> 呼び出したい項目の数だけ、「$項目名」で始まるコードを記述します。
+                        <br/>今回用意したSample ページでは「名前（$name）」「タイトル（$title）」「リンク（$link）」の3つの項目を呼び出し、内容を生成するため「$項目名」で始まる3つの行があります。
+                        <p>fputcsv($fp, のあとの [　]内に、
+                            <code>＜$項目名 = (string)filter_input(INPUT_POST, '項目名');＞</code> の項目名と同じ項目名を <b>,</b> で区切り、記述します。<br/> この場合は、[　]内に <b>$name, $title, $link</b> と記述します。
+                        </p>
 
-<p>このPHPコードは、編集機能もセキュリティ処理もない単純な仕様です。</p>
-<p>これまでにウェブサイトを作った経験がない方には難しいように見えるかもしれませんが、色々調べた中でも一番シンプルな、少しの技術で独自のリストページ・投稿ページを制作することができる簡単な仕様だと思います。</p>
-<hr/>
-</div>
-</div>
-</div>
+                        <p>このPHPコードは、編集機能もセキュリティ処理もない単純な仕様です。</p>
+                        <p>これまでにウェブサイトを作った経験がない方には難しいように見えるかもしれませんが、色々調べた中でも一番シンプルな、少しの技術で独自のリストページ・投稿ページを制作することができる簡単な仕様だと思います。</p>
+                        <hr/>
+                    </div>
+                </div>
+            </div>
 
-<div id="listing" class="open">
-<br/>
-<i><a href="contents.php">contents.php</a></i>
-<p>リストを構成する contents.php の BODY要素内に、CSVを呼び出す <u data-click="php_row">PHP</u> を記述します。</p>
-<div id="php_row" class="open">
-<pre><code><math><![CDATA[
+            <div id="listing" class="open">
+                <br/>
+                <i><a href="contents.php">contents.php</a></i>
+                <p>リストを構成する contents.php の BODY要素内に、CSVを呼び出す <u data-click="php_row">PHP</u> を記述します。</p>
+                <div id="php_row" class="open">
+                    <pre><code><math><![CDATA[
 <ul id="list">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
@@ -111,24 +114,24 @@ $(function(){
 </ul>
 ]]></math></code></pre>
 
-<u><i>解説</i></u>
-<p>li要素内の <b>?=h($row[0 ~ 2])?</b> に、「$項目名」が順に呼び出されます。</p>
-<p>$row[数字] は、fputcsv($fp, のあとの []内の、$項目名,$項目名,$項目名 の順番と連動します。
-<br/><i>例: $name = $row[0], $title = $row[1], $link = $row[2]<br/>
+                    <u><i>解説</i></u>
+                    <p>li要素内の <b>?=h($row[0 ~ 2])?</b> に、「$項目名」が順に呼び出されます。</p>
+                    <p>$row[数字] は、fputcsv($fp, のあとの []内の、$項目名,$項目名,$項目名 の順番と連動します。
+                        <br/><i>例: $name = $row[0], $title = $row[1], $link = $row[2]<br/>
 ※ プログラミングにおいて、数字のカウントは 0 から始まります。</i></p>
-</div>
-<hr/>
-</div>
+                </div>
+                <hr/>
+            </div>
 
-<div id="ideas" class="open">
-<br/><i><a href="submit.php">submit.php</a></i>
-<p>投稿フォームに使用する
-<u data-click="php_submit">submit.php</u>
-にフォームを作成し、項目名と関連するフォーム部品に項目名と同じ名前をつけます。</p>
-<p>フォーム部品については
-<a href="/coding/submit/form/">/coding/submit/form/</a>
-で解説します。</p>
-<pre>
+            <div id="ideas" class="open">
+                <br/><i><a href="submit.php">submit.php</a></i>
+                <p>投稿フォームに使用する
+                    <u data-click="php_submit">submit.php</u> にフォームを作成し、項目名と関連するフォーム部品に項目名と同じ名前をつけます。
+                </p>
+                <p>フォーム部品については
+                    <a href="/coding/submit/form/">/coding/submit/form/</a> で解説します。
+                </p>
+                <pre>
 <code><math><![CDATA[
 <section id="form">
 <form action="complete.php" method="post">
@@ -140,31 +143,30 @@ $(function(){
 </section>
 ]]></math></code></pre>
 
-<u><i>解説</i></u>
-<p>「input type="text"」「input type="url"」などのフォーム部品の開始タグ内の
-name="項目名" を 基本となる PHP の $要素名 と揃え、フォームごとの入力内容を識別してCSVに書き出します。</p>
-<hr/>
-</div>
+                <u><i>解説</i></u>
+                <p>「input type="text"」「input type="url"」などのフォーム部品の開始タグ内の name="項目名" を 基本となる PHP の $要素名 と揃え、フォームごとの入力内容を識別してCSVに書き出します。</p>
+                <hr/>
+            </div>
 
-<div id="complete" class="open">
-<br/>
-<i><a href="complete.php">complete.php</a></i>
-<p>二重投稿を防ぐために、<u data-click="php_complete">投稿完了ページ</u> を用意しました。</p>
+            <div id="complete" class="open">
+                <br/>
+                <i><a href="complete.php">complete.php</a></i>
+                <p>二重投稿を防ぐために、<u data-click="php_complete">投稿完了ページ</u> を用意しました。</p>
 
-<div id="php_complete" class="open">
-<pre>
+                <div id="php_complete" class="open">
+                    <pre>
 <code><math><![CDATA[
 <meta http-equiv="refresh" content="3;URL=contents.php">
 ]]></math></code></pre>
 
-<p><u><i>解説</i></u><br/>
-submit.php から投稿が完了すると、complete.php に移動します。
-<br/>complete.phpへ移動後、3秒経過すると contents.php ページへ自動的に移動する meta要素 を contents.php のHEAD要素内に記述します。</p>
-</div>
-<hr/>
-</div>
-<p>勉強すればもっといい仕様が見つかると思うのですが、現状の自分のスキルではこのページ構成が限界です。</p>
-</div>
-</div>
+                    <p><u><i>解説</i></u><br/> submit.php から投稿が完了すると、complete.php に移動します。
+                        <br/>complete.phpへ移動後、3秒経過すると contents.php ページへ自動的に移動する meta要素 を contents.php のHEAD要素内に記述します。</p>
+                </div>
+                <hr/>
+            </div>
+            <p>勉強すればもっといい仕様が見つかると思うのですが、現状の自分のスキルではこのページ構成が限界です。</p>
+        </div>
+    </div>
 </body>
+
 </html>
