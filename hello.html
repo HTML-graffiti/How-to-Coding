@@ -61,6 +61,37 @@
     newRGBbg.classList.add("randomRGBbg")
   }
 
-</script>
+  // 2 つの値の間にある整数の乱数を返す
+  function random(min, max) {
+    const num = Math.floor(Math.random() * (max - min + 1)) + min;
+    return num;
+  }
 
-<script src="/js/randomRGB.js"></script>
+  // RGB それぞれの値を 1~255 のうちからランダムに返す
+  function randomRGB() {
+    let getRGB = `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
+    return getRGB;
+  }
+
+  const randomRGBcolorAll = document.querySelectorAll('.randomRGBcolor');
+  for (const randomRGBcolor of randomRGBcolorAll) {
+    randomRGBcolor.addEventListener('mouseenter', function(event) {
+      event.target.style.color = randomRGB();
+    });
+    randomRGBcolor.addEventListener('mouseleave', function(event) {
+      event.target.style.color = "";
+    });
+
+  }
+
+  const randomRGBbgAll = document.querySelectorAll('.randomRGBbg');
+  for (const randomRGBbg of randomRGBbgAll) {
+    randomRGBbg.addEventListener('mouseenter', function(event) {
+      event.target.style.backgroundColor = randomRGB();
+    });
+    randomRGBbg.addEventListener('mouseleave', function(event) {
+      event.target.style.backgroundColor = "";
+    });
+  }
+
+</script>
