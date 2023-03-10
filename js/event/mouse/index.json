@@ -1,0 +1,107 @@
+{
+  "title" : "MouseEvent",
+  "description" : "",
+  "author" : "JavaScript",
+  "email" : "pehu@creative-community.space",
+  "type" : "website",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "___",
+
+  "contents" : [
+    {
+      "date" : "Document Object Model",
+      "name" : "Event",
+      "url" : "/coding/js/event/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "Element",
+      "url" : "/coding/js/element/",
+      "language" : "js",
+      "status" : "basic"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "UI Events",
+      "name" : "MouseEvent",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/MouseEvent",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "MouseEvent",
+      "name" : "MouseEvent()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/MouseEvent/MouseEvent",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Element",
+      "name" : "mousemove",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/mousemove_event",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "MouseEvent",
+      "name" : ".clientX",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/MouseEvent/clientX",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "MouseEvent",
+      "name" : ".clientY",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/MouseEvent/clientY",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "MouseEvent",
+      "name" : ".screenX",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/MouseEvent/screenX",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "MouseEvent",
+      "name" : ".screenY",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/MouseEvent/screenY",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : "mousedown",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/mousedown_event",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : "mouseup",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/mouseup_event",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : "mouseenter",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/mouseenter_event",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : "mouseleave",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/mouseleave_event",
+      "language" : "js",
+      "status" : "guide"
+    }
+  ]
+}

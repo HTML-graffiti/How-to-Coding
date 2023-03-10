@@ -1,0 +1,138 @@
+<p><code>DOMツリーの中にある 要素の属性 を操作する</code></p>
+<p>
+  <font>Element<code class="red">.attributes</code></font><br/>
+  要素に設定されたすべての生きた属性コレクションを返却するプロパティ
+</p>
+<p>
+  <font>Element<code class="red">.hasAttributes</code></font><br/>
+  要素が属性を持っているか否かを示す真偽値を返すプロパティ
+</p>
+<hr/>
+<details>
+  <summary>
+    <h3>例)
+      <code class="red">document.querySelectorAll</code> で指定したすべての要素が
+      <code class="red">hasAttribute</code> 属性を持っているかを測定し、
+      <code class="red">attributes</code> 持っていれば、属性コレクションを
+      <code class="red">innerHTML</code> すべて表示する
+    </h3>
+  </summary>
+<pre>
+const result = document.getElementById("result");
+
+const attributes = document.<code>querySelectorAll("article section")</code>;
+<code>for (const attribute of attributes)</code> {
+
+  if (<code>attribute<code class="red">.hasAttributes()</code></code>) {
+    let <code>attrs = <code class="red">attribute.attributes</code></code>;
+    let output = "";
+    for(<code>let i = <code class="red">attrs.length</code> - 1; i >= 0; i--</code>) {
+      output <code><code class="red">+=</code> `<code class="red">${attrs[i].name}</code>="<code class="red">${attrs[i].value}</code>" `</code>;
+    }
+    result.innerHTML <code><code class="red">+=</code> `<<code>h3</code>>${output}<<code>/h3</code>>`</code>;
+  } else {
+    result.innerHTML = "表示する属性はありません";
+  }
+
+}
+</pre>
+  <hr/>
+  <div id="result"></div>
+</details>
+<br/>
+<hr/>
+<p>
+  <font>Element<code class="red">.classList</code></font><br/>
+  クラスリストを操作するプロパティ
+</p>
+<p>
+  Element.<code>classList<font class="red">.add()</font></code><br/>
+  Element.<code>classList<font class="red">.remove()</font></code><br/>
+  Element.<code>classList<font class="red">.replace()</font></code><br/>
+  Element.<code>classList<font class="red">.toggle()</font></code><br/>
+  <br/>
+  各メソッドを用いてオブジェクトを変更することはできます。<br/>
+</p>
+<hr/>
+<details>
+  <summary>
+    <h3>例)
+      <code class="red">a[href^="#"]</code>
+      アンカーリンク先の
+      <code>article section</code>
+      のクラスリスト
+      <code class="red">classList</code>
+      を
+      <code>link.hash</code>
+      によって
+      <code class="red">add()</code> 追加・
+      <code class="red">remove()</code> 削除・
+      <code class="red">replace()</code> 置き換える
+
+    </h3>
+  </summary>
+<pre>
+const anchorLinks = document.querySelectorAll('a[href^="#"]');
+
+anchorLinks.forEach((link) => {
+  link.addEventListener('click', function() {
+
+    const readmeSectionAll = document.querySelectorAll("article section");
+    for (const readmeSection of readmeSectionAll) {
+      readmeSection<font>.classList<code class="red">.remove</code>("active")</font>;
+      readmeSection<font>.classList<code class="red">.add</code>("is-hide")</font>;
+    }
+
+    const targetId = link.hash;
+    const targetElement = document.querySelector(targetId);
+    targetElement<font>.classList<code class="red">.replace</code>("is-hide", "active")</font>;
+  });
+});
+
+</pre>
+</details>
+<br/>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>
+  <font>Element<code class="red">.getAttribute(name)</code></font><br/>
+  指定した要素の指定された属性の値を返却するプロパティ
+</p>
+<p>
+  <font>Element<code class="red">.removeAttribute(name)</code></font><br/>
+  指定した要素から指定した属性を削除するプロパティ
+</p>
+<p>
+  <font>Element<code class="red">.setAttribute(name, value)</code></font><br/>
+  指定した要素に新しい属性を追加する・存在する属性の値を変更するプロパティ
+</p>
+<p>
+  <font>Element<code class="red">.toggleAttribute(name, force)</code></font><br/>
+  指定した要素に対して属性をトグル切り替えするプロパティ（存在する場合は取り除き、存在しない場合は追加する）
+</p>
+<hr/>
+
+<script type="text/javascript">
+
+  "use strict"
+
+  const result = document.getElementById("result");
+
+  const attributes = document.querySelectorAll(".readme section");
+  for (const attribute of attributes) {
+
+    if (attribute.hasAttributes()) {
+      let attrs = attribute.attributes;
+      let output = "";
+      for(var i = attrs.length - 1; i >= 0; i--) {
+        output += `<code class="red">${attrs[i].name}</code>="<code class="red">${attrs[i].value}</code>" `;
+      }
+      result.innerHTML += `<h3>section ${output}</h3>`;
+    } else {
+      result.innerHTML = "表示する属性はありません";
+    }
+
+  }
+
+</script>

@@ -1,0 +1,107 @@
+{
+  "title" : "KeyboardEvent",
+  "description" : "",
+  "author" : "JavaScript",
+  "email" : "pehu@creative-community.space",
+  "type" : "website",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "___",
+
+  "contents" : [
+    {
+      "date" : "Document Object Model",
+      "name" : "Event",
+      "url" : "/coding/js/event/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "Element",
+      "url" : "/coding/js/element/",
+      "language" : "js",
+      "status" : "basic"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "UI Events",
+      "name" : "KeyboardEvent",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/KeyboardEvent",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Element",
+      "name" : "keyup",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/keyup_event",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : "keydown",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/keydown_event",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "KeyboardEvent",
+      "name" : ".code",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/KeyboardEvent/code",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "KeyboardEvent",
+      "name" : ".key",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/KeyboardEvent/key",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "KeyboardEvent",
+      "name" : ".altKey",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/KeyboardEvent/altKey",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "KeyboardEvent",
+      "name" : ".ctrlKey",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/KeyboardEvent/ctrlKey",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "KeyboardEvent",
+      "name" : ".shiftKey",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/KeyboardEvent/shiftKey",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "KeyboardEvent",
+      "name" : ".metaKey",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/KeyboardEvent/metaKey",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "KeyboardEvent",
+      "name" : ".repeat",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/KeyboardEvent/repeat",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "テキストエリア要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/textarea",
+      "language" : "html",
+      "status" : "guide"
+    }
+  ]
+}

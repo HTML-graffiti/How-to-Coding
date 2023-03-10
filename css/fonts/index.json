@@ -1,0 +1,170 @@
+{
+  "title" : "Font Styling",
+  "description" : "フォントの指定 | Styling Text",
+  "author" : "Cascading Style Sheets",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "HTML",
+      "name" : "文書メタデータ (ヘッダー) 要素",
+      "url" : "/coding/html/head/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "テキストの基礎",
+      "url" : "/coding/html/text/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "テキストの装飾",
+      "url" : "/coding/css/text/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "高度なテキスト整形",
+      "url" : "/coding/html/text/advanced/",
+      "language" : "html",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "基本的なテキストとフォントの装飾",
+      "name" : "Fundamental text and font styling",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/Styling_text/Fundamentals",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "font",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/font",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "font-family",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/font-family",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "@font-face",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/@font-face",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "font-style",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/font-style",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "font-weight",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/font-weight",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "font-variant",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/font-variant",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "font-synthesis",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/font-synthesis",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS の値と単位",
+      "name" : "CSS values and units",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/Building_blocks/Values_and_units",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "font-size",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/font-size",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "font-size-adjust",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/font-size-adjust",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "line-height",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/line-height",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "letter-spacing",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/letter-spacing",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "word-spacing",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/word-spacing",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "text-indent",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/text-indent",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "font-stretch",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/font-stretch",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "font-kerning",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/font-kerning",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "white-space",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/white-space",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ]
+}

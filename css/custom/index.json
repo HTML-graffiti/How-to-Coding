@@ -1,0 +1,28 @@
+{
+  "title" : "CSS カスタムプロパティ",
+  "description" : "CSS カスタムプロパティ (変数) ",
+  "author" : "Cascading Style Sheets",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "Twitterカードの種類 (summary | summary_large_image | app | player)",
+  "src" : "ページを代表する画像のURL",
+
+  "contents" : [
+    {
+      "date" : "代替的なタイトル",
+      "name" : "リンク先のタイトル",
+      "url" : "リンク先のURL"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "CSS custom properties",
+      "name" : "CSS カスタムプロパティ (変数) の使用",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/Using_CSS_custom_properties",
+      "language" : "css",
+      "status" : "basic"
+    }
+  ]
+}

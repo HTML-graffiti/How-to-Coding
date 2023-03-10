@@ -1,0 +1,103 @@
+<a href="https://jsfiddle.net/verygois/3kL6fqmr/84/" target="_blank" rel="noreferrer">The Coverpage That Seems Like a cover of the book</a>
+<h3>
+  開いた本のようなウェブページ
+</h3>
+<hr/>
+<details>
+  <summary><span class="link">rel="stylesheet" href="<b class="red">style.css</b>" /</span></summary>
+  <div>
+    <p>
+      #cover を フルスクリーンサイズで固定し、
+      #left と #right
+      を float で左右にレイアウト<br/>
+      #left と #right
+      の width と height を調整し、
+      transform で開いた本のように傾けます。
+    </p>
+    <p>
+      h1#title
+      の writing-mode を縦書きにして、
+      #left と #right
+      の間に回り込ませ、フォントサイズと余白を調整します。
+    </p>
+  </div>
+</details>
+<hr/>
+<details>
+  <summary><span class="body_tag"><b class="red">id="cover"</b>></span></summary>
+  <p>開始タグに <b class="red">id="cover"</b> を設定した body の中に、</p>
+  <p class="main">
+    <b class="red">id="left"</b>><br/>
+    表紙になる main 要素 (#left)<br/>
+  </p>
+  <p class="article_tag">
+    <b class="red">id="right"</b>><br/>
+    裏表紙になる article 要素 (#right)<br/>
+  </p>
+  <p class="h1_tag">
+    <b class="red">id="title"</b>><br/>
+    背表紙になる h1 要素 (#title)<br/>
+  </p>
+  を記述します。
+</details>
+<hr/>
+<details class="script_tag">
+  <summary>$(function() {$('#idの値').load('〇〇.html');})</summary>
+  <p>
+    <a href="https://api.jquery.com/load/">.load()</a>
+    メソッドを使って、
+    #left と #right に 特定のページを呼びだします。
+  </p>
+</details>
+<hr/>
+<p>
+  <i>スクリーンサイズが 820px 以下の場合に適応するスタイルシート</i>
+</p>
+<details>
+  <summary>
+    <span class="link">rel="stylesheet" href="<b class="red">mobile.css</b>" media="screen and (max-width: 820px)"/</span>
+  </summary>
+  <p>
+    #cover の position を static に、
+    #left と #right の幅を 100% に変更<br/>
+    通常フローに沿ってページの上から、#left・#right の順に要素をレイアウト・
+    h1#titleは、ページ右上の position に fixed します。
+  </p>
+  <pre>
+#cover {
+  position: static;
+  width: 100%;
+  height: auto;
+  max-height: auto;
+}
+
+#left,
+#right {
+  clear: both;
+  float: none;
+  position: relative;
+  padding: 5% 10% 5% 5%;
+  margin-top: 0;
+  width: 100%;
+  height: auto;
+  min-height: -webkit-fill-available;
+  transform: rotate(0) skew(0, 0);
+}
+
+h1#title {
+  font-size: 4vh;
+  position: fixed;
+  top: 2.5%;
+  right: 2.5%;
+  padding: 0;
+  height: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  h1#title {
+    font-size: 4.5vw;
+  }
+}
+  </pre>
+</details>
+<br/>

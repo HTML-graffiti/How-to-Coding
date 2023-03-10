@@ -1,0 +1,51 @@
+pre,
+code,
+font,
+#touchEvent {
+  font-family: "ipag", monospace;
+}
+
+#main,
+#box,
+#js-button {
+  color: #fff;
+  mix-blend-mode: difference;
+}
+
+#main {
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+code {
+  font-size: 111%;
+  font-style: normal;
+}
+
+#box {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  font-size: 75%;
+  padding: 5px;
+  margin: 0;
+  pointer-events: none;
+  user-select: none;
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+
+#log {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+}
+
+#log p {
+  padding: 0;
+  margin: 5px;
+}

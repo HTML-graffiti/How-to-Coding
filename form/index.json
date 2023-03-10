@@ -1,0 +1,142 @@
+{
+  "title" : "Form-associated Content",
+  "description" : "フォーム関連要素",
+  "author" : "How to Coding",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+  ],
+
+  "links" : [
+    {
+      "date" : "フォーム",
+      "name" : "form要素・label要素",
+      "url" : "https://momdo.github.io/html/forms.html",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "フォーム",
+      "name" : "form-elements",
+      "url" : "https://momdo.github.io/html/form-elements.html",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "form",
+      "name" : "フォーム要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/form",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "フォーム",
+      "name" : "input要素",
+      "url" : "https://momdo.github.io/html/input.html",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "Pseudo-classes",
+      "name" : "擬似クラス",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/Pseudo-classes",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":active",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:active",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":focus",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:focus",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":enabled",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:enabled",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":disabled",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:disabled",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":optional",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:optional",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":required",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:required",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":invalid",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:invalid",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":checked",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:checked",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":default",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:default",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":in-range",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:in-range",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":out-of-range",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:out-of-range",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "フォーム",
+      "name" : "フォームコントロールのインフラ",
+      "url" : "https://momdo.github.io/html/form-control-infrastructure.html",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document",
+      "name" : ".forms",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/forms",
+      "language" : "js",
+      "status" : "guide"
+    }
+  ]
+}

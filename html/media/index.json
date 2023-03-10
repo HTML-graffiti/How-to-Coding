@@ -1,0 +1,86 @@
+{
+  "title" : "VIDEO AUDIO",
+  "description" : "メディア要素（エンベディッド・コンテンツ）",
+  "author" : "Hypertext Markup Language",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "Twitterカードの種類 (summary | summary_large_image | app | player)",
+  "src" : "ページを代表する画像のURL",
+
+  "contents" : [
+    {
+      "date" : "HTML",
+      "name" : "画像要素",
+      "url" : "/coding/html/images/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "埋め込み要素",
+      "url" : "/coding/html/iframe-embed-object/",
+      "language" : "html",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "埋め込みコンテンツ",
+      "name" : "video要素・audio要素・track要素",
+      "url" : "https://momdo.github.io/html/media.html",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "Video and audio content",
+      "name" : "動画と音声のコンテンツ",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "video",
+      "name" : "動画埋め込み要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/video",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "audio",
+      "name" : "埋め込み音声要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/audio",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "track",
+      "name" : "埋め込みテキストトラック要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/track",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "source",
+      "name" : "メディアまたは画像のソース要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/source",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Media container formats",
+      "name" : "メディアコンテナーフォーマット",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/Media/Formats/Containers",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Video Codecs",
+      "name" : "ウェブ動画コーデックガイド",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/Media/Formats/Video_codecs",
+      "language" : "html",
+      "status" : "guide"
+    }
+  ]
+}

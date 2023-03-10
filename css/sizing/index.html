@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../cascading.css" />
+  <link rel="stylesheet" href="../../readme/style.css" />
+  <link rel="stylesheet" href="../pseudo-classes/lightbox.css" />
+  <style type="text/css">
+
+  body {
+    background: #ddd;
+  }
+
+  .ruleset {
+    background: #fff;
+    border: double 5px #000;
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: -webkit-fill-available;
+  }
+
+  .ruleset .selif {
+    font-family: "NewYork", serif;
+    font-style: italic;
+  }
+
+  .ruleset .sans,
+  .ruleset .selif::after,
+  .buttons input {
+    font-family: "San Francisco";
+    font-style: normal;
+  }
+
+  .ruleset .sans,
+  .buttons input {
+    font-size: 125%;
+  }
+
+  .buttons label {
+    font-size: 100%;
+    font-weight: bold;
+  }
+
+  .buttons input {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0.25rem 0;
+  }
+
+  .results {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .widthDiv,
+  .heightDiv {
+    float: left;
+    align-items: center;
+    display: inline-flex;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: 0 0.4rem 0.4rem 0;
+  }
+
+  .widthDiv {
+    height: 2.5rem;
+  }
+
+  .heightDiv {
+    width: 2.5rem;
+    writing-mode: vertical-rl;
+    position: relative;
+  }
+
+  .widthDiv font,
+  .heightDiv font {
+    position: sticky;
+    margin: 0.25rem;
+    font-size: 100%;
+    overflow: visible;
+    overflow-wrap: normal;
+    word-break: keep-all;
+  }
+
+  #contents::before {
+    content:'関連記事';
+    font-size: 90%;
+  }
+
+  #links::before {
+    content:'参考資料';
+    font-size: 75%;
+  }
+
+  #contents::before,
+  #links::before {
+    text-decoration: underline;
+    display: block;
+    font-family: "ipag", monospace;
+    margin: 0.5rem 0.25rem;
+  }
+
+  #lastModified {
+    font-family: "ipag", monospace;
+    line-height: 125%;
+    word-break: break-word;
+  }
+
+  .ruleset::before {
+    display:none;
+  }
+
+  @media screen and (max-width: 450px) {
+
+    .buttons input {
+      display: block;
+      width: 100%;
+    }
+
+  }
+
+  </style>
+
+</head>
+<body>
+  <nav>
+    <p>
+      <a href="#width">幅</a>
+      <span>と</span>
+      <a href="#height">高さ</a>
+    </p>
+    <p>
+      <a href="#etc">関連記事</a>
+    </p>
+  </nav>
+
+  <h1 id="title">Width & Height | Cascading Style Sheets</h1>
+
+  <main class="ruleset">
+    <i>CSS</i>
+    <p class="declaration">
+      <b class="selif">width</b>
+      <span id="widthOutput" class="sans">auto</span>
+    </p>
+    <p class="declaration">
+      <b class="selif">height</b>
+      <span id="heightOutput" class="sans">auto</span>
+    </p>
+    <p class="declaration">
+      <b class="selif">box-sizing</b>
+      <span id="boxsizingOutput" class="sans">content-box</span>
+    </p>
+    <p class="declaration">
+      <b class="selif">overflow</b>
+      <span id="overflowOutput" class="sans">visible</span>
+    </p>
+    <p class="declaration">
+      <b class="selif">word-break</b>
+      <span id="wordBreakOutput" class="sans">normal</span>
+    </p>
+    <p class="declaration" style="font-size:75%; line-height: 125%; margin:2.5% 0 1.25%;">
+      <b>margin-left</b>
+      <span id="marginleftOutput">auto</span>
+      <br/>
+      <b>margin-right</b>
+      <span id="marginrightOutput">auto</span>
+      <br/>
+      <b>padding</b>
+      <span>5%</span>
+    </p>
+  </main>
+
+  <section class="buttons">
+    <p>
+      <b>width</b>
+      <button class="special" onclick="setWidth('auto');">auto</button>
+      <button class="special" onclick="setWidth('250px');">250px</button>
+      <button class="special" onclick="setWidth('50%');">50%</button>
+      <button class="special" onclick="setWidth('75rem');">75rem</button>
+      <button class="special" onclick="setWidth('max-content');">max-content</button>
+      <button class="special" onclick="setWidth('min-content');">min-content</button>
+    </p>
+    <p>
+      <b>height</b>
+      <button class="special" onclick="setHeight('auto');">auto</button>
+      <button class="special" onclick="setHeight('250px');">250px</button>
+      <button class="special" onclick="setHeight('50vw');">50vw</button>
+      <button class="special" onclick="setHeight('75vh');">75vh</button>
+    </p>
+  </section>
+  <section class="buttons">
+    <p>
+      <b>box-sizing</b>
+      <button class="special" onclick="setBoxsizing('content-box');">content-box</button>
+      <button class="special" onclick="setBoxsizing('border-box');">border-box</button>
+    </p>
+    <p>
+      <b>overflow</b>
+      <button class="special" onclick="setOverflow('visible');">visible</button>
+      <button class="special" onclick="setOverflow('hidden');">hidden</button>
+      <button class="special" onclick="setOverflow('scroll');">scroll</button>
+      <button class="special" onclick="setOverflow('auto');">auto</button>
+    </p>
+    <p>
+      <b>word-break</b>
+      <button class="special" onclick="setWordbreak('normal');">normal</button>
+      <button class="special" onclick="setWordbreak('break-all');">break-all</button>
+      <button class="special" onclick="setWordbreak('keep-all');">keep-all</button>
+    </p>
+  </section>
+  <section class="buttons">
+    <p>
+      <b>margin-left</b>
+      <button class="special" onclick="setLeft('auto');">auto</button>
+      <button class="special" onclick="setLeft('inherit');">inherit</button>
+    </p>
+    <p>
+      <b>margin-right</b>
+      <button class="special" onclick="setRight('auto');">auto</button>
+      <button class="special" onclick="setRight('inherit');">inherit</button>
+    </p>
+  </section>
+  <br/>
+
+  <div class="results"></div>
+
+  <section class="buttons">
+      <p>
+        <label>width</label>
+        <input type="text" id="widthBox">
+      </p>
+      <p>
+        <label>height</label>
+        <input type="text" id="heightBox">
+      </p>
+  </section>
+
+  <p id="lastModified"></p>
+
+  <article class="lightbox" id="width">
+    <a href="#" class="close"></a>
+    <section id="haba" class="readme translate_center"></section>
+  </article>
+
+  <article class="lightbox" id="height">
+    <a href="#" class="close"></a>
+    <section id="takasa" class="readme translate_center"></section>
+  </article>
+
+  <aside class="lightbox" id="etc">
+    <a href="#" class="close"></a>
+    <section id="contents" class="translate_center"></section>
+    <section id="links" class="fixed_bottom"></section>
+  </aside>
+
+  <script>
+
+  let lastModified = document.querySelector('#lastModified');
+
+  lastModified.innerHTML =
+  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="script.js" defer></script>
+  <script type="text/javascript">
+  $(function() {
+    $("#haba").load("width.html");
+    $("#takasa").load("height.html");
+  })
+  </script>
+
+  <script>
+  const inputWidth = document.querySelector('#widthBox');
+  const inputHeight = document.querySelector('#heightBox');
+  const resultsDiv = document.querySelector('.results');
+
+  inputWidth.addEventListener('change', () => {
+    const resultwidth = document.createElement('div');
+    resultwidth.className = 'widthDiv';
+    resultwidth.style.width = inputWidth.value;
+    resultwidth.innerHTML = `<font>I am ${inputWidth.value} width</font>`;
+    resultsDiv.appendChild(resultwidth);
+
+    inputWidth.value = '';
+    inputWidth.focus();
+  })
+
+  inputHeight.addEventListener('change', () => {
+    const resultheight = document.createElement('div');
+    resultheight.className = 'heightDiv';
+    resultheight.style.height = inputHeight.value;
+    resultheight.innerHTML = `<font>I am ${inputHeight.value} height</font>`;
+    resultsDiv.appendChild(resultheight);
+
+    inputHeight.value = '';
+    inputHeight.focus();
+  })
+  </script>
+</body>
+</html>

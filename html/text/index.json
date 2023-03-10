@@ -1,0 +1,156 @@
+{
+  "title" : "Text",
+  "description" : "テキストの基礎",
+  "author" : "Hypertext Markup Language",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "CSS",
+      "name" : "ボックスモデル",
+      "url" : "/coding/css/boxmodel/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "テキストの装飾",
+      "url" : "/coding/css/text/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "フォントの指定",
+      "url" : "/coding/css/fonts/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "色",
+      "url" : "/coding/css/colors/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "高度なテキスト整形",
+      "url" : "/coding/html/text/advanced/",
+      "language" : "html",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "テキストレベルセマンティックス",
+      "name" : "Text Level Semantics",
+      "url" : "https://momdo.github.io/html/text-level-semantics.html",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "コンテンツモデル",
+      "name" : "段落",
+      "url" : "https://momdo.github.io/html/dom.html#paragraph",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "p",
+      "name" : "段落要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/p",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "em",
+      "name" : "強調要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/em",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "strong",
+      "name" : "強い重要性要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/strong",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "small",
+      "name" : "附随コメント要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/small",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "i",
+      "name" : "慣用的なテキスト要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/i",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "b",
+      "name" : "注目付け要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/b",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "u",
+      "name" : "非言語的注釈 (下線) 要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/u",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "sup",
+      "name" : "上付き文字要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/sup",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "sub",
+      "name" : "下付き文字要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/sub",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "span",
+      "name" : "汎用的インライン要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/span",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "br",
+      "name" : "改行要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/br",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "wbr",
+      "name" : "改行可能位置",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/wbr",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "hr",
+      "name" : "主題区切り (水平線) 要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/hr",
+      "language" : "guide",
+      "status" : "basic"
+    }
+  ]
+}

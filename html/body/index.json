@@ -1,0 +1,107 @@
+{
+  "title" : "BODY",
+  "description" : "文書の本文要素",
+  "author" : "Hypertext Markup Language",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary_large_image",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "Sectioning Content",
+      "name" : "区分要素",
+      "url" : "/coding/html/sectioning/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Heading Content",
+      "name" : "見出し要素",
+      "url" : "/coding/html/heading/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Embedded Content",
+      "name" : "埋め込み要素",
+      "url" : "/coding/html/iframe-embed-object/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Interactive Content",
+      "name" : "対話的要素",
+      "url" : "/coding/interactive/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Form-associated Content",
+      "name" : "フォーム関連要素",
+      "url" : "/coding/form/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Web API",
+      "name" : "インターネットの交信状態",
+      "url" : "/coding/js/online/",
+      "language" : "api",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "body",
+      "name" : "文書の本文要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/body",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "要素",
+      "name" : "コンテンツの種類",
+      "url" : "https://momdo.github.io/html/dom.html#kinds-of-content",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "コンテンツカテゴリー",
+      "name" : "Content categories",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Content_categories",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Every element is",
+      "name" : "Every element is an html",
+      "url" : "https://whykatherine.github.io/every-element-is-an-html/",
+      "language" : "html",
+      "status" : "library"
+    },
+    {
+      "date" : "属性",
+      "name" : "ononline",
+      "url" : "https://www.w3schools.com/jsref/event_ononline.asp",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "属性",
+      "name" : "onoffline",
+      "url" : "https://www.w3schools.com/jsref/event_onoffline.asp",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "Navigator.onLine",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Navigator/onLine",
+      "language" : "html",
+      "status" : "guide"
+    }
+  ]
+}

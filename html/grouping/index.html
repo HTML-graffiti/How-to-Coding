@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../elements.css" />
+  <link rel="stylesheet" href="../../readme/style.css" />
+  <style>
+
+  body {
+    transition: background 1s;
+  }
+
+  @font-face {
+    font-family: "NewYork";
+    src: url("https://creative-community.space/coding/cover/NewYork.otf");
+  }
+
+  #template {
+    font-family: "NewYork", serif;
+    font-size: 1.5rem;
+    padding: 5rem 2.5rem 2.5rem;
+    min-height: 100vh;
+  }
+
+  a[href*="one"]::before  {
+    content: '<main>';
+    text-transform: uppercase;
+  }
+
+  a[href*="two"]::before  {
+    content: '<header>';
+    text-transform: uppercase;
+  }
+
+  a[href*="three"]::before  {
+    content: '<footer>';
+    text-transform: uppercase;
+  }
+
+  a[href*="four"]::before  {
+    content: 'Etc';
+    text-transform: uppercase;
+  }
+
+  #template,
+  article,
+  .readme a,
+  #contents a,
+  #links a {
+    color: #fff;
+    mix-blend-mode: difference;
+  }
+
+  #contents::before {
+    content:'関連記事';
+    font-size: 90%;
+  }
+
+  #links::before {
+    content:'参考資料';
+    font-size: 75%;
+  }
+
+  #contents::before,
+  #links::before,
+  #lastModified {
+    font-family: "ipag", monospace;
+  }
+
+  #contents::before,
+  #links::before {
+    display: block;
+    text-decoration: underline;
+    margin: 0.5rem 0.25rem;
+  }
+
+  .readme {
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  footer {
+    position: relative;
+    min-height: 95vh;
+  }
+
+  footer aside {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1000px;
+  }
+
+  @media screen and (max-width: 820px) {
+
+    #template {
+      font-size: 3vw;
+      padding: 20% 2.5% 10%;
+    }
+
+  }
+
+  @media screen and (max-width: 550px) {
+
+    #template {
+      font-size: 4.5vw;
+    }
+
+  }
+
+  #lastModified {
+    text-align: right;
+    word-break: break-word;
+  }
+
+  </style>
+</head>
+<body>
+  <nav id="nav">
+    <a href="#one"></a>
+    <a href="#two"></a>
+    <a href="#three"></a>
+    <a href="#four"></a>
+  </nav>
+
+  <header id="template">
+    <p class="header_element"></p>
+    <main class="main_element">
+      <h1>Grouping Content</h1>
+      <div class="div_element">
+        <span class="span_element"></span>
+      </div>
+      <hr/>
+    </main>
+    <p class="footer_element"></p>
+  </header>
+  <article class="readme">
+    <h2>グループ化要素（グルーピング・コンテンツ）</h2>
+    <p>
+      HTML Living Standard (HTML5以降) から新たに追加された
+      メイン・ヘッダー・フッター要素
+      は、ページの基本となる構造を表します。
+    </p>
+    <p><i>文章をベースとした記事ページには、<a href="../sectioning">区分要素（セクショニング・コンテンツ）</a> が適切です。</i></p>
+    <hr/>
+    <p id="lastModified"></p>
+  </article>
+  <article>
+    <section id="one" class="readme">
+      <h3><<font>main</font>><font>メイン要素</font><<font>/main</font>></h3>
+      <p>
+        <<font>main</font>> 要素
+        は、主要な内容 (中心的な文章・機能)
+        を表します。<br/>
+        文書には hidden 属性が指定されていない メイン要素 を 複数使用できません。
+      </p>
+      <p>
+        <i>hidden属性 が設定された メイン要素は ブラウザに表示されません。</i><br/>
+        <font class="main">hidden>非表示状態のメイン要素</font>
+      </p>
+    </section>
+    <section id="two" class="readme">
+      <h3><<font>header</font>><font>ヘッダー要素</font><<font>/header</font>></h3>
+      <p>
+        <<font>header</font>> 要素
+        は、導入的なコンテンツ (ロゴ・検索フォーム・ナビゲーション等)
+        を表します。<br/>
+        <i>header 要素は通常、自身を囲む section の見出し (h1–h6 要素) を含むことを意図していますが、必須ではありません。</i>
+      </p>
+    </section>
+    <section id="three" class="readme">
+      <h3><<font>footer</font>><font>フッター要素</font><<font>/footer</font>></h3>
+      <p>
+        <<font>footer</font>> 要素
+        は、フッター (連絡先情報・関連文書へのリンク・著作権情報等)
+        を表します。<br/>
+        <i>セクションに対してフッターを使用し、コンテンツの公開日やライセンス情報など記述することにも使用されます。</i>
+      </p>
+    </section>
+    <section id="four">
+      <article id="etc" class="readme">
+        <h2>従来のHTML要素 (HTML 4.01)</h2>
+        <p>
+          HTML Living Standard 以前の
+          HTML では、<<font>div</font>> と <<font>span</font>>
+          を使いすぎる傾向があったため、
+          メイン・ヘッダー・フッター要素やセクション要素などの意味的要素が追加されました。
+        </p>
+        <hr/>
+        <h3><<font>div</font>><font>コンテンツ区分要素</font><<font>/div</font>></h3>
+        <p>
+          <<font>div</font>> 要素
+          は、ブロックレベルの汎用コンテナーを表します。<br/>
+          <i>適切な意味的要素（main・header・footer・article・nav など）がない場合に使用します。</i>
+        </p>
+        <hr/>
+        <h3><<font>span</font>><font>汎用的インライン要素</font><<font>/span</font>></h3>
+        <p>
+          <<font>span</font>> 要素
+          は、インラインレベルの行内コンテナーを表します。<br/>
+          <i>スタイル付けのため (class または id 属性を使用して) 要素をグループ化する用途で使用します。</i>
+        </p>
+        <p>
+          HTML Living Standard では、
+          <<font>div</font>> と <<font>span</font>>
+          は意味のないコンテンツでのみ使用し、意味を持つコンテンツには適切な意味的要素を使うことが推奨されています。
+        </p>
+      </article>
+      <footer>
+        <aside id="contents"></aside>
+      </footer>
+      <aside id="links"></aside>
+    </section>
+  </article>
+
+  <script type="text/javascript">
+  document.addEventListener('readystatechange', (event) => {
+    if (event.target.readyState === 'interactive') {
+      let lastModified = document.querySelector('#lastModified');
+      lastModified.innerHTML =
+      'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+    }
+
+    else if (event.target.readyState === 'complete') {
+      function random(number) {
+        return Math.floor(Math.random() * (number+1));
+      }
+
+      function randomRGB() {
+        let random255 = `rgb(${random(255)},${random(255)},${random(255)})`;
+        return random255;
+      }
+
+      const colorAll = document.querySelectorAll('#one, #two, #three');
+      for (const colorItem of colorAll) {
+        colorItem.style.color = randomRGB();
+        colorItem.style.textShadow = "2px 2px 1px #fff";
+      }
+
+      const bgAll = document.querySelectorAll('body, #nav a, #template *, section:not(#four)');
+      for (const bgItem of bgAll) {
+        bgItem.style.background = randomRGB();
+      }
+    }
+
+    const randomRGBbgAll = document.querySelectorAll('#nav a');
+    for (const randomRGBbg of randomRGBbgAll) {
+      randomRGBbg.addEventListener('click', function(event) {
+        const bgAll = document.querySelectorAll('body, #nav a, #template *, section:not(#four)');
+        for (const bgItem of bgAll) {
+          bgItem.style.background = randomRGB();
+        }
+      });
+    }
+  });
+</script>
+</body>
+</html>

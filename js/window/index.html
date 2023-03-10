@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script async src="../../readme/index.js" async></script>
+
+  <script type="text/javascript" async>
+
+  document.addEventListener('readystatechange', (event) => {
+    if (event.target.readyState === 'interactive') {
+      let titleH1 = document.querySelector('#cover h1');
+
+      const modName = "HTML";
+      const modVer = "2.0";
+      const conformTest = document.implementation.hasFeature(modName, modVer);
+
+      titleH1.innerHTML = `DOM ${modName} ${modVer} supported?: ${conformTest}`;
+    }
+
+    else if (event.target.readyState === 'complete') {
+      const TITLE = ' | How to Coding',
+      titleH1 = document.querySelector('#cover h1');
+
+      titleH1.innerHTML = `<i>Document Object Model</i><br/>Window`;
+      titleH1.style.textAlign = "center";
+
+      let lastModified = document.querySelector('#lastModified');
+      lastModified.innerHTML =
+      'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+    }
+  });
+
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../../readme/style.css" />
+  <link rel="stylesheet" href="../../readme/active.css" />
+  <link rel="stylesheet" href="../../html/elements.css" />
+  <style>
+
+  #contents::before {
+    content:'関連記事';
+    display: inline-block;
+    font-size: 90%;
+  }
+
+  #links::before {
+    content:'参考資料';
+    display: block;
+    padding-top: 0.5rem;
+    font-size: 75%;
+  }
+
+  #contents::before,
+  #links::before,
+  #lastModified {
+    font-family: "ipag", monospace;
+  }
+
+  #contents::before,
+  #links::before {
+    text-decoration: underline;
+    margin: 0.5rem 0.75rem 0.5rem 0.25rem;
+  }
+
+  #lastModified {
+    padding: 0.25rem;
+  }
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#api">Window</a>
+    <a href="#console">Console</a>
+    <a href="#etc">参考資料</a>
+  </nav>
+
+  <article class="readme">
+    <section id="cover" class="active cover">
+      <h1></h1>
+      <table class="size">
+        <tbody>
+          <tr>
+            <td>window.innerWidth</td>
+            <td>ブラウザ内の表示域(スクロールバーを含む)</td>
+            <td id="outInnerWidth" class="nowValue"></td>
+          </tr>
+          <tr>
+            <td>window.outerWidth</td>
+            <td>ブラウザ表示域(ブラウザ全体の外周)</td>
+            <td id="outOuterWidth" class="nowValue"></td>
+          </tr>
+          <tr>
+            <td>window.innerHeight</td>
+            <td>ブラウザ内の表示域(スクロールバーを含む)</td>
+            <td id="outInnerHeight" class="nowValue"></td>
+          </tr>
+          <tr >
+            <td>window.outerHeight</td>
+            <td>ブラウザ表示域(ブラウザ全体の外周)</td>
+            <td id="outOuterHeight" class="nowValue"></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="size">
+        <tbody>
+          <tr>
+            <td>window.screen.width</td>
+            <td>スクリーンサイズ(解像度)</td>
+            <td id="outScreenWidth" class="nowValue"></td>
+          </tr>
+          <tr>
+            <td>window.screen.height</td>
+            <td>スクリーンサイズ(解像度)</td>
+            <td id="outScreenheight" class="nowValue"></td>
+          </tr>
+          <tr>
+            <td>window.screen.availWidth </td>
+            <td>タスクバーなどを除くスクリーン有効域の幅</td>
+            <td id="outAvailWidth" class="nowValue"></td>
+          </tr>
+          <tr>
+            <td>window.screen.availHeight</td>
+            <td>タスクバーなどを除くスクリーン有効域の高さ</td>
+            <td id="outAvailHeight" class="nowValue"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="api" class="is-hide"></section>
+    <section id="console" class="is-hide"></section>
+    <section id="etc" class="is-hide">
+      <aside id="links"></aside>
+    </section>
+  </article>
+
+  <aside id="contents"></aside>
+  <p id="lastModified"></p>
+
+  <script src="script.js" defer></script>
+  <script src="../../readme/script.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    $("#api").load("api.html");
+    $("#console").load("console.html");
+  })
+  </script>
+</body>
+</html>

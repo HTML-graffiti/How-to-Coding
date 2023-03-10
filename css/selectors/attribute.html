@@ -1,0 +1,60 @@
+<h3>
+  <i>attribute selector</i><br/>
+  <font>属性セレクター</font>
+  <i>特定の属性を持つ指定要素を対象にスタイルを適用</i>
+</h3>
+<div class="ruleset">
+  <i class="selector">要素名[属性名="属性値"]</i>
+</div>
+<hr/>
+<i>指定された属性が存在するかどうか、またはその値に基づいて要素を選択します。</i>
+<hr/>
+<br/>
+<pre>
+/*  */
+
+E[<font>foo</font>] {
+  /* 特定の属性を持つ指定要素にスタイルを適用 */
+}
+
+E[foo<font>=</font>"bar"] {
+  /* 特定の属性に特定の値を持つ指定要素を対象にスタイルを適用 */
+}
+
+E[foo<font>^=</font>"bar"] {
+  /* foo属性の値がbarで始まる（前方一致する）E要素にスタイルを適用 */
+}
+
+E[foo<font>$=</font>"bar"] {
+  /* foo属性の値がbarで終わる（後方一致する）E要素にスタイルを適用 */
+}
+
+E[foo<font>*=</font>"bar"] {
+  /* foo属性の値にbarを含む（部分一致する）E要素にスタイルを適用 */
+}
+</pre>
+<hr/>
+<pre class="href">
+/* 例 */
+
+a[href*="coding"] {
+  /* href のどこかに "coding" を含む場合にスタイルを適用 */
+}
+
+a[href^="#"] {
+  /* href が "#" で始まる場合にスタイルを適用 */
+}
+
+a[href^="https"][href$=".space/"] {
+  /* href が "https" で始まり ".space/" で終わる場合にスタイルを適用 */
+}
+
+a[target="_blank" i] {
+  /* target の値が _blank の場合にスタイルを適用 (大文字小文字は区別しない) */
+}
+
+a[rel="external" s] {
+  /* rel(リンク種別) の値が external(外部のサイトへのリンク) の場合にスタイルを適用 (大文字小文字の区別つき) */
+}
+</pre>
+<br/>

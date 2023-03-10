@@ -1,0 +1,55 @@
+html {
+  height: -webkit-fill-available;
+}
+
+#clipboard,
+code,
+font {
+  font-family: "ipag", monospace;
+}
+
+.blue {
+  color: blue;
+}
+
+#clipboard,
+#clipboardEvent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#clipboard,
+#clipboardEvent {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  max-height: -webkit-fill-available;
+}
+
+#clipboard {
+  box-sizing: border-box;
+  outline: blue solid;
+  padding: 0.5rem;
+  margin: 0;
+  resize: none;
+  font-size: 1rem;
+}
+
+#clipboardEvent {
+  font-family: "NewYork", serif;
+  font-size: 125%;
+  pointer-events: none;
+  user-select: none;
+  padding: 0;
+  margin: 0;
+  justify-items: center;
+  align-items: center;
+  z-index: 2;
+}
+
+code {
+  font-size: 111%;
+  font-style: normal;
+}

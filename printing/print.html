@@ -1,0 +1,24 @@
+<!--
+https://developer.mozilla.org/ja/docs/Web/Guide/Printing
+https://developer.mozilla.org/ja/docs/Web/API/Window/print
+
+https://developer.mozilla.org/ja/docs/Web/CSS/@media
+-->
+
+<p>
+  <code><code class="red">print</code>()</code>
+  <input type="button" value="印刷するためのダイアログを開きます。" onclick="print()">
+</p>
+<p>
+  Window: <code class="red">beforeprint</code> イベント<br/>
+  <code>addEventListener('<code class="red">beforeprint</code>', (event) => { });</code><br/>
+  <code><code class="red">onbeforeprint</code> = (event) => { };</code><br/>
+  印刷される直前、印刷プレビューが開く直前に発生します。
+</p>
+<p>
+  Window: <code class="red">afterprint</code> イベント<br/>
+  <code>addEventListener('<code class="red">afterprint</code>', (event) => { });</code><br/>
+  <code><code class="red">onafterprint</code> = (event) => { };</code><br/>
+  印刷が開始されたか、印刷プレビューが閉じた後に発生します。
+</p>
+<hr/>

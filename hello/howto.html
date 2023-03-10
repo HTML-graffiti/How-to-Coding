@@ -1,0 +1,96 @@
+<script async>
+  const readmeCSS = document.createElement( "link" );
+  readmeCSS.href = "../readme/style.css";
+  readmeCSS.type = "text/css";
+  readmeCSS.rel = "stylesheet";
+  document.getElementsByTagName("head")[0].appendChild(readmeCSS);
+</script>
+
+<p>
+  <a href="https://jsfiddle.net/verygois/xogqtc5v/135/" target="_blank" rel="noreferrer">The Greeting Page that seems like reading a book</a>
+  <br/>本を読むようにテキストを表示する挨拶ページ
+</p>
+<hr/>
+<p class="link">
+  rel="stylesheet" href="<u data-id="data_show_css">data_show.css</u>"
+</p>
+
+<section id="data_show_css" class="hide">
+  <p>
+    <i>クリックイベントが発動するまで <font color="red">.data_show .hide</font> を非表示状態に指定</i><br/>
+    <i><font color="red">#hello</font> の スタイリング をウインドウサイズによって変更します。</i>
+  </p>
+</section>
+
+<section class="article_tag"><i>id="hello"</i>
+  <u data-id="article_data_show" class="red">class="data_show"</u>>
+  <br/>
+  <p id="article_data_show" class="hide">
+    挨拶文を記述する要素の開始タグに、クラス属性 <b>.date_show</b> を設定<br/>
+    <i>ID属性 <b>#hello</b> を設定し、レスポンシブデザインを適用します。</i>
+  </p>
+  <i>
+    クリックイベントを実行する（注釈があることを示す）テキストに
+    <u data-id="u_element"><b>U</b>: 非言語的注釈 (下線) 要素</u>
+    を使用
+  </i>
+  <br/>
+
+  <p id="u_element" class="hide u_tag"><b class="red">date-id="〇〇"</b>><br/>
+    開始タグに
+    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/data-*">カスタムデータ属性</a>
+    を設定し、
+    <u data-id="id_hide">組となる要素</u>
+    には、設定したカスタムデータ属性
+    <b>date-id="〇〇"</b>
+    の値と同じ
+    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/id">ID</a>
+    の値
+    <b>id="〇〇"</b>
+    を記述します。<br/>
+  </p>
+
+  <p id="id_hide" class="p_tag hide"><b class="red">id="〇〇" class="hide"</b>><br/>
+    開始タグには、組となるU要素に設定したカスタムデータ属性の値
+    <b>date-id="<i class="red">〇〇</i>"</b>
+    と同じ値のID
+    <b>id="<i class="red">〇〇</i>"</b>
+    を設定
+    <i>
+      加えて、組となるU要素がクリックされるまで要素を非表示状態にするため、
+      <b>class="hide"</b>
+      と記述します。
+    </i>
+    <br/>
+  </p>
+</section>
+
+<section class="script">src="<u data-id="data_show_js">data_show.js</u>"><br/>
+  <p id="data_show_js" class="hide">
+    .data_show u が クリックされると、
+    U要素に設定された
+    <i>data-id="<font color="red">〇〇</font>"</i>
+    の値を
+    <u data-id="jquery_data">.data()</u>
+    <span id="jquery_data" class="hide">
+      <br/>
+      <a href="https://api.jquery.com/data/">.data()</a>
+      <a href="https://www.fenet.jp/dotnet/column/language/6654/">dataの使い方を解説</a>
+      <a href="https://www.sejuku.net/blog/38263">data()で属性を取得・設定・変更する方法まとめ</a>
+      <a href="https://kinocolog.com/jquery_data/">dataの取得・変更・セレクタ指定方法</a>
+      <br/>
+    </span>
+    取得し、同じIDの値
+    <i>id="<font color="red">〇〇</font>"</i>
+    を持つ要素を 1000 の速度で表示
+    <u data-id="show_data">.show()</u>
+    <span id="show_data" class="hide">
+      <br/>
+      <a href="https://api.jquery.com/show/">.show()</a>
+      <a href="https://itsakura.com/jquery-show-hide">要素を表示/非表示にする</a>
+      <a href="https://flytech.work/blog/16795/">show()やhide()で要素の表示や非表示を行う</a>
+      <br/>
+    </span>
+    します。
+  </p>
+</section>

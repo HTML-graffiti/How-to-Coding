@@ -1,0 +1,124 @@
+<h2>
+  <i>値を複数のパターンと比較して実行する文を定義する</i><br/>
+  <code class="red">switch</code>
+</h2>
+<p><code><code class="red">switch</code> (式) {</code></p>
+<p><code>case (値)</code></p>
+<p><code>// 式の値一致した場合に実行する文</code></p>
+<p><code>break;</code></p>
+<p><code>default:</code></p>
+<p><code>// すべての式の値に一致しない場合に実行する文</code></p>
+<p><code>}</code></p>
+<p>
+  switch 文と
+  <code class="red">if...else</code> 文
+  の使い方はほとんど同じです。
+</p>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>
+  <button onclick="switchAnsewer()">confirm()</button><br/>
+  confirm 関数で呼び出した
+  <font>質問の回答が もし <code>OK</code></font>
+  <code class="red">case true:</code> なら
+  <code>I'm OK! とアラート</code>を表示し、
+  <font>回答が <code class="red">それ以外</code></font>
+  <code class="red">default</code> なら
+  <code>I'm CANCEL! とアラート</code>を表示する
+</p>
+<hr/>
+<pre class="script"> type="text/javascript">
+
+'use strict'
+
+function switchAnsewer() {
+  <code>let okCancel = <code class="red">confirm('Are you OK or CANCEL ?')</code></code>
+
+  <font><code class="red">switch</code> (okCancel)</font> {
+    <font>case true:</font>
+    <code>alert( "I'm OK!" );</code>
+    <code>break;</code>
+
+    <font class="red">default:</font>
+    <code>alert( "I'm CANCEL!" );</code>
+  }
+}
+
+</pre>
+
+
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>
+  <button onclick="switchAge()">prompt()</button><br/>
+  prompt 関数で呼び出した
+  <font>入力フィールドが もし <code>キャンセル</code></font>
+  <code class="red">case null</code> された場合は、
+  <code>Top Secret! とアラート</code> を表示し、
+  <font><code>0以下 (未記入)</code></font>
+  <code class="red">case '0': case '':</code> だった場合は、
+  <code>In Utero とアラート</code>を表示し、
+  <font><code>それ以外</code></font>
+  <code class="red">default</code> の場合は、
+  <code>その値を含むアラート</code>を表示する
+</p>
+<hr/>
+<pre class="script"> type="text/javascript">
+
+'use strict'
+
+function switchAge() {
+  <code>let howold = <code class="red">prompt('How old are you?', 0)</code></code>
+
+  <font><code class="red">switch</code> (howold) </font>{
+    <font>case null:</font>
+    alert( "Top Secret!" );
+    <code>break;</code>
+
+    <font>case '0':</font>
+    <font>case '':</font>
+    alert( 'In Utero' );
+    <code>break;</code>
+
+    <font class="red">default:</font>
+    <code>alert( `I'm ${howold} years old!` );</code>
+  }
+}
+
+</pre>
+<hr/>
+
+<script type="text/javascript" defer>
+  'use strict'
+
+  function switchAnsewer() {
+    let okCancel = confirm('Are you OK or CANCEL ?')
+    switch (okCancel) {
+      case true:
+      alert( "I'm OK!" );
+      break;
+
+      default:
+      alert( "I'm CANCEL!" );
+    }
+  }
+
+  function switchAge() {
+    let howold = prompt('How old are you?', 0)
+    switch (howold) {
+      case null:
+      alert( "Top Secret!" );
+      break;
+
+      case '0':
+      case '':
+      alert( 'In Utero' );
+      break;
+
+      default:
+      alert( `I'm ${howold} years old!` );
+    }
+  }
+</script>

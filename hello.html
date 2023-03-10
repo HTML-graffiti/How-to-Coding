@@ -1,0 +1,66 @@
+<script async>
+  const data_showCSS = document.createElement( "link" );
+  data_showCSS.href = "hello/data_show.css";
+  data_showCSS.type = "text/css";
+  data_showCSS.rel = "stylesheet";
+  document.getElementsByTagName("head")[0].appendChild(data_showCSS);
+</script>
+
+<script src="hello/data_show.js"></script>
+
+<p>
+  The
+  <u class="randomRGBcolor" data-id="website">Website</u>
+  <span id="website" class="hide">seems like a cover of the book
+    <a href="cover/" target="_parent">開いた本のようなウェブページ</a>
+    <br />
+  </span>
+  with
+  <u data-id="greetingpage">Greeting Page</u>
+  <span id="greetingpage" class="hide">seems like reading a book
+    <a href="hello/" target="_parent">本を読むようにテキストが表示される挨拶ページ</a>
+    <br />
+  </span>
+  and The
+  <u data-id="List">List of Contents</u>
+  <span id="List" class="hide">
+    About You
+    <a href="listing/" target="_parent">自分にまつわる事柄のリストページ</a>
+    <br />
+  </span>
+</p>
+<p>
+  Information About
+  <u data-id="yourinfo">Network & Browser</u>
+  for
+  <span id="yourinfo" class="hide">
+    connection to The Internet
+    <a href="yourinfo/" target="_parent">通信情報／ブラウザ等情報</a>
+    <br />
+  </span>
+  <u data-id="rwb">Responsive Web Design</u>
+  <span id="rwb" class="hide">
+    on All Devices, from desktop to mobile
+    <a href="responsive/" target="_parent">レスポンシブウェブデザイン</a>
+    <br />
+  </span>
+</p>
+
+<script type="text/javascript">
+  // Add .randomRGBcolor
+
+  const newRGBcolorAll = document.querySelectorAll('#hello u, #contents a, #links a');
+  for (const newRGBcolor of newRGBcolorAll) {
+    newRGBcolor.classList.add("randomRGBcolor")
+  }
+
+  // Add .randomRGBbg
+
+  const newRGBbgAll = document.querySelectorAll('#hello a');
+  for (const newRGBbg of newRGBbgAll) {
+    newRGBbg.classList.add("randomRGBbg")
+  }
+
+</script>
+
+<script src="/js/randomRGB.js"></script>

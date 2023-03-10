@@ -1,0 +1,210 @@
+<h2>
+  <i>display: flex</i><br/>
+  Flexible Box Layout
+</h2>
+<p>一次元のレイアウトモデルとして、行か列のいずれかの方向に要素を配置する</p>
+<pre>
+#flexOl {
+  display: flex;
+  overflow: auto;
+  width: 100%;
+  min-height: 75vh;
+}
+
+#flexOl li {
+  box-sizing: border-box;
+  padding: 2vh 2vw;
+  width: 100%;
+}
+</pre>
+<br/>
+<p style="text-align:center;">~~~</p>
+<br/>
+<p>
+  <code>flex-direction</code><br/>
+  フレックスアイテムの主軸の方向や向き (通常または逆方向) を定義する
+</p>
+<pre>
+/* 行のテキストの方向に配置 */
+flex-direction: row;
+
+/* row と同様だが、逆向き */
+flex-direction: row-reverse;
+
+/* 積み重なるように配置する */
+flex-direction: column;
+
+/* column と同様だが、逆向き */
+flex-direction: column-reverse;
+</pre>
+<br/>
+<p>
+  <code>flex-wrap</code><br/>
+  フレックスアイテムを単一行に押し込むか、あるいは複数行に折り返してもよいかを指定する
+</p>
+<pre>
+/* フレックスアイテムを単一行に配置 (既定値) */
+flex-wrap: nowrap;
+
+/* フレックスアイテムを複数行に分割 */
+flex-wrap: wrap;
+
+/* wrap と同様だが、逆向き */
+flex-wrap: wrap-reverse;
+</pre>
+<br/>
+<p>
+  <code>flex-flow</code><br/>
+  flex-direction と flex-wrap の 2 つのプロパティを一括指定プロパティ
+</p>
+<pre>
+/* 例 */
+display: flex;
+flex-flow: row wrap;
+</pre>
+<br/>
+<p style="text-align:center;">~~~</p>
+<br/>
+<p>
+  <code>flex-basis</code><br/>
+  フレックスアイテムの主要部分の初期の寸法を設定
+</p>
+<pre>
+/* 幅を指定する */
+flex-basis: 10em;
+flex-basis: 3px;
+flex-basis: auto;
+
+/* 固有のサイズ指定キーワード */
+flex-basis: fill;
+flex-basis: max-content;
+flex-basis: min-content;
+flex-basis: fit-content;
+
+/* フレックスアイテムの内容物に基づいて自動設定する */
+flex-basis: content;
+</pre>
+<br/>
+<p>
+  <code>flex-grow</code><br/>
+  フレックスアイテムの主軸方向の寸法のフレックス伸長係数を設定
+</p>
+<pre>
+/* 既定値は 0 (負の値は無効) */
+flex-grow: 2;
+flex-grow: 0.6;
+</pre>
+<br/>
+<p>
+  <code>flex-shrink</code><br/>
+  フレックスアイテムの縮小係数を設定
+</p>
+<pre>
+/* 既定値は 1 (負の値は無効) */
+flex-shrink: 2;
+flex-shrink: 0.6;
+</pre>
+<br/>
+<p>
+  <code>flex</code><br/>
+  flex-grow、flex-shrink、flex-basis の各プロパティを一括指定プロパティ
+</p>
+<pre>
+/* キーワード値 */
+flex: auto;
+flex: initial;
+flex: none;
+
+/* 単位がない数値を 1 つ指定: flex-grow */
+flex: 2;
+
+/* 幅または高さを 1 つ指定: flex-basis */
+flex: 10em;
+flex: 30%;
+flex: min-content;
+
+/* 値を 2 つ指定: flex-grow | flex-basis */
+flex: 1 30px;
+
+/* 値を 2 つ指定: flex-grow | flex-shrink */
+flex: 2 2;
+
+/* 値を 3 つ指定: flex-grow | flex-shrink | flex-basis */
+flex: 2 2 10%;
+</pre>
+<br/>
+<p style="text-align:center;">~~~</p>
+<br/>
+<p>
+  <code>align-items</code><br/>
+  フレックスボックスの交差軸におけるアイテムの位置合わせ
+</p>
+<pre>
+/* 基本キーワード */
+align-items: normal;
+align-items: stretch;
+
+/* 位置による配置 */
+/* align-items は左と右の値を取らない */
+align-items: center; /* アイテムを中央付近にまとめる */
+align-items: start; /* アイテムを先頭にまとめる */
+align-items: end; /* アイテムを末尾にまとめる */
+align-items: flex-start; /* フレックスアイテムを先頭にまとめる */
+align-items: flex-end; /* フレックスアイテムを末尾にまとめる */
+
+/* ベースラインに配置する */
+align-items: baseline;
+align-items: first baseline;
+align-items: last baseline; /* オーバーフロー配置 (位置指定要素のみ) */
+align-items: safe center;
+align-items: unsafe center;
+</pre>
+<br/>
+<p style="text-align:center;">~~~</p>
+<br/>
+<p>
+  <code>justify-content</code><br/>
+  フレックスコンテナーのアイテムの間や周囲に間隔を配置する方法
+</p>
+<pre>
+/* 位置による配置 */
+justify-content: center;     /* アイテムを中央に寄せる */
+justify-content: start;      /* アイテムを先頭に寄せる */
+justify-content: end;        /* アイテムを末尾に寄せる */
+justify-content: flex-start; /* フレックスアイテムを先頭に寄せる */
+justify-content: flex-end;   /* フレックスアイテムを末尾に寄せる */
+justify-content: left;       /* アイテムを左端に寄せる */
+justify-content: right;      /* アイテムを右端に寄せる */
+
+/* ベースラインによる配置 */
+/* justify-content はベースラインの値を取りません */
+
+/* 通常の配置 */
+justify-content: normal;
+
+/* 均等配置 */
+justify-content: space-between; /* 各アイテムを均等に配置し
+                                   最初のアイテムは先頭に寄せ、
+                                   最後のアイテムは末尾に寄せる */
+justify-content: space-around;  /* 各アイテムを均等に配置し
+                                   各アイテムの両側に半分の大きさの
+                                   間隔を置く */
+justify-content: space-evenly;  /* 各アイテムを均等に配置し
+                                   各アイテムの周りに同じ大きさの間隔を置く */
+justify-content: stretch;       /* 各アイテムを均等に配置し
+                                   サイズが 'auto' であるアイテムは、
+                                   コンテナーに合わせて引き伸ばす */
+
+/* あふれた場合の配置 */
+justify-content: safe center;
+justify-content: unsafe center;ßå
+</pre>
+<br/>
+<p id="lastModified"></p>
+
+<script type="text/javascript">
+  let lastModified = document.querySelector('#lastModified');
+
+  lastModified.innerHTML =
+  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+</script>

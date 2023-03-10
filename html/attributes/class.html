@@ -1,0 +1,67 @@
+<div class="readme">
+  <h2>
+    <span>要素名 <font>class</font>="<b class="blue">値</b>"</span>
+    <br/>
+    <i>クラス属性は、主にスタイルシートのセレクターとして使用します。</i>
+  </h2>
+  <hr/>
+  <h3>
+    同じ <font>CLASS</font> の値を <font>複数の要素</font> に使用して、共通する要素を選択したり、
+    値を 半角スペース で区切り、<font>1つの要素</font> に <font>複数の値</font> を設定することもできます。
+  </h3>
+  <p>
+    CLASSの値は、アルファベットで始めなければなりません。
+    また、
+    <b class="blue">半角英数字</b>・
+    <b class="blue">-</b>
+    で設定することが推奨されています。
+  </p>
+</div>
+<div class="readme selectors">
+  <h3>
+    <i>class selector</i><br/>
+    <font>クラスセレクター</font>
+    <i>class 属性の値から要素を選択してスタイルを適用</i>
+  </h3>
+  <div class="selectors ruleset">
+    <i class="selector">.CLASSの値</i>
+  </div>
+  <pre>
+<font>.special</font> {
+  background: #000;
+  color: red;
+}
+
+<font>.super</font> {
+  font-style: italic;
+  background: yellow;
+}
+
+<font>.great</font> {
+  font-size: 150%;
+}
+
+<font>.super.special</font> {
+  display: block;
+}
+
+<font>.special .special</font> {
+  color: green;
+}
+
+<font>.great .great</font> {
+  color: blue;
+}
+  </pre>
+<!--
+  <p>
+    これは、
+    <font>id="one"</font> と <font>id="three"</font> の
+    <font style="color: #fff; background: blue;">色 を #fff(白)・背景 を blur(青色)</font>
+    に、
+    <font>id="two"</font> と <font>id="four"</font> の
+    <font style="color: #000; background: #fff;">色 を #000(黒)・背景 を #fff(白)</font>
+    に スタイリングする CSS ルールセットです。
+  </p>
+-->
+</div>

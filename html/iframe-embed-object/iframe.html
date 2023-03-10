@@ -1,0 +1,58 @@
+<article class="readme">
+  <details>
+    <summary>
+      <font>iframe</font>
+      <i>インラインフレームを設定する</i>
+    </summary>
+    <p>
+      YouTubeの動画や、Google Mapの地図などをウェブページに埋め込む際などに、
+      <font>iframe</font> 要素を有用します。
+    </p>
+    <p>
+      既定では、ブラウザーは iframe を境界線付きで表示します。<br/>
+      <i>CSS で border: none を設定すると、境界線なしで表示されます。</i>
+    </p>
+    <p>
+      width と height 属性を追加すると、iframe の 幅と高さを指定できます。<br/>
+      <i>CSSプロパティ width と height を使うと、より詳細な指定ができます。</i>
+    </p>
+    <br/>
+  </details>
+
+  <hr/>
+
+<pre class="iframe_tag" style="line-height:150%;">
+
+  <font color="blue">src</font>="フレーム内に表示する文書のURL"
+  <font color="blue">name</font>="閲覧コンテキスト名"
+  <font color="blue">loading</font>="lazy"
+  <font color="blue">referrerpolicy</font>="no-referrer"
+  <font color="blue">srcdoc</font>="インラインフレームの内容を属性値として記述する"
+  <font color="blue">sandbox</font>>
+</pre>
+  <br/>
+  <p>
+    ・閲覧コンテキスト名
+    <font color="blue">name</font>
+    は、アンダースコア（ <font color="blue">_</font> ）で開始されない任意の文字列で指定します。
+  </p>
+  <p>
+    ・loading="<font color="blue">lazy</font>" を追加すると、レイジーロード（遅延読み込み）を実装できるようになります。<br/>
+    <i>これは、文書の表示速度の改善や転送量の軽減に役立ちます。</i>
+  </p>
+  <p>
+    ・referrerpolicy="<font color="blue">no-referrer</font>" を追加すると、リファラーが送信されなくなります。<br/>
+    <i>1つ前に閲覧していたページのURL/情報をリファラーと言います。</i>
+  </p>
+  <p>
+    ・<font color="blue">srcdoc</font> 属性に記述した値（HTMLコード）は、src属性より優先し、インラインフレーム内に埋め込まれます。<br/>
+    <i>
+      srcdoc属性に対応していないブラウザーでは、フレームに何も表示されません。
+      または、src属性 の URL で代替されます。
+    </i>
+  </p>
+  <p>
+    ・<font color="blue">sandbox</font> フレーム内のコンテンツに追加の制約を適用します。<br/>
+    <i>攻撃者がウェブサイトで悪事を働く力をできるだけ小さくしたいので、埋め込みコンテンツには「その仕事をするために必要な権限」だけを与えるべきです。</i>
+  </p>
+</article>

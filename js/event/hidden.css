@@ -1,0 +1,95 @@
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  min-height: -webkit-fill-available;
+}
+
+body.open {
+  overflow: hidden;
+}
+
+body,
+#hidden,
+#js-button,
+#js-button b {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#hidden {
+  background: #eee9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+  transition: 1s;
+  width: 100%;
+  z-index: 100;
+}
+
+.open #hidden {
+  opacity: 1;
+  overflow: auto;
+  pointer-events: auto;
+  user-select: auto;
+  height: 100vh;
+  max-height: -webkit-fill-available;
+}
+
+#js-button {
+  border-radius: 50%;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  transition: 1s;
+}
+
+#js-button {
+  background: transparent;
+  border: solid 0.2rem;
+  font-family: "ipag", monospace;
+  font-size: 1.75rem;
+  margin: 0.5rem;
+  width: 3.33rem;
+  height: 3.33rem;
+}
+
+#js-button:hover {
+  background: blue;
+  color: #fff;
+  cursor: pointer;
+}
+
+#js-button b {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#js-button b::after {
+  content: '?';
+}
+
+#js-button.close b::after {
+  content: '×';
+}
+
+@media screen and (max-width: 750px) {
+  #js-button {
+    border: solid 0.5vw;
+    margin: 2.5vw;
+    width: 7.5vw;
+    height: 7.5vw;
+    font-size: 4vw;
+  }
+}

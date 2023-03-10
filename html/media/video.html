@@ -1,0 +1,77 @@
+<article class="readme">
+  <details>
+    <summary>
+      <font>video</font>
+      <i>動画埋め込み要素</i>
+    </summary>
+    <p>文書中に動画再生に対応するメディアプレイヤーを埋め込みます。</p>
+    <p>
+      <font color="blue">MPEG / MPEG-2</font>
+      (Moving Picture Experts Group (1 and 2))<br/>
+      <br/>
+      <font color="blue">MPEG-4 (MP4)</font>
+      (Moving Picture Experts Group 4)<br/>
+      <br/>
+      <font color="blue">QuickTime (MOV)</font>
+      (Apple QuickTime movie)<br/>
+      <br/>
+      <font color="blue">WebM</font>
+      (Web Media)<br/>
+      <br/>
+      <font color="blue">FLAC</font>
+      (Free Lossless Audio Codec)<br/>
+      <br/>
+      <font color="blue">SVG</font>
+      (Scalable Vector Graphics)<br/>
+      <br/>
+      <font color="blue">WebP</font>
+      (Web Picture format)<br/>
+    </p>
+    <p>
+      <i>代替するファイルとして複数の形式の映像ファイルを埋め込む場合は、video要素内の小要素に souce要素 を使用します。</i>
+    </p>
+    <br/>
+  </details>
+
+<pre class="video_element" style="font-size:111%; line-height:150%;"> <font color="blue">src</font>="動画のURL" controls autoplay muted loop poster="画像のURL">
+  <code class="source_element"> <font color="blue">src</font>="動画のURL"</code>
+  <code class="p_element">テキストの段落</code>
+</pre>
+  <br/>
+  <p>
+    <font color="blue">VIDEO</font>
+    要素の
+    <font color="blue">src</font>
+    属性に、表示したい動画のURLを指定します。
+  </p>
+  <p>
+    <font color="blue">controls</font>
+    属性を設定すると、再生・音量などの機能を制御するコントローラーを表示します。<br/>
+    <i>controls 属性がなければ、ブラウザーの標準コントローラーを表示しません。</i>
+  </p>
+  <p>
+    <font color="blue">autoplay</font>
+    属性を設定すると、動画が再生可能な状態になった時点で即座に再生が始まります。<br/>
+    <i>一部のブラウザーでは、 muted 属性がないと autoplay は動作しません。</i>
+  </p>
+  <p>
+    <font color="blue">muted</font>
+    属性を設定すると、動画の初期状態が消音になります。
+  </p>
+  <p>
+    <font color="blue">loop</font>
+    属性を設定すると、動画の末尾に達すると、自動的に先頭から再生が始まります。
+  </p>
+  <p>
+    <font color="blue">poster</font>
+    属性を設定すると、動画が再生されるまでに表示する画像を指定できます。
+  </p>
+  <br/>
+  <p>
+    要素の中には
+    動画が見えない/表示されない場合に使用する代替テキストや、
+    動画の形式（埋め込み）に対応していないブラウザーで代替する
+    <font color="blue">souce</font>
+    要素を記述します。
+  </p>
+</article>

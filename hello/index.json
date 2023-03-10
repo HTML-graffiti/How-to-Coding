@@ -1,0 +1,64 @@
+{
+  "title" : "The Greeting Page",
+  "description" : "本を読むようにテキストを表示する挨拶ページ",
+  "author" : "creative-community.space",
+  "email" : "pehu@creative-community.space",
+  "type" : "product",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "summary.png",
+
+  "contents" : [
+    {
+      "date" : "HTML",
+      "name" : "属性",
+      "url" : "/coding/html/attributes/",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "HTML",
+      "name" : "テキストの基礎",
+      "url" : "/coding/html/text/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "テキストの装飾",
+      "url" : "/coding/css/text/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "フォントの指定",
+      "url" : "/coding/css/fonts/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "文字表記の方向",
+      "url" : "/coding/css/text/writing-mode/"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "ドキュメントオブジェクトモデル",
+      "url" : "/coding/js/document/"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "イベントハンドラー",
+      "url" : "/coding/js/event/"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "Index",
+      "name" : "creative-community.space",
+      "url" : "https://creative-community.space/"
+    }
+  ]
+}

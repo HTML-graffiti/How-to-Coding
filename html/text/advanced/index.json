@@ -1,0 +1,191 @@
+{
+  "title" : "Advanced Text",
+  "description" : "高度なテキスト整形",
+  "author" : "Hypertext Markup Language",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "HTML",
+      "name" : "テキストの基礎",
+      "url" : "/coding/html/text/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "テキストの装飾",
+      "url" : "/coding/css/text/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "フォントの指定",
+      "url" : "/coding/css/fonts/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "背景",
+      "url" : "/coding/css/backgrounds/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "擬似クラス",
+      "url" : "/coding/css/pseudo-classes/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "擬似要素",
+      "url" : "/coding/css/pseudo-elements/",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "高度なテキスト整形",
+      "name" : "Advanced text formatting",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "address",
+      "name" : "連絡先要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/address",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "time",
+      "name" : "時刻または日付",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/time",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "mark",
+      "name" : "文字列マーク要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/mark",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "blockquote",
+      "name" : "ブロック引用要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/blockquote",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "q",
+      "name" : "行内引用要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/q",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "cite",
+      "name" : "引用元要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/cite",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "abbr",
+      "name" : "略語要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/abbr",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "dfn",
+      "name" : "定義要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/dfn",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "編集",
+      "name" : "ins要素・del要素",
+      "url" : "https://momdo.github.io/html/edits.html",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "ins",
+      "name" : "追加された文字列",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/ins",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "del",
+      "name" : "削除済み文字列要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/del",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "s",
+      "name" : "取り消し線",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/s",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "code",
+      "name" : "行内コード要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/code",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "pre",
+      "name" : "整形済みテキスト要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/pre",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "var",
+      "name" : "変数要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/var",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "kbd",
+      "name" : "キーボード入力要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/kbd",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "samp",
+      "name" : "サンプル出力要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/samp",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "data",
+      "name" : "機械可読な形式",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/data",
+      "language" : "guide",
+      "status" : "basic"
+    }
+  ]
+}

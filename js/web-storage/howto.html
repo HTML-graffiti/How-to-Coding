@@ -1,0 +1,26 @@
+<h2><i>Web Storage には、2 種類の仕組みがあります</i></h2>
+<p>
+  <font>sessionStorage</font><br/>
+  ページのセッション中のみデータを保存します。（データがサーバーに転送されることはありません。）
+</p>
+<p>
+  <font>localStorage</font><br/>
+  有効期限なしでデータを保存します。（ブラウザーを閉じたり再び開いたりしてもデータは持続します。）
+</p>
+<pre>
+// Web Storage にデータを保存する
+sessionStorage.setItem('key', 'value');
+localStorage.setItem('key', 'value');
+
+
+// Web Storage に保存したデータを取得する
+let data = sessionStorage.getItem('key');
+let data = localStorage.getItem('key');
+
+// Web Storage に保存したデータを削除する
+sessionStorage.removeItem('key')
+localStorage.removeItem('key');
+
+// Web Storage に保存したすべてのデータを削除する
+localStorage.clear();
+</pre>

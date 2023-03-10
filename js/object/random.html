@@ -1,0 +1,177 @@
+<h2>2 つの値の間にある整数の乱数を返す</h2>
+<h3>
+  <font>Math.floor()</font><br/>
+  <i>() に 指定した数値以下の最大の整数を返す</i><br/>
+  <font>Math.random()</font><br/>
+  <i>乱数を生成する範囲を設定する場合は、() * の後に 数値を指定</i>
+</h3>
+<pre>
+function <code class="red">random(min, max)</code> {
+  const num = <font class="red">Math.floor(Math.random() * (max - min + 1)) + min</font>;
+  return num;
+}
+</pre>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>
+  <i>RGB それぞれの値を 1~255 のうちからランダムに返す</i><br/>
+  <font>randomRGB()</font>
+</p>
+<pre>
+function randomRGB() {
+  let getRGB = `<code>rgb(<code class="red">${random(0, 255)}</code>,<code class="red">${random(0, 255)}</code>,<code class="red">${random(0, 255)}</code>)</code>`;
+  return getRGB;
+}
+</pre>
+
+<p>
+  <button onclick="randomBG()">randomBG()</button>
+  <button onclick="randomColor()">randomColor()</button>
+</p>
+<pre>
+function randomBG() {
+  const bgAll = document.querySelectorAll('body');
+  bgAll.forEach(bgItem => {
+    bgItem.style.background = randomRGB();
+  })
+}
+
+function randomColor() {
+  const colorAll = document.querySelectorAll('#menu a, .readme *, #contents *');
+  colorAll.forEach(colorItem => {
+    colorItem.style.background = randomRGB();
+  })
+}
+</pre>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>
+  <i>配列の順番をランダムにシャッフルする</i><br/>
+  <font>getRandom(<code class="red">配列名</code>)</font>
+</p>
+<p>let <code class="red">配列名</code> = [ '配列の要素を' , 'カンマ' , 'で区切り設定' ];</p>
+<pre>
+function <font class="red">getRandom(randomArray)</font> {
+  const random = <font class="red">randomArray[Math.floor(Math.random() * randomArray.length)]</font>;
+  return random;
+};
+</pre>
+<hr/>
+<p><i>配列の要素を1つずつランダムに返す</i></p>
+<code>
+  <font id="randomView"></font>
+</code>
+<pre>
+function <code class="red">関数名()</code> {
+  const <code class="red">要素名</code> = getRandom(<code class="red">配列名</code>);
+  配列を表示する要素.textContent = <code class="red">要素名</code>;
+};
+
+window.setInterval(function() {
+  <code class="red">関数名()</code>;
+}, <code class="red">数値</code>);
+</pre>
+<hr/>
+<script type="text/javascript">
+  function getRandom(randomArray) {
+    let random = randomArray[Math.floor(Math.random() * randomArray.length)];
+    return random;
+  };
+
+  const randomView = document.querySelector('#randomView');
+
+  let randomAll = [1, 2, 3,];
+
+  function randomSet() {
+    const randomItems = getRandom(randomAll);
+    randomView.textContent = randomItems;
+  };
+
+  window.setInterval(function() {
+    randomSet();
+  }, 1000);
+</script>
+
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>
+  <i>オブジェクトの配列順をランダムにシャッフルする</i><br/>
+  <font>shuffle(Object.entries<code class="red">(オブジェクト名)</code>)</font>
+</p>
+<pre>
+function <font class="red">shuffle(arrays)</font> {
+  const array = <code class="red">arrays.slice()</code>;
+  for (let i = <code class="red">array.length</code> - 1; i >= 0; i--) {
+    const <code class="red">shuffleArr</code> = <code class="red">Math.floor(Math.random()</code> * (i + 1));
+    [array[i], array[<code class="red">shuffleArr</code>]] = [array[<code class="red">shuffleArr</code>], array[i]];
+  }
+  return array;
+};
+</pre>
+<hr/>
+<pre>
+let <code class="red">オブジェクト名</code> = {
+
+  '1' : 'A',
+  '2' : 'B',
+  '3' : 'C',
+
+}
+</pre>
+<p><button onclick="shuffleDl()">shuffleDl()</button></p>
+<dl id="shuffleList"></dl>
+<hr/>
+<pre>
+function shuffleDl() {
+  const <code class="red">allShuffle</code> = shuffle(Object.entries(<code class="red">オブジェクト名</code>));
+  const <code class="red">shuffleList</code> = document.querySelector(<code class="red">'dl#shuffleList'</code>);
+  shuffleList.innerText = '';
+
+  <code><code class="red">allShuffle</code>.forEach(<code class="red">eachArr</code> => {</code>
+    const shuffleDt = document.createElement ('dt');
+    shuffleDt.innerText = <code class="red">Object.values(eachArr[0])</code>;
+    shuffleList.appendChild(shuffleDt);
+
+    const shuffleDd = document.createElement ('dd');
+    shuffleDd.innerText = <code class="red">Object.values(eachArr[1])</code>;
+    shuffleList.appendChild(shuffleDd);
+  <code>})</code>;
+}
+</pre>
+<script type="text/javascript">
+  // オブジェクトの配列順をランダムにシャッフルする
+  let allArr = {
+    '1' : 'A',
+    '2' : 'B',
+    '3' : 'C',
+  };
+
+  function shuffle(arrays) {
+    const array = arrays.slice();
+    for (let i = array.length - 1; i >= 0; i--) {
+      const shuffleArr = Math.floor(Math.random() * (i + 1));
+      [array[i], array[shuffleArr]] = [array[shuffleArr], array[i]];
+    }
+    return array;
+  }
+
+  function shuffleDl() {
+    const allShuffle = shuffle(Object.entries(allArr));
+    const shuffleList = document.querySelector('dl#shuffleList');
+    shuffleList.innerText = '';
+
+    allShuffle.forEach((eachArr) => {
+      const shuffleDt = document.createElement ('dt');
+      shuffleDt.innerText = Object.values(eachArr[0]);
+      shuffleList.appendChild(shuffleDt);
+
+      const shuffleDd = document.createElement ('dd');
+      shuffleDd.innerText = Object.values(eachArr[1]);
+      shuffleList.appendChild(shuffleDd);
+    });
+  }
+  shuffleDl()
+</script>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../../readme/index.js" async></script>
+  <script type="text/javascript" async>
+
+  document.addEventListener('readystatechange', (event) => {
+    if (event.target.readyState === 'interactive') {
+      const titleH1 = document.querySelector('#cover h1');
+      titleH1.textContent = `How to Coding`;
+
+      const hello = document.querySelector('#hello');
+      hello.style.display = "none";
+    }
+
+    else if (event.target.readyState === 'complete') {
+      const titleH1 = document.querySelector('h1');
+      titleH1.textContent = 'Object & Arrays';
+      titleH1.insertAdjacentHTML ( 'beforebegin', '<p>オブジェクト・配列</p>' )
+
+      const hello = document.querySelector('#hello');
+      hello.style.display = "block";
+    }
+  });
+
+  </script>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../../readme/style.css" />
+  <link rel="stylesheet" href="../../readme/active.css" />
+  <style>
+
+  body {
+    transition: background 1s;
+  }
+
+  body * {
+    transition: color 1s;
+  }
+
+  #contents::before {
+    content:'関連記事';
+    display: inline-block;
+    font-size: 90%;
+  }
+
+  #links::before {
+    content:'参考資料';
+    display: block;
+    padding-top: 0.5rem;
+    font-size: 75%;
+  }
+
+  #contents::before,
+  #links::before {
+    font-family: "ipag", monospace;
+    text-decoration: underline;
+    margin: 0.5rem 0.75rem 0.5rem 0.25rem;
+  }
+
+  </style>
+</head>
+<body>
+
+  <nav id="menu">
+    <a href="#object">オブジェクト</a>
+    <a href="#arrays">配列</a>
+    <a href="#random">ランダム</a>
+    <a href="#etc">参考資料</a>
+  </nav>
+
+  <article class="readme">
+    <section id="cover" class="active cover">
+      <h1></h1>
+      <div id="hello">
+        <div id="document"></div>
+      </div>
+    </section>
+
+    <section id="object" class="is-hide"></section>
+    <section id="arrays" class="is-hide"></section>
+    <section id="random" class="is-hide"></section>
+    <section id="etc" class="is-hide">
+      <aside id="links"></aside>
+    </section>
+  </article>
+
+  <aside id="contents"></aside>
+
+  <script src="script.js" defer></script>
+  <script src="../../readme/script.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    $("#object").load("object.html");
+    $("#arrays").load("arrays.html");
+    $("#random").load("random.html");
+  })
+  </script>
+</body>
+</html>

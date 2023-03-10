@@ -1,0 +1,79 @@
+{
+  "title" : "Web Storage API",
+  "description" : "",
+  "author" : "JavaScript",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+  ],
+
+  "links" : [
+    {
+      "date" : "Web API",
+      "name" : "Web Storage API",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Web_Storage_API",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Web Storage API",
+      "name" : "Storage",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Storage",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Window",
+      "name" : ".sessionStorage",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/sessionStorage",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Window",
+      "name" : ".localStorage",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/localStorage",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Storage",
+      "name" : ".setItem()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Storage/setItem",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Storage",
+      "name" : ".getItem()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Storage/getItem",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Storage",
+      "name" : ".removeItem()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Storage/removeItem",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Storage",
+      "name" : ".clear()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Storage/clear",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Window",
+      "name" : "storage イベント",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/storage_event",
+      "language" : "js",
+      "status" : "basic"
+    }
+  ]
+}

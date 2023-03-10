@@ -1,0 +1,31 @@
+{
+  "title" : "JSON",
+  "description" : "ウェブサイト「クリエイティブコミュニティスペース」のコーディング方法",
+  "author" : "JavaScript Object Notation",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "___",
+
+  "contents" : [
+
+  ],
+
+  "links" : [
+    {
+      "date" : "JSON の紹介",
+      "name" : "ECMA-404 The JSON Data Interchange Standard.",
+      "url" : "https://www.json.org/json-ja.html",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "JSON の操作",
+      "name" : "Working with JSON data",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/JavaScript/Objects/JSON",
+      "language" : "js",
+      "status" : "guide"
+    }
+  ]
+}

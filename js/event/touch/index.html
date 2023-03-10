@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="../../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../hidden.css" />
+  <link rel="stylesheet" href="../../../readme/style.css" />
+
+  <style>
+
+  #contents,
+  #links {
+    padding: 0.5rem;
+  }
+
+  #links::before {
+    content:'参考記事';
+    font-size: 75%;
+  }
+
+  #links::before {
+    display: block;
+    margin: 0.25rem;
+    text-decoration: underline;
+  }
+
+  </style>
+</head>
+
+<body>
+  <button id="js-button"><b></b></button>
+
+  <article id="hidden">
+    <aside id="contents"></aside>
+
+    <article class="readme">
+      <h2>
+        <code>TouchEvent</code><br/>
+        <i>タッチ感応面（タッチ画面やトラックパッド）への接触状態によってイベントを実行</i>
+      </h2>
+      <hr/>
+      <p>
+        <font>touchmove</font><br/>
+        タッチ感応面で 1 つ以上のタッチ点が移動したときに実行
+      </p>
+      <p>
+        <code>EventTarget.addEventListener('<code class="blue">touchmove</code>',</code> e => {
+          <br/>// JavaScriptを記述<br/>
+        });
+      </p>
+      <p>
+        <code>EventTarget.<code class="blue">ontouchmove</code></code> = function() {
+          <br/>// JavaScriptを記述<br/>
+        }
+      </p>
+      <hr/>
+      <p>
+        <font>touchstart</font><br/>
+        タッチ感応面に 1 つ以上のタッチ点が配置されたときに実行
+      </p>
+      <p>
+        <code>EventTarget.addEventListener('<code class="blue">touchstart</code>',</code> e => {
+          <br/>// JavaScriptを記述<br/>
+        });
+      </p>
+      <p>
+        <code>EventTarget.<code class="blue">ontouchstart</code></code> = function() {
+          <br/>// JavaScriptを記述<br/>
+        }
+      </p>
+      <hr/>
+      <p>
+        <font>touchend</font><br/>
+        タッチ感応面から 1 つ以上のタッチ点が取り除かれた場合に実行
+      </p>
+      <p>
+        <code>EventTarget.addEventListener('<code class="blue">touchend</code>',</code> e => {
+          <br/>// JavaScriptを記述<br/>
+        });
+      </p>
+      <p>
+        <code>EventTarget.<code class="blue">ontouchend</code></code> = function() {
+          <br/>// JavaScriptを記述<br/>
+        }
+      </p>
+      <hr/>
+      <p>
+        <font>touchcancel</font><br/>
+        １つ以上のタッチポイントが実装固有の方法で中断されたときに実行
+      </p>
+      <p>
+        <code>EventTarget.addEventListener('<code class="blue">touchcancel</code>',</code> e => {
+          <br/>// JavaScriptを記述<br/>
+        });
+      </p>
+      <p>
+        <code>EventTarget.<code class="blue">ontouchcancel</code></code> = function() {
+          <br/>// JavaScriptを記述<br/>
+        }
+      </p>
+      <hr/>
+    </article>
+
+    <nav id="links"></nav>
+  </article>
+
+  <canvas id="canvas">
+    Your browser does not support canvas element.
+  </canvas>
+
+  <pre id="log"></pre>
+  <h1 id="touchEvent"><font>TouchEvent</font></h1>
+
+  <script type="text/javascript">
+  const button = document.querySelector('#js-button');
+  const body = document.querySelector('body');
+
+  button.addEventListener('click', function () {
+    button.classList.toggle('close');
+    body.classList.toggle('open');
+  });
+  </script>
+
+  <script src="script.js"></script>
+  <script src="drawing.js"></script>
+</body>
+</html>

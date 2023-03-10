@@ -1,0 +1,47 @@
+<h2>
+  <font>border-radius</font><br/>
+  <i>境界の外側の角を丸めるCSSプロパティ</i>
+</h2>
+<br/>
+<pre>
+/* 全4角の丸みを設定 */
+border-radius: <b>50px</b>;
+
+/* 左上と右下 | 右上と左下 */
+border-radius: <b>25% 50%</b>;
+
+/* 左上 | 右上と左下 | 右下 */
+border-radius: <b>5rem 1rem 10%</b>;
+
+/* 左上 | 右上 | 右下 | 左下 */
+border-radius: <b>10vw 30vh 50vw 70vh</b>;
+
+/* 楕円の横の半径と縦の半径をスラッシュ（/）で区切る */
+border-radius: <b>5rem / 25%</b>;
+
+/* (最初の半径の値) 左上 | 右上 | 右下 | 左下 / 左上 | 右上 | 右下 | 左下 */
+border-radius: <b>25vw 1rem 10vh 1rem / 1rem 25vw 1rem 100px</b>;
+</pre>
+<br/>
+<p>丸みの値は、px・rem・vw・vhなどの数値か、%で指定します。</p>
+<br/>
+<p style="text-align:center;">~~~</p>
+<br/>
+<h2>
+  <font>border-image</font><br/>
+  <i>境界領域に画像を描画するCSSプロパティ</i>
+</h2>
+<p>border が none または 0 の場合、境界画像を描画しないブラウザーもあります。</p>
+<br/>
+<pre>
+/* 画像URL | スライスの指定 */
+border-image: <b>url()</b> <b>25%</b>;
+
+/* グラデーション | スライスの指定 (上下 | 左右) */
+border-image: <b>gradient()</b> <b>10% 20%</b>;
+
+/* グラデーション | スライスの指定 (上 | 右 | 下 | 左 | 真ん中) */
+border-image: <b>gradient()</b> <b>10 20 15 25 fill</b>;
+</pre>
+<br/>
+<p>border-image には border-radius が適用されません。</p>

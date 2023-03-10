@@ -1,0 +1,44 @@
+{
+  "title" : "DETAILS SUMMARY",
+  "description" : "対話的要素 | 詳細折りたたみ要素・概要明示要素・ダイアログ",
+  "author" : "Hypertext Markup Language",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "Twitterカードの種類 (summary | summary_large_image | app | player)",
+  "src" : "ページを代表する画像のURL",
+
+  "contents" : [
+  ],
+
+  "links" : [
+    {
+      "date" : "対話的な要素",
+      "name" : "details要素・summary要素・dialog要素",
+      "url" : "https://momdo.github.io/html/interactive-elements.html",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "details",
+      "name" : "詳細折りたたみ要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/details",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "summary",
+      "name" : "概要明示要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/summary",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "dialog",
+      "name" : "ダイアログ要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/dialog",
+      "language" : "html",
+      "status" : "guide"
+    }
+  ]
+}

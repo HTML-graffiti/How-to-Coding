@@ -1,0 +1,104 @@
+.lightbox {
+  position: fixed;
+  color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+  z-index: 100;
+}
+
+.lightbox:target {
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+  user-select: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox .close,
+.lightbox .close::after {
+  display: block;
+}
+
+.lightbox .close {
+  background-color: rgba(0, 0, 0, .75);
+  color: #fff;
+  transition: color 1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lightbox .close:hover {
+  color: yellow;
+}
+
+.lightbox .close::after {
+  content: "Close";
+  font-size: 150%;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+
+.lightbox,
+.lightbox .close,
+.lightbox .close::after {
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.translate_center {
+  position: absolute;
+  top: 47.5%;
+  left: 50%;
+  max-width: 75%;
+  max-height: 75%;
+  overflow: auto;
+  transform: translate(-50%, -50%);
+}
+
+.fixed_full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  max-height: -webkit-fill-available;
+}
+
+.lightbox .fixed_bottom {
+  box-sizing: border-box;
+  padding: 0.5rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#contents::before,
+#links::before {
+  color: #fff;
+}
+
+.readme a,
+#contents a,
+#links a {
+  filter: invert();
+}

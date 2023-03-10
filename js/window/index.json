@@ -1,0 +1,184 @@
+{
+  "title" : "Window",
+  "description" : "",
+  "author" : "Document Object Model",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "Document Object Model",
+      "name" : "ドキュメントオブジェクトモデル",
+      "url" : "/coding/js/document/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Web API",
+      "name" : "Battery Status API",
+      "url" : "/coding/js/window/battery.html",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Web API",
+      "name" : "Geolocation API",
+      "url" : "/coding/js/window/geolocation.html",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Web API",
+      "name" : "Scroll & WheelEvent",
+      "url" : "/coding/js/scroll/",
+      "language" : "js",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "Document Object Model",
+      "name" : "Window",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Window",
+      "name" : ".innerWidth",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/innerWidth",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Window",
+      "name" : ".innerHeight",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/innerHeight",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Window",
+      "name" : ".outerWidth",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/outerWidth",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Window",
+      "name" : ".outerHeight",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/outerHeight",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS Object Model",
+      "name" : "Screen",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Screen",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Window",
+      "name" : ".screen",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/screen",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "Navigator",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Navigator",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Window",
+      "name" : ".navigator",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/navigator",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Navigator",
+      "name" : ".onLine",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Navigator/onLine",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "Location",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Location",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Window",
+      "name" : ".location",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/location",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "History API",
+      "name" : "履歴 API",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/History_API",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Window",
+      "name" : ".history",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/history",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Console API",
+      "name" : "コンソール API",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Console_API",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Living Standard",
+      "name" : "Console",
+      "url" : "https://triple-underscore.github.io/console-ja.html",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Window",
+      "name" : ".console",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/console",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Battery Status API",
+      "name" : "バッテリー状態 API",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Battery_Status_API",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Battery Status API",
+      "name" : "getBattery()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Navigator/getBattery",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Geolocation API",
+      "name" : "位置情報 API の使用",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Geolocation_API/Using_the_Geolocation_API",
+      "language" : "js",
+      "status" : "basic"
+    }
+  ]
+}

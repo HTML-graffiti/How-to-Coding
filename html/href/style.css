@@ -1,0 +1,85 @@
+.css,
+.none,
+.iframe,
+.iframe_tag,
+#attribute pre:not(.href) {
+  display: none;
+}
+
+#title a::before {
+  content: '<a';
+}
+
+.a_element::before {
+  content: '<a href="';
+}
+
+#title a::after,
+.a_element::after {
+  content: '</a>';
+}
+
+.section_tag::before {
+  content: '<section ';
+}
+
+.section_tag::after {
+  content: '</section>';
+}
+
+.readme .close {
+  color: #fff;
+  filter: invert();
+}
+
+header {
+  min-height: 100vh;
+}
+
+section:target::before {
+  content: ':target';
+  color: #fff;
+  text-shadow:
+  1px 1px 0 #000,
+  -1px -1px 0 #000,
+  -2px -2px 0 #000;
+  display: block;
+  font-family: "ipag", monospace;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+}
+
+.blue {
+  text-shadow:
+  1px 1px 0 #fff,
+  -1px -1px 0 #fff,
+  -2px -2px 0 #fff;
+}
+
+section:target {
+  color: #fff;
+  background: blue;
+}
+
+section:target a,
+section:target #contents a,
+section:target #links a {
+  color: #fff;
+}
+
+footer {
+  position: relative;
+  min-height: 75vh;
+}
+
+header h1,
+footer aside {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer aside {
+  max-width: 1000px;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="../../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../hidden.css" />
+  <link rel="stylesheet" href="../../../readme/style.css" />
+
+  <style>
+
+  #contents,
+  #links {
+    padding: 0.5rem;
+  }
+
+  #links::before {
+    content:'参考記事';
+    font-size: 75%;
+  }
+
+  #links::before {
+    display: block;
+    margin: 0.25rem;
+    text-decoration: underline;
+  }
+
+  </style>
+</head>
+
+<body>
+  <button id="js-button"><b></b></button>
+
+  <article id="hidden">
+    <aside id="contents"></aside>
+
+    <article class="readme">
+      <h2>
+        <code>KeyboardEvent</code><br/>
+        <i>ユーザーによるキーボードの操作によってイベントを実行</i>
+      </h2>
+      <hr/>
+      <p>
+        <font>keydown</font><br/>
+        キーが押された状態のときに実行
+      </p>
+      <p>
+        <code>EventTarget.addEventListener('<code class="blue">keydown</code>',</code> event => {
+          <br/>// JavaScriptを記述<br/>
+        });
+      </p>
+      <p>
+        <code>EventTarget.<code class="blue">onkeydown</code></code> = function() {
+          <br/>// JavaScriptを記述<br/>
+        }
+      </p>
+      <hr/>
+      <p>
+        <font>keyup</font><br/>
+        キーが離されたときに実行
+      </p>
+      <p>
+        <code>EventTarget.addEventListener('<code class="blue">keyup</code>',</code> event => {
+          <br/>// JavaScriptを記述<br/>
+        });
+      </p>
+      <p>
+        <code>EventTarget.<code class="blue">onkeyup</code></code> = function() {
+          <br/>// JavaScriptを記述<br/>
+        }
+      </p>
+      <pre>
+
+textarea.addEventListener('keydown', logKey);
+textarea.addEventListener('keyup', logKey);
+
+function logKey(key) {
+  let time = new Date();
+  let timeStr = time.toLocaleTimeString();
+
+  log.textContent = `${timeStr} ${key.type} ${key.code}/${key.key}`;
+};
+
+      </pre>
+      <hr/>
+      <p style="text-align: center;">/* ~~~ */</p>
+      <hr/>
+      <p>
+        <font>KeyboardEvent</font><code>.code</code><br/>
+        キーボード上の物理的なキーの値
+      </p>
+      <p>
+        <font>KeyboardEvent</font><code>.key</code><br/>
+        Shift キーなどの修飾キーやキーボードのロケールやレイアウトを考慮したキーの値
+      </p>
+      <pre>
+
+const keyCode = key.code;
+
+if (keyCode === 'Space') {
+  // space キー がが押されている
+  return;
+}
+
+if (keyCode === 'Enter') {
+  // enter キー がが押されている
+  return;
+}
+
+      </pre>
+      <hr/>
+      <p>
+        <font>KeyboardEvent</font><code>.altKey</code><br/>
+        alt キー（macOS では Option または ⌥）が押されているか (true) または押されていないか (false) を示す論理値
+      </p>
+      <p>
+        <font>KeyboardEvent</font><code>.ctrlKey</code><br/>
+        control キーが押されているか (true) または押されていないか (false) を示す論理値
+      </p>
+      <p>
+        <font>KeyboardEvent</font><code>.shiftKey</code><br/>
+        shift キーが押されているか (true) または押されていないか (false) を示す論理値
+      </p>
+      <p>
+        <font>KeyboardEvent</font><code>.metaKey</code><br/>
+        Meta キー（macOS では ⌘ Command）が押されているか (true) または押されていないか (false) を示す論理値
+      </p>
+      <pre>
+
+if (key.altKey) {
+  // alt キー（macOS では Option または ⌥）が押されている
+} else {
+  // alt キー（macOS では Option または ⌥）が離された
+}
+
+if (key.ctrlKey ===  true) {
+  // control キーが押されている
+} else {
+  // control キーが押されている
+}
+
+if (key.shiftKey ===  true) {
+  // shift キーが押されている
+} else {
+  // shift キーが押されている
+}
+
+if (key.metaKey ===  true) {
+  // Meta キー（macOS では ⌘ Command）が押されている
+} else {
+  // Meta キー（macOS では ⌘ Command）が押されている
+}
+
+      </pre>
+      <hr/>
+      <p>
+        <font>KeyboardEvent</font><code>.repeat</code><br/>
+        キーが押しっぱなしになって自動反復している場合、 true の論理値
+      </p>
+      <hr/>
+    </article>
+
+    <nav id="links"></nav>
+  </article>
+
+  <textarea id="key" placeholder="Type Here"></textarea>
+
+  <h1 id="keyboardEvent"><font>KeyboardEvent</font></h1>
+
+  <script src="script.js"></script>
+  <script type="text/javascript">
+  const button = document.querySelector('#js-button');
+  const body = document.querySelector('body');
+
+  button.addEventListener('click', function () {
+    button.classList.toggle('close');
+    body.classList.toggle('open');
+  });
+  </script>
+</body>
+</html>

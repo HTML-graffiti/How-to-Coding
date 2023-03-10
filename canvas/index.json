@@ -1,0 +1,79 @@
+{
+  "title" : "Canvas",
+  "description" : "2D および 3D グラフィック",
+  "author" : "How to Coding",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+  ],
+
+  "links" : [
+    {
+      "date" : "Canvas API",
+      "name" : "キャンバス API",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Canvas_API",
+      "language" : "api",
+      "status" : "basic"
+    },
+    {
+      "date" : "Canvas API",
+      "name" : "Canvas チュートリアル",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Canvas_API/Tutorial",
+      "language" : "api",
+      "status" : "basic"
+    },
+    {
+      "date" : "WebGL API",
+      "name" : "ウェブの 2D および 3D グラフィック",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/WebGL_API",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "Safari HTML5 Canvas Guide",
+      "name" : "About Canvas",
+      "url" : "https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/HTML-canvas-guide/Introduction/Introduction.html",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "v1.x",
+      "name" : "HTML5 Canvas Cheat Sheet",
+      "url" : "https://simon.html5.org/dump/html5-canvas-cheat-sheet.html",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "bucephalus.org",
+      "name" : "The HTML5 Canvas Handbook",
+      "url" : "https://bucephalus.org/text/CanvasHandbook/CanvasHandbook.html",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "HTML",
+      "name" : "グラフィックキャンバス要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/canvas",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Canvas API",
+      "name" : "HTMLCanvasElement",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/HTMLCanvasElement",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Web API",
+      "name" : "CanvasRenderingContext2D",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/CanvasRenderingContext2D",
+      "language" : "js",
+      "status" : "guide"
+    }
+  ]
+}

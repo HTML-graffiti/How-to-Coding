@@ -1,0 +1,89 @@
+<h2>
+  a<font class="blue">:LVHA</font> {<br/>
+    <b class="blue">color:</b> 色の値;<br/>
+    <b class="blue">text-decoration:</b> underline;<br/>
+  }
+  <br/>
+  <i class="blue">:link — :visited — :hover — :active</i>
+</h2>
+<hr/>
+<pre>
+a {
+  text-decoration: <font style="text-decoration: underline;">underline</font>;
+}
+
+a:link {
+  color: <font color="#0000EE">#0000EE</font>;
+}
+
+a:visited {
+  color: <font color="#551A8B">#551A8B</font>;
+}
+
+a:hover {
+  cursor: <font style="cursor: pointer;">pointer</font>;
+}
+
+a:active {
+  color: <font color="#FF0000">#FF0000</font>;
+}
+</pre>
+<hr/>
+<p>アンカー要素には、デフォルトで以上のCSS擬似クラスが設定されています。</p>
+<br/>
+<p>
+  <font color="#0000EE">:link</font>
+  <i>まだアクセスしていないリンクにスタイルを適用</i><br/>
+  <font color="#551A8B">:visited</font>
+  <i>アクセスしたことのあるリンクにスタイルを適用</i><br/>
+</p>
+<p>
+  擬似クラス
+  <b>link</b>・<b>visited</b> で、リンク先へのアクセスの有無によって
+  色を
+  <font color="#0000EE">#0000EE</font>
+  ・
+  <font color="#551A8B">#551A8B</font>
+  に区別する
+</p>
+<p>
+  <i>この 2つ の擬似クラスは、href 属性を持つ要素に使用できます。</i>
+</p>
+<hr/>
+<br/>
+<p>
+  <font style="cursor: pointer;">:hover</font>
+  <i>要素にマウスオーバーしたときにスタイルを適用</i>
+</p>
+<p>
+  擬似クラス <b>hover</b>
+  で、マウスポインターが要素の上にいるときに表示されるマウスカーソルの種類を
+  <font style="cursor: pointer;">pointer</font>
+  に設定
+</p>
+<p>
+  <i>擬似クラス :hover は、ほぼすべての要素に使用できますが、タッチ画面などのブラウザーではうまく機能しない場合があります。</i>
+</p>
+<hr/>
+<br/>
+<p>
+  <font color="#FF0000">:active</font>
+  <i>要素がアクティブ化されたときにスタイルを適用</i>
+</p>
+<p>
+  擬似クラス <b>active</b>
+  で、クリック中の要素の色を
+  <font color="#FF0000">#FF0000</font>
+  に指定
+</p>
+<p>
+  <i class="active">擬似クラス :active は、a・button 要素 に 設定されています。</i>
+</p>
+<br/>
+<p>
+  これら 4つ の擬似クラスは、<b>:link — :visited — :hover — :active</b>
+  の順に定義するようにしてください。<br/>
+  <i>順番が守らなければ、CSS 宣言 が上書きされ、スタイリングが適用されません。</i>
+</p>
+<hr/>
+<br/>

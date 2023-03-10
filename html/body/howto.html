@@ -1,0 +1,64 @@
+<script async>
+  const data_showCSS = document.createElement( "link" );
+  data_showCSS.href = "../../hello/data_show.css";
+  data_showCSS.type = "text/css";
+  data_showCSS.rel = "stylesheet";
+  document.getElementsByTagName("head")[0].appendChild(data_showCSS);
+</script>
+
+<h2 class="body"><br/>
+  文書の本文要素
+  <br/>
+</h2>
+<p>
+  <b class="red">BODY要素</b>
+  は、ウェブサイトとして
+  <b class="red">ブラウザーに表示される</b>
+  部分です。<br/>
+  HTML要素の中に、HEAD要素に続く 2番目 の要素として、一つだけ配置できます。
+</p>
+<p>
+  BODY要素 の中には、テキスト・画像・ビデオ・ゲーム・音声ファイルなど、
+  <b class="red">ブラウザーに表示するすべてのコンテンツ</b>
+  を 記述します。
+</p>
+<hr/>
+<p class="HTMLcomments">フローコンテンツ</p>
+<p>
+  BODY要素で使用される多くの要素は
+  <font color="red">フローコンテンツ</font>
+  と分類されます。<br/>
+  <i>
+    フローコンテンツは、用途に応じて
+    「区分要素」「見出し要素」「埋め込み要素」「対話的要素」「フォーム関連要素」
+    などに分類されます。
+  </i>
+</p>
+<hr/>
+<br/>
+<section class="body_tag">
+  <u data-id="body_attributes">
+    <font color="red">ononline="onFunction()" onoffline="offFunction()"</font>
+  </u>>
+  <br/>
+  <aside id="body_attributes" class="hide">
+    <p>
+      BODY要素 には、インターネットの交信状態（オンライン/オフライン）によって呼び出す関数を設定できます。
+    </p>
+<pre class="script">type="text/javascript">
+
+
+function onFunction() {
+  ここに オンライン状態の時に実行する処理 を記述する
+}
+
+function offFunction() {
+  ここに オフライン状態の時に実行する処理 を記述する
+}
+
+</pre>
+  </aside>
+</section>
+<br/>
+
+<script src="../../hello/data_show.js" defer></script>

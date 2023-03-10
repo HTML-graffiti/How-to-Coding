@@ -1,0 +1,97 @@
+<script async>
+  const data_showCSS = document.createElement( "link" );
+  data_showCSS.href = "../../hello/data_show.css";
+  data_showCSS.type = "text/css";
+  data_showCSS.rel = "stylesheet";
+  document.getElementsByTagName("head")[0].appendChild(data_showCSS);
+</script>
+
+<p class="meta">
+  <u data-id="charset">charset="UTF-8"</u>
+</p>
+<p id="charset" class="hide">
+  <i>
+    文字コードをUTF-8に設定し、HTMLの文字化けを防ぐ<br/>
+    この宣言によって、基本的にはどんなテキストコンテンツでも扱えるようになります。
+  </i>
+</p>
+<p class="meta">
+  <u data-id="viewport">name="viewport" content="width=device-width, initial-scale=1.0"</u>
+</p>
+<p id="viewport" class="hide">
+  <i>
+    ビューポートのメタタグを設定し、レスポンシブウェブデザインを行う<br/>
+    画面のサイズや方向が大きく異なる場合でも、ページがうまく動作するようになります。
+  </i>
+</p>
+<p class="title">
+  <u data-id="head_title">ページタイトル</u>
+</p>
+<p id="head_title" class="hide">
+  <i>
+    TITLE要素は、ページが読み込まれた時にブラウザーのタブに表示されます。<br/>
+    また、ブックマークやお気に入りに登録した時の説明にも使われます。
+  </i>
+</p>
+<i>
+  <u data-id="SEO">SEO (検索エンジン最適化)</u>
+</i>
+<br/>
+<div id="SEO" class="hide">
+  <p><i>検索エンジンでページを上位にできる可能性がある情報</i></p>
+  <p>
+    <span class="meta">name="description" content="ページのディスクリプション（説明書き）"</span><br/>
+    <span class="meta">name="author" content="著者"</span><br/>
+    <span class="meta">name="reply-to" content="Eメールアドレス"</span><br/>
+  </p>
+</div>
+<i>
+  <u data-id="OG">The Open Graph protocol (オープン・グラフ・プロトコル)</u>
+</i>
+<br/>
+
+<div id="OG" class="hide">
+  <p><i>Facebook が開発した、ウェブサイトにより豊富なメタデータを与えるメタデータプロトコル</i></p>
+  <p>
+    <span class="meta">property="og:type" content="ページの種類 (<b class="red">website | blog | article | product</b>)"</span><br/>
+    <span class="meta">property="og:site_name" content="サイト名"</span><br/>
+    <span class="meta">property="og:url" content="ページのURL"</span><br/>
+    <span class="meta">property="og:title" content="ページタイトル"</span><br/>
+    <span class="meta">property="og:description" content="ページのディスクリプション（説明書き）"</span><br/>
+    <span class="meta">property="og:image" content="ページを代表する画像のURL"</span><br/>
+  </p>
+</div>
+<i>
+  <u data-id="Twitter">Twitter Cards</u>
+</i>
+<br/>
+<div id="Twitter" class="hide">
+  <p><i>ページのURL が Twitter に投稿されたときにサムネイルを作成するメタデータ</i></p>
+  <p>
+    <span class="meta">name="twitter:card" content="Twitterカードの種類 (<b class="red">summary | summary_large_image | app | player</b>)"</span><br/>
+    <span class="meta">name="twitter:title" content="ページタイトル"</span><br/>
+    <span class="meta">name="twitter:description" content="ページのディスクリプション（説明書き）"</span><br/>
+    <span class="meta">name="twitter:image" content="ページを代表する画像のURL"</span><br/>
+  </p>
+</div>
+<hr/>
+<p class="base">
+  <u data-id="base">target="_blank" rel="noopener noreferrer"</u>
+</p>
+<p id="base" class="hide">
+  <i>BASE要素は、HEAD内に 1つ だけ置くことができます。</i><br/>
+  文書内におけるすべての相対 URL の基点となる URL を指定します。
+</p>
+<hr/>
+<p class="link">
+  <u data-id="icon">rel="icon" href="ファビコン"</u>
+</p>
+<div id="icon" class="hide">
+  <p><i>ファビコン・Webクリップアイコン（ホーム画面のタッチアイコン）を指定</i></p>
+  <p>
+    <span class="link">rel="apple-touch-icon-precomposed" href="iOS端末用Webクリップアイコン" sizes="180x180" type="image/png"</span><br/>
+    <span class="link">rel="icon" href="Android端末用Webクリップアイコン" sizes="192x192" type="image/png"</span>
+  </p>
+</div>
+
+<script src="../../hello/data_show.js" defer></script>

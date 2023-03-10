@@ -1,0 +1,168 @@
+<h2>
+  <code>Element API</code><br/>
+  <i>DOMツリーの中にある すべての要素 を 操作する API</i>
+</h2>
+<p>
+  <i>
+    文書自身の操作 には Document・文書を収めるウィンドウの操作 には Window API を使用します。
+  </i>
+</p>
+<hr/>
+<p>JavaScriptを実行する要素を指定するメソッド</p>
+<p>
+  <font>Element<code class="red">.querySelector</code>()</font><br/>
+  main・h1などの要素名・IDの値に一致する フラグメント (# 記号で記述) などから、1つの要素を指定します。
+</p>
+<p>
+  <font>Element<code class="red">.querySelectorAll</code>()</font><br/>
+  p・sectionなどの要素名、class 属性の値から要素を指定、セレクター名を <code class="red">,</code> で区切り、複数の要素を指定します。
+</p>
+<hr/>
+<p>要素の内容（テキスト・コンテンツ・html）を操作するプロパティ</p>
+<p>
+  <font>Element<code class="red">.innerText</code></font><br/>
+  要素の中にあるテキストの内容を表します。
+</p>
+<p>
+  .innerText <code>と <code class="red">.textContent</code></code>の違い<br/>
+  <i>innerText は「人間が読める」テキストのみを示します。</i><br/>
+  <i>textContent は、script・style 要素を含む、すべての要素の中身を取得します。</i>
+</p>
+<p>
+  .textContent <code>と <code class="red">.innerHTML</code></code>の違い<br/>
+  <i>textContent は値が HTML として解析されません。</i><br/>
+  <i>innerHTML は、その名が示すとおり HTMLタグを含めて値を返します。</i>
+</p>
+<hr/>
+<p>要素を特定の箇所に挿入するメソッド</p>
+<p>
+  <font>Element<code class="red">.before</code>()</font><br/>
+  Element の直前に、(Node または DOMString) を挿入します。
+</p>
+<p>
+  <font>Element<code class="red">.prepend</code>()</font><br/>
+  Element の最初の子の前に、(Node または DOMString) を挿入します。
+</p>
+<p>
+  <font>Element<code class="red">.append</code>()</font><br/>
+  Element の最後の子の後に、(Node または DOMString) を挿入します。
+</p>
+<p>
+  <font>Element<code class="red">.after</code>()</font><br/>
+  Element の直後に、(Node または DOMString) を挿入します。
+</p>
+
+<hr/>
+<details>
+  <summary>
+    <h3>例)
+      <code class="red">document.querySelector</code> で指定した要素の
+      <code class="red">innerHTML</code> を変更し、
+      <code class="red">append</code> を挿入する
+    </h3>
+  </summary>
+
+<pre>
+const titleH1 = <code><code class="red">document.querySelector</code>('#cover h1')</code>;
+
+titleH1<code><code class="red">.innerHTML</code> = "<<code>i</code>>Document Object Model<<code>/i</code>><<code>br/</code>>"</code>;
+titleH1<code><code class="red">.append</code>('Element')</code>;
+
+</pre>
+</details>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>
+  <font>Element<code class="red">.insertAdjacentText</code>()</font><br/>
+  テキストノードをDOMツリーの指定した位置に挿入します。
+</p>
+<p>
+  <font>Element<code class="red">.insertAdjacentElement</code>()</font><br/>
+  指定された要素ノードをDOMツリーの指定した位置に挿入します。
+</p>
+<p>
+  <font>Element<code class="red">.insertAdjacentHTML</code>()</font><br/>
+  テキストを HTML または XML として解釈し、解釈結果のノードをDOMツリーの指定した位置に挿入します。
+</p>
+<p>
+  以上3つのメソッドの引数(<code class="red">キーワード値</code>, <code class="red">値</code>)
+</p>
+<p>
+  キーワード値<br/>
+  <font class="red">'beforebegin'</font> 要素自体の前<br/>
+  <font class="red">'afterbegin'</font> 要素の直下、最初の子の前<br/>
+  <font class="red">'beforeend'</font> 要素の直下、最後の子の後<br/>
+  <font class="red">'afterend'</font> 要素自体の後
+</p>
+<p>
+  キーワード値で設定した相対位置に、<code class="red">,</code> カンマ に続く 値 を挿入します。
+</p>
+
+<hr/>
+<details>
+  <summary>
+    <h3>例)
+      <code class="red">document.querySelector</code> で指定した要素自体の後
+      <code class="red">afterend</code> に
+      <code class="red">insertAdjacentHTML</code> の値を挿入する
+    </h3>
+  </summary>
+
+<pre>
+const titleH1 = <code><code class="red">document.querySelector</code>('#cover h1')</code>;
+
+titleH1<code><code class="red">.insertAdjacentHTML</code> ( <code class="red">'afterend'</code>, '<<code>div class="log"</code>><<code>/div</code>>' )</code>;
+
+</pre>
+</details>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>
+  <font>Element<code class="red">.outerHTML</code></font><br/>
+  要素とその子孫を含む部分の HTML がシリアライズされたものを取得します。<br/>
+  <i>要素の内容のみの HTML 表現を取得する場合や、要素の内容を置き換える場合であれば、代わりに innerHTML プロパティを使用してください。</i>
+</p>
+<hr/>
+<details>
+  <summary>
+    <h3>例)
+      <code class="red">document.querySelector</code> で指定した要素を
+      <code class="red">outerHTML</code> の内容を置き換える
+    </h3>
+  </summary>
+
+<pre>
+const titleBtn = <code><code class="red">document.querySelector</code>('#cover button')</code>;
+
+titleBtn<code><code class="red">.outerHTML</code> = "<<code>p id="p_log"</code>>Click on Double-click or Touch Here<<code>/p</code>>"</code>;
+
+</pre>
+</details>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>
+  <font>Element<code class="red">.remove</code>()</font><br/>
+  指定された要素をDOMツリーから削除します。
+</p>
+<details>
+  <summary>
+    <h3>例)
+      <code>#cover .log p</code> をすべて
+      <code class="red">remove</code>
+      削除する
+    </h3>
+  </summary>
+
+<pre>
+let coverPAll = <code>document<code>.querySelectorAll</code>('#cover .log p')</code>;
+
+<code><code>for</code> (let coverP <code>of</code> coverPAll)</code> {
+  <code>coverP<font class="red">.remove()</font></code>
+}
+
+</pre>
+</details>
+<hr/>

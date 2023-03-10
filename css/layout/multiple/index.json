@@ -1,0 +1,135 @@
+{
+  "title" : "Multiple-column",
+  "description" : "段組みレイアウト | Multiple-column",
+  "author" : "Cascading Style Sheets",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary_large_image",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "CSS",
+      "name" : "CSS レイアウト",
+      "url" : "/coding/css/layout/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "フレックスボックス",
+      "url" : "/coding/css/layout/flexbox/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "グリッドレイアウト",
+      "url" : "/coding/css/layout/grid/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "文字表記の方向",
+      "url" : "/coding/css/text/writing-mode/",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "Multiple-column layout",
+      "name" : "段組みレイアウト",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/CSS_layout/Multiple-column_Layout",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "Basic concepts of Multicol",
+      "name" : "段組みの基本概念",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Columns/Basic_Concepts_of_Multicol",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "columns",
+      "name" : "段数・段の幅",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/columns",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "column-gap",
+      "name" : "隙間 (溝) の寸法",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/column-gap",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "column-rule",
+      "name" : "段間に引かれる線",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/column-rule",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "column-span",
+      "name" : "段抜き",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/column-span",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "column-fill",
+      "name" : "段組のバランス",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/column-fill",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "break-inside",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/break-inside",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "break-before",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/break-before",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "break-after",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/break-after",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "orphans",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/orphans",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "widows",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/widows",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS Fragmentation",
+      "name" : "CSS 断片化",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Fragmentation",
+      "language" : "css",
+      "status" : "basic"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+<h2>
+  <code>Console API</code><br/>
+  <i>デバッグ作業（メッセージ、コード内の設定点での変数の値、操作の完了にかかった時間などの記録）を実行できるようにする機能</i>
+</h2>
+<p>
+  <i>使用方法は非常に簡単です — console オブジェクト — window.console またはワーカーの WorkerGlobalScope.console を介して利用できます。</i>
+</p>
+<hr/>
+<p>
+  <font>console<code class="red">.log()</code></font>
+  <i>(引数) に、出力するオブジェクトの「値」を設定</i><br/>
+  ウェブコンソールにメッセージを出力するメソッド<br/>
+  <i>log()の引数は、String（文字列）、Array（配列）、Object（オブジェクト）、Boolean（真偽値）など、どのような型でも使用できます。</i>
+</p>
+<p>
+  <font>console<code class="red">.group()</code></font><br/>
+  <font>console<code class="red">.groupEnd()</code></font><br/>
+  ウェブコンソールのログに、新たなインライングループを作成する<br/>
+  <i>group()とgroupEnd()は、出力をブロックにグループ化し、インデントして表示します。</i>
+</p>
+<p>
+  <font>console<code class="red">.time()</code></font><br/>
+  <font>console<code class="red">.timeEnd()</code></font><br/>
+  処理にかかる時間を計測する・呼び出しで開始したタイマーを停止する<br/>
+  <i>処理時間を知りたいときに、この2つのメソッドを併用します。</i>
+</p>
+<p>
+  <font>console<code class="red">.table()</code></font><br/>
+  表形式のデータを表として表示するメソッド<br/>
+  <i>配列やオブジェクトを自動的に表形式にします。</i>
+</p>
+<p>
+  <font>console<code class="red">.count()</code></font><br/>
+  実際に呼び出した回数を記録するメソッド<br/>
+  <i>ループ内で使用して、特定の値が実行された回数を確認できます。</i>
+</p>
+<p>
+  <font>console<code class="red">.clear()</code></font><br/>
+  実行環境が許可すれば、コンソールを消去するメソッド<br/>
+  <i>端末上に表示されているコンソールには、対応しておらず、何も効果がありません（エラーも発生しません）。</i>
+</p>
+<p>
+  <font>console<code class="red">.error()</code></font><br/>
+  エラーメッセージを出力するメソッド<br/>
+  <i>デフォルトでは、エラーメッセージは赤色で強調表示されます。</i>
+</p>
+<p>
+  <font>console<code class="red">.warn()</code></font><br/>
+  警告メッセージを出力するメソッド<br/>
+  <i>デフォルトでは、警告メッセージは黄色で強調表示されます。</i>
+</p>
+<hr/>
+
+<script src="console.js" defer></script>

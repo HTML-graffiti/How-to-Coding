@@ -1,0 +1,72 @@
+{
+  "title" : "IFRAME EMBED OBJECT",
+  "description" : "埋め込み要素（エンベディッド・コンテンツ）",
+  "author" : "Hypertext Markup Language",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "Twitterカードの種類 (summary | summary_large_image | app | player)",
+  "src" : "ページを代表する画像のURL",
+
+  "contents" : [
+    {
+      "date" : "HTML",
+      "name" : "アンカー要素とID属性",
+      "url" : "/coding/html/href/",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "HTML",
+      "name" : "画像要素",
+      "url" : "/coding/html/images/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "メディア要素",
+      "url" : "/coding/html/media/",
+      "language" : "html",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "埋め込みコンテンツ",
+      "name" : "iframe要素・embed要素・object要素",
+      "url" : "https://momdo.github.io/html/embedded-content.html",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "From object to iframe",
+      "name" : "object から iframe まで — その他の埋め込み技術",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "iframe",
+      "name" : "インラインフレーム要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/iframe",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "embed",
+      "name" : "埋め込み外部コンテンツ要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/embed",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "object",
+      "name" : "外部オブジェクト要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/object",
+      "language" : "html",
+      "status" : "guide"
+    }
+  ]
+}

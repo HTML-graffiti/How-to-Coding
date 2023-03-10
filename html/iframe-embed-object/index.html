@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../elements.css" />
+  <link rel="stylesheet" href="../../readme/style.css" />
+  <style>
+
+  a[href*="one"]::before  {
+    content: '<iframe>';
+    text-transform: uppercase;
+  }
+
+  a[href*="two"]::before  {
+    content: '<embed>';
+    text-transform: uppercase;
+  }
+
+  a[href*="three"]::before  {
+    content: '<object>';
+    text-transform: uppercase;
+  }
+
+  a[href*="four"]::before  {
+    content: 'ETC.';
+    text-transform: uppercase;
+  }
+
+  #contents::before {
+    content:'関連記事';
+    font-size: 90%;
+  }
+
+  #links::before {
+    content:'参考資料';
+    font-size: 75%;
+  }
+
+  #contents::before,
+  #links::before {
+    display: block;
+    text-decoration: underline;
+    margin: 0.5rem 0.25rem;
+  }
+
+  section:target,
+  section:target font,
+  section:target .blue {
+    color: #fff;
+    border-color: #fff;
+    background: #FF0000;
+  }
+
+  section:target a,
+  section:target #contents a,
+  section:target #links a {
+    color: #fff;
+  }
+
+  iframe,
+  object {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  #template {
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    padding: 7.5rem 2.5rem 2.5rem;
+    min-height: 100vh;
+  }
+
+  #lastModified {
+    font-family: "ipag", monospace;
+    text-align: right;
+    line-height: 125%;
+    word-break: break-word;
+  }
+
+  footer {
+    position: relative;
+    min-height: 95vh;
+  }
+
+  footer aside {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  footer aside {
+    max-width: 1000px;
+  }
+
+  @media screen and (max-width: 820px) {
+
+    #template {
+      font-size: 3.21vw;
+      padding: 20% 2.5% 5%;
+    }
+
+  }
+
+  </style>
+</head>
+<body>
+  <nav id="nav">
+    <a href="#one"></a>
+    <a href="#two"></a>
+    <a href="#three"></a>
+    <a href="#four"></a>
+  </nav>
+
+  <header id="template">
+    <iframe class="iframe" srcdoc="<<font>iframe</font>><<font>/iframe</font>>"></iframe>
+    <object class="object">
+      <embed class="embed"></embed>
+    </object>
+  </header>
+
+  <article class="readme">
+    <h2>埋め込み要素（エンベディッド・コンテンツ）</h2>
+    <p>
+      様々な種類のコンテンツをウェブページに埋め込むことができる要素
+    </p>
+    <p><u>iframe は他のウェブページを埋め込むためのもので、他の 2 つの要素は PDF ファイルのような外部リソースを埋め込むことができます。</u></p>
+    <br/>
+    <p id="lastModified"></p>
+  </article>
+  <hr/>
+  <article>
+    <section id="one"></section>
+    <hr/>
+    <section id="two"></section>
+    <hr/>
+    <section id="three"></section>
+    <hr/>
+    <section id="four">
+      <article class="readme">
+        <h3>
+          <font>CSS でのスタイル付け</font>
+        </h3>
+        <p>
+          <font color="blue"><a href="/coding/css/boxmodel/">padding・margin</a></font>
+          ボックスモデルを指定
+        </p>
+        <p>
+          <font color="blue"><a href="/coding/css/sizing/">width・height</a></font>
+          画像・要素の幅と高さを指定
+        </p>
+        <p>
+          <font color="blue"><a href="/coding/css/borders/">border・border-radius</a></font>
+          境界を指定
+        </p>
+      </article>
+      <footer>
+        <aside id="contents"></aside>
+      </footer>
+      <aside id="links"></aside>
+    </section>
+  </article>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    $("#one").load("iframe.html");
+    $("#two").load("embed.html");
+    $("#three").load("object.html");
+  })
+
+  let lastModified = document.querySelector('#lastModified');
+
+  lastModified.innerHTML =
+  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+  </script>
+</body>
+</html>

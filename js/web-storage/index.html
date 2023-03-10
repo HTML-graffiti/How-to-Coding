@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script type="text/javascript" async>
+
+  document.addEventListener('readystatechange', (event) => {
+    if (event.target.readyState === 'loading') {
+    }
+
+    else if (event.target.readyState === 'interactive') {
+    }
+
+    else if (event.target.readyState === 'complete') {
+      titleH1 = document.querySelector('#cover h1');
+      titleH1.textContent = 'Web Storage API';
+    }
+  });
+
+  </script>
+
+  <script src="../readme/index.js" async></script>
+
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../readme/style.css" />
+</head>
+<body>
+
+  <article class="readme">
+    <aside id="contents"></aside>
+    <section id="cover" class="active cover">
+      <h1></h1>
+      <form>
+        <p>
+          <label for="bgcolor">Choose background color:</label>
+          <select class="color" id="bgcolor"></select>
+        </p>
+        <p>
+          <label for="bgcolor">Choose color:</label>
+          <select class="color" id="color"></select>
+        </p>
+      </form>
+    </section>
+  </article>
+
+  <aside id="links"></aside>
+
+  <script type="text/javascript">
+
+  const newColorAll = document.querySelectorAll('#cover, #contents a, #links a');
+  for (const newColor of newColorAll) {
+    newColor.classList.add("color")
+  }
+
+  </script>
+
+  <script src="script.js" defer></script>
+  <script src="jscolor.js"></script>
+</body>
+</html>

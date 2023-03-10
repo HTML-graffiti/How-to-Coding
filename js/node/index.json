@@ -1,0 +1,51 @@
+{
+  "title" : "Node",
+  "description" : "",
+  "author" : "JavaScript",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+  ],
+
+  "links" : [
+    {
+      "date" : "Document Object Model",
+      "name" : "Node",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Node",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "NodeList",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/NodeList",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "NodeIterator",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/NodeIterator",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document",
+      "name" : ".createTextNode()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/createTextNode",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document",
+      "name" : ".adoptNode()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/adoptNode",
+      "language" : "js",
+      "status" : "guide"
+    }
+  ]
+}

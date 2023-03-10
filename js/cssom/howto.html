@@ -1,0 +1,58 @@
+<h2>
+  <i>CSS Object Model</i><br/>
+  StyleSheet / CSSStyleSheet
+</h2>
+<p>ドキュメント内のスタイルシートを取得・操作、スタイルシート内のCSSルールを取得する</p>
+<hr/>
+<pre>
+const result = document.querySelector('#result');
+
+// ドキュメント内の スタイルシート の数を取得
+for ( let i = 0; i < <font class="red">document.styleSheets</font>.length; i++ ) {
+
+
+  //各スタイルシートの情報 を 変数 styleSheet に格納
+  let styleSheet = <font>document.styleSheets[i]</font>;
+
+  let cssom = document.createElement('details');
+  let sheets = document.createElement('summary');
+
+
+   // スタイルシート言語を表す文字列
+
+   sheets.innerHTML = `
+
+    <i>type</i> ${<font class="red">styleSheet.type</font>}<br/>
+    <i>ownerNode</i> ${<font class="red">styleSheet.ownerNode</font>} // スタイルシートを現在の文書に関連付けているノード<br/>
+    <i>disabled</i> ${<font class="red">styleSheet.disabled</font>} // スタイルシートの適用・不適用を示す論理値 (true/false)<br/>
+    <i>title</i> ${<font class="red">styleSheet.title</font>} // スタイルシートのアドバイザリータイトル<br/>
+    <i>href</i> ${<font class="red">styleSheet.href</font>} // スタイルシートの場所<br/>
+    <i>media</i> ${<font class="red">styleSheet.media</font>} // スタイル情報の対象となる出力先メディア<br/>
+    <i>parentStyleSheet</i> ${<font class="red">styleSheet.parentStyleSheet</font> // 指定されたスタイルシートをインクルードしている場合のスタイルシート}
+
+  `;
+
+
+  // スタイルシートの適用・不適用 を操作する
+
+  cssom.addEventListener("toggle", event => {
+    if (<font class="red">cssom.open</font>) {
+      styleSheet.disabled = <font class="red">true</font>;
+    } else {
+      styleSheet.disabled = <font class="red">false</font>;
+    }
+  });
+
+
+  // スタイルシート内のすべての CSS ルール を取得
+  for ( let ii = 0; ii < styleSheet.<font class="red">cssRules</font>.length; ii++ ) {
+
+    // スタイルルールの 実際のテキスト を取得
+    cssom.innerHTML += `${styleSheet.cssRules[ii].<font class="red">cssText</font>}`;
+  }
+
+  result.append(cssom);
+  cssom.prepend(sheets);
+}
+
+</pre>

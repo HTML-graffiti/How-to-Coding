@@ -1,0 +1,737 @@
+.doctype::after {
+  content: '<!DOCTYPE html>';
+  display: block;
+  clear: both;
+}
+
+.HTMLcomments::before {
+  content: '<!-- ';
+}
+
+.HTMLcomments::after {
+  content: ' -->';
+}
+
+.html::before {
+  content: '<html ';
+}
+
+.html::after {
+  content: '</html>';
+}
+
+.head::before {
+  content: '<head>';
+}
+
+.head::after {
+  content: '</head>';
+}
+
+.title::before {
+  content: '<title>';
+}
+
+.title::after {
+  content: '</title>';
+}
+
+.meta::before {
+  content: '<meta ';
+}
+
+.meta::after {
+  content: '>';
+}
+
+.base::before {
+  content: '<base ';
+}
+
+.base::after {
+  content: '>';
+}
+
+.link::before {
+  content: '<link ';
+}
+
+.link::after {
+  content: '>';
+}
+
+.stylesheet::before {
+  content: '<style>';
+  display: block;
+}
+
+.stylesheet::after {
+  content: '</style>';
+  display: block;
+}
+
+.script::before {
+  content: '<script ';
+}
+
+.script_tag::before {
+  content: '<script>';
+}
+
+.script::after,
+.script_tag::after {
+  content: '</script>';
+}
+
+.noscript::before {
+  content: '<noscript ';
+}
+
+.noscript_tag::before {
+  content: '<noscript>';
+}
+
+.noscript::after,
+.noscript_tag::after {
+  content: '</noscript>';
+}
+
+.body::before {
+  content: '<body>';
+}
+
+.body_tag::before {
+  content: '<body ';
+}
+
+.body::after,
+.body_tag::after {
+  content: '</body>';
+}
+
+.article::before {
+  content: '<article>';
+}
+
+.article_tag::before {
+  content: '<article ';
+}
+
+.article::after,
+.article_tag::after {
+  content: '</article>';
+}
+
+.aside::before {
+  content: '<aside>';
+}
+
+.aside_tag::before {
+  content: '<aside ';
+}
+
+.aside::after,
+.aside_tag::after {
+  content: '</aside>';
+}
+
+.nav::before {
+  content: '<nav>';
+}
+
+.nav_tag::before {
+  content: '<nav ';
+}
+
+.nav::after,
+.nav_tag::after {
+  content: '</nav>';
+}
+
+.section::before {
+  content: '<section>';
+}
+
+.section_tag::before {
+  content: '<section ';
+}
+
+.section::after,
+.section_tag::after {
+  content: '</section>';
+}
+
+.h1::before {
+  content: '<h1>';
+}
+
+.h1_tag::before {
+  content: '<h1 ';
+}
+
+.h1::after,
+.h1_tag::after {
+  content: '</h1>';
+}
+
+.h2::before {
+  content: '<h2>';
+}
+
+.h2::after {
+  content: '</h2>';
+}
+
+.h3::before {
+  content: '<h3>';
+}
+
+.h3::after {
+  content: '</h3>';
+}
+
+.h4::before {
+  content: '<h4>';
+}
+
+.h4::after {
+  content: '</h4>';
+}
+
+.h5::before {
+  content: '<h5>';
+}
+
+.h5::after {
+  content: '</h5>';
+}
+
+.h6::before {
+  content: '<h6>';
+}
+
+.h6::after {
+  content: '</h6>';
+}
+
+.iframe::before {
+  content: '<iframe>';
+}
+
+.iframe_tag::before {
+  content: '<iframe ';
+}
+
+.iframe::after,
+.iframe_tag::after {
+  content: '</iframe>';
+}
+
+.embed::before {
+  content: '<embed>';
+}
+
+.embed_tag::before {
+  content: '<embed ';
+}
+
+.embed::after,
+.embed_tag::after {
+  content: '</embed>';
+}
+
+.object::before {
+  content: '<object>';
+}
+
+.object_tag::before {
+  content: '<object ';
+}
+
+.object::after,
+.object_tag::after {
+  content: '</object>';
+}
+
+.details::before {
+  content: '<details>';
+}
+
+.details::after {
+  content: '</details>';
+}
+
+.summary::before {
+  content: '<summary>';
+}
+
+.summary::after {
+  content: '</summary>';
+}
+
+.dialog::before {
+  content: '<dialog>';
+}
+
+.dialog::after {
+  content: '</dialog>';
+}
+
+.picture::before {
+  content: '<picture>';
+  display: block;
+}
+
+.picture_tag::before {
+  content: '<picture ';
+}
+
+.picture::after,
+.picture_tag::after {
+  content: '</picture>';
+  display: block;
+}
+
+.img_element::before {
+  content: '<img';
+}
+
+.img_element::after {
+  content: '>';
+}
+
+.source_element::before {
+  content: '<source';
+}
+
+.source_element::after {
+  content: '>';
+}
+
+.figure::before {
+  content: '<figure>';
+}
+
+.figure::after {
+  content: '</figure>';
+}
+
+.figcaption::before {
+  content: '<figcaption>';
+}
+
+.figcaption::after {
+  content: '</figcaption>';
+}
+
+.video_element::before {
+  content: '<video';
+}
+
+.video_element::after {
+  content: '</video>';
+}
+
+.audio_element::before {
+  content: '<audio';
+}
+
+.audio_element::after {
+  content: '</audio>';
+}
+
+.track_element::before {
+  content: '<track';
+}
+
+.track_element::after {
+  content: '>';
+}
+
+.map_element::before {
+  content: '<map>';
+  display: block;
+}
+
+.map_element::after {
+  content: '</map>';
+  display: block;
+}
+
+.area_element::before {
+  content: '<area';
+}
+
+.area_element::after {
+  content: '>';
+}
+
+.p_tag::before {
+  content: '<p ';
+}
+
+.p_element::before {
+  content: '<p>';
+}
+
+.p_tag::after,
+.p_element::after {
+  content: '</p>';
+}
+
+.a_element::before {
+  content: '<a href="';
+}
+
+.a_tag::before {
+  content: '<a>';
+}
+
+.a_tag::after,
+.a_element::after {
+  content: '</a>';
+}
+
+.em_element::before {
+  content: '<em>';
+}
+
+.em_element::after {
+  content: '</em>';
+}
+
+.strong_element::before {
+  content: '<strong>';
+}
+
+.strong_element::after {
+  content: '</strong>';
+}
+
+.small_element::before {
+  content: '<small>';
+}
+
+.small_element::after {
+  content: '</small>';
+}
+
+.address::before {
+  content: '<address>';
+}
+
+.address::after {
+  content: '</address>';
+}
+
+.blockquote::before {
+  content: '<blockquote>';
+}
+
+.blockquote::after {
+  content: '</blockquote>';
+}
+
+.q_element::before {
+  content: '<q>';
+}
+
+.q_element::after {
+  content: '</q>';
+}
+
+.cite_element::before {
+  content: '<cite>';
+}
+
+.cite_element::after {
+  content: '</cite>';
+}
+
+.abbr_element::before {
+  content: '<abbr>';
+}
+
+.abbr_element::after {
+  content: '</abbr>';
+}
+
+.dfn_element::before {
+  content: '<dfn>';
+}
+
+.dfn_element::after {
+  content: '</dfn>';
+}
+
+.mark_element::before {
+  content: '<mark>';
+}
+
+.mark_element::after {
+  content: '</mark>';
+}
+
+.sup_element::before {
+  content: '<sup>';
+}
+
+.sup_element::after {
+  content: '</sup>';
+}
+
+.sub_element::before {
+  content: '<sub>';
+}
+
+.sub_element::after {
+  content: '</sub>';
+}
+
+.i_element::before {
+  content: '<i>';
+}
+
+.i_tag::before {
+  content: '<i ';
+}
+
+.i_element::after,
+.i_tag::after {
+  content: '</i>';
+}
+
+.b_element::before {
+  content: '<b>';
+}
+
+.b_tag::before {
+  content: '<b ';
+}
+
+.b_element::after,
+.b_tag::after {
+  content: '</b>';
+}
+
+.u_element::before {
+  content: '<u>';
+}
+
+.u_tag::before {
+  content: '<u ';
+}
+
+.u_tag::after,
+.u_element::after {
+  content: '</u>';
+}
+
+.s_element::before {
+  content: '<s>';
+}
+
+.s_element::after {
+  content: '</s>';
+}
+
+.form_element::before {
+  content: '<form>';
+  display: block;
+}
+
+.form_element::after {
+  content: '</form>';
+  display: block;
+}
+
+.select_element::before {
+  content: '<select>';
+}
+
+.select_tag::before {
+  content: '<select ';
+}
+
+.select_element::after,
+.select_tag::after {
+  content: '</select>';
+}
+
+.del::before {
+  content: '<del>';
+}
+
+.del::after {
+  content: '</del>';
+}
+
+.ins::before {
+  content: '<ins>';
+}
+
+.ins::after {
+  content: '</ins>';
+}
+
+.pre::before {
+  display: block;
+  content: '<pre>';
+}
+
+.pre::after {
+  content: '</pre>';
+}
+
+.code::before {
+  content: '<code>';
+}
+
+.code::after {
+  content: '</code>';
+}
+
+.var::before {
+  content: '<var>';
+}
+
+.var::after {
+  content: '</var>';
+}
+
+.kbd::before {
+  content: '<kbd>';
+}
+
+.kbd::after {
+  content: '</kbd>';
+}
+
+.samp::before {
+  content: '<samp>';
+}
+
+.samp::after {
+  content: '</samp>';
+}
+
+.data::before {
+  content: '<data value="';
+}
+
+.data::after {
+  content: '</data>';
+}
+
+.time::before {
+  content: '<time datetime="';
+}
+
+.time::after {
+  content: '</time>';
+}
+
+.main_element::before {
+  content: '<main>';
+}
+
+.main::before {
+  content: '<main ';
+}
+
+.main_element::after,
+.main::after {
+  content: '</main>';
+}
+
+.header_element::before {
+  content: '<header>';
+}
+
+.header::before {
+  content: '<header ';
+}
+
+.header_element::after,
+.header::after {
+  content: '</header>';
+}
+
+.footer_element::before {
+  content: '<footer>';
+}
+
+.footer::before {
+  content: '<footer ';
+}
+
+.footer_element::after,
+.footer::after {
+  content: '</footer>';
+}
+
+.div_element::before {
+  content: '<div>';
+  display: block;
+}
+
+.div_element::after {
+  content: '</div>';
+  display: block;
+}
+
+.span_element::before {
+  content: '<span>';
+}
+
+.span_element::after {
+  content: '</span>';
+}
+
+.ol_element::before {
+  content: '<ol>';
+}
+
+.ol_element::after {
+  content: '</ol>';
+}
+
+.ul_element::before {
+  content: '<ul>';
+}
+
+.ul_element::after {
+  content: '</ul>';
+}
+
+.li_element::before {
+  content: '<li>';
+}
+
+.li_element::after {
+  content: '</li>';
+}
+
+.dl_element::before {
+  content: '<dl>';
+}
+
+.dl_element::after {
+  content: '</dl>';
+}
+
+.dt_element::before {
+  content: '<dt>';
+}
+
+.dt_element::after {
+  content: '</dt>';
+}
+
+.dd_element::before {
+  content: '<dd>';
+}
+
+.dd_element::after {
+  content: '</dd>';
+}

@@ -1,0 +1,68 @@
+
+<hgroup>
+  <h2><code>::marker</code></h2>
+  <p>リスト項目の箇条書き記号ボックスを選択</p>
+  <p><i>::marker 擬似要素では、一部の CSS プロパティのみが利用できます。</i></p>
+</hgroup>
+<pre>
+ul {
+  list-style: inside "👍";
+}
+
+li::marker {
+  font-size: 200%;
+}
+</pre>
+<p style="text-align:center;">~~~</p>
+<br/>
+<div class="details">
+  <h3>details.open</h3>
+  <p>details 要素の開閉状態が変化するたびに イベント を実行</p>
+  <pre>
+const detailsAll = document.querySelectorAll('details')
+
+for (const details of detailsAll) {
+  details.addEventListener("toggle", (event) => {
+    if (details.open) {
+      * 要素が開いた方に切り替わった */
+    } else {
+      /* 要素が閉じた方に切り替わった */
+    }
+  });
+};
+  </pre>
+  <br/>
+  <hgroup>
+    <p>summary::-webkit-details-marker {}</p>
+    <h3>summary の 矢印をカスタマイズする</h3>
+  </hgroup>
+  <pre>
+summary {
+  cursor: pointer;
+  display: block;
+}
+
+/* デフォルトの矢印を消す */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* 疑似要素でアイコンを表示 */
+summary::before {
+  content: "→";
+  display: inline-block;
+  background-color: #000;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 150%;
+  padding: 0.25rem 0.5rem;
+  margin: 0.5rem;
+  transition: 0.5s;
+}
+
+/* オープン時 */
+details[open] summary::before {
+  transform: rotate(90deg); /* 90度回転 */
+}
+  </pre>
+</div>

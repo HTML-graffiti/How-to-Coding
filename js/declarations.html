@@ -1,0 +1,94 @@
+<h2>
+  <i>何か面白いプログラミングをするには</i>
+  <code>変数・定数</code>
+  <i>を</i>
+  <code>宣言（定義）</code>
+  <i>する必要があります。</i>
+</h2>
+<p>
+  <code>変数・定数</code> を宣言することで、
+  それらの
+  <code>値</code> を動的に操作し、ウェブサイトに対話性を追加することができます。
+</p>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>変数は、データのための <code>名前付けされた格納場所</code> です。</p>
+<font>let <code class="red">変数名</code>;</font>
+<p>
+  let というキーワードと、任意の名前（変数名）を指定して、変数を宣言します。<br/>
+  <i>変数名には、文字・数字・$・_ のみが使用でき、最初の文字は数字であってはいけません。</i>
+</p>
+<hr/>
+<p><font>let 変数名 <code class="red">= 値</code>;</font></p>
+<p>
+  変数には、<code class="red">=</code> (代入演算子) を使って、値（初期化子）を格納できます。<br/>
+  初期化子が設定されていない場合は、undefined という値が代入されます。
+</p>
+<hr/>
+<p>
+  例) <br/>
+  <font>
+    let
+    <code class="red">hello = 'Hello, ',</code> // 変数名 hello に、値（文字列）Hello, を格納<br/>
+    <code class="red">userName = 'World';</code> // 変数名 userName に値（文字列）World を格納<br/>
+  </font>
+  // 可読性のため、1変数1行にしてください。
+</p>
+<p>
+  <font>
+    let
+    <code class="red">message = hello + userName + '!'</code>;
+  </font>
+</p>
+<p>
+  変数（変数名と値の組）を、<code class="red">,</code> (カンマ) で区切り、複数の変数を宣言することもできます。<br/>
+  また、変数の値に変数名を使用して、他の変数の値を変数に代入 ・
+  <code class="red">+</code> (加算演算子) を使って 変数の値 を結合することができます。<br/>
+  <i>
+    <code class="red">""</code>・
+    <code class="red">''</code>・
+    <code class="red">``</code>・
+    (引用符・クォーテーション) で囲まれた値は、文字列と判断されるため、
+    誤って 変数名 を 引用符 で囲んだ場合は、値が代入されません。
+  </i>
+</p>
+<hr/>
+
+<p style="text-align: center;">/* ~~~ */</p>
+<h3>
+  let の代わりに var<br/>
+  <i>キーワード var は let と ほとんど 一緒ですが、微妙な違いがあります。</i>
+</h3>
+<p>
+  古いスクリプトでは、let の代わりに <code>var</code> を使って変数を作っていました。<br/>
+</p>
+
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>
+  定数は、変更することが出来ない（変更されるべきでない）
+  <code>読み取り専用の名前付き情報</code>
+  です。
+</p>
+<h3>
+  定数を作るには、 let の代わりに
+  <code>const</code>
+  キーワードを使います。
+</h3>
+<hr/>
+<p>
+  例) <br/>
+  <font>const <code class="red">TITLE</code></font> = ' | How to Coding',<br/>
+  <font><code class="red">titleH1</code></font> = <code>document.querySelector('h1')</code>;
+</p>
+<p>
+  定数名のすべてを大文字にし、その値が決して変わらないことを強く示す慣習は広く行われています。<br/>
+  略語や短い名前は避け、分かりやすい名前を設定してください。
+</p>
+<p>
+  定数には、常に初期化子が必要です。
+  <i>undefined で初期化することは、おそらくプログラマーのミスです。</i>
+</p>
+<hr/>

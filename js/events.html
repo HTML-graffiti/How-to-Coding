@@ -1,0 +1,199 @@
+<h2>
+  <code class="red">.Function (関数)</code><br/>
+  <i>関数は、利用したい機能をパッケージ化する方法です。</i>
+</h2>
+<p>
+  関数名(alert・prompt・promptなど)を使って命令を呼び出したり、必要な処理をまとめて関数を定義(命令)・機能をパッケージ化することができます。<br/>
+  <i>もし変数名に見えるものがあったとしても、その後に括弧 <code class="red">()</code> が付いていれば、おそらくそれは関数です。</i>
+</p>
+<hr/>
+<h3>ユーザーと対話するためにダイアログを呼び出す関数</h3>
+<p>これらは、関数名と引数のみで命令を実行できる特殊な関数です。</p>
+<hr/>
+<p>
+  <font><code class="red">alert(引数)</code>; <i>任意のメッセージを含むアラートを呼び出す関数</i></font>
+</p>
+<p>() の中に記述した引数が、メッセージとして表示され、OKがクリックされるとダイアログが閉じられます。</p>
+<hr/>
+<p>
+  <font><code class="red">prompt(引数)</code>; <i>メッセージ・入力フィールド・OK/CANCEL ボタンを持つダイアログを呼び出す関数</i></font>
+</p>
+<p>
+  () の中に記述した引数が、メッセージとして表示され、<code class="red">,</code> (カンマ) に続く次の引数が、入力フィールドの初期値として表示されます。<br/>
+  テキストが入力された場合は その値、未入力・キャンセル が押された場合は <code class="red">null</code> の値を返します。
+</p>
+<hr/>
+<p>
+  <font><code class="red">confirm(引数)</code>; <i>質問 と OK/CANCEL ボタンを持つモーダルウィンドウをダイアログを呼び出す関数</i></font>
+</p>
+<p>() の中に記述した引数が、質問として表示され、OK が押された場合は <code class="red">true</code>、CANCEL の場合は <code class="red">false</code> の値を返します。</p>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>
+  <font>関数</font>は、
+  <code class="red">function</code> と、それに続く <code class="red">引数と定義</code>
+  または、
+  <code class="red">=></code> と、<code class="red">引数と定義</code>
+  で構成されます。
+</p>
+<hr/>
+<p>
+  // 関数式<br/>
+  <font><code class="red">function (引数)</code> {定義(命令文)}</font><br/>
+  <i><code class="red">function</code> キーワードは、式の中で関数を定義するために使用されます。</i>
+</p>
+<p>
+  // アロー関数式<br/>
+  <font><code class="red">(引数) =></code> {定義(命令文)}</font><br/>
+  <i>アロー <code class="red">=></code> キーワード は、従来の 関数式の簡潔な代替構文ですが、制限があり、すべての場面で使用することができるわけではできません。</i>
+</p>
+<hr/>
+<p>
+  <font class="red">引数</font>(パラメーター) は、関数に渡される値(プリミティブまたはオブジェクト)です。
+  複数の引数がある場合はカンマ <code class="red">,</code> で区切ります。
+</p>
+<hr/>
+<p>
+  作成した関数を呼び出すために、
+  <code class="red">()</code> の前に
+  <font>関数名</font>
+  を付けることができます。<br/>
+  <font>function <code class="red">関数名</code>() { }</font>
+</p>
+<p>
+  <i>
+    アロー関数式の場合は、変数・定数と組み合わせて 関数名を付けます。<br/>
+    <font><code class="red">let 関数名 = </code>() => { }</font>
+  </i>
+</p>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>
+  ウェブサイトに対話性を追加するには、イベントが必要です。<br/>
+  <i>イベントは、ブラウザーの中で起きていることを検出し、その応答としてコードを実行するコード構造です。</i>
+</p>
+<h3>
+  最も分かりやすい例は
+  <code class="red">click イベント</code><br/>
+  要素がクリックされると、JavaScriptが実行されます。
+</h3>
+<hr/>
+<p>
+  EventTarget<font><code class="red">.addEventListener('click'</code>, 関数名)</font>
+</p>
+<p><code class="red">.addEventListener()</code> は、要素（ターゲット）にイベントを追加する関数です。</p>
+<p>引数（パラメーター）の値に、<code class="red">('click', 関数名)</code>を記述して、クリックイベントを設定します。</p>
+<hr/>
+<p>
+  <font>a・input・button</font> などの要素は、<code class="red">onclick属性</code>を使って <code class="red">click イベント</code> を実行できます。<br/>
+  <i>ダブルクリックでイベントを実行する場合は、<font>ondblclick属性</font> を使用します。</i>
+</p>
+<button onclick="alert( message );">button onclick="関数名()"</button>
+<button ondblclick="alert( message );">button ondblclick="関数名()"</button>
+<p>
+  要素をクリック（ダブルクリック）すると、
+  <code class="red">onclick</code>・
+  <code class="red">ondblclick</code>
+  属性の値に設定した、関数名()
+  が、クリックイベントとして実行されます。
+</p>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+
+<p>
+  EventTarget<font>.addEventListener (<code class="red">'click'</code>, event  => {</font>
+</p>
+<p><code>/* JavaScript を記述 */</code></p>
+<p><font>})</font></p>
+
+<p>
+  .addEventListener の 引数（パラメーター）の値に
+  <code class="red">関数</code>
+  を記述して、クリックイベントを設定することもできます。
+</p>
+<hr/>
+
+<p>
+  /* 例) #count button を 連続してクリックした回数を取得する */
+</p>
+<h3 id="count">
+  <button>#count button</button>
+  <code><font></font></code>
+</h3>
+
+<pre class="script"> type="text/javascript">
+
+'use strict'
+
+let click = document.<code class="red">querySelector</code>('#count button')
+let count = document.<code class="red">querySelector</code>('#count font')
+
+click<font>.addEventListener(<code class="red">'click'</code>, event =></font> {
+  count.textContent = <font color="red">event.detail</font>
+})
+
+</pre>
+
+<p>クリックとクリックの間隔が極めて短い場合、ダブルクリックやトリプルクリックのように扱われます。</p>
+
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>
+  EventTarget<font><code class="red">.onclick</code> = <code class="red">function()</code> {</font>
+</p>
+<p><code>/* JavaScript を記述 */</code></p>
+<p><font>}</font></p>
+<p>
+  その他にも、キーワード
+  <code class="red">.onclick</code>
+  を使って、クリックイベントを実行できます。
+</p>
+<hr/>
+<p>
+  /* 例) button#hello を クリックしたらアラートを呼び出す */
+</p>
+<button id="hello">button#hello</button>
+
+<pre class="script">type="text/javascript">
+
+'use strict'
+
+const userName = <code class="red">'World'</code>,
+hello = <code class="red">"Hello, "</code>;
+
+const message = <code class="red">`${hello + userName}!`</code>;
+
+
+<code>document.querySelector('button#hello')</code><font><code class="red">.onclick</code> = function()</font> {
+  <font><code class="red">alert</code>( message )</font> ;
+}
+
+</pre>
+
+<hr/>
+
+<script type="text/javascript" defer>
+
+  'use strict'
+
+  const userName = 'World',
+  hello = "Hello, ";
+
+  const message = `${hello + userName}!`;
+
+  document.querySelector('button#hello').onclick = function() {
+    alert( message );
+  }
+
+  let click = document.querySelector('#count button');
+  let count = document.querySelector('#count font');
+
+  click.addEventListener('click', event => {
+    count.textContent = event.detail;
+  });
+
+</script>

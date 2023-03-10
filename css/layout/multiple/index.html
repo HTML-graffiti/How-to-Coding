@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="../../../readme/style.css" />
+  <link rel="stylesheet" href="../../pseudo-classes/lightbox.css" />
+  <style type="text/css">
+
+  code {
+    font-size: 125%;
+  }
+
+  #contents::before {
+    content:'関連記事';
+    font-size: 90%;
+  }
+
+  #links::before {
+    content:'参考資料';
+    font-size: 75%;
+  }
+
+  code,
+  pre,
+  #lastModified,
+  #contents::before,
+  #links::before {
+    font-family: "ipag", monospace;
+  }
+
+  #contents::before,
+  #links::before {
+    text-decoration: underline;
+    display: block;
+    margin: 0.5rem 0.25rem;
+  }
+
+  #lastModified {
+    line-height: 125%;
+    word-break: break-word;
+  }
+
+  </style>
+
+</head>
+<body>
+  <nav>
+    <p>
+      <a href="#columns">段組みレイアウト</a>
+    </p>
+    <p>
+      <a href="#etc">関連記事</a>
+    </p>
+  </nav>
+
+  <article id="multiple"></article>
+
+  <article class="lightbox" id="columns">
+    <a href="#" class="close"></a>
+    <section id="howto" class="readme translate_center"></section>
+  </article>
+
+  <aside class="lightbox" id="etc">
+    <a href="#" class="close"></a>
+    <section id="contents" class="translate_center"></section>
+    <section id="links" class="fixed_bottom"></section>
+  </aside>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    $("#multiple").load("sample.html");
+    $("#howto").load("howto.html");
+  })
+  </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+{
+  "title" : "EventTarget",
+  "description" : "",
+  "author" : "JavaScript",
+  "email" : "pehu@creative-community.space",
+  "type" : "website",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "___",
+
+  "contents" : [
+    {
+      "date" : "JavaScript",
+      "name" : "JavaScriptの基本",
+      "url" : "/coding/js/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "文と宣言",
+      "url" : "/coding/js/statements/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "ドキュメントオブジェクトモデル",
+      "url" : "/coding/js/document/",
+      "language" : "api",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS Object Model",
+      "name" : "CSS オブジェクトモデル",
+      "url" : "/coding/js/cssom/",
+      "language" : "api",
+      "status" : "basic"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "Event reference",
+      "name" : "イベントリファレンス",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/Events",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Introduction to events",
+      "name" : "イベントへの入門",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/JavaScript/Building_blocks/Events",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "Event",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Event",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Web API",
+      "name" : "UIEvent",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/UIEvent",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "EventTarget",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/EventTarget",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document",
+      "name" : ".readyState",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/readyState",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document",
+      "name" : "readystatechange イベント",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/readystatechange_event",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document",
+      "name" : "DOMContentLoaded イベント",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/DOMContentLoaded_event",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Window",
+      "name" : "load イベント",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/load_event",
+      "language" : "js",
+      "status" : "guide"
+    }
+  ]
+}

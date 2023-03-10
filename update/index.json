@@ -1,0 +1,436 @@
+{
+  "title" : "How to Coding",
+  "description" : "How to Coding | creative-community.space",
+  "author" : "creative-community.space",
+  "email" : "pehu@creative-community.space",
+  "type" : "website",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "___",
+
+  "contents" : [
+    {
+      "date" : "Hypertext Markup Language",
+      "name" : "HTMLの基本",
+      "url" : "/coding/html/",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "Hypertext Markup Language",
+      "name" : "HEAD | 文書メタデータ (ヘッダー) 要素",
+      "url" : "/coding/html/head/",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "Hypertext Markup Language",
+      "name" : "BODY | 文書の本文要素",
+      "url" : "/coding/html/body/",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "Hypertext Markup Language",
+      "name" : "Attributes | 属性",
+      "url" : "/coding/html/attributes/",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "Hypertext Markup Language",
+      "name" : "A & ID | アンカー要素とID属性",
+      "url" : "/coding/html/href/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "CSSの基本",
+      "url" : "/coding/css/",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "Selectors | CSS セレクター",
+      "url" : "/coding/css/selectors/",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "The Box Model | ボックスモデル",
+      "url" : "/coding/css/boxmodel/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "Width & Height | 幅と高さ",
+      "url" : "/coding/css/sizing/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Hypertext Markup Language",
+      "name" : "Text | テキストの基礎",
+      "url" : "/coding/html/text/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "Styling Text | テキストの装飾",
+      "url" : "/coding/css/text/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "Font Styling | フォントの指定",
+      "url" : "/coding/css/fonts/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "Writing Mode | 文字表記の方向",
+      "url" : "/coding/css/text/writing-mode/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Hypertext Markup Language",
+      "name" : "Advanced Text | 高度なテキスト整形",
+      "url" : "/coding/html/text/advanced/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "Colors | 色",
+      "url" : "/coding/css/colors/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "Backgrounds | 背景",
+      "url" : "/coding/css/backgrounds/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "Borders | 枠線",
+      "url" : "/coding/css/boxmodel/borders/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Hypertext Markup Language",
+      "name" : "Sectioning Content | 区分要素",
+      "url" : "/coding/html/sectioning/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Hypertext Markup Language",
+      "name" : "Heading Content | 見出し要素",
+      "url" : "/coding/html/heading/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Hypertext Markup Language",
+      "name" : "Grouping Content | グループ化要素",
+      "url" : "/coding/html/grouping/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Hypertext Markup Language",
+      "name" : "Listing Content | リスト要素",
+      "url" : "/coding/listing/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "CSS layout | CSS レイアウト",
+      "url" : "/coding/css/layout/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "Flexbox | フレックスボックス",
+      "url" : "/coding/css/layout/flexbox/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "Grid Layout | グリッドレイアウト",
+      "url" : "/coding/css/layout/grid/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "Multiple-column | 段組みレイアウト",
+      "url" : "/coding/css/layout/multiple/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "Pseudo-classes | 擬似クラス",
+      "url" : "/coding/css/pseudo-classes/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : ":*-child :*-type | 擬似クラス",
+      "url" : "/coding/css/pseudo-classes/child-type/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "Pseudo-elements | 擬似要素",
+      "url" : "/coding/css/pseudo-elements/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "JavaScriptの基本",
+      "url" : "/coding/js/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "Statements & Declarations | 文と宣言",
+      "url" : "/coding/js/statements/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "Object & Arrays | オブジェクト・配列",
+      "url" : "/coding/js/object/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "Event | イベントハンドラー",
+      "url" : "/coding/js/event/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "Document | Web API",
+      "url" : "/coding/js/document/",
+      "language" : "api",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "Element | Web API",
+      "url" : "/coding/js/element/",
+      "language" : "api",
+      "status" : "guide"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "MouseEvent | マウスイベント",
+      "url" : "/coding/js/event/mouse/",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "TouchEvent | タッチイベント",
+      "url" : "/coding/js/event/touch/",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Hypertext Markup Language",
+      "name" : "IMG PICTURE | 画像",
+      "url" : "/coding/html/images/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Hypertext Markup Language",
+      "name" : "VIDEO AUDIO | メディア要素",
+      "url" : "/coding/html/media/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Hypertext Markup Language",
+      "name" : "IFRAME EMBED OBJECT | 埋め込み要素",
+      "url" : "/coding/html/iframe-embed-object/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "Window | Web API",
+      "url" : "/coding/js/window/",
+      "language" : "api",
+      "status" : "guide"
+    },
+    {
+      "date" : "Web API",
+      "name" : "Network Information API | ネットワーク情報 API",
+      "url" : "/coding/yourinfo/",
+      "language" : "api",
+      "status" : "tools"
+    },
+    {
+      "date" : "Web API",
+      "name" : "Battery Status API | バッテリー状態 API",
+      "url" : "/coding/js/window/battery.html",
+      "language" : "api",
+      "status" : "tools"
+    },
+    {
+      "date" : "Web API",
+      "name" : "Geolocation API | 位置情報 API",
+      "url" : "/coding/js/window/geolocation.html",
+      "language" : "api",
+      "status" : "tools"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "Scroll & WheelEvent | スクロールとホイールイベント",
+      "url" : "/coding/js/scroll/",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "KeyboardEvent | キーイベント",
+      "url" : "/coding/js/event/key/",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Web API",
+      "name" : "CSS Object Model | CSS オブジェクトモデル",
+      "url" : "/coding/js/cssom/",
+      "language" : "api",
+      "status" : "basic"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "Transform | 回転・拡大縮小・傾斜・移動",
+      "url" : "/coding/css/transform/",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "Hypertext Markup Language",
+      "name" : "DETAILS SUMMARY | 対話的要素",
+      "url" : "/coding/interactive/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Hypertext Markup Language",
+      "name" : "Form-associated Content | フォーム関連要素",
+      "url" : "/coding/form/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Web API",
+      "name" : "MediaStream | Media Capture and Streams API",
+      "url" : "/coding/mediastream/",
+      "language" : "api",
+      "status" : "guide"
+    },
+    {
+      "date" : "Hypertext Markup Language",
+      "name" : "MAP AREA | イメージマップ",
+      "url" : "/coding/html/image-maps/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "CSS Gradients | CSS グラデーション",
+      "url" : "/coding/css/gradients/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "custom properties | CSS カスタムプロパティ",
+      "url" : "/coding/css/custom/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Web API",
+      "name" : "Node | Document Object Model",
+      "url" : "/coding/js/node/",
+      "language" : "api",
+      "status" : "guide"
+    },
+    {
+      "date" : "Web API",
+      "name" : "Online or Offline? | インターネットの交信状態",
+      "url" : "/coding/js/online/",
+      "language" : "api",
+      "status" : "guide"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "JSON | JavaScript Object Notation",
+      "url" : "/coding/js/json/",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Web API",
+      "name" : "Web Storage API | ウェブストレージ",
+      "url" : "/coding/js/web-storage/",
+      "language" : "api",
+      "status" : "guide"
+    },
+    {
+      "date" : "Web API",
+      "name" : "Clipboard API | クリップボード API",
+      "url" : "/coding/js/event/clipboard/",
+      "language" : "api",
+      "status" : "guide"
+    },
+    {
+      "date" : "Web API",
+      "name" : "Drag and Drop API | HTML ドラッグ & ドロップ API",
+      "url" : "/coding/js/event/drag_drop/",
+      "language" : "api",
+      "status" : "guide"
+    },
+    {
+      "date" : "Web API",
+      "name" : "Canvas | 2D および 3D グラフィック",
+      "url" : "/coding/canvas/",
+      "language" : "api",
+      "status" : "guide"
+    }
+  ]
+}

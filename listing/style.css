@@ -1,0 +1,42 @@
+.ulli,
+.olli,
+.ulli b,
+.olli b,
+.dldtdd,
+.dldtdd b,
+code {
+  font-size: 125%;
+}
+
+.ulli li,
+.olli li {
+  border: solid 1px;
+  padding: 5px;
+}
+
+ul li::marker {
+  font-size: 125%;
+}
+
+ol li::marker {
+  font-size: 111%;
+  font-style: italic;
+  font-family: serif;
+}
+
+dd {
+  margin-bottom: 1rem;
+}
+
+.buttons button {
+  color: #000;
+}
+
+#three {
+  counter-reset: sections;
+}
+
+#three p::before {
+  counter-increment: sections;
+  content: "第 " counter(sections, cjk-ideographic) " 章: ";
+}

@@ -1,0 +1,149 @@
+{
+  "title" : "文と宣言",
+  "description" : "Statements & Declarations",
+  "author" : "JavaScript",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "JavaScript",
+      "name" : "JavaScriptの基本",
+      "url" : "/coding/js/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "オブジェクト・配列",
+      "url" : "/coding/js/object/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "イベント",
+      "url" : "/coding/js/event/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "ドキュメントオブジェクトモデル",
+      "url" : "/coding/js/document/",
+      "language" : "js",
+      "status" : "basic"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "Conditionals",
+      "name" : "コードでの意思決定 — 条件文",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/JavaScript/Building_blocks/conditionals",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Statements and declarations",
+      "name" : "文と宣言",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "文と宣言",
+      "name" : "if...else",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/if...else",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "文と宣言",
+      "name" : "switch",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/switch",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "if, '?'",
+      "name" : "条件分岐",
+      "url" : "https://ja.javascript.info/ifelse",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "switch",
+      "name" : "switch文",
+      "url" : "https://ja.javascript.info/switch",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Loops and iteration",
+      "name" : "ループと反復処理",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Loops_and_iteration",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "文と宣言",
+      "name" : "for",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/for",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Array.prototype",
+      "name" : ".length",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/length",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "文と宣言",
+      "name" : "for...of",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/for...of",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Iteration protocols",
+      "name" : "反復処理プロトコル",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Iteration_protocols",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "文と宣言",
+      "name" : "while",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/while",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "文と宣言",
+      "name" : "do...while",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/do...while",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "while, 'for'",
+      "name" : "ループ",
+      "url" : "https://ja.javascript.info/while-for",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "||, &&, !, ??",
+      "name" : "論理演算子",
+      "url" : "https://ja.javascript.info/logical-operators",
+      "language" : "js",
+      "status" : "guide"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+<h3>
+  <code>API</code>
+  (Application Programming Interface) とは、
+  ソフトウェアプログラム(アプリケーション)
+  を操作するために備えているインターフェイス(プロパティ・メソッド・イベントなど)の集まりです。
+</h3>
+
+<p>
+  <i>DOM を 操作・構造するために用意されている すべてのプロパティ・メソッド・イベントは、オブジェクト(API) にまとめられています。</i><br/>
+</p>
+<p>
+  DOM は、協調して動作する様々な API によって構築されています。<br/>
+  API によって 新しい機能や能力を追加し、DOM の表現の対応は拡張されます。
+</p>
+<p>
+  <i>
+    例えば、
+    <code class="red">Document</code>
+    は文書自身・<code class="red">Element</code>
+    文章内の要素・<code class="red">Window</code>
+    は文書を収めるウィンドウを示すオブジェクトです。</i><br/>
+  <i>
+    文書自体・文章内の要素・文書を収めるウィンドウの操作 には、
+    Document API・Element API・Window API を使用します。
+  </i>
+</p>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+
+<p>
+  <font>Document API</font><br>
+  Document オブジェクトは文書自身・ブラウザーに読み込まれたウェブページを表し、
+  DOM ツリーであるウェブページのコンテンツへの入口としての役割を果たします。
+</p>
+<details>
+  <summary><code>文書の情報を取得/設定するプロパティ</code></summary>
+  <p>
+    <button onclick="alert(document.characterSet);">document.characterSet</button>
+    文書に適用されている文字セットを返します。
+  </p>
+  <p>
+    <button onclick="alert(document.body.childElementCount);">document.childElementCount</button>
+    現在の文書の子要素の数を返します。
+  </p>
+  <p>
+    <button onclick="alert(document.contentType);">document.contentType</button>
+    現在の文書の MIME ヘッダーから Content-Type を返します。
+  </p>
+  <p>
+    <button onclick="alert(document.doctype);">document.doctype</button>
+    現在の文書の文書型宣言 (DTD) を返します。
+  </p>
+  <p>
+    <button onclick="alert(document.documentURI);">document.documentURI</button>
+    文書の場所を文字列で返します。
+  </p>
+  <p>
+    <button onclick="alert(document.domain);">document.domain</button>
+    現在の文書のドメインを取得/設定します。
+  </p>
+  <p>
+    <button onclick="alert(document.lastModified);">document.lastModified</button>
+    文書の最終更新日を返します。
+  </p>
+  <p>
+    <button onclick="alert(document.location);">document.location</button>
+    現在の文書の URI を返します。
+  </p>
+  <p>
+    <button onclick="alert(document.referrer);">document.referrer</button>
+    このページへリンクしたページの URI を返します。
+  </p>
+  <p>
+    <button onclick="alert(document.URL);">document.URL</button>
+    現在の文書の URL を含む文字列を返します。
+  </p>
+</details>
+<hr/>
+<p>
+  <font>document.<code class="red">documentElement</code></font><br/>
+  文書のルート要素
+  (空ではない HTML 文章の場合は 常に <<code class="red">html</code>> 要素)
+  を指定・操作するプロパティ
+</p>
+<p>
+  <font>document.<code class="red">head</code></font><br/>
+  文書の head 要素を指定・操作するプロパティ
+</p>
+<p>
+  <font>document.<code class="red">body</code></font><br/>
+  文書の body または frameset 要素を指定・操作するプロパティ
+</p>
+<p>選択要素の変更によって、<<code class="red">body</code>> の色・背景の色を操作します。</p>
+<pre class="script">type="text/javascript">
+
+function setBodyAttr(attr, value) {
+  <code>if (document.body) <font class="red">document.body</font>[attr] = value</code>;
+  else throw new Error("no support");
+}
+
+</pre>
+<div class="select_tag">
+  onChange="setBodyAttr('text', this.options[this.selectedIndex].value);"><br/>
+  <select onChange="setBodyAttr('text', this.options[this.selectedIndex].value);">
+    <option selected disabled>text</option>
+    <option value="black">black</option>
+    <option value="red">red</option>
+    <option value="blue">blue</option>
+    <option value="green">green</option>
+  </select>
+  <br/>
+</div>
+<br/>
+<div class="select_tag">
+  onChange="setBodyAttr('bgColor', this.options[this.selectedIndex].value);"><br/>
+  <select class="select_element" onChange="setBodyAttr('bgColor', this.options[this.selectedIndex].value);">
+    <option selected disabled>bgColor</option>
+    <option value="white">white</option>
+    <option value="gold">gold</option>
+    <option value="silver">silver</option>
+  </select>
+  <br/>
+</div>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>
+  <font>document.<code class="red">readyState</code></font><br/>
+  文書の読み込み状態を記述するプロパティ<br/>
+  <i>コードは上から順に読み込まれるため、head 要素内に設置しましょう。</i>
+</p>
+<details>
+  <summary>文書の読み込み状態によって実行する文を定義する</summary>
+
+<pre>
+document.addEventListener(<font class="red">'readystatechange'</font>, (event) => {
+  <code>if (event.target.readyState === <font class="red">'interactive'</font>) {</code>
+
+    // 文書の読み込みは完了したが、CSS・画像・動画などのサブリソースがまだ読み込み中の状態で実行するJavaScript
+
+  <code>}</code>
+
+  <code>else if (event.target.readyState === <font class="red">'complete'</font>) {</code>
+
+    // 文書とすべてのサブリソースの読み込みが完了した状態で実行するJavaScript
+
+  <code>}</code>
+});
+
+</pre>
+</details>
+<hr/>
+<p>
+  <font>document.<code class="red">implementation</code></font><br/>
+  文書に関連付けられたDOM 実装を返すプロパティ
+</p>
+<pre>
+let coverH1 = document.querySelector('#cover h1');
+
+const modName = "HTML";
+const modVer = "2.0";
+const conformTest = <code>document<code>.implementation.hasFeature</code></code>(modName, modVer);
+
+coverH1.innerHTML = `DOM ${modName} ${modVer} supported?: ${conformTest}`;
+
+</pre>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<h3>
+  文書を開く
+  文書に文字列を書き込む
+  文書を閉じる
+</h3>
+<details>
+  <summary>
+    <font>function <code class="red">createHello()</code> {</font>
+  </summary>
+<pre>
+  <code>document<font class="red">.open()</font></code> <i>// 書き込み用の文書ストリームを開くメソッド</i>
+  <code>document<font class="red">.write()</font></code> <i>// 文書にテキストを書き込むメソッド</i>
+  <code>document<font class="red">.writeln()</font></code> <i>// 文書にテキスト行を書き込むメソッド</i>
+  <code>document<font class="red">.close()</font></code> <i>// 書き込み用の文書ストリームを閉じるメソッド</i>
+</pre>
+</details>
+<hr/>
+<font>}</font>
+<p>
+  document.write() は文書のストリームに書き込みを行うため、閉じられた (読み込み済みの) 文書で document.write() を呼び出すと、自動的に document.open() が呼び出され、文書はクリアされます。
+</p>
+<hr/>

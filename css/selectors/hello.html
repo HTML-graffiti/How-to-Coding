@@ -1,0 +1,120 @@
+<script async>
+  const html_elementsCSS = document.createElement( "link" );
+  html_elementsCSS.href = "../cascading.css";
+  html_elementsCSS.type = "text/css";
+  html_elementsCSS.rel = "stylesheet";
+  document.getElementsByTagName("head")[0].appendChild(html_elementsCSS);
+</script>
+
+<details>
+  <summary>/* セレクターのリファレンス表 */</summary><ul>
+    <li>
+      <span class="green">全称セレクター</span>
+      <font>*</font>
+    </li>
+    <li>
+      <span class="green">要素型セレクター</span>
+      <font>要素名</font>
+    </li>
+    <li>
+      <span class="green">ID セレクター</span>
+      <font>#id属性の値</font>
+    </li>
+    <li>
+      <span class="green">クラスセレクター</span>
+      <font>.class属性の値</font>
+    </li>
+    <li>
+      <span class="green">属性セレクター</span>
+      <font>[属性名="属性値"]</font>
+    </li>
+    <br/>
+    <li>
+      <span class="green">擬似クラス</span>
+      <font>:Pseudo-classes</font>
+    </li>
+    <li>
+      <span class="green">疑似要素セレクター</span>
+      <font>::Pseudo-elements</font>
+    </li>
+    <br/>
+    <li>
+      <span class="green">子孫結合子</span>
+      <font>セレクター1 セレクター2</font>
+    </li>
+    <li>
+      <span class="green">子結合子</span>
+      <font>セレクター1 > セレクター2</font>
+    </li>
+    <li>
+      <span class="green">隣接兄弟結合子</span>
+      <font>直前の要素 + 対象の要素</font>
+    </li>
+    <li>
+      <span class="green">一般兄弟結合子</span>
+      <font>先行する要素 ~ 選択される要素</font>
+    </li>
+  </ul>
+  <br/>
+</details>
+
+<hr/>
+
+<div class="ruleset">
+  <i class="selector">*</i>
+</div>
+
+<div class="ruleset">
+  <i class="selector">h1, a</i>
+</div>
+
+<div class="ruleset">
+  <i class="selector">#title</i>
+</div>
+
+<div class="ruleset">
+  <i class="selector">.special</i>
+</div>
+
+<div class="ruleset">
+  <i class="selector">h1#title, a.special</i>
+</div>
+
+
+<hr/>
+<br/>
+<p>
+  <b class="green">セレクター</b>
+  <font>,</font>
+  <b class="green">セレクター</b>
+  <br/>
+  セレクターをカンマで区切り
+  複数のセレクターを選択する
+  <font class="green">セレクターリスト</font>
+  で、まとめてルールを適用することができます。<br/>
+  <sub class="wavy">カンマの前後に空白を入れることもできますし、改行したほうがセレクターを見つけやすくなり読みやすいかもしれません。</sub>
+</p>
+<br/>
+<p>
+  <font>セレクター</font><font class="green">#IDセレクター</font>
+  <br/>
+  <font>セレクター</font><font class="green">.クラスセレクター</font>
+</p>
+<p>
+  2つ のセレクター の間に ホワイトスペースをいれず
+  続けて記述すると、
+  特定のID・クラスが適用された特定の要素を選択することができます。<br/>
+  <sub class="wavy">
+    例) <b>h1#title</b> は
+    <b>id="title"</b>
+    が設定された
+    <b>h1</b> 要素
+    ・
+    <b>a.special</b> は
+    <b>class="special"</b>
+    が設定された
+    <b>a</b> 要素
+    を対象にするセレクターです。
+  </sub>
+</p>
+<hr/>

@@ -1,0 +1,46 @@
+{
+  "title" : "The List of Contents About You",
+  "description" : "自分にまつわる事柄のリストページ",
+  "author" : "creative-community.space",
+  "email" : "pehu@creative-community.space",
+  "type" : "website",
+  "twitter" : "@pe_hu_",
+  "card" : "summary_large_image",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "JSON",
+      "name" : "JavaScript Object Notation",
+      "url" : "/coding/js/json/"
+    },
+    {
+      "date" : "DOM",
+      "name" : "Document Object Model",
+      "url" : "/coding/js/document/"
+    },
+    {
+      "date" : "Web API",
+      "name" : "Element",
+      "url" : "/coding/js/element/"
+    },
+    {
+      "date" : "HTML",
+      "name" : "文書メタデータ (ヘッダー) 要素",
+      "url" : "/coding/html/head/"
+    },
+    {
+      "date" : "HTML",
+      "name" : "アンカー要素とID属性",
+      "url" : "/coding/html/href/"
+    },
+    {
+      "date" : "HTML",
+      "name" : "区分要素",
+      "url" : "/coding/html/sectioning/"
+    }
+  ],
+
+  "links" : [
+  ]
+}

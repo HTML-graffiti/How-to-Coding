@@ -1,0 +1,356 @@
+<section id="one" class="readme">
+  <h2>
+    <i>フォントファミリー</i>
+    <br/>
+    <font>font-family</font>: キーワード値;<br/>
+  </h2>
+  <br/>
+  <p>
+    テキストのフォントを設定するには、<font>font-family</font> プロパティを使用します。
+  </p>
+  <p>
+    <i>CSSで指定したフォントがユーザーのコンピューターで利用できない場合は、指定通りのフォントは適用されません。</i>
+  </p>
+  <br/>
+  <p style="text-align:center;">~~~</p>
+  <br/>
+  <p>5つの総称名</p>
+  <h3>
+    <font>serif</font>
+    <i>明朝体</i><br/>
+    <font>sans-serif</font>
+    <i>ゴシック体</i><br/>
+    <font>monospace</font>
+    <i>等幅フォント</i><br/>
+    <font>cursive</font>
+    <i>筆記体</i><br/>
+    <font>fantasy</font>
+    <i>装飾的なフォント</i><br/>
+  </h3>
+  <br/>
+  <p>コンピューターのOS（Windows・Mac・Linux・Android・iOS・など）によって、インストールされているフォントは異なりますが、フォントファミリーを大きく区分する5つの総称は、すべてのOSで共通して利用できます。</p>
+  <p>
+    <i>serif・sans-serif・monospace は、ほぼすべての OS・ブラウザーで使用でき、OS・ブラウザーが妥当なフォントを提供するはずです。</i>
+    <i>ursive・fantasy は、慎重に使用してテストすることをお勧めします。</i>
+  </p>
+  <br/>
+  <p style="text-align:center;">~~~</p>
+  <br/>
+  <p>
+    <i>複数のフォントを指定する</i>
+  </p>
+  <h2>
+    フォントスタック
+  </h2>
+  <br/>
+  <p>例)</p>
+  <h3>
+    font-family:
+    <font>"Helvetica Neue", Helvetica, Arial, sans-serif;</font><br/>
+    <i>ブラウザーはリストの先頭からフォントが利用可能かを確認し、利用できるフォントを要素に適用します。</i><br/>
+  </h3>
+  <br/>
+  <p>ファミリー名を <font>,</font> で区切り、最初に指定したフォントが利用できないコンピューターに代用するフォントを複数指定できます。</p>
+  <p>
+    <i>半角スペースを含むファミリー名は、ダブルコーテーション <code>"</code> で囲み、</i>
+    <i>フォントスタックの最後には <code>,</code> を付けず、<font>;</font> で終わる</i><br/>
+  </p>
+  <br/>
+  <p>フォントスタックは 同じ総称で統一し、最後に総称フォント名を指定することをお勧めします。</p>
+  <br/>
+  <p style="text-align:center;">~~~</p>
+  <br/>
+  <h2>
+    <i>スタイル・太さ・変化形</i>
+    <br/>
+    <font>font-style</font>: キーワード値;<br/>
+    <font>font-weight</font>: 太さの値;<br/>
+    <font>font-variant</font>: キーワード値;<br/>
+  </h2>
+  <br/>
+  <p>
+    フォントファミリーには、いくつかの字体 バリエーション が含まれる場合があり、
+    <font>font-style</font> ・
+    <font>font-weight</font> ・
+    <font>font-variant</font>
+    プロパティでスタイル・太さ・変化形を指定できます。
+  </p>
+  <br/>
+  <h3>
+    font-style:
+    <font>normal</font>;
+    <i>通常のフォント</i><br/>
+    font-style:
+    <font>italic</font>;
+    <i>イタリック体</i><br/>
+    font-style:
+    <font>oblique</font>;
+    <i>通常のフォントを斜めにする</i><br/>
+  </h3>
+  <br/>
+  <h3>
+    font-weight:
+    <font>normal</font>;
+    <i>通常の太さ</i><br/>
+    font-weight:
+    <font>bold</font>;
+    <i>太字</i><br/>
+    font-weight:
+    <font>100 ~ 900</font>;
+    <i>太さを数値で指定する</i><br/>
+  </h3>
+  <br/>
+  <h3>
+    font-variant:
+    <font>normal</font>;
+    <i>通常のフォントフェイス</i><br/>
+    font-variant:
+    <font>small-caps</font>;
+    <i>スモールキャピタル (小ぶりの大文字) の字形を使用</i><br/>
+  </h3>
+  <br/>
+  <p>
+    <i>フォントファミリーにイタリック体・スモールキャピタルが含まれない場合、italic・small-caps は適用されません。</i><br/>
+    <i>太さの数値は 100 が最も細く、900が最も太い 値です。現実的には normal と bold 以外のものを使用することはほとんどありません。</i>
+  </p>
+  <br/>
+  <p style="text-align:center;">~~~</p>
+  <br/>
+  <h2>
+    <i>weight style small-caps</i><br/>
+    <font>font-synthesis</font>
+  </h2>
+  <p>太字やイタリックの字体がない場合にブラウザーが合成してよいかどうかを制御する</p>
+  <br/>
+  <h3>
+    <font>none</font>
+    <i>字体を合成しないことを示すキーワード</i><br/>
+    <font>weight</font>
+    <i>太字の字体を合成してよいことを示すキーワード</i><br/>
+    <font>style</font>
+    <i>イタリックの字体を合成してよいことを示すキーワード</i><br/>
+    <font>small-caps</font>
+    <i>スモールキャップの字体を合成してよいことを示すキーワード</i><br/>
+  </h3>
+  <br/>
+  <p>
+    <i>
+      <font>weight style small-caps</font> のように
+      キーワード値を半角スペースで区切り、複数の合成を許可することもできます。
+    </i>
+  </p>
+  <br/>
+  <br/>
+  <font><a href="#">×</a></font>
+</section>
+
+<section id="two" class="readme">
+  <h2>
+    <font>font-size</font>
+    は、フォントの大きさを定義するCSSプロパティです。
+  </h2>
+  <p>
+    <i>
+      サイズの値には、絶対的なサイズを指す
+      <font>キーワード値</font> ・
+      px・rem などの単位を使う <font>数値</font> ・
+      親要素のフォントサイズからの相対的なサイズを指す
+      <font>%</font>
+      があります。
+    </i>
+  </p>
+  <br/>
+  <p style="text-align:center;">~~~</p>
+  <br/>
+  <p>キーワード値 と px</p>
+  <h3>
+    font-size: <font>xx-small</font>;
+    <i>一部のブラウザーは最小フォントサイズが 10pxに設定されているため x-small と同等</i><br/>
+    font-size: <font>x-small</font>;
+    <i>一般的には、10px と同等</i><br/>
+    font-size: <font>small</font>;
+    <i>一般的には、13px と同等</i><br/>
+    font-size: <font>medium</font>;
+    <i>一般的には、16px と同等</i><br/>
+    font-size: <font>large</font>;
+    <i>medium の 1.33倍 (18px)</i><br/>
+    font-size: <font>x-large</font>;
+    <i>large の 1.33倍 (24px)</i><br/>
+    font-size: <font>xx-large</font>;
+    <i>x-large の 1.33倍 (32px)</i><br/>
+    font-size: <font>xxx-large</font>;
+    <i>xx-large の 1.33倍 (42px)</i><br/>
+    <br/>
+  </h3>
+  <br/>
+  <p>rem と %</p>
+  <pre>
+<font>html</font> {
+  font-size: <font>16px</font>;
+}
+
+main {
+  font-size: <font>1rem</font>;
+}
+
+main h1 {
+  font-size: <font>200%</font>;
+}
+  </pre>
+  <p>
+    サイズを表す数値の単位
+    <font>rem</font>
+    は、HTMLやブラウザーの既定値を 1 とする
+    相対的な単位です。
+  </p>
+  <p>
+    上記のCSSでは、1rem は html のフォントサイズの値 16px です。<br/>
+    <i>html をセレクターに フォントサイズの指定を行わなかった場合は、ブラウザー（ユーザー）が設定したフォントサイズが 1rem です。</i>
+  </p>
+  <br/>
+  <p>
+    <font>%</font>
+    は、親要素のフォントサイズからの相対値です。
+  </p>
+  <p>
+    上記のCSSは、main要素内 の h1要素 のフォントサイズを、main要素のフォントサイズの2倍に指定します。<br/>
+    <i>main のフォントサイズは 1rem（16px）なので、200% のフォントサイズは 2rem（32px）です。</i>
+  </p>
+  <br/>
+  <pre>
+
+<font>html</font> {
+  font-size: <font>90%</font>;
+}
+
+body {
+  font-size: <font>1rem</font>;
+}
+  </pre>
+  <p>
+    上記のCSSは、ブラウザー（ユーザー）が設定するフォントサイズの 90% のサイズを 1rem とします。<br/>
+    <i>すなわち、bodyのフォントサイズは、ブラウザーの既定値・ユーザーの独自設定によって相対的に変化します。</i>
+  </p>
+  <br/>
+  <br/>
+  <p>ビューポートのパーセント値による寸法</p>
+  <h3>
+    <font>vw</font>
+    <i>ウインドウの幅の 1% が 1vw</i><br/>
+    <font>vw</font>
+    <i>ウインドウの高さの 1% が 1vh</i><br/>
+    <font>vmin</font>
+    <i>vw と vh の小さい方の 1% が 1vmin</i><br/>
+    <font>vmax</font>
+    <i>vw と vh の大きい方の 1% が 1vmax</i><br/>
+  </h3>
+  <br/>
+  <p>これらの単位は、ビューポート（ウインドウや印刷レイアウトのサイズ）に対する相対的な寸法です。</p>
+  <p><i>ウインドウサイズに関わらず、ページ全体の幅・高さの比率からサイズを適用する際に使用します。</i></p>
+  <br/>
+  <p style="text-align:center;">~~~</p>
+  <br/>
+  <h3>
+    <font>font-size-adjust</font> は、
+     (大文字の大きさを定義する) 現在のフォントサイズに相対的な小文字の大きさを設定するCSSプロパティです。
+  </h3>
+  <br/>
+  <p>font-size-adjust に対応していないブラウザーと互換性を持たせるため、 font-size プロパティに掛け合わせる数値として指定します。</p>
+  <br/>
+  <br/>
+  <font><a href="#">×</a></font>
+</section>
+
+<section id="three" class="readme">
+  <h2>
+    <i>レイアウト</i>
+    <br/>
+    <code>line-height</code>: 高さの値;<br/>
+    <code>letter-spacing</code>: 幅の値;<br/>
+    <code>word-spacing</code>: 幅の値;<br/>
+    <code>text-indent</code>: 幅の値;<br/>
+  </h2>
+  <br/>
+  <p style="text-align:center;">~~~</p>
+  <br/>
+  <h3>
+    <font>line-height</font> は、
+    テキストの各ラインの高さを設定するCSSプロパティです。<br/>
+    <i>一般的に見栄えがよく、読みやすいとされるラインの高さは約 1.5 〜 2（ダブルスペース）です。</i>
+  </h3>
+  <br/>
+  <h3>
+    <font>letter-spacing</font> は 各文字の字間 ・
+    <font>word-spacing</font> は タグや単語の間隔 を設定するCSSプロパティです。<br/>
+    <i>幅の値には、px rem vw vh などの単位の数値を設定できます。</i>
+  </h3>
+  <br/>
+  <h3>
+    <font>text-indent</font> は ブロック内のテキストの行の前に置く空白 (字下げ) の幅を設定するCSSプロパティです。<br/>
+    <i>幅の値には、px rem vw vh などの単位の数値、または % 値 を設定できます。</i>
+  </h3>
+  <br/>
+  <br/>
+  <font><a href="#">×</a></font>
+</section>
+
+<section id="four" class="readme">
+  <h2>
+    <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">Google Fonts</a>
+    <br/>
+    Googleが無料で提供するフォントをページにリンクして使用することができます。<br/>
+  </h2>
+  <br/>
+  <p>1. Google Fontsにアクセスし、好きなフォントを選択する</p>
+  <p>2. HTML コードをコピーして、フォントを使用する HTML文書 の HEAD要素に貼り付ける</p>
+  <p>3. 生成されたフォントファミリー宣言を、CSSに貼り付ける</p>
+  <br/>
+  <h3>
+    <i>例)</i><br/>
+    <code class="link">rel="preconnect" href="https://fonts.googleapis.com"</code><br/>
+    <code class="link">rel="preconnect" href="https://fonts.gstatic.com" crossorigin</code><br/>
+    <code class="link">href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"</code><br/>
+  </h3>
+  <br/>
+  <pre>
+font-family: <font>"Great Vibes", cursive</font>;
+  </pre>
+  <br/>
+  <p style="text-align:center;">~~~</p>
+  <br/>
+  <h2>
+    <i>@font-face</i> {<br/>
+    font-family: "独自フォントのファミリー名";<br/>
+    src: url(独自フォントのURL) format("形式");<br/>
+    }
+  </h2>
+  <br/>
+  <p>自身のコンピューターにインストールされたフォントを読み込む CSSルールセット</p>
+  <p>
+    <i>
+      読み込み可能なフォントファイルの形式は、
+      <font>"woff"</font>
+      <font>"woff2"</font>
+      <font>"truetype"</font>
+      <font>"opentype"</font>
+      <font>"embedded-opentype"</font>
+      <font>"svg"</font>
+      です。
+    </i>
+  </p>
+  <br/>
+  <p>例)</p>
+  <h3>
+    @font-face {<br/>
+      font-family: "Bestermind";<br/>
+      src: url("BestermindRegular.ttf") format("truetype");<br/>
+    }
+  </h3>
+  <br/>
+  <p>セレクター {</p>
+  <h3>font-family: Bestermind, fantasy;</h3>
+  <p>}</p>
+  <br/>
+  <br/>
+  <font><a href="#">×</a></font>
+</section>

@@ -1,0 +1,191 @@
+{
+  "title" : "Document",
+  "description" : "",
+  "author" : "JavaScript",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "JavaScript",
+      "name" : "JavaScriptの基本",
+      "url" : "/coding/js/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "Element",
+      "url" : "/coding/js/element/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "Window",
+      "url" : "/coding/js/window/",
+      "language" : "js",
+      "status" : "basic"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "Document Object Model",
+      "name" : "Document",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Introduction",
+      "name" : "DOM の紹介",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document_Object_Model/Introduction",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document",
+      "name" : "DOMContentLoaded",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/DOMContentLoaded_event",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Locating DOM elements using selectors",
+      "name" : "セレクターを使用した DOM 要素の特定",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document",
+      "name" : ".querySelector()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/querySelector",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document",
+      "name" : ".querySelectorAll()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/querySelectorAll",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document",
+      "name" : ".createElement()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/createElement",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Node",
+      "name" : ".appendChild()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Node/appendChild",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".append()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/append",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "for...of",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/for...of",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "DocumentFragment",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/DocumentFragment",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document",
+      "name" : ".createDocumentFragment()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/createDocumentFragment",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Array",
+      "name" : "prototype.forEach()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document",
+      "name" : ".documentElement",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/documentElement",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document",
+      "name" : ".head",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/head",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document",
+      "name" : ".body",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/body",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document",
+      "name" : ".readyState",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/readyState",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document",
+      "name" : ".implementation",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/implementation",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document",
+      "name" : ".open()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/open",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document",
+      "name" : ".close()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/close",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document",
+      "name" : ".write()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/write",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document",
+      "name" : ".writeln()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/writeln",
+      "language" : "js",
+      "status" : "guide"
+    }
+  ]
+}

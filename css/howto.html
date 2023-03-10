@@ -1,0 +1,74 @@
+<h2><i>CSS の基本</i></h2>
+
+<p>
+  <font>CSS</font>
+  <b>カスケーディングスタイルシート</b> は、
+  HTMLの要素 を 選択的にスタイリングするために使う
+  <b>宣言型</b> の
+  <b>スタイルシート言語</b> です。
+</p>
+<p>
+  <b>CSS</b> は、
+  <font color="green">セレクター</font>
+  (HTML要素の選択)
+  と、
+  <font color="red">宣言</font>
+  (要素をスタイル付けするための
+  <span class="gold">プロパティ</span>
+  と
+  <span class="wavy">プロパティの値</span>)
+  の <font style="text-decoration:underline;">ルールセット</font> で 構成されます。
+</p>
+<br/>
+<hr/>
+<section>
+  <font class="green">セレクター</font>
+  <p>セレクターにはさまざまな種類があります。</p>
+  <p>また、セレクターをカンマで区切ることによって、複数の要素にルールセットを適用することもできます。</p>
+</section>
+<br/>
+<section>
+  <font color="red">宣言</font>
+  (<span class="gold">プロパティ</span>
+  と
+  <span class="wavy">プロパティの値</span>)
+  <p>
+    <i>
+      例えば、見出し要素 で テキストを大きく見せたり、
+      リスト要素で箇条書きにしたり、
+      HTML だけでも、ページに基本的なスタイルを適用できますが、
+      それだけでは退屈なページになってしまいます。
+    </i>
+  </p>
+
+  <h2>
+    <a href="javascript:function kill_all(){console.log('killing');var links=document.querySelectorAll('link');document.querySelectorAll('link, style').forEach(function(node){node.parentNode.removeChild(node)});document.querySelectorAll('*').forEach(function(node){node.removeAttribute('style')});console.log('killed')}kill_all();">Kill Styles</a>
+    <i>このリンクをブックマークバーにドラッグしてください</i>
+  </h2>
+
+  <script type="text/javascript">
+    //   This is the unimified code that runs when pressed:
+    //   Might improve later...
+    //   function kill_all() {
+    //     console.log('killing');
+    //     var links = document.querySelectorAll('link');
+    //     document.querySelectorAll('link, style').forEach(function(node) {
+    //         node.parentNode.removeChild(node)
+    //     });
+    //     document.querySelectorAll('*').forEach(function(node) {
+    //         node.removeAttribute('style')
+    //     });
+    //     console.log('killed')
+    //   } kill_all();
+  </script>
+
+  <p>
+    閲覧しているページで、ブックマークバーに追加した
+    <font>Kill Styles</font>
+    をクリックすると、そのページにリンクしているすべての CSS が一時的に機能しなくなります。
+  </p>
+  <p>
+    まずは、もし CSS がなければ ページがどのように表示されるかを知り、CSSにできることを理解しましょう。
+  </p>
+</section>
+<br/>

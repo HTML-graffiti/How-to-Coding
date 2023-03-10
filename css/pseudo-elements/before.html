@@ -1,0 +1,21 @@
+<hgroup>
+  <h2><code>::before</code> (:before)</h2>
+  <p>選択した要素の最初の子要素として擬似要素を生成</p>
+</hgroup>
+<pre>
+ul::before {
+  content: "<<code>ul</code>>";
+}
+</pre>
+<br/>
+<p>a 要素がホバー状態のときに、擬似要素 ::before の content に 属性の値 (href) を表示する</p>
+<pre>
+a:hover::before {
+  content: attr(href);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #000;
+  font-size: 75%;
+}
+</pre>

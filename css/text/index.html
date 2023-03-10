@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../cascading.css" />
+  <link rel="stylesheet" href="../../readme/style.css" />
+  <link rel="stylesheet" href="../pseudo-classes/lightbox.css" />
+  <style type="text/css">
+
+  body {
+    background: #fff;
+    transition: 1s;
+  }
+
+  #title,
+  .ruleset {
+    mix-blend-mode: difference;
+    filter: invert();
+  }
+
+  #one,
+  #two,
+  #three,
+  #four {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    user-select: none;
+    pointer-events: none;
+    color: #000;
+    background: #fff;
+    transition: 2.5s;
+  }
+
+  #one:target,
+  #two:target,
+  #three:target,
+  #four:target {
+    padding: 1rem;
+    width: 95%;
+    height: 75%;
+    opacity: 1;
+    overflow: auto;
+    user-select: auto;
+    pointer-events: auto;
+  }
+
+  section:target a {
+    color: #fff;
+    filter: invert();
+  }
+
+  .ruleset::before {
+    display:none;
+  }
+
+  .ruleset .selif {
+    font-family: "NewYork", serif;
+    font-style: italic;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .ruleset .sans,
+  .ruleset .selif::after {
+    font-family: "San Francisco";
+    font-style: normal;
+  }
+
+  .ruleset .sans,
+  code {
+    font-size: 125%;
+  }
+
+  #contents::before {
+    content:'関連記事';
+    font-size: 90%;
+  }
+
+  #links::before {
+    content:'参考資料';
+    font-size: 75%;
+  }
+
+  #contents::before,
+  #links::before {
+    text-decoration: underline;
+    display: block;
+    font-family: "ipag", monospace;
+    margin: 0.5rem 0.25rem;
+  }
+
+  #lastModified {
+    font-family: "ipag", monospace;
+    line-height: 125%;
+    word-break: break-word;
+    padding: 0.5rem 0;
+  }
+
+  </style>
+
+</head>
+<body class="body">
+  <nav>
+    <p>
+      <span>テキストの装飾</span>
+      <a href="#one">配置</a>
+      <a href="#two">変換・飾り線</a>
+      <a href="#three">影</a>
+      <a href="#four">その他</a>
+    </p>
+    <p>
+      <a href="#etc">関連記事</a>
+    </p>
+  </nav>
+  <h1 id="title">Styling Text | Cascading Style Sheets</h1>
+  <main class="ruleset">
+    <i>CSS</i>
+    <p class="declaration">
+      <b class="selif">text-align</b>
+      <span id="alignOutput" class="sans">right</span>
+    </p>
+    <p class="declaration">
+      <b class="selif">direction</b>
+      <span id="DirectionOutput" class="sans">ltr</span>
+    </p>
+    <p class="declaration">
+      <b class="selif">text-justify</b>
+      <span id="justifyOutput" class="sans">none</span>
+    </p>
+    <p class="declaration">
+      <b class="selif">vertical-align</b>
+      <span id="verticalAlignOutput" class="sans">baseline</span>
+    </p>
+    <p class="declaration">
+      <b class="selif">text-transform</b>
+      <span id="transformOutput" class="sans">none</span>
+    </p>
+    <p class="declaration">
+      <b class="selif">text-decoration</b>
+      <span id="decorationOutput" class="sans">none</span>
+    </p>
+    <p class="declaration">
+      <b class="selif">text-shadow</b>
+      <span id="shadowOutput" class="sans">none</span>
+    </p>
+  </main>
+
+  <section class="buttons">
+    <p>
+      <b>text-align</b>
+      <button class="special" onclick="setAlign('start');">start</button>
+      <button class="special" onclick="setAlign('end');">end</button>
+      <button class="special" onclick="setAlign('left');">left</button>
+      <button class="special" onclick="setAlign('right');">right</button>
+      <button class="special" onclick="setAlign('center');">center</button>
+      <button class="special" onclick="setAlign('justify');">justify</button>
+    </p>
+    <p>
+      <b>direction</b>
+      <button class="special" onclick="setDirection ('ltr');">ltr</button>
+      <button class="special" onclick="setDirection ('rtl');">rtl</button>
+    </p>
+    <p>
+      <b>text-justify</b>
+      <button class="special" onclick="setJustify('none');">none</button>
+      <button class="special" onclick="setJustify('auto');">auto</button>
+      <button class="special" onclick="setJustify('inter-word');">inter-word</button>
+      <button class="special" onclick="setJustify('inter-character');">inter-character</button>
+    </p>
+    <p>
+      <b>vertical-align</b>
+      <button class="special" onclick="setVertical ('baseline');">baseline</button>
+      <button class="special" onclick="setVertical ('sub');">sub</button>
+      <button class="special" onclick="setVertical ('super');">super</button>
+      <button class="special" onclick="setVertical ('text-top');">text-top</button>
+      <button class="special" onclick="setVertical ('text-bottom');">text-bottom</button>
+      <button class="special" onclick="setVertical ('middle');">middle</button>
+      <button class="special" onclick="setVertical ('top');">top</button>
+      <button class="special" onclick="setVertical ('bottom');">bottom</button>
+    </p>
+  </section>
+
+  <section class="buttons">
+    <p>
+      <b>text-transform</b>
+      <button class="special" onclick="setTransform ('none');">none</button>
+      <button class="special" onclick="setTransform ('capitalize');">capitalize</button>
+      <button class="special" onclick="setTransform ('uppercase');">uppercase</button>
+      <button class="special" onclick="setTransform ('lowercase');">lowercase</button>
+    </p>
+    <p>
+      <b>text-decoration</b>
+      <button class="special" onclick="setDecoration('none');">none</button>
+      <button class="special" onclick="setDecoration('underline');">underline</button>
+      <button class="special" onclick="setDecoration('line-through double red 5px');">line-through double red 5px</button>
+      <button class="special" onclick="setDecoration('overline dashed green 50%');">overline dashed green 50%</button>
+      <button class="special" onclick="setDecoration('underline overline dotted blue 1rem');">underline overline dotted blue 1rem</button>
+    </p>
+  </section>
+
+  <section class="buttons">
+    <p>
+      <b>text-shadow</b>
+      <button class="special" onclick="setShadow ('none');">none</button>
+      <button class="special" onclick="setShadow ('5px -10px');">5px -10px</button>
+      <button class="special" onclick="setShadow ('4px 4px 5px crimson');">4px 4px 5px crimson</button>
+      <button class="special" onclick="setShadow ('skyblue -1vw 0 0.5vw');">skyblue -1vw 0 0.5vw</button>
+      <button class="special" onclick="setShadow ('0.25rem 0.25rem white');">0.25rem 0.25rem white</button><br/>
+      <button class="special" onclick="setShadow ('4px 4px 5px crimson, skyblue -1vw 0 0.5vw, 0.25rem 0.25rem white');">4px 4px 5px crimson, skyblue -1vw 0 0.5vw, 0.25rem 0.25rem white</button>
+    </p>
+  </section>
+
+  <article id="coding"></article>
+
+  <p id="lastModified"></p>
+
+  <aside class="lightbox" id="etc">
+    <a href="#" class="close"></a>
+    <section id="contents" class="translate_center"></section>
+    <section id="links" class="fixed_bottom"></section>
+  </aside>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="script.js" defer></script>
+  <script type="text/javascript">
+  $(function() {
+    $("#coding").load("howto.html");
+  })
+
+  let lastModified = document.querySelector('#lastModified');
+
+  lastModified.innerHTML =
+  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+
+  function random(number) {
+    return Math.floor(Math.random() * (number+1));
+  }
+
+  function repeatingLineart() {
+    let randomGradient = `repeating-linear-gradient(90deg, rgb(${random(255)},${random(255)},${random(255)}), rgb(${random(255)},${random(255)},${random(255)}) 2.5vw)`;
+    return randomGradient;
+  }
+
+  document.body.style.background = repeatingLineart();
+
+  let buttons = document.querySelectorAll('nav a, .special')
+  for (const button of buttons) {
+    button.addEventListener ('click', event => {
+      document.body.style.background = repeatingLineart();
+    })
+  }
+  </script>
+</body>
+</html>

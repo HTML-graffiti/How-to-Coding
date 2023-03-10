@@ -1,0 +1,43 @@
+<article class="readme nav">
+  <section class="css">
+    <h2 class="h2">ナビゲーションセクション要素</h2>
+    一般的に、メニュー・目次・索引など、主要なリンクメニューを提供する区分にナビゲーションセクション要素を使用します。
+    <p>
+      <i>すべてのリンクを nav に入れる必要はありません。サイト・ページの構成に関わるリンクメニューがナビゲーションに該当すると思われます。</i>
+    </p>
+    <br/>
+    <p>
+      <i>例)</i><br/>
+      このページでは、ページ上部に固定しているリンクメニューに nav を使用しています。
+    </p>
+    <p class="nav"><br/><br/>
+      <span class="a_element"><font>#one</font>"></span><br>
+      <span class="a_element"><font>#two</font>"></span><br>
+      <span class="a_element"><font>#three</font>"></span><br>
+      <span class="a_element"><font>#four</font>"></span><br>
+      <br/>
+    </p>
+    <br/>
+  </section>
+  <aside class="aside">
+    <hgroup>
+      <h2><font>:target</font></h2>
+      <p>アンカーリンクをクリックして対象の要素へ移動したとき、その要素にスタイルを適用します。</p>
+    </hgroup>
+    <hr/>
+    <pre>
+<font>#one:target</font>,
+<font>#two:target</font>,
+<font>#three:target</font>,
+<font>#four:target</font> {
+  <font style="color: #fff; background: #FF0000;">color: #fff;</font>
+  <font style="color: #fff; background: #FF0000;">background: #FF0000;</font>
+}
+    </pre>
+    <p>
+      擬似クラス :target は、一般的にアンカー要素 と 合わせて使用します。 <br/>
+      <i>上記のセレクターは、href属性 に #one・#two・#three・#four が設定された a要素 がクリックされ、同じ idの値 を持つ要素に移動した状態を選択します。</i>
+    </p>
+  </aside>
+  <hr/>
+</article>

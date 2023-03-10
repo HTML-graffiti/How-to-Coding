@@ -1,0 +1,72 @@
+{
+  "title" : "Clipboard API",
+  "description" : "",
+  "author" : "JavaScript",
+  "email" : "pehu@creative-community.space",
+  "type" : "website",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "___",
+
+  "contents" : [
+    {
+      "date" : "Document Object Model",
+      "name" : "イベント",
+      "url" : "/coding/js/event/",
+      "language" : "js",
+      "status" : "basic"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "Web API",
+      "name" : "クリップボード API",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Clipboard_API",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Clipboard API",
+      "name" : "ClipboardEvent",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/ClipboardEvent",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Clipboard API",
+      "name" : "Navigator.clipboard",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Navigator/clipboard",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Clipboard API",
+      "name" : "Clipboard.readText()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Clipboard/readText",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Window",
+      "name" : "copy イベント",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/copy_event",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Window",
+      "name" : "cut イベント",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/cut_event",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Window",
+      "name" : "paste イベント",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/paste_event",
+      "language" : "js",
+      "status" : "guide"
+    }
+  ]
+}

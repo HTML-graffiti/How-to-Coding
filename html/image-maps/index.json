@@ -1,0 +1,37 @@
+{
+  "title" : "MAP AREA",
+  "description" : "イメージマップ（埋め込みコンテンツ）",
+  "author" : "Hypertext Markup Language",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "Twitterカードの種類 (summary | summary_large_image | app | player)",
+  "src" : "ページを代表する画像のURL",
+
+  "contents" : [
+  ],
+
+  "links" : [
+    {
+      "date" : "イメージマップ",
+      "name" : "map要素・area要素",
+      "url" : "https://momdo.github.io/html/image-maps.html",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "map",
+      "name" : "イメージマップ要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/map",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "area",
+      "name" : "イメージマップの中でクリック可能な領域",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/area",
+      "language" : "html",
+      "status" : "guide"
+    }
+  ]
+}

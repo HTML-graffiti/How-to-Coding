@@ -1,0 +1,198 @@
+{
+  "title" : "オブジェクト・配列",
+  "description" : "Object & Arrays",
+  "author" : "JavaScript",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "JavaScript",
+      "name" : "JavaScriptの基本",
+      "url" : "/coding/js/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "文と宣言",
+      "url" : "/coding/js/statements/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "イベント",
+      "url" : "/coding/js/event/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "ドキュメントオブジェクトモデル",
+      "url" : "/coding/js/document/",
+      "language" : "js",
+      "status" : "basic"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "変数",
+      "name" : "必要な情報を保存する",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/JavaScript/First_steps/Variables",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "標準組み込みオブジェクト",
+      "name" : "Object",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Object basics",
+      "name" : "JavaScript オブジェクトの基本",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/JavaScript/Objects/Basics",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "オブジェクト: 基本",
+      "name" : "オブジェクト",
+      "url" : "https://ja.javascript.info/object",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "オブジェクト: 基本",
+      "name" : "シンボル型",
+      "url" : "https://ja.javascript.info/symbol",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "文と宣言",
+      "name" : "for...in",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/for...in",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Enumerability and ownership of properties",
+      "name" : "プロパティの列挙可能性と所有権",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Enumerability_and_ownership_of_properties",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Object",
+      "name" : ".keys()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Object/keys",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Object",
+      "name" : ".values()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Object/values",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Object",
+      "name" : ".entries()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Object/entries",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Arrays",
+      "name" : "配列",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/JavaScript/First_steps/Arrays",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "データ型",
+      "name" : "配列",
+      "url" : "https://ja.javascript.info/array",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Arrays",
+      "name" : "Array.prototype.forEach()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Arrays",
+      "name" : "Array.prototype.pop()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/pop",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Arrays",
+      "name" : "Array.prototype.push()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/push",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Arrays",
+      "name" : "Array.prototype.shift()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/shift",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Arrays",
+      "name" : "Array.prototype.unshift()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "numbers and operators",
+      "name" : "基本演算 — 数値と演算子",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/JavaScript/First_steps/Math",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Expressions and operators",
+      "name" : "式と演算子",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Maths",
+      "name" : "演算子",
+      "url" : "https://ja.javascript.info/operators",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Math",
+      "name" : ".floor()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Math/floor",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Math",
+      "name" : ".random()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Math/random",
+      "language" : "js",
+      "status" : "guide"
+    }
+  ]
+}

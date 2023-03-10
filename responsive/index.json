@@ -1,0 +1,114 @@
+{
+  "title" : "Responsive Web Design",
+  "description" : "レスポンシブデザイン | Responsive Web Design",
+  "author" : "How to Coding",
+  "email" : "pehu@creative-community.space",
+  "type" : "website",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "___",
+
+  "contents" : [
+    {
+      "date" : "HTML",
+      "name" : "文書メタデータ (ヘッダー) 要素",
+      "url" : "/coding/html/head/",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "ボックスモデル",
+      "url" : "/coding/css/boxmodel/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "フレックスボックス",
+      "url" : "/coding/css/layout/flexbox/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "Window",
+      "url" : "/coding/js/window/",
+      "language" : "js",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "Responsive design",
+      "name" : "レスポンシブデザイン",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/CSS_layout/Responsive_Design",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "Media queries",
+      "name" : "メディアクエリー",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/Media_Queries",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "Using media queries",
+      "name" : "メディアクエリーの使用",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/Media_Queries/Using_media_queries",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "Beginner's guide to media queries",
+      "name" : "メディアクエリーの初心者向けガイド",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/CSS_layout/Media_queries",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "@media",
+      "name" : "アットルール",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/@media",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "@media",
+      "name" : "width",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/@media/width",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "@media",
+      "name" : "height",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/@media/height",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "@media",
+      "name" : "orientation",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/@media/orientation",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS Object Model",
+      "name" : "MediaQueryList",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/MediaQueryList",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "window",
+      "name" : ".matchMedia",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/matchMedia",
+      "language" : "js",
+      "status" : "guide"
+    }
+  ]
+}

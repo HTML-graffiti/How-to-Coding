@@ -1,0 +1,55 @@
+<script async>
+  const data_showCSS = document.createElement( "link" );
+  data_showCSS.href = "data_show.css";
+  data_showCSS.type = "text/css";
+  data_showCSS.rel = "stylesheet";
+  document.getElementsByTagName("head")[0].appendChild(data_showCSS);
+
+  const html_elementsCSS = document.createElement( "link" );
+  html_elementsCSS.href = "../html/elements.css";
+  html_elementsCSS.type = "text/css";
+  html_elementsCSS.rel = "stylesheet";
+  document.getElementsByTagName("head")[0].appendChild(html_elementsCSS);
+</script>
+
+<p class="doctype"></p>
+<div class="html">lang="ja">
+  <div class="head">
+    <h3 class="link">rel="stylesheet" href="<u data-id="css">data_show.css</u>"</h3>
+    <div id="css" class="hide">
+      <pre>
+.data_show .hide {
+  display: none;
+}
+
+.data_show u {
+  cursor: help;
+}
+      </pre>
+    </div>
+  </div>
+  <div class="body">
+    <h2 class="article_tag">class="<b class="red">data_show</b>"><br/>
+      <br/>
+      <span class="u_tag"><b class="red">data-id="〇〇"</b>></span><br/>
+      <span class="p_tag"><b class="red">id="〇〇" class="hide"</b>></span><br/>
+      <br/>
+    </h2>
+    <span class="script">src="jQuery"></span>
+    <h3 class="script">src="<u data-id="jQuery">data_show.js</u>"></h3>
+    <div id="jQuery" class="hide">
+      <pre>
+const date_showAll = document.querySelectorAll('<font color="red">.data_show u</font>');
+
+date_showAll<font color="red">.forEach</font> (<font color="red">data_show</font> => {
+  data_show<font color="red">.onclick</font> = function() {
+    let show = $(this).data("<font color="red">id</font>");
+    $("#" + show).show(1000);
+  }
+});
+      </pre>
+    </div>
+  </div>
+</div>
+
+<script src="data_show.js" defer></script>

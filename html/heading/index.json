@@ -1,0 +1,72 @@
+{
+  "title" : "Heading Content",
+  "description" : "見出し要素 | Heading Content",
+  "author" : "Hypertext Markup Language",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary_large_image",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "Sectioning Content",
+      "name" : "区分要素",
+      "url" : "/coding/html/sectioning/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Text",
+      "name" : "テキストの基礎",
+      "url" : "/coding/html/text/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "テキストの装飾",
+      "url" : "/coding/css/text/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "文字表記の方向",
+      "url" : "/coding/css/text/writing-mode/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "フォントの指定",
+      "url" : "/coding/css/fonts/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "高度なテキスト整形",
+      "url" : "/coding/html/text/advanced/",
+      "language" : "html",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "h1 - h6",
+      "name" : "HTML の見出し要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/Heading_Elements",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML テキストの基礎",
+      "name" : "HTML text fundamentals",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals",
+      "language" : "html",
+      "status" : "guide"
+    }
+  ]
+}

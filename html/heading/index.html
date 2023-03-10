@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../elements.css" />
+  <link rel="stylesheet" href="../../hello/data_show.css" />
+  <link rel="stylesheet" href="../../readme/style.css" />
+  <style type="text/css">
+
+  html {
+    height: -webkit-fill-available;
+  }
+
+  body {
+    transition: 0.5s;
+  }
+
+  #hello {
+    color: #fff;
+    mix-blend-mode: difference;
+    transition: color 1s;
+  }
+
+  #hello {
+    padding: 2.5rem 1rem;
+    max-width: 65rem;
+    margin: auto;
+    min-height: 100vh;
+  }
+
+  #hello h1,
+  #hello h2,
+  #hello h3,
+  #hello h4,
+  #hello h5,
+  #hello h6 {
+    padding: 1rem 0;
+    margin: 0;
+  }
+
+  #hello p {
+    padding: 0;
+    margin: 0;
+  }
+
+  footer {
+    position: relative;
+    min-height: 95vh;
+  }
+
+  footer aside {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  footer aside {
+    max-width: 1000px;
+  }
+
+  @media screen and (max-width: 550px) {
+
+    #hello {
+      width: 100%;
+      padding: 10vw 2.5vw 2.5vw;
+      min-height: -webkit-fill-available;
+    }
+
+    #hello h1,
+    #hello h2,
+    #hello h3,
+    #hello h4,
+    #hello h5,
+    #hello h6 {
+      padding: 0 1rem;
+      margin: 0;
+    }
+  }
+
+  @font-face {
+    font-family: "NewYork";
+    src: url("https://creative-community.space/coding/cover/NewYork.otf");
+  }
+
+  #hello h1,
+  #hello h2,
+  #hello h3,
+  #hello h4,
+  #hello h5,
+  #hello h6 {
+    font-family: "NewYork", serif;
+  }
+
+  #one {
+    display: none;
+    position: relative;
+    z-index: 100;
+  }
+
+  #one:target {
+    display: block;
+    color: #000;
+    filter: invert();
+  }
+
+  article:target a,
+  article:target #contents a,
+  article:target #links a {
+    color: #000;
+  }
+
+  #contents::before {
+    content:'関連記事';
+    font-size: 90%;
+  }
+
+  #links::before {
+    content:'参考資料';
+    font-size: 75%;
+  }
+
+  #contents::before,
+  #links::before {
+    display: block;
+    text-decoration: underline;
+    margin: 0.5rem 0.25rem;
+  }
+
+  #lastModified {
+    font-family: "ipag", monospace;
+    text-align: right;
+    line-height: 125%;
+    word-break: break-word;
+  }
+
+  </style>
+</head>
+<body id="cover">
+  <nav id="nav">
+    <a href="#one">見出し要素</a>
+  </nav>
+
+  <header id="hello" class="data_show"></header>
+
+  <article id="one">
+    <p style="text-align: right; padding: 0.5rem;">
+      <font><a href="#">×</a></font>
+    </p>
+    <section id="howto" class="readme"></section>
+    <footer>
+      <aside id="contents"></aside>
+    </footer>
+    <aside id="links"></aside>
+  </article>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    $("#hello").load("hello.html");
+    $("#howto").load("howto.html");
+  })
+  </script>
+</body>
+</html>

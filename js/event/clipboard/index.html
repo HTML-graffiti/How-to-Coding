@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="../../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../hidden.css" />
+  <link rel="stylesheet" href="../../../readme/style.css" />
+
+  <style>
+
+  #contents,
+  #links {
+    padding: 0.5rem;
+  }
+
+  #links::before {
+    content:'参考記事';
+    font-size: 75%;
+  }
+
+  #links::before {
+    display: block;
+    margin: 0.25rem;
+    text-decoration: underline;
+  }
+
+  </style>
+</head>
+
+<body>
+  <button id="js-button"><b></b></button>
+
+  <article id="hidden">
+    <aside id="contents"></aside>
+
+    <article class="readme">
+      <h2>
+        <code>Clipboard API</code><br/>
+        <i>クリップボードのコマンド (切り取り、コピー、貼り付け) に応答する機能などを提供するクリップボード API</i>
+      </h2>
+      <hr/>
+      <p>
+        <font>keydown</font><br/>
+        キーが押された状態のときに実行
+      </p>
+      <p>
+        <code>EventTarget.addEventListener('<code class="blue">keydown</code>',</code> event => {
+          <br/>// JavaScriptを記述<br/>
+        });
+      </p>
+      <p>
+        <code>EventTarget.<code class="blue">onkeydown</code></code> = function() {
+          <br/>// JavaScriptを記述<br/>
+        }
+      </p>
+      <pre>
+
+      </pre>
+      <hr/>
+    </article>
+
+    <nav id="links"></nav>
+  </article>
+
+  <pre id="clipboard">
+navigator.clipboard.readText().then(
+  (clipText) => document.querySelector("#clipboardEvent").innerText = clipText);
+
+  </pre>
+
+  <h1 id="clipboardEvent"><font>ClipboardEvent</font></h1>
+
+  <script src="script.js"></script>
+  <script type="text/javascript">
+  const button = document.querySelector('#js-button');
+  const body = document.querySelector('body');
+
+  button.addEventListener('click', function () {
+    button.classList.toggle('close');
+    body.classList.toggle('open');
+  });
+  </script>
+</body>
+</html>

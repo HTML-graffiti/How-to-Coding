@@ -1,0 +1,107 @@
+{
+  "title" : "The Box Model",
+  "description" : "ボックスモデル | The Box Model",
+  "author" : "Cascading Style Sheets",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary_large_image",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "CSS",
+      "name" : "幅と高さ",
+      "url" : "/coding/css/sizing/",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "色",
+      "url" : "/coding/css/colors/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "背景",
+      "url" : "/coding/css/backgrounds/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "枠線",
+      "url" : "/coding/css/boxmodel/borders/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "CSS レイアウト",
+      "url" : "/coding/css/layout/",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "ボックスモデル",
+      "name" : "The box model",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/Building_blocks/The_box_model",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "ボックスモデル",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Box_Model",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "display",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/display",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "ブロックレベル要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Block-level_elements",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "HTML",
+      "name" : "インライン要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Inline_elements",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "border",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/border",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "padding",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/padding",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "margin",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/margin",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ]
+}

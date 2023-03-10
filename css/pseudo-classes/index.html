@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../cascading.css" />
+  <link rel="stylesheet" href="../../readme/style.css" />
+  <link rel="stylesheet" href="lightbox.css" />
+  <style type="text/css">
+
+  #contents::before {
+    content:'関連記事';
+    font-size: 90%;
+  }
+
+  #links::before {
+    content:'参考資料';
+    font-size: 75%;
+  }
+
+  #contents::before,
+  #links::before,
+  #lastModified {
+    font-family: "ipag", monospace;
+  }
+
+  #contents::before,
+  #links::before {
+    text-decoration: underline;
+    display: block;
+    margin: 0.5rem 0.25rem;
+  }
+
+  #lastModified {
+    text-align: right;
+    margin: 0.25rem;
+    line-height: 125%;
+  }
+
+  </style>
+
+</head>
+<body class="body">
+  <nav>
+    <p>
+      <a href="#one" onclick="randomBG()">:LVHA</a>
+    </p>
+    <p>
+      <a href="#two" onclick="randomBG()">:target</a>
+    </p>
+    <p>
+      <a href="#three" onclick="randomBG()">:empty</a>
+      <a href="#four" onclick="randomBG()">:not()</a>
+    </p>
+    <a href="#etc" onclick="randomBG()">参考資料</a>
+  </nav>
+
+  <h1 id="title">Pseudo-classes | Cascading Style Sheets</h1>
+
+  <ol id="ordered" class="readme"></ol>
+  <script>
+  let olArr = [
+    '擬似クラス (pseudo-classes) は、指定の要素が特定の状態である場合にスタイルを適用させるセレクターです。',
+    '<i>アンカー要素 や フォーム関連要素など、ページを見ている人が操作する要素には、デフォルトで擬似クラスが設定されている場合があります。</i>',
+  ];
+
+  let orderedList = document.querySelector('ol#ordered');
+  for (let olli of olArr) {
+    let olliAdd = document.createElement('li');
+    olliAdd.innerHTML = olli;
+    orderedList.appendChild(olliAdd);
+  }
+  </script>
+
+  <main>
+    <details class="readme">
+      <summary onclick="randomBG()">関連記事</summary>
+      <br/>
+      <p><a href="/coding/css/pseudo-elements/">擬似要素 (pseudo-elements) </a></p>
+      <p>
+        選択された要素の特定の部分にスタイルを適用させるセレクターです。<br/>
+        <i>擬似クラスとは対照的に、擬似要素は要素の特定の部分スタイル付けを行うことができます。</i>
+      </p>
+      <br/>
+    </details>
+    <p id="lastModified"></p>
+  </main>
+
+  <article class="lightbox" id="one">
+    <a href="#" class="close"></a>
+    <section class="readme translate_center">
+      <section id="href"></section>
+    </section>
+  </article>
+
+  <article class="lightbox" id="two">
+    <a href="#" class="close"></a>
+    <section class="translate_center">
+      <section id="nav"></section>
+      <hr/>
+      <p style="text-align:center;">~~~</p>
+      <hr/>
+      <section class="readme">
+        <h3>
+          <font>lightbox.css</font><br/>
+          非表示にした .lightbox 要素を .lightbox:target 状態のときに表示する
+        </h3>
+<pre>
+.lightbox {
+  position: fixed;
+  color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+  z-index: 100;
+}
+
+.lightbox:target {
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+  user-select: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox .close,
+.lightbox .close::after {
+  display: block;
+}
+
+.lightbox .close {
+  background-color: rgba(0, 0, 0, .75);
+  color: #fff;
+  transition: color 1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lightbox .close:hover {
+  color: yellow;
+}
+
+.lightbox .close::after {
+  content: "Close";
+  font-size: 150%;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+
+.lightbox,
+.lightbox .close,
+.lightbox .close::after {
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+</pre>
+      </section>
+    </section>
+  </article>
+
+  <article class="lightbox" id="three">
+    <a href="#" class="close"></a>
+    <section class="readme translate_center">
+      <hgroup>
+        <h2><font>:empty</font></h2>
+        <p>要素の中身（コンテンツ）がない場合にスタイルを適用します。</p>
+      </hgroup>
+<pre>
+a<font>:empty</font> {
+  color: #fff;
+  background: deeppink;
+  font-size: 200%;
+}
+</pre>
+      <b class="a_tag"></b>
+      <b class="a_tag">i am a</b>
+      <b class="a_tag"> </b>
+      <b class="a_tag"><em class="em_element"></em></b>
+      <br/>
+      <p>
+        上記4つのアンカー要素のうち、
+        <b>a:empty</b>
+        が適用されるのは初めの1つのみです。<br/>
+        <i>
+          2つ目にはテキスト、3つ目には半角スペース、4つ目には 空の em 要素があるため、<b>a:empty</b>
+          ではありません。
+        </i>
+      </p>
+    </section>
+  </article>
+
+  <article class="lightbox" id="four">
+    <a href="#" class="close"></a>
+    <section class="readme translate_center">
+
+      <hgroup>
+        <h2><font>:not()</font></h2>
+        <p>否定擬似クラス (negation pseudo-class) </p>
+      </hgroup>
+<pre>
+article:not(.readme) {
+  background: #000;
+}
+
+:not(p):not(font) {
+  background: silver;
+}
+
+body :not(#left):not(#right):not(#title):not(.readme) {
+  box-shadow:
+  -1px 1px 0 #000,
+  -2px 2px 0 #000,
+  -3px 3px 0 #000,
+  -4px 4px 0 #000;
+}
+</pre>
+      <p>
+        <b>:not()</b> を使用する際のふつうではない効果や結果がいくつかありますので、使用する際には気を付けてください。
+      </p>
+    </section>
+  </article>
+
+  <aside class="lightbox" id="etc">
+    <a href="#" class="close"></a>
+    <section id="contents" class="translate_center"></section>
+    <section id="links" class="fixed_bottom"></section>
+  </aside>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    $("#howto").load("howto.html");
+    $("#href").load("../../html/href/lvha.html");
+    $("#nav").load("../../html/sectioning/nav.html");
+  })
+
+  function random(min, max) {
+    const num = Math.floor(Math.random() * (max - min + 1)) + min;
+    return num;
+  }
+
+  function randomRGB() {
+    let getRGB = `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
+    return getRGB;
+  }
+
+  function randomBG() {
+    const bgAll = document.querySelectorAll('body');
+    for (const bgItem of bgAll) {
+      bgItem.style.background = randomRGB();
+    }
+  }
+
+  randomBG()
+
+  let lastModified = document.querySelector('#lastModified');
+
+  lastModified.innerHTML =
+  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+  </script>
+</body>
+</html>

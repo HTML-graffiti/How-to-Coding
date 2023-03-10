@@ -1,0 +1,128 @@
+{
+  "title" : "Flexbox",
+  "description" : "フレックスボックス | Flexbox",
+  "author" : "Cascading Style Sheets",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary_large_image",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "CSS",
+      "name" : "CSS レイアウト",
+      "url" : "/coding/css/layout/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "グリッドレイアウト",
+      "url" : "/coding/css/layout/grid/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "段組みレイアウト",
+      "url" : "/coding/css/layout/multiple/",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "CSS",
+      "name" : "CSS フレックスボックスレイアウト",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Flexible_Box_Layout",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "Basic concepts of Flexbox",
+      "name" : "フレックスボックスの基本概念",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "Flexbox",
+      "name" : "フレックスボックス",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/CSS_layout/Flexbox",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "flex-direction",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/flex-direction",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "flex-wrap",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/flex-wrap",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "flex-flow",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/flex-flow",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "flex-basis",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/flex-basis",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "flex-grow",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/flex-grow",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "flex-shrink",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/flex-shrink",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "flex",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/flex",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "align-items",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/align-items",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "justify-content",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/justify-content",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "display",
+      "name" : "display の新しい 2 値構文への対応",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/display/two-value_syntax_of_display",
+      "language" : "css",
+      "status" : "basic"
+    }
+  ]
+}

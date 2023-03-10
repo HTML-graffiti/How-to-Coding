@@ -1,0 +1,68 @@
+{
+  "title" : "The Coverpage That Seems Like a cover of the book",
+  "description" : "開いた本のようなウェブページ",
+  "author" : "creative-community.space",
+  "email" : "pehu@creative-community.space",
+  "type" : "product",
+  "twitter" : "@pe_hu_",
+  "card" : "summary_large_image",
+  "src" : "summary_large_image.png",
+
+  "contents" : [
+    {
+      "date" : "HTML",
+      "name" : "属性",
+      "url" : "/coding/html/attributes/",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "CSS セレクター",
+      "url" : "/coding/css/selectors/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "ボックスモデル",
+      "url" : "/coding/css/boxmodel/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "幅と高さ",
+      "url" : "/coding/css/sizing/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "回転・拡大縮小・傾斜・移動",
+      "url" : "/coding/css/transform/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "CSS レイアウト",
+      "url" : "/coding/css/layout/",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "∧°┐",
+      "name" : "Special Gift Box 2019",
+      "url" : "https://vg.pe.hu/jp/2019/"
+    },
+    {
+      "date" : "How to Coding",
+      "name" : "creative-community.space",
+      "url" : "/coding/"
+    }
+  ]
+}

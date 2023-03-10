@@ -1,0 +1,198 @@
+{
+  "title" : "Listing Content",
+  "description" : "UL OL LI DL DT DD | リスト要素",
+  "author" : "Hypertext Markup Language",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "CSS",
+      "name" : "ボックスモデル",
+      "url" : "/coding/css/boxmodel/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "枠線",
+      "url" : "/coding/css/boxmodel/borders/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "擬似要素",
+      "url" : "/coding/css/pseudo-elements/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "オブジェクト・配列",
+      "url" : "/coding/js/object/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "Document",
+      "url" : "/coding/js/document/",
+      "language" : "api",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "Element",
+      "url" : "/coding/js/element/",
+      "language" : "api",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS Object Model",
+      "name" : "CSS オブジェクトモデル",
+      "url" : "/coding/js/cssom/",
+      "language" : "api",
+      "status" : "basic"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "ul",
+      "name" : "順序なしリスト要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/ul",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "ol",
+      "name" : "順序付きリスト要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/ol",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "li",
+      "name" : "リストの項目",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/li",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "list-style",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/list-style",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "list-style-type",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/list-style-type",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "::marker",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/::marker",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "dl",
+      "name" : "説明リスト要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/dl",
+      "language" : "guide",
+      "status" : "guide"
+    },
+    {
+      "date" : "dt",
+      "name" : "説明用語要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/dt",
+      "language" : "guide",
+      "status" : "guide"
+    },
+    {
+      "date" : "dd",
+      "name" : "詳細説明要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/dd",
+      "language" : "guide",
+      "status" : "guide"
+    },
+    {
+      "date" : "Using CSS counters",
+      "name" : "CSS カウンターの使用",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS Counter Styles",
+      "name" : "@counter-style",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/@counter-style",
+      "language" : "guide",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS Counter Styles",
+      "name" : "counter-reset",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/counter-reset",
+      "language" : "guide",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS Counter Styles",
+      "name" : "counter-increment",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/counter-increment",
+      "language" : "guide",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS Counter Styles",
+      "name" : "content",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/content",
+      "language" : "guide",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS Counter Styles",
+      "name" : "counter()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/counter",
+      "language" : "guide",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS Counter Styles",
+      "name" : "counters()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/counters",
+      "language" : "guide",
+      "status" : "guide"
+    },
+    {
+      "date" : "W3C",
+      "name" : "Ready-made Counter Styles",
+      "url" : "https://www.w3.org/TR/predefined-counter-styles/",
+      "language" : "css",
+      "status" : "library"
+    },
+    {
+      "date" : "Demo",
+      "name" : "@counter-style",
+      "url" : "https://mdn.github.io/css-examples/counter-style-demo/",
+      "language" : "css",
+      "status" : "tools"
+    },
+    {
+      "date" : "r12a >> apps >>",
+      "name" : "Counter styles converter",
+      "url" : "https://r12a.github.io/app-counters/",
+      "language" : "css",
+      "status" : "tools"
+    }
+  ]
+}

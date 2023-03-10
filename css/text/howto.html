@@ -1,0 +1,227 @@
+<section id="one" class="readme">
+  <h2>
+    <i>テキストの配置</i>
+    <br/>
+    <code>text-align</code>: キーワード値;<br/>
+    <code>direction</code>: キーワード値;<br/>
+    <code>text-justify</code>: キーワード値;<br/>
+  </h2>
+  <br/>
+  <p>
+    <font>text-align</font> は、ブロック要素（または表のセルボックス内）のインラインレベルコンテンツの水平方向の配置を設定する CSSプロパティです。
+  </p>
+  <br/>
+  <p style="text-align:center;">~~~</p>
+  <br/>
+  <h3>
+    <font>start</font> ・
+    <font>end</font><br/>
+  </h3>
+  <p>
+    ブロックの書字方向に基づき配列を指定するキーワード値<br/>
+    <i>書字方向 (direction) が左から右 (ltr) の場合、start は left ・ end は right と同じです。</i><br/>
+    <i>書字方向 (direction) が右から左 (rtl) の場合、start は right ・ end は left と同じです。</i><br/>
+  </p>
+  <br/>
+  <h3>
+    <font>left</font> ・
+    <font>right</font> ・
+    <font>center</font><br/>
+  </h3>
+  <p>
+    書字方向に関係なく、インラインコンテンツの配列を指定するキーワード値<br/>
+    <i>left は 左寄せ・right は 右寄せ・center は 中央寄せ に、コンテンツを配列します</i>
+  </p>
+  <br/>
+  <h3>
+    <font>justify</font><br/>
+  </h3>
+  <p>
+    ブロック内のインラインコンテンツを両端揃えに配列するキーワード値<br/>
+    <i>両端揃え text-align: justify; の種類は、text-justify プロパティで設定できます。</i>
+  </p>
+  <br/>
+  <p style="text-align:center;">~~~</p>
+  <br/>
+  <h2>
+    <i>垂直方向の配置</i>
+    <br/>
+    <code>vertical-align</code>: キーワード値;<br/>
+  </h2>
+  <br/>
+  <p>
+    <font>vertical-align</font> は、インラインレベルコンテンツの垂直方向の配置を設定する CSSプロパティです。<br/>
+    <i>vertical-align は インライン要素・インラインブロック要素・表のセル要素だけに適用できます。ブロックレベル要素には使用できません。</i>
+  </p>
+  <br/>
+  <h3>
+    <font>baseline</font>
+    <i>ベースラインを親要素のベースラインに揃えるキーワード値</i><br/>
+    <font>sub</font>
+    <i>ベースラインを親要素の subscript-baseline に揃えるキーワード値</i><br/>
+    <font>super</font>
+    <i>ベースラインを親要素の superscript-baseline に揃えるキーワード値</i><br/>
+    <font>text-top</font>
+    <i>要素の上端を親要素のフォントの上端に揃えるキーワード値</i><br/>
+    <font>text-bottom</font>
+    <i>要素の下端を親要素のフォントの下端に揃えるキーワード値</i><br/>
+    <font>middle</font>
+    <i>要素の中央を親要素の baseline + x-height の半分 に揃えるキーワード値</i><br/>
+    <font>top</font>
+    <i>要素と子孫要素の上端を行全体の上端に揃えるキーワード値</i><br/>
+    <font>bottom</font>
+    <i>要素と子孫要素の下端を行全体の下端に揃えるキーワード値</i><br/>
+  </h3>
+  <br/>
+  <font><a href="#">×</a></font>
+</section>
+
+<section id="two" class="readme">
+  <h2>
+    <i>テキストの変換・装飾的な線</i>
+    <br/>
+    <code>text-transform</code>: キーワード値;<br/>
+    <code>text-decoration</code>: キーワード値;
+  </h2>
+  <br/>
+  <p style="text-align:center;">~~~</p>
+  <br/>
+  <p>
+    <font>text-transform</font> は、テキストの大文字表記を指定する CSSプロパティです。
+  </p>
+  <br/>
+  <h3>
+    <font>none</font>
+    すべての文字を変換させないキーワード値<br/>
+    <font>capitalize</font>
+    それぞれの単語の最初の文字を強制的に大文字に変換させるキーワード値<br/>
+    <font>uppercase</font>
+    すべての文字を大文字に変換させるキーワード値<br/>
+    <font>lowercase</font>
+    すべての文字を小文字に変換させるキーワード値<br/>
+  </h3>
+  <br/>
+  <p style="text-align:center;">~~~</p>
+  <br/>
+  <p>
+    <font>text-decoration</font> は、テキストの装飾的な線の
+    種類・色・太さ
+    を一括指定する CSSプロパティです。<br/>
+  </p>
+  <p>
+    <i>キーワード値を 半角スペースで区切り、複数の線を装飾することもできます。</i>
+  </p>
+  <br/>
+  <h3>
+    <font>none</font>
+    テキストの装飾を行わないキーワード値<br/>
+    <font>underline</font>
+    テキストの各行に下線を引くキーワード値<br/>
+    <font>overline</font>
+    テキストの各行の上線を引くキーワード値<br/>
+    <font>line-through</font>
+    テキストの各行の中央を貫く線を引くキーワード値<br/>
+  </h3>
+  <br/>
+  <br/>
+  <p>
+    次に、線を引く位置のキーワード値 に続いて、線の種類を指定します。
+  </p>
+  <h3>
+    <font>solid</font>
+    単独線を描画するキーワード値<br/>
+    <font>double</font>
+    二重線を描画するキーワード値<br/>
+    <font>dotted</font>
+    点線を描画するキーワード値<br/>
+    <font>dashed</font>
+    破線を描画するキーワード値<br/>
+    <font>wavy</font>
+    波線を描画するキーワード値<br/>
+  </h3>
+  <br/>
+  <p>
+    <i>線の種類を指定するキーワード値がない場合は、既定値の solid が設定されます。</i>
+  </p>
+  <br/>
+  <br/>
+  <h3>
+    <font>色の値</font>
+    <font>太さの値</font>
+  </h3>
+  <br/>
+  <p>
+    色を指定する値については
+    <a hreh="/coding/css/colors/">CSS Colors</a>
+    線の太さの値については
+    <a hreh="/coding/css/boxmodel/borders/">Borders</a>
+    ページを参照ください。
+  </p>
+  <br/>
+  <font><a href="#">×</a></font>
+</section>
+
+<section id="three" class="readme">
+  <h2>
+    <i>文字に影を付ける</i>
+    <br/>
+    <code>text-shadow</code>: 水平 垂直 ぼかし 色;<br/>
+  </h2>
+  <br/>
+  <p style="text-align:center;">~~~</p>
+  <br/>
+  <p>
+    <font>text-shadow</font> は、文字に影を付ける CSSプロパティです。
+  </p>
+  <br/>
+  <h3>
+    例)<br/>
+    <font>4px 4px 5px crimson</font>;<br/>
+    テキストシャドウ は 最大 4 つの値 で指定します。<br/>
+  </h3>
+  <br/>
+  <p>
+    1つ目の値は、水平方向への影の指定（値に - マイナスを付けると左方向へ影が移動します）<br/>
+    2つ目の値は、垂直方向への影の指定（値に - マイナスを付けると上方向へ影が移動します）<br/>
+    3つ目の値は、影をぼかす指定（省略可能。指定がなければ影はぼかされません）<br/>
+    4つ目の値は、影の色の指定（省略可能。指定がなければ color の値が適用されます）
+  </p>
+  <br/>
+  <p style="text-align:center;">~~~</p>
+  <br/>
+  <p>
+    文字に <font>複数の影</font> を付ける
+  </p>
+  <br/>
+  <h3>
+    例)<br/>
+    4px 4px 5px crimson<font>,</font><br/>
+    skyblue -1vw 0 0.5vw<font>,</font><br/>
+    0.25rem 0.25rem white<font>;</font><br/>
+  </h3>
+  <br/>
+  <p>
+    影の値をコンマで区切って、同じ文字に複数の影を付けることができます。<br/>
+    <i>色の値は、影の方向・ぼかしの値の前に記述することもできます。</i>
+  </p>
+  <br/>
+  <font><a href="#">×</a></font>
+</section>
+
+<section id="four" class="readme">
+  <h2>
+    <i>その他のプロパティ</i>
+    <br/>
+    <code>text-rendering</code>: キーワード値;<br/>
+    <code>text-overflow</code>: キーワード値;<br/>
+    <code>overflow-wrap</code>: キーワード値;<br/>
+    <code>hyphens</code>: キーワード値;<br/>
+    <code>text-align-last</code>: キーワード値;<br/>
+    <code>line-break</code>: キーワード値;<br/>
+    <code>word-break</code>: キーワード値;<br/>
+  </h2>
+  <br/>
+  <p style="text-align:center;">~~~</p>
+  <br/>
+  <font><a href="#">×</a></font>
+</section>

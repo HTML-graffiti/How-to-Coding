@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="../../../readme/style.css" />
+  <link rel="stylesheet" href="../../pseudo-classes/lightbox.css" />
+  <style type="text/css">
+
+  nav a,
+  .buttons {
+    filter: invert();
+  }
+
+  #contents::before {
+    content:'関連記事';
+    font-size: 90%;
+  }
+
+  #links::before {
+    content:'参考資料';
+    font-size: 75%;
+  }
+
+  code {
+    font-size: 125%;
+  }
+
+  code,
+  #lastModified,
+  #contents::before,
+  #links::before {
+    font-family: "ipag", monospace;
+  }
+
+  #contents::before,
+  #links::before {
+    text-decoration: underline;
+    display: block;
+    margin: 0.5rem 0.25rem;
+  }
+
+  #lastModified {
+    line-height: 125%;
+    word-break: break-word;
+  }
+
+  </style>
+
+</head>
+<body>
+  <nav>
+    <p>
+      <a href="#grid">フレックスボックス</a>
+    </p>
+    <p>
+      <a href="#etc">関連記事</a>
+    </p>
+  </nav>
+
+  <main>
+    <ol id="flexOl">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+  </main>
+  <section class="buttons">
+    <p>
+      <b>flex-direction</b>
+      <button class="special" onclick="flexDirection('row');">row</button>
+      <button class="special" onclick="flexDirection('row-reverse');">row-reverse</button>
+      <button class="special" onclick="flexDirection('column');">column</button>
+      <button class="special" onclick="flexDirection('column-reverse');">column-reverse</button>
+    </p>
+    <p>
+      <b>flex-wrap</b>
+      <button class="special" onclick="flexWrap('nowrap');">nowrap</button>
+      <button class="special" onclick="flexWrap('wrap');">wrap</button>
+      <button class="special" onclick="flexWrap('wrap-reverse');">wrap-reverse</button>
+    </p>
+  </section>
+  <section class="buttons">
+    <p>
+      <b>flex-basis</b>
+      <button class="special" onclick="flexBasis('auto');">auto</button>
+      <button class="special" onclick="flexBasis('10rem');">10rem</button>
+      <button class="special" onclick="flexBasis('25%');">25%</button>
+      <button class="special" onclick="flexBasis('250px');">250px</button>
+    </p>
+    <p>
+      <b>flex-grow</b>
+      <button class="special" onclick="flexGrow('0');">0</button>
+      <button class="special" onclick="flexGrow('1');">1</button>
+      <button class="special" onclick="flexGrow('2');">2</button>
+      <button class="special" onclick="flexGrow('0.5');">0.5</button>
+    </p>
+    <p>
+      <b>flex-shrink</b>
+      <button class="special" onclick="flexShrink('0');">0</button>
+      <button class="special" onclick="flexShrink('1');">1</button>
+      <button class="special" onclick="flexShrink('2');">2</button>
+      <button class="special" onclick="flexShrink('0.5');">0.5</button>
+    </p>
+  </section>
+  <section class="buttons">
+    <p>
+      <b>align-items</b>
+      <button class="special" onclick="alignItems('stretch');">stretch</button>
+      <button class="special" onclick="alignItems('center');">center</button>
+      <button class="special" onclick="alignItems('flex-start');">flex-start</button>
+      <button class="special" onclick="alignItems('flex-end');">flex-end</button>
+      <button class="special" onclick="alignItems('baseline');">baseline</button>
+    </p>
+  </section>
+  <section class="buttons">
+    <p>
+      <b>justify-content</b>
+      <button class="special" onclick="justifyContent('flex-start');">flex-start</button>
+      <button class="special" onclick="justifyContent('flex-end');">flex-end</button>
+      <button class="special" onclick="justifyContent('center');">center</button>
+      <button class="special" onclick="justifyContent('space-around');">space-around</button>
+      <button class="special" onclick="justifyContent('space-between');">space-between</button>
+      <button class="special" onclick="justifyContent('space-evenly');">space-evenly</button>
+    </p>
+  </section>
+
+  <article class="lightbox" id="grid">
+    <a href="#" class="close"></a>
+    <section id="howto" class="readme translate_center"></section>
+  </article>
+
+  <aside class="lightbox" id="etc">
+    <a href="#" class="close"></a>
+    <section id="contents" class="translate_center"></section>
+    <section id="links" class="fixed_bottom"></section>
+  </aside>
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    $("#howto").load("howto.html");
+  })
+
+  function random(min, max) {
+    const num = Math.floor(Math.random() * (max - min + 1)) + min;
+    return num;
+  }
+
+  function randomRGB() {
+    let getRGB = `linear-gradient(0deg, rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)}), rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)}), rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)}))`;
+    return getRGB;
+  }
+
+  function randomBG() {
+    const bgAll = document.querySelectorAll('li');
+    for (const bgItem of bgAll) {
+      bgItem.style.background = randomRGB();
+    }
+  }
+
+  document.body.style.background = `linear-gradient(90deg, rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)}), rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)}), rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)}))`
+  randomBG()
+  </script>
+</body>
+</html>

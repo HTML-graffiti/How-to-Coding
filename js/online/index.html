@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <title>Online or Offline?</title>
+  <script src="script.js"></script>
+  <script src="../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="../event/style.css" />
+  <link rel="stylesheet" href="../event/hidden.css" />
+  <link rel="stylesheet" href="../../readme/style.css" />
+
+  <style>
+  body {
+    background: #000;
+  }
+  </style>
+
+</head>
+<body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
+  <button id="js-button" class="hide_online"><b></b></button>
+
+  <article id="hidden">
+    <aside id="contents"></aside>
+
+    <article id="howto" class="readme"></article>
+
+    <nav id="links"></nav>
+  </article>
+
+  <article id="main" class="readme">
+    <h1 id="status">(Online or Offline?)</h1>
+    <div id="log"></div>
+  </article>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    $("#howto").load("howto.html");
+  })
+
+  const button = document.querySelector('#js-button');
+  const body = document.querySelector('body');
+
+  button.addEventListener('click', event => {
+    button.classList.toggle('close');
+    body.classList.toggle('open');
+  });
+  </script>
+</body>
+</html>

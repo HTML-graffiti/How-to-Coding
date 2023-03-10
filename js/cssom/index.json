@@ -1,0 +1,135 @@
+{
+  "title" : "CSS オブジェクトモデル",
+  "description" : "CSS を 読んだり変更したり、JavaScript から動的に操作するための API の集合",
+  "author" : "JavaScript",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "JavaScript",
+      "name" : "JavaScriptの基本",
+      "url" : "/coding/js/",
+      "language" : "js",
+      "status" : "basic"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "CSSOM",
+      "name" : "CSS Object Model",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/CSS_Object_Model",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document",
+      "name" : ".styleSheets",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/styleSheets",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS Object Model",
+      "name" : "StyleSheet",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/StyleSheet",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS Object Model",
+      "name" : "StyleSheetList",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/StyleSheetList",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS Object Model",
+      "name" : "CSSStyleSheet",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/CSSStyleSheet",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSSStyleSheet",
+      "name" : ".cssRules",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/CSSStyleSheet/cssRules",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS Object Model",
+      "name" : "CSSRule",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/CSSRule",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS Object Model",
+      "name" : "CSSRuleList",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/CSSRuleList",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS Object Model",
+      "name" : "CSSStyleRule",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/CSSStyleRule",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSSStyleSheet",
+      "name" : ".cssRules",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/CSSStyleSheet/cssRules",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSSRule",
+      "name" : ".cssText",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/CSSRule/cssText",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSSStyleSheet",
+      "name" : ".insertRule",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/CSSStyleSheet/insertRule",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS Object Model",
+      "name" : "CSSStyleDeclaration",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/CSSStyleDeclaration",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "HTMLElement",
+      "name" : ".style",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/HTMLElement/style",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS/JavaScript",
+      "name" : "CSS プロパティリファレンス",
+      "url" : "https://developer.mozilla.org/ja/docs/orphaned/Web/CSS/CSS_Properties_Reference",
+      "language" : "js",
+      "status" : "library"
+    },
+    {
+      "date" : "Window",
+      "name" : ".getComputedStyle",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/getComputedStyle",
+      "language" : "js",
+      "status" : "guide"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+<h1>
+  Multi-column layout<br/>
+  <i>新聞のテキストの流れと同じように、コンテンツを複数の段ボックスにレイアウトする</i>
+</h1>
+<section>
+<p>
+  <code>columns</code><br/>
+  column-count (段の数)・column-width (段の幅) を一括指定する
+</p>
+<pre>
+/* 段の幅 */
+columns: 10rem;
+
+/* 段数 */
+columns: auto;
+columns: 2;
+
+/* 段の幅と段数の両方 */
+columns: 2 auto;
+columns: auto 10rem;
+columns: auto auto;
+</pre>
+</section>
+<section>
+<p>
+  <code>column-gap</code><br/>
+  段同士の間隔 (段間)を指定する
+</p>
+<pre>
+/* 初期値 (1em) */
+column-gap: normal;
+
+/* length 値 */
+column-gap: 3px;
+column-gap: 2.5em;
+
+/* percentage 値 */
+column-gap: 3%;
+</pre>
+</section>
+<section>
+<p>
+  <code>column-rule</code><br/>
+  段組みレイアウトで段間に引かれる線（段間罫）の太さ、スタイル、色を設定
+</p>
+<pre>
+column-rule: dotted;
+column-rule: solid 8px;
+column-rule: solid blue;
+column-rule: thick inset blue;
+</pre>
+</section>
+<section>
+<p>
+  <code>column-span</code><br/>
+  段組みレイアウトの段抜きを指定する
+</p>
+<pre>
+/* 初期値 */
+column-span: none;
+
+/* すべての段にまたがらせる */
+column-span: all;
+</pre>
+</section>
+<section>
+<p>
+  <code>column-fill</code><br/>
+  内容物が複数の段に分割されるとき、どのようにバランスを取るのかを指定する
+</p>
+<pre>
+/* コンテンツを必要な余地があるときだけ分割 */
+column-fill: auto;
+
+/* コンテンツを各段に均等に分割 (初期値) */
+column-fill: balance;
+</pre>
+</section>
+<section>
+<p>
+  <code>break-inside</code><br/>
+  ボックスの途中で、ページ、段、領域をどのように区切るかを設定する
+</p>
+<pre>
+/* 初期値 */
+break-inside: auto;
+
+/* 主ボックスの途中に何らかの (ページ、段、領域の) 区切りを挿入することを禁止する */
+break-inside: avoid;
+
+/* 主ボックスの途中の改ページを禁止する */
+break-inside: avoid-page;
+
+/* 主ボックスの途中の段区切りを禁止する */
+break-inside: avoid-column;
+</pre>
+</section>
+<section>
+<p>
+  <code>break-before</code>
+  <code>break-after</code><br/>
+  ボックスの前後で、ページ、段、領域をどのように区切るかを設定する
+</p>
+<pre>
+/* 一般の区切り値 */
+break-after(before): auto;
+break-after(before): avoid;
+break-after(before): always;
+break-after(before): all;
+
+/* 改ページ値 */
+break-after(before): avoid-page;
+break-after(before): page;
+break-after(before): left;
+break-after(before): right;
+break-after(before): recto;
+break-after(before): verso;
+
+/* 段区切り値 */
+break-after(before): avoid-column;
+break-after(before): column;
+
+/* 領域区切り値 */
+break-after(before): avoid-region;
+break-after(before): region;
+</pre>
+</section>
+<p id="lastModified"></p>
+<script type="text/javascript">
+let lastModified = document.querySelector('#lastModified');
+
+lastModified.innerHTML =
+'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+</script>

@@ -1,0 +1,142 @@
+{
+  "title" : "Colors",
+  "description" : "色 | Colors",
+  "author" : "Cascading Style Sheets",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "CSS",
+      "name" : "背景",
+      "url" : "/coding/css/backgrounds/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "枠線",
+      "url" : "/coding/css/boxmodel/borders/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "テキストの装飾",
+      "url" : "/coding/css/text/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "randomBG() randomColor()",
+      "url" : "/coding/js/object/",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "CSS の値と単位",
+      "name" : "CSS values and units",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/Building_blocks/Values_and_units#%E8%89%B2",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "<code><</code>color<code>></code>",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/color_value",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "<code><</code>color<code>></code>",
+      "name" : "<code><</code>named-color<code>></code>",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/named-color",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "<code><</code>color<code>></code>",
+      "name" : "<code><</code>hex-color<code>></code>",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/hex-color",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "<code><</code>color<code>></code>",
+      "name" : "rgb()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/color_value/rgb",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "<code><</code>color<code>></code>",
+      "name" : "hsl()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/color_value/hsl",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "filter",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/filter",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "filter-function",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/filter-function",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML Color Codes",
+      "name" : "Color Names",
+      "url" : "https://htmlcolorcodes.com/color-names/",
+      "language" : "css",
+      "status" : "library"
+    },
+    {
+      "date" : "…/colors",
+      "name" : "by Damon Zucconi",
+      "url" : "https://work.damonzucconi.com/colors/",
+      "language" : "css",
+      "status" : "library"
+    },
+    {
+      "date" : "Wada Sanzo",
+      "name" : "A Dictionary of Color Combinations.",
+      "url" : "https://sanzo-wada.dmbk.io/",
+      "language" : "css",
+      "status" : "library"
+    },
+    {
+      "date" : "Colorable",
+      "name" : "Text & Background Color",
+      "url" : "https://colorable.jxnblk.com/",
+      "language" : "css",
+      "status" : "tools"
+    },
+    {
+      "date" : "Picular",
+      "name" : "The color of anything",
+      "url" : "https://picular.co/",
+      "language" : "css",
+      "status" : "tools"
+    },
+    {
+      "date" : "Pigment",
+      "name" : "Simple Color Palette Generator",
+      "url" : "https://pigment.shapefactory.co/",
+      "language" : "css",
+      "status" : "tools"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+pre,
+code,
+font,
+#log,
+#touchEvent {
+  font-family: "ipag", monospace;
+}
+
+#log,
+#js-button,
+#touchEvent {
+  color: #fff;
+  mix-blend-mode: difference;
+}
+
+#canvas,
+#log {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#canvas {
+  padding: 0;
+  margin: 0;
+}
+
+#log {
+  width: min-content;
+  height: 75vh;
+  overflow: scroll;
+}
+
+#log,
+#touchEvent {
+  padding: 0.25rem;
+  margin: 0;
+  user-select: none;
+  pointer-events: none;
+  z-index: 2;
+}
+
+#touchEvent {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 125%;
+}
+
+code {
+  font-size: 111%;
+  font-style: normal;
+}

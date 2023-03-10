@@ -1,0 +1,46 @@
+<h2 class="head"><br/>
+  文書メタデータ (ヘッダー) 要素
+  <br/>
+</h2>
+<p>
+  <b class="red">HEAD要素</b>
+  は、ページが読み込まれても
+  <b class="red">ウェブブラウザーには表示されない</b>
+  部分です。<br/>
+  HTML要素の中の 最初の要素として、一つだけ配置できます。
+</p>
+<p>
+  HEAD要素には、HTMLについてよい基礎を与える情報
+  <b class="red">メタデータコンテンツ</b>
+  を記述し、HTMLを正しく表示する設定を行います。
+</p>
+
+<p>
+  はじめに、ページがあらゆるOS・言語に対応できるよう 2つ の メタデータコンテンツ を設定します。
+</p>
+<pre>
+<<font>meta charset="utf-8"</font>>
+<<font>meta name="viewport" content="width=device-width, initial-scale=1.0"</font>>
+</pre>
+<p>
+  <i>この記述は、W3C・WHATWG(Apple, Google, Mozilla, Microsoft)が推奨するcharset属性とviewportの設定方法です。</i>
+</p>
+<br/>
+<p>
+  次に、SEO (Search Engine Optimization, 検索エンジン最適化) を向上させるため、検索エンジンでページを上位にできる可能性がある情報を記述します。<br/>
+  <i>これらの情報は、ページの内容によって変更する必要があります。</i>
+</p>
+<pre>
+<<font>title</font>> <font>ページタイトル</font> <<font>/title</font>>
+<<font>meta name="description" content="ページのディスクリプション（説明書き）"</font>>
+<<font>meta name="author" content="著者"</font>>
+</pre>
+<p>
+  <i>
+    TITLE要素 は、ブラウザーのタイトルバーやページのタブ、ブックマーク・検索エンジンなど、いろいろな方法で使われます。
+    <br/>
+    また、ページの著者 (author) と、ページの説明 (description) を与える 2つのメタ要素も、関連検索で、ページをより上位にできる可能性があるため役立ちます。
+  </i>
+</p>
+<hr/>
+<br/>

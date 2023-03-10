@@ -1,0 +1,183 @@
+<hgroup>
+  <h2><i>Width</i></h2>
+  <p>
+    <b>width: 値;</b>
+    は、要素の幅を設定する宣言(CSS プロパティ)です。
+    <br/>
+    <i>
+      最小幅を設定する <b>min-width</b> と
+      最大幅を設定する <b>max-width</b> は、
+      width を上書きします。
+    </i>
+  </p>
+</hgroup>
+<br/>
+<pre>
+/* length 値 */
+width: 250px;
+width: 75rem;
+
+/* percentage 値 */
+width: 50%;
+
+/* キーワード値 */
+width: auto;
+width: max-content;
+width: min-content;
+
+</pre>
+<hr/>
+<br/>
+<section>
+  <h3>
+    <u>length 値</u><br/>
+    width: <font color="red">250px</font>;<br/>
+    width: <font color="red">75rem</font>;<br/>
+  </h3>
+  <br/>
+  <p>
+    <i>CSS には、長さ (length) の値を表わす単位が数多くあります。</i>
+  </p>
+  <p>
+    <font>px</font> は、画面表示における伝統的な単位です。<br/>
+    <i>どのブラウザーでも 1px の長さは変わらない 絶対的な単位 です。</i><br/>
+  </p>
+  <p>
+    <font>rem</font> は デフォルトで設定されたフォントサイズ (多くのブラウザーでは既定値 16px) を 1 とする単位です。<br/>
+    <i>ユーザーが独自にフォントサイズを設定している場合は、その設定に応じて 1rem の長さは異なる 相対的な単位 です。</i><br/>
+  </p>
+  <br/>
+  <p>length 値 で 幅を指定する際は、ウインドウサイズによって 要素がはみ出る可能性を考慮する必要があります。</p>
+</section>
+<hr/>
+<br/>
+<section>
+  <h3>
+    <u>percentage 値</u><br/>
+    width: <font color="red">50%</font>;<br/>
+  </h3>
+  <br/>
+  <p>
+    <font>%</font> は、親要素からの相対的な寸法を定義するためによく使われます。<br/>
+    <i>このページでは、BODY（親要素）の中にある MAIN 要素の幅を操作するため、100%はBODYの幅と等倍を意味します。</i><br/>
+  </p>
+  <br/>
+  <pre>
+/* max-width と width を併用する例 */
+
+width: 750px;
+max-width: 100%;
+
+width: 100%;
+max-width: 750px;
+
+  </pre>
+  <p>max-width を 100% に設定した場合、
+    例えば width: 750px; の要素は、ウインドウサイズが 750px 以下の場合に 幅 100% で表示されます。
+  </p>
+  <p>
+    逆に、width: 100%・max-width: 750px;
+    と設定した場合は、ウインドウサイズが 750px 以下の場合は、幅 100% で表示され、
+    ウインドウサイズが 750px 以上の場合は、幅 750px で表示されます。
+  </p>
+</section>
+<hr/>
+<br/>
+<p style="text-align:center;">/* ~~~ */</p>
+<br/>
+<section>
+  <h4>
+    <b>要素全体の幅と高さをどのように計算するのかを設定する</b><br/>
+    box-sizing: <font color="red">content-box</font>;<br/>
+    box-sizing: <font color="red">border-box</font>;<br/>
+  </h4>
+  <br/>
+  <p>
+    すべての要素（CSS ボックスモデル）は既定で、
+    width および height を コンテンツ領域のみに適用する
+    <font>content-box</font> が設定されています。<br/>
+    要素に境界やパディングがある場合、画面に表示される要素 は
+    width/height の 値 + padding・border の 値 となるため、
+    例えば width: 100%; と指定しても border・padding が 設定されていれば画面から要素がはみ出てしまいます。
+  </p>
+  <br/>
+  <p>
+    <font>border-box</font> は、
+    境界領域まで（コンテンツ領域 + padding・border）を width および height の値に含む設定です。<br/>
+    <i>padding・border の値を配慮せず、簡単にサイズ設定ができるようになります。</i><br/>
+  </p>
+</section>
+<hr/>
+<br/>
+<p style="text-align:center;">/* ~~~ */</p>
+<br/>
+<section>
+  <h3>
+    <u>キーワード値</u><br/>
+    width: <font color="red">auto</font>;<br/>
+    max-width: <font color="red">max-content</font>;<br/>
+    min-width: <font color="red">min-content</font>;<br/>
+  </h3>
+  <br/>
+  <p>
+    width の指定がない場合、
+    <font>auto</font> 要素の幅をブラウザーが計算します。
+  </p>
+  <br/>
+  <p>
+    <font>max-content</font> は、望ましい固有の幅<br/>
+    <font>min-content</font> は、最小の固有の幅です。<br/>
+    <i>固有の幅 は、ボックス内のテキストの長さなどから計算します。</i><br/>
+    <i>例えば、max-content は、ボックス内のテキストを改行せずに横一列に表示した場合に <b>一番長いテキストの幅</b></i><br/>
+    <i>min-content は、そのテキスト を 空白 などで文節として区切った場合に <b>一番長い文節</b> を 意味します。</i><br/>
+  </p>
+</section>
+<br/>
+<section>
+  <h3>
+    <u>改行（文節）の指定</u><br/>
+    word-break: <font color="red">normal</font>;<br/>
+    word-break: <font color="red">break-all</font>;<br/>
+    word-break: <font color="red">keep-all</font>;<br/>
+  </h3>
+  <br/>
+  <p>
+    word-break の指定がなければ、
+    CJK (中国語、台湾語、日本語、韓国語) 以外のテキストの文節がコンテンツボックスからはみ出ても
+    <font>normal</font> 改行されません。
+  </p>
+  <br/>
+  <p>
+    <font>break-all</font> は、
+    文節にかかわらずテキストがコンテンツボックスに収まるように、強制的にどんな文字の間でも改行する設定です。<br/>
+    <i>break-allの場合は 文節という概念がなくなるため、一番大きな幅の文字 が min-content となります。</i>
+  </p>
+  <br/>
+  <p>
+    <font>keep-all</font> は、文節を区分しずらいCJK (中国語、台湾語、日本語、韓国語) テキストの改行を許可しません。<br/>
+    <i>CJK 以外のテキストについては normal と同じ挙動となります。</i><br/>
+  </p>
+</section>
+<hr/>
+<br/>
+<p style="text-align:center;">/* ~~~ */</p>
+<br/>
+<section>
+  <h3>
+    <u>簡単な位置指定の例</u><br/>
+    margin: <font color="red">auto</font>;<br/>
+    margin-left: <font color="red">auto</font>;<br/>
+    margin-right: <font color="red">auto</font>;<br/>
+  </h3>
+  <br/>
+  <p>
+    左右のマージンを <b>auto</b> に設定すると、幅を設定した子要素は親要素の中央に配置されます。<br/>
+    <i>左右どちらかのマージン (margin-left・margin-right) を auto に設定した場合は、要素は ページの右端 または 左端に配置されます。</i>
+  </p>
+  <br/>
+  <h4>マージンの相殺</h4>
+  <p>
+    重なり合うブロックの上下のマージンは、それぞれのマージンの最も大きい寸法 (または等しい場合はいずれか 1 つ) の単一のマージンに結合されることがあります。<br/>
+    <i>この動作を一般的に <b>マージンの相殺</b> と呼びます。</i>
+  </p>
+</section>

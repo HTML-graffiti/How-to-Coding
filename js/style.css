@@ -1,0 +1,45 @@
+.readme #links a,
+.readme #links a:hover {
+  border: none;
+}
+
+.readme #links a:hover {
+  color: red;
+}
+
+code {
+  font-family: "ipag", monospace;
+  font-size: 125%;
+}
+
+nav,
+#count {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+button,
+input[type="button"],
+select {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+button,
+select {
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+input[type="button"] {
+  padding: 0.5rem 0.75rem;
+  margin: 0;
+}
+
+select {
+  font-size: 111%;
+  margin-top: 0.25rem;
+}

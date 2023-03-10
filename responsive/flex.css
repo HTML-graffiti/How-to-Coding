@@ -1,0 +1,71 @@
+*:not(body) {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "NewYork";
+  src: url("https://creative-community.space/coding/cover/NewYork.otf");
+}
+
+h1 {
+  font-family: "NewYork", serif;
+  font-size: 250%;
+  padding: 0 0.25rem;
+}
+
+p,
+pre {
+  padding: 0.25rem;
+  word-break: break-all;
+}
+
+pre,
+font {
+  box-sizing: border-box;
+  font-size: 125%;
+  padding: 0.25rem;
+  word-break: break-all;
+}
+
+p {
+  margin: auto;
+  max-width: 1000px;
+}
+
+#flex_full {
+  box-sizing: border-box;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+@media (orientation: landscape) {
+
+  #flex_full {
+    flex-flow: row;
+    overflow: auto;
+    align-items: center;
+    justify-content: start;
+    padding: 5vw 0.25rem;
+  }
+
+  #flex_full * {
+    margin: 0 2.5rem;
+  }
+
+}
+
+@media (orientation: portrait) {
+
+  #flex_full {
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 1rem 0.25rem;
+  }
+
+  #flex_full * {
+    margin: 0;
+  }
+
+}

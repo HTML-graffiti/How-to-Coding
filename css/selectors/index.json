@@ -1,0 +1,107 @@
+{
+  "title" : "Selectors",
+  "description" : "CSS セレクター | Selectors",
+  "author" : "Cascading Style Sheets",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "Attribute",
+      "name" : "属性",
+      "url" : "/coding/html/attributes/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Pseudo-classes",
+      "name" : "擬似クラス",
+      "url" : "/coding/css/pseudo-classes/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Pseudo-elements",
+      "name" : "擬似要素",
+      "url" : "/coding/css/pseudo-elements/",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "CSS",
+      "name" : "CSS セレクター",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/Building_blocks/Selectors",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "全称セレクター",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/Universal_selectors",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "要素型セレクター",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/Type_selectors",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "ID セレクター",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/ID_selectors",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "クラスセレクター",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/Class_selectors",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "属性セレクター",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/Attribute_selectors",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "子孫結合子",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/Descendant_combinator",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "子結合子",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/Child_combinator",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "隣接兄弟結合子",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/Adjacent_sibling_combinator",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "一般兄弟結合子",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/General_sibling_combinator",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ]
+}

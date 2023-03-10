@@ -1,0 +1,59 @@
+"HyperText Markup Language",website,basic,"HTMLの基本についてをこのページに記録します。",https://creative-community.space/coding/html/
+"HEAD | HyperText Markup Language",website,basic,"HEADって何？",https://creative-community.space/coding/html/head/
+"BODY | HyperText Markup Language",website,basic,"ウェブページの基礎となるBODY要素の中に記述する代表的な要素を解説します。",https://creative-community.space/coding/html/body/
+
+"Cascading Style Sheets",css,basic,CSSの基本についてをこのページに記録します。,https://creative-community.space/coding/css/
+"Text | HyperText Markup Language",website,basic,代表的なテキスト要素を解説します。,https://creative-community.space/coding/html/text/
+"Font | Cascading Style Sheets",css,basic,テキスト要素のフォントを装飾するCSSを解説します。,https://creative-community.space/coding/css/font/
+
+"A CLASS ID | HyperText Markup Language",website,basic,アンカー要素とCLASS・ID属性を解説します。,http://creative-community.space/coding/html/href/
+"Text Decoration | Cascading Style Sheets",css,basic,"テキストの装飾に関連する機能を定義するCSSを解説します。",http://creative-community.space/coding/css/text-decoration/
+
+"Once Upon A Time Online by olly bromham",website,tools,"A tool for creating narratives from the code of any website. To use, drag this to your bookmarks bar and save it under any name.",https://ouato.ollybromham.com/
+
+
+"Font Book",etc,done,"インターネットで見つけたお気に入りのフォントをリストアップします。",http://creative-community.space/coding/fontbook/
+
+"擬似クラス",css,guide,"CSS の擬似クラス は、セレクターに付加するキーワードであり、選択された要素に対して特定の状態を指定します。",https://developer.mozilla.org/ja/docs/Web/CSS/Pseudo-classes
+"擬似要素",css,guide,"CSS の 擬似要素 は、セレクターに付加するキーワードで、選択された要素の特定の部分にスタイル付けできるようにするものです。",https://developer.mozilla.org/ja/docs/Web/CSS/Pseudo-elements
+"詳細度",css,guide,"詳細度 Specificity は、どの CSS プロパティが要素に最も関係があるか、すなわち適用されるかをブラウザーが決定する手段です。詳細度は様々な組み合わせの CSS セレクターで構成される一致規則に基づいています。",https://developer.mozilla.org/ja/docs/Web/CSS/Specificity
+"Pseudo-classes & Pseudo-elements",css,basic,"代表的な擬似クラスと擬似要素を定義するCSSを解説します。",http://creative-community.space/coding/css/pseudo/
+
+"change the words",js,done,JavaScript で 指定したID内の文字を入れ替える,https://creative-community.space/coding/js/changetheword/
+"you are here for",js,done,JavaScript で 時間をカウントする,https://creative-community.space/coding/js/youarehere/
+"色見本 ～ カラーコード",css,library,"Copyright © 2015 Yoshihiko Kato",https://fromkato.com/color
+"絵文字コピペ",etc,tools,"絵文字をクリックすると、（クリップボードに）コピーされる。文字がフラッシュすれば成功。文字が赤くなったら失敗。",https://fromkato.com/emoji
+"147 Named Colors in CSS",css,library,"Modern browsers support 140 named colors, which are listed below. Use them in your HTML and CSS by name, Hex color code or RGB value.",https://htmlcolorcodes.com/color-names/
+"Color | Cascading Style Sheets",css,basic,文字色・背景色をスタイリングするCSSを解説します。,https://creative-community.space/coding/css/color/
+"Picular",etc,tools,"The color of anything.",https://picular.co/
+"Pigment",etc,tools,"by ShapeFactory | Simple Color Palette Generator",https://pigment.shapefactory.co/
+"Colorable",etc,tools,"Contrast is the difference in luminance or color that makes an object (or its representation in an image or display) distinguishable.",https://colorable.jxnblk.com/
+"DIV SPAN | HyperText Markup Language",website,basic,DIVとSPAN要素の違い、CSSプロパティ・ディスプレイを解説します。,https://creative-community.space/coding/html/divspan/
+"The Box Model | Cascading Style Sheets",css,basic,CSS にはボックスの概念があり、これを理解することは CSS でレイアウトを作成したりアイテム同士を揃えたりするためのコツとなります。,https://creative-community.space/coding/css/boxmodel/
+"Border | Cascading Style Sheets",css,basic,"境界領域（border box）および関連するCSSプロパティ を解説します。",http://creative-community.space/coding/css/border/
+"More Control Over CSS Borders With background-image",css,tools,"Chris Coyier on Aug 7, 2020",https://css-tricks.com/more-control-over-css-borders-with-background-image/
+"メディアクエリー",css,guide,メディアクエリーによって、サイトやアプリを様々な引数や端末の特性に基づいて合わせることができます。,https://developer.mozilla.org/ja/docs/Web/CSS/Media_Queries
+"メディアクエリーの初心者向けガイド",css,guide,CSS メディアクエリー（CSS Media Query）を使用すると、ブラウザーとデバイスの環境が指定した規則に一致する場合にのみ CSS を適用できます。,https://developer.mozilla.org/ja/docs/Learn/CSS/CSS_layout/Media_queries
+"This Page can or cannot be browse",css,basic,ブラウザ・デバイス環境によってデザインを変える,https://creative-community.space/coding/responsive
+"AREA-BASED IMAGE SIZING WITH CSS",css,library,"This page compares two different CSS techniques for sizing images that have a variety of different aspect ratios – a common problem when composing a field of logos or other irregularly-sized images.",https://nicksherman.com/size-by-area/
+"Multimedia and embedding | HyperText Markup Language",website,basic,"MDN Web Docs を参考に、ウェブページにマルチメディアを埋め込みます。",http://creative-community.space/coding/html/embedding/
+"Learn CSS Layout",css,hints,"This site teaches the CSS fundamentals that are used in any website's layout.",https://learnlayout.com/
+"Layout | Cascading Style Sheets",css,basic,CSSで利用可能な基本的なレイアウトのツールとテクニックについてを解説します。,https://creative-community.space/coding/css/layout/
+"The List of Contents About You",website,done,自分にまつわる事柄のリストページ,https://creative-community.space/coding/readme/
+"Multi-column | CSS Layout",css,basic,CSS 段組みレイアウトは CSS のモジュールの一つで、段組みレイアウトの対応を追加するものです。,https://creative-community.space/coding/css/layout/columns/
+"Ul Ol Li | HyperText Markup Language",website,basic,"順序なしリスト UL要素・順序付きリスト OL要素、リスト子要素 LI要素 を解説します。",https://creative-community.space/coding/html/ulolli/
+"Flexbox | CSS Layout",css,basic,フレックスボックス (Flexbox) は、アイテムを行または列に並べるための 1 次元のレイアウト方法です。,https://creative-community.space/coding/css/layout/flexbox/
+"Grid | CSS Layout",css,basic,CSS グリッドレイアウトは、二次元グリッドシステムを CSS にもたらします。,https://creative-community.space/coding/css/layout/grid/
+"Form | HyperText Markup Language",website,basic,"ウェブフォームを構築する フォームコントロール HTML要素 を解説します。",https://creative-community.space/coding/html/form/
+
+"How to Host your static website (with a custom domain) on GitHub Pages",etc,tools,"by Laurel Schwulst",https://paper.dropbox.com/doc/How-to-Host-your-static-website-with-a-custom-domain-on-GitHub-Pages--BpYbQ2WNHztlinzfvlbqDi03AQ-gzhTaPPCLqIbJ1IBazVrj
+"How to Start a local server",etc,tools,"by Laurel Schwulst",https://paper.dropbox.com/doc/How-to-Start-a-local-server--BpZHwh3MQaFqP4N5FuostFYgAQ-fKhcOsg1CrzruKkgX4i6p
+
+"Words That Might Be Useful",etc,hints,by Laurel Schwulst,https://veryinteractive.net/pages/vocabulary.html
+"Core 1: Interaction",website,hints,"PUCD 2035 Core 1: Interaction Fall 2021, Tue 9:00 - 11:40 AM Academic Entrance 63 Fifth Ave, Room 617",http://interaction-2021.glitch.me/
+"Core 2 Interaction",website,hints,"Core Interaction comprises two courses, taken concurrently: studio and lab. Together, they form the foundation for interaction design and practice on the web.",https://ci22.href.blue/
+
+"Software for People",website,hints,"This studio course is about making projects in the web browser.",http://www.2022.software-for-people.net/resources
+
+"Keep the web free, say no to Web3",website,hints,"Web3 has been called many things: an idea, a movement, a new iteration of the internet.",https://yesterweb.org/no-to-web3/
+EASTMANREFERENCE,website,library,"Simple and straight forward how to and reference",https://eastmanreference.com/

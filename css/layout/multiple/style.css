@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "San Francisco";
+  src: url("https://creative-community.space/coding/readme/san-francisco/SF-Pro.ttf");
+}
+
+@font-face {
+  font-family: "NewYork";
+  src: url("https://creative-community.space/coding/cover/NewYork.otf");
+}
+
+#multiple {
+  font-family: "San Francisco", "游ゴシック体", "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  columns: 250px auto;
+  column-gap: 2.5rem;
+  column-rule: dotted blue;
+  column-fill: auto;
+}
+
+#multiple h1 {
+  font-family: "NewYork", serif;
+  column-span: all;
+  background: #000;
+  color: #fff;
+  padding: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+#multiple section {
+  break-inside: avoid-column;
+}
+
+#multiple pre {
+  margin: 1rem 0 2.5rem;
+}
+
+@media (orientation: portrait) {
+  #multiple {
+    margin-top: 1rem;
+    writing-mode: vertical-rl;
+    width: 100%;
+    columns: 250px auto;
+  }
+
+  #multiple h1 {
+    column-span: none;
+    padding: 0.5rem 0;
+    margin-bottom: 0;
+  }
+
+  #multiple h1 i {
+    font-size: 75%;
+    display: block;
+    margin: 0 0.5rem 0;
+  }
+
+  #multiple section {
+    margin: 0 1rem;
+  }
+
+  #multiple pre {
+    margin: 0 1rem 0 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  #multiple {
+    font-size: 4vw;
+    margin-top: 2.5vw;
+    columns: 40vh auto;
+  }
+
+  #multiple h1 {
+    padding: 2.5vw 0;
+  }
+
+  #multiple h1 i {
+    margin: 0 2.5vw 0;
+  }
+
+  #multiple section {
+    margin: 0 2.5vw;
+  }
+
+  #multiple pre {
+    margin: 0 2.5vw 0 5vw;
+  }
+
+}

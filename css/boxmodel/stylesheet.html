@@ -1,0 +1,117 @@
+<hgroup>
+  <h2><i>ブロック要素とインライン要素</i></h2>
+  <p>
+    HTML の要素には知っておくべき 2 つの重要なカテゴリー
+    <b>ブロックレベル要素</b>
+    と
+    <b>インライン要素</b>
+    があります。
+  </p>
+  <i>
+    この分類は、HTML Living Standard (HTML5以降) では廃止になりましたが、
+    ページレイアウトを作成するための重要なコツとなります。
+  </i>
+</hgroup>
+<br/>
+<hr/>
+<section>
+  <h3>
+    <u>ブロックレベル要素</u><br/>
+    <i>見出し（h1 ~ h6）・段落（p）・リスト項目（ul ol dl li）・罫線（hr）・div など</i>
+  </h3>
+  <p>
+    ブロックレベル要素は、CSS の
+    <font>display</font> が <font>block</font> に設定されています。
+  </p>
+  <p>
+    また、
+    <font>body</font>
+    にもデフォルトで、マージンが設定されています。
+  </p>
+  <br/>
+  <pre>
+<font>*</font> {
+  <font>border: none;</font>
+  <font>padding: 0;</font>
+  <font>margin: 0;</font>
+}
+  </pre>
+  <p>
+    以上の CSS ルールセット で、
+    <font>すべての種類の要素</font> の
+    <font style="border: none; padding: 0; margin: 0;">境界・パディング・マージン を なし(0)</font>
+    に スタイリングします。
+  </p>
+  <br/>
+  <hr/>
+  <section>
+    <h3>
+      <u>インライン要素</u><br/>
+      <i>リンク（a）・文字装飾（b em i u など）・span など</i>
+    </h3>
+    <p>
+      インライン要素は、CSS の
+      <font>display</font> が <font>inline</font> に設定されています。
+    </p>
+    <br/>
+    <pre>
+<font>nav a</font>,
+<font>span</font> {
+  <font>display: inline-block;</font>
+}
+    </pre>
+  <br/>
+  <hr/>
+  <p>
+    <font>display</font> の プロパティ値を
+    <font color="red">inline-block</font> に設定すると、
+    <b>block</b> と <b>inline</b>
+    の特性を混在させ、
+    インライン要素 のように 改行を作らないまま
+    ブロックレベル要素 のように パディング・マージンを指定できます。
+    <br/>
+    <i>
+      ここでは nav 要素内の a 要素
+      と span 要素
+      のディプレイ値 を inline-block に設定し、パディング・マージンを操作します。
+    </i>
+  </p>
+</section>
+<br/>
+<hr/>
+<p style="text-align:center;">~~~~~</p>
+<br/>
+<h3>/* style.css */</h3>
+<pre>
+
+* {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  background: #000;
+  min-height: -webkit-fill-available;
+}
+
+body,
+a {
+  color: #fff;
+}
+
+nav a,
+span {
+  display: inline-block;
+}
+
+body,
+h1,
+.special {
+  border: dashed 1px #fff;
+}
+</pre>

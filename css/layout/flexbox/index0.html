@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="../../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="../../../responsive/flex.css" />
+  <link rel="stylesheet" href="../../../responsive/pc.css" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="../../../readme/style.css" />
+  <link rel="stylesheet" href="../../pseudo-classes/lightbox.css" />
+  <style type="text/css">
+
+  body {
+    background: #ddd;
+  }
+
+  #flex_full {
+    font-size: 125%;
+    min-height: 90vh;
+  }
+
+  #flex_full font {
+    font-size: 100%;
+  }
+
+  #flex_full::before {
+    content: 'display: flex;';
+    display: block;
+  }
+
+  #contents::before {
+    content:'関連記事';
+    font-size: 90%;
+  }
+
+  #links::before {
+    content:'参考資料';
+    font-size: 75%;
+  }
+
+  #lastModified,
+  #contents::before,
+  #links::before {
+    font-family: "ipag", monospace;
+  }
+
+  #contents::before,
+  #links::before {
+    text-decoration: underline;
+    display: block;
+    margin: 0.5rem 0.25rem;
+  }
+
+  #lastModified {
+    line-height: 125%;
+    word-break: break-word;
+  }
+
+  @media (orientation: portrait) {
+
+    #flex_full {
+      font-size: 4vw;
+    }
+
+  }
+
+  </style>
+
+</head>
+<body>
+  <nav>
+    <p>
+      <a href="#columns" onclick="columnsStyle()">フレックスボックス</a>
+    </p>
+    <p>
+      <a href="#etc">関連記事</a>
+    </p>
+  </nav>
+
+  <pre id="flex_full"></pre>
+
+  <article class="lightbox" id="columns">
+    <a href="#" class="close"></a>
+    <section class="readme translate_center">
+      <h2>display: flex;</h2>
+
+      <pre>
+      </pre>
+      <p id="lastModified"></p>
+    </section>
+  </article>
+
+  <aside class="lightbox" id="etc">
+    <a href="#" class="close"></a>
+    <section id="contents" class="translate_center"></section>
+    <section id="links" class="fixed_bottom"></section>
+  </aside>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="script.js" defer></script>
+  <script type="text/javascript">
+  $(function() {
+    $("#flex_full").load("../../../responsive/flex.html");
+  })
+
+  let lastModified = document.querySelector('#lastModified');
+
+  lastModified.innerHTML =
+  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+  </script>
+</body>
+</html>

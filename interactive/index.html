@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../elements.css" />
+  <link rel="stylesheet" href="../../readme/style.css" />
+  <style>
+
+  a[href*="one"]::before  {
+    content: '<details>';
+    text-transform: uppercase;
+  }
+
+  a[href*="two"]::before  {
+    content: '<summary>';
+    text-transform: uppercase;
+  }
+
+  a[href*="three"]::before  {
+    content: '<dialog>';
+    text-transform: uppercase;
+  }
+
+  #contents::before {
+    content:'関連記事';
+    font-size: 90%;
+  }
+
+  #links::before {
+    content:'参考資料';
+    font-size: 75%;
+  }
+
+  #contents::before,
+  #links::before {
+    display: block;
+    text-decoration: underline;
+    margin: 0.5rem 0.25rem;
+  }
+
+  section:target {
+    color: #fff;
+    background: #FF0000;
+  }
+
+  section:target #contents a,
+  section:target #links a {
+    color: #fff;
+  }
+
+  #template {
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    padding: 7.5rem 2.5rem 2.5rem;
+    min-height: 100vh;
+  }
+
+  #lastModified {
+    font-family: "ipag", monospace;
+    text-align: right;
+    line-height: 125%;
+    word-break: break-word;
+  }
+
+  footer {
+    position: relative;
+    min-height: 95vh;
+  }
+
+  footer aside {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  footer aside {
+    max-width: 1000px;
+  }
+
+  @media screen and (max-width: 820px) {
+
+    #template {
+      font-size: 3.21vw;
+      padding: 20% 2.5% 5%;
+    }
+
+  }
+
+  </style>
+</head>
+<body>
+  <nav id="nav">
+    <span>対話的要素</span>
+    <a href="#one"></a>
+    <a href="#two"></a>
+    <a href="#three"></a>
+  </nav>
+
+  <header id="template"></header>
+
+  <article>
+    <section id="one"></section>
+    <hr/>
+    <section id="two"></section>
+    <hr/>
+    <section id="three"></section>
+    <hr/>
+    <footer>
+      <aside id="contents"></aside>
+    </footer>
+    <aside id="links"></aside>
+  </article>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    $("#template").load("template.html");
+  })
+
+  let lastModified = document.querySelector('#lastModified');
+
+  lastModified.innerHTML =
+  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+  </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+{
+  "title" : "A & ID",
+  "description" : "アンカー要素とID属性",
+  "author" : "HyperText Markup Language",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "HTML",
+      "name" : "属性",
+      "url" : "/coding/html/attributes/"
+    },
+    {
+      "date" : "HTML",
+      "name" : "区分要素",
+      "url" : "/coding/html/sectioning/"
+    },
+    {
+      "date" : "HTML",
+      "name" : "埋め込み要素",
+      "url" : "/coding/html/iframe-embed-object/"
+    },
+    {
+      "date" : "CSS",
+      "name" : "色",
+      "url" : "/coding/css/colors/"
+    },
+    {
+      "date" : "CSS",
+      "name" : "テキストの装飾",
+      "url" : "/coding/css/text/"
+    },
+    {
+      "date" : "CSS",
+      "name" : "擬似クラス",
+      "url" : "/coding/css/pseudo-classes/"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "HTMLの要素",
+      "name" : "リンク",
+      "url" : "https://momdo.github.io/html/links.html",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "ウェブ入門",
+      "name" : "ハイパーリンクの作成",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "a",
+      "name" : "アンカー要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/a",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "a要素",
+      "name" : "ハイパーリンクを表す",
+      "url" : "https://www.tagindex.com/html/text/a.html",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "RFC 3966",
+      "name" : "The tel URI for Telephone Numbers",
+      "url" : "https://datatracker.ietf.org/doc/html/rfc3966",
+      "language" : "html",
+      "status" : "hints"
+    },
+    {
+      "date" : "Browsing context",
+      "name" : "閲覧コンテキスト",
+      "url" : "https://developer.mozilla.org/ja/docs/Glossary/Browsing_context",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML attribute",
+      "name" : "rel",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Attributes/rel",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Link types",
+      "name" : "リンク種別",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Link_types",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "rel属性",
+      "name" : "リンクタイプ",
+      "url" : "https://www.tagindex.com/html/basic/linktype.html",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "About",
+      "name" : "rel=noopener",
+      "url" : "https://mathiasbynens.github.io/rel-noopener/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Referrer Policy",
+      "name" : "文書のリファラーポリシーを示す",
+      "url" : "https://www.tagindex.com/html/page/meta_referrer.html",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "scroll-behavior",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/scroll-behavior"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":link",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:link",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":visited",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:visited",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":hover",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:hover",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":active",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:active",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+<section id="one" class="readme">
+  <h2>
+    <i>文章の方向</i>
+    <br/>
+    <font>writing-mode</font>: キーワード値;<br/>
+  </h2>
+  <br/>
+  <p>
+    <font>writing-mode</font> は、テキストの行のレイアウトを横書きにするか縦書きにするか、
+    ブロックのフロー方向を左向きにするか右向きにするかを設定する CSSプロパティ です。
+  </p>
+  <br/>
+  <h3>
+    <font>horizontal-tb</font>
+    <i>横書き、上から下へ改行するキーワード値</i><br/>
+    <font>vertical-lr</font>
+    <i>縦書き、右から左へ改行するキーワード値</i><br/>
+    <font>vertical-rl</font>
+    <i>縦書き、左から右へ改行するキーワード値</i><br/>
+  </h3>
+  <br/>
+  <p style="text-align:center;">~~~</p>
+  <h3>
+    <i>書字の方向</i>
+    <br/>
+    <font>direction</font>: キーワード値;
+  </h3>
+  <br/>
+  <p>
+    <font>ltr</font>
+    <i>書字方向を左書き(左から右)に指定するキーワード値</i><br/>
+    <font>rtl</font>
+    <i>書字方向を右書き(右から左)に指定するキーワード値</i><br/>
+  </p>
+  <br/>
+  <p>
+    ブロック内の書字方向は、CSSプロパティ <b>direction</b> で指定できますが、
+    <b>ページの構造に大きく関わるため、CSSではなく グローバル属性 <font>dir</font> を使用するべきとされています。</b>
+  </p>
+  <br/>
+  <h3 class="p_tag" dir="ltr" lang="ja"> dir="ltr" lang="ja">このブロックの書字方向は左書き(左から右)です。</h3>
+  <br/>
+  <h3 class="p_tag" dir="rtl" lang="ja"> dir="rtl" lang="ja">このブロックの書字方向は右書き(右から左)です。</h3>
+  <br/>
+  <h3 class="p_tag" dir="auto" lang="ja"> dir="auto" lang="ja">このブロックの書字方向は言語に基づき自動設定されます。</h3>
+  <br/>
+  <br/>
+  <h3>
+    <i>lang属性</i>
+    <br/>
+    <要素名 <font>lang</font>="ja">
+  </h3>
+  <br/>
+  <p>
+    書字方向は、言語によって崩れる場合があります。
+    <i><b>rtl</b> を アラビア語などの 右書きの言語 以外に設定する必要はほとんどありません。</i>
+  </p>
+  <br/>
+  <p style="text-align:center;">~~~</p>
+  <br/>
+  <h3>
+    <i>direction: rtl;</i>
+    <br/>
+    <code>unicode-bidi</code>: <font>bidi-override</font>;<br/>
+  </h3>
+  <br/>
+  <p>
+    <font>unicode-bidi</font> は、direction プロパティと共に、文書内の双方向テキストの扱いを指定する CSSプロパティです。<br/>
+    <i>値を <b>bidi-override</b> に設定すると、言語を問わず direction の方向に テキストが表示されます。</i>
+  </p>
+  <br/>
+  <br/>
+  <font><a href="#">×</a></font>
+</section>
+
+<section id="two" class="readme">
+  <h2>
+    <i>縦書きモード専用のプロパティ</i>
+    <br/>
+    <font>text-orientation</font>: キーワード値;<br/>
+    <font>text-combine-upright</font>: キーワード値;<br/>
+  </h2>
+  <br/>
+  <p>
+    <font>text-orientation</font> と
+    <font>text-combine-upright</font> は、
+    writing-mode の値が vertical-rl または vertical-lr の場合のみ
+    に効果がある CSSプロパティです。
+  </p>
+  <br/>
+  <p style="text-align:center;">~~~</p>
+  <br/>
+  <p>text-orientation</p>
+  <h3>
+    <font>mixed</font>
+    横書き用の文字を右に 90° 回転させ、縦書き用の文字は自然に配置するキーワード値<br/>
+    <font>upright</font>
+    横書き用の文字を、縦書き用の字形と同様に自然に (正立で) 配置するキーワード値<br/>
+    <font>sideways</font>
+    全行を横書きで書いて 90° 回転したように配置するキーワード値<br/>
+    <font>sideways-right</font>
+    sideways の別名です。<br/>
+  </h3>
+  <br/>
+  <p style="text-align:center;">~~~</p>
+  <br/>
+  <p>
+    <font>text-combine-upright</font>
+    は、縦書きモードのブロック内のインラインテキストの書字方向を指定する CSSプロパティです。
+  </p>
+  <h3>
+    <font>none</font>
+    特別な処理をしないキーワード値（初期値）<br/>
+    <font>all</font>
+    すべての文字を水平に並べてボックス内に収めるキーワード値<br/>
+    <font>digits</font>
+    指定した桁数までの連続した ASCII 数字(半角数字) を水平に並べてボックス内に収めるキーワード値<br/>
+    <br/>
+    <i>digits 値に 対応しているブラウザーはあまり多くありません。</i>
+  </h3>
+  <br/>
+  <br/>
+  <font><a href="#">×</a></font>
+</section>

@@ -1,0 +1,41 @@
+"PHP マニュアル",php,guide,"PHP マニュアル翻訳プロジェクト",https://www.php.net/manual/ja/
+"Personal Home Page Tools",php,basic,PHPにできること,http://creative-community.space/coding/php/
+"CSV to PHP | creative-community.space",php,basic,CSVに書き込んだ内容を、HTMLに呼び出す,http://creative-community.space/coding/php/csv/
+"Let's Creat a Lists of the Things about You",php,basic,リストページ／投稿フォームの作り方,http://creative-community.space/coding/submit/
+"Ul Ol Li | HyperText Markup Language",website,basic,"リストを構成する代表的な要素 Ul Ol Li を解説",http://creative-community.space/coding/html/ulolli/
+"Form | HyperText Markup Languagehu",website,basic,"フォームを構成する 部品 を解説",http://creative-community.space/coding/submit/form/
+"Contact | Personal Home Page Tools",php,basic,"via GRAYCODE PHPプログラミング",http://creative-community.space/coding/submit/contact/
+
+ORG,php,done,ウェブサイトcreative-community.space のために制作したコードをまとめたウェブ・テンプレート,http://creative-community.space/coding/submit/org/
+"Random | Ul Ol Li",css,basic,"CSS フレックスボックスレイアウト を解説",http://creative-community.space/coding/html/ulolli/random/
+"jQuery「Endless Div Scroll",js,done,"This simple, but useful jquery plugin will apply a smooth endless/infinite scrolling effect to any div content, including texts, links, pictures, divs, anchors ... it consists of one lightweight javascript file (~1kb).",http://creative-community.space/coding/js/marquee/
+"mousedragscrollable",js,done,UL要素内にあるLI要素を横並びにスタイリングし、マウスドラッグでスクロール,http://creative-community.space/coding/js/mousedragscrollable/
+background-image | Cascading Style Sheets,css,basic,"CSS background-image:url();　を使って要素の背景に画像をスタイリングして、画像をダウンロードしにくいフォトアルバムを作る",http://creative-community.space/coding/css/background-image/
+vg.pe.hu,website,done,ウェブサイトvg.pe.hu のために制作したコードをまとめたウェブ・テンプレート,http://vg.pe.hu/jp/download/
+"Software for People",website,hints,"This studio course is about making projects in the web browser. The class will cover foundational, front-end languages HTML, CSS, and JavaScript and introduce principles of web design including navigation, pacing, feedback, accessibility, and adapting to variable screen sizes and devices.",http://www.2022.software-for-people.net/
+"Position | Cascading Style Sheets",css,basic,要素がどのように配置されるかをスタイリングするCSSを解説します。,https://creative-community.space/coding/css/position/
+"Media_Print | Cascading Style Sheets",css,basic,印刷時に機能するCSSの書き方を解説します。,https://creative-community.space/coding/css/media_print/
+"Ruby | HyperText Markup Language",website,basic,"ベーステキストの上、下、隣に描画される小さな注釈をつけるルビ要素を解説",http://creative-community.space/coding/html/ruby/
+"the sum of inline images",css,done,テキストと同列に画像を埋め込む,https://creative-community.space/coding/template/the-sum-of-inline-images/
+"DETAILS SUMMARY | HyperText Markup Language",website,basic,"折りたたみウィジェットを作成する 詳細折りたたみ要素 と 概要明示要素",https://creative-community.space/coding/html/details/
+
+
+"Easy Grid Calculator for Layout",website,tools,"This Square Document Grid Calculator divides the page into even Lines/Units based on leading.",https://font.is/EasyGridCalculatorSquare/EasyGridCalculatorSquare.htm
+"Grid Layout | Cascading Style Sheets",css,basic,CSS グリッドレイアウトは、二次元グリッドシステムを CSS にもたらします。,https://creative-community.space/coding/css/grid/
+
+"Make Beautiful Gradients",css,hints,"Have you ever noticed that gradients tend to look a little gray and washed-out in the middle? This happens because of a mathematical quirk with RGB colors. Fortunately, we can work around this quirk, and create beautiful, lush, saturated gradients.",https://www.joshwcomeau.com/css/make-beautiful-gradients/
+
+
+"CSS Button Hover Styles",css,library,"A collection of simple and subtle CSS-only hover animations for buttons.",https://tympanus.net/Development/ButtonHoverStyles/
+"Hover.css",css,library,"A collection of CSS3 powered hover effects to be applied to links, buttons, logos, SVG, featured images and so on.",https://ianlunn.github.io/Hover/
+"transform-origin illustration",css,library,"about transform-origin",https://codepen.io/shshaw/pen/pOVKjb
+
+"Cursor.otf",css,library,"Cursor.otf beta is a font by Liebermann Kiepe Reddemann that allows you to use the MacOS system cursors as a font in your favourite desktop publishing program to imply interaction or events in website sketches.",http://cursorfont.liebermannkiepereddemann.de/
+"Feather – Simply beautiful open source icons",etc,tools,"Feather is a collection of simply beautiful open source icons. Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency and readability.",https://feathericons.com/
+
+
+
+"",css,guide,,
+"",css,guide,,
+
+

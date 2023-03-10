@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <title>Draw(event)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <canvas id="drawarea" onmousedown="startDraw(event)" onmousemove="Draw(event)" onmouseup="endDraw(event)"></canvas>
+  <table id="control">
+    <tbody>
+      <tr>
+        <td>
+          <label for="free"><input type="radio" name="type" value="free" id="free" checked>フリーハンド</label>
+          <label for="line"><input type="radio" name="type" value="line" id="line">直線</label>
+          <label for="rect"><input type="radio" name="type" value="rect" id="rect">四角形（枠線のみ）</label>
+          <label for="fillrect"><input type="radio" name="type" value="fillrect" id="fillrect">四角形（塗り潰し）</label>
+          <label for="arc"><input type="radio" name="type" value="arc" id="arc">円（枠線のみ）</label>
+          <label for="fillarc"><input type="radio" name="type" value="fillarc" id="fillarc">円（塗り潰し）</label>
+          <label for="erase"><input type="radio" name="type" value="erase" id="erase">消しゴム（白線）</label>
+          <label for="clear"><input type="radio" name="type" value="clear" id="clear">エリア消去</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label><input type="radio" name="color" value="black" checked>黒</label>
+          <label><input type="radio" name="color" value="blue">青</label>
+          <label><input type="radio" name="color" value="red">赤</label>
+          <label><input type="radio" name="color" value="yellow">黄色</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label><input type="radio" name="width" value="5">極細</label>
+          <label><input type="radio" name="width" value="10">細</label>
+          <label><input type="radio" name="width" value="15" checked>普通</label>
+          <label><input type="radio" name="width" value="20">太</label>
+          <label><input type="radio" name="width" value="25">極太</label>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <input id="saveimg" name="saveimg" type="button" value="Create IMG" onclick="createimg();">
+  <input id="controlbtn" name="controlbtn" type="button" value="?" onclick="controller();">
+
+  <section id="imgarea">
+    <img id="createimg">
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

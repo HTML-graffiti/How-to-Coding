@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../cascading.css" />
+  <link rel="stylesheet" href="../../readme/style.css" />
+  <link rel="stylesheet" href="../pseudo-classes/lightbox.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style type="text/css">
+
+  body {
+    background: #fff;
+  }
+
+  @font-face {
+    font-family: "Bestermind";
+    src: url("BestermindRegular.ttf") format("truetype");
+  }
+
+  .ruleset::before {
+    display:none;
+  }
+
+  #one,
+  #two,
+  #three,
+  #four {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    user-select: none;
+    pointer-events: none;
+    color: #000;
+    background: #fff;
+    transition: 2.5s;
+  }
+
+  #one:target,
+  #two:target,
+  #three:target,
+  #four:target {
+    padding: 1rem;
+    width: 95%;
+    height: 75%;
+    opacity: 1;
+    overflow: auto;
+    user-select: auto;
+    pointer-events: auto;
+    filter: invert();
+  }
+
+  section:target a {
+    color: #fff;
+    filter: invert();
+  }
+
+  h1,
+  .ruleset {
+    color: #000;
+    text-shadow:
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    -2px 2px 0 #fff,
+    -3px 3px 0 #fff,
+    -4px 4px 0 #fff,
+    -5px 5px 0 #fff;
+    filter: invert();
+    mix-blend-mode: difference;
+  }
+
+  .ruleset {
+    font-size: medium;
+    padding-top: 4.5%;
+    padding-bottom: 4.5%;
+    margin: 0.5rem;
+  }
+
+  .ruleset .selif {
+    font-style: normal;
+  }
+
+  code {
+    font-size: 125%;
+  }
+
+  .link::before {
+    content: '<link ';
+  }
+
+  .link::after {
+    content: '>';
+  }
+
+  #contents::before {
+    content:'関連記事';
+    font-size: 90%;
+  }
+
+  #links::before {
+    content:'参考資料';
+    font-size: 75%;
+  }
+
+  #contents::before,
+  #links::before {
+    text-decoration: underline;
+    display: block;
+    font-family: "ipag", monospace;
+    margin: 0.5rem 0.25rem;
+  }
+
+  #lastModified {
+    font-family: "ipag", monospace;
+    line-height: 125%;
+    padding: 0.5rem 0;
+    word-break: break-word;
+  }
+
+  </style>
+
+</head>
+<body class="body">
+  <nav>
+    <p>
+      <a href="#one">ファミリー・スタイル</a>
+      <a href="#four">ウェブフォント</a>
+      <a href="#two">サイズ</a>
+      <a href="#three">レイアウト</a>
+    </p>
+    <p>
+      <a href="#etc">関連記事</a>
+    </p>
+  </nav>
+  <h1 id="title">Font Styling | Cascading Style Sheets</h1>
+  <main class="ruleset">
+    <i>CSS</i>
+    <p class="declaration">
+      <b class="selif">font-family</b>
+      <em id="familyOutput" class="sans"></em> ;
+    </p>
+    <p class="declaration">
+      <b class="selif">font-style</b>
+      <em id="styleOutput" class="sans">normal</em> ;
+    </p>
+    <p class="declaration">
+      <b class="selif">font-weight</b>
+      <em id="weightOutput" class="sans">400</em> ;
+    </p>
+    <p class="declaration">
+      <b class="selif">font-variant</b>
+      <em id="variantOutput" class="sans">normal</em> ;
+    </p>
+    <p class="declaration">
+      /*
+      <b class="selif">font-synthesis</b>
+      <em id="synthesisOutput" class="sans">none</em> ;
+      */
+    </p>
+    <p class="declaration">
+      <b class="selif">font-size</b>
+      <em id="sizeOutput" class="sans">medium</em> ;
+    </p>
+    <p class="declaration">
+      <b class="selif">font-size-adjust</b>
+      <em id="sizeAdjustOutput" class="sans">none</em> ;
+    </p>
+    <p class="declaration">
+      <b class="selif">line-height</b>
+      <em id="lineHeightOutput" class="sans">normal</em> ;
+    </p>
+    <p class="declaration">
+      <b class="selif">letter-spacing</b>
+      <em id="letterSpacingOutput" class="sans">normal</em> ;
+    </p>
+    <p class="declaration">
+      <b class="selif">word-spacing</b>
+      <em id="wordSpacingOutput" class="sans">normal</em> ;
+    </p>
+    <p class="declaration">
+      <b class="selif">text-indent</b>
+      <em id="indentOutput" class="sans">0</em> ;
+    </p>
+  </main>
+
+  <section class="buttons">
+    <p>
+      <b>font-family</b>
+      <button class="special" onclick="setFamily ('Franklin Gothic Medium, Franklin Gothic, Lucida Grande, Lucida Sans Unicode, Lucida Sans, sans-serif');">"Franklin Gothic", "Lucida Grande", sans-serif</button>
+      <button class="special" onclick="setFamily ('Didot, Didot LT STD, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif');">Didot, Palatino, serif</button>
+      <button class="special" onclick="setFamily ('Andale Mono, Lucida Console, Lucida Sans Typewriter, monospace');">"Andale Mono", "Lucida Console", monospace</button>
+      <button class="special" onclick="setFamily ('Great Vibes, cursive');">'Great Vibes', cursive</button>
+      <button class="special" onclick="setFamily ('Bestermind, fantasy');">Bestermind, fantasy</button>
+    </p>
+  </section>
+
+  <section class="buttons">
+    <p>
+      <b>font-style</b>
+      <button class="special" onclick="setStyle ('normal');">normal</button>
+      <button class="special" onclick="setStyle ('italic');">italic</button>
+      <button class="special" onclick="setStyle ('oblique');">oblique</button>
+    </p>
+    <p>
+      <b>font-weight</b>
+      <button class="special" onclick="setWeight ('100');">100</button>
+      <button class="special" onclick="setWeight ('200');">200</button>
+      <button class="special" onclick="setWeight ('300');">300</button>
+      <button class="special" onclick="setWeight ('normal');">normal (400)</button>
+      <button class="special" onclick="setWeight ('500');">500</button>
+      <button class="special" onclick="setWeight ('600');">600</button>
+      <button class="special" onclick="setWeight ('bold');">bold (700)</button>
+      <button class="special" onclick="setWeight ('800');">800</button>
+      <button class="special" onclick="setWeight ('900');">900</button>
+    </p>
+  </section>
+
+  <section class="buttons">
+    <p>
+      <b>font-variant</b>
+      <button class="special" onclick="setVariant ('normal');">normal</button>
+      <button class="special" onclick="setVariant ('small-caps');">small-caps</button>
+    </p>
+    <p>
+      <b>font-synthesis</b>
+      <button class="special" onclick="setSynthesis ('none');">none</button>
+      <button class="special" onclick="setSynthesis ('weight');">weight</button>
+      <button class="special" onclick="setSynthesis ('style');">style</button>
+      <button class="special" onclick="setSynthesis ('small-caps');">small-caps</button>
+      <button class="special" onclick="setSynthesis ('weight style small-caps');">weight style small-caps</button>
+    </p>
+  </section>
+
+  <section class="buttons">
+    <p>
+      <b>font-size</b>
+      <button class="special" onclick="setSize ('medium');">medium</button>
+      <button class="special" onclick="setSize ('xx-small');">xx-small</button>
+      <button class="special" onclick="setSize ('large');">large</button>
+      <button class="special" onclick="setSize ('xxx-large');">xxx-large</button>
+      <button class="special" onclick="setSize ('2rem');">2rem</button>
+      <button class="special" onclick="setSize ('3.21vh');">3.21vh</button>
+      <button class="special" onclick="setSize ('4.5vw');">4.5vw</button>
+    </p>
+    <p>
+      <b>font-size-adjust</b>
+      <button class="special" onclick="setAdjust ('none');">none</button>
+      <button class="special" onclick="setAdjust ('1');">1</button>
+      <button class="special" onclick="setAdjust ('.75');">.75</button>
+      <button class="special" onclick="setAdjust ('.5');">.5</button>
+      <button class="special" onclick="setAdjust ('.25');">.25</button>
+    </p>
+  </section>
+
+  <section class="buttons">
+    <p>
+      <b>line-height</b>
+      <button class="special" onclick="setLine ('normal');">normal</button>
+      <button class="special" onclick="setLine ('150%');">150%</button>
+      <button class="special" onclick="setLine ('2');">2</button>
+    </p>
+    <p>
+      <b>letter-spacing</b>
+      <button class="special" onclick="setSpacing ('normal');">normal</button>
+      <button class="special" onclick="setSpacing ('.1rem');">.1rem</button>
+      <button class="special" onclick="setSpacing ('-2px');">-2px</button>
+      <button class="special" onclick="setSpacing ('.321vw');">.321vw</button>
+    </p>
+    <p>
+      <b>word-spacing</b>
+      <button class="special" onclick="setWordSpacing ('normal');">normal</button>
+      <button class="special" onclick="setWordSpacing ('1rem');">1rem</button>
+      <button class="special" onclick="setWordSpacing ('2.5vw');">2.5vw</button>
+      <button class="special" onclick="setWordSpacing ('-.5vh');">-.5vh</button>
+    </p>
+    <p>
+      <b>text-indent</b>
+      <button class="special" onclick="setIndent ('0');">0</button>
+      <button class="special" onclick="setIndent ('-2.5%');">-2.5%</button>
+      <button class="special" onclick="setIndent ('2rem');">2rem</button>
+      <button class="special" onclick="setIndent ('3vh');">3vh</button>
+      <button class="special" onclick="setIndent ('4.5vw');">4.5vw</button>
+    </p>
+  </section>
+
+  <article id="coding"></article>
+
+  <p id="lastModified"></p>
+
+  <aside class="lightbox" id="etc">
+    <a href="#" class="close"></a>
+    <section id="contents" class="translate_center"></section>
+    <section id="links" class="fixed_bottom"></section>
+  </aside>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="script.js" defer></script>
+  <script type="text/javascript">
+  $(function() {
+    $("#coding").load("howto.html");
+  })
+
+  let lastModified = document.querySelector('#lastModified');
+
+  lastModified.innerHTML =
+  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+
+  function body_rgba() {
+    let bg_gradient = 'repeating-linear-gradient(rgba(';
+    for (i = 0; i < 3; i++) {
+      bg_gradient = bg_gradient + Math.floor(Math.random() * 255) + ',';
+    }
+    bg_gradient = bg_gradient + Math.floor(Math.random() * 10) / 10 + '), rgba(';
+
+    for (i = 0; i < 3; i++) {
+      bg_gradient = bg_gradient + Math.floor(Math.random() * 155) + ',';
+    }
+    bg_gradient = bg_gradient + Math.floor(Math.random() * 10) / 10 + ') 5vh), repeating-linear-gradient(90deg, rgba('
+    for (i = 0; i < 3; i++) {
+      bg_gradient = bg_gradient + Math.floor(Math.random() * 255) + ',';
+    }
+    bg_gradient = bg_gradient + Math.floor(Math.random() * 10) / 10 + '), rgba(';
+
+    for (i = 0; i < 3; i++) {
+      bg_gradient = bg_gradient + Math.floor(Math.random() * 155) + ',';
+    }
+    bg_gradient = bg_gradient + Math.floor(Math.random() * 10) / 10 + ') 5vh)'
+
+    return bg_gradient;
+  }
+
+  function random(number) {
+    return Math.floor(Math.random() * (number+1));
+  }
+
+  function repeatingXY() {
+    let randomGradient = `
+    repeating-linear-gradient(
+    rgb(${random(255)},${random(255)},${random(255)}),
+    rgb(${random(255)},${random(255)},${random(255)}) 5vh)`;
+    return randomGradient;
+  }
+
+  document.body.style.background = repeatingXY();
+
+  let buttons = document.querySelectorAll('nav a, .special')
+  for (const button of buttons) {
+    button.addEventListener ('click', event => {
+      document.body.style.background = repeatingXY();
+    })
+  }
+  </script>
+</body>
+</html>

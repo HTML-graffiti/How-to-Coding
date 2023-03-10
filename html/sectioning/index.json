@@ -1,0 +1,78 @@
+{
+  "title" : "Sectioning Content",
+  "description" : "区分要素 | Sectioning Content",
+  "author" : "Hypertext Markup Language",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "HTML",
+      "name" : "アンカー要素とID属性",
+      "url" : "/coding/html/href/",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "HTML",
+      "name" : "見出し要素",
+      "url" : "/coding/html/heading/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "グループ化要素",
+      "url" : "/coding/html/grouping/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "擬似クラス",
+      "url" : "/coding/css/pseudo-classes/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "CSS レイアウト",
+      "url" : "/coding/css/layout/",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "HTMLの要素",
+      "name" : "セクション",
+      "url" : "https://momdo.github.io/html/sections.html",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "article",
+      "name" : "記事コンテンツ要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/article"
+    },
+    {
+      "date" : "section",
+      "name" : "汎用セクション要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/section"
+    },
+    {
+      "date" : "nav",
+      "name" : "ナビゲーションセクション要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/nav"
+    },
+    {
+      "date" : "aside",
+      "name" : "余談要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/aside"
+    }
+  ]
+}

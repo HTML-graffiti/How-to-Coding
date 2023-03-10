@@ -1,0 +1,268 @@
+{
+  "title" : "Element API",
+  "description" : "",
+  "author" : "Document Object Model",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "Document Object Model",
+      "name" : "ドキュメントオブジェクトモデル",
+      "url" : "/coding/js/document/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "UI Events",
+      "name" : "MouseEvent",
+      "url" : "/coding/js/event/mouse/",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Web API",
+      "name" : "TouchEvent",
+      "url" : "/coding/js/event/touch/",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "UI Events",
+      "name" : "KeyboardEvent",
+      "url" : "/coding/js/event/key/",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSSOM",
+      "name" : "CSS Object Model",
+      "url" : "/coding/js/cssom/",
+      "language" : "js",
+      "status" : "basic"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "Document Object Model",
+      "name" : "Element",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Element",
+      "name" : ".querySelector",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/querySelector",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".querySelectorAll",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/querySelectorAll",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTMLElement",
+      "name" : ".innerText",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/innerHTML",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Node",
+      "name" : ".textContent",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/HTMLElement/innerText",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".innerHTML",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/innerHTML",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".before()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/before",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".prepend()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/prepend",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".append()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/append",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".after()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/after",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".insertAdjacentText()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/insertAdjacentText",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".insertAdjacentElement()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/insertAdjacentElement",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".insertAdjacentHTML()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/insertAdjacentHTML",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".outerHTML",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/outerHTML",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".remove()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/remove",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".attributes",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/attributes",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".hasAttributes",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/hasAttributes",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".getAttribute",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/getAttribute",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".removeAttribute",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/removeAttribute",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".setAttribute",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/setAttribute",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".toggleAttribute",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/toggleAttribute",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".classList",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/classList",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".className",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/className",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS オブジェクトモデル",
+      "name" : "要素の寸法の決定",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/CSS_Object_Model/Determining_the_dimensions_of_elements",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "HTMLElement",
+      "name" : ".offsetWidth",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/HTMLElement/offsetWidth",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTMLElement",
+      "name" : ".offsetHeight",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/HTMLElement/offsetHeight",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".clientWidth",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/clientWidth",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".clientHeight",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/clientHeight",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".scrollWidth",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/scrollWidth",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".scrollHeight",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/scrollHeight",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : ".getBoundingClientRect()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/getBoundingClientRect",
+      "language" : "js",
+      "status" : "guide"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+<p>
+  <a href="https://jsfiddle.net/verygois/ax506do8/63/" target="_blank" rel="noreferrer">The List of Contents About You</a>
+</p>
+<h3>
+  自分にまつわる事柄のリストページ
+</h3>
+<hr/>
+<details class="stylesheet">
+  <summary><b class="red">// .readme セクション要素をクラス名によってスタイリングする</b></summary>
+  <h3>
+    <font class="red">.readme section {</font><br/>
+      transition: 1s;<br/>
+    }
+  </h3>
+  <h3>
+    <font class="red">.readme .active {</font><br/>
+      opacity: 1;<br/>
+      overflow: auto;<br/>
+      height: auto;<br/>
+    }
+  </h3>
+  <h3>
+    <font class="red">.readme .is-hide {</font><br/>
+      opacity: 0;<br/>
+      overflow: hidden;<br/>
+      height: 0;<br/>
+    }
+  </h3>
+</details>
+<hr/>
+<details class="body">
+  <summary><b class="red">.readme セクション要素とアンカーリンク</b></summary>
+  <div>
+    <p class="a_element"><font class="red">#one</font>">ONE</p>
+    <p class="a_element"><font class="red">#two</font>">TWO</p>
+    <p class="a_element"><font class="red">#three</font>">THREE</p>
+    <p class="a_element"><font class="red">#four</font>">FOUR</p>
+  </div>
+  <hr/>
+  <div class="article_tag">
+    <span><font class="red">class="readme"</font>></span>
+    <h3 class="section_tag"><b>id="one"</b> <font class="red">class="active"</font>></h3>
+    <h3 class="section_tag"><b>id="two"</b> <font class="red">class="is-hide"</font>></h3>
+    <h3 class="section_tag"><b>id="three"</b> <font class="red">class="is-hide"</font>></h3>
+    <h3 class="section_tag"><b>id="four"</b> <font class="red">class="is-hide"</font>></h3>
+  </div>
+  <hr/>
+</details>
+<hr/>
+<details>
+  <summary><span class="script"> src="<font class="red">script.js</font>"></span></summary>
+  <pre>
+const anchorLinks = document.querySelectorAll('a[href^="#"]');
+const anchorLinksArr = Array.prototype.slice.call(anchorLinks);
+
+anchorLinks.forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
+
+    const readmeSectionAll = document.querySelectorAll(".readme section");
+    for (const readmeSection of readmeSectionAll) {
+      readmeSection.classList.add("is-hide");
+      readmeSection.classList.remove("active");
+    }
+
+    const targetId = link.hash;
+    const targetElement = document.querySelector(targetId);
+    targetElement.classList.replace("is-hide", "active");
+  });
+});
+  </pre>
+</details>
+<hr/>
+<p>
+  アンカーリンク
+  <font>a[href^="#"]</font>
+  がクリックされたら
+  <font>.readme section</font>
+  要素のクラスリストに
+  <font>.is-hide</font>
+  を追加
+  <font>.active</font>
+  を取り除き、
+  アンカーリンク先の要素のクラスリストは
+  <font>.is-hide</font>
+  から
+  <font>.active</font>
+  に置き換える
+</p>

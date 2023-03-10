@@ -1,0 +1,119 @@
+<article class="readme section">
+  <div class="css">
+    <h2 class="h2">汎用セクション要素</h2>
+    <span class="css">このページには、異なるIDの値を持つ 4つの section があります。</span>
+    <br/>
+    <p>
+      <span class="section_tag">id="<font>one</font>"></span><br>
+      <span class="section_tag">id="<font>two</font>"></span><br>
+      <span class="section_tag">id="<font>three</font>"></span><br>
+      <span class="section_tag">id="<font>four</font>"></span><br>
+    </p>
+    <p>
+      通常、汎用セクション要素 は 親要素の中に 見出し (ヘディング要素) と合わせて 小区分 を作成する際に使用します。
+    </p>
+    <i class="aside">
+      <br/>
+      そのコンテンツが小区分ではなく、独立した記事を示す場合は
+      <b>article</b>・
+      メインコンテンツの余談的な内容を示す場合は
+      <b>aside</b>
+      が適切です。
+      <br/>
+    </i>
+    <hr/>
+    <br/>
+  </div>
+
+  <div class="selectors href">
+    <h2>
+      <span>要素名 <font>id</font>="<b class="blue">値</b>"</span>
+      <br/>
+      <i>ID属性の用途は、リンク・CSS・スクリプト で 要素を特定することです。</i>
+    </h2>
+    <hr/>
+    <h3>
+      <font>すべての要素</font> は、<font>ID</font> の値を <font>ひとつだけ</font> 持つことができます。
+    </h3>
+    <p>
+      IDの値は、
+      <b class="blue">半角英数字</b>・
+      <b class="blue">_</b>・
+      <b class="blue">-</b>・
+      <b class="blue">.</b>
+      で設定することが推奨されています。<br/>
+      <i>空白やタブなどのホワイトスペース文字を値に含むことはできません。</i>
+    </p>
+    <p>
+      <b class="blue">※ 同一ページ内に、同じ IDの値 を 使わないようにしましょう。</b>
+    </p>
+    <hr/>
+    <br/>
+  </div>
+
+  <div class="aside none selectors">
+    <h3>
+      <i>ID selector</i><br/>
+      <font>IDセレクター</font>
+      <i>特定のIDの値を指す フラグメント (# 記号で記述) からスタイルを適用</i>
+    </h3>
+    <div class="ruleset">
+      <i class="selector">#IDの値</i>
+    </div>
+    <pre>
+#one,
+#three {
+  <font style="color: #fff; background: blue;">color: #fff;</font>
+  <font style="color: #fff; background: blue;">background: blue;</font>
+}
+
+#two,
+#four {
+  <font style="color: #000; background: #fff;">color: #000;</font>
+  <font style="color: #000; background: #fff;">background: #fff;</font>
+}
+    </pre>
+
+    <p>
+      これは、
+      <font>id="one"</font> と <font>id="three"</font> の
+      <font style="color: #fff; background: blue;">色 を #fff(白)・背景 を blur(青色)</font>
+      に、
+      <font>id="two"</font> と <font>id="four"</font> の
+      <font style="color: #000; background: #fff;">色 を #000(黒)・背景 を #fff(白)</font>
+      に スタイリングする CSS ルールセットです。
+    </p>
+    <hr/>
+    <br/>
+  </div>
+  <div class="href">
+    <h3>
+      <i>リンク</i><br/>
+      <font>#IDの値</font>
+      <i>ハイパーリンク先に特定のIDの値を指す フラグメント (# 記号で記述) を指定する</i>
+    </h3>
+    <p>
+      <span class="a_element"><font>#one</font>"></span><br>
+      <span class="a_element"><font>#two</font>"></span><br>
+      <span class="a_element"><font>#three</font>"></span><br>
+      <span class="a_element"><font>#four</font>"></span><br>
+    </p>
+    <br/>
+    <div class="aside">
+      <h3>
+        <font>scroll-behavior</font><br/>
+        ハイパーリンク先の特定のIDへのスクロールの振る舞いを設定します。
+      </h3>
+      <p>
+        <font>html</font> {<br/>
+          <font>scroll-behavior: <b>smooth</b>;</font>
+          <br/>
+        }
+      </p>
+      <p>
+        smooth は、円滑にスクロールする設定です。<br/>
+        <i>既定値の auto は、ターゲット先に瞬時にスクロールする設定です。</i>
+      </p>
+    </div>
+  </div>
+</article>

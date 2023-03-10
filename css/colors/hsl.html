@@ -1,0 +1,75 @@
+<h2>
+  <i>hsl() 関数表記</i>
+  <br/>
+  <code>hsl(hue saturation lightness)</code> または
+  <code>hsl(hue saturation lightness / alpha)</code>
+</h2>
+<br/>
+<p>
+  hsl() 関数は、
+  <font>色相(hue)</font> ・
+  <font>彩度(saturation)</font> ・
+  <font>輝度(lightness)</font>
+  の値を取り、約 1670 万色を表現します。
+</p>
+<div class="howto">
+<br/>
+<p style="text-align:center;">~~~</p>
+<br/>
+<p>
+  <font>色相(hue)</font>
+  色のベースとなるシェード。<br/>
+  0 から 360 の値を取り、色相環の角度を表します。
+</p>
+<pre>
+
+background: conic-gradient(
+  <code>hsl(0, 100%, 50%)</code>,
+  <code>hsl(45, 100%, 50%)</code>,
+  <code>hsl(90, 100%, 50%)</code>,
+  <code>hsl(135, 100%, 50%)</code>,
+  <code>hsl(180, 100%, 50%)</code>,
+  <code>hsl(225, 100%, 50%)</code>,
+  <code>hsl(270, 100%, 50%)</code>,
+  <code>hsl(315, 100%, 50%)</code>,
+  <code>hsl(360, 100%, 50%)</code>
+);
+
+</pre>
+<p>
+  背景のグラデーションカラーは、0(赤) から 360(赤) まで右回りに 色相(hue) の値を表しています。<br/>
+  <i>赤(0/360)</i>
+  <i>黄(60)</i>
+  <i>緑(120)</i>
+  <i>シアン(180)</i>
+  <i>青(240)</i>
+  <i>マゼンタ(300)</i>
+</p>
+<br/>
+<p style="text-align:center;">~~~</p>
+<br/>
+<p>
+  <font>彩度(saturation)</font>
+  色がどれだけ飽和しているか? <br/>
+  0 から 100% の値を取り、0 は色がなく (グレーに見える)、100% はフルカラーの飽和となります。
+</p>
+<br/>
+<p>
+  <font>輝度(lightness)</font>
+  色がどれだけ明るいのか? <br/>
+  0 から 100% の値を取り、0 は明度がなく (完全な黒)、100% はフルの明度です (完全な白)。
+</p>
+<br/>
+<p style="text-align:center;">~~~</p>
+<br/>
+<p>
+  <font>透明度(alpha)</font>
+  hsl(hue saturation lightness <code>/ alpha</code>)
+</p>
+<br/>
+<p>
+  0 から 1 までの数値、
+  または  1 から 100% までのパーセント値 で色の透明度を指定します。<br/>
+  <i>1(100%) は完全に不透明で、 0(0%) は完全に透明であることを意味します。</i>
+</p>
+</div>

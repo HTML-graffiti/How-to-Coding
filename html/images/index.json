@@ -1,0 +1,135 @@
+{
+  "title" : "IMG PICTURE",
+  "description" : "画像（エンベディッド・コンテンツ）",
+  "author" : "Hypertext Markup Language",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "Twitterカードの種類 (summary | summary_large_image | app | player)",
+  "src" : "ページを代表する画像のURL",
+
+  "contents" : [
+    {
+      "date" : "CSS",
+      "name" : "背景",
+      "url" : "/coding/css/backgrounds/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "メディア要素",
+      "url" : "/coding/html/media/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "埋め込み要素",
+      "url" : "/coding/html/iframe-embed-object/",
+      "language" : "html",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "埋め込みコンテンツ",
+      "name" : "picture要素・source要素・img要素",
+      "url" : "https://momdo.github.io/html/embedded-content.html",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "埋め込みコンテンツ",
+      "name" : "画像",
+      "url" : "https://momdo.github.io/html/images.html",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "Using images in HTML",
+      "name" : "HTML での画像の使用",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/Media/images",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "Images in HTML",
+      "name" : "HTML の画像",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "img",
+      "name" : "画像埋め込み要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/img",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Image Types",
+      "name" : "画像ファイルの種類と形式ガイド",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/Media/Formats/Image_types",
+      "language" : "html",
+      "status" : "library"
+    },
+    {
+      "date" : "CSS",
+      "name" : "object-fit",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/object-fit",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "object-position",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/object-position",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Responsive images",
+      "name" : "レスポンシブ画像",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "picture",
+      "name" : "画像要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/picture",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "source",
+      "name" : "メディアまたは画像のソース要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/source",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "グルーピングコンテンツ",
+      "name" : "figure・figcaption要素",
+      "url" : "https://momdo.github.io/html/grouping-content.html#the-figure-element",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "figure",
+      "name" : "キャプションが付けられる図要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/figure",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "figcaption",
+      "name" : "図キャプション要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/figcaption",
+      "language" : "html",
+      "status" : "guide"
+    }
+  ]
+}

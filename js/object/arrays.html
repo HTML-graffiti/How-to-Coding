@@ -1,0 +1,129 @@
+<h2>
+  <i>順序付けされたコレクションを格納する配列宣言</i><br/>
+  <code class="red">let arr = [ 1, 2, 3 ];</code>
+</h2>
+<p>
+  角括弧 <code class="red">[ ]</code> の中に配列の要素を、
+  カンマ <code class="red">,</code> で区切り設定します。<br/>
+</p>
+<hr/>
+<p>
+  <font class="red">arr[0]</font>
+  <font class="red">arr[1]</font>
+  <font class="red">arr[2]</font>
+</p>
+<p>配列にはゼロから始まる番号が付けら、角括弧にその番号を指定することで要素を取得できます。</p>
+<hr/>
+<p><font class="red">arr.length</font></p>
+<p><code class="red">.length</code> プロパティで 配列の要素の数を取得できます。</p>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<h3>
+  <font class="red">for...of</font><br/>
+   for (let <code class="red">key</code> of <code class="red">arr</code>)<br/>
+  <i>反復可能オブジェクト（配列のためのループ文）を構成する</i>
+</h3>
+<p>
+  <font class="red">arr</font>
+  配列名
+</p>
+<p>
+  <font class="red">key</font>
+  const・let・var で各ループ処理を宣言
+</p>
+<pre>
+
+let itemArrAll = document.querySelectorAll('#popshift font');
+
+<code class="red">for</code> (let removeAll <code class="red">of</code> itemArrAll) {
+  removeAll.remove()
+}
+
+</pre>
+
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<h3>
+  <font class="red">forEach()</font><br/>
+   配列名<code class="red">.forEach(</code>element => { }<code class="red">)</code><br/>
+  <i>配列の各要素に対して一度ずつ処理を実行する</i>
+</h3>
+<pre>
+
+arr<code class="red">.forEach(</code>key => {
+  let codeArr = document.createElement('code');
+  codeArr.textContent = <code class="red">key</code>;
+
+  listArr.appendChild(codeArr);
+})
+
+</pre>
+
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<nav id="popshift"></nav>
+<h3>
+  <code class="red">pop/push</code>
+  <code class="red">shift/unshift</code><br/>
+  配列から要素を取り出す・追加するメソッド
+</h3>
+<p>
+  <button onclick="arrpop()"><code>arr.pop()</code></button>
+  arr 配列の末尾から要素を <code class="red">取り出す</code>
+</p>
+<p>
+  <button onclick="arrpush()"><code>arr.push()</code></button>
+  arr 配列の末尾に要素を <code class="red">追加</code>
+</p>
+<p>
+  <button onclick="arrshift()"><code>arr.shift()</code></button>
+  arr 配列の先頭の要素を <code class="red">取り出す</code>
+</p>
+<p>
+  <button onclick="arrunshift()"><code>arr.unshift()</code></button>
+  arr 配列の先頭に要素を <code class="red">追加</code>
+</p>
+<p>メソッド push と unshift は一度に複数の要素を操作することができます</p>
+
+<hr/>
+
+<!--
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<h3><font id="randomArr">randomArr</font></h3>
+<p>
+  <code>Math.floor()</code><br/>
+  与えられた数値以下の最大の整数を返す関数
+</p>
+<p>
+  <code>Math.random()</code><br/>
+   0 以上 1 未満 (0 は含むが、 1 は含まない) の範囲で浮動小数点の擬似乱数を返す関数
+</p>
+
+<pre>
+
+function getRandom(randomArr) {
+  let random = randomArr[Math.floor(Math.random() * randomArr.length)];
+  return random;
+};
+
+function randomCount() {
+  document.querySelector('#randomArr').innerText = getRandom(arr);
+};
+
+window.setInterval(function() {
+  randomCount();
+}, 2000);
+
+</pre>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>配列はどんな型の要素も格納することができます。</p>
+<p>let arr = [ <code class="red">'Apple', { name: 'John' }, true, function() { alert('hello'); }</code> ];</p>
+-->
+
+<script src="arrays.js" defer></script>

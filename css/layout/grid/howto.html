@@ -1,0 +1,170 @@
+<h2>
+  <i>display: grid</i><br/>
+  Grid Layout
+</h2>
+<p>二次元グリッドシステム（列と行を定義する水平線と垂直線の集合）として、行と列の中に要素を配置する</p>
+<br/>
+<pre>
+#gridOl {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(20vw, 10vh);
+  gap: 1vw;
+}
+</pre>
+<br/>
+<p style="text-align:center;">~~~</p>
+<br/>
+<p>
+  <code>grid-template-columns</code><br/>
+  グリッド上に列 (columns)トラックを定義する
+</p>
+<pre>
+/* 長さの値で列トラックのサイズを定義 */
+grid-template-columns: 200px 200px 200px;
+
+/* repeat() 記法によるトラック列挙 */
+grid-template-columns: repeat(3, 200px);
+
+
+/* 単位 fr でグリッドコンテナー内の利用可能な空間の比を定義 */
+grid-template-columns: 1fr 1fr 1fr;
+
+/* repeat() 記法によるトラック列挙 */
+grid-template-columns: repeat(3, 1fr);
+
+
+/* 等しくない大きさ */
+grid-template-columns: 2fr 1fr 1fr;
+
+/* 変動する大きさと絶対的な大きさの混合 */
+grid-template-columns: 250px 1fr 2fr;
+
+
+/* はじめに 20pxの列・続けて 6つの 1fr のトラック・最後に 20pxのトラック */
+grid-template-columns: 20px repeat(6, 1fr) 20px;
+
+/* 1frのトラックに 2frのトラック が続くパターンを 5回反復 (10本のトラックでグリッドを構成) */
+grid-template-columns: repeat(5, 1fr 2fr);
+</pre>
+<br/>
+<p>
+  <code>grid-auto-rows</code><br/>
+  暗黙的なグリッドに作成された行 (rows)トラックのセットサイズを定義する
+</p>
+<pre>
+/* トラックの高さを長さの値で定義 */
+grid-auto-rows: 200px;
+
+/* トラックのサイズ指定と minmax(min 以上, max 以下) */
+grid-auto-rows: minmax(20vw, 10vh);
+</pre>
+<br/>
+<p>
+  <code>gap (grid-gap)</code><br/>
+  グリッドの行・列の間のすき間 (溝) を定義する
+</p>
+<pre>
+/* 単一の length 値 */
+gap: 20px;
+gap: 1em;
+gap: 3vmin;
+gap: 0.5cm;
+
+/* 単一の percentage 値 */
+gap: 16%;
+gap: 100%;
+
+/* 2 つの length 値 */
+gap: 20px 10px;
+gap: 1em 0.5em;
+gap: 3vmin 2vmax;
+gap: 0.5cm 2mm;
+
+/* 1 つまたは 2 つの percentage 値 */
+gap: 16% 100%;
+gap: 21px 82%;
+
+/* calc() 値 */
+gap: calc(10% + 20px);
+gap: calc(20px + 10%) calc(10% - 5px);
+</pre>
+<br/>
+<p style="text-align:center;">~~~</p>
+<br/>
+<p>
+  <code>grid-column</code> |
+  <code>grid-row</code><br/>
+  グリッド線に対するアイテムの配置
+</p>
+<pre>
+#gridOl :nth-child(1) {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+}
+
+#gridOl :nth-child(2) {
+  grid-column: 1;
+  grid-row: 2 / 5;
+}
+
+#gridOl :nth-child(3) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#gridOl :nth-child(4) {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+#gridOl :nth-child(5) {
+  grid-column: 1 / 4;
+  grid-row: 5 / 8;
+}
+
+#gridOl :nth-child(6) {
+  grid-column: 2 / 4;
+  grid-row: 4;
+}
+
+#gridOl :nth-child(7) {
+  grid-column: 2;
+  grid-row: 3;
+}
+</pre>
+<p>
+  <code>grid-columns</code> は
+  列トラック / 縦線 に沿って アイテムを配置するプロパティです。
+</p>
+<p>
+  <code>grid-template-columns: repeat(3, 1fr)</code>;
+  の場合<br/>
+  3列のトラック / 4本の縦線 があり、<br/>
+  grid-column: <code>1</code>; の場合は、1本目の縦線から2本目の縦線まで<br/>
+  grid-column: <code>3</code>; の場合は、3本目の縦線から4本目の縦線まで<br/>
+  grid-column: <code>2 / 4</code>; の場合は、2本目の縦線から4本目の縦線まで<br/>
+  grid-column: <code>1 / 4</code>; の場合は、1本目の縦線から4本目の縦線まで<br/>
+  が アイテムの大きさになります。
+</p>
+<br/>
+<p>
+  <code>grid-row</code> は
+  行トラック / 横線 に沿って アイテムを配置するプロパティです。
+</p>
+<p>
+  grid-row: <code>1</code>; の場合は、1本目の横線から2本目の横線まで<br/>
+  grid-row: <code>3</code>; の場合は、3本目の横線から4本目の横線まで<br/>
+  grid-row: <code>1 / 3</code>; の場合は、1本目の横線から3本目の横線まで<br/>
+  grid-row: <code>2 / 5</code>; の場合は、2本目の横線から5本目の横線まで<br/>
+  が アイテムの大きさになります。
+</p>
+<br/>
+<p id="lastModified"></p>
+
+<script type="text/javascript">
+let lastModified = document.querySelector('#lastModified');
+
+lastModified.innerHTML =
+'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+</script>

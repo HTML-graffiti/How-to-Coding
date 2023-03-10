@@ -1,0 +1,137 @@
+{
+  "title" : "Attributes",
+  "description" : "グローバル属性 | Attributes",
+  "author" : "HyperText Markup Language",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "CSS",
+      "name" : "セレクター",
+      "url" : "/coding/css/selectors/"
+    },
+    {
+      "date" : "HTML",
+      "name" : "アンカー要素とID属性",
+      "url" : "/coding/html/href/"
+    },
+    {
+      "date" : "HTML",
+      "name" : "画像",
+      "url" : "/coding/html/images/"
+    },
+    {
+      "date" : "HTML",
+      "name" : "メディア要素",
+      "url" : "/coding/html/media/"
+    },
+    {
+      "date" : "HTML",
+      "name" : "埋め込み要素",
+      "url" : "/coding/html/iframe-embed-object/"
+    },
+    {
+      "date" : "HTML",
+      "name" : "フォーム関連要素",
+      "url" : "/coding/html/form/"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "Attributes",
+      "name" : "HTML 属性リファレンス",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Attributes",
+      "language" : "html",
+      "status" : "library"
+    },
+    {
+      "date" : "Global Attributes",
+      "name" : "グローバル属性",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "グローバル属性",
+      "name" : "id",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/id",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "グローバル属性",
+      "name" : "class",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/class",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "style",
+      "name" : "CSS スタイル宣言",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/style",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "グローバル属性",
+      "name" : "lang",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "グローバル属性",
+      "name" : "contenteditable",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/contenteditable",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "グローバル属性",
+      "name" : "draggable",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/draggable",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "グローバル属性",
+      "name" : "spellcheck",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/spellcheck",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "グローバル属性",
+      "name" : "hidden",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/hidden",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "data-*",
+      "name" : "カスタムデータ属性",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/data-*",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "is",
+      "name" : "カスタム内蔵要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/is",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Using custom elements",
+      "name" : "カスタム要素の使用",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/Web_Components/Using_custom_elements",
+      "language" : "html",
+      "status" : "guide"
+    }
+  ]
+}

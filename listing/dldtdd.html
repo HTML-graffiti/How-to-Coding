@@ -1,0 +1,49 @@
+<p>説明リスト</p>
+<dl>
+  <dt>The <font>D</font>escription <font>L</font>ist</dt>
+  <dd><i>説明用語要素 <font>DT</font> と 詳細説明要素 <font>DD</font> を 説明リスト要素 <font>DL</font> に記述して説明リストを表します。</i></dd>
+</dl>
+<dl class="dldtdd dl_element">
+  <dt class="dt_element"><b>Description Term</b></dt>
+  <dd class="dd_element"><b>Description Details</b></dd>
+</dl>
+<dl>
+  <dt><b>dt</b></dt>
+  <dd>dl の小要素として、dd (または直接関連するdt) の前に使用できます。</dd>
+
+  <dt><b>dd</b></dt>
+  <dd>dl の小要素として、dt (または直接関連するdd) の後に使用できます。</dd>
+</dl>
+<hr/>
+<dl>
+  <dt><b>一般的な使用例</b></dt>
+  <dd>用語集の作成やメタデータ（キーと値のペアのリスト）の表示</dd>
+
+  <dt><b>ディスプレイレベル</b> display: block;</dt>
+  <dt><b>インデント</b> margin: 値;</dt>
+  <dd>
+    dl・dt・dd要素はすべて blockレベル要素<br/>
+    dl要素にはデフォルトで margin-top と margin-bottom 、dd要素にはデフォルトで インデント(margin-left) が設定されています。<br/>
+    <i>説明を見やすくレイアウトするために、dd 要素に margin-bottom を設定する傾向があります。</i>
+  </dd>
+</dl>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<pre class="script">type="text/javascript">
+
+const <font>dlAll</font> = {
+  '用語 1' : '説明 1';
+  '用語 2' : '説明 2';
+};
+
+let descriptionList = document.querySelector('<font>dl#description</font>');
+for (let <font>dtdd</font> in <font>dlAll</font>) {
+  descriptionList.innerHTML += (`<<code>dt</code>><font>${dtdd}</font><<code>/dt</code>><<code>dd</code>><font>${dlAll[dtdd]}</font><<code>/dd</code>>`);
+}
+
+</pre>
+<p>
+  定数 dlAll の オブジェクト値（key: value の組を持つ値）から ループ文(for...in) を構成し、
+  説明リスト dl#description の中に dt・dd 要素を生成するDOM操作を行う JavaScript
+</p>

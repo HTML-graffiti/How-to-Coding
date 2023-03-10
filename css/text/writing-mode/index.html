@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../../../readme/index.js" async></script>
+  <script src="../../../hello/data_show.js" defer></script>
+
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="../../cascading.css" />
+  <link rel="stylesheet" href="../../../hello/data_show.css" />
+  <link rel="stylesheet" href="../../../readme/style.css" />
+  <link rel="stylesheet" href="../../pseudo-classes/lightbox.css" />
+  <style>
+
+  body {
+    background: #eee;
+  }
+
+  .ruleset::before,
+  .ruleset::after {
+    display:none;
+  }
+
+  #one,
+  #two,
+  #three,
+  #four {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    user-select: none;
+    pointer-events: none;
+    color: #000;
+    background: #fff;
+    transition: 2.5s;
+  }
+
+  #one:target,
+  #two:target,
+  #three:target,
+  #four:target {
+    padding: 1rem;
+    width: 95%;
+    height: 75%;
+    opacity: 1;
+    overflow: auto;
+    user-select: auto;
+    pointer-events: auto;
+    filter: invert();
+  }
+
+  section:target a {
+    color: #fff;
+    filter: invert();
+  }
+
+  #hello {
+    filter: invert();
+    mix-blend-mode: difference;
+    writing-mode: vertical-rl;
+  }
+
+  #hello {
+    text-shadow:
+    1px 1px 0 #fff,
+    -1px -1px 0 #fff,
+    -2px -2px 0 #fff,
+    -3px -3px 0 #fff,
+    -4px -4px 0 #fff;
+    margin: 2.5rem auto 1rem;
+    width: 95%;
+    max-width: 550px;
+    max-height: 75%;
+  }
+
+  #hello h1 {
+    font-size: 90%;
+  }
+
+  @font-face {
+    font-family: "NewYork";
+    src: url("https://creative-community.space/coding/cover/NewYork.otf");
+  }
+
+  .p_tag::before {
+    content: '<p ';
+  }
+
+  .p_tag::after {
+    content: '</p>';
+  }
+
+  .ruleset .selif {
+    font-family: "NewYork", serif;
+    font-style: italic;
+  }
+
+  .ruleset .sans,
+  .ruleset .selif::after {
+    font-family: "San Francisco";
+    font-style: normal;
+  }
+
+  .ruleset .sans {
+    font-size: 125%;
+  }
+
+  #contents::before {
+    content:'関連記事';
+    font-size: 90%;
+  }
+
+  #links::before {
+    content:'参考資料';
+    font-size: 75%;
+  }
+
+  #contents::before,
+  #links::before {
+    text-decoration: underline;
+    display: block;
+    font-family: "ipag", monospace;
+    margin: 0.5rem 0.25rem;
+  }
+
+  #lastModified {
+    font-family: "ipag", monospace;
+    line-height: 125%;
+    word-break: break-word;
+    padding: 0.5rem 0;
+  }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <span>書き込みモード</span>
+    <a href="#one">方向と言語の設定</a>
+    <a href="#two">行内のテキストの向き</a>
+    <a href="#etc">関連記事</a>
+  </nav>
+
+  <main id="hello" class="data_show ruleset">
+    <h1 id="title">Writing Mode | Cascading Style Sheets</h1>
+    <br/>
+    <p class="declaration">
+      <b class="selif">writing-mode</b>
+      <span id="modeOutput" class="sans">vertical-rl</span>
+    </p>
+    <p class="declaration">
+      <b class="selif">direction</b>
+      <span id="DirectionOutput" class="sans">ltr</span>
+    </p>
+    <p class="declaration">
+      <b class="selif">unicode-bidi</b>
+      <span id="unicodeBidiOutput" class="sans">normal</span>
+    </p>
+    <p class="declaration">
+      <b class="selif">text-orientation</b>
+      <span id="OrientationOutput" class="sans">mixed</span>
+    </p>
+    <p class="declaration">
+      <b class="selif">text-combine-upright</b>
+      <span id="UprightOutput" class="sans">none</span>
+    </p>
+  </main>
+
+  <br/>
+
+  <section class="buttons">
+    <p>
+      <b>writing-mode</b>
+      <button class="special" onclick="setMode('horizontal-tb');">horizontal-tb</button>
+      <button class="special" onclick="setMode('vertical-rl');">vertical-rl</button>
+      <button class="special" onclick="setMode('vertical-lr');">vertical-lr</button>
+    </p>
+  </section>
+
+  <section class="buttons">
+    <p>
+      <b>direction</b>
+      <button class="special" onclick="setDirection ('ltr');">ltr</button>
+      <button class="special" onclick="setDirection ('rtl');">rtl</button>
+    </p>
+    <p>
+      <b>unicode-bidi</b>
+      <button class="special" onclick="setBidi ('normal');">normal</button>
+      <button class="special" onclick="setBidi ('embed');">embed</button>
+      <button class="special" onclick="setBidi ('bidi-override');">bidi-override</button>
+    </p>
+  </section>
+
+  <section class="buttons">
+    <p>
+      <b>text-orientation</b>
+      <button class="special" onclick="setOrientation ('mixed');">mixed</button>
+      <button class="special" onclick="setOrientation ('upright');">upright</button>
+      <button class="special" onclick="setOrientation ('sideways-right');">sideways-right</button>
+      <button class="special" onclick="setOrientation ('sideways');">sideways</button>
+      <button class="special" onclick="setOrientation ('use-glyph-orientation');">use-glyph-orientation</button>
+    </p>
+    <p>
+      <b>text-combine-upright</b>
+      <button class="special" onclick="setUpright ('none');">none</button>
+      <button class="special" onclick="setUpright ('all');">all</button>
+      <button class="special" onclick="setUpright ('digits');">digits</button>
+    </p>
+  </section>
+
+  <article id="coding"></article>
+
+  <p id="lastModified"></p>
+
+  <aside class="lightbox" id="etc">
+    <a href="#" class="close"></a>
+    <section id="contents" class="translate_center"></section>
+    <section id="links" class="fixed_bottom"></section>
+  </aside>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="script.js" defer></script>
+  <script type="text/javascript">
+  $(function() {
+    $("#coding").load("howto.html");
+  })
+
+  let lastModified = document.querySelector('#lastModified');
+
+  lastModified.innerHTML =
+  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+
+  function random(number) {
+    return Math.floor(Math.random() * (number+1));
+  }
+
+  function randomGradient() {
+    let randomGradient = `
+    linear-gradient(90deg, rgb(${random(255)},${random(255)},${random(255)}), rgb(${random(255)},${random(255)},${random(255)}), rgb(${random(255)},${random(255)},${random(255)}), rgb(${random(255)},${random(255)},${random(255)}), rgb(${random(255)},${random(255)},${random(255)}))`;
+    return randomGradient;
+  }
+
+  let gradientAll = document.querySelectorAll('body')
+  for (const gradientBG of gradientAll) {
+    gradientBG.style.background = randomGradient();
+  }
+
+  let buttons = document.querySelectorAll('nav a, .special')
+  for (const button of buttons) {
+    button.addEventListener ('click', event => {
+      document.body.style.background = randomGradient();
+    })
+  }
+  </script>
+</body>
+</html>

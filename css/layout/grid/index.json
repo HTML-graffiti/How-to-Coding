@@ -1,0 +1,114 @@
+{
+  "title" : "Grid Layout",
+  "description" : "グリッドレイアウト | Grid Layout",
+  "author" : "Cascading Style Sheets",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary_large_image",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "CSS",
+      "name" : "CSS レイアウト",
+      "url" : "/coding/css/layout/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "フレックスボックス",
+      "url" : "/coding/css/layout/flexbox/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "段組みレイアウト",
+      "url" : "/coding/css/layout/multiple/",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "CSS",
+      "name" : "CSS グリッドレイアウト",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Grid_Layout",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "Basics concepts of grid layout",
+      "name" : "グリッドレイアウトの基本概念",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "Grid Layout",
+      "name" : "グリッド",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/CSS_layout/Grids",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "grid-template-columns",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/grid-template-columns",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "grid-template-rows",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/grid-template-rows",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "grid-auto-columns",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/grid-auto-columns",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "grid-auto-rows",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/grid-auto-rows",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "minmax()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/minmax",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "gap",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/gap",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "grid",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/grid",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "display",
+      "name" : "display の新しい 2 値構文への対応",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/display/two-value_syntax_of_display",
+      "language" : "css",
+      "status" : "basic"
+    }
+  ]
+}

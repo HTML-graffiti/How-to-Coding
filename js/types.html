@@ -1,0 +1,110 @@
+<h2>
+  <i>JavaScript の</i>
+  値
+  <i>には、</i>
+  8つの基本的なデータ型
+  <i>があります。</i>
+</h2>
+<h3>
+<font class="red">String</font>（文字列）<i>テキストの値を表す連続した文字</i><br/>
+<font class="red">Number</font>（数値）<i>あらゆる種類の数値: 整数または浮動小数点</i><br/>
+<font class="red">Boolean</font>（論理値）<i>true または false</i><br/>
+<font class="red">undefined</font>（未定義）<i>値が未定義の未割り当て値</i><br/>
+<font class="red">null</font> <i>不明な値を意味する特殊なキーワード</i><br/>
+<font class="red">BigInt</font>（長整数）<i>任意の長さの整数値のための型</i><br/>
+<font class="red">Symbol</font>（シンボル）<i>一意な識別子</i><br/>
+<br/>
+<font class="red">Object</font> （オブジェクト）<i>より複雑なデータ構造</i>
+</h3>
+<hr/>
+<br/>
+<h3>
+  引用符（クォーテーション）
+  <i>で囲まれた値は、</i>
+  <font>文字列</font>
+  <i>と呼ばれます。</i>
+</h3>
+<button onclick="alert( 'Hello, World' )">alert( 'Hello, World' )</button>
+<br/>
+<p>
+  <font>
+    <code class="red">" "</code>ダブルクォート<br/>
+    <code class="red">' '</code>シングルクォート<br/>
+    <code class="red">` `</code>バッククォート<br/>
+  </font>
+</p>
+<hr/>
+<p>
+  ダブル/シングルクォートは、シンプルな引用符です。
+  <i>JavaScriptの中ではそれらに違いはありません。</i>
+</p>
+<p>
+  バッククォートは <code>拡張機能</code> の引用符です。<br/>
+  <i>変数・定数を <code>${…}</code> の中にラップすることで、変数・定数を埋め込み文字列の中で表現することができます。</i>
+</p>
+<hr/>
+<br/>
+<h3>
+  <font>数値</font>
+  <i>と</i>
+  <code class="red">*</code>（乗算）・
+  <code class="red">/</code>（除算）・
+  <code class="red">+</code>（加算）・
+  <code class="red">-</code>（減算）
+  <i>などの演算子を使えば、値の</i>
+  計算
+  <i>ができます。</i>
+</h3>
+<button onclick="alert( 1 + 2 * 3 / 4 - 5 )">alert( 1 + 2 * 3 / 4 - 5 )</button>
+<p>
+  <code class="red">+</code>（加算）
+  は、数値以外にも <code>文字列</code> などを結合することもできます。
+</p>
+<hr/>
+<br/>
+<h3>
+  <font>論理値</font>
+  <i>boolean 型は、true と false の2つの値だけを持ちます。</i>
+</h3>
+<p>
+  論理値は通常 yes/no の値を格納するために使われます。<br/>
+  <i>true は “yes” を意味し、 false は “no, 正しくない” を意味します。</i>
+</p>
+<hr/>
+<br/>
+<h3>
+  <font>未定義</font>
+  <i>初期化子が設定されていない変数には、undefined という値が代入されます。</i>
+</h3>
+<p>
+  定数には、常に初期化子が必要です。
+  <i>undefined で初期化することは、おそらくプログラマーのミスです。</i>
+</p>
+<hr/>
+<h3>
+  <font>不明な値</font><br/>
+  <i>nullは、 無し・空・または 不明な値 と言った意味を持つ特別な値です。</i>
+</h3>
+<p>
+  <i>JavaScriptでは、null は他の言語のような “存在しないオブジェクトへの参照” または “null へのポインタ” ではありません。</i>
+</p>
+<hr/>
+<br/>
+<h3>
+  <font>長整数</font>
+  <i>const bigInt = 1234567890123456789012345678901234567890n;</i>
+</h3>
+<p>
+  BigInt の値は整数値の末尾に <code>n</code> を追加することで作成されます。<br/>
+  <i>BigInt 型は任意の長さの整数を表現するために、最近言語に追加された型です。</i>
+</p>
+<hr/>
+<h3>
+  <font>オブジェクトとシンボル</font><br/>
+  <i>object 型は特殊です。symbol 型はオブジェクトの一意な識別子を作るのに使われます。</i>
+</h3>
+<p>
+  他のすべての型は、値は1つのもの(文字列, 数値, または何でも)だけを含むので、“プリミティブ” と呼ばれます。<br/>
+  対照的に、オブジェクトはデータのコレクションやより複雑なエンティティを格納するために使われます。
+</p>
+<hr/>

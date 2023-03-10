@@ -1,0 +1,33 @@
+<h2>
+  Multi-column layout<br/>
+  <i>このページの #multiple 要素 を 段組みレイアウト する CSS</i>
+</h2>
+<br/>
+<pre>
+#multiple {
+  columns: 250px auto;
+  column-gap: 2.5rem;
+  column-rule: dotted blue;
+  column-fill: auto;
+}
+
+#multiple h1 {
+  column-span: all;
+}
+
+#multiple section {
+  break-inside: avoid-column;
+}
+
+@media (orientation: portrait) {
+  #multiple {
+    writing-mode: vertical-rl;
+    width: 100%;
+    columns: 45vh auto;
+  }
+
+  #multiple h1 {
+    column-span: none;
+  }
+}
+</pre>

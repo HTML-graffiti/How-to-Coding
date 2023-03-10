@@ -1,0 +1,128 @@
+{
+  "title" : "HyperText Markup Language",
+  "description" : "HTMLの基本",
+  "author" : "How to Coding",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "HEAD",
+      "name" : "文書メタデータ (ヘッダー) 要素",
+      "url" : "/coding/html/head/",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "BODY",
+      "name" : "文書の本文要素",
+      "url" : "/coding/html/body/",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "Attributes",
+      "name" : "属性",
+      "url" : "/coding/html/attributes/",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "A & ID",
+      "name" : "アンカー要素とID属性",
+      "url" : "/coding/html/href/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Text",
+      "name" : "テキストの基礎",
+      "url" : "/coding/html/text/",
+      "language" : "text",
+      "status" : "guide"
+    },
+    {
+      "date" : "Listing Content",
+      "name" : "リスト要素",
+      "url" : "/coding/listing/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "IMG PICTURE",
+      "name" : "画像要素",
+      "url" : "/coding/html/images/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "VIDEO AUDIO",
+      "name" : "メディア要素",
+      "url" : "/coding/html/media/",
+      "language" : "html",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "HTMLの基本",
+      "name" : "Overview: Getting started with the web",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/HTML_basics",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "HTML を始めよう",
+      "name" : "Overview: Introduction to HTML",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/HTML/Introduction_to_HTML/Getting_started",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "Basics of HTML",
+      "name" : "Video by Laurel Schwulst",
+      "url" : "https://youtu.be/CkzbI1Tv_rQ",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML リファレンス",
+      "name" : "HTML Reference",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Reference",
+      "language" : "html",
+      "status" : "library"
+    },
+    {
+      "date" : "htmlreference.io",
+      "name" : "A free guide to HTML",
+      "url" : "https://htmlreference.io/",
+      "language" : "html",
+      "status" : "library"
+    },
+    {
+      "date" : "Complete List of HTML Tags",
+      "name" : "By Christopher Kielty",
+      "url" : "https://eastmanreference.com/complete-list-of-html-tags",
+      "language" : "html",
+      "status" : "library"
+    },
+    {
+      "date" : "HTML",
+      "name" : "PDF by Aidan Quinlan",
+      "url" : "https://handmade-web.net/spring22/assets/html.pdf",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "HTML Basics",
+      "name" : "by Software for People",
+      "url" : "https://docs.google.com/presentation/d/1KDDbJaRVJe2kQQ2U_Wwdq7RobrsrbN2UeX9xqKrdLyo/edit?usp=sharing",
+      "language" : "html",
+      "status" : "basic"
+    }
+  ]
+}

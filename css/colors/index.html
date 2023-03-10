@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../cascading.css" />
+  <link rel="stylesheet" href="../../readme/style.css" />
+  <link rel="stylesheet" href="../pseudo-classes/lightbox.css" />
+  <style type="text/css">
+
+  #title,
+  .form,
+  #lastModified {
+    mix-blend-mode: difference;
+  }
+
+  main {
+    background: #fff;
+    border: double 4px #000;
+  }
+
+  #title {
+    color:#000;
+    text-shadow:
+    -2px -2px 0 #fff,
+    -1px -1px 0 #fff,
+    1px 1px 0 #fff,
+    2px 2px 0 #fff,
+    3px 3px 0 #fff,
+    4px 4px 0 #fff,
+    5px 5px 0 #fff;
+  }
+
+  .buttons label,
+  #lastModified {
+    color:#000;
+    text-shadow:
+    -1px -1px 0 #fff,
+    1px 1px 0 #fff,
+    2px 2px 0 #fff;
+  }
+
+  .ruleset .selif {
+    font-family: "NewYork", serif;
+    font-style: italic;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .ruleset .sans,
+  .ruleset .selif::after,
+  .buttons input {
+    font-family: "San Francisco";
+    font-style: normal;
+  }
+
+  .ruleset .sans,
+  code {
+    font-size: 125%;
+  }
+
+  .buttons label,
+  .buttons input {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0.25rem 0;
+  }
+
+  .buttons label {
+    font-size: 100%;
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+
+  .buttons {
+    width: 100%;
+  }
+
+  .buttons input {
+    color: #000;
+    background: #fff;
+    border: double 4px #000;
+    padding: 0.25rem;
+    font-size: 150%;
+    width: 100%;
+  }
+
+  #chart {
+    height: 55px;
+  }
+
+  #contents::before {
+    content:'関連記事';
+    font-size: 90%;
+  }
+
+  #links::before {
+    content:'参考資料';
+    font-size: 75%;
+  }
+
+  code,
+  #contents::before,
+  #links::before,
+  #lastModified {
+    font-family: "ipag", monospace;
+  }
+
+  #contents::before,
+  #links::before {
+    text-decoration: underline;
+    display: block;
+    margin: 0.5rem 0.25rem;
+  }
+
+  #lastModified {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0.25rem;
+    word-break: break-word;
+  }
+
+  .ruleset::before {
+    display:none;
+  }
+
+  #three {
+    text-shadow:
+    -1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    1px 1px 0 #000;
+
+    background: conic-gradient(
+      hsl(0, 100%, 50%),
+      hsl(45, 100%, 50%),
+      hsl(90, 100%, 50%),
+      hsl(135, 100%, 50%),
+      hsl(180, 100%, 50%),
+      hsl(225, 100%, 50%),
+      hsl(270, 100%, 50%),
+      hsl(315, 100%, 50%),
+      hsl(360, 100%, 50%)
+      )
+      ;
+    }
+
+    #three.lightbox .close {
+      background-color: rgba(0, 0, 0, 0);
+    }
+    </style>
+
+  </head>
+  <body class="body">
+    <nav>
+      <p>
+        <a href="#one">NAMED-COLOR</a>
+        <a href="#two">RGB[A]</a>
+        <a href="#three">HSL[A]</a>
+      </p>
+      <p>
+        <a href="#four">FILTER</a>
+      </p>
+      <a href="#etc">関連記事</a>
+    </nav>
+    <h1 id="title">Colors | Cascading Style Sheets</h1>
+    <main class="ruleset">
+      <i>CSS</i>
+      <p class="declaration">
+        <b class="selif">color</b>
+        <span id="colorOutput" class="sans">#000</span>
+      </p>
+      <p class="declaration">
+        <b class="selif">filter</b>
+        <span id="filterOutput" class="sans">none</span>
+      </p>
+    </main>
+
+    <section class="buttons form">
+      <p>
+        <label for="color">有効な色の値を入力してください</label>
+        <input type="text" id="color">
+        <input type="color" id="chart" name="chart" value="#000">
+      </p>
+    </section>
+    <hr/>
+    <section class="buttons">
+      <p>
+        <b>filter</b>
+        <button class="special" onclick="setFilter('none');">none</button>
+        <button class="special" onclick="setFilter('blur(5px)');">blur(5px)</button>
+        <button class="special" onclick="setFilter('brightness(0.5)');">brightness(0.5)</button>
+        <button class="special" onclick="setFilter('contrast(0.1)');">contrast(0.1)</button>
+        <button class="special" onclick="setFilter('drop-shadow(2vw -2vh 2rem)');">drop-shadow(2vw -2vh 2rem)</button>
+        <button class="special" onclick="setFilter('grayscale(75%)');">grayscale(75%)</button>
+        <button class="special" onclick="setFilter('hue-rotate(90deg)');">hue-rotate(90deg)</button>
+        <button class="special" onclick="setFilter('invert(1)');">invert(1)</button>
+        <button class="special" onclick="setFilter('opacity(0.25)');">opacity(0.25)</button>
+        <button class="special" onclick="setFilter('saturate(2)');">saturate(2)</button>
+        <button class="special" onclick="setFilter('sepia(1)');">sepia(1)</button>
+      </p>
+    </section>
+
+    <p id="lastModified"></p>
+
+    <article class="lightbox" id="one">
+      <a href="#" class="close"></a>
+      <section class="readme translate_center">
+        <h2><<code>named-color</code>></h2>
+        <p>色名は、非常に単純で理解しやすい色を指定する値です。</p>
+        <p><i>大文字と小文字の区別をしない識別子で、特定の色を表します。</i></p>
+        <ul id="names"></ul>
+      </section>
+    </article>
+
+    <article class="lightbox" id="two">
+      <a href="#" class="close"></a>
+      <section id="rgba" class="readme translate_center"></section>
+    </article>
+
+    <article class="lightbox" id="three">
+      <a href="#" class="close"></a>
+      <section id="hsl" class="readme translate_center"></section>
+    </article>
+
+    <article class="lightbox" id="four">
+      <a href="#" class="close"></a>
+      <section id="filter" class="readme translate_center"></section>
+    </article>
+
+    <aside class="lightbox" id="etc">
+      <a href="#" class="close"></a>
+      <section id="contents" class="translate_center"></section>
+      <section id="links" class="fixed_bottom"></section>
+    </aside>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+      $("#rgba").load("rgba.html");
+      $("#hsl").load("hsl.html");
+      $("#filter").load("filter.html");
+    })
+
+    let lastModified = document.querySelector('#lastModified');
+
+    lastModified.innerHTML =
+    'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+    </script>
+
+    <script src="script.js" defer></script>
+    <script src="names.js" defer></script>
+  </body>
+  </html>

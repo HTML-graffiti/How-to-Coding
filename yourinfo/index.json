@@ -1,0 +1,79 @@
+{
+  "title" : "通信情報／ブラウザ等情報",
+  "description" : "ウェブサイトにアクセスすると送信される情報",
+  "author" : "How to Coding",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "Colors",
+      "url" : "/coding/css/colors/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "Backgrounds",
+      "url" : "/coding/css/backgrounds/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "PHP ($_SERVER)",
+      "name" : "Server Information & The User-Agent",
+      "url" : "/coding/php/server/",
+      "language" : "etc",
+      "status" : "guide"
+    },
+    {
+      "date" : "Web API",
+      "name" : "Window | Document Object Model",
+      "url" : "/coding/js/window/",
+      "language" : "api",
+      "status" : "guide"
+    },
+    {
+      "date" : "Web API",
+      "name" : "Online or Offline?",
+      "url" : "/coding/js/online/",
+      "language" : "api",
+      "status" : "guide"
+    },
+    {
+      "date" : "Web API",
+      "name" : "Web Storage API",
+      "url" : "/coding/js/web-storage/",
+      "language" : "api",
+      "status" : "guide"
+    },
+    {
+      "date" : "Web API",
+      "name" : "Geolocation API",
+      "url" : "/coding/js/window/geolocation.html",
+      "language" : "api",
+      "status" : "tools"
+    },
+    {
+      "date" : "Web API",
+      "name" : "Battery Status API",
+      "url" : "/coding/js/window/battery.html",
+      "language" : "api",
+      "status" : "tools"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "Access Log",
+      "name" : "creative-community.space",
+      "url" : "/log/",
+      "language" : "api",
+      "status" : "tools"
+    }
+  ]
+}

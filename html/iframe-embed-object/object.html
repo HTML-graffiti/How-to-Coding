@@ -1,0 +1,44 @@
+<article class="readme">
+  <details>
+    <summary>
+      <font>object</font>
+      <i>文書に外部リソースを埋め込む</i>
+    </summary>
+    <p>object要素は、様々な形式のコンテンツ（画像・動画・HTML文書・プラグインデータ等）を文書内に埋め込みます。</p>
+    <p>
+      <i>画像は <font>img</font></i>
+      ・
+      <i>動画は <font>video</font></i>
+      ・
+      <i>HTML文書は <font>iframe</font></i>
+      ・
+      <i>プラグインデータは <font>embed</font></i>
+      要素を使用するべきとされています。
+    </p>
+  </details>
+
+  <hr/>
+
+<pre class="object_tag" style="line-height:150%;">
+
+  <font color="blue">data</font>="埋め込むコンテンツのURL"
+  <font color="blue">type</font>="埋め込むコンテンツのMIMEタイプ"
+  <font color="blue">name</font>="閲覧コンテキスト名">
+  <font color="blue">form</font>="form要素と関連付ける">
+</pre>
+  <br/>
+  <p>
+    data属性の値に、埋め込むコンテンツのURLを指定します。
+  </p>
+  <p>
+    <a href="https://www.tagindex.com/html/basic/mimetype.html" target="_blank" rel="noopener noreferrer">主なMIMEタイプの一覧</a><br/>
+    type属性の値に、埋め込むコンテンツのMIMEタイプを設定します。
+  </p>
+  <p>
+    name属性の値に、閲覧コンテキスト名
+    を、アンダースコア（ <font color="blue">_</font> ）で開始されない任意の文字列で指定します。
+  </p>
+  <p>
+    object要素をformと関連付ける場合は、form属性の値に、form要素の IDの値 を設定します。
+  </p>
+</article>

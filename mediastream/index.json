@@ -1,0 +1,58 @@
+{
+  "title" : "MediaStream",
+  "description" : "Media Capture and Streams API",
+  "author" : "Web API",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+  ],
+
+  "links" : [
+    {
+      "date" : "Web API",
+      "name" : "MediaStream",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/MediaStream",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Media Capture and Streams API",
+      "name" : "メディアストリーム",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Media_Capture_and_Streams_API",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Fullscreen API",
+      "name" : "全画面 API",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Fullscreen_API",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document",
+      "name" : ".fullscreenElement",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/fullscreenElement",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document",
+      "name" : ".fullscreenEnabled",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/fullscreenEnabled",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document",
+      "name" : ".exitFullscreen()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/exitFullscreen",
+      "language" : "js",
+      "status" : "guide"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<script>
+  const readmeCSS = document.createElement( "link" );
+
+  readmeCSS.href = "../../readme/style.css";
+  readmeCSS.type = "text/css";
+  readmeCSS.rel = "stylesheet";
+  document.getElementsByTagName("head")[0].appendChild(readmeCSS);
+</script>
+
+<div class="readme data_show">
+  <p>
+    このページでは、PHP の $_SERVER を使って、ページを見ている人が発信する情報のうち、以上の情報を表示します。
+  </p>
+  <p>
+    <b>これらは、個人情報を直接含むような情報ではありません。</b>
+  </p>
+  <p>
+    <a href="https://www.cman.jp/network/term/getinfo/">ホームページにアクセスすると情報が取られる(何が分かる)？</a>
+  </p>
+  <hr/>
+  <p id="lastModified"></p>
+  <script>
+    let lastModified = document.querySelector('#lastModified');
+
+    lastModified.innerHTML =
+    'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+  </script>
+</div>

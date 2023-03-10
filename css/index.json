@@ -1,0 +1,156 @@
+{
+  "title" : "Cascading Style Sheets",
+  "description" : "CSSの基本",
+  "author" : "How to Coding",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "HEAD",
+      "name" : "文書メタデータ (ヘッダー) 要素",
+      "url" : "/coding/html/head/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Selectors",
+      "name" : "CSS セレクター",
+      "url" : "/coding/css/selectors/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "The Box Model",
+      "name" : "ボックスモデル",
+      "url" : "/coding/css/boxmodel/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Width & Height",
+      "name" : "幅と高さ",
+      "url" : "/coding/css/sizing/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Styling Text",
+      "name" : "テキストの装飾",
+      "url" : "/coding/css/text/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Font Styling",
+      "name" : "フォントの指定",
+      "url" : "/coding/css/fonts/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Colors",
+      "name" : "色",
+      "url" : "/coding/css/colors/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Backgrounds",
+      "name" : "背景",
+      "url" : "/coding/css/backgrounds/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS layout",
+      "name" : "CSS レイアウト",
+      "url" : "/coding/css/layout/",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "CSS の基本",
+      "name" : "Overview: Getting started with the web",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/CSS_basics",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "ウェブ関連用語の定義",
+      "url" : "https://developer.mozilla.org/ja/docs/Glossary/CSS",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS とは何か",
+      "name" : "What is CSS?",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/First_steps/What_is_CSS",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS リファレンス",
+      "name" : "CSS Reference",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/Reference",
+      "language" : "css",
+      "status" : "library"
+    },
+    {
+      "date" : "cssreference.io",
+      "name" : "A free visual guide to CSS",
+      "url" : "https://cssreference.io/",
+      "language" : "css",
+      "status" : "library"
+    },
+    {
+      "date" : "Basics of CSS",
+      "name" : "Video by Laurel Schwulst",
+      "url" : "https://youtu.be/BUZIaTHm_oE",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "W3C",
+      "name" : "Cascading Style Sheets",
+      "url" : "https://www.w3.org/Style/CSS/",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "PDF by Aidan Quinlan",
+      "url" : "https://handmade-web.net/spring22/assets/css.pdf",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "HTML Recap + CSS Basics",
+      "name" : "by Software for People",
+      "url" : "https://docs.google.com/presentation/d/1Oo9J5CZOHN2JPursXWD4f-oS4DtstcixRWoQO0zFJZs/edit?usp=sharing",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS is OK",
+      "name" : "CSS inspired ‘quayjn’ to write the song",
+      "url" : "https://www.youtube.com/watch?v=lbqOCS9bMpk",
+      "language" : "css",
+      "status" : "hints"
+    },
+    {
+      "date" : "Kill Styles",
+      "name" : "A simple tool to quickly show what any website(read as: most sites...) would look like with no CSS running.",
+      "url" : "https://kill-styles.matt-wolff.com/",
+      "language" : "css",
+      "status" : "tools"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "title" : "CSS layout",
+  "description" : "CSS レイアウト | CSS layout",
+  "author" : "Cascading Style Sheets",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary_large_image",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "CSS",
+      "name" : "ボックスモデル",
+      "url" : "/coding/css/boxmodel/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "幅と高さ",
+      "url" : "/coding/css/sizing/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "フレックスボックス",
+      "url" : "/coding/css/layout/flexbox/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "グリッドレイアウト",
+      "url" : "/coding/css/layout/grid/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "段組みレイアウト",
+      "url" : "/coding/css/layout/multiple/",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "CSS レイアウト入門",
+      "name" : "Introduction to CSS layout",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/CSS_layout/Introduction",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "通常フロー",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/CSS_layout/Normal_Flow",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "CSS フローレイアウト",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Flow_Layout",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "Floats",
+      "name" : "フロート",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/CSS_layout/Floats",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "float",
+      "name" : "浮動要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/float",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "clear",
+      "name" : "浮動の解除",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/clear",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Positioning",
+      "name" : "位置指定",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/CSS_layout/Positioning",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "position",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/position",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "z-index",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/z-index",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "レイアウトと包含ブロック",
+      "name" : "containing block",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/Containing_block",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "重ね合わせコンテキスト",
+      "name" : "Stacking context",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "Legacy layout methods",
+      "name" : "過去のレイアウト方法",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ]
+}

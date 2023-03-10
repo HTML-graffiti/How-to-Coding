@@ -1,0 +1,142 @@
+<h2>
+  <i>16進表記</i>
+  <br/>
+  <code>#RGB[A]</code> または
+  <code>#RRGGBB[AA]</code>
+</h2>
+<br/>
+<p>
+  16進数の値には、
+  <font>#</font>
+  に続く 6個（3個でも可）の 値
+  <font>0 ~ f</font> を使用します。
+</p>
+<br/>
+<p style="text-align:center;">~~~</p>
+<br/>
+<div class="howto">
+<p>
+  #<font>RGB</font>
+</p>
+<br/>
+<h3>
+  <font>R (赤)</font>
+  <font>G (緑)</font>
+  <font>B (青)</font>
+  に、0 から ff までの数値を指定し、それぞれの色の濃さを表します。
+  <br/>
+  <i>数値が 1つの場合は 同じ数値を複製し、2桁の数値を表します。</i>
+</h3>
+<br/>
+<p>
+  0 は その色 を使用しないことを意味し、f(ff) になるほど 色が濃くなります。<br/>
+  <i>#000000(#000) は 黒 ・ #ffffff(#fff) は 白 です。</i>
+</p>
+<br/>
+<br/>
+<p>
+  #RGB<font>A</font>
+</p>
+<br/>
+<h3>
+  <font>A (AA)</font>
+  に、0 から ff までの数値を指定し、色の透明度を表します。
+  <br/>
+  <i>数値が 1つの場合は 同じ数値を複製し、2桁の数値を表します。</i>
+</h3>
+<br/>
+<p>0 は 完全に透明な色で、 f(ff) は 完全に不透明な色です。</p>
+<br/>
+<br/>
+<p>
+  <font>#f07</font><br/>
+  <font>#F07</font><br/>
+  <font>#ff0077</font><br/>
+  <font>#FF0077</font><br/>
+</p>
+<p>
+  <font>#f070f</font><br/>
+  <font>#F070F</font><br/>
+  <font>#ff0077FF</font><br/>
+  <font>#FF0077ff</font><br/>
+</p>
+<br/>
+<p>
+  以上のコードはすべて、
+  赤 <font>f(ff)</font>（最大の濃さ）・緑 <font>0(00)</font>（使用しない）・青 <font>7(77)</font>（7の濃さ）の完全に不透明 <font>f(ff)</font> な色
+  を指す値です。
+  <i>色コードの中の大文字小文字は、区別されません。</i>
+</p>
+<br/>
+<br/>
+<p style="text-align:center;">~~~</p>
+<br/>
+</div>
+<h2>
+  <i>rgb[a]() 関数記法</i>
+  <br/>
+  <code>rgb(R, G, B)</code> または
+  <code>rgba(R, G, B, A)</code>
+</h2>
+<br/>
+<p>
+  rgb() 関数記法の値には、
+  <font>R, G, B</font>
+  を示す
+  <font>0 ~ 255</font> の数値を使用します。
+</p>
+<br/>
+<p>
+  透明度を含む
+  rgba() 関数記法の値には、
+  R, G, B, の値に加えて、
+  透明度を示す
+  <font>A</font>
+  の値に、
+  <font>0 ~ 1</font> の数値を使用します。
+</p>
+<br/>
+<div class="howto">
+<br/>
+<p>
+  <font>rgb</font> (<font>R, G, B</font>)
+</p>
+<br/>
+<h3>
+  <font>R (赤)</font>
+  <font>G (緑)</font>
+  <font>B (青)</font>
+  の値が、0 だとその色を使用しないことを意味し、255 になるほど色が濃くなります。
+</h3>
+<p>
+  rgb(0, 0, 0) 黒 ・ rgb(255, 255, 255) は 白 です。
+</p>
+<br/>
+<br/>
+<p>
+  rgb<font>a</font> (R, G, B, <font>A</font>)
+</p>
+<br/>
+<h3>
+  <font>A (透明度)</font>
+  0 は 完全に透明な色で、1 は 完全に不透明な色です。
+  <br/>
+  <i>
+    数値は、
+    <code>0.00001</code> や
+    <code>0.99</code> のように、コンマ単位で指定できます。
+  </i>
+</h3>
+<br/>
+<br/>
+<p>
+  <font>rgb(255, 0, 127.5)</font><br/>
+  <font>rgba(255, 0, 127.5, 1)</font><br/>
+</p>
+<br/>
+<p>
+  以上のコードはすべて、
+  赤 <font>255</font>（最大の濃さ）・緑 <font>0</font>（使用しない）・青 <font>127.5</font>（50%の濃さ）の完全に不透明 <font>1</font> な色
+  を指す値です。
+</p>
+</div>

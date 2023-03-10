@@ -1,0 +1,129 @@
+.ruleset,
+.selector,
+.declaration,
+.property,
+.property_value {
+  position: relative;
+}
+
+#hello p {
+  line-height: 150%;
+}
+
+ul {
+  list-style: inside;
+  line-height: 150%;
+  padding: 0;
+  margin: 2.5%;
+}
+
+.ruleset {
+  font-size: 2.5rem;
+  padding: 5rem 2.5rem 2.5rem;
+}
+
+.green,
+.ruleset::before,
+.selector {
+  color: green;
+}
+
+.gold,
+.property,
+.property::before {
+  color: gold;
+}
+
+.ruleset::before,
+.property::before,
+.property_value::before {
+  display: block;
+  font-size: 45%;
+  position: absolute;
+}
+
+.property::before,
+.property_value::before {
+  left: 0;
+}
+
+.ruleset::before {
+  content: 'セレクター ';
+  top: 2.5rem;
+}
+
+.ruleset i {
+  font-style: normal;
+  font-size: 100%;
+}
+
+.ruleset i::after {
+  content: ' {';
+  color: #000;
+}
+
+.declaration b::after {
+  content: ' : ';
+  color: #000;
+}
+
+.declaration span::after {
+  content: ';';
+  color: #000;
+}
+
+.ruleset::after {
+  content: '}';
+  color: #000;
+}
+
+.property::before {
+  content: 'プロパティ';
+  top: -2.5rem;
+}
+
+.property_value::before {
+  content: 'プロパティ値';
+  top: -2.5rem;
+}
+
+.property_value,
+.wavy {
+  text-decoration:wavy underline #FF0000;
+}
+
+@media screen and (max-width: 750px) {
+
+  .ruleset {
+    font-size: 5.5vw;
+    padding: 12.5% 10% 7.5%;
+  }
+
+  .ruleset::before{
+    top: 4.5vw;
+  }
+
+  .property::before,
+  .property_value::before {
+    top: -5.5vw;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+
+  .ruleset {
+    font-size: 7.5vw;
+    padding: 15% 2.5% 10%;
+  }
+
+  .ruleset::before {
+    top: 4.5vw;
+  }
+
+  .property::before,
+  .property_value::before {
+    top: -7.5vw;
+  }
+
+}

@@ -1,0 +1,128 @@
+{
+  "title" : "Writing Mode",
+  "description" : "書き込みモード | writing-mode",
+  "author" : "Cascading Style Sheets",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "HTML",
+      "name" : "テキストの基礎",
+      "url" : "/coding/html/text/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "高度なテキスト整形",
+      "url" : "/coding/html/text/advanced/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "テキストの装飾",
+      "url" : "/coding/css/text/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "フォントの指定",
+      "url" : "/coding/css/fonts/",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "テキスト方向の操作",
+      "name" : "Handling different text directions",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/Building_blocks/Handling_different_text_directions",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "writing-mode",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/writing-mode",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "グローバル属性",
+      "name" : "dir",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/dir",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":dir()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:dir",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "グローバル属性",
+      "name" : "lang",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/lang",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":lang()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:lang",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "direction",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/direction",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "unicode-bidi",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/unicode-bidi",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "bdi",
+      "name" : ":書字方向分離要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/bdi",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "bdo",
+      "name" : ":双方向文字列上書き要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/bdo",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "text-orientation",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/text-orientation",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "text-combine-upright",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/text-combine-upright",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+<h2>
+  レスポンシブデザイン<br/>
+  <i>さまざまな画面サイズ、解像度などに合わせて スタイルを変更できるようにする一連の実践です。</i>
+</h2>
+<br/>
+<code class="meta">name="<font color="blue">viewport</font>" content="<font color="blue">width=device-width, initial-scale=1.0</font>"</code>
+<p>はじめに、HTMLにレスポンシブデザインを実践するため、HEAD要素内にビューポイントを設定するメタ要素を記述します。</p>
+<br/>
+<p style="text-align:center;">~~~</p>
+<br/>
+<p>レスポンシブデザインは、画面が特定のサイズ（または特定の解像度）より大きいかどうかによって、適用するCSSを設定することです。</p>
+<br/>
+<h3>スクリーンサイズによってリンクするCSSを区別する</h3>
+<code class="link">rel="stylesheet" href="mobile.css" media="<font color="blue">screen and (max-width: 550px)</font>"</code>
+<p>mobile.css を、<code>最大 550px の横幅</code> のウインドウサイズを持つブラウザーにリンクする</p>
+<code class="link">rel="stylesheet" href="pc.css" media="<font color="blue">screen and (min-width: 550px)</font>"</code>
+<p>pc.css を、<code>最小 550px の横幅</code> のウインドウサイズを持つブラウザーにリンクする</p>
+<br/>
+<p style="text-align:center;">~~~</p>
+<br/>
+<h3>CSSに、複数のスクリーンサイズに適用するCSSを記述する</h3>
+<pre>
+
+@media screen and (<font color="blue">max-width: 数値</font>) {
+  CSSルールセット
+}
+
+@media screen and (<font color="blue">min-width: 数値</font>) {
+  CSSルールセット
+}
+</pre>
+<br/>
+<h3>
+  <font color="blue">portrait</font>は、スクリーン（ビューポート）が
+  縦長 <i>高さが幅よりも大きいか等しい状態</i> のブラウザーを指定するキーワード値
+  <br/>
+  <font color="blue">landscape</font>は、スクリーン（ビューポート）が
+  横長 <i>幅が高さよりも大きい状態</i> のブラウザーを指定するキーワード値
+</h3>
+
+<code class="link">rel="stylesheet" href="landscape.css" media="<font color="blue">(orientation: landscape)</font>"</code><br/>
+<code class="link">rel="stylesheet" href="portrait.css" media="<font color="blue">(orientation: portrait)</font>"</code><br/>
+<br/>
+<p>or</p>
+<pre>
+
+@media (<font color="blue">orientation: landscape</font>) {
+  CSSルールセット
+}
+
+@media (<font color="blue">orientation: portrait</font>) {
+  CSSルールセット
+}
+</pre>
+<br/>
+<p style="text-align:center;">~~~</p>
+<br/>
+<h3>
+  JavaScript で
+  <font color="blue">UserAgent</font>
+  を判定し、モバイル端末にのみ処理を実行する
+</h3>
+<br/>
+<font color="blue">if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))</font>
+<pre>
+{
+  処理を記述する
+}
+
+</pre>

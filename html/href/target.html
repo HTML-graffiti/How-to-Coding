@@ -1,0 +1,102 @@
+<article class="readme">
+  <i>
+    HTML Living Standard (HTML5以降) では、
+    ウェブサイトを表示する環境（ウィンドウ、タブなど）のことを
+    <font>閲覧コンテキスト</font>
+    と呼ぶようになりました。<br/>
+    また、iframe・objectなど も
+    <b>入れ子にされた閲覧コンテキスト</b> (nested browsing contexts)
+    と呼ばれるようになりました。
+  </i>
+  <hr/>
+  <h2>
+    <br/>
+    a
+    <font>target</font>="<b class="blue">ターゲット指定</b>"<br/>
+    <i>ハイパーリンクを表示する閲覧コンテキストを指定する</i>
+  </h2>
+  <p>
+    target="<b class="blue">_self</b>"
+    <br/>
+    現在の閲覧コンテキストでハイパーリンクを表示する<br/>
+    <i>target 属性の指定がない場合は、既定値として _self が設定されます。</i>
+  </p>
+  <p>
+    target="<b class="blue">_blank</b>"
+    <br/>
+    新しいタブ（新しい閲覧コンテキスト）でハイパーリンクを表示する<br/>
+    <i>target="_blank" を設定すると、暗黙的に rel の動作は rel="noopener" を設定</i>
+  </p>
+  <p>
+    target="<b class="blue">_parent</b>"
+    <br/>
+    現在の親の閲覧コンテキストでハイパーリンクを表示する<br/>
+    <i>主に、入れ子にされた閲覧コンテキストのアンカー要素で使用します。</i>
+  </p>
+  <p>
+    target="<b class="blue">_top</b>"
+    <br/>
+    最上位の閲覧コンテキスト（現在のコンテキストの祖先である "最上位" のコンテキスト）でハイパーリンクを表示する<br/>
+    <i>主に、入れ子にされた閲覧コンテキストのアンカー要素で使用します。</i>
+  </p>
+  <hr/>
+  <p>
+    target="<b class="blue">閲覧コンテキスト名</b>"
+    <br/>
+    任意の閲覧コンテキストでハイパーリンクを表示する<br/>
+    <i>主に、入れ子にされた閲覧コンテキストをターゲットに指定する際に使用します。</i>
+  </p>
+  <hr/>
+</article>
+<article class="readme">
+  <p>
+    例)<br/>
+    <a class="a_element" href="iframe.html" target="example_iframe" referrerpolicy="no-referrer"><font color="blue">iframe.html</font>"
+      target="<font color="blue">example_iframe</font>">
+    </a>
+    <a class="a_element" href="object.html" target="example_object" referrerpolicy="no-referrer"><font color="blue">object.html</font>"
+      target="<font color="blue">example_object</font>">
+    </a>
+  </p>
+  <hr/>
+  <iframe class="half" name="example_iframe" srcdoc="<<font color='blue'>iframe</font> name=&quot;<font color='blue'>example_iframe</font>&quot;><<font color='blue'>/iframe</font>>"></iframe>
+  <object class="half" name="example_object" type="text/html"></object>
+  <hr/>
+</article>
+
+<article class="readme href">
+  <br/>
+  <h3>
+    <font>rel</font>="<b class="blue">リンク種別</b>"<br/>
+    <i>他のドキュメントへリンクするときに、リンク種別で ドキュメントの関係を示します。</i>
+  </h3>
+  <hr/>
+  例)
+  <p>
+    rel="<b class="blue">noopener noreferrer</b>"
+    <br/>
+    リンクを新しい閲覧コンテキストで開き、リンク元の文書へアクセスできないように／リンク元ページのアドレスなどの値を記録しないように指示します。<br/>
+    <i>新しいタブでハイパーリンクを表示する target="_blank" を設定する際に、合わせて設定することが推奨されています。</i>
+  </p>
+  <p>
+    rel="<b class="blue">canonical</b>"<br/>
+    リンク先が正規ページのURLであることを示します。
+  </p>
+  <p>
+    rel="<b class="blue">external</b>"<br/>
+    外部のサイトへのリンクであることを示します。
+  </p>
+  <p>
+    rel="<b class="blue">next</b>"<br/>
+    現在の文書の次の文書であることを示します。
+  </p>
+  <p>
+    rel="<b class="blue">prev</b>"<br/>
+    現在の文書の前の文書であることを示します。
+  </p>
+  <br/>
+  <i>
+    この設定は、ページの閲覧者にとっては直接関係がないものですが、コンピューターにとっては ページの構造 を知るための重要な設定です。
+    人間のためだけでなく、コンピューターにとっても丁寧なコーディングを心がけましょう。
+  </i>
+</article>

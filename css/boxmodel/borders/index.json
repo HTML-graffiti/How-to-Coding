@@ -1,0 +1,100 @@
+{
+  "title" : "Borders",
+  "description" : "枠線 | Borders",
+  "author" : "Cascading Style Sheets",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary_large_image",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "CSS",
+      "name" : "ボックスモデル",
+      "url" : "/coding/css/boxmodel/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "色",
+      "url" : "/coding/css/colors/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "背景",
+      "url" : "/coding/css/backgrounds/",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "背景と枠線",
+      "name" : "Backgrounds and borders",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "border",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/border",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "border-image",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/border-image",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "border-radius",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/border-radius",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "border-collapse",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/border-collapse",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "border-spacing",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/border-spacing",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "border-spacing",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/border-spacing",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "box-shadow",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/box-shadow",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "outline",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/outline",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ]
+}

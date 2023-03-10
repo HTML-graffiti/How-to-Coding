@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../readme/index.js"></script>
+
+  <link rel="icon" href="/ver/logo.png">
+  <link rel="apple-touch-icon" href="/ver/logo.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../cover/style.css" />
+  <link rel="stylesheet" href="../cover/mobile.css" media="screen and (max-width: 820px)">
+  <style>
+
+  #links::before {
+    content:'準備中) Under Construction';
+  }
+
+  #links::before {
+    text-decoration: underline;
+    display: block;
+    font-family: "ipag", monospace;
+    font-size: 75%;
+    margin: 1rem;
+  }
+
+  #links a {
+    pointer-events: none;
+    user-select: none;
+  }
+  </style>
+</head>
+
+<body id="cover">
+  <article id="left">
+    <form id="org">
+      <ul>
+        <li>
+          <input type="radio" name="language" value="html" id="html">
+          <label for="html" class="label">HTML</label>
+        </li>
+        <li>
+          <input type="radio" name="language" value="css" id="css">
+          <label for="css" class="label">CSS</label>
+        </li>
+        <li>
+          <input type="radio" name="language" value="js" id="js">
+          <label for="js" class="label">JavaScript</label>
+        </li>
+        <li>
+          <input type="radio" name="language" value="api" id="api">
+          <label for="api" class="label">Web API</label>
+        </li>
+        <li>
+          <input type="radio" name="language" value="etc" id="etc">
+          <label for="etc" class="label">ETC.</label>
+        </li>
+      </ul>
+      <ul class="pc_only">
+        <li>
+          <input type="radio" name="status" value="basic" id="basic">
+          <label for="basic" class="label">Basic</label>
+        </li>
+        <li>
+          <input type="radio" name="status" value="guide" id="guide">
+          <label for="guide" class="label">Guide</label>
+        </li>
+        <li>
+          <input type="radio" name="status" value="library" id="library">
+          <label for="library" class="label">Library</label>
+        </li>
+        <li>
+          <input type="radio" name="status" value="tools" id="tools">
+          <label for="tools" class="label">Tools</label>
+        </li>
+        <li>
+          <input type="radio" name="status" value="hints" id="hints">
+          <label for="hints" class="label">Hints</label>
+        </li>
+      </ul>
+    </form>
+    <section id="contents"></section>
+  </article>
+  <article id="right">
+    <section id="links"></section>
+  </article>
+
+  <h1 id="title">How to Coding | creative-community.space</h1>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="searchBox.js"></script>
+  <script type="text/javascript">
+  // Add .randomRGBcolor
+
+  const newRGBcolorAll = document.querySelectorAll('#links a');
+  for (const newRGBcolor of newRGBcolorAll) {
+    newRGBcolor.classList.add("randomRGBcolor")
+  }
+
+  // Add .randomRGBbg
+
+  const newRGBbgAll = document.querySelectorAll('#contents a');
+  for (const newRGBbg of newRGBbgAll) {
+    newRGBbg.classList.add("randomRGBbg")
+  }
+
+  </script>
+</body>
+</html>

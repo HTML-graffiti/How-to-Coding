@@ -1,0 +1,80 @@
+.hide,
+.css,
+.href:not(.selectors) {
+  display: none;
+}
+
+body {
+  background: #000;
+}
+
+.div_tag::before {
+  content: '<div ';
+}
+
+.div_tag::after {
+  content: '</div>';
+}
+
+.span_tag::before {
+  content: '<span ';
+}
+
+.span_tag::after {
+  content: '</span>';
+}
+
+.a_element::before {
+  content: '<a href="';
+}
+
+.a_element::after {
+  content: '</a>';
+}
+
+.iframe::before {
+  content: '<iframe>';
+}
+
+.iframe_tag::before {
+  content: '<iframe ';
+}
+
+.iframe::after,
+.iframe_tag::after {
+  content: '</iframe>';
+}
+
+.img_element::before {
+  content: '<img';
+}
+
+.img_element::after {
+  content: '>';
+}
+
+.special {
+  background: #000;
+  color: red;
+}
+
+.super {
+  font-style: italic;
+  background: yellow;
+}
+
+.great {
+  font-size: 150%;
+}
+
+.super.special {
+  display: block;
+}
+
+.special .special {
+  color: green;
+}
+
+.great .great {
+  color: blue;
+}

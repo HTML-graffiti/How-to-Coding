@@ -1,0 +1,65 @@
+<script async>
+  const html_elementsCSS = document.createElement( "link" );
+  html_elementsCSS.href = "cascading.css";
+  html_elementsCSS.type = "text/css";
+  html_elementsCSS.rel = "stylesheet";
+  document.getElementsByTagName("head")[0].appendChild(html_elementsCSS);
+</script>
+
+<details>
+  <summary>/* CSS ルールセットの構造 */</summary>
+  <ul>
+    <li>
+      <span class="green">セレクター</span>
+      を除き、それぞれの
+      <u>ルールセット</u>
+      は中括弧 <font>{　}</font> で囲む
+    </li>
+    <li>
+      それぞれの
+      <b class="red">宣言</b> では、
+      <span class="gold">プロパティ</span>
+      と
+      <span class="wavy">プロパティの値</span>
+      を コロン <font>:</font> で分離する
+    </li>
+    <li>
+      <u>ルールセット</u> 内 で
+      セミコロン <font>;</font> を使用し、それぞれの宣言を区切る
+    </li>
+  </ul>
+  <br/>
+</details>
+<hr/>
+
+<div class="ruleset">
+  <i class="selector">a</i>
+  <p class="declaration">
+    <b class="property">color</b>
+    <span class="property_value">#000000</span>
+  </p>
+  <p class="declaration">
+    <b class="property">text-decoration</b><br/>
+    <span class="property_value">underline none</span>
+  </p>
+</div>
+
+<hr/>
+<p>
+  これは、
+  <font color="green">a</font> アンカー要素 の
+  <font color="gold">色</font> を
+  <font class="wavy">#000000</font>（黒色）
+  にする
+  <font color="red">宣言</font>
+  と、
+  <font color="gold">text-decoration</font> (テキストの装飾)
+  を
+  <font class="wavy">下線 なし</font>
+  にする
+  <font color="red">宣言</font>
+  を含む
+  <font style="text-decoration:underline;">CSS ルールセット</font> です。
+</p>
+
+<hr/>

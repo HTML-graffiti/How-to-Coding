@@ -1,0 +1,75 @@
+body {
+  transition: background 1s;
+}
+
+ol#ordered {
+  list-style-position: inside;
+  margin: 2.5rem auto;
+  max-width: 500px;
+  background: #fff;
+}
+
+ol#ordered li {
+  box-sizing: border-box;
+  padding: 0.25rem;
+  width: auto;
+}
+
+.ol_element::before {
+  content: '<ol>';
+}
+
+.ol_element::after {
+  content: '</ol>';
+}
+
+.ol_element::before,
+.ol_element::after {
+  display: block;
+  clear: both;
+  width: 100%;
+}
+
+.li_element::before {
+  content: '<li>';
+}
+
+.li_element::after {
+  content: '</li>';
+}
+
+li::marker {
+  font-size: 125%;
+}
+
+.typeOdd,
+.typeEven  {
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.type3n {
+  font-size: 111%;
+  width: 100%;
+}
+
+.typeN4 {
+  float: left;
+  max-width: 50%;
+  min-height: 4rem;
+  text-shadow:
+  1px 1px 0 #000,
+  2px 2px 0 #000;
+}
+
+.typeN5 {
+  font-size: 90%;
+  border: 1px solid #000;
+}
+
+.typeN67 {
+  font-family: fantasy;
+  float: right;
+  max-width: 33%;
+}

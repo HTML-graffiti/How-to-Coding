@@ -1,0 +1,40 @@
+<!--
+https://developer.mozilla.org/ja/docs/Web/API/Window/open
+https://developer.mozilla.org/ja/docs/Web/API/Window/close
+-->
+
+<p>
+  <font>Window<code class="red">.イベント名</code>()</font><br/>
+  このインターフェイスは EventTarget インターフェイスからメソッドを継承しています。<br/>
+</p>
+<p>
+  <input type="button" value="open()" onclick="open()">
+  <code class="red">open</code>(url, target, windowFeatures)<br/>
+  指定されたリソースを指定された名前を持った閲覧コンテキストに読み込みます。
+</p>
+<p>
+  <input type="button" value="close()" onclick="close()">
+  <code class="red">close</code>()<br/>
+  現在のウィンドウ、またはそのページ上で呼び出されたウィンドウを閉じます。
+</p>
+<hr/>
+
+<!--
+https://developer.mozilla.org/ja/docs/Web/API/Window/resize_event
+https://developer.mozilla.org/ja/docs/Web/API/Window/resizeBy
+https://developer.mozilla.org/ja/docs/Web/API/Window/resizeTo
+-->
+
+<p>
+  <code><code class="red">resizeTo</code>(width, height)</code>
+  <input type="button" value="ウィンドウのサイズを動的に変更します。" onclick="resizeTo(200, 200)"><br/>
+  <i>width ウインドウの幅をピクセル数で表します。</i>
+  <i>height ウインドウの高さをピクセル数で表します。</i>
+</p>
+<p>
+  <code><code class="red">resizeBy</code>(xDelta, yDelta)</code>
+  <input type="button" value="ウィンドウを指定した大きさにリサイズします。" onclick="resizeBy(-200, -200)"><br/>
+  <i>xDelta はウィンドウを水平方向に広げるピクセル数です。</i>
+  <i>yDelta はウィンドウを垂直方向に広げるピクセル数です。</i>
+</p>
+<hr/>

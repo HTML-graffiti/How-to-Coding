@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../cascading.css" />
+  <link rel="stylesheet" href="../../readme/style.css" />
+  <link rel="stylesheet" href="../pseudo-classes/lightbox.css" />
+  <style type="text/css">
+
+  .body {
+    overflow-x: hidden;
+  }
+
+  .ruleset {
+    position: relative;
+    background: #fff;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    min-height: 55vh;
+    max-width: 75vw;
+    margin: 2.5vw auto;
+    z-index: -1;
+  }
+
+  .ruleset::before {
+    display:none;
+  }
+
+  #contents::before {
+    content:'関連記事';
+    font-size: 90%;
+  }
+
+  #links::before {
+    content:'参考資料';
+    font-size: 75%;
+  }
+
+  #contents::before,
+  #links::before,
+  #lastModified {
+    font-family: "ipag", monospace;
+  }
+
+  #contents::before,
+  #links::before {
+    text-decoration: underline;
+    display: block;
+    margin: 0.5rem 0.25rem;
+  }
+
+  #lastModified {
+    margin: 1rem 0 0;
+    line-height: 125%;
+  }
+
+  </style>
+
+</head>
+<body class="body">
+  <nav>
+    <p>
+      <a href="#one">回転</a>
+      <a href="#two">拡大縮小</a>
+      <a href="#three">傾斜</a>
+      <a href="#four">移動</a>
+    </p>
+    <a href="#etc">関連記事</a>
+  </nav>
+
+  <h1 id="title">Transform | Cascading Style Sheets</h1>
+  <main class="ruleset">
+    <i>CSS</i>
+    <p class="declaration">
+      <b class="selif">transform</b>
+      <span id="transformOutput" class="sans">none</span>
+    </p>
+    <p class="declaration">
+      <b class="selif">transform-origin</b>
+      <span id="originOutput" class="sans">center</span>
+    </p>
+  </main>
+
+  <section class="buttons">
+    <p>
+      <b>rotate</b>
+      <button class="special" onclick="setTransform('rotate(45deg)');">(45deg)</button>
+      <button class="special" onclick="setTransform('rotate(0.25turn)');">(0.25turn)</button>
+      <button class="special" onclick="setTransform('rotate(0.5turn)');">(0.5turn)</button>
+      <button class="special" onclick="setTransform('rotate(360deg)');">(360deg)</button>
+    </p>
+    <p>
+      <b>rotateX</b>
+      <button class="special" onclick="setTransform('rotateX(45deg)');">(45deg)</button>
+      <button class="special" onclick="setTransform('rotateX(0.5turn)');">(0.5turn)</button>
+      <button class="special" onclick="setTransform('rotateX(360deg)');">(360deg)</button>
+      <button class="special" onclick="setTransform('rotateX(1.23turn)');">(1.23turn)</button>
+    </p>
+    <p>
+      <b>rotateY</b>
+      <button class="special" onclick="setTransform('rotateY(45deg)');">(45deg)</button>
+      <button class="special" onclick="setTransform('rotateY(0.5turn)');">(0.5turn)</button>
+      <button class="special" onclick="setTransform('rotateY(360deg)');">(360deg)</button>
+      <button class="special" onclick="setTransform('rotateY(1.23turn)');">(1.23turn)</button>
+    </p>
+  </section>
+  <section class="buttons">
+    <p>
+      <b>scale</b>
+      <button class="special" onclick="setTransform('scale(0.5)');">(0.5)</button>
+      <button class="special" onclick="setTransform('scale(1.25, 0.75)');">(1.25, 0.75)</button>
+      <button class="special" onclick="setTransform('scale(0.75, 1.25)');">(0.75, 1.25)</button>
+    </p>
+    <p>
+      <b>skew</b>
+      <button class="special" onclick="setTransform('skew(25deg)');">(25deg)</button>
+      <button class="special" onclick="setTransform('skew(-25deg)');">(-25deg)</button>
+      <button class="special" onclick="setTransform('skew(0, 0.45turn)');">(0, 0.45turn)</button>
+      <button class="special" onclick="setTransform('skew(25deg, -0.5turn)');">(25deg, -0.5turn)</button>
+    </p>
+  </section>
+  <section class="buttons">
+    <p>
+      <b>translate</b>
+      <button class="special" onclick="setTransform('translate(10%)');">(10%)</button>
+      <button class="special" onclick="setTransform('translate(-2.5vw)');">(-2.5vw)</button>
+      <button class="special" onclick="setTransform('translate(0, 5vh)');">(0, 5vh)</button>
+      <button class="special" onclick="setTransform('translate(2.5%, -2.5vh)');">(2.5%, -2.5vh)</button>
+    </p>
+  </section>
+  <section class="buttons">
+    <p>
+      <b>transform-origin</b>
+      <button class="special" onclick="setOrigin('center');">center</button>
+      <button class="special" onclick="setOrigin('left top');">left top</button>
+      <button class="special" onclick="setOrigin('right bottom');">right bottom</button>
+    </p>
+  </section>
+
+  <p id="lastModified"></p>
+
+  <article class="lightbox" id="one">
+    <a href="#" class="close"></a>
+    <section class="readme translate_center">
+      <h2>
+        <i>回転</i>
+        <br/>
+        transform: <code>rotate</code> (角度値);<br/>
+        <i>// 二次元平面上で特定の点を中心に回転</i><br/>
+        transform: <code>rotateX</code> (角度値);<br/>
+        <i>// 水平軸を中心に回転</i><br/>
+        transform: <code>rotateY</code> (角度値);<br/>
+      </h2>
+      <br/>
+      <p>
+        <code>deg</code> 角度を度数法 (度) で表します<br/>
+        <code>turn</code> 角度を回転数で表します<br/>
+      </p>
+      <br/>
+      <p>
+        <code>rotate:</code> 角度値;<br/>
+        <code>rotate:</code> 軸名(x, y, z) 角度値;<br/>
+      </p>
+    </section>
+  </article>
+
+  <article class="lightbox" id="two">
+    <a href="#" class="close"></a>
+    <section class="readme translate_center">
+      <h2>
+        <i>拡大縮小</i>
+        <br/>
+        transform: <code>scale</code> (値);<br/>
+        transform: <code>scale</code> (X軸の値, Y軸の値);<br/>
+      </h2>
+      <br/>
+      <p>
+        <code>scale:</code> 値;<br/>
+        <code>scale:</code> X軸の値 Y軸の値;<br/>
+        <code>scale:</code> X軸の値 Y軸の値 Z軸の値;<br/>
+      </p>
+    </section>
+  </article>
+
+  <article class="lightbox" id="three">
+    <a href="#" class="close"></a>
+    <section class="readme translate_center">
+      <h2>
+        <i>傾斜</i>
+        <br/>
+        transform: <code>skew</code> (横軸の値);<br/>
+        transform: <code>skew</code> (横軸の値, 縦軸の値);<br/>
+      </h2>
+      <br/>
+      <p>
+        <code>deg</code> 角度を度数法 (度) で表します<br/>
+        <code>turn</code> 角度を回転数で表します<br/>
+      </p>
+    </section>
+  </article>
+
+  <article class="lightbox" id="four">
+    <a href="#" class="close"></a>
+    <section class="readme translate_center">
+      <h2>
+        <i>移動</i>
+        <br/>
+        transform: <code>translate</code> (横軸の値);<br/>
+        transform: <code>translate</code> (横軸の値, 縦軸の値);<br/>
+      </h2>
+      <br/>
+      <p>
+        <code>deg</code> 角度を度数法 (度) で表します<br/>
+        <code>turn</code> 角度を回転数で表します<br/>
+      </p>
+      <br/>
+      <p>
+        <code>rotate:</code> 角度値;<br/>
+        <code>rotate:</code> 軸名(x, y, z) 角度値;<br/>
+      </p>
+    </section>
+  </article>
+
+  <aside class="lightbox" id="etc">
+    <a href="#" class="close"></a>
+    <section id="contents" class="translate_center"></section>
+    <section id="links" class="fixed_bottom"></section>
+  </aside>
+
+  <script type="text/javascript">
+  let lastModified = document.querySelector('#lastModified');
+
+  lastModified.innerHTML =
+  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+  </script>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

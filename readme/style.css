@@ -1,0 +1,261 @@
+/* Copyright (C) 2022 creative-community.space */
+
+@font-face {
+  font-family: "ipag";
+  src: url("https://creative-community.space/ver/ipag.ttf");
+}
+
+@font-face {
+  font-family: "San Francisco";
+  src: url("https://creative-community.space/coding/readme/san-francisco/SF-Pro.ttf");
+}
+
+@font-face {
+  font-family: "NewYork";
+  src: url("https://creative-community.space/coding/cover/NewYork.otf");
+}
+
+.readme h1 i,
+.readme h3,
+font,
+pre,
+#links a {
+  font-family: "ipag", monospace;
+  word-break: break-word;
+}
+
+.readme h1 {
+  font-family: "NewYork", serif;
+}
+
+nav a,
+.readme,
+#contents a {
+  font-family: "San Francisco", "游ゴシック体", "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.readme h2,
+.readme u {
+  font-style: italic;
+  font-family: "Times New Roman", serif;
+  font-size: 111%;
+}
+
+.readme h1,
+font {
+  font-size: 175%;
+  font-weight: 555;
+}
+
+.readme h2 {
+  font-size: 150%;
+  font-weight: 500;
+}
+
+.readme h3 {
+  font-size: 111%;
+  font-weight: 500;
+}
+
+nav a,
+.readme a,
+#contents a,
+#links a {
+  color: #000;
+  text-decoration: none;
+}
+
+nav a:hover,
+#contents a:hover {
+  color: #0000EE;
+}
+
+.red,
+nav a:active,
+#contents a:active {
+  color: #FF0000;
+}
+
+nav a,
+.readme,
+#contents a {
+  font-size: 1rem;
+}
+
+nav a,
+.readme a,
+.readme u,
+#contents a,
+#links a {
+  transition: 1s;
+}
+
+.readme p {
+  font-size: 90%;
+}
+
+.readme i {
+  font-size: 75%;
+}
+
+.readme {
+  padding: 0 2.5%;
+  margin: 2.5% auto;
+  max-width: 750px;
+}
+
+.readme a {
+  border: 1px solid;
+  border-radius: 2rem;
+  display: inline-block;
+  font-size: 75%;
+  padding: 0.45rem 0.75rem;
+  margin: 0.125rem 0;
+}
+
+.readme iframe,
+.readme object {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 450px;
+}
+
+.readme iframe.half,
+.readme object.half {
+  width: 49%;
+  height: 200px;
+}
+
+hr {
+  border: none;
+}
+
+pre {
+  font-size: 90%;
+  width: 100%;
+  overflow: scroll;
+}
+
+nav a,
+#contents a,
+#contents a i,
+#contents a p,
+#links a,
+#links a i,
+#links a p {
+  display: inline-block;
+}
+
+#contents a,
+#links a {
+  padding: 0;
+  margin: 0 0.5rem 0 0;
+}
+
+#links a {
+  border-bottom: 1px solid transparent;
+}
+
+#links a:hover {
+  border-bottom: 1px solid #000;
+}
+
+#contents a i,
+#links a i {
+  font-size: 75%;
+  margin: 0.125rem 0.25rem;
+}
+
+#contents a i {
+  border: 1px solid;
+  border-radius: 2rem;
+  padding: 0.25rem 0.55rem;
+}
+
+#contents a p,
+#links a p {
+  padding: 0.5rem 0.25rem 0.5rem 0.5rem;
+  margin: 0.125rem 0 0.125rem;
+}
+
+@media screen and (max-width: 750px) {
+
+  .readme {
+    font-size: 2.25vw;
+  }
+
+  .readme a {
+    border: 0.1vw solid;
+    border-radius: 2vw;
+    font-size: 75%;
+    padding: 0.5vw 1.5vw;
+    margin: 0.5vw 0;
+  }
+
+  nav a,
+  #contents a,
+  #links a {
+    font-size: 2.5vw;
+  }
+
+  #contents a,
+  #links a {
+    font-size: 2.5vw;
+    margin: 0 1vw 0 0;
+  }
+
+  #links a {
+    border-bottom: 0.01vw solid transparent;
+  }
+
+  #links a:hover {
+    border-bottom: 0.01vw solid #000;
+  }
+
+  #contents a i,
+  #links a i {
+    font-size: 75%;
+    margin: 0.25vw 0.5vw;
+  }
+
+  #contents a i {
+    border: 0.01vw solid;
+    border-radius: 5vw;
+    padding: 0.5vw 1.25vw;
+  }
+
+  #contents a p,
+  #links a p {
+    padding: 1vw 0.5vw 1vw 1vw;
+    margin: 0.25vw 0 0.25vw;
+  }
+
+  .readme iframe,
+  .readme object {
+    max-height: 55vw;
+  }
+
+  .readme iframe.half,
+  .readme object.half {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .readme {
+    font-size: 3vw;
+  }
+
+  .readme a {
+    border: 0.1vw solid;
+    border-radius: 2.5vw;
+    font-size: 75%;
+    padding: 0.5vw 2vw;
+    margin: 0.5vw 0;
+  }
+
+}

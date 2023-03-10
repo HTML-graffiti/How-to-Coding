@@ -1,0 +1,100 @@
+<p>
+  要素の幅と高さを示すプロパティ<br/>
+  <font>CSSOM <code class="red">width & height</code></font>
+</p>
+<table class="size">
+  <tbody>
+    <tr>
+      <td>Element.offsetWidth</td>
+      <td>HTML要素のレイアウト幅（境界線、パディングを含む）</td>
+      <td id="outoffsetWidth" class="nowValue"></td>
+    </tr>
+    <tr>
+      <td>Element.clientWidth</td>
+      <td>コンテンツの幅 (パディングを含み、境界、マージン、スクロールバーは含まない)</td>
+      <td id="outElementClientWidth" class="nowValue"></td>
+    </tr>
+    <tr>
+      <td>Element.scrollWidth</td>
+      <td>画面上に表示されない部分を含めた、要素の中身の幅</td>
+      <td id="outElementScrollWidth" class="nowValue"></td>
+    </tr>
+  </tbody>
+</table>
+<hr/>
+<table class="size">
+  <tbody>
+    <tr>
+      <td>documentElement.clientWidth</td>
+      <td>ルート要素のビューポートの幅(スクロールバーを除く)</td>
+      <td id="outBodyClientWidth" class="nowValue"></td>
+    </tr>
+    <tr>
+      <td>documentElement.scrollWidth</td>
+      <td>ルート要素全体の幅 (境界線、マージン、スクロールバーを除く)</td>
+      <td id="outBodyScrollWidth" class="nowValue"></td>
+    </tr>
+  </tbody>
+</table>
+<hr/>
+<table class="size">
+  <tbody>
+    <tr>
+      <td>Element.offsetHeight</td>
+      <td>HTML要素の高さ（境界線、パディングを含む）</td>
+      <td id="outoffsetHeight" class="nowValue"></td>
+    </tr>
+    <tr>
+      <td>Element.clientHeight</td>
+      <td>コンテンツの幅 (パディングを含み、境界、マージン、スクロールバーは含まない)</td>
+      <td id="outElementClientHeight" class="nowValue"></td>
+    </tr>
+    <tr>
+      <td>Element.scrollHeight</td>
+      <td>画面上に表示されない部分を含めた、要素の中身の高さ</td>
+      <td id="outElementScrollHeight" class="nowValue"></td>
+    </tr>
+  </tbody>
+</table>
+<hr/>
+<table class="size">
+  <tbody>
+    <tr>
+      <td>documentElement.clientHeight</td>
+      <td>ルート要素のビューポートの高さ(スクロールバーを除く)</td>
+      <td id="outBodyClientHeight" class="nowValue"></td>
+    </tr>
+    <tr>
+      <td>documentElement.scrollHeight</td>
+      <td>ルート要素全体の幅高さ (境界線、マージン、スクロールバーを除く)</td>
+      <td id="outBodyScrollHeight" class="nowValue"></td>
+    </tr>
+  </tbody>
+</table>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<details>
+  <summary>
+    <h3>
+      <font>Element<code class="red">.getBoundingClientRect</code>()</font><br/>
+      要素の寸法と、そのビューポートに対する相対位置に関する情報を返すメソッド
+    </h3>
+  </summary>
+<pre>
+let clientRect = document.querySelector(".readme") // メソッドを実行する要素を指定
+
+let rect = <font>clientRect<code class="red">.getBoundingClientRect</code>()</font>;
+<font>for (var <code class="red">key in rect</code>)</font> {
+  <font>if(<code class="red">typeof rect[key] !== 'function'</code>)</font>  {
+    let rectKey = document.createElement('h3');
+    rectKey.textContent  = <font>`<code class="red">${key}</code> : <code class="red">${rect[key]}</code>`</font>;
+    document.querySelector("#rect").appendChild(rectKey);
+  }
+}
+
+</pre>
+</details>
+<div id="rect"></div>
+<hr/>
+<script src="size.js" defer></script>

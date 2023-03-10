@@ -1,0 +1,86 @@
+{
+  "title" : "Transform",
+  "description" : "回転・拡大縮小・傾斜・移動",
+  "author" : "Cascading Style Sheets",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "Twitterカードの種類 (summary | summary_large_image | app | player)",
+  "src" : "ページを代表する画像のURL",
+
+  "contents" : [
+  ],
+
+  "links" : [
+    {
+      "date" : "CSS Transforms",
+      "name" : "CSS 座標変換",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Transforms/Using_CSS_transforms",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "Using transforms",
+      "name" : "CSS 座標変換の使用",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Transforms/Using_CSS_transforms",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "transform",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/transform",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "transform-function",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/transform-function",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "rotate",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/rotate",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "scale",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/scale",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Types",
+      "name" : "angle",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/angle",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "transform-origin",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/transform-origin",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Visual Formatting Model",
+      "name" : "視覚整形モデル",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/Visual_formatting_model",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS3 Transform",
+      "name" : "2D & 3D CSS Transform functions visualizer",
+      "url" : "https://css-transform.moro.es/",
+      "language" : "css",
+      "status" : "tools"
+    }
+  ]
+}

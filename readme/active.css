@@ -1,0 +1,45 @@
+.readme {
+  display: flex;
+  flex-flow: row;
+  height: 80vh;
+  overflow: auto;
+}
+
+@media (orientation: portrait) {
+
+  .readme {
+    height: 70vh;
+  }
+
+}
+
+.readme section {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.readme .is-hide {
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: .75s;
+}
+
+.readme .active {
+  background: floralwhite;
+  padding: 0 2.5vw;
+  opacity: 1;
+  overflow: auto;
+  box-shadow:
+  1px 1px 0 #000,
+  2px 2px 0 #000,
+  3px 3px 0 #000;
+  transition: 2s;
+}
+
+.readme .cover {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}

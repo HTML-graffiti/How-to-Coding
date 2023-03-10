@@ -1,0 +1,38 @@
+<div id="attention" onClick="history.back(); return false;">
+  <h1></h1>
+  <p><b></b></p>
+</div>
+
+<script>
+  let contents = [
+  "This",
+  "webpage",
+  "can",
+  "only",
+  "browse",
+  "from",
+  "PC"
+  ];
+
+  let attention = document.querySelector("#attention h1");
+  let inst = setInterval(change, 750);
+  let counter = 0;
+
+  attention.innerHTML = contents[counter];
+
+  function change() {
+    attention.innerHTML = contents[counter];
+    counter++;
+    if (counter >= contents.length) {
+      counter = 0;
+    }
+  };
+</script>
+
+<script>
+  const attentionCSS = document.createElement( "link" );
+  attentionCSS.href = "/coding/responsive/attention.css";
+  attentionCSS.type = "text/css";
+  attentionCSS.rel = "stylesheet";
+  document.getElementsByTagName("head")[0].appendChild(attentionCSS);
+</script>

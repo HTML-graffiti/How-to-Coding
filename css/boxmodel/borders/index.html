@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="../../cascading.css" />
+  <link rel="stylesheet" href="../../../readme/style.css" />
+  <link rel="stylesheet" href="../../pseudo-classes/lightbox.css" />
+  <style type="text/css">
+
+  body {
+    background: #fff;
+    padding-bottom: 8px;
+  }
+
+  main {
+    box-sizing: border-box;
+    background: #222;
+    border: solid 10vw;
+    color: #222;
+  }
+
+  #title {
+    padding: 1rem;
+    text-shadow:
+    -2px -2px 0 #000,
+    -1px -1px 0 #000,
+    1px 1px 0 #000,
+    2px 2px 0 #000,
+    3px 3px 0 #000,
+    4px 4px 0 #000,
+    5px 5px 0 #000;
+    filter: invert();
+    mix-blend-mode: difference;
+  }
+
+  .buttons {
+    display: table;
+    padding: 1rem;
+  }
+
+  .buttons b,
+  .buttons label {
+    color: #fff;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px 1px 0 #000,
+    2px 2px 0 #000,
+    3px 3px 0 #000,
+    4px 4px 0 #000;
+  }
+
+  .buttons button {
+    display: table-cell;
+    border: solid #fff 0.5rem;
+    padding: 1rem;
+  }
+
+  .buttons label {
+    display: inline-block;
+    margin: 0.5rem 0 0;
+  }
+
+  .buttons input {
+    box-sizing: border-box;
+    border: solid 0.5rem;
+    display: inline-block;
+    padding: 0.25rem;
+    margin: 0.5rem 0 1rem;
+    font-size: 150%;
+    width: 750px;
+  }
+
+  @media screen and (max-width: 1000px) {
+
+    .buttons input {
+      width: 100%;
+    }
+
+  }
+
+  #contents::before {
+    content:'関連記事';
+    font-size: 90%;
+  }
+
+  #links::before {
+    content:'参考資料';
+    font-size: 75%;
+  }
+
+  #contents::before,
+  #links::before {
+    text-decoration: underline;
+    display: block;
+    font-family: "ipag", monospace;
+    margin: 0.5rem 0.25rem;
+  }
+
+  #lastModified {
+    font-family: "ipag", monospace;
+    text-align: right;
+    text-shadow:
+    -1px -1px 0 #fff,
+    1px 1px 0 #fff,
+    2px 2px 0 #fff,
+    3px 3px 0 #fff,
+    4px 4px 0 #fff;
+    padding: 0.5rem;
+    word-break: break-word;
+  }
+
+  </style>
+
+</head>
+<body>
+  <main>
+    <nav>
+      <p>
+        <a href="#borders">枠線</a>
+        <a href="#image">角と画像</a>
+          <a href="#shadow">影</a>
+      </p>
+      <p>
+        <a href="#etc">関連記事</a>
+      </p>
+    </nav>
+    <h1 id="title">Borders | Cascading Style Sheets</h1>
+
+    <section class="buttons">
+      <p>
+        <b>border-radius</b>
+        <label id="borderradius" for="borderradius">有効な値を入力してください</label>
+        <input type="text" id="inputRadius">
+        <br/>
+        <button class="special" onclick="setBorderRadius('10px');">10px</button>
+        <button class="special" onclick="setBorderRadius('25% 50%');">25% 50%</button>
+        <button class="special" onclick="setBorderRadius('5rem 1rem 10%');">5rem 1rem 10%</button>
+        <button class="special" onclick="setBorderRadius('10vw 30vh 50vw 70vh');">10vw 30vh 50vw 70vh</button>
+        <button class="special" onclick="setBorderRadius('5rem / 25%');">5rem / 25%</button>
+        <button class="special" onclick="setBorderRadius('80% 30% 50% 50% / 50%');">80% 30% 50% 50% / 50%</button>
+        <button class="special" onclick="setBorderRadius('25vw 1rem 10vh 1rem / 1rem 25vw 1rem 100px');">25vw 1rem 10vh 1rem / 1rem 25vw 1rem 100px</button>
+      </p>
+      <p>
+      </p>
+    </section>
+
+    <section class="buttons">
+      <p>
+        <b>border-image</b>
+        <br/>
+        <button class="special" onclick="setBorderImage('linear-gradient(gold, silver) 30%');">linear-gradient(gold, silver) 30%</button>
+        <button class="special" onclick="setBorderImage('repeating-linear-gradient(45deg, #fff, #111, #000 10px) 10% 20% fill');">repeating-linear-gradient(45deg, #fff, #111, #000 10px) 10% 20% fill</button>
+      </p>
+    </section>
+
+    <section class="buttons">
+      <p>
+        <b>box-shadow</b>
+        <br/>
+        <button class="special" onclick="setBoxShadow('10px 10px 5px silver');">10px 10px 5px silver</button>
+        <button class="special" onclick="setBoxShadow('inset 1rem -1rem 0.25rem 0.5rem gold');">inset 1rem -1rem 0.25rem 0.5rem gold</button>
+        <button class="special" onclick="setBoxShadow('0 0 2.5rem 1rem #ddd, inset -2.5vw 0 5vh #eee');">0 0 2.5rem 1rem #ddd, inset -2.5vw 0 5vh #eee</button>
+      </p>
+    </section>
+
+    <section class="buttons">
+      <p>
+        <b>outline</b>
+        <br/>
+        <button class="special" onclick="setOutline('none');">none</button>
+        <button class="special" onclick="setOutline('solid #000');">solid #000</button>
+        <button class="special" onclick="setOutline('dashed thin red');">dashed thin red</button>
+        <button class="special" onclick="setOutline('medium dotted blue');">medium dotted blue</button>
+        <button class="special" onclick="setOutline('thick double green');">thick double green</button>
+      </p>
+    </section>
+
+    <p id="lastModified"></p>
+  </main>
+
+  <article class="lightbox" id="borders">
+    <a href="#" class="close"></a>
+    <section id="coding" class="readme translate_center"></section>
+  </article>
+
+  <article class="lightbox" id="image">
+    <a href="#" class="close"></a>
+    <section id="radius" class="readme translate_center"></section>
+  </article>
+
+  <article class="lightbox" id="shadow">
+    <a href="#" class="close"></a>
+    <section id="box" class="readme translate_center"></section>
+  </article>
+
+  <aside class="lightbox" id="etc">
+    <a href="#" class="close"></a>
+    <section id="contents" class="translate_center"></section>
+    <section id="links" class="fixed_bottom"></section>
+  </aside>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="script.js" defer></script>
+  <script type="text/javascript">
+  $(function() {
+    $("#coding").load("howto.html");
+    $("#radius").load("radius.html");
+    $("#box").load("shadow.html");
+  })
+
+  let lastModified = document.querySelector('#lastModified');
+
+  lastModified.innerHTML =
+  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+
+  function body_rgba() {
+    var clr = 'rgba(';
+    for (i = 0; i < 3; i++) {
+      clr = clr + Math.floor(Math.random() * 255) + ',';
+    }
+    clr = clr + 1 + Math.floor(Math.random() * 10) / 10 + ')';
+    return clr;
+  }
+
+  $(function () {
+    $('nav a, .special').click(function () {
+      $('main').css({
+        'background': body_rgba()
+      });
+    }, function () {
+      $('main').css({
+        'background': body_rgba()
+      });
+    });
+  });
+
+  $(function () {
+    $('nav a, .special').click(function () {
+      $('main').css({
+        'color': body_rgba()
+      });
+    }, function () {
+      $('main').css({
+        'color': body_rgba()
+      });
+    });
+  });
+  </script>
+  <script src="radius.js" defer></script>
+</body>
+</html>

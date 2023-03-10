@@ -1,0 +1,114 @@
+{
+  "title" : "HEAD",
+  "description" : "文書メタデータ (ヘッダー) 要素",
+  "author" : "Hypertext Markup Language",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "CSSの基本",
+      "name" : "Cascading Style Sheets",
+      "url" : "/coding/css/",
+      "language" : "css",
+      "status" : "basic"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "HTMLの要素",
+      "name" : "文書メタデータ",
+      "url" : "https://momdo.github.io/html/semantics.html#document-metadata",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML 入門",
+      "name" : "head って何？HTML のメタデータ",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "meta",
+      "name" : "標準メタデータ名",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/meta/name",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "charset属性",
+      "name" : "HTMLで文字エンコーディングを指定する",
+      "url" : "https://www.w3.org/International/questions/qa-html-encoding-declarations.ja",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "viewport",
+      "name" : "ビューポートのメタタグ",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Viewport_meta_tag",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "title",
+      "name" : "文書題名要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/title",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "SEO",
+      "name" : "検索エンジン最適化",
+      "url" : "https://developers.google.com/search/docs",
+      "language" : "etc",
+      "status" : "basic"
+    },
+    {
+      "date" : "Google ウェブマスターツール",
+      "name" : "Google 検索での掲載順位を改善する",
+      "url" : "https://search.google.com/search-console/about",
+      "language" : "etc",
+      "status" : "basic"
+    },
+    {
+      "date" : "OGP",
+      "name" : "The Open Graph protocol",
+      "url" : "https://ogp.me/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Twitter",
+      "name" : "Cards",
+      "url" : "https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "base",
+      "name" : "文書の基底 URL 要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/base",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "link",
+      "name" : "外部リソースへのリンク要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/link",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "style",
+      "name" : "スタイル情報要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/style",
+      "language" : "html",
+      "status" : "guide"
+    }
+  ]
+}

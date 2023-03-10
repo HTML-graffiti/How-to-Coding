@@ -1,0 +1,212 @@
+{
+  "title" : "JavaScript",
+  "description" : "JavaScriptの基本",
+  "author" : "How to Coding",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "JavaScript",
+      "name" : "文と宣言",
+      "url" : "/coding/js/statements/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "オブジェクト・配列",
+      "url" : "/coding/js/object/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "イベント",
+      "url" : "/coding/js/event/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "ドキュメントオブジェクトモデル",
+      "url" : "/coding/js/document/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS Object Model",
+      "name" : "CSS オブジェクトモデル",
+      "url" : "/coding/js/cssom/",
+      "language" : "js",
+      "status" : "basic"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "JavaScript の基本",
+      "name" : "Overview: Getting started with the web",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/JavaScript_basics",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "動的クライアントサイドスクリプト",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/JavaScript",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "MDN",
+      "name" : "JavaScript",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "javascript.info",
+      "name" : "現代の JavaScript チュートリアル",
+      "url" : "https://ja.javascript.info/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Tatsuya's HomePage",
+      "name" : "イヌでもわかるJavaScript講座",
+      "url" : "http://cya.sakura.ne.jp/java/index.htm",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Brian Kernighan (1978)",
+      "name" : "Hello, World! program",
+      "url" : "https://en.wikipedia.org/wiki/%22Hello,_World!%22_program",
+      "language" : "js",
+      "status" : "etc"
+    },
+    {
+      "date" : "HTML",
+      "name" : "script",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/script",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "noscript",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/noscript",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Grammar and Types",
+      "name" : "文法とデータ型",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Grammar_and_types",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "let",
+      "name" : "変数",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/let",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "const",
+      "name" : "定数",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/const",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Function",
+      "name" : "関数",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Functions",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Window",
+      "name" : "alert()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/alert",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Window",
+      "name" : "prompt()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/prompt",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Window",
+      "name" : "confirm()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/confirm",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "EventTarget",
+      "name" : ".addEventListener",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/EventTarget/addEventListener",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "HTMLElement",
+      "name" : "click",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/HTMLElement/click",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : "click イベント",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/click_event",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Element",
+      "name" : "dblclick イベント",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/dblclick_event",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "HTML",
+      "name" : "onclick",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/SVG/Attribute/onclick",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "ondblclick",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/SVG/Attribute/ondblclick",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Conditionals",
+      "name" : "コードでの意思決定 — 条件文",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/JavaScript/Building_blocks/conditionals",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "文と宣言",
+      "name" : "if...else",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/if...else",
+      "language" : "js",
+      "status" : "guide"
+    }
+  ]
+}

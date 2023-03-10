@@ -1,0 +1,46 @@
+<p>
+  JSONファイルに、
+  <u data-id="meta">メタデータコンテンツ</u>
+  <i id="meta" class="hide">ページタイトル・著者 (author) ・ページの説明 (description) など</i>
+  に関する情報と、
+  ページ内のリストに表示する
+  <u data-id="contents_links">アンカー要素</u>
+  の情報を記述
+</p>
+<i id="contents_links" class="hide">
+  ここでは、"contents" プロパティから 現在の閲覧コンテキストで表示するハイパーリンク、"links" プロパティから 新しい閲覧コンテキストで表示するハイパーリンクを生成します。
+</i>
+<hr/>
+<pre>
+{
+  "title" : "ページタイトル",
+  "description" : "ページのディスクリプション（説明書き）",
+  "author" : "著者",
+  "email" : "Eメールアドレス",
+  "type" : "ページの種類 (website | blog | article | product)",
+  "twitter" : "Twitter ID",
+  "card" : "Twitterカードの種類 (summary | summary_large_image | app | player)",
+  "src" : "ページを代表する画像のURL",
+
+  "contents" : [
+    {
+      "date" : "代替的なタイトル",
+      "name" : "リンク先のタイトル",
+      "url" : "リンク先のURL"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "代替的なタイトル",
+      "name" : "リンク先のタイトル",
+      "url" : "リンク先のURL"
+    }
+  ]
+}
+</pre>
+<p>
+  <i>JSON (JavaScript Object Notation)は、軽量のデータ交換フォーマットです。人間にとって読み書きが容易で、コンピューターにとっても簡単にパースや生成を行なえる形式です。</i>
+</p>
+
+<script src="../hello/data_show.js" async></script>

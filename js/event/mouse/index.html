@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="../../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../hidden.css" />
+  <link rel="stylesheet" href="../../../readme/style.css" />
+
+  <style>
+
+  #contents,
+  #links {
+    padding: 0.5rem;
+  }
+
+  #links::before {
+    content:'参考記事';
+    font-size: 75%;
+  }
+
+  #links::before {
+    display: block;
+    margin: 0.25rem;
+    text-decoration: underline;
+  }
+
+  </style>
+</head>
+
+<body>
+  <button id="js-button"><b></b></button>
+
+  <article id="hidden">
+    <aside id="contents"></aside>
+
+    <article class="readme">
+    <h2>
+      <code>MouseEvent</code><br/>
+      <i>ユーザーによるポインティングデバイス (マウス・トラックパッドなど) の操作によってイベントを実行</i>
+    </h2>
+    <hr/>
+    <p>
+      <font>mousemove</font><br/>
+      マウスが移動している状態に実行
+    </p>
+    <p>
+      <code>EventTarget.addEventListener('<code class="blue">mousemove</code>',</code> e => {
+        <br/>// JavaScriptを記述<br/>
+      });
+    </p>
+    <p>
+      <code>EventTarget.<code class="blue">onmousemove</code></code> = function() {
+        <br/>// JavaScriptを記述<br/>
+      }
+    </p>
+    <hr/>
+    <pre>
+document<code class="blue">.addEventListener('<font>mousemove</font>', mouseMove)</code>;
+
+function <code class="blue">mouseMove</code>(xy) {
+  mouseXY.innerHTML = `
+  <code>Client X/Y: <font class="blue">${xy.clientX}</font> / <font class="blue">${xy.clientY}</font></code>
+  <code>Screen X/Y: <font class="blue">${xy.screenX}</font> / <font class="blue">${xy.screenY}</font></code>
+  `;
+}
+    </pre>
+    <hr/>
+      <p>
+        <font>mousedown</font><br/>
+        マウスのボタンが押された状態に実行
+      </p>
+      <p>
+        <code>EventTarget.addEventListener('<code class="blue">mousedown</code>',</code> e => {
+          <br/>// JavaScriptを記述<br/>
+        });
+      </p>
+      <p>
+        <code>EventTarget.<code class="blue">onmousedown</code></code> = function() {
+          <br/>// JavaScriptを記述<br/>
+        }
+      </p>
+      <hr/>
+      <p>
+        <font>mouseup</font><br/>
+        押されたマウスのボタンが離されたときに実行
+      </p>
+      <p>
+        <code>EventTarget.addEventListener('<code class="blue">mouseup</code>',</code> e => {
+          <br/>// JavaScriptを記述<br/>
+        });
+      </p>
+      <p>
+        <code>EventTarget.<code class="blue">onmouseup</code></code> = function() {
+          <br/>// JavaScriptを記述<br/>
+        }
+      </p>
+      <hr/>
+      <p>
+        <font>mouseenter</font><br/>
+        マウスが要素の中に移動したときに実行
+      </p>
+      <p>
+        <code>EventTarget.addEventListener('<code class="blue">mouseenter</code>',</code> e => {
+          <br/>// JavaScriptを記述<br/>
+        });
+      </p>
+      <p>
+        <code>EventTarget.<code class="blue">onmouseenter</code></code> = function() {
+          <br/>// JavaScriptを記述<br/>
+        }
+      </p>
+      <hr/>
+      <p>
+        <font>mouseleave</font><br/>
+        マウスが要素の外に移動したときに実行
+      </p>
+      <p>
+        <code>EventTarget.addEventListener('<code class="blue">mouseleave</code>',</code> e => {
+          <br/>// JavaScriptを記述<br/>
+        });
+      </p>
+      <p>
+        <code>EventTarget.<code class="blue">onmouseleave</code></code> = function() {
+          <br/>// JavaScriptを記述<br/>
+        }
+      </p>
+      <hr/>
+      <pre>
+const divs = document.querySelectorAll('div');
+for (let i = 0; i < divs.length; i++) {
+
+  divs[i]<code class="blue">.addEventListener('<font>mouseenter</font>', function(e)</code> {
+    e.target.style.backgroundColor = randomRGB();
+  });
+
+  divs[i]<code class="blue">.addEventListener('<font>mouseleave</font>', function(e)</code> {
+    e.target.style.backgroundColor = randomRGB();
+  });
+
+}
+      </pre>
+    </article>
+
+    <nav id="links"></nav>
+  </article>
+
+  <main></main>
+
+  <h1 id="mouseEvent"><font>MouseEvent</font></h1>
+
+  <script src="script.js"></script>
+  <script type="text/javascript">
+  const button = document.querySelector('#js-button');
+  const body = document.querySelector('body');
+
+  button.addEventListener('click', function () {
+    button.classList.toggle('close');
+    body.classList.toggle('open');
+  });
+  </script>
+</body>
+</html>

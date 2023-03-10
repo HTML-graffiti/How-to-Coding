@@ -1,0 +1,206 @@
+<h2>
+  <i>ドキュメントオブジェクトモデル</i><br>
+  DOM (Document Object Model)
+</h2>
+<p>
+  <i>DOM は JavaScript 言語の一部ではなく、ウェブサイトを構築するために使用される Web API の 1 つです。 </i><br/>
+  文書内のすべての要素
+  (全体としての文書・すべてのHTML要素・要素の内容など)
+  は、ドキュメントオブジェクトモデルの一部です。<br/>
+  JavaScript のようなスクリプト言語を通してそれらすべてにアクセスし、操作することができます。
+</p>
+<p>
+  DOM を 使い始めるのに、特別なものは必要ありません。<br/>
+  ブラウザーで実行されるプログラムであるスクリプトと呼ばれるものの中から、
+  JavaScript で <code class="red">Document</code>・<code class="red">Element</code>・<code class="red">Window</code>
+  などの API を 使用します。
+</p>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<h3>
+  <code class="red">document</code><code>.addEventListener</code>(<font class="red">'DOMContentLoaded'</font>, () => {
+  </h3>
+  <p><code>/* HTML を完全に読み込んだ後に実行する JavaScript を記述 */</code></p>
+  <h3>});</h3>
+  <p>
+    コードは上から順に読み込まれるため、
+    <code>script</code> 要素 を <code>head</code> 要素内に記述している場合などには、<code>DOM操作がうまく機能しない</code> 可能性があります。
+  </p>
+  <p>
+    <code>DOMContentLoaded</code> を設定して記述した JavaScriptは、
+    <code>DOMツリー</code> を構築した（ブラウザが HTML を完全に読み込んだ）後に実行されます。<br/>
+    <i>body要素 の 終了タグの直前に記述された script要素は、DOM ツリーの読み込みが完了している状態で読み込まれるので、DOMContentLoaded の設定は不要です。</i>
+  </p>
+  <hr/>
+  <p style="text-align: center;">/* ~~~ */</p>
+  <hr/>
+  <h3>
+    <i>要素を指定するメソッド</i><br/>
+    <font>querySelector()</font>
+  </h3>
+  <p><code>DOMを使った要素の指定には、メソッド「クエリーセレクター」を使用します。</code></p>
+  <hr/>
+  <p>
+    <i>要素を指定する方法は、<a href="/coding/css/selectors/">CSSセレクター</a> と同じです。</i><br/>
+    <font>document.querySelector(<code class="red">'セレクター'</code>)</font><br/>
+  </p>
+  <p>
+    main・h1 などの要素名・IDの値に一致する フラグメント (# 記号で記述) などから、1つの要素を指定します。
+  </p>
+  <hr/>
+  <p>
+    <i>複数の要素を指定する場合は、querySelectorAll() メソッドを使用します。</i><br/>
+    <font>document.querySelectorAll(<code class="red">'セレクター'</code>)</font><br/>
+  </p>
+  <p>
+    p・section などの要素名、class 属性の値から要素を指定、
+    セレクター名を <code class="red">,</code> で区切り、複数の要素を指定します。
+  </p>
+  <hr/>
+  <p style="text-align: center;">/* ~~~ */</p>
+  <hr/>
+  <h3>
+    <i>要素を生成するメソッド</i><br/>
+    <font>document.createElement ()</font><br/>
+  </h3>
+  <p>
+    () に設定した '<code class="red">要素</code>' を生成します。
+    （要素は、<a href="/coding/html/body/">文書の本文要素</a> を参照ください。）
+  </p>
+
+  <hr/>
+  <p>
+    <font class="red">.appendChild()</font><br/>
+    親ノード内の末尾に、() 内で指定した 子ノード（ふつうは要素）を生成します。
+  </p>
+  <p>
+    <font class="red">.append()</font><br/>
+    append メソッドは appendChild と異なり、複数の引数や文字列の追加に対応しています。
+  </p>
+  <br/>
+  <details>
+    <summary>
+      <font>function <code class="red">createHello()</code></font>
+    </summary>
+    <p>
+      code要素を生成
+      <code class="red">createElement</code>
+      その中に
+      <code class="red">append</code> 文字列 'Hello, World!' を挿入
+      <code class="red">querySelector</code> #count の
+      子ノードリストの末尾に
+      <code class="red">appendChild</code> 生成した要素を挿入
+    </p>
+    <hr/>
+<pre>
+function <code class="red">createHello</code>() {
+  <code>let hello</code> = <font>document<code class="red">.createElement</code>('code')</font>;
+  <code>hello<font class="red">.append</font>('Hello, World! ');</code>
+  <code>document<font class="red">.querySelector</font>('#count')<font class="red">.appendChild</font>(hello)</code>;
+}
+
+</pre>
+  </details>
+  <h3 id="count"></h3>
+  <hr/>
+  <nav>
+    <button class="click">button</button>
+    <button class="click">button</button>
+    <button class="click">button</button>
+  </nav>
+  <hr/>
+  <details>
+    <summary>
+      const buttons = <code>document<font class="red">.querySelectorAll</font>('button')</code>;
+    </summary>
+
+    <p>
+      すべての button 要素
+      <code class="red">querySelectorAll</code> に
+      createHello() を実行する
+      反復的な処理
+      <code class="red">for...of</code> を設定
+    </p>
+    <hr/>
+    <p>
+      <font>for...of</font><br/>
+      複数の要素 (反復可能オブジェクト) などに対して、反復的な処理を作成するコード構造
+    </p>
+<pre>
+<font><code class="red">for</code> (const button <code class="red">of</code> buttons)</font> {
+  button.addEventListener('click', <font class="red">createHello</font>);
+}
+</pre>
+  </details>
+  <hr/>
+  <p style="text-align: center;">/* ~~~ */</p>
+  <hr/>
+  <p>
+    DOM ツリーを作成するメソッド<br/>
+    <code>document<font class="red">.createDocumentFragment()</font></code><br/>
+    これは Document の軽量版として使用され、標準の文書のようにノードで構成される文書構造の区間を格納します。
+  </p>
+  <hr/>
+  <p>
+    <font>forEach()</font><br/>
+    配列の各要素に対して一度ずつ処理を実行する
+  </p>
+  <h3>
+    配列名<code class="red">.forEach(</code>function(共通の要素名) { 配列の各要素に対して実行する処理 }<code class="red">)</code>
+  </h3>
+  <details>
+    <summary>
+      let fragment = <code>new <code class="red">DocumentFragment()</code></code>;
+    </summary>
+    <hr/>
+<pre>
+let fragList  = document.getElementById('fragList');
+let contents = ['Firefox', 'Chrome', 'Opera', 'Safari', 'Internet Explorer'];
+
+<font>contents<code class="red">.forEach(</code> function(content)</font> {
+  let listItem = document.createElement('code');
+  listItem.textContent = content;
+  fragment.appendChild(listItem);
+}<font><code class="red">)</code></font>;
+
+fragList.appendChild(fragment);
+</pre>
+  </details>
+  <hr/>
+  <p>
+    DocumentFragment は
+    アクティブな文書ツリー構造の一部ではないため、
+    断片に対して変更を行っても、文書に影響したり、再フローを起こしたり、
+    変更が行われたときに性能上の影響を及ぼしたりすることがありません。
+  </p>
+  <hr/>
+  <nav id="fragList"></nav>
+  <hr/>
+
+  <script type="text/javascript">
+    function createHello() {
+      let hello = document.createElement('code');
+      hello.append('Hello, World! ');
+      document.querySelector('#count').appendChild(hello);
+    }
+
+    const buttons = document.querySelectorAll('button');
+
+    for (const button of buttons) {
+      button.addEventListener('click', createHello);
+    }
+
+
+    let fragment = new DocumentFragment();
+    let fragList  = document.getElementById('fragList');
+    let contents = ['Firefox', 'Chrome', 'Opera', 'Safari', 'Internet Explorer'];
+
+    contents.forEach(function(content) {
+      let listItem = document.createElement('code');
+      listItem.textContent = content;
+      fragment.appendChild(listItem);
+    });
+
+    fragList.appendChild(fragment);
+  </script>

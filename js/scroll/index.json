@@ -1,0 +1,101 @@
+{
+  "title" : "Scroll & WheelEvent",
+  "description" : "",
+  "author" : "JavaScript",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "Document/Element",
+      "name" : "スクロールイベント",
+      "url" : "#one"
+    },
+    {
+      "date" : "Window",
+      "name" : "scrollTo() & scrollBy()",
+      "url" : "#two"
+    },
+    {
+      "date" : "Web API",
+      "name" : "WheelEvent",
+      "url" : "#three"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "Document",
+      "name" : "scroll",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/scroll_event",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Element",
+      "name" : "scroll",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/scroll_event",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Window",
+      "name" : ".scroll",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/scroll",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Window",
+      "name" : ".scrollTo",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/scrollTo",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Window",
+      "name" : ".scrollBy()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/scrollBy",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Window",
+      "name" : ".moveBy()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/moveBy",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Window",
+      "name" : ".moveTo()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/moveTo",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document",
+      "name" : ".scrollingElement",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/scrollingElement",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Web API",
+      "name" : "WheelEvent",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/WheelEvent",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Element",
+      "name" : "wheel",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/wheel_event",
+      "language" : "js",
+      "status" : "basic"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+<p>
+  順序なしリスト要素<br/>
+  <font>U</font>nordered <font>L</font>ist<br/>
+  <i>一般的に、行頭記号を伴うリストとして描画されます。</i>
+</p>
+<ul id="unordered" class="ulli ul_element">
+  <script>
+    let ulArr = [
+    'disc',
+    'circle',
+    'square'
+    ];
+
+    let unorderedList = document.querySelector('ul#unordered');
+    for (let ulli of ulArr) {
+      let ulliAdd = document.createElement('li');
+      ulliAdd.textContent = `list-style: ${ulli}`;
+      ulliAdd.setAttribute('onclick', `setUl('${ulli}')`)
+      unorderedList.appendChild(ulliAdd);
+    }
+
+    function setUl($setUl) {
+      var ulliAll = document.querySelectorAll('#unordered');
+      for (const ulli of ulliAll) {
+        ulli.style.listStyle = $setUl;
+        var $setUl = ulli.style.listStyle;
+      }
+    }
+  </script>
+</ul>
+<hr/>
+
+<p>
+  順序付きリスト要素<br/>
+  <font>O</font>rdered <font>L</font>ist<br/>
+  <i>reversed 属性を追加すると、リスト項目が逆順で番号付けされます。</i><br/>
+  <i>属性 start="数値" を設定して、リスト項目の開始値を指定できます。</i>
+</p>
+<ol id="ordered" class="olli ol_element">
+  <script>
+    let olArr = [
+    'decimal',
+    'upper-alpha',
+    'lower-alpha',
+    'upper-roman',
+    'lower-roman',
+    'decimal-leading-zero',
+    'lower-greek',
+    'upper-latin',
+    'lower-latin',
+    'hebrew',
+    'armenian',
+    'georgian',
+    'cjk-ideographic',
+    'hiragana',
+    'katakana',
+    'hiragana-iroha',
+    'katakana-iroha'
+    ];
+
+    let orderedList = document.querySelector('ol#ordered');
+    for (let olli of olArr) {
+      let olliAdd = document.createElement('li');
+      olliAdd.textContent = `list-style: ${olli}`;
+      olliAdd.setAttribute('onclick', `setOl('${olli}')`)
+      orderedList.appendChild(olliAdd);
+    }
+
+    function setOl($setOl) {
+      var olliAll = document.querySelectorAll('#ordered');
+      for (const olli of olliAll) {
+        olli.style.listStyle = $setOl;
+        var $setOl = olli.style.listStyle;
+      }
+    }
+  </script>
+</ol>
+<hr/>
+
+<p>
+  リスト子要素<br/>
+  <font>L</font>ist <font>I</font>tem<br/>
+  <i>順序付きリスト・順序なしリストの項目を表す小要素として使用します。</i>
+</p>
+
+<p class="buttons">
+  <b>list-style-position:</b>
+  <button class="special" onclick="listStylePosition('inside');">inside</button>
+  <button class="special" onclick="listStylePosition('outside');">outside</button><br/>
+  <i>リストのマーカー (::marker) を li の内に含むか、外に描画するかを指定する CSSプロパティ</i>
+</p>
+
+<p>リスト項目のマーカーを選択するCSS擬似要素<br/><font><i>li</i>::marker</font> {<br/></p>
+  <pre>
+    font-size: 111%;
+    font-style: italic;
+    font-family: serif;
+  </pre>
+  <p>}</p>
+  <hr/>
+
+  <p class="buttons">
+    <b>padding:</b>
+    <button class="special" onclick="setPading('0');">0</button>
+    <button class="special" onclick="setPading('2.5%');">2.5%</button>
+    <b>margin:</b>
+    <button class="special" onclick="setMargin('0');">0</button>
+    <button class="special" onclick="setMargin('1vw');">1vw</button><br/>
+    <font>リストのインデント</font><br/>
+    <i>リスト要素にはデフォルトでインデント(パディングとマージン) が設定されています。</i>
+  </p>
+
+  <script type="text/javascript">
+    function setPading ( $setPading ) {
+      var listAll = document.querySelectorAll('.ulli, .olli, .ulli li, .olli li');
+      for (const listItem of listAll) {
+        listItem.style.padding = $setPading;
+        var $setPading = listItem.style.padding;
+      }
+    }
+    function setMargin ( $setMargin ) {
+      var listAll = document.querySelectorAll('.ulli, .olli, .ulli li, .olli li');
+      for (const listItem of listAll) {
+        listItem.style.margin = $setMargin;
+        var $setMargin = listItem.style.margin;
+      }
+    }
+
+    function listStylePosition ( $listStylePosition ) {
+      var listAll = document.querySelectorAll('.ulli, .olli');
+      for (const listItem of listAll) {
+        listItem.style.listStylePosition = $listStylePosition;
+        var $listStylePosition = listItem.style.listStylePosition;
+      }
+    }
+  </script>
+  <hr/>

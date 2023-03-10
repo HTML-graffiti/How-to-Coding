@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../../html/elements.css" />
+  <link rel="stylesheet" href="../../readme/style.css" />
+  <link rel="stylesheet" href="../pseudo-classes/lightbox.css" />
+  <style type="text/css">
+
+  html {
+    height: -webkit-fill-available;
+  }
+
+  #main h1,
+  #main::before,
+  #lastModified  {
+    color: #fff;
+  }
+
+  #main {
+    mix-blend-mode: difference;
+    box-sizing: border-box;
+    padding: 1rem 2.5%;
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #main::before {
+    content: '#main';
+    display: block;
+  }
+
+  h1#title::before {
+    content:'CSS layout | Cascading Style Sheets';
+  }
+
+  #main h1 {
+    pointer-events: none;
+    user-select: none;
+  }
+
+  #main h2 {
+    text-shadow:
+    #fff -1px -1px 0,
+    #fff 1px 1px 0,
+    #fff 2px 2px 0,
+    #fff 3px 3px 0;
+  }
+
+  #main h1,
+  #main p {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  #main p {
+    background: #fff;
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  #main em,
+  #main strong,
+  #main span {
+    color: #fff;
+    background: #000;
+    border: 1px solid;
+  }
+
+  #contents::before {
+    content:'関連記事';
+    font-size: 90%;
+  }
+
+  #links::before {
+    content:'参考資料';
+    font-size: 75%;
+  }
+
+  code,
+  #contents::before,
+  #links::before,
+  #lastModified {
+    font-family: "ipag", monospace;
+  }
+
+  code {
+    font-size: 125%;
+  }
+
+  #contents::before,
+  #links::before {
+    text-decoration: underline;
+    display: block;
+    margin: 0.5rem 0.25rem;
+  }
+
+  #lastModified {
+    clear: both;
+    line-height: 125%;
+    mix-blend-mode: difference;
+    word-break: break-word;
+  }
+
+  </style>
+
+</head>
+<body>
+  <nav id="nav">
+    <p>
+      <a href="#normal" onclick="normalStyle(), randomBG()">通常フロー</a>
+      <a href="#float" onclick="floatStyle(), randomBG()">フロート</a>
+      <a href="#position" onclick="positionStyle(), randomBG()">位置指定</a>
+    </p>
+    <p>
+      <a href="#etc">関連記事</a>
+    </p>
+  </nav>
+  <main id="main"></main>
+  <p id="lastModified"></p>
+
+  <article class="lightbox" id="normal">
+    <a href="#" class="close" onclick="randomBG()"></a>
+    <section class="readme translate_center">
+      <h2>通常フロー</h2>
+      <p>ページレイアウトの制御を何もしない場合のレイアウト方法</p>
+      <br/>
+      <pre>
+#main {
+  width: 100%;
+  max-width: 550px;
+  padding: 1rem 2.5%;
+  margin: auto;
+}
+      </pre>
+      <p>デフォルトでは、ブロックレベル要素はその親要素の幅の 100%・高さはそのコンテンツと同じ、インライン要素の 幅・高さ はコンテンツと同じです。</p>
+      <p><i>パディング (padding)・マージン (margin)・ボーダー (border) を追加することによってボックスモデルをレイアウトし、width・height で幅と高さを指定します。</i></p>
+    </section>
+  </article>
+
+  <article class="lightbox" id="float">
+    <a href="#" class="close" onclick="randomBG()"></a>
+    <section class="readme translate_center">
+      <h2>フロート</h2>
+      <p>要素をブロックの左右どちらかの側に沿うように設置し、それに続く要素がその周りを回りこめるように定義する</p>
+      <br/>
+      <pre>
+#main p:nth-child(2n+1) {
+  float: left;
+  width: 47.5%;
+}
+
+#main p:nth-child(2n) {
+  float: right;
+  width: 47.5%;
+}
+      </pre>
+      <br/>
+      <h2>clear</h2>
+      <p>要素をその前にある float 要素の下に移動 (clear) するかどうかを設定する</p>
+      <br/>
+      <pre>
+/* クリアを設定しない (既定値) */
+clear: none;
+
+/* float: left; の回り込みをクリア */
+clear: left;
+
+/* float: right; の回り込みをクリア */
+clear: right;
+
+/* 左右両方の float の回り込みをクリア  */
+clear: both;
+      </pre>
+      <br/>
+    </section>
+  </article>
+
+  <article class="lightbox" id="position">
+    <a href="#" class="close" onclick="randomBG()"></a>
+    <section class="readme translate_center">
+      <h2>位置指定</h2>
+      <p>通常のドキュメントレイアウトフローから要素を取り出して異なるふるまいを指定</p>
+      <br/>
+      <p>
+        <code>position: static;</code><br/>
+        すべての要素はデフォルトで、静的位置指定が設定されています。<br/>
+        <i>これは、要素を通常フロー内の通常の位置に配置する（特別な位置指定を設定しない）ことを意味します。</i>
+      </p>
+      <br/>
+      <p style="text-align:center;">~~~</p>
+      <br/>
+      <p>
+        <code>position: relative;</code><br/>
+        通常フローに沿った相対位置を指定
+      </p>
+      <br/>
+      <pre>
+#main p {
+  position: relative;
+}
+      </pre>
+      <p>
+        要素の位置変更には、top・right・bottom・left を設定する必要があります。<br/>
+        <i>top・right・bottom・leftの指定がなければ、要素は通常フローの通常の位置に配置されます。</i>
+      </p>
+      <br/>
+      <p style="text-align:center;">~~~</p>
+      <br/>
+      <p>
+        <code>position: absolute;</code><br/>
+        static 以外 (fixed・absolute・relative・sticky) の直近の祖先要素における絶対位置を指定
+      </p>
+      <br/>
+      <pre>
+#main h1 {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+      </pre>
+      <p>
+        <i>最終的な位置は、top・right・bottom・left で設定します。</i>
+      </p>
+      <br/>
+      <p style="text-align:center;">~~~</p>
+      <br/>
+      <p>
+        <code>position: fixed;</code><br/>
+        直近の祖先要素における固定位置を指定 (要素をビューポイントの指定位置に常に固定する)
+      </p>
+      <br/>
+      <pre>
+#main h2 {
+  position: fixed;
+  bottom: 1.25%;
+  right: 1.25%;
+  z-index: 2;
+  width: 300px;
+  max-width: 75%;
+}
+      </pre>
+      <p>
+        <i>最終的な位置は、top・right・bottom・left で設定します。</i>
+      </p>
+      <br/>
+    </section>
+  </article>
+
+  <aside class="lightbox" id="etc">
+    <a href="#" class="close" onclick="randomBG()"></a>
+    <section id="contents" class="translate_center"></section>
+    <section id="links" class="fixed_bottom"></section>
+  </aside>
+
+  <script src="script.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    $("#main").load("../../html/text/sample.html");
+  })
+
+  let lastModified = document.querySelector('#lastModified');
+
+  lastModified.innerHTML =
+  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+
+  function random(min, max) {
+    const num = Math.floor(Math.random() * (max - min + 1)) + min;
+    return num;
+  }
+
+  function randomRGB() {
+    let getRGB = `linear-gradient(90deg, rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)}), rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)}))`;
+    return getRGB;
+  }
+
+  function randomBG() {
+    const bgAll = document.querySelectorAll('body');
+    for (const bgItem of bgAll) {
+      bgItem.style.background = randomRGB();
+    }
+  }
+
+  randomBG()
+  </script>
+</body>
+</html>

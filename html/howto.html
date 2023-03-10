@@ -1,0 +1,120 @@
+<script>
+  const data_showCSS = document.createElement( "link" );
+  data_showCSS.href = "../hello/data_show.css";
+  data_showCSS.type = "text/css";
+  data_showCSS.rel = "stylesheet";
+  document.getElementsByTagName("head")[0].appendChild(data_showCSS);
+</script>
+
+<h2>
+  <u class="doctype red" data-id="doctype"></u>
+</h2>
+
+<section>
+  <p>
+    HTMLは、ウェブサイトのコンテンツの構造を作るために使うマークアップ言語です。<br/>
+    <i>
+      <a href="https://developer.mozilla.org/ja/docs/Glossary/Tag">Tag (タグ)</a>
+      を使って
+      <a href="https://developer.mozilla.org/ja/docs/Glossary/Element">Element (要素)</a>
+      を作り（<b>マークアップし</b>）、要素の集まりがウェブサイトを構成します。
+    </i>
+  </p>
+  <p id="doctype" class="hide">
+    <a href="https://developer.mozilla.org/ja/docs/Glossary/Doctype">DOCTYPE宣言</a><br/>
+    すべての HTML文書は、このファイルが HTML だということをコンピュータに宣言するコードから始まります。
+  </p>
+</section>
+
+<h3>
+  <<u data-id="Opening">html</u>
+  <u data-id="Attribute">lang="ja"</u>>
+</h3>
+<p id="Opening" class="hide">
+  これは、
+  <b>HTML要素</b>
+  の始まりを宣言する
+  <b>開始タグ</b>
+  です。
+  <br/>
+  <i>
+    HTMLにおいて、タグは要素の作成に使われます。<br/>
+    開始タグ (Opening tag):
+    <font color="red"><</font>
+    <b>html</b>
+    <font color="red">></font>
+    のように山括弧の中に要素名を記述し、要素の始まりを宣言します。
+  </i>
+</p>
+<p id="Attribute" class="hide">
+  属性 (Attribute) <br/>
+  <i>
+    要素を拡張して追加情報を与えるため、開始タグには
+    <b>属性名="属性値"</b>
+    を追加できます。
+    <br/>HTML要素には、文書の言語を与える LANG属性
+    <b>lang="言語タグ"</b>
+    を設定することが推奨されています。
+  </i>
+</p>
+<hr/>
+
+<h3 class="HTMLcomments">
+  <u data-id="HTMLcomments">
+  HTML要素は、
+  <b>HEAD要素</b>
+  と
+  <b>BODY要素</b>
+  で構成されます。
+  </u>
+</h3>
+<p id="HTMLcomments" class="hide">
+  HTML の中で
+  <font color="red"><</font><font color="red">!--</font>
+  と
+  <font color="red">--></font>
+  の間にある
+  <a class="red" href="https://developer.mozilla.org/ja/docs/Web/API/Comment">コメント</a>
+  は ページ上では表示されず、コードの中にのみ表示されます。
+</p>
+
+<div class="head">
+  <p>
+    <u data-id="head">HEAD要素</u>
+    は、ページが読み込まれてもウェブブラウザーには表示されない部分です。
+  </p>
+  <p id="head" class="hide">
+    <i>HTMLについてよい基礎を与える情報を記述し、HTMLを正しく表示する設定を行います。</i>
+  </p>
+</div>
+
+<div class="body">
+  <p>
+    <u data-id="body">BODY要素</u>
+    は、ウェブサイトとしてブラウザーに表示される部分です。
+  </p>
+  <p id="body" class="hide">
+    <i>BODY要素 の中に、テキスト・画像・ビデオ・ゲーム・音声ファイルなど、ブラウザーに表示するすべてのコンテンツを記述します。</i>
+  </p>
+</div>
+
+<h3>
+  <<u data-id="Closing">/html</u>>
+</h3>
+<p id="Closing" class="hide">
+  これは、
+  <b>HTML要素</b>
+  の終わりを宣言する
+  <b>終了タグ</b>
+  です。
+  <br/>
+  <i>
+    要素は開始タグ、内容、終了タグが続いたものです。<br/>
+    終了タグ (Closing tag):
+    <<font color="red">/html</font>> のように、
+    要素名の前にスラッシュを記載した終了タグで要素の終わりを宣言し、
+    開始タグと終了タグの中に、内容 (Content)を記述します。
+  </i>
+</p>
+
+<script src="../hello/data_show.js"></script>

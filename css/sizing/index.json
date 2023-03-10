@@ -1,0 +1,121 @@
+{
+  "title" : "Width & Height",
+  "description" : "幅と高さ | Width & Height",
+  "author" : "Cascading Style Sheets",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "CSS",
+      "name" : "ボックスモデル",
+      "url" : "/coding/css/boxmodel/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "CSS レイアウト",
+      "url" : "/coding/css/layout/",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "CSS によるサイズ設定",
+      "name" : "Sizing items in CSS",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "width",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/width",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "height",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/height",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS ",
+      "name" : "<code><</code>length<code>></code>",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/length",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS ",
+      "name" : "<code><</code>percentage<code>></code>",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/percentage",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS ",
+      "name" : "max-content",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/max-content",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS ",
+      "name" : "min-content",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/min-content",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "box-sizing",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/box-sizing",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "要素のはみ出し（オーバーフロー）",
+      "name" : "Overflowing content",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/Building_blocks/Overflowing_content",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "overflow",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/overflow",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "overflow-wrap",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/overflow-wrap",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS プロパティ",
+      "name" : "word-break",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/word-break",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "マージンの相殺の習得",
+      "name" : "Mastering margin collapsing",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing",
+      "language" : "css",
+      "status" : "basic"
+    }
+  ]
+}

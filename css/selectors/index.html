@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../../readme/index.js" async></script>
+
+  <base target="_blank" rel="noopener noreferrer">
+  <link rel="stylesheet" href="../../readme/style.css" />
+  <link rel="stylesheet" href="../../cover/style.css" />
+  <link rel="stylesheet" href="../../cover/mobile.css" media="print">
+  <link rel="stylesheet" href="../../cover/mobile.css" media="screen and (max-width: 820px)">
+  <style type="text/css">
+
+  #id .css,
+  #id .href,
+  #class div:not(.selectors) {
+    display: none;
+  }
+
+  #contents::before {
+    content:'関連記事';
+    font-size: 100%;
+  }
+
+  #links::before {
+    content:'参考資料';
+    font-size: 75%;
+  }
+
+  #contents::before,
+  #links::before {
+    text-decoration: underline;
+    display: block;
+    font-family: "ipag", monospace;
+    margin: 0.5rem 0.25rem;
+  }
+
+  #hello,
+  #lastModified {
+    font-family: "ipag", monospace;
+    line-height: 125%;
+    word-break: break-word;
+  }
+
+  #lastModified {
+    text-align: right;
+  }
+
+  </style>
+</head>
+<body id="cover">
+  <main id="left">
+    <section id="hello" class="head data_show"></section>
+    <hr/>
+    <br/>
+    <aside id="links"></aside>
+  </main>
+  <article id="right">
+    <article id="howto" class="readme"></article>
+    <hr/>
+    <br/>
+    <article id="id"></article>
+    <hr/>
+    <article id="class"></article>
+    <hr/>
+    <br/>
+    <details class="readme">
+      <summary>/* 属性セレクター */</summary>
+      <article id="attribute"></article>
+    </details>
+    <hr/>
+    <details class="readme">
+      <summary>/* 結合子 */</summary>
+      <article id="combinator"></article>
+    </details>
+    <br/>
+    <aside id="contents"></aside>
+    <hr/>
+    <p id="lastModified"></p>
+  </article>
+
+  <h1 id="title">Selectors | Cascading Style Sheets</h1>
+
+  <script>
+  let lastModified = document.querySelector('#lastModified');
+
+  lastModified.innerHTML =
+  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    $("#hello").load("hello.html");
+    $("#howto").load("howto.html");
+    $("#id").load("../../html/sectioning/section.html");
+    $("#class").load("../../html/attributes/class.html");
+    $("#attribute").load("attribute.html");
+    $("#combinator").load("combinator.html");
+  })
+  </script>
+</body>
+</html>

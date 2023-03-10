@@ -1,0 +1,107 @@
+{
+  "title" : "Pseudo-classes",
+  "description" : "擬似クラス | Pseudo-classes",
+  "author" : "Cascading Style Sheets",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "Twitterカードの種類 (summary | summary_large_image | app | player)",
+  "src" : "ページを代表する画像のURL",
+
+  "contents" : [
+    {
+      "date" : "CSS",
+      "name" : "CSS セレクター",
+      "url" : "/coding/css/selectors/",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":*-child :*-type",
+      "url" : "/coding/css/pseudo-classes/child-type/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "アンカー要素とID属性",
+      "url" : "/coding/html/href/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "フォーム関連要素",
+      "url" : "/coding/html/form/",
+      "language" : "html",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "Pseudo-classes",
+      "name" : "擬似クラス",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/Pseudo-classes",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":link",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:link",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":visited",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:visited",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":hover",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:hover",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":active",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:active",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":target",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:target",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "pseudo-class",
+      "name" : "The :target Trick",
+      "url" : "https://bitsofco.de/the-target-trick/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":empty",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:empty",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "否定擬似クラス",
+      "name" : ":not()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:not",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ]
+}

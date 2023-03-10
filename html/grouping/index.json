@@ -1,0 +1,100 @@
+{
+  "title" : "Grouping Content",
+  "description" : "HEADER MAIN FOOTER | グループ化要素",
+  "author" : "Hypertext Markup Language",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "HTML",
+      "name" : "区分要素",
+      "url" : "/coding/html/sectioning/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "テキストの基礎",
+      "url" : "/coding/html/text/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "高度なテキスト整形",
+      "url" : "/coding/html/text/advanced/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "テキストの装飾",
+      "url" : "/coding/css/text/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "色",
+      "url" : "/coding/css/colors/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "背景",
+      "url" : "/coding/css/backgrounds/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "CSS レイアウト",
+      "url" : "/coding/css/layout/",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "main",
+      "name" : "メイン要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/main"
+    },
+    {
+      "date" : "header",
+      "name" : "ヘッダー要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/header"
+    },
+    {
+      "date" : "footer",
+      "name" : "フッター要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/footer"
+    },
+    {
+      "date" : "div",
+      "name" : "コンテンツ区分要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/div"
+    },
+    {
+      "date" : "span",
+      "name" : "汎用的インライン要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/span"
+    },
+    {
+      "date" : "HTML",
+      "name" : "ブロックレベル要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Block-level_elements"
+    },
+    {
+      "date" : "HTML",
+      "name" : "インライン要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Inline_elements"
+    }
+  ]
+}

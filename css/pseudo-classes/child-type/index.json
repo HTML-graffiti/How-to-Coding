@@ -1,0 +1,114 @@
+{
+  "title" : ":*-child :*-type",
+  "description" : "擬似クラス | :*-child :*-type",
+  "author" : "Cascading Style Sheets",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "Twitterカードの種類 (summary | summary_large_image | app | player)",
+  "src" : "ページを代表する画像のURL",
+
+  "contents" : [
+    {
+      "date" : "CSS",
+      "name" : "CSS セレクター",
+      "url" : "/coding/css/selectors/",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "擬似クラス",
+      "url" : "/coding/css/pseudo-classes/",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "CSS レイアウト",
+      "url" : "/coding/css/layout/",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "HTML",
+      "name" : "リスト要素",
+      "url" : "/coding/listing/",
+      "language" : "html",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "擬似クラス",
+      "name" : ":nth-child",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:nth-child",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":nth-last-child",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:nth-last-child",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":first-child",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:first-child",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":last-child",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:last-child",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":only-child",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:only-child",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":nth-of-type",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:nth-of-type",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":nth-last-of-type",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:nth-last-of-type",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":first-of-type",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:first-of-type",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":last-of-type",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:last-of-type",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":only-of-type",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:only-of-type",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="readyState.js" async></script>
+  <script src="../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="hidden.css" />
+  <link rel="stylesheet" href="../../readme/style.css" />
+  <style>
+
+  #contents,
+  #links {
+    padding: 0.5rem;
+  }
+
+  #links::before {
+    content:'参考記事';
+    font-size: 75%;
+  }
+
+  #links::before {
+    display: block;
+    margin: 0.25rem;
+    text-decoration: underline;
+  }
+
+  </style>
+</head>
+
+<body>
+  <button id="js-button"><b></b></button>
+
+  <article id="hidden">
+    <aside id="contents"></aside>
+
+    <article id="howto" class="readme"></article>
+
+    <nav id="links"></nav>
+  </article>
+
+  <article id="main" class="readme">
+    <h1></h1>
+    <div id="log"></div>
+  </article>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="touch/script.js" async></script>
+  <script type="text/javascript">
+  
+  $(function() {
+    $("#howto").load("howto.html");
+  })
+
+  const button = document.querySelector('#js-button');
+  const body = document.querySelector('body');
+
+  button.addEventListener('click', event => {
+    button.classList.toggle('close');
+    body.classList.toggle('open');
+  });
+
+  </script>
+</body>
+</html>

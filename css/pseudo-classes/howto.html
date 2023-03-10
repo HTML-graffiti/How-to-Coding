@@ -1,0 +1,68 @@
+<hgroup>
+  <h2><font>:empty</font></h2>
+  <p>要素の中身（コンテンツ）がない場合にスタイルを適用します。</p>
+</hgroup>
+<hr/>
+<pre>
+a<font>:empty</font> {
+  color: #fff;
+  background: deeppink;
+}
+</pre>
+<a class="a_tag"></a>
+<a class="a_tag">i am a</a>
+<a class="a_tag"> </a>
+<a class="a_tag"><em class="em_element"></em></a>
+<hr/>
+<p>
+  上記4つのアンカー要素のうち、
+  <b>a:empty</b>
+  が適用されるのは初めの1つのみです。<br/>
+  <i>
+    2つ目にはテキスト、3つ目には半角スペース、4つ目には 空の em 要素があるため、<b>a:empty</b>
+    ではありません。
+  </i>
+</p>
+<br/>
+<hr/>
+<hgroup>
+  <h2><font>:not()</font></h2>
+  <p>否定擬似クラス (negation pseudo-class) </p>
+</hgroup>
+<hr/>
+<pre>
+article:not(.readme) {
+  background: #000;
+}
+
+:not(p):not(font) {
+  background: silver;
+}
+
+body :not(#left):not(#right):not(#title):not(.readme) {
+  box-shadow:
+  -1px 1px 0 #000,
+  -2px 2px 0 #000,
+  -3px 3px 0 #000,
+  -4px 4px 0 #000;
+}
+</pre>
+<hr/>
+<p>
+  <b>:not()</b> を使用する際のふつうではない効果や結果がいくつかありますので、使用する際には気を付けてください。
+</p>
+<!--
+<hgroup>
+  <h2><font>:*-child</font> <font>:*-type</font></h2>
+  <p>○番目の要素／特定の型にスタイルを適用します。</p>
+</hgroup>
+<hr/>
+<pre>
+<font>:*-child</font> {
+
+}
+</pre>
+<br/>
+<hr/>
+-->
+<hr/>

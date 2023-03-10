@@ -1,0 +1,83 @@
+html {
+  height: -webkit-fill-available;
+}
+
+body,
+#imgarea {
+  min-height: -webkit-fill-available;
+}
+
+#drawarea,
+#imgarea,
+#createimg {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+#saveimg,
+#controlbtn,
+#control label {
+  color: #000;
+  pointer-events: auto;
+  user-select: text;
+}
+
+#saveimg,
+#controlbtn,
+#control label {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border: 0.1rem solid;
+  border-radius: 3rem;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+}
+
+#saveimg,
+#controlbtn {
+  margin: 1rem;
+  background: #fff5;
+}
+
+#control {
+  margin: 0.5rem 0;
+}
+
+#control label {
+  margin: 0.25rem 0.5rem;
+  background: #fff;
+}
+
+#control input[type="radio"]:checked+label {
+  color: #fff;
+  background: #0005;
+  transition: .5s all;
+}
+
+@media screen and (max-width: 750px) {
+
+  #saveimg,
+  #controlbtn,
+  #control label {
+    font-size: 3vw;
+    padding: 1.25vw 2vw;
+    border: 0.2vw solid;
+    border-radius: 4.5vw;
+  }
+
+  #saveimg,
+  #controlbtn {
+    margin: 2.5vw;
+  }
+
+  #control {
+    margin: 2.5vw 0;
+  }
+
+  #control label {
+    margin: 0.25vw;
+  }
+}

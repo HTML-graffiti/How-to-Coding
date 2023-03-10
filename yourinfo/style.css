@@ -1,0 +1,221 @@
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  min-height: -webkit-fill-available;
+}
+
+#log,
+#log button,
+#hidden button,
+#now select {
+  font-family: "Arial Narrow", "Yu Gothic", "游ゴシック体", Arial, sans-serif;
+}
+
+#log,
+#now {
+  box-sizing: border-box;
+  display: flex;
+  margin: 0;
+  width: 100%;
+}
+
+#log {
+  position: fixed;
+  z-index: 2;
+  list-style: none;
+  align-items: stretch;
+  flex-flow: row-reverse wrap-reverse;
+  justify-content: start;
+  padding: 0.25rem;
+  overflow: auto;
+  max-height: -webkit-fill-available;
+}
+
+#now {
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  padding: 0.5rem;
+}
+
+#log li {
+  font-size: 75%;
+}
+
+#log li:last-of-type,
+#log button,
+#hidden button,
+form select {
+  font-size: 100%;
+}
+
+#level {
+  font-size: 125%;
+}
+
+#log li {
+  flex: 1 250px;
+  padding: 0.25rem;
+  margin: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+#log li:last-of-type {
+  flex: 2 500px;
+}
+
+#log li span {
+  display: block;
+  padding: 0.25rem;
+  word-wrap: break-word;
+}
+
+#log li span:first-of-type {
+  float: left;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+#hidden button {
+  float: left;
+  margin-right: 0.5rem;
+}
+
+#log li span:nth-of-type(2),
+#log li span:nth-of-type(3) {
+  float: right;
+}
+
+#log li span:last-of-type {
+  clear: both;
+  width: 100%;
+}
+
+#log button,
+#hidden button,
+form select {
+  border: solid 2px;
+  border-radius: 1rem;
+  padding: 0.25rem 0.5rem;
+  pointer-events: auto;
+  user-select: auto;
+  cursor: pointer;
+}
+
+meter {
+  width: 2.5rem;
+  height: 1.25rem;
+}
+
+meter::-webkit-meter-horizontal-bar {
+  border: none;
+}
+
+meter::-webkit-meter-horizontal-optimum-value {
+  background: blue;
+}
+
+meter::-webkit-meter-horizontal-suboptimal-value {
+  background: yellow;
+}
+
+meter::-webkit-meter-horizontal-even-less-good-value {
+  background: red;
+}
+
+#hidden {
+  box-sizing: border-box;
+  filter: invert();
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+  z-index: 100;
+  transition: 1s;
+}
+
+.open #hidden {
+  background: #fff;
+  overflow: auto;
+  padding: 0.5rem;
+  height: 100vh;
+  max-height: -webkit-fill-available;
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    font-size: 2.5vw;
+  }
+
+  meter {
+    width: 6vw;
+    height: 3vw;
+  }
+
+  #log,
+  #log li {
+    padding: 0.5vw;
+  }
+
+  #log li span {
+    padding: 0.5vw;
+  }
+
+  #log button,
+  #hidden button,
+  form select {
+    border: solid 0.25vw;
+    border-radius: 2.5vw;
+    padding: 0.5vw 1vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 4vw;
+  }
+
+  meter {
+    width: 12vw;
+    height: 5.5vw;
+  }
+
+  #log,
+  #log li {
+    padding: 1vw;
+  }
+
+  #log li:last-of-type span:nth-of-type(2),
+  #log li:last-of-type span:nth-of-type(3) {
+    float: left;
+    padding: 1vw;
+  }
+
+  #log li:last-of-type span:first-of-type {
+    clear: both;
+    width: 100%;
+  }
+
+  #log button,
+  #hidden button,
+  form select {
+    border: solid 0.5vw;
+    border-radius: 4vw;
+    padding: 1vw 2vw;
+    font-size: 4vw;
+    margin-bottom: 1vw;
+  }
+}

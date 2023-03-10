@@ -1,0 +1,95 @@
+#myBtn,
+table.size,
+details {
+  position: relative;
+  z-index: 1;
+}
+
+table.size {
+  box-sizing: border-box;
+  font-size: 1rem;
+  width: 100%;
+}
+
+table.size .nowValue {
+  font-size: 125%;
+  font-family: "Arial Narrow", Arial, "游ゴシック体", "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+table.size tr {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+table.size td {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  word-break: break-all;
+}
+
+table.size td:first-child {
+  font-family: "ipag", monospace;
+  transform: scale(1, 1.25);
+  width: 20rem;
+}
+
+table.size td:nth-child(2) {
+  font-family: "Yu Gothic", "游ゴシック体", sans-serif;
+  font-size: 75%;
+  width: 50%;
+}
+
+table.size .nowValue {
+  text-align: right;
+  word-break: break-all;
+  width: 5rem;
+}
+
+@media screen and (max-width: 750px) {
+
+  table.size {
+    font-size: 2.5vw;
+  }
+
+  table.size tr {
+    margin: 0 0 1vw;
+  }
+
+  table.size td:first-child {
+    width: 40%;
+  }
+
+  table.size td:nth-child(2) {
+    width: 45%;
+  }
+
+  table.size .nowValue {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  table.size {
+    font-size: 3.5vw;
+  }
+
+  table.size tr,
+  table.size td {
+    display: block;
+  }
+
+  table.size td:first-child,
+  table.size td:nth-child(2) {
+    float: left;
+    width: 85%;
+  }
+
+  table.size .nowValue {
+    display: inline-block;
+    width: 15%;
+  }
+}

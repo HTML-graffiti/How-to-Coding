@@ -1,0 +1,160 @@
+<h2>
+  <code>Window API</code><br/>
+  <i>Window インターフェイスは、 DOM 文書を収めるウィンドウを表します。</i>
+</h2>
+<p>
+  <i>document プロパティは、そのウィンドウに読み込まれた DOM の document オブジェクト を指します。</i><br/>
+  <i>特定の文書が属するウィンドウは、 document.defaultView プロパティを使用して取得できます。</i>
+</p>
+<hr/>
+<p>
+  <font>Window<code class="red">.navigator</code></font><br/>
+  スクリプトを実行しているアプリケーションに関するメソッドとプロパティを持つ Navigator オブジェクトへの参照を返します。
+</p>
+<p>
+  <i>オンライン状態は true</i>
+  <i>オフライン状態は false</i>
+  <i>の論理値を返します。</i><br/>
+  <code>navigator<font class="red">.onLine</font></code><br/>
+  <code id="onLine"></code>
+</p>
+<p>
+  const onLine = <font class="red">navigator.onLine</font><br/>
+  <br/>
+  <i>// 論理値の結果によって異なる命令を実行する //</i><br/>
+  document.querySelector('#onLine').innerText =<br/>
+  <font class="red">(onLine == true)</font>
+  <font class="red">?</font>
+  'オンライン状態'
+  <font class="red">:</font>
+  'オフライン状態'
+</p>
+<hr/>
+<p>
+  Window: <code class="red">online</code> イベント<br/>
+  <code>addEventListener('<code class="red">online</code>', (event) => { });</code><br/>
+  <code><code class="red">ononline</code> = (event) => { };</code><br/>
+  Navigator.onLine の値が true(オンライン状態) に切り替わると発行されます。
+</p>
+<p>
+  Window: <code class="red">offline</code> イベント<br/>
+  <code>addEventListener('<code class="red">offline</code>', (event) => { });</code><br/>
+  <code><code class="red">onoffline</code> = (event) => { };</code><br/>
+  Navigator.onLine の値が false(オフライン状態) に切り替わったときに発行されます。
+</p>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>
+  <i>端末のおよそのメモリ量をギガバイト単位で返します。</i><br/>
+  <code>navigator<code class="red">.deviceMemory</code></code><br/>
+  <code id="memory"></code>
+</p>
+<p>
+<i>端末上で使用可能な論理プロセッサーコアの数を返します。</i><br/>
+  <code>navigator<code class="red">.hardwareConcurrency</code></code><br/>
+  <code id="hardware"></code>
+</p>
+<p>
+  <i>現在のブラウザーのユーザーエージェント文字列を返します。</i><br/>
+  <code>navigator<code class="red">.userAgent</code></code><br/>
+  <code id="sBrowser"></code>
+</p>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>
+  <font>Window<code class="red">.location</code></font><br/>
+  現在位置についての情報を持つ Location オブジェクトを返します。<br/>
+</p>
+<p>
+  <i>URL 全体</i><br/>
+  <code>location<code class="red">.href</code></code><br/>
+  <code id="href"></code>
+</p>
+<p>
+  <i>URL のプロトコル</i><br/>
+  <code>location<code class="red">.protocol</code></code><br/>
+  <code id="protocol"></code>
+</p>
+<p>
+  <i>URL のドメイン</i><br/>
+  <code>location<code class="red">.hostname</code></code><br/>
+  <code id="hostname"></code>
+</p>
+<p>
+  <i>URL のオリジン</i><br/>
+  <code>location<code class="red">.origin</code></code><br/>
+  <code id="origin"></code>
+</p>
+<p>
+  <i>URL のパス部分</i><br/>
+  <code>location<code class="red">.pathname</code></code><br/>
+  <code id="pathname"></code>
+</p>
+<hr/>
+<p>
+  <button onclick="location.assign(location.href)">location<code class="red">.assign()</code></button>
+  <i>location.assign(location.href)</i><br/>
+  引数で指定した URL のリソースを読み込みます。
+</p>
+<p>
+  <button onclick="location.reload()">location<code class="red">.reload()</code></button>
+  <i>location.reload()</i><br/>
+  現在の URL のリソースを再読み込みします。
+</p>
+<p>
+  <button onclick="location.replace(location.protocol + '//' + location.hostname + location.pathname)">location<code class="red">.replace()</code></button>
+  <i>location.replace(location.protocol + '//' + location.hostname + location.pathname)</i><br/>
+  現在のリソースを、指定した URL のリソースで置き換えます。
+</p>
+<p>
+  <button onclick="alert('URL: ' + location.toString())">location<code class="red">.toString()</code></button>
+  <i>alert('URL: ' + location.toString())</i><br/>
+  これは Location.href と同義ですが、こちらは値を変更するために使用できません。
+</p>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>
+  <font>Window<code class="red">.history</code></font><br/>
+  <code>履歴 API</code> ブラウザーのセッション履歴へのアクセスを提供します。<br/>
+</p>
+<p>
+  <button onclick="history.back()">history<code class="red">.back</code>()</button>
+  <i>前のページに戻る</i><br/>
+  () に設定した値のページに戻ります。 前のページがない場合、このメソッド呼び出しは何もしません。
+</p>
+<p>
+  <button onclick="history.forward()">history<code class="red">.forward</code>()</button>
+  <i>次のページに進む</i><br/>
+  () に設定した値のページに進みます。 次のページがない場合、このメソッド呼び出しは何もしません。
+</p>
+<p>
+  <button onclick="history.go(0)">history<code class="red">.go</code>()</button>
+  <i>セッション履歴から特定のページを読み込む</i><br/>
+  () に設定した値が 正数 + なら次のページに進みます。負数 - なら前のページに戻ります。
+</p>
+<hr/>
+
+<script type="text/javascript" defer>
+
+  const onLine = navigator.onLine
+  document.querySelector('#onLine').innerText =
+  (onLine == true) ? 'この端末はオンライン状態です。' : 'この端末はオフライン状態です。'
+
+  const memory = navigator.deviceMemory
+  document.querySelector('#memory').innerText = `この端末には ${memory}GiB 以上の RAM があります。`
+
+  const hardware = navigator.hardwareConcurrency
+  document.querySelector('#hardware').innerText = `この端末の使用可能なコア数は ${hardware}CPUです。`
+
+  document.querySelector('#sBrowser').innerText = navigator.userAgent
+
+  document.querySelector('#href').innerText = location.href
+  document.querySelector('#protocol').innerText = location.protocol
+  document.querySelector('#hostname').innerText = location.hostname
+  document.querySelector('#origin').innerText = location.origin
+  document.querySelector('#pathname').innerText = location.pathname
+
+</script>

@@ -1,0 +1,65 @@
+<h1 class="h1">
+  <u data-id="heading1">Heading level 1</u>
+</h1>
+<p id="heading1" class="hide">
+  1 つのページには、ページのタイトルを表す 1 つの h1 を置くのが一般的です。<br/>
+  <i>1 ページに複数の h1 を使用することは避けましょう。</i>
+</p>
+<h2 class="h2">
+  <u data-id="heading2">Heading level 2</u>
+</h2>
+<p id="heading2" class="hide">
+  h2 (または h2 レベル以下の見出し要素) は 1 つのページに複数使用できます。<br/>
+  <i>見出し要素は、常に h1 から始め、次に h2、以下も同様にレベルの順番を飛ばさないようにしましょう。</i>
+</p>
+<h3 class="h3">
+  <u data-id="heading3">Heading level 3</u>
+</h3>
+<p id="heading3" class="hide">
+  見出し要素は、article・section 要素などと組み合わせて、ページを区分する際に使用するのが一般的です。<br/>
+  <i>ページにおける区分の重要度に応じて、見出し要素のレベルを引き下げて使用します。</i>
+</p>
+<h4 class="h4">
+  <u data-id="heading4">Heading level 4</u>
+</h4>
+<p id="heading4" class="hide">6 段階の見出しがありますが、よく使うのはせいぜい 3 から 4 まででしょう。</p>
+<h5 class="h5">
+  <u data-id="heading5">Heading level 5</u>
+</h5>
+<p id="heading5" class="hide">
+  5 段階目の見出し要素です。
+</p>
+<h6 class="h6">
+  <u data-id="heading6">Heading level 6</u>
+</h6>
+<p id="heading6" class="hide">
+  見出し要素の最下位レベルです。
+</p>
+
+<script type="text/javascript">
+
+  function random(number) {
+    return Math.floor(Math.random() * (number+1));
+  }
+
+  function randomRGB() {
+    let random255 = `rgb( ${random(255)}, ${random(255)}, ${random(255)} )`;
+    return random255;
+  }
+
+  document.body.style.backgroundColor = randomRGB();
+
+  const randomRGBbg = document.querySelectorAll('#hello *');
+  for (let i = 0; i < randomRGBbg.length; i++) {
+
+    randomRGBbg[i].addEventListener('mouseenter', function(e) {
+      document.body.style.backgroundColor = randomRGB();
+    });
+
+    randomRGBbg[i].addEventListener('mouseleave', function(e) {
+      document.body.style.backgroundColor = randomRGB();
+    });
+  }
+</script>
+
+<script src="../../hello/data_show.js" defer></script>

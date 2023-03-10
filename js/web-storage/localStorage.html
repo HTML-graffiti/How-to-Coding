@@ -1,0 +1,51 @@
+<h3 id="what">
+  <font></font>
+  <button>What Your Name?</button>
+</h3>
+
+<pre class="script"> type="text/javascript">
+
+let whatButton = document.querySelector('#what button');
+let yourName = document.querySelector('#what font');
+
+whatButton.onclick = function() {
+  let myName = prompt('What Your Name?');
+  if(!myName) {
+    setUserName();
+  } else {
+    localStorage.setItem('name', myName);
+    yourName.innerText = `Hello, ${myName}!`;
+  }
+}
+
+if(!localStorage.getItem('name')) {
+  setUserName();
+} else {
+  let storedName = localStorage.getItem('name');
+  yourName.innerText = `Hello, ${storedName}!`;
+}
+
+</pre>
+<script type="text/javascript">
+  'use strict'
+
+  let whatButton = document.querySelector('#what button');
+  let yourName = document.querySelector('#what font');
+
+  whatButton.onclick = function() {
+    let myName = prompt( 'What Your Name?', 'Type Your Name' );
+    if(!myName) {
+      setUserName();
+    } else {
+      localStorage.setItem('name', myName);
+      yourName.innerText = `Hello, ${myName}!`;
+    }
+  }
+
+  if(!localStorage.getItem('name')) {
+    setUserName();
+  } else {
+    let storedName = localStorage.getItem('name');
+    yourName.innerText = `Hello, ${myName}!`;
+  }
+</script>

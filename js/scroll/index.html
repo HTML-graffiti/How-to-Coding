@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="../../readme/style.css" />
+  <link rel="stylesheet" href="active-smooth.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav id="contents"></nav>
+
+  <article class="readme scroll">
+    <header>
+      <h1>
+        JavaScript | Event<br/>
+        <code>Scroll & WheelEvent</code>
+      </h1>
+    </header>
+    <section id="one">
+      <h2>
+        スクロールイベント<br/>
+        <i>文書のビューまたは要素がスクロールされたときに実行する</i>
+      </h2>
+      <p>
+        <font>EventTarget.addEventListener('<code class="red">scroll</code>',</font> event => {
+          <br/>// JavaScriptを記述<br/>
+        });
+      </p>
+      <p>
+        <font>EventTarget.<code class="red">onscroll</code></font> = function() {
+          <br/>// JavaScriptを記述<br/>
+        }
+      </p>
+      <pre>
+document.body.onscroll = (event) => {
+  // スクロール状態に実行する文
+
+  setTimeout(() => {
+    // スクロールが止まった状態に実行する文
+  }, 0);
+};
+      </pre>
+    </section>
+    <section id="two">
+      <h2>
+        window.scrollTo<br/>
+        <i>ウィンドウを文書内の特定の位置までスクロールする</i>
+      </h2>
+      <p>
+        <button id="scroolTop">Scroll to top: 0</button>
+        ページトップにスクロール
+      </p>
+      <p>
+        <font>window.<code class="red">scrollTo</code></font> ({
+          <br/>top: 0,
+          <br/>behavior: "smooth"<br/>
+        });
+      </p>
+      <hr/>
+      <p>
+        <button id="scroolBottom">Scroll to top: bottom</button>
+        ページ最下部にスクロール
+      </p>
+      <p>
+        let elm = <code class="red">document.documentElement</code>;
+        <br/>let bottom = <code class="red">delm.scrollHeight - elm.clientHeight</code>;
+      </p>
+      <p>
+        <font>window.<code class="red">scrollTo</code></font> ({
+          <br/>top: bottom
+          <br/>behavior: "smooth"<br/>
+        });
+      </p>
+      <hr/>
+      <h2>
+        window.scrollBy<br/>
+        <i>ウィンドウ内の文書を指定された量だけスクロールさせる</i>
+      </h2>
+      <p>
+        <button id="scrollByplus">scroll by top: window.innerHeight</button>
+        1 ページ分下スクロール
+      </p>
+      <p>
+        <button id="scrollByminus">scroll by top: -window.innerHeight</button>
+        1 ページ分上スクロール
+      </p>
+      <p>
+        <font>window.<code class="red">scrollBy</code></font> ({
+          <br/>top: window.innerHeight,
+          <br/>behavior: "smooth"<br/>
+        });
+      </p>
+      <hr/>
+    </section>
+    <section id="three">
+      <h2>
+        WheelEvent<br/>
+        <i>ユーザーがマウスホイールやそれに似た機器を動かしたときに実行する</i>
+      </h2>
+      <p>
+        <font>EventTarget.addEventListener('<code class="red">wheel</code>',</font> event => {
+          <br/>// JavaScriptを記述<br/>
+        });
+      </p>
+      <p>
+        <font>EventTarget.<code class="red">onwheel</code></font> = function() {
+          <br/>// JavaScriptを記述<br/>
+        }
+      </p>
+      <pre>
+let scale = 1;
+
+wheel.addEventListener('wheel', event => {
+  event.preventDefault();
+
+  scale += event.deltaY * -0.01;
+
+  // Restrict scale
+  scale = Math.min(Math.max(.5, scale), 1.5);
+
+  // Apply scale transform
+  wheel.style.transform = `scale(${scale})`;
+});
+      </pre>
+      <p>
+        <code class="red">deltaX</code>
+        <br/>マウスホイールのX軸方向（横方向）のスクロール量
+      </p>
+      <p>
+        <code class="red">deltaY</code>
+        <br/>マウスホイールのY軸方向（縦方向）のスクロール量
+      </p>
+      <p>
+        <code class="red">deltaZ</code>
+        <br/>マウスホイールのZ軸方向のスクロール量
+      </p>
+      <p>
+        <code class="red">deltaMode</code>
+        <br/>スクロール量の単位
+      </p>
+    </section>
+    <footer>
+      <aside>
+        <p><u>関連記事</u></p>
+        <p>
+          <a href="/coding/js/event/">
+            <i>Document Object Model</i>
+            Event
+          </a>
+          <a href="/coding/js/window/">
+            <i>Document Object Model</i>
+            Window
+          </a>
+        </p>
+      </aside>
+    </footer>
+  </article>
+  <aside id="links"></aside>
+
+  <button id="js-button"><b></b></button>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="script.js"></script>
+  <script src="active-smooth.js" async></script>
+</body>
+</html>

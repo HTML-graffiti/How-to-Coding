@@ -1,0 +1,38 @@
+{
+  "title" : "How to Coding",
+  "description" : "これは、ウェブサイトの作り方をまとめるウェブサイトです。",
+  "author" : "creative-community.space",
+  "email" : "pehu@creative-community.space",
+  "type" : "website",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "___",
+
+  "contents" : [
+    {
+      "date" : "HTMLの基本",
+      "name" : "HyperText Markup Language",
+      "url" : "html/",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSSの基本",
+      "name" : "Cascading Style Sheets",
+      "url" : "css/",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "JavaScriptの基本",
+      "name" : "JavaScript",
+      "url" : "js/",
+      "language" : "js",
+      "status" : "basic"
+    }
+  ],
+
+  "links" : [
+
+  ]
+}

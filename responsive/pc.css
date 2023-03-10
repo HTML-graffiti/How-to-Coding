@@ -1,0 +1,17 @@
+html {
+  font-size: 90%;
+}
+
+body {
+  font-size: 1rem;
+}
+
+p,
+pre {
+  font-family: "San Francisco", sans-serif;
+}
+
+code,
+font {
+  font-family: "NewYork", serif;
+}

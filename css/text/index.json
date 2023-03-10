@@ -1,0 +1,163 @@
+{
+  "title" : "Styling Text",
+  "description" : "テキストの装飾 | Styling Text",
+  "author" : "Cascading Style Sheets",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "HTML",
+      "name" : "テキストの基礎",
+      "url" : "/coding/html/text/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "高度なテキスト整形",
+      "url" : "/coding/html/text/advanced/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "文字表記の方向",
+      "url" : "/coding/css/text/writing-mode/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "フォントの指定",
+      "url" : "/coding/css/fonts/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "色",
+      "url" : "/coding/css/colors/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "枠線",
+      "url" : "/coding/css/boxmodel/borders/",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "基本的なテキストとフォントの装飾",
+      "name" : "Fundamental text and font styling",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/Styling_text/Fundamentals",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "text-align",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/text-align",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "direction",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/direction",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "text-justify",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/text-justify",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "vertical-align",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/vertical-align",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "text-transform",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/text-transform",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "text-decoration",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/text-decoration",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "text-shadow",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/text-shadow",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "text-rendering",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/text-rendering",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "text-overflow",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/text-overflow",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "overflow-wrap",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/overflow-wrap",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "hyphens",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/hyphens",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "text-align-last",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/text-align-last",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "line-break",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/line-break",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "word-break",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/word-break",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ]
+}

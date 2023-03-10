@@ -1,0 +1,173 @@
+<hgroup>
+  <h2><i>ボックスモデル</i></h2>
+  <p>
+    CSS には HTML 要素 を箱として扱う ボックスモデル という概念があり、ボックスには
+    <b>ブロックボックス</b>
+    と
+    <b>インラインボックス</b>
+    の 2種類があります。
+  </p>
+</hgroup>
+<p>
+  <i>
+    ページ上のほとんどの HTML 要素は、他の箱の上に置かれた箱と考えることができます。
+  </i>
+</p>
+<hr/>
+<br/>
+<section>
+  <h3>
+    <u>ブロックボックス</u><br/>
+    display: <font color="red">block</font>;<br/>
+  </h3>
+  <p>
+    ブロックボックスには改行（マージン）が入り、ボックスは上下に分割されます。
+  </p>
+  <p>
+    <i>通常、ブロックボックスの幅は親要素と同じ値で、高さはコンテンツの内容によって変動します。</i>
+  </p>
+</section>
+<br/>
+<section>
+  <h3>
+    <u>インラインボックス</u><br/>
+    display: <font color="red">inline</font>;
+  </h3>
+  <p>
+    インラインボックスは改行されず、デフォルトでは 左から右 に 小さなボックス として分割されます。
+  </p>
+  <p>
+    <i>通常、インラインボックスは、ブロックボックスの中で使用する、「」のような役割の 小さな部分 に使用します。</i>
+  </p>
+</section>
+<br/>
+<p>
+  このページにある要素の内、h1, p, nav, section などが ブロックボックス、
+  a, button, span などが インラインボックス です。
+</p>
+<hr/>
+<br/>
+<hgroup>
+  <br/>
+  <h2><i>ボックスの構成</i></h2>
+  <p>
+    各ボックスは
+    <b>4つの領域</b>
+    で構成されます。
+  </p>
+</hgroup>
+<br/>
+<section>
+  <h3>
+    <u>コンテンツ領域</u><br/>
+    box-sizing: <font color="red">content-box</font>;<br/>
+  </h3>
+  <p>
+    <i>
+      box-sizing の プロパティ値 content-box は、ボックスの幅・高さにコンテンツ領域のみを含む設定です。<br/>
+      （詳しくは <a href="/coding/css/sizing/">幅と高さ</a> を参照ください。）
+    </i>
+  </p>
+  <p>文字・画像・動画など、「実際の」コンテンツを表示するコンテンツ領域がボックスの中心（箱の中身）です。</p>
+</section>
+<br/>
+<section>
+  <h3>
+    <u>境界領域</u><br/>
+    box-sizing: <font color="red">border-box</font>;<br/>
+    <font color="red">border</font>: <font>幅 種類 色</font>;
+  </h3>
+  <p>
+    <i>
+      box-sizing の プロパティ値 border-box は、ボックスの幅・高さに境界領域まで（コンテンツ＋パディング＋境界領域）を含む設定です。
+    </i>
+  </p>
+  <p>
+    ボックスの内と外を区切る境界（箱の外装）が境界領域です。<br/>
+    CSSプロパティ border で、境界線の 色・種類・幅など をスタイリングできます。
+  </p>
+  <pre>
+
+/* 種類 */
+border: solid;
+
+/* 幅 | 種類 */
+border: 2px dotted;
+
+/* 種類 | 色 */
+border: outset #f33;
+
+/* 幅 | 種類 | 色 */
+border: medium dashed green;
+  </pre>
+  <p>
+    <i>
+      境界領域に関連するCSSプロパティには、境界に画像を置き換える border-image ・
+      境界の外側の角を丸める border-radius などがあります。<br/>
+      （詳しくは <a href="/coding/css/boxmodel/borders/">枠線</a> を参照ください。）
+    </i>
+  </p>
+</section>
+<br/>
+<section>
+  <h3>
+    <u>パディング領域</u><br/>
+    <font color="red">padding</font>: <font>パディング領域</font>;
+  </h3>
+  <p>
+    ボックスのコンテンツ（中身）と 境界（外装）の間の空間（余白）が、パディング領域です。<br/>
+    CSSプロパティ padding で、全四辺のパディング領域をスタイリングできます。
+  </p>
+  <pre>
+
+/* 四辺すべてに適用 */
+padding: 1em;
+
+/* 上下 | 左右 */
+padding: 5% 10%;
+
+/* 上 | 左右 | 下 */
+padding: 1em 2em 2em;
+
+/* 上 | 右 | 下 | 左 */
+padding: 5px 1em 0 1em;
+  </pre>
+  <p>
+    <i>
+      ボックスに background プロパティで背景をスタイリングした場合、パディング領域まで背景が適用されます。<br/>
+      （詳しくは <a href="/coding/css/backgrounds/">背景</a> を参照ください。）
+    </i>
+  </p>
+</section>
+<br/>
+<section>
+  <h3>
+    <u>マージン領域</u><br/>
+    <font color="red">margin</font>: <font>マージン領域</font>;
+  </h3>
+  <p>
+    マージン領域は、境界領域の外側にある、ボックスとボックスの間の空白です。<br/>
+    CSSプロパティ margin で、全四辺のマージン領域をスタイリングできます。
+  </p>
+  <pre>
+
+/* 四辺すべてに適用 */
+margin: 1em;
+
+/* 上下 | 左右 */
+margin: 5% 10%;
+
+/* 上 | 左右 | 下 */
+margin: 1em 2em 2em;
+
+/* 上 | 右 | 下 | 左 */
+margin: 5px 1em 0 1em;
+  </pre>
+  <p>
+    <i>
+      マージンの値は、ボックスサイズに含まれることはなく、
+      <font>auto</font> を使用して、要素を中央揃えすることができます。<br/>
+      （詳しくは <a href="/coding/css/sizing/">幅と高さ</a> を参照ください。）
+    </i>
+  </p>
+</section>

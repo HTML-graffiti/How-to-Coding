@@ -1,0 +1,52 @@
+<h3>
+  <i>descendant combinator</i><br/>
+  <font>子孫結合子</font>
+  <i>1つ目のセレクターに一致する要素が祖先 となっている 2つ目のセレクターにスタイルを適用</i>
+</h3>
+<div class="ruleset">
+  <i class="selector">セレクター1 セレクター2</i>
+</div>
+<hr/>
+<pre>
+/*  */
+</pre>
+<hr/>
+<h3>
+  <i>child combinator</i><br/>
+  <font>子結合子</font>
+  <i> 2 つ目のセレクターが 1 つ目のセレクターの直接の子要素の場合にのみスタイルを適用</i>
+</h3>
+<div class="ruleset">
+  <i class="selector">セレクター1 > セレクター2</i>
+</div>
+<hr/>
+<pre>
+/*  */
+</pre>
+<hr/>
+<h3>
+  <i>adjacent sibling combinator</i><br/>
+  <font>隣接兄弟結合子</font>
+  <i>2 つ目の要素が 1 つ目の要素の 直後 にあって、両者が同じ親要素の子同士である場合にのみスタイルを適用</i>
+</h3>
+<div class="ruleset">
+  <i class="selector">直前の要素 + 対象の要素</i>
+</div>
+<hr/>
+<pre>
+/*  */
+</pre>
+<hr/>
+<h3>
+  <i>general sibling combinator</i><br/>
+  <font>一般兄弟結合子</font>
+  <i> 1 つ目の要素の後に 2 つ目の要素のがあり（直後である必要はない）、かつ両者が同じ親要素の子であるすべてのパターンにスタイルを適用</i>
+</h3>
+<div class="ruleset">
+  <i class="selector">先行する要素 ~ 選択される要素</i>
+</div>
+<hr/>
+<pre>
+/*  */
+</pre>
+<hr/>

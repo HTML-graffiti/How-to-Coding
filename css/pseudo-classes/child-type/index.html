@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="../../../readme/style.css" />
+  <link rel="stylesheet" href="../lightbox.css" />
+  <style type="text/css">
+
+  #contents::before {
+    content:'関連記事';
+    font-size: 90%;
+  }
+
+  #links::before {
+    content:'参考資料';
+    font-size: 75%;
+  }
+
+  code,
+  #contents::before,
+  #links::before,
+  #lastModified {
+    font-family: "ipag", monospace;
+  }
+
+  #contents::before,
+  #links::before {
+    text-decoration: underline;
+    display: block;
+    margin: 0.5rem 0.25rem;
+  }
+
+  #lastModified {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0.25rem;
+    line-height: 125%;
+  }
+
+  </style>
+
+</head>
+<body class="body">
+  <nav>
+    <p>
+      <a href="#one">:*-child</a>
+      <a href="#two">:*-type</a>
+    </p>
+    <a href="#etc">関連記事</a>
+  </nav>
+
+  <h1 id="title">:*-child :*-type | Cascading Style Sheets</h1>
+
+  <section class="buttons">
+    <p>
+      <button class="special" onclick="typeOdd(),randomBG();">li:nth-of-type(odd)</button>
+      <button class="special" onclick="typeEven(),randomBG();">li:nth-of-type(even)</button>
+      <button class="special" onclick="type3n(),randomBG();">li:nth-of-type(3n)</button>
+      <button class="special" onclick="typeN4(),randomBG();">li:nth-of-type(-n+4)</button>
+      <button class="special" onclick="typeN5(),randomBG();">li:nth-of-type(n+5)</button>
+      <button class="special" onclick="typeN67(),randomBG();">li:nth-of-type(n+6):nth-child(-n+7)</button>
+    </p>
+  </section>
+
+  <main>
+    <ol id="ordered" class="ol_element">
+    </ol>
+    <script>
+    let olArr = [
+      'ol :nth-last-child(9)',
+      'ol :nth-last-child(8)',
+      'ol :nth-last-child(7)',
+      'ol :nth-last-child(6)',
+      'ol :nth-last-child(5)',
+      'ol :nth-last-child(4)',
+      'ol :nth-last-child(3)',
+      'ol :nth-last-child(2)',
+      'ol :nth-last-child(1)',
+    ];
+
+    let orderedList = document.querySelector('ol#ordered');
+    let i = 0;
+    for (let olli of olArr) {
+      let olliAdd = document.createElement('li');
+      i = i + 1
+      olliAdd.textContent = `ol :nth-child(${i}), ${olli}`;
+      olliAdd.setAttribute('class', 'li_element')
+      orderedList.appendChild(olliAdd);
+    }
+    </script>
+  </main>
+
+  <p id="lastModified"></p>
+
+  <article class="lightbox" id="one">
+    <a href="#" class="close"></a>
+    <section id="child" class="readme translate_center"></section>
+  </article>
+
+  <article class="lightbox" id="two">
+    <a href="#" class="close"></a>
+    <section id="type" class="readme translate_center"></section>
+  </article>
+
+  <aside class="lightbox" id="etc">
+    <a href="#" class="close"></a>
+    <section id="contents" class="translate_center"></section>
+    <section id="links" class="fixed_bottom"></section>
+  </aside>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="script.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    $("#child").load("child.html");
+    $("#type").load("type.html");
+  })
+
+  function random(min, max) {
+    const num = Math.floor(Math.random() * (max - min + 1)) + min;
+    return num;
+  }
+
+  function randomRGB() {
+    let getRGB = `linear-gradient(90deg, rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)}), rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)}))`;
+    return getRGB;
+  }
+
+  function randomBG() {
+    const bgAll = document.querySelectorAll('body, li.typeOdd, li.typeEven');
+    for (const bgItem of bgAll) {
+      bgItem.style.background = randomRGB();
+    }
+
+    const liAll = document.querySelectorAll('li:not(.typeOdd):not(.typeEven)');
+    for (const liItem of liAll) {
+      liItem.style.background = '#fff';
+    }
+  }
+
+  randomBG()
+
+  let lastModified = document.querySelector('#lastModified');
+
+  lastModified.innerHTML =
+  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+  </script>
+</body>
+</html>

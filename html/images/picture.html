@@ -1,0 +1,40 @@
+<article class="readme">
+  <details>
+    <summary>
+      <font>picture/source</font>
+      <i>画像コンテンツを変化させる複数の画像を提供する</i>
+    </summary>
+    <p>ブラウザーは複数の source 子要素を検討し、その中から最も適切なものを選択します。</p>
+    <p>適切なものがない場合や、ブラウザーが picture 要素に対応してない場合、img 要素が代用されます。</p>
+    <br/>
+  </details>
+
+  <hr/>
+
+<pre class="picture" style="font-size:111%; line-height:150%;">
+<code class="source_element"> srcset="画像のURL" media="(メディアクエリー)"</code>
+<code class="img_element"> src="画像のURL" alt="代替テキスト"</code>
+</pre>
+
+  <br/>
+  <p>
+    <font color="blue">PICTURE</font>
+    要素に
+    <font color="blue">IMG</font>
+    と、0個以上の
+    <font color="blue">SOURCE</font>
+    要素を含み、様々な画面や端末の条件に応じた画像を提供します。
+  </p>
+  <p>
+    ・SOURCE要素の
+    <font color="blue">srcset</font>
+    属性に、埋め込みたい画像のURLを設定します。<br/>
+    <i>srcset 属性は、 source要素 が picture要素の子要素である場合にのみ効果があります。</i>
+  </p>
+  <p>
+    ・SOURCE要素の
+    <font color="blue">media</font>
+    属性には、それぞれの SOURCE 要素を適用する条件を指定します。<br/>
+    <i>source要素 の media属性 は、picture要素内でのみ有効です。</i>
+  </p>
+</article>

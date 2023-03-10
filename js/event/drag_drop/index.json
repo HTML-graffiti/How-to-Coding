@@ -1,0 +1,30 @@
+{
+  "title" : "Drag and Drop API",
+  "description" : "",
+  "author" : "JavaScript",
+  "email" : "pehu@creative-community.space",
+  "type" : "website",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "___",
+
+  "contents" : [
+    {
+      "date" : "Document Object Model",
+      "name" : "イベント",
+      "url" : "/coding/js/event/",
+      "language" : "js",
+      "status" : "basic"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "Web API",
+      "name" : "ドラッグ & ドロップ API",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/HTML_Drag_and_Drop_API",
+      "language" : "js",
+      "status" : "basic"
+    }
+  ]
+}

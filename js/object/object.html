@@ -1,0 +1,144 @@
+<h2>
+  <i>オブジェクト（key: value の組を持つ値）</i><br/>
+  <code class="red">let object = { key: value };</code>
+</h2>
+<p>オブジェクトは、キー付されたさまざまなデータのコレクションや、より複雑な値を格納するために使用します。</p>
+<hr/>
+<p>
+  {
+    <font class="red">key</font>
+    オブジェクト の キー
+    <font class="red">:</font>
+    <font class="red">value</font>
+    キー の 値
+    <font class="red">,</font>
+  }
+</p>
+<p>オブジェクトは、波括弧 <code class="red">{ }</code> とプロパティで構成されます。</p>
+<p>プロパティ内のコロンの前がキー <code class="red">:</code> 後が値（<code>key:value</code>）で、複数のプロパティを収納する場合は、プロパティをカンマ <code class="red">,</code> で区切ります。</p>
+<pre>
+
+const <code class="red">docInfo</code> = { // オブジェクト名
+  <font>'URL' <code class="red">:</code> document.location<code class="red">,</code> </font> // キー ['URL'] に値 document.location(このページのURL) が格納される
+  <font>'Last Modified' <code class="red">:</code> document.lastModified<code class="red">,</code> </font> // キー ['Last Modified'] に値 document.lastModified(このページの最終更新日) が格納される
+  <font>Referrer <code class="red">:</code> document.referrer</font> // キー .Referrer に値 document.referrer(リンク元のページのURL) が格納される
+};
+
+</pre>
+<p>プロパティ値へは、<code>オブジェクト名<code class="red">.プロパティキー</code></code> または、<code>オブジェクト名<code class="red">[プロパティキー]</code></code> を使ってアクセスできます。</p>
+<button type="button" onclick="alert( docInfo['URL'] )">docInfo['URL']</button>
+<button type="button" onclick="alert( docInfo['Last Modified'] )">docInfo['Last Modified']</button>
+<button type="button" onclick="alert( docInfo.Referrer )">docInfo.Referrer</button>
+<hr/>
+<p>
+  <code class="red">Object.keys(オブジェクト名)</code><br/>
+  指定されたオブジェクトが持つプロパティ名の配列を取得
+</p>
+<p>
+  <code class="red">Object.values(オブジェクト名)</code><br/>
+  指定されたオブジェクトが持つ列挙可能なプロパティの値を配列にして取得
+</p>
+<p>
+  <code class="red">Object.entries(オブジェクト名)</code><br/>
+  指定されたオブジェクトが持つプロパティの組(key, value)からなる配列を取得
+</p>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+
+<h3>
+  オブジェクトのためのループ文を構成する<br/>
+  <font class="red">for...in</font>
+  for (let <code class="red">property</code> in <code class="red">object</code>)
+</h3>
+<p>
+  <font class="red">object</font>
+  <i>オブジェクト名</i>
+</p>
+<p>
+  <font class="red">property</font>
+  <i>各ループ処理を宣言</i>
+</p>
+<hr/>
+<p>let userDiv = document.querySelector ('#user')</p>
+<details>
+  <summary><code>for (let <code class="red">prop</code> in <code class="red">user</code>)</code> {</summary>
+<pre>
+
+  <code>userDiv.innerHTML += (`<code>${prop} : <code>${user[prop]}</code></code>`);</code>
+
+</pre>
+</details>
+<p><code>}</code></p>
+
+<div id="user"></div>
+
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>
+  <code>プロパティの短縮構文</code><br/>
+  実際のコードでは、既存の変数をプロパティ名の値として使用することがよくあります。
+</p>
+<pre>
+function userInfo(device, hardware, user) {
+  return {
+    device, hardware, user
+  };
+}
+
+let user = userInfo(
+navigator.deviceMemory + ' GiB',
+navigator.hardwareConcurrency + ' CPU',
+navigator.userAgent
+);
+</pre>
+<p>上の例では、プロパティは変数と同じ名前を持っています。変数からプロパティを作るユースケースでは、非常に一般的です。</p>
+<hr/>
+
+<script type="text/javascript" defer>
+  let doc = document.querySelector('#document');
+
+  const docInfo = {
+    'URL': document.location,
+    'Last Modified': document.lastModified,
+    Referrer: document.referrer
+  };
+
+  for (let info in docInfo) {
+
+    doc.innerHTML += (`<p>${info} : <code>${docInfo[info]}</code></p>`);
+
+  }
+
+
+  function userInfo(device, hardware, user) {
+    return {
+      device, hardware, user
+    };
+  }
+
+  let user = userInfo(
+  navigator.deviceMemory + ' GiB',
+  navigator.hardwareConcurrency + ' CPU',
+  navigator.userAgent
+  );
+
+  let userDiv = document.querySelector ('#user')
+
+  for (let prop in user) {
+
+    userDiv.innerHTML += (`<p><code>${prop} : <code>${user[prop]}</code></code></p>`);
+
+  }
+
+</script>
+
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p><code>空のオブジェクトを作る2つの構文</code></p>
+<p>
+  let user = <code class="red">new Object()</code>;<br/>
+  let user = <code class="red">{}</code>;
+</p>

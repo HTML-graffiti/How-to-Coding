@@ -1,0 +1,87 @@
+<hgroup>
+  <h2><i>CSS セレクター</i></h2>
+  <p>CSS セレクターは、CSS のもっとも基本的なルールとなるものです。</p>
+</hgroup>
+<p>
+  CSS では、
+  ページ上の
+  <span class="wavy">HTML 要素にスタイルを設定する</span>
+  ために <font>セレクター</font> を使用します。
+</p>
+<p>
+  <b>CSS セレクター</b> には
+  さまざまな種類があり、
+  きめ細かにスタイルを設定する要素を選択できます。
+</p>
+<br/>
+<hr/>
+<section>
+  <h3>
+    <i>universal selector</i><br/>
+    <font>全称セレクター</font>
+    <i>すべての種類の要素にスタイルを適用</i>
+  </h3>
+  <div class="ruleset">
+    <i class="selector">*</i>
+  </div>
+  <pre>
+<font>*</font> {
+  <font>border: none;</font>
+  <font>padding: 0;</font>
+  <font>margin: 0;</font>
+}
+  </pre>
+
+  <p>
+    以上の CSS ルールセット で、
+    <font>すべての種類の要素</font> の
+    <font style="border: none; padding: 0; margin: 0;">境界・余白 を なし(0)</font>
+    に スタイリングします。
+  </p>
+</section>
+<br/>
+<hr/>
+<section>
+  <h3>
+    <i>type selector</i><br/>
+    <font>要素型セレクター</font>
+    <i>要素名（ノード名）で要素を選択・スタイルを適用</i>
+  </h3>
+  <div class="ruleset">
+    <i class="selector">要素名</i>
+  </div>
+  <pre>
+/* 要素型セレクターの例 */
+
+<font>html</font> {
+  height: -webkit-fill-available;
+}
+
+<font>body</font> {
+  background: #000;
+  min-height: -webkit-fill-available;
+}
+
+<font>body</font>,
+<font>a</font> {
+  color: #fff;
+}
+  </pre>
+
+  <p>
+    1つ目 の CSS ルールセット の、
+    セレクター は
+    <font>HTML要素</font>
+  </p>
+  <p>
+    2つ目 の CSS ルールセット の、
+    セレクター は
+    <font>BODY要素</font>
+  </p>
+  <p>
+    3つ目 の CSS ルールセット の、
+    セレクター は
+    <font>BODY要素</font> と
+    <font>A要素</font> です。
+  </p>
+</section>

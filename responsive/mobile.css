@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Bestermind";
+  src: url("https://creative-community.space/coding/css/fonts/BestermindRegular.ttf") format("truetype");
+}
+
+body {
+  font-size: 3.21vw;
+}
+
+p,
+code {
+  font-family: "Great Vibes", cursive;
+}
+
+pre,
+font {
+  font-family: "Bestermind", fantasy;
+}

@@ -1,0 +1,93 @@
+* {
+  border: none;
+  padding: 0;
+  margin: 0;
+  transition: 1s;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  background: #000;
+  min-height: -webkit-fill-available;
+}
+
+body,
+a {
+  color: #fff;
+}
+
+nav a,
+span {
+  display: inline-block;
+}
+
+body,
+h1,
+.special {
+  border: dashed 1px #fff;
+  font-family: "ipag", monospace;
+}
+
+@font-face {
+  font-family: "NewYork";
+  src: url("https://creative-community.space/coding/cover/NewYork.otf");
+}
+
+h1#title {
+  font-family: "NewYork", serif;
+}
+
+a.special {
+  font-size: 1.25rem;
+  word-break: break-all;
+}
+
+a.special:link {
+  color: #000;
+  background: #fff;
+}
+
+a.special:visited {
+  color: #fff;
+  background: red;
+}
+
+a.special:hover,
+.buttons button:hover {
+  cursor: pointer;
+  color: #fff;
+  background: blue;
+}
+
+a.special:active,
+.buttons button:active {
+  color: #fff;
+  background: #551A8B;
+}
+
+.buttons {
+  font-size: 0;
+}
+
+.buttons b {
+  font-size: 1rem;
+}
+
+.buttons button {
+  font-size: 1.11rem;
+  color: #fff;
+  background: transparent;
+}
+
+.ruleset::before,
+.ruleset i::after,
+.declaration b::after,
+.declaration span::after,
+.ruleset::after {
+  filter: invert();
+  padding: 0;
+  margin: 0;
+}

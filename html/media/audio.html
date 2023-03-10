@@ -1,0 +1,60 @@
+<article class="readme">
+  <details>
+    <summary>
+      <font>audio</font>
+      <i>埋め込み音声要素</i>
+    </summary>
+    <p>文書中に音声コンテンツを埋め込みます。</p>
+    <p>
+      <font color="blue">AAC</font>
+      (Advanced Audio Coding)<br/>
+      <br/>
+      <font color="blue">ALAC</font>
+      (Apple Lossless Audio Codec)<br/>
+      <br/>
+      <font color="blue">FLAC</font>
+      (Free Lossless Audio Codec)<br/>
+      <br/>
+      <font color="blue">MP3</font>
+      (MPEG-1 Audio Layer III)
+    </p>
+    <p>
+      <i>代替するファイルとして複数の形式の音源を埋め込む場合は、audio要素内の小要素に souce要素 を使用します。</i>
+    </p>
+    <br/>
+  </details>
+
+<pre class="audio_element" style="font-size:111%; line-height:150%;"> <font color="blue">src</font>="音源のURL" controls autoplay loop>
+  <code class="source_element"> <font color="blue">src</font>="音源のURL"</code>
+  <code class="p_element">テキストの段落</code>
+</pre>
+  <br/>
+  <p>
+    <font color="blue">AUDIO</font>
+    要素の
+    <font color="blue">src</font>
+    属性に、表示したい音源のURLを指定します。
+  </p>
+  <p>
+    <font color="blue">controls</font>
+    属性を設定すると、再生・音量などの機能を制御するコントローラーを表示します。<br/>
+    <i>controls 属性がなければ、ブラウザーの標準コントローラーを表示しません。</i>
+  </p>
+  <p>
+    <font color="blue">autoplay</font>
+    属性を設定すると、動画が再生可能な状態になった時点で即座に再生が始まります。<br/>
+    <i>自動的に音声を再生するサイトは、ユーザーにとって不快な体験になる可能性がありますので、可能な限り避けるべきです。</i>
+  </p>
+  <p>
+    <font color="blue">loop</font>
+    属性を設定すると、動画の末尾に達すると、自動的に先頭から再生が始まります。
+  </p>
+  <br/>
+  <p>
+    要素の中には
+    音源が表示されない場合に使用する代替テキストや、
+    音源の形式（埋め込み）に対応していないブラウザーで代替する
+    <font color="blue">souce</font>
+    要素を記述します。
+  </p>
+</article>

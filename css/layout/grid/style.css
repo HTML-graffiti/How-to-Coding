@@ -1,0 +1,72 @@
+#gridOl {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(20vw, 10vh);
+  grid-gap: 1vw;
+  gap: 1vw;
+  padding: 1vw 0;
+}
+
+#gridOl :nth-child(1) {
+  border-radius: 1vw;
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+}
+
+#gridOl :nth-child(2) {
+  border-radius: 2vw;
+  grid-column: 1;
+  grid-row: 2 / 5;
+}
+
+#gridOl :nth-child(3) {
+  border-radius: 3vw;
+  grid-column: 3;
+  grid-row: 3;
+}
+
+#gridOl :nth-child(4) {
+  border-radius: 33vw;
+  grid-column: 1 / 4;
+  grid-row: 5 / 8;
+}
+
+#gridOl :nth-child(5) {
+  border-radius: 50%;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#gridOl :nth-child(6) {
+  border-radius: 33vw 33vw 1vw 1vw;
+  grid-column: 2 / 4;
+  grid-row: 4;
+}
+
+#gridOl :nth-child(7) {
+  border-radius: 1vw 1vw 50% 50%;
+  grid-column: 2;
+  grid-row: 3;
+}
+
+
+/* ホバー時にリストアイテムのマーカーを表示する */
+#gridOl li {
+  padding: 2.5vw;
+  list-style: decimal inside;
+  mix-blend-mode: screen;
+}
+
+#gridOl li::marker {
+  font-size: 0;
+  color: #fff;
+  transition: 0.5s;
+}
+
+#gridOl li:hover::marker {
+  font-size: 250%;
+}
+
+#howto pre {
+  margin: 1rem 0;
+}

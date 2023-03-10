@@ -1,0 +1,79 @@
+{
+  "title" : "TouchEvent",
+  "description" : "",
+  "author" : "UI Events",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "Document Object Model",
+      "name" : "Event",
+      "url" : "/coding/js/event/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "Element",
+      "url" : "/coding/js/element/",
+      "language" : "js",
+      "status" : "basic"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "Touch events",
+      "name" : "Touch",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Touch",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Touch events",
+      "name" : "タッチイベント",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Touch_events",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "UI Events",
+      "name" : "TouchEvent",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/TouchEvent",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Element",
+      "name" : "touchmove",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/touchmove_event",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : "touchstart",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/touchstart_event",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : "touchend",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/touchend_event",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Element",
+      "name" : "touchcancel",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Element/touchcancel_event",
+      "language" : "js",
+      "status" : "guide"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+.is-hide,
+.nothing {
+  display:none;
+}
+
+#contents,
+#links,
+#org ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#contents a,
+#links a {
+  box-sizing: border-box;
+  color: #000;
+  text-decoration: none;
+  pointer-events: auto;
+  user-select: text;
+  transition: 1.5s;
+}
+
+#contents a {
+  border: solid 1px;
+  border-collapse: collapse;
+}
+
+#org .label,
+#org .reset-button {
+  border: none;
+  cursor: pointer;
+  transition: 1s all;
+  text-shadow: 0.1rem 0.1rem #fff;
+}
+
+#org .label:hover,
+#org .reset-button:hover {
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem #000;
+  transition: .5s all;
+}
+
+#contents,
+#links {
+  font-size: 0.9rem;
+  margin: auto;
+}
+
+#contents {
+  padding: 2.5vw 0 0;
+}
+
+#contents a {
+  flex: 1 300px;
+  padding: 1rem;
+}
+
+#links a {
+  flex: 1 100%;
+  padding: 0.75rem 1rem;
+}
+
+#contents a p,
+#links a p {
+  margin: 0;
+}
+
+#contents a i,
+#links a i {
+  margin: 0 0 0.45rem;
+}
+
+#org .label {
+  border-bottom: 1px solid transparent;
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#org input[type="checkbox"]:checked+label,
+#org input[type="radio"]:checked+label,
+#org .label:hover,
+#links a i {
+  border-bottom: 1px solid #000;
+}
+
+#org input[type="checkbox"]:checked+label,
+#org input[type="radio"]:checked+label,
+#org .label:hover {
+  cursor: pointer;
+  transition: .5s all;
+}
+
+#org input[type="radio"] {
+  display: none;
+}
+
+#org ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#org .label {
+  font-size: 1.1rem;
+  margin: 0 0.5rem 0.5rem 0;
+  padding: 0.25rem;
+}
+
+#org .reset-button:hover {
+  background: #eee;
+}
+
+.open #tobe {
+  box-sizing: border-box;
+  padding: 2.5vw 2.5vw 5rem;
+  margin: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  #contents {
+    padding: 0;
+  }
+
+  #contents {
+    font-size: 3vw;
+  }
+
+  #contents a {
+    flex: 1 100%;
+    padding: 3vw;
+  }
+
+  #contents a i {
+    margin: 0 0 2vw;
+  }
+
+  #org .label {
+    font-size: 3.75vw;
+    margin: 0 2.5vw 4.5vw 0;
+    padding: 0.75vw;
+  }
+
+  #org .label,
+  #org .reset-button {
+    text-shadow: 0.25vw 0.25vw #fff;
+  }
+
+  #org .label:hover,
+  #org .reset-button:hover {
+    text-shadow: 0.25vw 0.25vw #000;
+  }
+}
+
+
+#contents a b,
+#org .label,
+#org .reset-button {
+  font-family: "ipag", "Arial Narrow", Arial, monospace;
+  font-weight: 500;
+  transform: scale(1, 1.25);
+}
+
+@font-face {
+  font-family: "San Francisco";
+  src: url("https://creative-community.space/coding/readme/san-francisco/SF-Pro.ttf");
+}
+
+#contents a p,
+#links a {
+  font-family: "San Francisco", "游ゴシック体", "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  white-space: pre-line;
+}
+
+#contents a i {
+  font-family: "Times New Roman", serif;
+}
+
+#contents a i {
+  font-size: 125%;
+}
+
+#contents a b,
+#contents a i,
+#links a i {
+  display: inline-block;
+}

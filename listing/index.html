@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../readme/style.css" />
+  <link rel="stylesheet" href="../readme/active.css" />
+  <link rel="stylesheet" href="../html/elements.css" />
+  <style>
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  #nav,
+  #contents {
+    padding: 0.25rem;
+  }
+
+  @font-face {
+    font-family: "NewYork";
+    src: url("https://creative-community.space/coding/cover/NewYork.otf");
+  }
+
+  a[href*="one"]::before  {
+    content: '<ul><ol><li>';
+    text-transform: uppercase;
+  }
+
+  a[href*="two"]::before  {
+    content: '<dl><dt><dd>';
+    text-transform: uppercase;
+  }
+
+  a[href*="three"]::before  {
+    content: 'CSS counters';
+    text-transform: uppercase;
+  }
+
+  a[href*="four"]::before  {
+    content: 'JavaScript';
+  }
+
+  #nav a,
+  section,
+  #contents,
+  #lastModified {
+    mix-blend-mode: exclusion;
+  }
+
+  #nav a,
+  #contents,
+  #contents a,
+  #lastModified {
+    color: #fff;
+  }
+
+  #contents a,
+  #contents a:hover,
+  #links a,
+  #links a:hover {
+    border: none;
+  }
+
+  #contents::before {
+    content:'関連記事';
+    font-size: 90%;
+  }
+
+  #links::before {
+    content:'参考資料';
+    display: block;
+    font-size: 75%;
+  }
+
+  #nav a,
+  #contents::before,
+  #links::before,
+  #lastModified,
+  .ulli b,
+  .olli b,
+  .dldtdd b,
+  code {
+    font-family: "ipag", monospace;
+  }
+
+  #nav a,
+  #contents::before,
+  #links::before,
+  #lastModified {
+    margin: 0.5rem 0.25rem;
+  }
+
+  #contents::before,
+  #links::before {
+    text-decoration: underline;
+  }
+
+  #lastModified {
+    word-break: break-word;
+    margin: 0.25rem;
+    line-height: 125%;
+  }
+
+  </style>
+</head>
+<body>
+  <nav id="nav">
+    <a href="#cover">How to Coding</a>
+    <a href="#one"></a>
+    <a href="#two"></a>
+    <a href="#three"></a>
+    <a href="#etc">例・参考資料</a>
+  </nav>
+
+  <article class="readme">
+    <section id="cover" class="active cover">
+      <h1>The List of Contents</h1>
+      </section>
+      <section id="one" class="is-hide"></section>
+      <section id="two" class="is-hide"></section>
+      <section id="three" class="is-hide"></section>
+      <section id="etc" class="is-hide">
+        <p><a href="https://jsfiddle.net/verygois/ax506do8/229/" target="_blank" rel="noreferrer">The List of Contents About You</a></p>
+        <p>順序付けされたコレクションを格納する配列宣言 から UL LI リスト・オブジェクト配列から DL リストを生成する</p>
+        <script async src="//jsfiddle.net/verygois/ax506do8/229/embed/"></script>
+        <br/>
+        <hr/>
+        <aside id="links"></aside>
+        <br/>
+        <p id="lastModified"></p>
+      </section>
+    </article>
+
+    <footer>
+      <aside id="contents"></aside>
+    </footer>
+
+    <script src="../readme/script.js" async></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+      $("#one").load("ulolli.html");
+      $("#two").load("dldtdd.html");
+      $("#three").load("counters.html");
+    });
+
+    document.addEventListener('readystatechange', (event) => {
+      if (event.target.readyState === 'interactive') {
+      let lastModified = document.querySelector('#lastModified');
+      lastModified.innerHTML =
+      'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+    }
+
+    else if (event.target.readyState === 'complete') {
+      function random(min, max) {
+        const num = Math.floor(Math.random() * (max - min + 1)) + min;
+        return num;
+      }
+
+      function randomRGB() {
+        let getRGB = `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
+        return getRGB;
+      }
+
+      const bgAll = document.querySelectorAll('body');
+      for (const bgItem of bgAll) {
+        bgItem.style.background = randomRGB();
+      }
+
+      const randomRGBbgAll = document.querySelectorAll('#nav a');
+      for (const randomRGBbg of randomRGBbgAll) {
+        randomRGBbg.addEventListener('click', function(event) {
+          const bgSectionAll = document.querySelectorAll('body');
+          for (const bgSection of bgSectionAll) {
+            bgSection.style.background = randomRGB();
+          }
+        });
+      }
+    }
+  });
+  </script>
+</body>
+</html>

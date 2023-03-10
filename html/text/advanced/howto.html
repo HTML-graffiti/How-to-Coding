@@ -1,0 +1,245 @@
+<section id="one" class="readme">
+  <h1 id="title">
+    Advanced Text | Hypertext Markup Language
+  </h1>
+  <h2>テキストの基礎 に書かれた HTML の他にも、テキストの書式設定のための多くの要素があります。</h2>
+  <hr/>
+  <h3>
+    <i>連絡先のマークアップ</i>
+    <br/>
+    <font><code><</code>address<code>></code></font>
+  </h3>
+  <p>
+    HTML が 連絡先 (住所、 URL、メールアドレス、電話番号、ソーシャルメディアのアカウント、地理上の座標など) を提供していることを示します。
+  </p>
+  <address class="address">
+    <font><a href="mailto:"></a></font>
+    <font><a href="tel:"></a></font>
+  </address>
+  <pre>
+a[href^='mailto']::before {
+  content: '📧 ';
+}
+
+a[href^='tel']::before {
+  content: '📞 ';
+}
+  </pre>
+  <h3>
+    <i>日付と時刻をマークアップ</i>
+    <br/>
+    <font><code><</code>time<code>></code></font>
+  </h3>
+  <p>
+    時間と日付を機械可読形式でマークアップするための要素
+    <br/>
+    <i>datetime 属性を使用して、機械可読な形式の日付を記述します。</i>
+  </p>
+  <p>
+    <time class="time">
+      <font>2018-07-07</font>">
+      グレゴリオ暦の正確な日付
+    </time>
+    <br/>
+    <time class="time">
+      <font>20:00</font>">
+      24 時間制の時刻
+    </time>
+    <br/>
+    <time class="time">
+      <font>2018-07-07T20:00:00</font>">
+      日付と時刻
+    </time>
+  </p>
+  <p>
+    この要素は、機械可読な形式で日付や時刻を表現するためのものです。<br/>
+    例えばユーザーエージェントが、ユーザーのカレンダーにイベントの予定情報を提供することに役立てることができます。
+  </p>
+  <br/>
+  <h3>
+    <i>関心のある文字列のマーク</i>
+    <br/>
+    <font><code><</code>mark<code>></code></font>
+  </h3>
+  <p>
+    周囲の文脈の中で目立たせたり強調したりする文字列
+    <br/>
+    <i>興味のある部分が見つかったときに、蛍光ペンを使ってマークするようなものだと考えてください。</i>
+  </p>
+  <mark class="mark">
+    <font>マークの背景色は、CSS background プロパティで指定できます。</font>
+  </mark>
+  <pre>
+mark {
+  background: yellow;
+}
+  </pre>
+</section>
+
+<section id="two" class="readme">
+  <h3>
+    <i>ブロック引用</i>
+    <br/>
+    <font><code><</code>blockquote<code>></code></font>
+  </h3>
+  <p>
+    段落・複数の段落・リストなど、ブロックレベルでテキストを引用する
+    <br/>
+    <i>cite 属性の中に引用元を指す URL を記載します。</i>
+  </p>
+  <h3>
+    <i>インライン引用</i>
+    <br/>
+    <font><code><</code>q<code>></code></font>
+  </h3>
+  <p>
+    段落区切りをまたがない短い引用
+    <br/>
+    <i>多くのブラウザーでは、文字列を引用符で囲むように実装します。</i>
+  </p>
+  <hr/>
+  <pre>
+<<font>blockquote cite="引用元URL"</font>>
+
+<<font>q</font>><q>インライン引用</q><<font>/q</font>>
+
+<<font>cite</font>><cite>引用元のタイトル</cite><<font>/cite</font>>
+
+<<font>/blockquote</font>>
+  </pre>
+  <mark class="mark">
+    <code>インライン引用要素の引用符は、擬似クラス ::before ::after で指定できます。</code>
+  </mark>
+  <pre>
+q::before {
+  content: "☯️ ";
+}
+
+q::after {
+  content: " ☯️";
+}
+  </pre>
+  <hr/>
+  <p style="text-align:center;">~~~</p>
+  <hr/>
+  <h3>
+    <i>略語や頭字語</i>
+    <br/>
+    <font><code><</code>abbr<code>></code></font>
+  </h3>
+  <p>
+    title 属性で、略語の完全形または説明を提供します。
+  </p>
+  <pre>
+<span class="abbr_element"><font><abbr title="Cascading Style Sheets">CSS</abbr></font></span>
+<span class="abbr_element"><font><abbr title="HyperText Markup Language">HTML</abbr></font></span>
+  </pre>
+  <mark class="mark">
+    <code>略語要素がホバー状態のとき、要素の後にタイトル属性の文字列を表示する CSS</code>
+  </mark>
+  <pre>
+abbr:hover::after {
+  content: ' (' attr(title) ')';
+  font-size: 75%;
+}
+  </pre>
+  <hr/>
+  <h3>
+    <i>定義要素</i>
+    <br/>
+    <font><code><</code>dfn<code>></code></font>
+  </h3>
+  <p>
+    定義句や文の文脈の中で定義している用語
+    <br/>
+    <i>dfn 要素の使用については、完全に明らかになっていない側面がいくつかあります。</i>
+  </p>
+  <pre>
+<span class="dfn_element"><font><dfn>HTML Definition element</dfn></font></span>
+  </pre>
+  <mark class="mark">
+    <code>title 属性がある場合、値が定義される用語とみなされます。</code><br/>
+    <code>id 属性をつけた場合は、 a 要素を使用してそこにリンクすることができます。</code>
+  </mark>
+  <hr/>
+</section>
+
+<section id="three" class="readme">
+  <h3>
+    <i>文書への編集を表す</i>
+    <br/>
+    <font><code><</code>ins<code>></code></font>
+    <font><code><</code>del<code>></code></font>
+  </h3>
+  <p>
+    文書に追加されたテキストの範囲・文書から削除された文字列の範囲を表します。
+    <br/>
+    <i>例えば、「変更の追跡」や、ソースコードの差分情報を描画するときに使用します。</i>
+  </p>
+  <hr/>
+  <h3>
+    <i>打ち消し線を引いた文字列</i>
+    <br/>
+    <font><code><</code>s<code>></code></font>
+  </h3>
+  <p>要素はすでに適切または正確ではなくなった事柄を表現します。</p>
+  <hr/>
+  <br/>
+  <font>
+    文書の修正を示す場合は <del>del</del> と <ins>ins</ins>
+    文章に打ち消し線を描写する場合は
+    <s>s</s>
+    が適切です。
+  </font>
+  <hr>
+  <mark class="mark">
+    <code>追加された文字列・削除済み文字列をスタイリングする CSS</code>
+  </mark>
+  <pre>
+del {
+  text-decoration: line-through;
+  background-color: #fbb;
+  color: #555;
+}
+
+ins {
+  text-decoration: none;
+  background-color: #d4fcbc;
+}
+  </pre>
+  <hr/>
+  <p style="text-align:center;">~~~</p>
+  <hr/>
+  <h3>
+    <i>コンピューターのコードを表現する</i>
+    <br/>
+    <font><code><</code>code<code>></code></font>
+    行内コード要素
+    <br/>
+    <font><code><</code>pre<code>></code></font>
+    整形済みテキスト要素
+    <br/>
+    <font><code><</code>var<code>></code></font>
+    変数要素
+    <br/>
+    <font><code><</code>kbd<code>></code></font>
+    キーボード入力要素
+    <br/>
+    <font><code><</code>samp<code>></code></font>
+    サンプル出力要素
+  </h3>
+  <p>
+    これらは、HTMLにコンピュータのコードをマークアップするために利用できる要素です。<br/>
+    <i>例えば、HTML 内に CSSやJavaScript・HTMLコードを文字列として表示する際に使用します。</i>
+  </p>
+  <hr/>
+  <h3>
+    <i>コンテンツの断片を機械可読な翻訳にリンク</i>
+    <br/>
+    <font><data class="data">値">内容</data></font>
+  </h3>
+  <p>
+    value属性の値に、要素の内容を機械可読な形式で指定します。<br/>
+    <i>例えば、商品にそれぞれの商品番号も結びつけるなどの際に使用します。</i>
+  </p>
+</section>

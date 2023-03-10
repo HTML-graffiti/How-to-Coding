@@ -1,0 +1,31 @@
+a[href^='mailto']::before {
+  content: '📧 ';
+}
+
+a[href^='tel']::before {
+  content: '📞 ';
+}
+
+q::before {
+  content: "☯️ ";
+}
+
+q::after {
+  content: " ☯️";
+}
+
+.readme abbr:hover::after {
+  content: ' (' attr(title) ')';
+  font-size: 75%;
+}
+
+.readme del {
+  text-decoration: line-through;
+  background-color: #fbb;
+  color: #555;
+}
+
+.readme ins {
+  text-decoration: none;
+  background-color: #d4fcbc;
+}

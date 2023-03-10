@@ -1,0 +1,28 @@
+#flexOl {
+  display: flex;
+  overflow: auto;
+  width: 100%;
+  min-height: 75vh;
+}
+
+#flexOl li {
+  box-sizing: border-box;
+  padding: 2vh 2vw;
+  width: 100%;
+  list-style: decimal inside;
+  mix-blend-mode: screen;
+}
+
+#flexOl li::marker {
+  font-size: 0;
+  color: #fff;
+  transition: 0.5s;
+}
+
+#flexOl li:hover::marker {
+  font-size: 250%;
+}
+
+#howto pre {
+  margin: 1rem 0;
+}

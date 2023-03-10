@@ -1,0 +1,124 @@
+<h2>
+  <i>条件によって実行する命令文を定義する</i><br/>
+  <code class="red">if...else</code>
+</h2>
+<p><code><code class="red">if</code> (条件式) {</code></p>
+<p><code>// 条件が一致する場合に実行する文</code></p>
+<p><code>} <code class="red">else</code> {</code></p>
+<p><code>// それ以外の場合に実行する文</code></p>
+<p><code>}</code></p>
+<p>
+  if につづく () 内に、
+  <code class="red">比較演算子</code>
+  を使って
+  <font>条件式</font>
+  を記述します。
+</p>
+<pre>
+<font class="red">===</font> <i> 厳密な等価 (右辺と左辺が厳密に同一の値であるかを判定)</i>
+<font class="red">!==</font> <i> 厳密な不等 (右辺と左辺が厳密に同一の値ではないことを判定)</i>
+<font class="red"><</font> <i> 小なり (左辺の値が右辺の値より小さいこととを判定)</i>
+<font class="red">></font> <i> 大なり (左辺の値が右辺の値より大きいことを判定)</i>
+<font class="red"><=</font> <i> 以下なり (左辺の値が右辺の値以下であることを判定)</i>
+<font class="red">>=</font> <i> 以上なり (左辺の値が右辺の値以上であることを判定)</i>
+</pre>
+<br/>
+<p>
+  <code class="red">else if</code> キーワードを使って、
+  <code class="red">if...else</code>
+   に追加の条件を繋ぐ方法があります。<br/>
+  <i>追加の選択肢は if() { ... } と else { ... } の間に記述します。</i>
+</p>
+<p><code>if (条件式) {</code></p>
+<p><code>}</code> <font><code class="red">else if</code> (条件式) {</font></p>
+<p><font>// 条件が一致する場合に実行する文</font></p>
+<p><font>}</font> <code>else {</code></p>
+<p><code>}</code></p>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>
+  <button onclick="yourAnsewer()">confirm()</button><br/>
+  confirm 関数で呼び出した
+  <font>質問の回答が もし <code>OK</code></font>
+  <code class="red">if (myAnswer === true)</code> なら
+  <code>I'm OK! とアラート</code>を表示し、
+  <font>回答が <code class="red">それ以外</code>(false)</font>
+  <code class="red">else</code> なら
+  <code>I'm CANCEL!  とアラート</code>を表示する
+</p>
+<hr/>
+<pre class="script"> type="text/javascript">
+
+'use strict'
+
+function yourAnsewer() {
+  <code>let myAnswer = <code class="red">confirm('Are you OK or CANCEL ?')</code></code>
+  <font>if (<code class="red">myAnswer === true</code>)</font> {
+    <code>alert( "I'm OK!" )</code>
+  } <font class="red">else {</font>
+    <code>alert( "I'm CANCEL!" )</code>
+  }
+}
+
+</pre>
+
+
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>
+  <button onclick="yourAge()">prompt()</button><br/>
+  prompt 関数で呼び出した
+  <font>入力フィールドが もし <code>キャンセル</code></font>
+  <code class="red">if (myAge === null)</code> された場合は、
+  <code>Top Secret! とアラート</code> を表示し、
+  <font><code>0以下 (未記入)</code></font>
+  <code class="red">else if (myAge <= 0)</code> だった場合は、
+  <code>In Utero とアラート</code>を表示し、
+  <font><code>それ以外</code></font>
+  <code class="red">else</code> の場合は、
+  <code>その値を含むアラート</code>を表示する
+</p>
+<hr/>
+<pre class="script"> type="text/javascript">
+
+'use strict'
+
+function yourAge() {
+  <code>let myAge = <code class="red">prompt('How old are you?', 0)</code></code>
+  <font>if (<code class="red">myAge === null</code>)</font> {
+    <code>alert( "Top Secret!" )</code>
+  } <font class="red">else if (myAge <= 0) {</font>
+    <code>alert( 'In Utero' )</code>
+  <font class="red">} else {</font>
+    <code>alert( `I'm ${myAge} years old!` )</code>
+  <font class="red">}</font>
+}
+
+</pre>
+<hr/>
+
+<script type="text/javascript" defer>
+  'use strict'
+
+  function yourAnsewer() {
+    let myAnswer = confirm('Are you OK or CANCEL ?')
+    if (myAnswer === true) {
+      alert( "I'm OK!" );
+    } else {
+      alert( "I'm CANCEL!" );
+    }
+  }
+
+  function yourAge() {
+    let myAge = prompt('How old are you?', 0)
+    if (myAge === null) {
+      alert( "Top Secret!" );
+    } else if (myAge <= 0) {
+      alert( 'In Utero' );
+    } else {
+      alert( `I'm ${myAge} years old!` );
+    }
+  }
+</script>

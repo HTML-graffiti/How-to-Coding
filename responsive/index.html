@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="../html/elements.css">
+  <link rel="stylesheet" href="../readme/style.css" />
+  <link rel="stylesheet" href="../js/event/hidden.css" />
+  <link rel="stylesheet" href="flex.css" />
+  <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 550px)" />
+  <link rel="stylesheet" href="pc.css" media="screen and (min-width: 550px)" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+
+  #flex_full {
+    min-height: 70vh;
+  }
+
+  #contents,
+  #links {
+    margin: 0.5rem;
+  }
+
+  #contents::before {
+    content:'関連記事';
+    font-size: 90%;
+    font-weight: 500;
+  }
+
+  #links::before {
+    content:'参考記事';
+    font-size: 75%;
+  }
+
+  #contents::before,
+  #links::before {
+    display: block;
+    margin: 0.25rem;
+    text-decoration: underline;
+  }
+
+  </style>
+</head>
+
+<body>
+  <button id="js-button"><b></b></button>
+
+  <h1>Responsive Web Design | How to Coding</h1>
+  <br/>
+  <p class="meta">name="<font color="blue">viewport</font>" content="<font color="blue">width=device-width, initial-scale=1.0</font>"</p>
+  <p class="link">rel="stylesheet" href="mobile.css" media="<font color="blue">screen and (max-width: 550px)</font>"</p>
+  <p class="link">rel="stylesheet" href="pc.css" media="<font color="blue">screen and (min-width: 550px)</font>"</p>
+
+  <pre id="flex_full" class="stylesheet"></pre>
+
+  <p class="script">type="text/javascript"><br/>
+    <font color="blue">if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))</font>
+    {
+      <br/>redirect: window.location.replace("mobile.html");
+      <br/>
+    }
+    <br/>
+  </p>
+
+  <article id="hidden">
+    <nav id="contents"></nav>
+    <br/>
+    <section id="howto" class="readme"></section>
+    <br/>
+    <aside id="links"></aside>
+  </article>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    $("#flex_full").load("flex.html");
+    $("#howto").load("howto.html");
+  })
+
+  const button = document.querySelector('#js-button');
+  const body = document.querySelector('body');
+
+  button.addEventListener('click', event => {
+    button.classList.toggle('close');
+    body.classList.toggle('open');
+  });
+  </script>
+</body>
+</html>

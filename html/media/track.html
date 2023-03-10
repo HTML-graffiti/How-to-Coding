@@ -1,0 +1,58 @@
+<article class="readme">
+  <details>
+    <summary>
+      <font>track</font>
+      <i>埋め込みテキストトラック要素</i>
+    </summary>
+    <p>自動的に処理される字幕など、時間指定されたテキストトラックを指定します。</p>
+    <p>
+      <font color="blue">default</font>
+      デフォルトのトラックリストを指定<br/>
+      <i>この属性はメディア要素ごとに 1つの track 要素のみで使用できます。</i><br/>
+      <br/>
+      <font color="blue">kind</font>
+      どのように使用するトラックであるか<br/>
+      subtitles
+      <i>字幕・翻訳</i><br/>
+      captions
+      <i>音声の翻訳・非言語情報</i><br/>
+      descriptions
+      <i>テキストによるコンテンツの説明</i><br/>
+      chapters
+      <i>チャプタータイトル</i><br/>
+      metadata
+      <i>トラック情報 (ユーザーには見えません。)</i><br/>
+      <br/>
+      <font color="blue">label</font>
+      テキストトラックのタイトル<br/>
+      <i>テキストトラックを一覧表示する際にブラウザーが使用する、ユーザーに見せるタイトルです。</i><br/>
+      <br/>
+    </p>
+    <p>
+      <i>track要素は、audio および video の小要素として使用できます。</i>
+    </p>
+    <br/>
+  </details>
+
+  <hr/>
+
+<pre class="track_element" style="font-size:111%; line-height:150%;">
+ default
+<font color="blue">src</font>="ファイル名<font color="blue">.vtt</font>"
+<font color="blue">srclang</font>="言語タグ"
+<font color="blue">kind</font>="キーワード値"
+<font color="blue">label</font>="ラベル名"
+</pre>
+
+  <br/>
+  <p>
+    <font color="blue">TRACK</font>
+    要素の
+    <font color="blue">src</font>
+    属性に、テキストトラックに使用する
+    <font color="blue">vtt</font>
+    形式のWebVTTファイルのURLを指定し、
+    <font color="blue">srclang</font>
+    属性の値に、テキストトラックの言語を示す言語タグを設定します。
+  </p>
+</article>

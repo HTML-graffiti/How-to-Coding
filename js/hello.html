@@ -1,0 +1,84 @@
+<h2>
+  JavaScriptの基本<br/>
+  <i>JavaScript は、ウェブサイトに対話性を追加するプログラミング言語です。</i>
+</h2>
+<p>ページの内容・スタイルを動的に操作したり、フォームへのデータ入力を行ったり、ウェブページを活かすために、ネットスケープコミュニケーションズのブレンダン・アイクによって開発されました。</p>
+<hr/>
+<br/>
+<p><code>HTMLにJavaScriptを適用する</code></p>
+<font class="script"><code class="red">src="ファイル名.js"</code>></font><br/>
+<font color="red"><<code>/body</code>></font>
+<p>script要素をbody要素内に追加し、src属性の値に外部ファイルのパスを指定</p>
+<hr/>
+<font class="script">
+  <code class="red"> type="text/javascript"</code>><br/>
+  <code class="red">/* JavaScript を記述 */</code><br/>
+</font>
+<p>JavaScriptを実行したい任意の部分にscript要素を挿入</p>
+<hr/>
+<br/>
+<h3>
+  <font>JavaScriptを実行する</font><br/>
+  ジャバスクリプトファイル <code class="red">.js</code>
+  または、<code class="red">script</code>要素内に、
+  宣言・値・関数（イベント）・条件文
+  などのコマンド(命令文)を記述して、JavaScriptを実行します。
+</h3>
+<pre class="script">src="ファイル名.js" <code class="red">async</code>></pre>
+<hr/>
+<pre class="script">type="text/javascript" <code class="red">defer</code>>
+
+<font class="red">"use strict"</font>
+
+<code class="red">/* JavaScript を記述 */</code>
+
+</pre>
+<hr/>
+<p>
+  <font>async と defer</font><br/>
+  script要素の開始タグに async または defer 属性を設定すると、
+  スクリプトのブロッキングの問題を回避できます。<br/>
+  <i>ページのその他の部分（DOM など）と並行して、ブラウザーにスクリプトを別スレッドでダウンロードするよう指示するので、読み取りの過程で読み取りプロセスがブロックされることはなくなります。</i>
+</p>
+<p>
+  <code>async</code><br/>
+  <i>ダウンロードが完了し次第、すぐに実行されます。 これはページをブロックし、特定の実行順序を保証することはありません。</i>
+</p>
+<p>
+  <code>defer</code><br/>
+  <i>出現順に読み込まれ、すべての読み込みが終了した後に実行されます。</i>
+</p>
+<hr/>
+<p>
+  <font>use strict</font><br/>
+  スクリプトの先頭に、"use strict" もしくは 'use strict'
+  と記述があれば、
+  すべてのスクリプトは <code>最新の方法</code> で動作します。
+</p>
+<hr/>
+<br/>
+<h3>
+  JavaScriptにコメントを残す<br/>
+  <font>
+    <code class="red">//</code>
+    <i>この行の // 以降がコメントです。</i>
+  </font>
+</h3>
+<h3>
+  <font>
+    <code class="red">/*</code><br/>
+    <i>コメントが複数行になる場合に / と * でコメントを囲みます。</i><br/>
+    <code class="red">*/</code>
+  </font>
+</h3>
+<p>
+  JavaScriptが複雑になった場合、何についての文なのかを説明するコメントを残すと便利です。<br/>
+  <i>コメントは どの場所にも書くことができ、それらを無視するので実行には影響しません。</i>
+</p>
+<hr/>
+<br/>
+<p><code>JavaScriptが無効の場合</code></p>
+<font class="noscript_tag"><br/>
+  <i class="red">/* スクリプトに対応していない場合に表示する HTML を記述 */</i><br/>
+</font>
+<hr/>

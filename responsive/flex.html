@@ -1,0 +1,38 @@
+<code>
+#flex_full {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+</code>
+
+<code>
+<font color="blue">@media (orientation: landscape)</font> {
+  #flex_full {
+    flex-flow: row;
+    align-items: center;
+    justify-content: start;
+    overflow: auto;
+  }
+
+  #flex_full * {
+    margin: 0 2.5rem;
+  }
+
+}
+</code>
+
+<code>
+<font color="blue">@media (orientation: portrait)</font> {
+  #flex_full {
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  #flex_full * {
+    margin: 0;
+  }
+
+}
+</code>

@@ -1,0 +1,115 @@
+<h2>
+  Event<br/>
+  <i>ウェブサイトに対話性を追加するには、イベントが必要です。</i>
+</h2>
+<p>イベントは、ブラウザーの中で起きていることを検出し、その応答としてコードを実行するコード構造です。</p>
+<p>
+  最も分かりやすい例は、
+  要素をクリックしたときに実行する
+  <code>click イベント</code>
+  です。
+</p>
+<hr/>
+<p>
+  <font>EventTarget.addEventListener('<code class="blue">click</code>',</font> event => {
+    <br/>// JavaScriptを記述<br/>
+  });
+</p>
+<p>
+  <font>EventTarget.<code class="blue">onclick</code></font> = function() {
+    <br/>// JavaScriptを記述<br/>
+  }
+</p>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<h3>
+  <i>EventTarget.addEventListener ('イベント名', 関数);</i><br/>
+  <code>イベントハンドラー・イベントリスナー</code>
+</h3>
+<p>
+  イベントには様々な型があり、
+  <code class="blue">addEventListener()</code>
+  を使って DOM 要素に ベントハンドラー（イベント名と実行する文）
+  を設定します。
+</p>
+<hr/>
+<p>
+  <font><a href="mouse/">MouseEvent</a></font><br/>
+  mousemove – マウスが移動したときに実行<br/>
+  mousedown / mouseup – マウスボタンを押した/離したときに実行<br/>
+  mouseenter / mouseleave – マウスカーソルが要素へ来た/出たときに実行
+</p>
+<p>
+  <font><a href="touch/">TouchEvent</a></font><br/>
+  touchmove – タッチ感応面で点が移動したときに実行<br/>
+  touchstart / touchend – タッチ感応面に点が配置/取り除かれたときに実行<br/>
+  touchcancel – タッチポイントが実装固有の方法で中断されたときに実行
+</p>
+<p>
+  <font><a href="key/">KeyboardEvent</a></font><br/>
+  keydown – キーが押された状態のときに実行<br/>
+  keyup – キーが離されたときに実行
+</p>
+<p>
+  <font><a href="../scroll/">Scroll & WheelEvent</a></font><br/>
+  scroll – スクロールされたときに実行<br/>
+  wheel – マウスホイールを動かしたときに実行
+</p>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>
+  <font>readystatechange</font><br/>
+  文書の読み込み状態によってイベントを実行
+</p>
+<p>
+  <code>loading</code><br/>
+  文書の読み込み中に実行する
+</p>
+<p>
+  <code>interactive</code><br/>
+  文書の読み込みは完了したが、CSS・画像・動画などのサブリソースがまだ読み込み中の状態で実行する
+</p>
+<p>
+  <code>complete</code><br/>
+  文書とすべてのサブリソースの読み込みが完了した状態で実行する
+</p>
+<br/>
+<pre>
+<code>document.addEventListener('<font class="blue">readystatechange</font>',</code> event => {
+
+  if (<code>event.target.readyState === '<font class="blue">loading</font>'</code>) {
+    // 文書の読み込み中に実行する
+  }
+
+  else if (<code>event.target.readyState === '<font class="blue">interactive</font>'</code>) {
+    // window.addEventListener('DOMContentLoaded', event => { DOMContentLoaded イベントと同じ状態 })
+  }
+
+  else if (<code>event.target.readyState === '<font class="blue">complete</font>'</code>) {
+    // window.addEventListener('load', event => { load イベントと同じ状態 })
+  }
+
+});
+</pre>
+<pre>
+<code>document.<font class="blue">onreadystatechange</font></code> = function() {
+  <code>switch (<font class="blue">document.readyState</font>)</code> {
+
+    <code>case <font class="blue">"loading"</font>:</code>
+    // 文書の読み込み中に実行する
+    break;
+
+    <code>case <font class="blue">"interactive"</font>:</code>
+    // window.addEventListener('DOMContentLoaded', event => { このイベントと同じ状態 })
+    break;
+
+    <code>case <font class="blue">"complete"</font>:</code>
+    // window.addEventListener('load', event => { このイベントと同じ状態 })
+    break;
+
+  }
+};
+</pre>
+<hr/>

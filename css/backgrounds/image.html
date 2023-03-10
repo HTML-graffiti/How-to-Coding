@@ -1,0 +1,77 @@
+<h2>
+  <code>背景画像</code><br/>
+  <i>
+    background プロパティの値に
+    <code>url("画像URL")</code>
+    を設定し、要素に1つ以上の背景画像を適用します。
+  </i>
+</h2>
+<br/>
+<p>
+  複数の画像を背景に指定する場合は、url() を <code>,</code> (カンマ) で区切ります。<br/>
+  <i>最初に記述した背景が一番上になり、後に記述した背景がその下になるように重ね合わされます。</i>
+</p>
+<br/>
+<p style="text-align:center;">~~~</p>
+<br/>
+<h2>
+  background: <code>初期位置/サイズ</code> url("画像URL");
+</h2>
+<br/>
+<p>
+  <i>初期位置を設定する値</i><br/>
+  <font>top</font> 画像を上辺揃えにします。<br/>
+  <font>bottom</font> 画像を下辺揃えにします。<br/>
+  <font>left</font> 画像を左辺揃えにします。<br/>
+  <font>right</font> 画像を右辺揃えにします。<br/>
+  <font>center</font> 画像を中央揃えにします。<br/>
+</p>
+<br/>
+<p>
+  <i>サイズを設定する値</i><br/>
+  <font>cover</font> 画像を切り取ったり縦横比を崩したりすることなく、要素内で可能な限り大きくします。<br/>
+  <font>contain</font> 画像をコンテナーいっぱいにできるだけ大きく拡大縮小し、必要に応じて画像を引き伸ばします。<br/>
+  <font>auto</font> 背景画像の本来の比率が維持されるように、対応する方向に拡大縮小します。<br/>
+  <font>幅</font> 数値 または %値 で画像の幅を指定します。<br/>
+  <font>幅 高さ</font> 数値 または %値 を 半角スペースで区切り、幅 高さ の順にサイズを指定します<br/>
+</p>
+<br/>
+<p style="text-align:center;">~~~</p>
+<br/>
+<h2>
+  background: url("画像URL") <code>繰り返し</code> <code>位置</code>;
+</h2>
+<br/>
+<p>
+  <i>繰り返しを設定する値</i><br/>
+  <font>repeat</font> （既定値）画像は描画領域全体を覆うのに必要な回数だけ、繰り返し描画されます。<br/>
+  <font>space</font> 画像は指定された方向に切り抜きなしで敷き詰められる回数だけ繰り返されます。<br/>
+  <font>round</font> 利用できる空間が広がるにつれ、繰り返し描画された画像は、画像をもう1つ追加するだけの余裕 (残りの空間 ≧ 画像の幅の半分) ができるまで、 (隙間を空けずに) 伸長されます。<br/>
+  <font>no-repeat</font> 画像は繰り返し描画されません (したがって背景画像描画領域が完全に埋め尽くされるとは限りません)。<br/>
+  <font>repeat-x</font> 横方向にのみ、画像を繰り返し描画します。<br/>
+  <font>repeat-y</font> 縦方向にのみ、画像を繰り返し描画します。<br/>
+</p>
+<br/>
+<p>
+  <i>位置を設定する値</i><br/>
+  <font>scroll</font> （既定値）背景は要素自身に対する相対位置で固定されます。<br/>
+  <font>fixed</font> 背景が固定され、スクロールしても動きません。<br/>
+  <font>local</font> スクロール可能なエリアを基準に、背景画像は要素の内容とともにスクロールします。<br/>
+</p>
+<br/>
+<p style="text-align:center;">~~~</p>
+<br/>
+<h3>例)</h3>
+<br/>
+<pre>
+/* 背景画像を 中央揃え/可能な限り大きく 繰り返さず 固定 する */
+
+<code>background {center/cover url(001.gif) no-repeat fixed}</code>
+
+
+/* 1つ目の画像を 左揃え/55pxサイズで 切り抜きなしで敷き詰められる回数だけ繰り返す */
+/* 2つ目の画像を 右揃え/要素いっぱいにできるだけ大きく拡大縮小 全体を覆うのに必要な回数だけ繰り返す */
+
+<code>left/55px url(logo.png)　space, right/contain url(001.gif)</code>
+
+</pre>

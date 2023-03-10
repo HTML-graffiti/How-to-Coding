@@ -1,0 +1,100 @@
+{
+  "title" : "CSS Gradients",
+  "description" : "CSS グラデーション",
+  "author" : "Cascading Style Sheets",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "CSS",
+      "name" : "色",
+      "url" : "/coding/css/colors/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "背景",
+      "url" : "/coding/css/backgrounds/",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "Using CSS gradients",
+      "name" : "CSS グラデーションの使用",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Images/Using_CSS_gradients",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "background-image",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/background-image",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "border-image",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/border-image",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "<code><</code>gradient<code>></code>",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/gradient",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "gradient",
+      "name" : "linear-gradient()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/gradient/linear-gradient",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "gradient",
+      "name" : "radial-gradient()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/gradient/radial-gradient",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "gradient",
+      "name" : "repeating-linear-gradient()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/gradient/repeating-linear-gradient",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "gradient",
+      "name" : "repeating-radial-gradient()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/gradient/repeating-radial-gradient",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "gradient",
+      "name" : "conic-gradient()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/gradient/conic-gradient",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "gradient",
+      "name" : "conic-gradient()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/gradient/conic-gradient",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ]
+}

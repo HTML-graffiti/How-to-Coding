@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../cascading.css" />
+  <link rel="stylesheet" href="../../readme/style.css" />
+  <link rel="stylesheet" href="../pseudo-classes/lightbox.css" />
+  <style type="text/css">
+
+  body {
+    background: #fff;
+  }
+
+  #title {
+    filter: invert();
+    mix-blend-mode: difference;
+  }
+
+  .buttons b,
+  #lastModified {
+    color:#000;
+    text-shadow:
+    -1px -1px 0 #fff,
+    1px 1px 0 #fff,
+    2px 2px 0 #fff;
+  }
+
+  .ruleset {
+    background: #fff;
+    box-sizing: border-box;
+    border: solid 0.2rem #000;
+  }
+
+  .ruleset .selif {
+    font-family: "NewYork", serif;
+    font-style: italic;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .ruleset .sans,
+  .ruleset .selif::after {
+    font-family: "San Francisco";
+    font-style: normal;
+  }
+
+  #lastModified,
+  #contents::before,
+  #links::before,
+  code {
+    font-family: "ipag", monospace;
+  }
+
+  .ruleset .sans,
+  code {
+    font-size: 125%;
+  }
+
+  #contents::before {
+    content:'関連記事';
+    font-size: 90%;
+  }
+
+  #links::before {
+    content:'参考資料';
+    font-size: 75%;
+  }
+
+  #contents::before,
+  #links::before {
+    text-decoration: underline;
+    display: block;
+    margin: 0.5rem 0.25rem;
+  }
+
+  #lastModified {
+    line-height: 125%;
+    padding: 0.5rem 0;
+    word-break: break-word;
+  }
+
+  .howto,
+  .ruleset::before {
+    display:none;
+  }
+
+  </style>
+
+</head>
+<body>
+  <nav>
+    <p>
+      <a href="#one"><<code>color</code>></a>
+      <a href="#two"><code>image: url()</code></a>
+      <a href="#three"><<code>gradient</code>></a>
+    </p>
+    <p>
+      <a href="#four"><<code>blend-mode</code>></a>
+    </p>
+    <p>
+      <a href="#etc">関連記事</a>
+    </p>
+  </nav>
+  <h1 id="title">Backgrounds | Cascading Style Sheets</h1>
+  <main class="ruleset">
+    <i>CSS</i>
+    <p class="declaration">
+      <b class="selif">background</b>
+      <span id="backgroundOutput" class="sans">#fff</span>
+    </p>
+    <p class="declaration">
+      <b class="selif">mix-blend-mode</b>
+      <span id="blendOutput" class="sans">normal</span>
+    </p>
+  </main>
+
+  <section class="buttons">
+    <p>
+      <b>color</b>
+      <button class="special" onclick="setBackground('crimson');">crimson</button>
+      <button class="special" onclick="setBackground('#12345678');">#12345678</button>
+      <button class="special" onclick="setBackground('rgba(50,50,50,0.5)');">rgba(50,50,50,0.5)</button>
+      <button class="special" onclick="setBackground('hsl(50 50% 50%)');">hsl(50 50% 50%)</button>
+    </p>
+  </section>
+
+  <section class="buttons">
+    <p>
+      <b>image</b>
+      <button class="special" onclick="setBackground('url(001.gif)');">url(001.gif)</button>
+      <button class="special" onclick="setBackground('center/cover url(001.gif) no-repeat fixed');">center/cover url(001.gif) no-repeat fixed</button>
+      <button class="special" onclick="setBackground('left/55px url(logo.png) space, right/contain url(001.gif)');">left/55px url(logo.png) space, right/contain url(001.gif)</button>
+    </p>
+  </section>
+
+  <section class="buttons">
+    <p>
+      <b>mix-blend-mode</b>
+      <button class="special" onclick="setMixBlendMode('difference');">difference</button>
+      <button class="special" onclick="setMixBlendMode('exclusion');">exclusion</button>
+      <button class="special" onclick="setMixBlendMode('multiply');">multiply</button>
+      <button class="special" onclick="setMixBlendMode('screen');">screen</button>
+      <button class="special" onclick="setMixBlendMode('darken');">darken</button>
+      <button class="special" onclick="setMixBlendMode('lighten');">lighten</button>
+      <button class="special" onclick="setMixBlendMode('overlay');">overlay</button>
+      <button class="special" onclick="setMixBlendMode('hard-light');">hard-light</button>
+      <button class="special" onclick="setMixBlendMode('soft-light');">soft-light</button>
+      <button class="special" onclick="setMixBlendMode('color-dodge');">color-dodge</button>
+      <button class="special" onclick="setMixBlendMode('color-burn');">color-burn</button>
+      <button class="special" onclick="setMixBlendMode('hue');">hue</button>
+      <button class="special" onclick="setMixBlendMode('saturation');">saturation</button>
+      <button class="special" onclick="setMixBlendMode('color');">color</button>
+      <button class="special" onclick="setMixBlendMode('luminosity');">luminosity</button>
+    </p>
+  </section>
+  <section class="buttons">
+    <p>
+      <b>gradient</b>
+      <button class="special" onclick="setBackground('linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 255, 255))');">linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 255, 255))</button>
+      <button class="special" onclick="setBackground('repeating-linear-gradient(bisque, thistle 10vh)');">repeating-linear-gradient(bisque, thistle 10vh)</button>
+      <button class="special" onclick="setBackground('radial-gradient(circle at 100%, #333, #333 50%, #fff 75%, #333 75%)');">radial-gradient(circle at 100%, #333, #333 50%, #fff 75%, #333 75%)</button>
+      <button class="special" onclick="setBackground('repeating-radial-gradient(crimson, skyblue 50px)');">repeating-radial-gradient(crimson, skyblue 50px)</button>
+      <button class="special" onclick="setBackground('radial-gradient(ellipse at top right, tan, transparent), radial-gradient(ellipse at bottom left, forestgreen, transparent)');">radial-gradient(ellipse at top right, tan, transparent), radial-gradient(ellipse at bottom left, forestgreen, transparent)</button>
+      <button class="special" onclick="setBackground('conic-gradient(aqua, firebrick) fixed');">conic-gradient(aqua, firebrick) fixed</button>
+    </p>
+  </section>
+
+  <p id="lastModified"></p>
+
+  <article class="lightbox" id="one">
+    <a href="#" class="close"></a>
+    <section id="colorsCSS" class="readme translate_center">
+      <h2><code>背景色</code></h2>
+      <p>background プロパティの値に色の値を設定し、要素の背景色を指定できます。</p>
+      <p><i>色の値については <a href="/coding/css/colors/">Colors</a> を参照ください。</i></p>
+      <br/>
+      <p style="text-align:center;">~~~</p>
+      <br/>
+      <h2><code>named-color</code></h2>
+      <p>色名は、非常に単純で理解しやすい色を指定する値です。</p>
+      <p><i>大文字と小文字の区別をしない識別子で、特定の色を表します。</i></p>
+      <br/>
+      <p style="text-align:center;">~~~</p>
+      <br/>
+      <section id="rgba"></section>
+      <p style="text-align:center;">~~~</p>
+      <br/>
+      <section id="hsl"></section>
+    </section>
+  </article>
+
+  <article class="lightbox" id="two">
+    <a href="#" class="close"></a>
+    <section id="image" class="readme translate_center"></section>
+  </article>
+
+  <article class="lightbox" id="three">
+    <a href="#" class="close"></a>
+    <section id="gradient" class="readme translate_center"></section>
+  </article>
+
+  <article class="lightbox" id="four">
+    <a href="#" class="close"></a>
+    <section id="mix" class="readme translate_center"></section>
+  </article>
+
+  <aside class="lightbox" id="etc">
+    <a href="#" class="close"></a>
+    <section id="contents" class="translate_center"></section>
+    <section id="links" class="fixed_bottom"></section>
+  </aside>
+
+  <script>
+  let lastModified = document.querySelector('#lastModified');
+
+  lastModified.innerHTML =
+  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="script.js" defer></script>
+  <script type="text/javascript">
+  $(function() {
+    $("#rgba").load("../colors/rgba.html");
+    $("#hsl").load("../colors/hsl.html");
+    $("#image").load("image.html");
+    $("#mix").load("blend-mode.html");
+    $("#gradient").load("gradient.html");
+  })
+  </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<hgroup>
+  <h2><i>height</i></h2>
+  <p>
+    <b>height: 値;</b>
+    は、要素の幅を設定する宣言(CSS プロパティ)です。
+    <br/>
+    <i>
+      最小幅を設定する <b>min-height</b> と
+      最大幅を設定する <b>max-height</b> は、
+      height を上書きします。
+    </i>
+  </p>
+</hgroup>
+<br/>
+<pre>
+/* length 値 */
+height: 250px;
+height: 50vw;
+height: 75vh;
+
+/* キーワード値 */
+height: -webkit-fill-available;
+
+</pre>
+<hr/>
+<br/>
+<section>
+  <h3>
+    <u>length 値</u><br/>
+    height: <font color="red">50vw</font>;<br/>
+    height: <font color="red">75vh</font>;<br/>
+  </h3>
+  <br/>
+  <p>
+    <i>CSS には、長さ (length) の値を表わす単位が数多くあります。</i>
+  </p>
+  <br/>
+  <p>
+    <font>vw</font> は、ページを閲覧するウインドウの横幅によって変動する 相対的な値です。<br/>
+    <i>例えば、50vw は ウインドウの横幅の 半分 の寸法です。</i><br/>
+  </p>
+  <br/>
+  <p>
+    <font>vh</font> は、ページを閲覧するウインドウの高さによって変動する 相対的な値です。<br/>
+    <i>例えば、75vh は ウインドウの高さの 75% の寸法です。</i><br/>
+  </p>
+  <br/>
+</section>
+<br/>
+<section>
+  <h3>
+    <a href="https://allthingssmitty.com/2020/05/11/css-fix-for-100vh-in-mobile-webkit/">CSS fix for 100vh in mobile WebKit</a><br/>
+    height: <font color="red">-webkit-fill-available</font>;<br/>
+  </h3>
+  <br/>
+  <pre>
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  min-height: -webkit-fill-available;
+}
+
+main {
+  max-height: -webkit-fill-available;
+}
+  </pre>
+  <p>
+    <i>モバイル端末用:フルサイズの高さを設定するウェブキットの値</i>
+  </p>
+  <p>
+    高さの値に <font>-webkit-fill-available</font> を 設定すると
+    モバイル用ブラウザーのナビゲーションバーを除く、ウインドウの高さのフルサイズを指定できます。<br/>
+    <i>
+      モバイル端末ではブラウザーのナビゲーションバーがページ下部を覆い隠すため、
+      100vh が うまく動作しません。
+    </i>
+  </p>
+  <br/>
+</section>
+<br/>
+<p style="text-align:center;">/* ~~~ */</p>
+<br/>
+<section>
+  <h4>
+    <i>要素の内容がブロックボックスに収まらない場合の動作設定</i><br/>
+    overflow: <font color="red">visible</font>;<br/>
+    overflow: <font color="red">hidden</font>;<br/>
+    overflow: <font color="red">scroll</font>;<br/>
+    overflow: <font color="red">auto</font>;<br/>
+  </h4>
+  <br/>
+  <p>
+    <i>
+      overflow: 値; で 上下左右すべてのオーバーフロー（はみ出し）を設定。<br/>
+      左右のはみ出しは <font>overflow-x</font>、
+      上下のはみ出しは <font>overflow-y</font> で個別に設定<br/>
+      overflow: scroll hidden; のように、
+      overflow-x(左右) overflow-y(上下) の値を設定し、一括指定も可能です。
+    </i>
+  </p>
+</section>
+<br/>
+<p style="text-align:center;">/* ~~~ */</p>
+<br/>
+<section>
+  <h4>
+    overflow-wrap: <font color="red">normal</font>;<br/>
+    overflow-wrap: <font color="red">break-word</font>;<br/>
+    overflow-wrap: <font color="red">anywhere</font>;<br/>
+  </h4>
+  <br/>
+  <p>
+    インライン要素に対して、テキストが行ボックスをあふれないように、ブラウザーが分割できない文字列の途中で改行を入れるかどうかの設定を適用します。<br/>
+  </p>
+</section>

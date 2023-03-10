@@ -1,0 +1,56 @@
+<p>
+  カウンターの使用<br/>
+  <font>counter-reset</font>: カウンター名 初期値;<br/>
+  <i>カウンターを使用するには、最初に必ず counter-reset プロパティで値を初期化する必要があります。</i>
+</p>
+<p>
+  増加または減少<br/>
+  <font>counter-increment</font>: カウンター名 カウンタに加える値;<br/>
+  <i>カウンタに加える値の既定値は 1 です。数値に - をつければ減少カウントが設定できます。</i>
+</p>
+<p>
+  カウンターの表示<br/>
+  <font>counter</font>: "文字" <font>counter(</font>カウンター名, リストスタイル名<font>)</font> "文字";<br/>
+  <i>contentには任意のテキスト文字を設定できます。ラテン文字以外は Unicode エスケープシーケンスでエンコードする必要があります。</i>
+</p>
+<pre>
+/* <font>id="this"</font> 要素内の section 要素にカウンターを使用する */
+
+#this {
+  <font>counter-reset</font>: sections;
+}
+
+#this section::before {
+  <font>counter-increment</font>: sections;
+  <font>content</font>: "第 " <font>counter(</font> sections, cjk-ideographic <font>)</font> " 章: ";
+}
+</pre>
+<hr/>
+<p>
+  カウンタースタイル<br/>
+  <font>CSS Counter Styles</font><br/>
+  <i>独自のカウンタースタイル (リストのマーク) を定義する</i>
+</p>
+<pre>
+/* <font>@counter-style</font> 独自のカウンタースタイルを定義する */
+
+@counter-style <code>スタイル名</code> {
+
+<code>system</code>: キーワード値;
+<code>symbols</code>: "カウンター記号";
+<code>prefix</code>: "カウンター記号の前に表示する記号";
+<code>suffix</code>: "カウンター記号の後ろに表示する記号";
+
+<code>range</code>: "スタイルが適用されるカウンター値の範囲";
+<code>negative</code>: "負の値の場合の表現";
+
+<code>pad</code>: 最小限の数値 "symbol";
+<code>additive-symbols</code>: integer [0,∞] symbol;
+
+<code>speak-as</code>: キーワード値;
+
+<code>fallback</code>: 代替リストスタイル;
+
+}
+</pre>
+<hr/>

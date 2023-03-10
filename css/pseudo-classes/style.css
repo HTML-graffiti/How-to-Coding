@@ -1,0 +1,60 @@
+#nav .css {
+  display: none;
+}
+
+body {
+  transition: background 1s;
+}
+
+#title,
+main {
+  color: #fff;
+  text-shadow: 1px 1px 0 #000;
+}
+
+ol {
+  color: #fff;
+  text-shadow: 1px 1px 0 #000;
+  list-style: inside none;
+}
+
+main {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0.5rem;
+  word-break: break-word;
+}
+
+.lightbox pre {
+  margin: 1rem 0;
+}
+
+b:empty {
+  color: #fff;
+  background: deeppink;
+  font-size: 200%;
+}
+
+.a_element::before {
+  content: '<a href="';
+}
+
+.a_tag::before {
+  content: '<a>';
+}
+
+.a_tag::after,
+.a_element::after {
+  content: '</a>';
+}
+
+.em_element::before {
+  content: '<em>';
+}
+
+.em_element::after {
+  content: '</em>';
+}

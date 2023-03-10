@@ -1,0 +1,436 @@
+{
+  "title" : "How to Coding",
+  "description" : "これまでに制作したウェブページ、コーディングのヒント・便利なツールなど",
+  "author" : "creative-community.space",
+  "email" : "pehu@creative-community.space",
+  "type" : "website",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "___",
+
+  "contents" : [
+  ],
+
+  "links" : [
+    {
+      "date" : "How To Code",
+      "name" : "An opinionated approach to making websites.",
+      "url" : "https://howtocode.club/",
+      "language" : "etc",
+      "status" : "hints"
+    },
+    {
+      "date" : "Web design as architecture",
+      "name" : "This website is built as a single HTML document.",
+      "url" : "http://www--arc.com/",
+      "language" : "etc",
+      "status" : "hints"
+    },
+    {
+      "date" : "Very Interactive",
+      "name" : "It archives materials for web visitors and students past, present, & future.",
+      "url" : "https://veryinteractive.net/",
+      "language" : "etc",
+      "status" : "hints"
+    },
+    {
+      "date" : "Sunday Sites",
+      "name" : "Sunday Sites started in 2020 as John Bengtsson’s graduation project for Beck­mans College of Design.",
+      "url" : "https://sundaysites.cafe/",
+      "language" : "etc",
+      "status" : "hints"
+    },
+    {
+      "date" : "Publish Something Online",
+      "name" : "How to make things that live on the internet.",
+      "url" : "https://publishsomething.online/",
+      "language" : "etc",
+      "status" : "hints"
+    },
+    {
+      "date" : "HTML Energy",
+      "name" : "HTML energy is all around us and in this very website.",
+      "url" : "https://html.energy/",
+      "language" : "etc",
+      "status" : "hints"
+    },
+    {
+      "date" : "HUB WORLD",
+      "name" : "Aidan, Quinlan, Design, Graphic.",
+      "url" : "https://aidanquinlan.net/hub/",
+      "language" : "etc",
+      "status" : "hints"
+    },
+    {
+      "date" : "Handmade Web",
+      "name" : "A teaching portal for classes taught by Aidan Quinlan.",
+      "url" : "https://handmade-web.net/",
+      "language" : "etc",
+      "status" : "hints"
+    },
+    {
+      "date" : "✿ REJUVENATE ✿ THE ✿ NET ✿",
+      "name" : "teaching practice by emma rae bruml norton",
+      "url" : "https://rejuvenatethe.net/",
+      "language" : "etc",
+      "status" : "hints"
+    },
+    {
+      "date" : "fruitful.school",
+      "name" : "fruitful.school is an independently-run learning initiative for making “fruitful websites” founded in 2020 by laurel schwulst and john provencher.",
+      "url" : "https://fruitful.school/",
+      "language" : "etc",
+      "status" : "hints"
+    },
+    {
+      "date" : "How to make a website for your creative work",
+      "name" : "This guide is part of Putting your work out there, Being online",
+      "url" : "https://thecreativeindependent.com/guides/how-to-make-a-website-for-your-creative-work/",
+      "language" : "etc",
+      "status" : "hints"
+    },
+    {
+      "date" : "My website is a shifting house next to a river of knowledge. What could yours be?",
+      "name" : "By Laurel Schwulst",
+      "url" : "https://laurelschwulst.github.io/my-website-is-a-shifting-house/",
+      "language" : "etc",
+      "status" : "hints"
+    },
+    {
+      "date" : "HTML Living Standard",
+      "name" : "by Web Hypertext Application Technology Working Group",
+      "url" : "https://html.spec.whatwg.org/multipage/",
+      "language" : "hmtl",
+      "status" : "basic"
+    },
+    {
+      "date" : "W3Schools Online Web Tutorials",
+      "name" : "コードを学ぶ 世界最大の Web 開発者サイト",
+      "url" : "https://www.w3schools.com/",
+      "language" : "etc",
+      "status" : "basic"
+    },
+    {
+      "date" : "とほほのWWW入門",
+      "name" : "Copyright (C) 1996-2022 杜甫々",
+      "url" : "https://www.tohoho-web.com/",
+      "language" : "etc",
+      "status" : "basic"
+    },
+    {
+      "date" : "DevDocs",
+      "name" : " API Documentation",
+      "url" : "https://devdocs.io/",
+      "language" : "etc",
+      "status" : "library"
+    },
+    {
+      "date" : "HTMLの要素",
+      "name" : "The HTML Element",
+      "url" : "https://momdo.github.io/html/semantics.html",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "HTMLの基本",
+      "name" : "Overview: Getting started with the web",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/HTML_basics",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML を始めよう",
+      "name" : "Overview: Introduction to HTML",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/HTML/Introduction_to_HTML/Getting_started",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Basics of HTML",
+      "name" : "Video by Laurel Schwulst",
+      "url" : "https://youtu.be/CkzbI1Tv_rQ",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML リファレンス",
+      "name" : "HTML Reference",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Reference",
+      "language" : "html",
+      "status" : "library"
+    },
+    {
+      "date" : "htmlreference.io",
+      "name" : "A free guide to HTML",
+      "url" : "https://htmlreference.io/",
+      "language" : "html",
+      "status" : "library"
+    },
+    {
+      "date" : "Complete List of HTML Tags",
+      "name" : "By Christopher Kielty",
+      "url" : "https://eastmanreference.com/complete-list-of-html-tags",
+      "language" : "html",
+      "status" : "library"
+    },
+    {
+      "date" : "HTML",
+      "name" : "PDF by Aidan Quinlan",
+      "url" : "https://handmade-web.net/spring22/assets/html.pdf",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML Basics",
+      "name" : "by Software for People",
+      "url" : "https://docs.google.com/presentation/d/1KDDbJaRVJe2kQQ2U_Wwdq7RobrsrbN2UeX9xqKrdLyo/edit?usp=sharing",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTMLの要素",
+      "name" : "文書メタデータ",
+      "url" : "https://momdo.github.io/html/semantics.html#document-metadata",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML 入門",
+      "name" : "head って何？HTML のメタデータ",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Google ウェブマスターツール",
+      "name" : "Google 検索での掲載順位を改善する",
+      "url" : "https://search.google.com/search-console/about",
+      "language" : "etc",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTMLの要素",
+      "name" : "セクション",
+      "url" : "https://momdo.github.io/html/sections.html",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "コンテンツカテゴリー",
+      "name" : "Content categories",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Content_categories",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "要素",
+      "name" : "コンテンツの種類",
+      "url" : "https://momdo.github.io/html/dom.html#kinds-of-content",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Every element is",
+      "name" : "Every element is an html",
+      "url" : "https://whykatherine.github.io/every-element-is-an-html/",
+      "language" : "html",
+      "status" : "library"
+    },
+    {
+      "date" : "HTMLの要素",
+      "name" : "リンク",
+      "url" : "https://momdo.github.io/html/links.html",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "ウェブ入門",
+      "name" : "ハイパーリンクの作成",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "カスケーディングスタイルシート (Cascading Style Sheets)",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "ウェブ関連用語の定義",
+      "url" : "https://developer.mozilla.org/ja/docs/Glossary/CSS",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS の基本",
+      "name" : "Overview: Getting started with the web",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/CSS_basics",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS とは何か",
+      "name" : "What is CSS?",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/First_steps/What_is_CSS",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS リファレンス",
+      "name" : "CSS Reference",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/Reference",
+      "language" : "css",
+      "status" : "library"
+    },
+    {
+      "date" : "cssreference.io",
+      "name" : "A free visual guide to CSS",
+      "url" : "https://cssreference.io/",
+      "language" : "css",
+      "status" : "library"
+    },
+    {
+      "date" : "CSS入門 Web開発",
+      "name" : "Copyright © 2015 Yoshihiko Kato",
+      "url" : "https://fromkato.com/webdev/css",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "Basics of CSS",
+      "name" : "Video by Laurel Schwulst",
+      "url" : "https://youtu.be/BUZIaTHm_oE",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "W3C",
+      "name" : "Cascading Style Sheets",
+      "url" : "https://www.w3.org/Style/CSS/current-work",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "Kill Styles",
+      "name" : "A simple tool to quickly show what any website(read as: most sites...) would look like with no CSS running.",
+      "url" : "https://kill-styles.matt-wolff.com/",
+      "language" : "css",
+      "status" : "tools"
+    },
+    {
+      "date" : "CSS",
+      "name" : "CSS セレクター",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/Building_blocks/Selectors",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "ボックスモデル",
+      "name" : "The box model",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/Building_blocks/The_box_model",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "CSS ボックスモデル",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Box_Model",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS によるサイズ設定",
+      "name" : "Sizing items in CSS",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "要素のはみ出し（オーバーフロー）",
+      "name" : "Overflowing content",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/Building_blocks/Overflowing_content",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS レイアウト入門",
+      "name" : "Introduction to CSS layout",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/CSS_layout/Introduction",
+      "language" : "css",
+      "status" : "basic"
+    },
+    {
+      "date" : "Chrome DevTools の使い方",
+      "name" : "DevTools (デベロッパーツール、開発者ツール) とは、Webブラウザに付属している開発ツールです。",
+      "url" : "https://murashun.jp/article/performance/chrome-devtools.html",
+      "language" : "etc",
+      "status" : "tools"
+    },
+    {
+      "date" : "HTML.cafe",
+      "name" : "html.cafe - a realtime HTML editor and host Edit the html in the top panel, see the result here.",
+      "url" : "https://html.cafe/",
+      "language" : "html",
+      "status" : "tools"
+    },
+    {
+      "date" : "Glitch",
+      "name" : "The friendly community where everyone builds the web",
+      "url" : "https://glitch.com/",
+      "language" : "etc",
+      "status" : "tools"
+    },
+    {
+      "date" : "Neocities",
+      "name" : "Create your own free website. Unlimited creativity, zero ads.",
+      "url" : "https://neocities.org/",
+      "language" : "etc",
+      "status" : "tools"
+    },
+    {
+      "date" : "基本的なテキストとフォントの装飾",
+      "name" : "CSS によるテキストの装飾の習得に向けて旅を始めましょう。CSS によるテキストの装飾の習得に向けて旅を始めましょう。",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/CSS/Styling_text/Fundamentals",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS Fonts",
+      "name" : "CSS Fonts is a module of CSS that defines font-related properties and how font resources are loaded",
+      "url" : "https://devdocs.io/css/css_fonts",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS Font Stack",
+      "name" : "Web Safe and Web Font Family with HTML and CSS code.",
+      "url" : "https://www.cssfontstack.com/",
+      "language" : "css",
+      "status" : "library"
+    },
+    {
+      "date" : "全標準フォント一覧",
+      "name" : "標準で入ってると思われるフォントのリストです。日本語・英語以外の言語用のフォントも混じってます(ただしきちんと英数字が含まれるもののみ)。",
+      "url" : "https://mimi.moe.in/nmp/fonts/allfonts",
+      "language" : "css",
+      "status" : "library"
+    },
+    {
+      "date" : "Font Interceptor",
+      "name" : "Font Interceptor downloads all fonts in use on a target website. Will you use it?",
+      "url" : "https://fontinterceptor.mschfmag.com/",
+      "language" : "etc",
+      "status" : "tools"
+    },
+    {
+      "date" : "HTMLの要素",
+      "name" : "iframe要素・embed要素・bject要素",
+      "url" : "https://momdo.github.io/html/iframe-embed-object.htm",
+      "language" : "html",
+      "status" : "basic"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+.scroll section {
+  filter: blur(0.5rem);
+  padding: 1rem 2.5vw;
+}
+
+.scroll section.active {
+  transition: 2s;
+  opacity: 1;
+  filter: blur(0);
+}
+
+nav#contents a.active {
+  color: red;
+}
+
+code {
+  font-size: 111%;
+  font-style: normal;
+}
+
+button {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+button {
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+pre,
+code,
+font,
+#js-button b::after,
+#contents::before,
+#links::before {
+  font-family: "ipag", monospace;
+}
+
+#js-button b::after,
+#contents::before,
+#links::before {
+  text-decoration: underline;
+}
+
+#js-button b::after,
+#contents::before {
+  content:'Index';
+  font-size: 90%;
+  font-weight: 500;
+}
+
+#js-button.close b::after {
+  content: 'CLOSE';
+}
+
+#links::before {
+  content:'参考資料';
+  font-size: 75%;
+}
+
+#contents::before,
+#links::before {
+  display: block;
+  margin: 0.5rem 0.25rem;
+}

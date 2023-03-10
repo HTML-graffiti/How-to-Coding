@@ -1,0 +1,108 @@
+<script type="text/javascript" async>
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    const network = document.querySelector('#network');
+    network.style.display = "none"
+  }
+</script>
+
+<h1>
+  ウェブサイトにアクセスすると送信される情報
+</h1>
+<p><u>通信に必要な情報</u></p>
+<p>
+  <font>IPアドレス</font> あなたの使用しているグローバルIPアドレス<br/>
+  <font>ポート番号</font> 通信しているポート情報<br/>
+</p>
+<p>安心・安全なインターネット環境からウェブサイトにアクセスされているかを、ウェブサイトの制作者やウェブサイトを公開（管理）しているサーバーが確認するための仕組みとして、通信に必要な情報が送信されます。</p>
+<hr/>
+<p><u>ブラウザ等情報</u></p>
+<p>
+  <font>ユーザエージェント</font> あなたの使用しているOSやブラウザ、使用機器などの情報<br/>
+  <font>サポートMINEタイプ</font> ブラウザがサポートするメディアタイプと優先順位<br/>
+  <font>ブラウザの言語</font> ブラウザがサポートする言語と優先順位<br/>
+  <font>エンコード方式</font> ブラウザがサポートする圧縮形式<br/>
+</p>
+<p>使用するデバイスに応じてウェブサイトの表示を最適化できるように、ブラウザは自動的にさまざまな情報を送信します。</p>
+<hr/>
+<p>
+  <font>これらは、個人情報を直接含むような情報ではなく、インターネットに接続する際に必ず送信しなければいけない情報です。</font>
+</p>
+
+<br/>
+
+<section id="network">
+  <p>
+    <a href="https://developer.mozilla.org/ja/docs/Web/API/Network_Information_API" target="_blank" rel="noreferrer">Network Information API</a><br/>
+  </p>
+  <p><font>ネットワーク情報 API</font></p>
+  <pre>
+const connectionInfo = <font>navigator.connection</font>;
+
+if (connectionInfo !== undefined) {
+  const init = function() {
+    document.getElementById('type').textContent = connectionInfo<font>.type</font>;
+    document.getElementById('effectiveType').textContent = connectionInfo<font>.effectiveType</font>;
+    document.getElementById('downlink').textContent = connectionInfo<font>.downlink</font> + ' Mb/s';
+    document.getElementById('downlinkMax').textContent = connectionInfo<font>.downlinkMax</font> + ' Mb/s';
+    document.getElementById('rtt').textContent = connectionInfo<font>.rtt</font> + ' ms';
+  };
+  init();
+
+  if ('onchange' in connectionInfo) {
+    connectionInfo.addEventListener('change', init);
+  } else if ('ontypechange' in connectionInfo) {
+    connectionInfo.addEventListener('typechange', init);
+  }
+}
+  </pre>
+  <table class="size">
+    <tbody>
+      <tr>
+        <td>NetworkInformation.type</td>
+        <td>ネットワーク接続の種類 (bluetooth・cellular・ethernet・none・wifi・wimax・other・unknown)</td>
+        <td id="type" class="nowValue"></td>
+      </tr>
+      <tr>
+        <td>NetworkInformation.effectiveType</td>
+        <td>ネットワーク接続の有効な種類 (slow-2g・2g・3g・4g)</td>
+        <td id="effectiveType" class="nowValue"></td>
+      </tr>
+      <tr>
+        <td>NetworkInformation.downlink</td>
+        <td>回線の下り速度 (インターネット上からデータを受け取る際の通信)</td>
+        <td id="downlink" class="nowValue"></td>
+      </tr>
+      <tr>
+        <td>NetworkInformation.downlinkMax</td>
+        <td>下り最大速度 | 1秒間に送受信可能なデータ量を表す単位 メガビット毎秒 (Mb/s)</td>
+        <td id="downlinkMax" class="nowValue"></td>
+      </tr>
+      <tr>
+        <td>NetworkInformation.rtt</td>
+        <td>推定有効ラウンドトリップ時間 (通信相手に信号を発信してから、応答が帰ってくるまでにかかる時間)</td>
+        <td id="rtt" class="nowValue"></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<script type="text/javascript">
+  const connectionInfo = navigator.connection;
+
+  if (connectionInfo !== undefined) {
+    const init = function() {
+      document.getElementById('type').textContent = connectionInfo.type;
+      document.getElementById('effectiveType').textContent = connectionInfo.effectiveType;
+      document.getElementById('downlink').textContent = connectionInfo.downlink + ' Mb/s';
+      document.getElementById('downlinkMax').textContent = connectionInfo.downlinkMax + ' Mb/s';
+      document.getElementById('rtt').textContent = connectionInfo.rtt + ' ms';
+    };
+    init();
+
+    if ('onchange' in connectionInfo) {
+      connectionInfo.addEventListener('change', init);
+    } else if ('ontypechange' in connectionInfo) {
+      connectionInfo.addEventListener('typechange', init);
+    }
+  }
+</script>
