@@ -48,19 +48,17 @@
 
 <script type="text/javascript">
   // Add .randomRGBcolor
-
   const newRGBcolorAll = document.querySelectorAll('#hello u, #contents a, #links a');
   for (const newRGBcolor of newRGBcolorAll) {
     newRGBcolor.classList.add("randomRGBcolor")
   }
 
   // Add .randomRGBbg
-
   const newRGBbgAll = document.querySelectorAll('#hello a');
   for (const newRGBbg of newRGBbgAll) {
     newRGBbg.classList.add("randomRGBbg")
   }
-
+  
   // 2 つの値の間にある整数の乱数を返す
   function random(min, max) {
     const num = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -81,7 +79,6 @@
     randomRGBcolor.addEventListener('mouseleave', function(event) {
       event.target.style.color = "";
     });
-
   }
 
   const randomRGBbgAll = document.querySelectorAll('.randomRGBbg');
@@ -93,5 +90,4 @@
       event.target.style.backgroundColor = "";
     });
   }
-
 </script>
