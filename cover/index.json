@@ -39,15 +39,15 @@
     },
     {
       "date" : "CSS",
-      "name" : "回転・拡大縮小・傾斜・移動",
-      "url" : "/coding/css/transform/",
+      "name" : "CSS レイアウト",
+      "url" : "/coding/css/layout/",
       "language" : "css",
       "status" : "guide"
     },
     {
       "date" : "CSS",
-      "name" : "CSS レイアウト",
-      "url" : "/coding/css/layout/",
+      "name" : "回転・拡大縮小・傾斜・移動",
+      "url" : "/coding/css/transform/",
       "language" : "css",
       "status" : "guide"
     }
