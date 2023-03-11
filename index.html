@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
 
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script src="index.js" async></script>
   <script src="readme/index.js" defer></script>
   <script src="js/online/script.js" defer></script>
@@ -20,6 +19,8 @@
 <body id="cover" ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
 
   <main id="left">
+    <section id="hello" class="data_show"></section>
+    <br/>
     <section id="contents"></section>
   </main>
 
@@ -27,5 +28,12 @@
     <p><font id="status">(Unknown)</font></p>
     <section id="links"></section>
   </article>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    $("#hello").load("hello.html");
+  });
+  </script>
 </body>
 </html>
