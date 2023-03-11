@@ -291,13 +291,6 @@
     },
     {
       "date" : "Web API",
-      "name" : "Network Information API | ネットワーク情報 API",
-      "url" : "/coding/yourinfo/",
-      "language" : "api",
-      "status" : "tools"
-    },
-    {
-      "date" : "Web API",
       "name" : "Battery Status API | バッテリー状態 API",
       "url" : "/coding/js/window/battery.html",
       "language" : "api",
