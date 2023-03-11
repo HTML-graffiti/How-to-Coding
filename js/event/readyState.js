@@ -1,3 +1,21 @@
+document.onreadystatechange = function() {
+
+  switch (document.readyState) {
+    case "loading":
+    // 文書の読み込み中に実行する
+    break;
+
+    case "interactive":
+    break;
+
+    case "complete":
+    const coverH1 = document.querySelector('#main h1');
+    coverH1.innerHTML = "JavaScript | Event<br/><code>addEventListener()</code>";
+    break;
+  }
+
+};
+
 function log(msg) {
   const logElem = document.querySelector("#log");
 
@@ -45,23 +63,3 @@ document.body.addEventListener('keydown', keyEvent);
 document.body.addEventListener('keyup', keyEvent);
 
 document.body.addEventListener('wheel', wheelEvent);
-
-
-document.onreadystatechange = function() {
-
-  switch (document.readyState) {
-    case "loading":
-    // 文書の読み込み中に実行する
-    break;
-
-    case "interactive":
-
-    break;
-
-    case "complete":
-    const coverH1 = document.querySelector('#main h1');
-    coverH1.innerHTML = "JavaScript | Event<br/><code>addEventListener()</code>";
-    break;
-  }
-
-};
