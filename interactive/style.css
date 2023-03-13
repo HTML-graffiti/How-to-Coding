@@ -84,6 +84,7 @@ summary,
   width: 100%;
 }
 
+button,
 summary,
 .select select,
 .radio label {
@@ -144,7 +145,7 @@ summary,
 
 
 #modal::backdrop {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 #modal {
@@ -163,8 +164,8 @@ summary,
   margin: 0.25rem 0.25rem 0.5rem;
 }
 
-.select:after,
-.radio:after {
+.select::after,
+.radio::after {
   position: absolute;
   right: 0;
   top: 0;
@@ -174,12 +175,12 @@ summary,
   pointer-events: none;
 }
 
-.select:after {
+.select::after {
   content: "Font Size";
   pointer-events: none;
 }
 
-.radio:after {
+.radio::after {
   content: "Theme";
 }
 
