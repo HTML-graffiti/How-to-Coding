@@ -9,6 +9,7 @@ html {
 body {
   padding: 0.5rem;
   margin: 0;
+  min-height: -webkit-fill-available;
 }
 
 @font-face {
