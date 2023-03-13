@@ -53,7 +53,6 @@ hr {
   border: none;
 }
 
-
 details,
 dialog,
 button,
@@ -122,12 +121,10 @@ summary,
   transition: transform 0.25s;
 }
 
-
 /* 要素を開いたときにフォルダマークを開く */
 .folder[open] summary::after {
   transform: skew(-12.5deg);
 }
-
 
 /* summary b 要素をフォルダマークに重ならないようにする */
 .folder summary b {
@@ -212,8 +209,6 @@ summary,
 .radio input[type="radio"] {
   display: none;
 }
-
-
 
 
 /* Light theme */
