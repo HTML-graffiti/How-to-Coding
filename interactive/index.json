@@ -88,6 +88,13 @@
       "url" : "https://developer.mozilla.org/ja/docs/Web/API/HTMLDialogElement",
       "language" : "js",
       "status" : "guide"
+    },
+    {
+      "date" : "@media",
+      "name" : "prefers-color-scheme",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/@media/prefers-color-scheme",
+      "language" : "css",
+      "status" : "guide"
     }
   ]
 }
