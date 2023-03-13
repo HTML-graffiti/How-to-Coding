@@ -371,6 +371,13 @@
     },
     {
       "date" : "Cascading Style Sheets",
+      "name" : "Transform | Animation",
+      "url" : "/coding/css/transform/animation/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Cascading Style Sheets",
       "name" : "custom properties | CSS カスタムプロパティ",
       "url" : "/coding/css/custom/",
       "language" : "css",

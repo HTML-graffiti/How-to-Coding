@@ -1,5 +1,5 @@
 {
-  "title" : "DETAILS SUMMARY",
+  "title" : "DETAILS SUMMARY DIALOG",
   "description" : "対話的要素 | 詳細折りたたみ要素・概要明示要素・ダイアログ",
   "author" : "Hypertext Markup Language",
   "email" : "pehu@creative-community.space",
@@ -9,6 +9,41 @@
   "src" : "ページを代表する画像のURL",
 
   "contents" : [
+    {
+      "date" : "HTML",
+      "name" : "アンカー要素とID属性",
+      "url" : "/coding/html/href/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "埋め込み要素",
+      "url" : "/coding/html/iframe-embed-object/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "フォーム関連要素",
+      "url" : "/coding/form/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "擬似要素",
+      "url" : "/coding/css/pseudo-elements/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "API",
+      "name" : "Web Storage API",
+      "url" : "/coding/js/web-storage/",
+      "language" : "api",
+      "status" : "guide"
+    }
   ],
 
   "links" : [
@@ -38,6 +73,20 @@
       "name" : "ダイアログ要素",
       "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/dialog",
       "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "::backdrop",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/::backdrop",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML DOM API",
+      "name" : "HTMLDialogElement",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/HTMLDialogElement",
+      "language" : "js",
       "status" : "guide"
     }
   ]

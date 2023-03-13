@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="folder.css">
+</head>
+<body>
+  <button id="openModal">Dialog</button>
+
+  <dialog id="modal">
+    <p>ダイアログ要素は、ダイアログボックスや、消すことができるアラート等の対話的コンポーネントを表します。</p>
+    <p><small>open属性が設定されたダイアログ要素は、使用できる状態で表示されます。</small></p>
+    <hr/>
+    <p>ダイアログ要素の操作には、JavaScriptを使用します。</p>
+    <p>
+      showModal()<br/>
+      <small>ダイアログ要素をモーダルとして表示する</small>
+    </p>
+    <pre>
+const dialogModal = document.querySelector('#modal');
+const openModal = document.querySelector('#openModal');
+
+openModal.addEventListener('click', function onModal() {
+  if (typeof dialogModal.showModal === "function") {
+    dialogModal.showModal();
+  } else {
+    alert("The dialog API is not supported by this browser");
+  }
+});
+    </pre>
+    <hr/>
+    <p>
+      ::backdrop<br/>
+      <small>ダイアログ要素が showModal() で開いている時の背景色を指定</small>
+    </p>
+    <pre>
+dialog::backdrop {
+  background: rgba(0,0,0,0.5);
+}
+    </pre>
+    <hr/>
+    <p>
+      show()<br/>
+      <small>ダイアログ要素をモードレスに表示する</small>
+    </p>
+    <pre>
+要素.addEventListener('click', () => {
+  ダイアログ要素.show();
+});
+    </pre>
+    <hr/>
+    <p>
+      close()<br/>
+      <small>ダイアログ要素を閉じる</small>
+    </p>
+    <pre>
+const closeButton = document.querySelector('#closeButton');
+closeButton.addEventListener('click', () => {
+  dialogModal.close();
+});
+    </pre>
+    <hr/>
+    <p>
+      openCheck()<br/>
+      <small>ダイアログの開閉によって文を実行する</small>
+    </p>
+    <pre>
+function openCheck(ダイアログ要素) {
+  if (ダイアログ要素.open) {
+    /* 要素が開いた方に切り替わった */
+
+  } else {
+    /* 要素が閉じた方に切り替わった */
+
+  }
+};
+    </pre>
+    <hr/>
+    <button id="closeButton">Close</button>
+  </dialog>
+
+  <details class="folder" open>
+    <summary><b>対話的要素</b></summary>
+    <p>ユーザとのやり取りのために固有にデザインされた要素</p>
+    <p><small>detail・summary・dialog 以外に、アンカー要素 (a)・埋め込み要素 (embed・iframe)・フォーム関連要素 (button・label・select・textarea) も、このカテゴリーに属します。</small></p>
+  </details>
+
+  <details class="folder">
+    <summary><b>Details & Summary</b></summary>
+    <p>details 要素は、ウィジェットが「開いた」状態になった時のみ情報が表示される折りたたみウィジェットを作成します。</p>
+    <p><small>open属性が設定された details 要素は、開いた状態で表示されます。</small></p>
+    <hr/>
+    <p>子要素の summary 要素は、親の details 要素の開閉を切り替えるラベルになります。</p>
+    <p><small>折りたたみウィジェットはふつう、回転して開閉状態を示す小さな三角形が表示されます。</small></p>
+    <hr/>
+    <br/>
+    <p>
+      CSS<br/>
+      <small>独自のマーカーをスタイリングする</small>
+    </p>
+    <pre>
+/* デフォルトのマーカーを消す */
+
+summary {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+summary::marker,
+summary::-webkit-details-marker {
+  display: none;
+}
+
+
+/* フォルダマークをスタイリング */
+
+.folder summary::before,
+.folder summary::after {
+  content: "";
+  position: absolute;
+  border-radius: 0.25rem;
+}
+
+.folder summary::before {
+  top: 0.1rem;
+  left: 0.1rem;
+  width: 1rem;
+  height: 1.7rem;
+  filter: brightness(0.75);
+}
+
+.folder summary::after {
+  top: 0.4rem;
+  left: 0.1rem;
+  width: 2rem;
+  height: 1.5rem;
+  transform: skew(0);
+  transform-origin: bottom left;
+  transition: transform 0.25s;
+}
+
+
+/* 要素を開いたときにフォルダマークを開く */
+
+.folder[open] summary::after {
+  transform: skew(-12.5deg);
+}
+
+
+/* summary b 要素をフォルダマークに重ならないようにする */
+
+.folder summary b {
+  display: block;
+  font-size: 100%;
+  font-weight: 500;
+  line-height: 200%;
+  padding-left: 3rem;
+}
+    </pre>
+    <hr/>
+    <p>
+      JavaScript<br/>
+      <small>ウィジェットの開閉によって文を実行する</small>
+    </p>
+    <pre>
+const detailsAll = document.querySelectorAll('details');
+for (details theme of detailsAll) {
+  details.addEventListener("toggle", (event) => {
+    if (details.open) {
+      /* 要素が開いた方に切り替わった */
+
+    } else {
+      /* 要素が閉じた方に切り替わった */
+
+    }
+  });
+};
+    </pre>
+  </details>
+
+  <details class="folder">
+    <summary><b>Web Storage API</b></summary>
+    <p>
+      <small>Font Size & Theme</small><br/>
+      テキストサイズ・カラーテーマを切り替える
+    </p>
+    <hr/>
+    <label class="select">
+      <select id="fontSize">
+        <option selected disabled>Font Size</option>
+        <option value="12px">Small</option>
+        <option value="16px" selected>Medium</option>
+        <option value="20px">Large</option>
+      </select>
+    </label>
+    <section id="theme" class="radio">
+      <input type="radio" name="theme" id="default" value="default">
+      <label for="default">OS Default</label>
+      <input type="radio" name="theme" id="light" value="light">
+      <label for="light">Light</label>
+      <input type="radio" name="theme" id="dark" value="dark">
+      <label for="dark">Dark</label>
+    </section>
+    <hr/>
+    <p><small>JavaScript</small></p>
+    <pre>
+const storage = localStorage;
+
+const fontSize = document.querySelector('#fontSize');
+if(!storage.getItem('fontSize')) {
+  populateStorage();
+} else {
+  setStyles();
+}
+
+function populateStorage() {
+  storage.setItem('fontSize', fontSize.value);
+  storage.setItem('theme', event.currentTarget.value);
+  setStyles();
+}
+
+function setStyles() {
+  const html = document.documentElement;
+  const body = document.body;
+
+  const currentSize = storage.getItem('fontSize');
+  const currentTheme = storage.getItem('theme');
+
+  fontSize.value = currentSize;
+  html.style.fontSize = currentSize;
+  body.className = currentTheme;
+}
+
+fontSize.onchange = populateStorage;
+
+const themes = document.querySelectorAll('#theme input');
+for (const theme of themes) {
+  theme.addEventListener('change', populateStorage);
+}
+    </pre>
+    <hr/>
+    <p><small>CSS</small></p>
+    <pre>
+/* Light theme */
+
+.light details,
+.light button,
+.light dialog,
+.light .select select,
+.light .radio label {
+  background: #fff;
+  color: #000;
+}
+
+.light .folder summary::before,
+.light .folder summary::after,
+.light .radio input[type="radio"]:checked+label,
+.light dialog::backdrop {
+  background: #feeea0;
+}
+
+
+/* Dark theme */
+
+.dark details,
+.dark button,
+.dark dialog,
+.dark .select select,
+.dark .radio label {
+  background: #000;
+  color: #fff;
+}
+
+.dark .folder summary::before,
+.dark .folder summary::after,
+.dark .radio input[type="radio"]:checked+label,
+.dark dialog::backdrop {
+  background: #66ccff;
+}
+
+
+/* OS Default */
+
+@media (prefers-color-scheme: light) {
+  details,
+  button,
+  dialog,
+  .select select,
+  .radio label {
+    background: #fff;
+    color: #000;
+  }
+
+  .folder summary::before,
+  .folder summary::after,
+  .radio input[type="radio"]:checked+label,
+  dialog::backdrop {
+    background: #feeea0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .default details,
+  .default button,
+  .default dialog,
+  .default .select select,
+  .default .radio label {
+    background: #000;
+    color: #fff;
+  }
+
+  .default .folder summary::before,
+  .default .folder summary::after,
+  .default .radio input[type="radio"]:checked+label,
+  .default dialog::backdrop {
+    background: #66ccff;
+  }
+}
+    </pre>
+  </details>
+
+  <details class="folder">
+    <summary><b>関連記事</b></summary>
+    <aside id="contents"></aside>
+    <aside id="links"></aside>
+  </details>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>

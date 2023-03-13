@@ -1,0 +1,41 @@
+.css-rotate {
+	position: relative;
+	user-select: none;
+	pointer-events: none;
+	margin: auto;
+	width: 90%;
+	max-width: 750px;
+	height: 75vh;
+	transform-style: preserve-3d;
+	animation: rotate 5s linear infinite;
+}
+
+.css-front {
+	background: red;
+}
+
+.css-back {
+	background: blue;
+}
+
+.css-front,
+.css-back {
+	position: absolute;
+	backface-visibility: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.css-back {
+	transform: rotateY(180deg);
+}
+
+@keyframes rotate {
+	from {
+		transform: rotateY(0deg);
+	}
+
+	to {
+		transform: rotateY(360deg);
+	}
+}

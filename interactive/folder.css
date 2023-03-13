@@ -1,0 +1,48 @@
+.select:after,
+.radio:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 75%;
+  line-height: 200%;
+  margin: 0.25rem 0.5rem;
+  pointer-events: none;
+}
+
+.select:after {
+  content: "Font Size";
+  pointer-events: none;
+}
+
+.radio:after {
+  content: "Theme";
+}
+
+.select select {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0.25rem 0;
+}
+
+.select select::-ms-expand {
+  display: none;
+}
+
+.radio {
+  margin: 0.25rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.radio label {
+  display: block;
+}
+
+.radio input[type="radio"],
+.radio label {
+  margin: 0.125rem 0.25rem 0.125rem 0;
+}
+
+.radio input[type="radio"] {
+  display: none;
+}
