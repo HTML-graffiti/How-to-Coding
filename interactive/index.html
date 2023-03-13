@@ -11,86 +11,27 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <button id="openModal">Dialog</button>
-
+  <button id="openModal">Font Size & Theme</button>
+  <hr/>
   <dialog id="modal">
-    <p>ダイアログ要素は、ダイアログボックスや、消すことができるアラート等の対話的コンポーネントを表します。</p>
-    <p><small>open属性が設定されたダイアログ要素は、使用できる状態で表示されます。</small></p>
-    <hr/>
-    <p>ダイアログ要素の操作には、JavaScriptを使用します。</p>
     <p>
-      showModal()<br/>
-      <small>ダイアログ要素をモーダルとして表示する</small>
+      <small>Web Storage API</small>
     </p>
-    <pre>
-const dialogModal = document.querySelector('#modal');
-const openModal = document.querySelector('#openModal');
-
-openModal.addEventListener('click', function onModal() {
-  if (typeof dialogModal.showModal === "function") {
-    dialogModal.showModal();
-  } else {
-    alert("The dialog API is not supported by this browser");
-  }
-});
-    </pre>
-    <hr/>
-    <p>
-      ::backdrop<br/>
-      <small>ダイアログ要素が showModal() で開いている時の背景色を指定</small>
-    </p>
-    <pre>
-#modal::backdrop {
-  background: rgba(0,0,0,0.5);
-}
-
-#modal {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  width: 75%;
-  max-width: 375px;
-  max-height: 75%;
-  overflow: auto;
-}
-    </pre>
-    <hr/>
-    <p>
-      show()<br/>
-      <small>ダイアログ要素をモードレスに表示する</small>
-    </p>
-    <pre>
-要素.addEventListener('click', () => {
-  ダイアログ要素.show();
-});
-    </pre>
-    <hr/>
-    <p>
-      close()<br/>
-      <small>ダイアログ要素を閉じる</small>
-    </p>
-    <pre>
-const closeButton = document.querySelector('#closeButton');
-closeButton.addEventListener('click', () => {
-  dialogModal.close();
-});
-    </pre>
-    <hr/>
-    <p>
-      openCheck()<br/>
-      <small>ダイアログの開閉によって文を実行する</small>
-    </p>
-    <pre>
-function openCheck(ダイアログ要素) {
-  if (ダイアログ要素.open) {
-    /* 要素が開いた方に切り替わった */
-
-  } else {
-    /* 要素が閉じた方に切り替わった */
-
-  }
-};
-    </pre>
+    <label class="select">
+      <select id="fontSize">
+        <option value="12px">Small</option>
+        <option value="16px" selected>Medium</option>
+        <option value="20px">Large</option>
+      </select>
+    </label>
+    <section id="theme" class="radio">
+      <input type="radio" name="theme" id="default" value="default">
+      <label for="default">OS Default</label>
+      <input type="radio" name="theme" id="light" value="light">
+      <label for="light">Light</label>
+      <input type="radio" name="theme" id="dark" value="dark">
+      <label for="dark">Dark</label>
+    </section>
     <hr/>
     <button id="closeButton">Close</button>
   </dialog>
@@ -98,9 +39,9 @@ function openCheck(ダイアログ要素) {
   <details class="folder" open>
     <summary><b>対話的要素</b></summary>
     <p>ユーザとのやり取りのために固有にデザインされた要素</p>
-    <p><small>detail・summary・dialog 以外に、アンカー要素 (a)・埋め込み要素 (embed・iframe)・フォーム関連要素 (button・label・select・textarea) も、このカテゴリーに属します。</small></p>
     <hr/>
     <iframe width="100%" height="300" src="//jsfiddle.net/verygois/0x61y58n/31/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+    <p><small>detail・summary・dialog 以外に、アンカー要素 (a)・埋め込み要素 (embed・iframe)・フォーム関連要素 (button・label・select・textarea) も、このカテゴリーに属します。</small></p>
   </details>
 
   <details class="folder">
@@ -198,27 +139,92 @@ for (details theme of detailsAll) {
   </details>
 
   <details class="folder">
+    <summary><b>Dialog</b></summary>
+    <p>ダイアログ要素は、ダイアログボックスや、消すことができるアラート等の対話的コンポーネントを表します。</p>
+    <p><small>open属性が設定されたダイアログ要素は、使用できる状態で表示されます。</small></p>
+    <hr/>
+    <p>ダイアログ要素の操作には、JavaScriptを使用します。</p>
+    <p>
+      showModal()<br/>
+      <small>ダイアログ要素をモーダルとして表示する</small>
+    </p>
+    <pre>
+const dialogModal = document.querySelector('#modal');
+const openModal = document.querySelector('#openModal');
+
+openModal.addEventListener('click', function onModal() {
+  if (typeof dialogModal.showModal === "function") {
+    dialogModal.showModal();
+  } else {
+    alert("The dialog API is not supported by this browser");
+  }
+});
+    </pre>
+    <hr/>
+    <p>
+      ::backdrop<br/>
+      <small>ダイアログ要素が showModal() で開いている時の背景色を指定</small>
+    </p>
+    <pre>
+#modal::backdrop {
+  background: rgba(0,0,0,0.5);
+}
+
+#modal {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 75%;
+  max-width: 375px;
+  max-height: 75%;
+  overflow: auto;
+}
+    </pre>
+    <hr/>
+    <p>
+      show()<br/>
+      <small>ダイアログ要素をモードレスに表示する</small>
+    </p>
+    <pre>
+要素.addEventListener('click', () => {
+  ダイアログ要素.show();
+});
+    </pre>
+    <hr/>
+    <p>
+      close()<br/>
+      <small>ダイアログ要素を閉じる</small>
+    </p>
+    <pre>
+const closeButton = document.querySelector('#closeButton');
+closeButton.addEventListener('click', () => {
+  dialogModal.close();
+});
+    </pre>
+    <hr/>
+    <p>
+      openCheck()<br/>
+      <small>ダイアログの開閉によって文を実行する</small>
+    </p>
+    <pre>
+function openCheck(ダイアログ要素) {
+  if (ダイアログ要素.open) {
+    /* 要素が開いた方に切り替わった */
+
+  } else {
+    /* 要素が閉じた方に切り替わった */
+
+  }
+};
+    </pre>
+  </details>
+
+  <details class="folder">
     <summary><b>Web Storage API</b></summary>
     <p>
       <small>Font Size & Theme</small><br/>
       テキストサイズ・カラーテーマを切り替える
     </p>
-    <hr/>
-    <label class="select">
-      <select id="fontSize">
-        <option value="12px">Small</option>
-        <option value="16px" selected>Medium</option>
-        <option value="20px">Large</option>
-      </select>
-    </label>
-    <section id="theme" class="radio">
-      <input type="radio" name="theme" id="default" value="default">
-      <label for="default">OS Default</label>
-      <input type="radio" name="theme" id="light" value="light">
-      <label for="light">Light</label>
-      <input type="radio" name="theme" id="dark" value="dark">
-      <label for="dark">Dark</label>
-    </section>
     <hr/>
     <p><small>JavaScript</small></p>
     <pre>
