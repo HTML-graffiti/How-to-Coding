@@ -16,10 +16,11 @@ function populateStorage() {
 }
 
 function setStyles() {
-  const currentBG = storage.getItem('bgcolor');
-  const currentColor = storage.getItem('color');
   const bgcolorAll = document.querySelectorAll('html, .bgcolor');
   const colorAll = document.querySelectorAll('.color');
+
+  const currentBG = storage.getItem('bgcolor');
+  const currentColor = storage.getItem('color');
 
   bgcolorForm.value = currentBG;
   colorForm.value = currentColor;
