@@ -142,21 +142,24 @@ summary,
 }
 
 
-dialog {
+#modal::backdrop {
+  background: rgba(0,0,0,0.5);
+}
+
+#modal {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
   width: 75%;
   max-width: 375px;
   max-height: 75%;
   overflow: auto;
 }
 
-dialog p {
+#modal p {
   font-size: 90%;
   padding: 0;
   margin: 0.25rem 0.25rem 0.5rem;
-}
-
-dialog::backdrop {
-  opacity: 0.75;
 }
 
 .select:after,

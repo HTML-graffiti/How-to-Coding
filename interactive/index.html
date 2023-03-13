@@ -40,8 +40,18 @@ openModal.addEventListener('click', function onModal() {
       <small>ダイアログ要素が showModal() で開いている時の背景色を指定</small>
     </p>
     <pre>
-dialog::backdrop {
+#modal::backdrop {
   background: rgba(0,0,0,0.5);
+}
+
+#modal {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 75%;
+  max-width: 375px;
+  max-height: 75%;
+  overflow: auto;
 }
     </pre>
     <hr/>
