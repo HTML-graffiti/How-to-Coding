@@ -220,13 +220,6 @@
       "status" : "basic"
     },
     {
-      "date" : "JavaScript",
-      "name" : "Event | イベントハンドラー",
-      "url" : "/coding/js/event/",
-      "language" : "js",
-      "status" : "basic"
-    },
-    {
       "date" : "Document Object Model",
       "name" : "Document | Web API",
       "url" : "/coding/js/document/",
@@ -246,6 +239,13 @@
       "url" : "/coding/listing/",
       "language" : "html",
       "status" : "guide"
+    },
+    {
+      "date" : "JavaScript",
+      "name" : "Event | イベントハンドラー",
+      "url" : "/coding/js/event/",
+      "language" : "js",
+      "status" : "basic"
     },
     {
       "date" : "JavaScript",
