@@ -220,13 +220,6 @@
       "status" : "basic"
     },
     {
-      "date" : "Hypertext Markup Language",
-      "name" : "Listing Content | リスト要素",
-      "url" : "/coding/listing/",
-      "language" : "html",
-      "status" : "guide"
-    },
-    {
       "date" : "JavaScript",
       "name" : "Event | イベントハンドラー",
       "url" : "/coding/js/event/",
@@ -245,6 +238,13 @@
       "name" : "Element | Web API",
       "url" : "/coding/js/element/",
       "language" : "api",
+      "status" : "guide"
+    },
+    {
+      "date" : "Hypertext Markup Language",
+      "name" : "Listing Content | リスト要素",
+      "url" : "/coding/listing/",
+      "language" : "html",
       "status" : "guide"
     },
     {
