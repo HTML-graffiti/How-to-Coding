@@ -150,6 +150,13 @@
       "status" : "guide"
     },
     {
+      "date" : "Hypertext Markup Language",
+      "name" : "Listing Content | リスト要素",
+      "url" : "/coding/listing/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
       "date" : "Cascading Style Sheets",
       "name" : "CSS layout | CSS レイアウト",
       "url" : "/coding/css/layout/",
@@ -231,13 +238,6 @@
       "name" : "Element | Web API",
       "url" : "/coding/js/element/",
       "language" : "api",
-      "status" : "guide"
-    },
-    {
-      "date" : "Hypertext Markup Language",
-      "name" : "Listing Content | リスト要素",
-      "url" : "/coding/listing/",
-      "language" : "html",
       "status" : "guide"
     },
     {
