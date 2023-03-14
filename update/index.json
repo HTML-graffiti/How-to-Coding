@@ -241,6 +241,13 @@
       "status" : "guide"
     },
     {
+      "date" : "Document Object Model",
+      "name" : "Window | Web API",
+      "url" : "/coding/js/window/",
+      "language" : "api",
+      "status" : "guide"
+    },
+    {
       "date" : "JavaScript",
       "name" : "Event | イベントハンドラー",
       "url" : "/coding/js/event/",
@@ -280,13 +287,6 @@
       "name" : "Embedded Content | 埋め込み要素",
       "url" : "/coding/html/iframe-embed-object/",
       "language" : "html",
-      "status" : "guide"
-    },
-    {
-      "date" : "Document Object Model",
-      "name" : "Window | Web API",
-      "url" : "/coding/js/window/",
-      "language" : "api",
       "status" : "guide"
     },
     {
