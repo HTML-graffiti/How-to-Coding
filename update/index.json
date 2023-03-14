@@ -150,13 +150,6 @@
       "status" : "guide"
     },
     {
-      "date" : "Hypertext Markup Language",
-      "name" : "Listing Content | リスト要素",
-      "url" : "/coding/listing/",
-      "language" : "html",
-      "status" : "guide"
-    },
-    {
       "date" : "Cascading Style Sheets",
       "name" : "CSS layout | CSS レイアウト",
       "url" : "/coding/css/layout/",
@@ -182,6 +175,13 @@
       "name" : "Multiple-column | 段組みレイアウト",
       "url" : "/coding/css/layout/multiple/",
       "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Hypertext Markup Language",
+      "name" : "Listing Content | リスト要素",
+      "url" : "/coding/listing/",
+      "language" : "html",
       "status" : "guide"
     },
     {
