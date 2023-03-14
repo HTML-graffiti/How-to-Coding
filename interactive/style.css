@@ -12,6 +12,11 @@ body {
   min-height: -webkit-fill-available;
 }
 
+main {
+  display: grid;
+  place-items: center;
+}
+
 @font-face {
   font-family: "San Francisco";
   src: url("https://creative-community.space/coding/readme/san-francisco/SF-Pro.ttf");
