@@ -83,6 +83,13 @@
       "status" : "guide"
     },
     {
+      "date" : "CSS",
+      "name" : "backdrop-filter",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/backdrop-filter",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
       "date" : "HTML DOM API",
       "name" : "HTMLDialogElement",
       "url" : "https://developer.mozilla.org/ja/docs/Web/API/HTMLDialogElement",
