@@ -277,7 +277,7 @@
     },
     {
       "date" : "Hypertext Markup Language",
-      "name" : "IFRAME EMBED OBJECT | 埋め込み要素",
+      "name" : "Embedded Content | 埋め込み要素",
       "url" : "/coding/html/iframe-embed-object/",
       "language" : "html",
       "status" : "guide"
@@ -302,6 +302,13 @@
       "url" : "/coding/js/window/geolocation.html",
       "language" : "api",
       "status" : "tools"
+    },
+    {
+      "date" : "Hypertext Markup Language",
+      "name" : "Interactive Content | 対話的要素",
+      "url" : "/coding/interactive/",
+      "language" : "html",
+      "status" : "guide"
     },
     {
       "date" : "JavaScript",
@@ -334,13 +341,6 @@
   ],
 
   "links" : [
-    {
-      "date" : "Hypertext Markup Language",
-      "name" : "DETAILS SUMMARY | 対話的要素",
-      "url" : "/coding/interactive/",
-      "language" : "html",
-      "status" : "guide"
-    },
     {
       "date" : "Hypertext Markup Language",
       "name" : "Form-associated Content | フォーム関連要素",
