@@ -9,6 +9,17 @@
   <script src="../readme/index.js" async></script>
 
   <link rel="stylesheet" href="style.css">
+
+  <style type="text/css">
+  @font-face {
+    font-family: "NewYork";
+    src: url("https://creative-community.space/coding/cover/NewYork.otf");
+  }
+  h1 {
+    font-family: "NewYork";
+    margin: 0.5rem 0 0;
+  }
+  </style>
 </head>
 <body>
   <button id="openModal">Font Size & Theme</button>
@@ -37,9 +48,14 @@
   </dialog>
 
   <details class="folder" open>
-    <summary><b>対話的要素</b></summary>
+    <summary>
+      <b>対話的要素</b>
+      <h1>Interactive Contents</h1>
+    </summary>
     <p>ユーザとのやり取りのために固有にデザインされた要素</p>
     <p><small>detail・summary・dialog 以外に、アンカー要素 (a)・埋め込み要素 (embed・iframe)・フォーム関連要素 (button・label・select・textarea) も、このカテゴリーに属します。</small></p>
+    <hr/>
+    <font id="lastModified"></font>
   </details>
 
   <details class="folder">
@@ -218,13 +234,12 @@ function openCheck(ダイアログ要素) {
   </details>
 
   <details class="folder">
-    <summary><b>Web Storage API</b></summary>
+    <summary><b>Font Size & Theme</b></summary>
     <p>
-      <small>Font Size & Theme</small><br/>
+      <small>Web Storage API</small><br/>
       テキストサイズ・カラーテーマを切り替える
     </p>
     <hr/>
-    <p><small>JavaScript</small></p>
     <pre>
 const storage = localStorage;
 
@@ -261,7 +276,10 @@ for (const theme of themes) {
 }
     </pre>
     <hr/>
-    <p><small>CSS</small></p>
+    <p>
+      <small>CSS</small><br/>
+      カラーテーマをスタイリングする
+    </p>
     <pre>
 /* Light theme */
 
@@ -352,6 +370,11 @@ for (const theme of themes) {
   <br/>
 
   <script src="script.js" defer></script>
+  <script type="text/javascript">
+  let lastModified = document.querySelector('#lastModified');
+  lastModified.innerHTML =
+  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+  </script>
 </body>
 
 </html>
