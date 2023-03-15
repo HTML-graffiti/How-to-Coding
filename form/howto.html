@@ -1,0 +1,181 @@
+<h1>
+  <small>フォーム関連要素</small><br/>
+  Form-associated Content
+</h1>
+<p>フォームとは、ウェブサイトやアプリケーションとユーザーとの対話の要となる仕組みです。</p>
+<p><small>フォームは 1つ以上のコントロール（ウィジェットともいいます）と、フォーム全体を構成するのに役立つ関連要素で作られます。</small></p>
+<hr/>
+<section class="form_tag">
+  <font>action="<i>URL</i>" method="<i>get または post</i>"></font>
+  <p>
+    <strong class="HTMLcomments">すべてのフォームは、form 要素から始まります。</strong>
+  </p>
+  <p>
+    <small>フォームの動作方法を設定するため、action 属性と method 属性は常に設定するのがふつうです。</small>
+  </p>
+  <p>action="<i>データを送信すべき場所 (URL)</i>"</p>
+  <p>method="<i>データを送信するために使用するHTTP メソッド (get または post)</i>"</p>
+  <hr/>
+  <details>
+    <summary><font class="label_tag">for="<i>コントロール名</i>""></font></summary>
+    <p>
+      <strong class="HTMLcomments">label を input 要素と関連付けると、いくらかの利点が発生します。</strong>
+    </p>
+    <p>
+      label を input に関連付けるには、input に id属性を設定し、id と 同じ値を label の for属性の値に設定します。<br/>
+      <small>複数のラベルに同じfor値を設定し、同じinput に 複数の label を関連付けることもできます。</small>
+    </p>
+    <p>
+      <small>type="button" の input 要素には label を関連づけるべきではありません。</small><br/>
+      <small>label の中にアンカーやボタンのような対話型要素を配置しないでください。</small><br/>
+      <small>label の中に見出し要素（h1 ~ h6）を配置すると、支援技術を妨げることになります。</small>
+    </p>
+  </details>
+  <hr/>
+  <details>
+    <summary><font class="input_tag">type="<b>キーワード値</b>" name="<u>値</u>"</font></summary>
+    <p>
+      <strong class="HTMLcomments">input 要素は、HTML の中で最も強力かつ最も複雑な要素の一つです。</strong>
+    </p>
+    <p>フォームを構成するコントロール（ウィジェット）のほとんどは、input 要素を使って作成されます。</p>
+    <p>
+      <small>input 要素において、もっとも重要な属性は type 属性です。</small><br/>
+      input 要素に type 属性を設定し、ユーザーがあらゆる種類のデータを入力できるウィジェットをフォームに追加します。
+    </p>
+    <p>
+      <small>name 属性を使って コントロール（ウィジェット）に名前を設定します。</small><br/>
+      フォームは、input 要素 の name 属性に設定した名前と入力値(valueの値)の組を送信します。
+    </p>
+    <p>input 要素にはコンテンツを含むことができないため、終了タグを省略することができます。</p>
+    <p>
+      <small>JavaScript では HTMLInputElement.value プロパティを使って値を受け取ることができます。</small><br/>
+    </p>
+    <hr/>
+    <section>
+      <p>
+        <b class="input_tag">type="<i>text</i>"</b><br/>
+        <small>基本的な単一行の入力欄です。改行は自動的に入力値から取り除かれます。</small><br/>
+        <small></small>
+      </p>
+      <p>
+        <b class="input_tag">type="<i>email</i>"</b><br/>
+        <small>正しい形式のメールアドレス（username@domain）のみを受け取る入力欄です。</small><br/>
+        <small>multiple 属性が指定されたとき（のみ）、値はカンマ区切りで複数の正しい形式のメールアドレスを入れることができます。</small><br/>
+        <small>CSS の :valid および :invalid 擬似クラスが自動的に適用され、フィールド上の現在の値が妥当なメールアドレスであるかどうかを視覚的に示します。</small>
+      </p>
+      <p>
+        <b class="input_tag">type="<i>url</i>"</b><br/>
+        <small>正しい形式の URL（urlscheme://restofurl）のみを受け取る入力欄です。</small><br/>
+        <small>CSS の :valid および :invalid 擬似クラスが自動的に適用され、フィールド上の現在の値が妥当なURLであるかどうかを視覚的に示します。</small>
+      </p>
+      <p>
+        <b class="input_tag">type="<i>tel</i>"</b><br/>
+        <small>電話番号のための入力欄です。</small><br/>
+        <small>入力される電話番号の長さの最大値は maxlength 属性で設定することができます。</small><br/>
+        <small>特定のパターンに適合させたい場合は、pattern属性を使用してください。</small>
+      </p>
+      <hr/>
+      <p>
+        <small>placeholder="プレイスホルダー"</small><br/>
+        入力欄が空欄の時に表示するテキストを設定する
+      </p>
+      <p>
+        <small>spellcheck="false"</small><br/>
+        スペルチェックを有効にする
+      </p>
+      <p>
+        <small>autocorrect="on"</small><br/>
+        打ち間違いの自動修正や、テキストの置き換え処理を有効にする
+      </p>
+    </section>
+    <hr/>
+    <section>
+      <p>
+        <b>チェック可能項目</b><br/>
+        チェックボックスはグループ内のボタンの複数にチェックができ、
+        ラジオボタンはグループ内のボタンのうち同時に一つしかチェックできません。
+      </p>
+      <p>
+        チェック項目のラベル（キャプション付け）には label 要素を使用し、
+        label要素のfor属性の値 と input要素のid属性の値 に共通の名前を設定します。
+      </p>
+      <p>
+        <small>項目のグループ付けには name 属性を使用します。</small><br/>
+        <small>項目にチェックがついたときに送信する値の設定には value 属性を使用します。</small><br/>
+        <small>checked 属性を含めた項目は、ページが読み込まれたときに自動的にチェックされます。</small>
+      </p>
+      <fieldset class="input_tag">
+        <legend class="label_tag">for="<i>ラベル名</i>"></legend>
+        type="<b>checkbox</b>" name="<u>グループ名</u>" id="<i>ラベル名</i>" value="チェックボックスの値"
+      </fieldset>
+      <fieldset class="input_tag">
+        <legend class="label_tag">for="<i>ラベル名</i>"></legend>
+        type="<b>radio</b>" name="<u>グループ名</u>" id="<i>ラベル名</i>" value="ラジオボタンの値"
+      </fieldset>
+    </section>
+    <hr/>
+    <p>
+      <b class="input_tag">type="<i>password</i>"</b><br/>
+      <small>テキストが読み取られることがないように、文字がアスタリスク ("*") やドット ("•") のような記号に置き換えられる入力欄です。</small><br/>
+      <small>パスワードを自動的に入力するため、ユーザーのパスワードマネージャを許可するには、autocomplete 属性を指定します。</small><br/>
+      <small>minlength 属性や maxlength 属性を使って、許容する最小の長さと最大の長さをパスワードに適用することができます。</small><br/>
+      <small>pattern 属性を使って、パスワードがそれらの要件に合致しているか自動的に確認するための正規表現を設定することができます。</small>
+    </p>
+  </details>
+  <hr/>
+  <details class="select_element">
+    <summary><font class="option_tag">value="<u>値</u>"></font></summary>
+    <p>
+      section は、選択式のメニューを提供するコントロールを表します。<br/>
+      <small>multiple 属性がついている場合は、複数の項目を選択できます。</small><br/>
+      <small>size 属性で、選択肢をその行だけ表示できるようにを設定できます。</small>
+    </p>
+    <p>
+    それぞれの選択肢は、section の中に option 要素を記述して作成します。<br/>
+    <small>option の 開始タグと終了タグの間に記述したテキストが選択肢として表示し、 valueの値をフォームから送信します。</small><br/>
+    <small>disabled 属性をした選択肢は、選択不能になります。</small><br/>
+    <small>selected 属性をした選択肢は、初期状態で選択されます。</small>
+
+    </p>
+  </details>
+  <hr/>
+  <details>
+    <summary><font class="textarea_tag">name="<u>テキストエリア名</u>"></font></summary>
+    <p>
+      <small>label 要素と結びつける場合は、id属性を設定します。</small><br/>
+      メッセージの入力などに使用する複数行のテキストフィールドです。
+    </p>
+    <p>
+      既定値を定義したい場合は、開始タグと終了タグの間にテキストを記述します。<br/>
+      <small>テキストエリアが空欄の時に表示するテキストは、placeholder 属性で設定できます。</small>
+    </p>
+    <p>
+      <small>minlength と maxlength 属性を使用して、文字数を設定できます。</small><br/>
+      <small>disabled 属性を設定した要素はどのような方法でも選択できません。 (値の送信もされません)</small><br/>
+      <small>readonly 属性を設定した要素は選択可能で内容をコピーできますが、内容を編集できません。 (値は送信されます)</small>
+    </p>
+  </details>
+  <hr/>
+  <details>
+    <summary><font class="button_tag">form="<i>フォーム要素のID値</i>"></font></summary>
+    <p>
+      クリックできるボタンを表し、フォームや文書で単純なボタン機能が必要なあらゆる場所で使用することができます。
+    </p>
+    <hr/>
+    <p>
+      <b class="input_tag">type="<i>submit</i>"</b><br/>
+      <small>submit 型はボタンとして表示され、サーバーへフォームを送信しようとします。</small>
+    </p>
+    <p>
+      <b class="input_tag">type="<i>reset</i>"</b><br/>
+      <small>reset 型はボタンとして表示され、フォーム内の入力欄すべてを初期値にリセットします。</small><br/>
+      <small>通常、フォームにリセットボタンを配置するべきではありません。このようなボタンは便利なものではなく、間違ってボタンをクリックしてしまったユーザーをイライラさせる可能性が高くなります。</small><br/>
+    </p>
+  </details>
+  <hr/>
+  <details class="fieldset">
+    <summary><font class="legend"></font></summary>
+    <p>fieldset 要素は、スタイルや意味付けのために 同じ目的を持つウィジェットをグループ化するために使います。</p>
+    <p>fieldset 要素の初めの小要素の legend 要素は、グループ化したフィールドセットにキャプションを提供します。</p>
+  </details>
+</section>

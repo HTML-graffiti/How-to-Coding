@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width">
+  <meta name="format-detection" content="telephone=no" />
+  <script src="../readme/index.js" async></script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../html/elements.css">
+  <link rel="stylesheet" href="../readme/index.css">
+</head>
+<body>
+  <article id="howto"></article>
+  <main id="form"></main>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="script.js" defer></script>
+  <script type="text/javascript">
+  $(function() {
+    $("#howto").load("howto.html");
+    $("#form").load("sample.html");
+  });
+  let lastModified = document.querySelector('#lastModified');
+  lastModified.innerHTML =
+  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+</script>
+</body>
+
+</html>

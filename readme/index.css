@@ -1,0 +1,47 @@
+#contents a,
+#links a {
+  font-size: 100%;
+  text-decoration: none;
+  transition: 1s;
+}
+
+#contents a,
+#contents a i,
+#contents a p,
+#links a,
+#links a i,
+#links a p {
+  display: inline-block;
+}
+
+#contents a,
+#links a {
+  padding: 0;
+  margin: 0.5rem 0.5rem 0 0;
+}
+
+#links a {
+  border-bottom: 0.1rem solid transparent;
+}
+
+#links a:hover {
+  border-bottom: 0.1rem solid;
+}
+
+#contents a i,
+#links a i {
+  font-size: 75%;
+  margin: 0 0.25rem 0 0;
+}
+
+#contents a i {
+  border: 1px solid;
+  border-radius: 2rem;
+  padding: 0.25rem 0.5rem;
+}
+
+#contents a p,
+#links a p {
+  padding: 0.25rem;
+  margin: 0;
+}

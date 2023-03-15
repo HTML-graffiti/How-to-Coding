@@ -27,6 +27,13 @@
       "status" : "basic"
     },
     {
+      "date" : "Web forms",
+      "name" : "HTML フォーム",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/Forms",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
       "date" : "form",
       "name" : "フォーム要素",
       "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/form",
@@ -135,6 +142,13 @@
       "date" : "Document",
       "name" : ".forms",
       "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/forms",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTMLElement",
+      "name" : "input イベント",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/HTMLElement/input_event",
       "language" : "js",
       "status" : "guide"
     }

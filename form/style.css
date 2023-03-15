@@ -1,0 +1,100 @@
+button,
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="submit"],
+input[type="reset"],
+textarea,
+.checkbox label,
+.radio label,
+.select select,
+fieldset {
+  border: solid 0.1rem;
+  font-size: 1rem;
+}
+
+button,
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="password"],
+input[type="submit"],
+input[type="reset"],
+textarea,
+.checkbox label,
+.select select {
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+
+button,
+input[type="submit"],
+input[type="reset"],
+.checkbox label,
+.radio label,
+.select select {
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="password"],
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+textarea {
+  height: 10rem;
+}
+
+.radio label {
+  border-radius: 2rem;
+  padding: 0.5rem 0.75rem;
+}
+
+fieldset {
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+
+legend {
+  border-radius: 0.25rem;
+  font-size: 75%;
+  padding: 0.25rem;
+}
+
+.checkbox,
+.radio {
+  margin: 0.25rem 0;
+}
+
+.checkbox input[type="checkbox"],
+.radio input[type="radio"] {
+  display: none;
+}
+
+.checkbox label,
+.radio label {
+  margin: 0.125rem 0.125rem 0.125rem 0;
+}
+
+legend,
+.checkbox input[type="checkbox"]:checked+label,
+.radio input[type="radio"]:checked+label {
+  background: #000;
+  color: #fff;
+}
+
+.select b {
+  margin: 0.25rem 0.5rem 0 0;
+}
+
+.select {
+  margin: 0.25rem 0;
+}

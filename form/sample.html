@@ -1,21 +1,78 @@
-<form>
-  <fieldset>
-    <legend></legend>
-    <input>input</input>
-    <label>label</label>
-    <output>output</output>
-    <select>
+<form class="form_tag">
+  <code>action="<i>URL</i>" method="<i>get または post</i>"></code>
+  <fieldset class="fieldset">
+    <legend class="legend">フィールドセットのキャプション</legend>
+    <div>
+      <label for="name" class="label_tag">for="<i>name</i>">名前</label><br/>
+      <label for="name" class="input_tag">type="<b>text</b>" id="<i>name</i>" name="<u>name</u>"</label><br/>
+      <input id="name" type="text" name="name"></input>
+    </div>
+    <div>
+      <label for="email" class="label_tag">for="<i>email</i>">Eメールアドレス</label><br/>
+      <label for="email" class="input_tag">type="<b>email</b>" id="<i>email</i>" name="<u>mail</u>"</label><br/>
+      <input id="email" type="email" name="email"></input>
+    </div>
+    <div>
+      <label for="website" class="label_tag">for="<i>website</i>">ウェブサイト</label><br/>
+      <label for="website" class="input_tag">type="<b>url</b>" id="<i>website</i>" name="<u>website</u>"</label><br/>
+      <input id="website" type="url" name="website"></input>
+    </div>
+    <div>
+      <label for="phone" class="label_tag">for="<i>phone</i>">電話番号</label><br/>
+      <label for="phone" class="input_tag">type="<b>tel</b>" id="<i>phone</i>" name="<u>phone</u>"</label><br/>
+      <input id="phone" type="tel" name="phone"></input>
+    </div>
+
+  </fieldset>
+
+  <fieldset class="label_element checkbox">
+    <legend class="input_tag">type="<b>checkbox</b>" name="<u>question</u>" value="<i></i>"</legend>
+    <input id="one" type="checkbox" name="question" value="one"></input>
+    <label for="one">One</label>
+    <input id="two" type="checkbox" name="question" value="two"></input>
+    <label for="two">Two</label>
+    <input id="three" type="checkbox" name="question" value="three"></input>
+    <label for="three">Three</label>
+    <br/>
+  </fieldset>
+
+  <fieldset class="label_element radio">
+    <legend class="input_tag">type="<b>radio</b>" name="<u>answer</u>" value="<i>yes or no</i>"</legend>
+    <input id="yes" type="radio" name="answer" value="yes"></input>
+    <label for="yes">Yes</label>
+    <input id="no" type="radio" name="answer" value="no"></input>
+    <label for="no">No</label>
+    <br/>
+  </fieldset>
+  <p>
+    <label for="pass" class="label_tag">for="<i>pass</i>">パスワード</label><br/>
+    <label for="pass" class="input_tag">type="<b>password</b>" id="<i>pass</i>" name="<u>pass</u>"</label><br/>
+    <input id="pass" type="password" name="pass"></input>
+  </p>
+  <hr/>
+  <fieldset class="select_tag select"> name="">
+    <legend class="option_tag">value="<i></i>"></legend>
+    <select name="">
       <optgroup label="">
         <option value=""> </option>
       </optgroup>
     </select>
-    <datalist>
-      <option value=""> </option>
-    </datalist>
-    <textarea>textarea</textarea>
-    <button>button</button>
+    <br/>
   </fieldset>
-</form>
+  <hr/>
+  <label for="message" class="textarea_tag">placeholder="textarea"></label><br/>
+  <textarea id="message" name="message" placeholder="textarea"></textarea>
 
-<meter>meter</meter>
-<progress>progress</progress>
+  <div>
+    <label for="button" class="button_element">button</label><br/>
+    <button id="button">Button</button>
+  </div>
+  <div>
+    <label for="submit" class="input_tag">type="<b>submit</b>"</label><br/>
+    <input id="submit" type="submit" name="submit"></input>
+  </div>
+  <div>
+    <label for="reset" class="input_tag">type="<b>reset</b>"</label><br/>
+    <input id="reset" type="reset" name="reset"></input>
+  </div>
+</form>

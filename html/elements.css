@@ -537,12 +537,97 @@
 
 .form_element::before {
   content: '<form>';
-  display: block;
 }
 
-.form_element::after {
+.form_tag::before {
+  content: '<form ';
+}
+
+.form_element::after,
+.form_tag::after {
   content: '</form>';
-  display: block;
+}
+
+.fieldset {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.fieldset::before {
+  content: '<fieldset>';
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+}
+
+.fieldset::after {
+  content: '</fieldset>';
+  position: absolute;
+  bottom: -1.5rem;
+  right: 0;
+}
+
+.legend::before {
+  content: '<legend>';
+}
+
+.legend::after {
+  content: '</legend>';
+}
+
+.input_element::before {
+  content: '<input ';
+}
+
+.input_tag::before {
+  content: '<input ';
+}
+
+.input_element::after {
+  content: '</input>';
+}
+
+.input_tag::after {
+  content: '>';
+}
+
+.label_element::before {
+  content: '<label>';
+}
+
+.label_tag::before {
+  content: '<label ';
+}
+
+.label_element::after,
+.label_tag::after {
+  content: '</label>';
+}
+
+.textarea::before {
+  content: '<textarea>';
+}
+
+.textarea_tag::before {
+  content: '<textarea ';
+}
+
+.textarea::after,
+.textarea_tag::after {
+  content: '</textarea>';
+}
+
+.button_element::before {
+  content: '<button>';
+}
+
+.button_tag::before {
+  content: '<button ';
+}
+
+.button_element::after,
+.button_tag::after {
+  content: '</button>';
 }
 
 .select_element::before {
@@ -556,6 +641,19 @@
 .select_element::after,
 .select_tag::after {
   content: '</select>';
+}
+
+.option_element::before {
+  content: '<option>';
+}
+
+.option_tag::before {
+  content: '<option ';
+}
+
+.option_element::after,
+.option_tag::after {
+  content: '</option>';
 }
 
 .del::before {
