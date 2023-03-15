@@ -3,6 +3,7 @@ input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="tel"],
+input[type="password"],
 input[type="submit"],
 input[type="reset"],
 textarea,
@@ -46,6 +47,50 @@ input[type="password"],
 textarea {
   box-sizing: border-box;
   width: 100%;
+}
+
+
+/* すべての有効な input | required 属性が設定されていない input */
+input:enabled,
+input:optional {
+  background: #fff;
+  transition: 0.5s;
+}
+
+/* 子を持たない空の input・textarea */
+input:empty,
+textarea:empty {
+  color: #000;
+}
+
+/* required 属性が設定されている input・textarea */
+input:required,
+textarea:required {
+  color: red;
+  background: #fff;
+}
+
+/* required 属性が設定されている input・textarea */
+input:disabled,
+textarea:disabled {
+  opacity: 0.5;
+}
+
+/* フォーカスを持っている input・select・textarea */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: solid red;
+}
+
+/* 検証に成功した input */
+input:valid {
+  filter: invert(0);
+}
+
+/* 検証に失敗した input */
+input:invalid {
+  filter: invert(1);
 }
 
 textarea {

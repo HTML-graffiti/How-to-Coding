@@ -63,22 +63,8 @@
     },
     {
       "date" : "擬似クラス",
-      "name" : ":focus",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:focus",
-      "language" : "css",
-      "status" : "guide"
-    },
-    {
-      "date" : "擬似クラス",
       "name" : ":enabled",
       "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:enabled",
-      "language" : "css",
-      "status" : "guide"
-    },
-    {
-      "date" : "擬似クラス",
-      "name" : ":disabled",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:disabled",
       "language" : "css",
       "status" : "guide"
     },
@@ -98,8 +84,22 @@
     },
     {
       "date" : "擬似クラス",
-      "name" : ":invalid",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:invalid",
+      "name" : ":empty",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:empty",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":disabled",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:disabled",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":focus",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:focus",
       "language" : "css",
       "status" : "guide"
     },
@@ -114,6 +114,20 @@
       "date" : "擬似クラス",
       "name" : ":default",
       "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:default",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":valid",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:valid",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":invalid",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:invalid",
       "language" : "css",
       "status" : "guide"
     },
