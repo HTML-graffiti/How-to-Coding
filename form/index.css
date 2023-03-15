@@ -29,7 +29,8 @@ i {
   font-family: "NewYork", serif;
 }
 
-article {
+article,
+main {
   font-family: "San Francisco", "YuGothic", "Yu Gothic Medium", "Yu Gothic", sans-serif;
 }
 
