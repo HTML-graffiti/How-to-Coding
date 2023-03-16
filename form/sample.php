@@ -32,7 +32,8 @@ $pass  = htmlspecialchars($_POST['pass']);
     width: 75%;
   }
 
-  a {
+  a,
+  u {
     color: #000;
     word-break: break-all;
   }
