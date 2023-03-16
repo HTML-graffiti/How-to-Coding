@@ -111,7 +111,9 @@ $message  = htmlspecialchars($_POST['message']);
   </style>
 </head>
 <body>
-  <p><button type="button" onclick="howtoCoding()">フォーム関連要素</button></p>
+  <p>
+    <button type="button" onclick="howtoCoding()">フォーム関連要素</button>
+  </p>
   <h1>Web Form | Retrieving the data by PHP</h1>
   <main>
     <h2>I am <strong><?php echo $name ?></strong></h2>
@@ -159,10 +161,6 @@ $message  = <code>htmlspecialchars</code>(<code>$_POST['message']</code>);
 <<b>?php</b> <code>echo $message</code> <b>?</b>> // textarea name="message" の値を出力
     </pre>
   </details>
-  <script type="text/javascript">
-  function howtoCoding(){
-    open("howto.html", "left")
-  }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
