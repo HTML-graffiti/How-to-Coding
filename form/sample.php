@@ -41,6 +41,7 @@ $pass  = htmlspecialchars($_POST['pass']);
   h3 {
     padding: 0.25rem;
     margin: 0;
+    word-break: break-all;
   }
 
   h1 {
@@ -88,11 +89,11 @@ $pass  = htmlspecialchars($_POST['pass']);
 // $_POST グローバル変数は、POST メソッドで送信されたデータへ名前でアクセスします。
 // GET メソッドで送信されたデータにアクセスするには、$_GET が使用できます。
 
-<code>$name</code> = htmlspecialchars($_POST['name']);
-<code>$email</code>  = htmlspecialchars($_POST['email']);
-<code>$website</code>  = htmlspecialchars($_POST['website']);
-<code>$phone</code>  = htmlspecialchars($_POST['phone']);
-<code>$message</code>  = htmlspecialchars($_POST['message']);
+$name = <code>htmlspecialchars</code>(<code>$_POST['name']</code>);
+$email  = <code>htmlspecialchars</code>(<code>$_POST['email']</code>);
+$website  = <code>htmlspecialchars</code>(<code>$_POST['website']</code>);
+$phone  = <code>htmlspecialchars</code>(<code>$_POST['phone']</code>);
+$message  = <code>htmlspecialchars</code>(<code>$_POST['message']</code>);
 
 <code>?</code>>
   </pre>
