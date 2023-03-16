@@ -50,7 +50,8 @@ $pass  = htmlspecialchars($_POST['pass']);
 
   h2,
   h3,
-  a {
+  a,
+  u {
     font-size: 125%;
     font-weight: 500;
   }
@@ -66,12 +67,6 @@ $pass  = htmlspecialchars($_POST['pass']);
     font-family: "ipag", monospace;
   }
 
-  code {
-    filter: blur(0.2rem);
-    pointer-events: none;
-    user-select: none;
-  }
-
   pre {
     width: 100%;
     overflow: auto;
@@ -83,28 +78,30 @@ $pass  = htmlspecialchars($_POST['pass']);
   <h1>I am <strong><?php echo $name; ?></strong></h1>
   <h2>Email: <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></h2>
   <h3>Website: <a href="<?php echo $website; ?>" target="_blank" rel="noreferrer"><?php echo $website; ?></a></h3>
+  <br/>
+  <h3>Phone: <u><?php echo $pass; ?></u></h3>
+  <hr/>
   <p><?php echo $message; ?></p>
-  <p>Pass <code><?php echo $pass; ?>aaa</code></p>
 </main>
   <pre>
-<<strong>?php</strong>
+<<code>?php</code>
 // $_POST グローバル変数は、POST メソッドで送信されたデータへ名前でアクセスします。
 // GET メソッドで送信されたデータにアクセスするには、$_GET が使用できます。
 
-<strong>$name</strong> = htmlspecialchars($_POST['name']);
-<strong>$email</strong>  = htmlspecialchars($_POST['email']);
-<strong>$website</strong>  = htmlspecialchars($_POST['website']);
-<strong>$pass</strong>  = htmlspecialchars($_POST['pass']);
-<strong>$message</strong>  = htmlspecialchars($_POST['message']);
+<code>$name</code> = htmlspecialchars($_POST['name']);
+<code>$email</code>  = htmlspecialchars($_POST['email']);
+<code>$website</code>  = htmlspecialchars($_POST['website']);
+<code>$phone</code>  = htmlspecialchars($_POST['phone']);
+<code>$message</code>  = htmlspecialchars($_POST['message']);
 
-<strong>?</strong>>
+<code>?</code>>
   </pre>
   <pre>
-<<b>?php</b> <strong>echo $name</strong>; <b>?</b>> // input name="name" の値を出力
-<<b>?php</b> <strong>echo $email</strong>; <b>?</b>> // input name="email" の値を出力
-<<b>?php</b> <strong>echo $website</strong>; <b>?</b>> // input name="website" の値を出力
-<<b>?php</b> <strong>echo $pass</strong>; <b>?</b>> // input name="pass" の値を出力
-<<b>?php</b> <strong>echo $message</strong>; <b>?</b>> // textarea name="message" の値を出力
+<<b>?php</b> <code>echo $name</code>; <b>?</b>> // input name="name" の値を出力
+<<b>?php</b> <code>echo $email</code>; <b>?</b>> // input name="email" の値を出力
+<<b>?php</b> <code>echo $website</code>; <b>?</b>> // input name="website" の値を出力
+<<b>?php</b> <code>echo $phone</code>; <b>?</b>> // input name="phone" の値を出力
+<<b>?php</b> <code>echo $message</code>; <b>?</b>> // textarea name="message" の値を出力
   </pre>
 </body>
 </html>
