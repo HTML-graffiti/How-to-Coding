@@ -48,9 +48,30 @@
       "status" : "basic"
     },
     {
+      "date" : "CSS",
+      "name" : "appearance",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/appearance",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
       "date" : "Pseudo-classes",
       "name" : "擬似クラス",
       "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/Pseudo-classes",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":hover",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:hover",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":focus",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:focus",
       "language" : "css",
       "status" : "guide"
     },
@@ -70,8 +91,8 @@
     },
     {
       "date" : "擬似クラス",
-      "name" : ":optional",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:optional",
+      "name" : ":empty",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:empty",
       "language" : "css",
       "status" : "guide"
     },
@@ -84,8 +105,8 @@
     },
     {
       "date" : "擬似クラス",
-      "name" : ":empty",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:empty",
+      "name" : ":optional",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:optional",
       "language" : "css",
       "status" : "guide"
     },
@@ -93,27 +114,6 @@
       "date" : "擬似クラス",
       "name" : ":disabled",
       "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:disabled",
-      "language" : "css",
-      "status" : "guide"
-    },
-    {
-      "date" : "擬似クラス",
-      "name" : ":focus",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:focus",
-      "language" : "css",
-      "status" : "guide"
-    },
-    {
-      "date" : "擬似クラス",
-      "name" : ":checked",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:checked",
-      "language" : "css",
-      "status" : "guide"
-    },
-    {
-      "date" : "擬似クラス",
-      "name" : ":default",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:default",
       "language" : "css",
       "status" : "guide"
     },
@@ -128,6 +128,20 @@
       "date" : "擬似クラス",
       "name" : ":invalid",
       "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:invalid",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":default",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:default",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "擬似クラス",
+      "name" : ":checked",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/:checked",
       "language" : "css",
       "status" : "guide"
     },

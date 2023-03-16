@@ -1,42 +1,19 @@
 button,
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="tel"],
-input[type="password"],
-input[type="submit"],
-input[type="reset"],
-textarea,
-.checkbox label,
-.radio label,
-.select select,
-fieldset {
-  border: solid 0.1rem;
+input,
+select,
+textarea {
+  font-family: inherit;
   font-size: 1rem;
+  appearance: none;
+  transition: 0.5s;
 }
 
 button,
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="tel"],
-input[type="password"],
-input[type="submit"],
-input[type="reset"],
-textarea,
-.checkbox label,
-.select select {
-  border-radius: 0.25rem;
-  padding: 0.5rem;
-}
-
-button,
-input[type="submit"],
-input[type="reset"],
-.checkbox label,
-.radio label,
-.select select {
-  cursor: pointer;
+input,
+select,
+textarea {
+  box-sizing: border-box;
+  border: 0.1rem solid;
 }
 
 input[type="text"],
@@ -45,16 +22,93 @@ input[type="url"],
 input[type="tel"],
 input[type="password"],
 textarea {
-  box-sizing: border-box;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  margin: 0.25rem 0;
   width: 100%;
 }
 
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 10rem;
+  max-height: 50vh;
+}
 
-/* すべての有効な input | required 属性が設定されていない input */
+button,
+input[type="submit"],
+input[type="reset"],
+select {
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+
+fieldset,
+legend {
+  box-sizing: border-box;
+  border: 0.2rem double;
+}
+
+fieldset {
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+legend {
+  background: #000;
+  color: #fff;
+  border-radius: 0.25rem;
+  font-size: 75%;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+}
+
+
+button:hover,
+input:hover,
+select:hover,
+textarea:hover,
+.checkbox label:hover,
+.radio label:hover {
+  box-shadow: 0 0 0 0.2rem;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.checkbox label:hover,
+.radio label:hover {
+  cursor: pointer;
+}
+
+/* フォーカスを持っている input・select・textarea */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: solid red;
+}
+
+/* アクティブ状態の button・input・select・textarea */
+button:active,
+input:active,
+select:active,
+textarea:active {
+  transform: scale(1.1);
+}
+
+/* すべての有効な input */
+button:enabled,
 input:enabled,
-input:optional {
+select:enabled,
+textarea:enabled {
   background: #fff;
-  transition: 0.5s;
+}
+
+/* disabled 属性が設定されている input・textarea */
+input:disabled,
+textarea:disabled {
+  opacity: 0.5;
 }
 
 /* 子を持たない空の input・textarea */
@@ -68,19 +122,13 @@ input:required,
 textarea:required {
   color: red;
   background: #fff;
+  font-weight: bold;
 }
 
-/* required 属性が設定されている input・textarea */
-input:disabled,
-textarea:disabled {
-  opacity: 0.5;
-}
-
-/* フォーカスを持っている input・select・textarea */
-input:focus,
-select:focus,
-textarea:focus {
-  outline: solid red;
+/* required 属性が設定されていない input・textarea */
+input:optional,
+textarea:optional {
+  font-weight: lighter;
 }
 
 /* 検証に成功した input */
@@ -93,32 +141,8 @@ input:invalid {
   filter: invert(1);
 }
 
-textarea {
-  height: 10rem;
-}
 
-.radio label {
-  border-radius: 2rem;
-  padding: 0.5rem 0.75rem;
-}
-
-fieldset {
-  border-radius: 1rem;
-  padding: 1rem;
-  margin: 0.5rem 0;
-}
-
-legend {
-  border-radius: 0.25rem;
-  font-size: 75%;
-  padding: 0.25rem;
-}
-
-.checkbox,
-.radio {
-  margin: 0.25rem 0;
-}
-
+/* チェックボックスとラジオボタン */
 .checkbox input[type="checkbox"],
 .radio input[type="radio"] {
   display: none;
@@ -126,20 +150,31 @@ legend {
 
 .checkbox label,
 .radio label {
-  margin: 0.125rem 0.125rem 0.125rem 0;
+  box-sizing: border-box;
+  border: 0.1rem solid;
+  background: #fff;
+  color: #000;
+  display: inline-block;
+  margin: 0.125rem 0;
+  transition: 0.5s;
 }
 
-legend,
+.checkbox label {
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.radio label {
+  border-radius: 1.5rem;
+  padding: 0.25rem 0.75rem;
+}
+
+.checkbox input[type="checkbox"]:default+label,
+.radio input[type="radio"]:default+label {
+  font-weight: bold;
+}
+
 .checkbox input[type="checkbox"]:checked+label,
 .radio input[type="radio"]:checked+label {
-  background: #000;
-  color: #fff;
-}
-
-.select b {
-  margin: 0.25rem 0.5rem 0 0;
-}
-
-.select {
-  margin: 0.25rem 0;
+  filter: invert(1);
 }

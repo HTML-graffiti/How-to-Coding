@@ -37,7 +37,7 @@
       color: #fff;
       font-size: 125%;
       padding: 0.25rem 0.5rem;
-      margin: 0.25rem 0.25rem 0.25rem 0;
+      margin: 0.25rem 0.5rem 0.25rem 0;
       transition: 0.5s;
     }
 
@@ -57,25 +57,25 @@
   <hr/>
   <section class="form_tag">
     <font>action="<i>URL</i>" method="<i>HTTP メソッド</i>"></font>
-    <p>
-      <strong class="HTMLcomments">すべてのフォームは、form 要素から始まります。</strong>
-    </p>
-    <p>
-      <small>フォームの動作方法を設定するため、action 属性と method 属性は常に設定するのがふつうです。</small>
-    </p>
-    <p>action="<i>データを送信すべき場所 (URL)</i>"</p>
-    <p>method="<i>データを送信するために使用するHTTP メソッド</i>"<br/>
-      <i>get</i>: <small>フォームのデータは action 属性の URL に ? で区切って追加されます。</small><br/>
-      <i>post</i>: <small>フォームのデータはリクエスト本文として送信されます。</small><br/>
-      <i>dialog</i>: <small>フォームが dialog 要素の中にある場合に使用し、ダイアログが閉じて submit イベントを発行しますが、データを送信したりフォームをクリアしたりはしません。</small>
-    </p>
-    <hr/>
-    <p>target="<i>閲覧コンテキスト</i>"<br/>
-      <i>_self</i>: <small>現在と同じ閲覧コンテキスト</small><br/>
-      <i>_blank</i>: <small>無名の新しい閲覧コンテキスト</small><br/>
-      <i>_parent</i>: <small>現在の親の閲覧コンテキスト</small><br/>
-      <i>_top</i>: <small>上位の閲覧コンテキスト</small>
-    </p>
+    <details>
+      <summary><strong>すべてのフォームは、form 要素から始まります。</strong></summary>
+      <p>
+        <small>フォームの動作方法を設定するため、action 属性と method 属性は常に設定するのがふつうです。</small>
+      </p>
+      <p>action="<i>データを送信すべき場所 (URL)</i>"</p>
+      <p>method="<i>データを送信するために使用するHTTP メソッド</i>"<br/>
+        <i>get</i>: <small>フォームのデータは action 属性の URL に ? で区切って追加されます。</small><br/>
+        <i>post</i>: <small>フォームのデータはリクエスト本文として送信されます。</small><br/>
+        <i>dialog</i>: <small>フォームが dialog 要素の中にある場合に使用し、ダイアログが閉じて submit イベントを発行しますが、データを送信したりフォームをクリアしたりはしません。</small>
+      </p>
+      <hr/>
+      <p>target="<i>閲覧コンテキスト</i>"<br/>
+        <i>_self</i>: <small>現在と同じ閲覧コンテキスト</small><br/>
+        <i>_blank</i>: <small>無名の新しい閲覧コンテキスト</small><br/>
+        <i>_parent</i>: <small>現在の親の閲覧コンテキスト</small><br/>
+        <i>_top</i>: <small>上位の閲覧コンテキスト</small>
+      </p>
+    </details>
     <hr/>
     <details>
       <summary><font class="label_tag">for="<i>ID名</i>""></font></summary>
@@ -91,8 +91,8 @@
         <small>label の中にアンカーやボタンのような対話型要素を配置しないでください。</small><br/>
         <small>label の中に見出し要素（h1 ~ h6）を配置すると、支援技術を妨げることになります。</small>
       </p>
+      <hr/>
     </details>
-    <hr/>
     <details>
       <summary><font class="input_tag">type="<b>キーワード値</b>" name="<u>コントロール名</u>"</font></summary>
       <p>
@@ -232,7 +232,6 @@
         <small>readonly 属性を設定した要素は選択可能で内容をコピーできますが、内容を編集できません。 (値は送信されます)</small>
       </p>
     </details>
-    <hr/>
     <details>
       <summary><font class="button_tag">type="<i>ボタンの種類</i>"></font></summary>
       <p>

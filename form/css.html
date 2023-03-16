@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width">
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="index.css">
+  <style type="text/css">
+  h1 {
+    font-size: 200%;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 small {
+    font-size: 55%;
+    line-height: 55%;
+  }
+
+  details * {
+    word-break: break-all;
+  }
+
+  .CSScomments::before {
+    content: '/* ';
+  }
+
+  .CSScomments::after {
+    content: ' */';
+  }
+
+  .ruleset {
+    font-size: 125%;
+    font-weight: 500;
+    padding: 1rem 2.5%;
+  }
+
+  .ruleset u {
+    margin-left: 1rem;
+  }
+
+  summary {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  summary::marker,
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary::before {
+    content: "→";
+    display: inline-block;
+    background-color: #000;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 125%;
+    padding: 0.25rem 0.5rem;
+    margin: 0.25rem 0.5rem 0.25rem 0;
+    transition: 0.5s;
+  }
+
+  /* オープン時 */
+  details[open] summary::before {
+    transform: rotate(90deg); /* 90度回転 */
+  }
+  </style>
+</head>
+<body>
+  <h1>
+    <small>フォームへのスタイル設定</small><br/>
+    How to Styling Forms
+  </h1>
+  <p><font><<i>style</i> type="text/css"></font></p>
+  <p>
+    CSS を使用してフォームコントロールのスタイルを設定する方法<br/>
+    <small class="CSScomments">一部の要素は、CSS でスタイルを設定できません。</small>
+  </p>
+  <hr/>
+  <font>Basic</font>
+  <details>
+    <summary><font>Font Styling</font></summary>
+    <p>
+      <strong class="CSScomments">一部のブラウザーは、フォームコントロール要素に font-family や font-size を継承しません。</strong>
+    </p>
+    <h2 class="ruleset">
+      <i>button, input, select, textarea</i> {<br/>
+        <u>font-family</u> : <b>inherit</b>;<br/>
+        <u>font-size</u> : <b>100%</b>;<br/>
+        <u>appearance</u> : <b>none</b>;<br/>
+      }
+    </h2>
+    <p>
+      以上のルールセットで、親要素とコントロールのフォント・文字サイズを同じように設定します。<br/>
+      <small>inherit は、親要素のプロパティ値を継承するキーワード値です。同じく 100% も、親要素の数値を継承する値です。</small>
+    </p>
+    <p>
+      appearance プロパティは OS やシステムレベルでウェブフォームのスタイル設定を制御する方法として作成されました。<br/>
+      <small>appearance: none; を適用したコントロールは システムレベルのスタイルを使用することを可能な限り止め、CSS を使用して自分でスタイルを構築できるようにします。</small>
+    </p>
+  </details>
+  <details>
+    <summary><font>The Box Model</font></summary>
+    <p>
+      <strong class="CSScomments">各コントロールは、境界・パディング・マージンについて独自のルールを持っています。</strong>
+    </p>
+    <h2 class="ruleset">
+      <i>button, input, select, textarea</i> {<br/>
+        <u>box-sizing</u> : <b>border-box</b>;<br/>
+        <u>border</u> : <b>0.1rem solid</b>;<br/>
+      }
+    </h2>
+    <p>
+      さまざまなコントロールを同じサイズにしたい場合は、box-sizing を border-box に設定します。<br/>
+      <small>加えて、各コントロールの border の 太さを統一すると綺麗にスタイリングできます。</small>
+    </p>
+    <h2 class="ruleset">
+      <i>
+        input[type="text"],<br/>
+        input[type="email"],<br/>
+        input[type="url"],<br/>
+        input[type="tel"],<br/>
+        input[type="password"],<br/>
+        textarea
+      </i> {<br/>
+        <u>border-radius</u> : <b>0.25rem</b>;<br/>
+        <u>padding</u> : <b>0.5rem</b>;<br/>
+        <u>margin</u> : <b>0.25rem 0</b>;<br/>
+        <u>width</u> : <b>100%</b>;<br/>
+      }<br/>
+      <br/>
+      <i>textarea</i> {<br/>
+        <u>min-width</u> : <b>100%</b>;<br/>
+        <u>max-width</u> : <b>100%</b>;<br/>
+        <u>max-height</u> : <b>10rem</b>;<br/>
+        <u>max-height</u> : <b>50vh</b>;<br/>
+      }
+    </h2>
+    <p>
+      テキストを入力するタイプのコントロールの
+      width（height）・padding・margin・border を 指定します。<br/>
+      <small>textarea に min・maxプロパティを設定すると、コントロールサイズの変更を制限できます。</small>
+    </p>
+    <p>
+      フォーム関連要素 fieldset・legend も、境界・パディング・マージンについて独自のルールを持っています。<br/>
+      <small>フィールドセット・キャプションをスタイリングする場合、box-sizing を border-box に設定すると便利です。</small>
+    </p>
+    <h2 class="ruleset">
+      <i>fieldset, legend</i> {<br/>
+        <u>box-sizing</u> : <b>border-box</b>;<br/>
+        <u>border</u> : <b>0.2rem double</b>;<br/>
+      }<br/>
+      <br/>
+      <i>fieldset</i> {<br/>
+        <u>border-radius</u> : <b>1rem</b>;<br/>
+        <u>padding</u> : <b>1rem</b>;<br/>
+        <u>margin</u> : <b>1rem 0</b>;<br/>
+      }<br/>
+      <br/>
+      <i>legend</i> {<br/>
+        <u>border-radius</u> : <b>0.25rem</b>;<br/>
+        <u>font-size</u> : <b>75%</b>;<br/>
+        <u>padding</u> : <b>0.25rem 0.5rem</b>;<br/>
+        <u>text-align</u> : <b>center</b>;<br/>
+      }<br/>
+    </h2>
+    <p>
+      <small>legend の位置は、text-alignで指定します。</small>
+    </p>
+  </details>
+  <details>
+    <summary><font>Fieldset・Legend</font></summary>
+    <p>
+      フォーム関連要素 fieldset・legend も、境界・パディング・マージンについて独自のルールを持っています。<br/>
+      <small>フィールドセット・キャプションをスタイリングする場合、box-sizing を border-box に設定すると便利です。</small><br/>
+      <small>横方向での legend の位置指定は、text-alignを使用します。</small>
+    </p>
+    <h2 class="ruleset">
+      <i>fieldset, legend</i> {<br/>
+        <u>box-sizing</u> : <b>border-box</b>;<br/>
+        <u>border</u> : <b>0.2rem double</b>;<br/>
+      }<br/>
+      <br/>
+      <i>fieldset</i> {<br/>
+        <u>border-radius</u> : <b>1rem</b>;<br/>
+        <u>padding</u> : <b>1rem</b>;<br/>
+        <u>margin</u> : <b>1rem 0</b>;<br/>
+      }<br/>
+      <br/>
+      <i>legend</i> {<br/>
+        <u>border-radius</u> : <b>0.25rem</b>;<br/>
+        <u>font-size</u> : <b>75%</b>;<br/>
+        <u>padding</u> : <b>0.25rem 0.5rem</b>;<br/>
+        <u>text-align</u> : <b>center</b>;<br/>
+      }<br/>
+    </h2>
+    <p style="text-align: center;">/* ~~~ */</p>
+    <hr/>
+    <p>legend を fieldset の上境界の上以外に配置する場合はpositionを使用します。</p>
+    <h2 class="ruleset">
+      <i>fieldset</i> {<br/>
+        <u>position</u> : <b>relative</b>;<br/>
+      }<br/>
+      <br/>
+      <i>legend</i> {<br/>
+        <u>position</u> : <b>absolute</b>;<br/>
+        <u>bottom</u> : <b>0</b>;<br/>
+        <u>right</u> : <b>0</b>;<br/>
+      }
+    </h2>
+    <p>
+      <small>そのほかにも、transform プロパティを使用して legend の位置を指定する方法も一般的です。</small>
+    </p>
+  </details>
+  <hr/>
+  <font>Advanced</font>
+  <details>
+    <summary><font>UI pseudo-classes</font></summary>
+    <p>
+      <strong class="CSScomments">フォームコントロールの状態によって要素を選択できる擬似クラス</strong>
+    </p>
+    <p>
+      <b>:hover</b><br/>
+      マウスポインターを当てた状態のコントローラーを選択します。
+    </p>
+    <h2 class="ruleset">
+      <i>
+        button:hover,<br/>
+        input:hover,<br/>
+        section:hover,<br/>
+        textarea:hover,<br/>
+        .checkbox label:hover,<br/>
+        .radio label:hover
+      </i> {<br/>
+        <u>box-shadow</u> : <b>0 0 0 0.2rem</b>;<br/>
+      }
+    </h2>
+    <hr/>
+    <p>
+      <b>:focus</b><br/>
+      フォーカスされている状態のコントローラーを選択します。
+    </p>
+    <h2 class="ruleset">
+      <i>
+        input:focus,<br/>
+        select:focus,<br/>
+        textarea:focus
+      </i> {<br/>
+        <u>outline</u> : <b>solid red</b>;<br/>
+      }
+    </h2>
+    <hr/>
+    <p>
+      <b>:active</b><br/>
+      アクティブ状態（クリックされたとき、またはキーボード操作の場合は Return/Enter キーが押されたとき）のコントローラーを選択します。
+    </p>
+    <h2 class="ruleset">
+      <i>
+        button:active,<br/>
+        input:active,<br/>
+        select:active,<br/>
+        textarea:active
+      </i> {<br/>
+        <u>transform</u> : <b>scale(1.1)</b>;<br/>
+      }
+    </h2>
+    <hr/>
+    <p>
+      <b>:enabled</b><br/>
+      すべての有効なコントローラーを選択します。
+    </p>
+    <p>
+      <b>:disabled</b><br/>
+      disabled 属性が設定されている無効なコントローラーを選択します。
+    </p>
+    <p>
+      <b>:empty</b><br/>
+      子を持たない空のコントローラーを選択します。
+    </p>
+    <h2 class="ruleset">
+      <i>
+        button:enabled,<br/>
+        input:enabled,<br/>
+        select:enabled,<br/>
+        textarea:enabled
+      </i> {<br/>
+        <u>background</u> : <b>#fff</b>;<br/>
+      }<br/>
+      <br/>
+      <i>
+        input:disabled,<br/>
+        textarea:disabled
+      </i> {<br/>
+        <u>opacity</u> : <b>0.5</b>;<br/>
+      }<br/>
+      <br/>
+      <i>
+        input:empty,<br/>
+        textarea:empty
+      </i> {<br/>
+        <u>color</u> : <b>#000</b>;<br/>
+      }
+    </h2>
+    <hr/>
+    <p>
+      <b>:required</b><br/>
+      required 属性が設定されているコントローラーを選択します。
+    </p>
+    <p>
+      <b>:optional</b><br/>
+      required 属性が設定されていないコントローラーを選択します。
+    </p>
+    <h2 class="ruleset">
+      <i>
+        input:required,<br/>
+        textarea:required
+      </i> {<br/>
+        <u>color</u> : <b>red</b>;<br/>
+        <u>background</u> : <b>#fff</b>;<br/>
+        <u>font-weight</u> : <b>bold</b>;<br/>
+      }<br/>
+      <br/>
+      <i>
+        input:optional,<br/>
+        textarea:optional
+      </i> {<br/>
+        <u>font-weight</u> : <b>lighter</b>;<br/>
+      }
+    </h2>
+    <hr/>
+    <p>
+      <b>:valid</b><br/>
+      フォーム検証の結果、値が有効な状態のコントローラーを選択します。
+    </p>
+    <p>
+      <b>:invalid</b><br/>
+      フォーム検証の結果、値が無効な状態のコントローラーを選択します。
+    </p>
+    <h2 class="ruleset">
+      <i>input:valid</i> {<br/>
+        <u>filter</u> : <b>invert(0)</b>;<br/>
+      }<br/>
+      <br/>
+      <i>input:invalid</i> {<br/>
+        <u>filter</u> : <b>invert(1)</b>;<br/>
+      }
+    </h2>
+  </details>
+  <details>
+    <summary><font>Checkboxes & Radio Buttons</font></summary>
+    <p>
+      <strong class="CSScomments">
+        チェックボックスを fieldset class="checkbox"、
+        ラジオボタンを fieldset class="radio" で囲み、
+        関連する label をスタイリングします。
+      </strong><br>
+      <small>input[type="checkbox"]・input[type="radio"] を非表示にします。</small>
+    </p>
+    <h2 class="ruleset">
+      <i>
+        .checkbox input[type="checkbox"],<br/>
+        .radio input[type="radio"]
+      </i> {<br/>
+        <u>display</u> : <b>none</b>;<br/>
+      }
+    </h2>
+    <p>
+      .checkbox label と .radio label を スタイリングします。<br/>
+      <small>それぞれの境界の丸みを指定して見た目を区別します。</small>
+    </p>
+    <h2 class="ruleset">
+      <i>
+        .checkbox label,<br/>
+        .radio label
+      </i> {<br/>
+        <u>box-sizing</u> : <b>border-box</b>;<br/>
+        <u>border</u> : <b>0.1rem solid</b>;<br/>
+        <u>background</u> : <b>#fff</b>;<br/>
+        <u>color</u> : <b>#000</b>;<br/>
+        <u>display</u> : <b>inline-block</b>;<br/>
+        <u>margin</u> : <b>0.125rem 0</b>;<br/>
+      }<br/>
+      <br/>
+      <i>.checkbox label</i> {<br/>
+        <u>border-radius</u> : <b>0.25rem</b>;<br/>
+        <u>padding</u> : <b>0.25rem 0.5rem</b>;<br/>
+      }<br/>
+      <br/>
+      <i>.radio label</i> {<br/>
+        <u>border-radius</u> : <b>1.5rem</b>;<br/>
+        <u>padding</u> : <b>0.25rem 0.75rem</b>;<br/>
+      }
+    </h2>
+    <p style="text-align: center;">/* ~~~ */</p>
+    <hr/>
+    <p>
+      擬似クラス :default+label を使って、checked 属性があるチェックボックス・ラジオボタンをスタイリングします。
+    </p>
+    <h2 class="ruleset">
+      <i>
+        .checkbox input[type="checkbox"]:default+label,<br/>
+        .radio input[type="radio"]:default+label
+      </i> {<br/>
+        <u>font-weight</u> : <b>bold</b>;<br/>
+      }
+    </h2>
+    <p>
+      擬似クラス :checked+label を使って、選択状態のチェックボックス・ラジオボタンをスタイリングします。
+    </p>
+    <h2 class="ruleset">
+      <i>
+        .checkbox input[type="checkbox"]:checked+label,<br/>
+        .radio input[type="radio"]:checked+label
+      </i> {<br/>
+        <u>filter</u> : <b>invert(1)</b>;<br/>
+      }
+    </h2>
+    <p>
+      <small>input[type="checkbox"]・input[type="radio"] が選択状態のとき、直後にある label の 色を反転します。</small>
+    </p>
+  </details>
+<!--
+<details>
+  <summary><font>___</font></summary>
+  <p>
+    <strong class="CSScomments">____</strong>
+  </p>
+  <h2 class="ruleset">
+    <i>button, input, select, textarea</i> {<br/>
+    <u>___</u> : <b>___</b>;<br/>
+    <u>___</u> : <b>___</b>;<br/>
+    }
+  </h2>
+  <p>
+    ___<br/>
+    <small>___</small>
+  </p>
+</details>
+-->
+</body>
+</html>
