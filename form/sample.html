@@ -15,8 +15,19 @@
   </style>
 </head>
 <body>
-  <form class="form_tag" action="sample.php" method="post">
-    <code>action="<i>sample.php</i>" method="<i>post</i>"></code>
+  <?php
+    // $_POST グローバル変数は、POST メソッドで送信されたデータへ名前でアクセスします。
+    // GET メソッドで送信されたデータにアクセスするには、$_GET が使用できます。
+    $name = htmlspecialchars($_POST['name']);
+    $email  = htmlspecialchars($_POST['email']);
+    $website  = htmlspecialchars($_POST['website']);
+    $message  = htmlspecialchars($_POST['message']);
+    $pass  = htmlspecialchars($_POST['pass']);
+
+    echo  $name, '<br/>', $email, '<br/>', $website, '<br/>', $message, '<br/>', $pass;
+  ?>
+  <form class="form_tag" action="#yourinfo" method="post">
+    <code>action="<i>#yourinfo</i>" method="<i>post</i>"></code>
     <fieldset class="fieldset">
       <legend class="legend">フィールドセットのキャプション</legend>
       <div>
