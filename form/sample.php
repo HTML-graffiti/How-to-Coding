@@ -34,6 +34,7 @@ $pass  = htmlspecialchars($_POST['pass']);
 
   a {
     color: #000;
+    word-break: break-all;
   }
 
   h1,
