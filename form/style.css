@@ -131,14 +131,14 @@ textarea:optional {
   font-weight: lighter;
 }
 
-/* 検証に成功した input */
-input:valid {
-  filter: invert(0);
-}
-
 /* 検証に失敗した input */
 input:invalid {
   filter: invert(1);
+}
+
+/* 検証に成功した input */
+input:valid {
+  filter: invert(0);
 }
 
 

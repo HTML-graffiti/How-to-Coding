@@ -48,6 +48,20 @@
       "status" : "basic"
     },
     {
+      "date" : "HTTP",
+      "name" : "GET",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTTP/Methods/GET",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "HTTP",
+      "name" : "POST",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTTP/Methods/POST",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
       "date" : "CSS",
       "name" : "appearance",
       "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/appearance",

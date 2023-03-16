@@ -15,8 +15,8 @@
   </style>
 </head>
 <body>
-  <form class="form_tag">
-    <code>action="<i>URL</i>" method="<i>get または post</i>"></code>
+  <form class="form_tag" action="sample.php" method="post">
+    <code>action="<i>sample.php</i>" method="<i>post</i>"></code>
     <fieldset class="fieldset">
       <legend class="legend">フィールドセットのキャプション</legend>
       <div>
@@ -64,8 +64,8 @@
     </fieldset>
     <p>
       <label for="pass" class="label_tag">for="<i>pass</i>">パスワード</label><br/>
-      <label for="pass" class="input_tag">type="<b>password</b>" id="<i>pass</i>" name="<u>pass</u>"</label><br/>
-      <input id="pass" type="password" name="pass"></input>
+      <label for="pass" class="input_tag">type="<b>password</b>" id="<i>pass</i>" name="<u>pass</u>" pattern="[a-z|A-Z|0-9]{4,8}"</label><br/>
+      <input id="pass" type="password" name="pass" pattern="[a-z|A-Z|0-9]{4,8}"></input>
     </p>
     <hr/>
     <fieldset class="select_tag select"> name="" size="5">

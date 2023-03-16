@@ -18,6 +18,13 @@
       line-height: 55%;
     }
 
+    h2 {
+      font-size: 125%;
+      font-weight: 500;
+      padding: 0;
+      margin: 0;
+    }
+
     summary {
       display: block;
       position: relative;
@@ -57,16 +64,24 @@
   <hr/>
   <section class="form_tag">
     <font>action="<i>URL</i>" method="<i>HTTP メソッド</i>"></font>
-    <details>
+    <details open>
       <summary><strong>すべてのフォームは、form 要素から始まります。</strong></summary>
       <p>
-        <small>フォームの動作方法を設定するため、action 属性と method 属性は常に設定するのがふつうです。</small>
+        <small>フォームの動作方法は、action 属性と method 属性で設定します。</small>
       </p>
-      <p>action="<i>データを送信すべき場所 (URL)</i>"</p>
+      <p>action="<i>データを送信すべき場所 (URL)</i>"<br/>
+        <small>action属性の値は、妥当な相対/絶対 URL でなければなりません。</small><br/>
+        <small>action属性がなければ、フォームが含まれているページの URL にデータが送信されます。</small><br/>
+      </p>
       <p>method="<i>データを送信するために使用するHTTP メソッド</i>"<br/>
         <i>get</i>: <small>フォームのデータは action 属性の URL に ? で区切って追加されます。</small><br/>
         <i>post</i>: <small>フォームのデータはリクエスト本文として送信されます。</small><br/>
         <i>dialog</i>: <small>フォームが dialog 要素の中にある場合に使用し、ダイアログが閉じて submit イベントを発行しますが、データを送信したりフォームをクリアしたりはしません。</small>
+      </p>
+      <hr/>
+      <p>GET リクエストはユーザーが URL バーの中でデータを見ることができますが、POST リクエストではそうではありません。<br/>
+        <small>パスワードを送信する必要がある場合は、GET メソッドを使用してはいけません。</small><br/>
+        <small>大量のデータを送信する必要があるなら、POST が好ましいメソッドです。</small>
       </p>
       <hr/>
       <p>target="<i>閲覧コンテキスト</i>"<br/>
@@ -264,5 +279,17 @@
       <p>fieldset 要素の初めの小要素の legend 要素は、グループ化したフィールドセットにキャプションを提供します。</p>
     </details>
   </section>
+  <hr/>
+  <h2>フォーム検証</h2>
+  <details>
+    <summary><font>pattern="[パターンテキスト]{文字数}"</font></summary>
+    <p>
+      <strong class="CSScomments">____</strong>
+    </p>
+    <p>
+      ___<br/>
+      <small>___</small>
+    </p>
+  </details>
 </body>
 </html>
