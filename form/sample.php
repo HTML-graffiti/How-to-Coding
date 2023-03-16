@@ -68,7 +68,7 @@ $pass  = htmlspecialchars($_POST['pass']);
 </head>
 <body>
   <h1>I am <strong><?php echo $name; ?></strong></h1>
-  <h2>Email: <a href="mailto:<?php echo $website; ?>"><?php echo $email; ?></a></h2>
+  <h2>Email: <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></h2>
   <h3>Website: <a href="<?php echo $website; ?>" target="_blank" rel="noreferrer"><?php echo $website; ?></a></h3>
   <p><?php echo $message; ?></p>
   <p>Pass <code><?php echo $pass; ?>aaa<code></p>
