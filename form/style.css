@@ -112,6 +112,7 @@ textarea:disabled {
 }
 
 /* 子を持たない空の input・textarea */
+button,
 input:empty,
 textarea:empty {
   color: #000;
