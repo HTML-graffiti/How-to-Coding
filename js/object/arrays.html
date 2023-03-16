@@ -71,59 +71,23 @@ arr<code class="red">.forEach(</code>key => {
   配列から要素を取り出す・追加するメソッド
 </h3>
 <p>
-  <button onclick="arrpop()"><code>arr.pop()</code></button>
+  <button type="button" onclick="arrpop()"><code>arr.pop()</code></button>
   arr 配列の末尾から要素を <code class="red">取り出す</code>
 </p>
 <p>
-  <button onclick="arrpush()"><code>arr.push()</code></button>
+  <button type="button" onclick="arrpush()"><code>arr.push()</code></button>
   arr 配列の末尾に要素を <code class="red">追加</code>
 </p>
 <p>
-  <button onclick="arrshift()"><code>arr.shift()</code></button>
+  <button type="button" onclick="arrshift()"><code>arr.shift()</code></button>
   arr 配列の先頭の要素を <code class="red">取り出す</code>
 </p>
 <p>
-  <button onclick="arrunshift()"><code>arr.unshift()</code></button>
+  <button type="button" onclick="arrunshift()"><code>arr.unshift()</code></button>
   arr 配列の先頭に要素を <code class="red">追加</code>
 </p>
 <p>メソッド push と unshift は一度に複数の要素を操作することができます</p>
 
 <hr/>
-
-<!--
-<p style="text-align: center;">/* ~~~ */</p>
-<hr/>
-<h3><font id="randomArr">randomArr</font></h3>
-<p>
-  <code>Math.floor()</code><br/>
-  与えられた数値以下の最大の整数を返す関数
-</p>
-<p>
-  <code>Math.random()</code><br/>
-   0 以上 1 未満 (0 は含むが、 1 は含まない) の範囲で浮動小数点の擬似乱数を返す関数
-</p>
-
-<pre>
-
-function getRandom(randomArr) {
-  let random = randomArr[Math.floor(Math.random() * randomArr.length)];
-  return random;
-};
-
-function randomCount() {
-  document.querySelector('#randomArr').innerText = getRandom(arr);
-};
-
-window.setInterval(function() {
-  randomCount();
-}, 2000);
-
-</pre>
-<hr/>
-<p style="text-align: center;">/* ~~~ */</p>
-<hr/>
-<p>配列はどんな型の要素も格納することができます。</p>
-<p>let arr = [ <code class="red">'Apple', { name: 'John' }, true, function() { alert('hello'); }</code> ];</p>
--->
 
 <script src="arrays.js" defer></script>

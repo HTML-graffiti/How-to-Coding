@@ -94,22 +94,22 @@
 </p>
 <hr/>
 <p>
-  <button onclick="location.assign(location.href)">location<code class="red">.assign()</code></button>
+  <button type="button" onclick="location.assign(location.href)">location<code class="red">.assign()</code></button>
   <i>location.assign(location.href)</i><br/>
   引数で指定した URL のリソースを読み込みます。
 </p>
 <p>
-  <button onclick="location.reload()">location<code class="red">.reload()</code></button>
+  <button type="button" onclick="location.reload()">location<code class="red">.reload()</code></button>
   <i>location.reload()</i><br/>
   現在の URL のリソースを再読み込みします。
 </p>
 <p>
-  <button onclick="location.replace(location.protocol + '//' + location.hostname + location.pathname)">location<code class="red">.replace()</code></button>
+  <button type="button" onclick="location.replace(location.protocol + '//' + location.hostname + location.pathname)">location<code class="red">.replace()</code></button>
   <i>location.replace(location.protocol + '//' + location.hostname + location.pathname)</i><br/>
   現在のリソースを、指定した URL のリソースで置き換えます。
 </p>
 <p>
-  <button onclick="alert('URL: ' + location.toString())">location<code class="red">.toString()</code></button>
+  <button type="button" onclick="alert('URL: ' + location.toString())">location<code class="red">.toString()</code></button>
   <i>alert('URL: ' + location.toString())</i><br/>
   これは Location.href と同義ですが、こちらは値を変更するために使用できません。
 </p>
@@ -121,17 +121,17 @@
   <code>履歴 API</code> ブラウザーのセッション履歴へのアクセスを提供します。<br/>
 </p>
 <p>
-  <button onclick="history.back()">history<code class="red">.back</code>()</button>
+  <button type="button" onclick="history.back()">history<code class="red">.back</code>()</button>
   <i>前のページに戻る</i><br/>
   () に設定した値のページに戻ります。 前のページがない場合、このメソッド呼び出しは何もしません。
 </p>
 <p>
-  <button onclick="history.forward()">history<code class="red">.forward</code>()</button>
+  <button type="button" onclick="history.forward()">history<code class="red">.forward</code>()</button>
   <i>次のページに進む</i><br/>
   () に設定した値のページに進みます。 次のページがない場合、このメソッド呼び出しは何もしません。
 </p>
 <p>
-  <button onclick="history.go(0)">history<code class="red">.go</code>()</button>
+  <button type="button" onclick="history.go(0)">history<code class="red">.go</code>()</button>
   <i>セッション履歴から特定のページを読み込む</i><br/>
   () に設定した値が 正数 + なら次のページに進みます。負数 - なら前のページに戻ります。
 </p>
