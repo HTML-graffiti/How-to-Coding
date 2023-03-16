@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width">
   <meta name="format-detection" content="telephone=no" />
   <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../html/elements.css">
   <style type="text/css">
-    form {
-      margin:  0.5rem auto;
-      max-width: 450px;
-    }
+  form {
+    margin:  0.5rem auto;
+    max-width: 450px;
+  }
   </style>
 </head>
 <body>
+  <p><b size="3rem" class="link">src="<button type="button" onclick="styleClick()">style.css</button>"</b></p>
+  <hr/>
   <form class="form_tag" action="sample.php" method="post" target="left">
     <code>action="<i>sample.php</i>" method="<b>post</b>" target="<u>left</u>"></code>
     <fieldset class="fieldset">
@@ -44,7 +45,7 @@
 
     <fieldset class="label_element checkbox">
       <legend class="input_tag">type="<b>checkbox</b>" name="<u>question</u>" value="<i></i>"</legend>
-       <br/>
+      <br/>
       <input id="one" type="checkbox" name="question" value="one"></input>
       <label for="one">One</label>
       <input id="two" type="checkbox" name="question" value="two"></input>
@@ -97,5 +98,16 @@
       <input id="reset" type="reset" name="reset"></input>
     </div>
   </form>
+  <script type="text/javascript">
+  function styleClick(){
+    const styleCSS = document.createElement( "link" );
+    styleCSS.href = "style.css";
+    styleCSS.type = "text/css";
+    styleCSS.rel = "stylesheet";
+    document.getElementsByTagName("head")[0].appendChild(styleCSS);
+
+    open("css.html", "left")
+  }
+  </script>
 </body>
 </html>
