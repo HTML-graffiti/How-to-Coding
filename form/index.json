@@ -181,6 +181,48 @@
       "status" : "basic"
     },
     {
+      "date" : "PHP",
+      "name" : "基本的な事",
+      "url" : "https://www.php.net/manual/ja/language.variables.basics.php",
+      "language" : "etc",
+      "status" : "basic"
+    },
+    {
+      "date" : "PHP",
+      "name" : "外部から来る変数",
+      "url" : "https://www.php.net/manual/ja/language.variables.external.php",
+      "language" : "etc",
+      "status" : "basic"
+    },
+    {
+      "date" : "PHP",
+      "name" : "htmlspecialchars",
+      "url" : "https://www.php.net/manual/ja/function.htmlspecialchars.php",
+      "language" : "etc",
+      "status" : "basic"
+    },
+    {
+      "date" : "PHP",
+      "name" : "$_POST",
+      "url" : "https://www.php.net/manual/ja/reserved.variables.post.php",
+      "language" : "etc",
+      "status" : "basic"
+    },
+    {
+      "date" : "PHP",
+      "name" : "$_GET",
+      "url" : "https://www.php.net/manual/ja/reserved.variables.get.php",
+      "language" : "etc",
+      "status" : "basic"
+    },
+    {
+      "date" : "PHP",
+      "name" : "echo",
+      "url" : "https://www.php.net/manual/ja/function.echo",
+      "language" : "etc",
+      "status" : "basic"
+    },
+    {
       "date" : "Document",
       "name" : ".forms",
       "url" : "https://developer.mozilla.org/ja/docs/Web/API/Document/forms",
