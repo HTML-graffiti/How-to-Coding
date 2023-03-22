@@ -15,36 +15,36 @@
     }
 
     else if (event.target.readyState === 'complete') {
-      titleH1 = document.querySelector('#cover h1');
+      titleH1 = document.querySelector('h1');
       titleH1.textContent = 'Web Storage API';
     }
   });
 
   </script>
 
-  <script src="../readme/index.js" async></script>
-
+  <script src="../../readme/index.js" async></script>
 
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="../readme/style.css" />
+  <link rel="stylesheet" href="theme.css" />
+  <link rel="stylesheet" href="../../readme/index.css" />
 </head>
 <body>
 
   <article class="readme">
     <aside id="contents"></aside>
-    <section id="cover" class="active cover">
-      <h1></h1>
+    <section class="active cover">
       <form>
+        <h1></h1>
         <p>
           <label for="bgcolor">Choose background color:</label>
-          <select class="color" id="bgcolor"></select>
+          <select id="bgcolor"></select>
         </p>
         <p>
           <label for="bgcolor">Choose color:</label>
-          <select class="color" id="color"></select>
+          <select id="color"></select>
         </p>
         <p>
-          <label class="select">
+          <label>
             Font Size
             <select id="fontSize">
               <option value="12px">Small</option>
@@ -72,7 +72,7 @@
 
   <script type="text/javascript">
 
-  const newColorAll = document.querySelectorAll('#cover, #contents a, #links a');
+  const newColorAll = document.querySelectorAll('h1, form');
   for (const newColor of newColorAll) {
     newColor.classList.add("color")
   }

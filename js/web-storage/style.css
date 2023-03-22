@@ -1,99 +1,35 @@
-form select,
-form label {
-  border-radius: 1rem;
-  cursor: pointer;
-  padding: 0.25rem 0.5rem;
-  font-size: 1rem;
+body {
+  padding: 0;
+  margin: 0;
 }
 
-.radio {
-  margin: 0.25rem 0;
-  display: flex;
-  flex-wrap: wrap;
+@font-face {
+  font-family: "ipag";
+  src: url("https://creative-community.space/ver/ipag.ttf");
 }
 
-.radio label {
-  display: block;
+@font-face {
+  font-family: "San Francisco";
+  src: url("https://creative-community.space/coding/readme/san-francisco/SF-Pro.ttf");
 }
 
-.radio input[type="radio"] {
-  display: none;
+@font-face {
+  font-family: "NewYork";
+  src: url("https://creative-community.space/coding/cover/NewYork.otf");
 }
 
-.radio label {
-  margin: 0 0.125rem;
-  padding: 0.25rem 0.75rem;
+h1 {
+  font-family: "NewYork", serif;
+  margin: 0.5rem;
 }
 
-
-/* Light theme */
-.light details,
-.light button,
-.light dialog,
-.light .select select,
-.light .radio label {
-  background: #fff;
-  color: #000;
+form {
+  font-family: "San Francisco", "YuGothic", "Yu Gothic Medium", "Yu Gothic", sans-serif;
+  margin: 0.5rem 1rem;
 }
 
-.light .folder summary::before,
-.light .folder summary::after,
-.light .radio input[type="radio"]:checked+label,
-.light dialog::backdrop {
-  background: #feeea0;
-}
-
-/* Dark theme */
-.dark details,
-.dark button,
-.dark dialog,
-.dark .select select,
-.dark .radio label {
-  background: #000;
-  color: #fff;
-}
-
-.dark .folder summary::before,
-.dark .folder summary::after,
-.dark .radio input[type="radio"]:checked+label,
-.dark dialog::backdrop {
-  background: #66ccff;
-}
-
-
-/* OS Default */
-@media (prefers-color-scheme: light) {
-  details,
-  button,
-  dialog,
-  .select select,
-  .radio label {
-    background: #fff;
-    color: #000;
-  }
-
-  .folder summary::before,
-  .folder summary::after,
-  .radio input[type="radio"]:checked+label,
-  dialog::backdrop {
-    background: #feeea0;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  details,
-  button,
-  dialog,
-  .select select,
-  .radio label {
-    background: #000;
-    color: #fff;
-  }
-
-  .folder summary::before,
-  .folder summary::after,
-  .radio input[type="radio"]:checked+label,
-  dialog::backdrop {
-    background: #66ccff;
-  }
+#contents,
+#links {
+  font-family: "ipag", monospace;
+  margin: 0.5rem 1rem;
 }

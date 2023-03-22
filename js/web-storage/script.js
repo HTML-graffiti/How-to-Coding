@@ -22,7 +22,7 @@ function setStyles() {
   const html = document.documentElement;
   const body = document.body;
   const bgcolorAll = document.querySelectorAll('html, .bgcolor');
-  const colorAll = document.querySelectorAll('.color');
+  const colorAll = document.querySelectorAll('.color, #contents a, #links a');
 
   const currentBG = storage.getItem('bgcolor');
   const currentColor = storage.getItem('color');

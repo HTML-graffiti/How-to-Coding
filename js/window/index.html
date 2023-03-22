@@ -11,13 +11,9 @@
 
   document.addEventListener('readystatechange', (event) => {
     if (event.target.readyState === 'interactive') {
-      let titleH1 = document.querySelector('#cover h1');
-
-      const modName = "HTML";
-      const modVer = "2.0";
-      const conformTest = document.implementation.hasFeature(modName, modVer);
-
-      titleH1.innerHTML = `DOM ${modName} ${modVer} supported?: ${conformTest}`;
+      let lastModified = document.querySelector('#cover h1');
+      lastModified.innerHTML =
+      'Last Modified<br/><time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
     }
 
     else if (event.target.readyState === 'complete') {
@@ -26,10 +22,6 @@
 
       titleH1.innerHTML = `<i>Document Object Model</i><br/>Window`;
       titleH1.style.textAlign = "center";
-
-      let lastModified = document.querySelector('#lastModified');
-      lastModified.innerHTML =
-      'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
     }
   });
 
@@ -132,7 +124,6 @@
           </tr>
         </tbody>
       </table>
-      <p id="lastModified"></p>
     </section>
     <section id="api" class="is-hide"></section>
     <section id="console" class="is-hide"></section>
