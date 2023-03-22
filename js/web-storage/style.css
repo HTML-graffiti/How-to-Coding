@@ -22,9 +22,14 @@ h1 {
   font-family: "NewYork", serif;
 }
 
-.readme {
+.readme,
+#contents {
   font-family: "San Francisco", "YuGothic", "Yu Gothic Medium", "Yu Gothic", sans-serif;
   margin: 1rem;
+}
+
+#links {
+  font-family: "ipag", monospace;
 }
 
 h1,
@@ -32,7 +37,8 @@ form p {
   margin: 0.5rem 0.25rem;
 }
 
-form {
+form,
+#list p {
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
@@ -56,13 +62,22 @@ form input,
 form button {
   display: inline-block;
   border-radius: 0.5rem;
+  color: #000;
+  background: #fff;
   font-size: 100%;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
+#list {
+  margin: 0 0.5rem 2rem;
+}
+
+#list p small {
+  margin-right: 0.25rem;
+}
+
 #contents,
 #links {
-  font-family: "ipag", monospace;
   margin: 0.5rem 1rem;
 }
