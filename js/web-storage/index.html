@@ -29,42 +29,32 @@
   <link rel="stylesheet" href="../../readme/index.css" />
 </head>
 <body>
+  <aside id="contents"></aside>
 
   <article class="readme">
-    <aside id="contents"></aside>
-    <section class="active cover">
-      <form>
-        <h1></h1>
-        <p>
-          <label for="bgcolor">Choose background color:</label>
-          <select id="bgcolor"></select>
-        </p>
-        <p>
-          <label for="bgcolor">Choose color:</label>
-          <select id="color"></select>
-        </p>
-        <p>
-          <label>
-            Font Size
-            <select id="fontSize">
-              <option value="12px">Small</option>
-              <option value="16px" selected>Medium</option>
-              <option value="20px">Large</option>
-            </select>
-          </label>
-        </p>
-        <p>
-          <label>Color Theme</label>
-        </p>
-        <section id="theme" class="radio">
-          <input type="radio" name="theme" id="default" value="default">
-          <label for="default">OS Default</label>
-          <input type="radio" name="theme" id="light" value="light">
-          <label for="light">Light</label>
-          <input type="radio" name="theme" id="dark" value="dark">
-          <label for="dark">Dark</label>
-        </section>
-      </form>
+    <form>
+      <h1></h1>
+      <p>
+        <label for="fontSize">Font Size</label>
+        <select id="fontSize">
+          <option value="10px">X Small</option>
+          <option value="13px">Small</option>
+          <option value="16px" selected>Medium</option>
+          <option value="20px">Large</option>
+          <option value="24px">X Large</option>
+          <option value="32px">XX Large</option>
+          <option value="42px">XXX Large</option>
+        </select>
+      </p>
+      <p>
+        <label for="textKey">Key</label>
+        <input id="textKey" type="text" />
+        <label for="textValue">Value</label>
+        <input id="textValue" type="text" />
+        <button type="button" id="button" onclick="setStorage()">setItem</button>
+      </p>
+    </form>
+    <section id="list">
     </section>
   </article>
 

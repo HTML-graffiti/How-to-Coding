@@ -1,4 +1,4 @@
-<h2><i>Web Storage には、2 種類の仕組みがあります</i></h2>
+<h2><i>Web Storage には、2 種類の仕組みがあります。</i></h2>
 <p>
   <font>sessionStorage</font><br/>
   ページのセッション中のみデータを保存します。（データがサーバーに転送されることはありません。）
@@ -7,20 +7,46 @@
   <font>localStorage</font><br/>
   有効期限なしでデータを保存します。（ブラウザーを閉じたり再び開いたりしてもデータは持続します。）
 </p>
+
+<hr/>
+<p>ストレージオブジェクトがすでに存在しているか (すなわち、過去にページへアクセスしていたか) を確認します。</p>
+<pre>
+// 使用する Web Storage の種類を設定
+const storage = localStorage;
+
+// Web Storage に key アイテムが存在するかを確認
+if(!storage.getItem('key')) {
+  populateStorage();
+} else {
+  getStorage();
+}
+</pre>
+<p>
+  アイテムが存在しなければ 既存の値をストレージへ追加するために populateStorage() を実行し、
+  値が存在する場合は、値を取得するために getStorage() を実行します。
+</p>
+<hr/>
+<p>populateStorage()</p>
 <pre>
 // Web Storage にデータを保存する
-sessionStorage.setItem('key', 'value');
-localStorage.setItem('key', 'value');
-
-
+function populateStorage() {
+  storage.setItem('key', 'value');
+}
+</pre>
+<hr/>
+<p>getStorage()</p>
+<pre>
 // Web Storage に保存したデータを取得する
-let data = sessionStorage.getItem('key');
-let data = localStorage.getItem('key');
-
+function getStorage() {
+  let data = storage.getItem('key');
+}
+</pre>
+<hr/>
+<p>Web Storage にアクセスし、.removeItem() を利用してデータを削除します。</p>
+<pre>
 // Web Storage に保存したデータを削除する
-sessionStorage.removeItem('key')
-localStorage.removeItem('key');
+storage.removeItem('key');
 
 // Web Storage に保存したすべてのデータを削除する
-localStorage.clear();
+storage.clear();
 </pre>

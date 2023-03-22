@@ -9,6 +9,13 @@
   "src" : "card.png",
 
   "contents" : [
+    {
+      "date" : "Document Object Model",
+      "name" : "Window | Web API",
+      "url" : "/coding/js/window/",
+      "language" : "api",
+      "status" : "guide"
+    }
   ],
 
   "links" : [

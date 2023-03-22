@@ -1,53 +1,63 @@
+'use strict';
 const storage = localStorage;
 
-const bgcolorForm = document.querySelector('#bgcolor');
-const colorForm = document.querySelector('#color');
 const fontSize = document.querySelector('#fontSize');
 
-if(!storage.getItem('bgcolor')) {
+if(!storage.getItem('fontSize')) {
   populateStorage();
 } else {
-  setStyles();
+  getStyle();
 }
 
 function populateStorage() {
-  storage.setItem('bgcolor', bgcolorForm.value);
-  storage.setItem('color', colorForm.value);
   storage.setItem('fontSize', fontSize.value);
-  storage.setItem('theme', event.currentTarget.value);
-  setStyles();
+  getStyle();
 }
 
-function setStyles() {
+function getStyle() {
   const html = document.documentElement;
-  const body = document.body;
-  const bgcolorAll = document.querySelectorAll('html, .bgcolor');
-  const colorAll = document.querySelectorAll('.color, #contents a, #links a');
 
-  const currentBG = storage.getItem('bgcolor');
-  const currentColor = storage.getItem('color');
   const currentSize = storage.getItem('fontSize');
-  const currentTheme = storage.getItem('theme');
-
-  bgcolorForm.value = currentBG;
-  colorForm.value = currentColor;
   fontSize.value = currentSize;
+
   html.style.fontSize = currentSize;
-  body.className = currentTheme;
-
-  for (const bgcolor of bgcolorAll) {
-    bgcolor.style.backgroundColor = currentBG;
-  }
-  for (const color of colorAll) {
-    color.style.color = currentColor;
-  }
 }
 
-bgcolorForm.onchange = populateStorage;
-colorForm.onchange = populateStorage;
+// localStorageへの格納
+function setStorage() {
+  let key = document.querySelector("#textKey").value;
+  let value = document.querySelector("#textValue").value;
+
+  // 値の入力チェック
+  if (key && value) {
+    storage.setItem(key, value);
+  }
+
+  // 変数の初期化
+  key = "";
+  value = "";
+
+  getStorage();
+}
+
+
+function getStorage() {
+  const list = document.getElementById("list")
+  // sessionStorageすべての情報の取得
+  for (var i=0; i < storage.length; i++) {
+    var itemKey = storage.key(i);
+
+    // sessionStorageのキーと値を表示
+    var listP = document.createElement("p");
+    var listKey = document.createElement("small");
+    var listValue = document.createElement("u");
+    listKey.innerHTML = itemKey;
+    listValue.innerHTML = storage.getItem(itemKey);
+    list.appendChild(listP);
+    listP.appendChild(listKey);
+    listP.appendChild(listValue);
+  }
+
+}
+
 fontSize.onchange = populateStorage;
-
-const themes = document.querySelectorAll('#theme input');
-for (const theme of themes) {
-  theme.addEventListener('change', populateStorage);
-}

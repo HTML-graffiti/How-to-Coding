@@ -1,3 +1,4 @@
+'use strict';
 const storage = localStorage;
 
 const fontSize = document.querySelector('#fontSize');
