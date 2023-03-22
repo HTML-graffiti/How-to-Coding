@@ -25,6 +25,7 @@ function getStyle() {
 
 function removeallStorage() {
   storage.clear();
+  getStyle();
 }
 
 fontSize.onchange = populateStorage;
