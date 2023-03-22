@@ -248,6 +248,20 @@
       "status" : "guide"
     },
     {
+      "date" : "Web API",
+      "name" : "Battery Status API | バッテリー状態 API",
+      "url" : "/coding/js/window/battery.html",
+      "language" : "api",
+      "status" : "tools"
+    },
+    {
+      "date" : "Web API",
+      "name" : "Geolocation API | 位置情報 API",
+      "url" : "/coding/js/window/geolocation.html",
+      "language" : "api",
+      "status" : "tools"
+    },
+    {
       "date" : "JavaScript",
       "name" : "Event | イベントハンドラー",
       "url" : "/coding/js/event/",
@@ -288,20 +302,6 @@
       "url" : "/coding/html/iframe-embed-object/",
       "language" : "html",
       "status" : "guide"
-    },
-    {
-      "date" : "Web API",
-      "name" : "Battery Status API | バッテリー状態 API",
-      "url" : "/coding/js/window/battery.html",
-      "language" : "api",
-      "status" : "tools"
-    },
-    {
-      "date" : "Web API",
-      "name" : "Geolocation API | 位置情報 API",
-      "url" : "/coding/js/window/geolocation.html",
-      "language" : "api",
-      "status" : "tools"
     },
     {
       "date" : "Hypertext Markup Language",

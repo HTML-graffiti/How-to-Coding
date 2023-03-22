@@ -48,6 +48,19 @@
     font-size: 75%;
   }
 
+  .script::before {
+    content: '<script';
+  }
+
+  .script_tag::before {
+    content: '<script>';
+  }
+
+  .script::after,
+  .script_tag::after {
+    content: '</script>';
+  }
+
   #contents::before,
   #links::before {
     font-family: "ipag", monospace;
