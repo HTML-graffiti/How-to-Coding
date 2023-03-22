@@ -10,11 +10,18 @@
 
   "contents" : [
     {
-      "date" : "Document Object Model",
-      "name" : "Window | Web API",
-      "url" : "/coding/js/window/",
+      "date" : "Color & Background Color",
+      "name" : "色・背景",
+      "url" : "/coding/yourinfo/",
       "language" : "api",
-      "status" : "guide"
+      "status" : "tools"
+    },
+    {
+      "date" : "Font Size & Theme",
+      "name" : "テキストサイズ・カラーテーマ",
+      "url" : "/coding/interactive/",
+      "language" : "api",
+      "status" : "tools"
     }
   ],
 
