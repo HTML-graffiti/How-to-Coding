@@ -4,13 +4,13 @@ const storage = localStorage;
 const fontSize = document.querySelector('#fontSize');
 if(!storage.getItem('fontSize')) {
   populateStorage();
+  themeStorage()
 } else {
   setStyles();
 }
 
 function populateStorage() {
   storage.setItem('fontSize', fontSize.value);
-  storage.setItem('theme', event.currentTarget.value);
   setStyles();
 }
 
@@ -28,9 +28,15 @@ function setStyles() {
 
 fontSize.onchange = populateStorage;
 
+
+function themeStorage() {
+  storage.setItem('theme', event.currentTarget.value);
+  setStyles();
+}
+
 const themes = document.querySelectorAll('#theme input');
 for (const theme of themes) {
-  theme.addEventListener('change', populateStorage);
+  theme.addEventListener('change', themeStorage);
 }
 
 
