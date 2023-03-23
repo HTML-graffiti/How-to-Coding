@@ -1,0 +1,86 @@
+{
+  "title" : "Form-associated Content",
+  "description" : "フォーム関連要素",
+  "author" : "How to Coding",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+  ],
+
+  "links" : [
+    {
+      "date" : "Asynchronous JavaScript and XML",
+      "name" : "AJAX",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/Guide/AJAX",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Web API",
+      "name" : "Fetch API",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Fetch_API/Using_Fetch",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Web API",
+      "name" : "FormData",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/FormData",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "FormData",
+      "name" : "FormData()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/FormData/FormData",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "FormData",
+      "name" : ".entries()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/FormData/entries",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "FormData",
+      "name" : ".append()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/FormData/append",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "FormData",
+      "name" : ".delete()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/FormData/delete",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Object",
+      "name" : ".fromEntries()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Event",
+      "name" : "submit イベント",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/HTMLFormElement/submit_event",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Event",
+      "name" : ".preventDefault()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Event/preventDefault",
+      "language" : "js",
+      "status" : "guide"
+    }
+  ]
+}
