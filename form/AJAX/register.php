@@ -3,12 +3,6 @@
 
   header("Content-type: text/plain");
 
-  /*
-  NOTE: You should never use `print_r()` in production scripts, or
-  otherwise output client-submitted data without sanitizing it first.
-  Failing to sanitize can lead to cross-site scripting vulnerabilities.
-  */
-
   echo ":: data received via GET ::\n\n";
   print_r($_GET);
 
