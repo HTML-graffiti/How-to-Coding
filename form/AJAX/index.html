@@ -5,46 +5,47 @@
   <title>Server-sent events demo</title>
 </head>
 <body>
-  <button>Close the connection</button>
-
-  <ul>
-  </ul>
+  <label>
+    Your name:
+    <input type="text" id="ajaxTextbox" />
+  </label>
+  <span id="ajaxButton" style="cursor: pointer; text-decoration: underline">
+    Make a request
+  </span>
 
   <script>
-    const button = document.querySelector('button');
-    const evtSource = new EventSource('sse.php');
-    console.log(evtSource.withCredentials);
-    console.log(evtSource.readyState);
-    console.log(evtSource.url);
-    const eventList = document.querySelector('ul');
+  document.getElementById("ajaxButton").onclick = () => {
+    const userName = document.getElementById("ajaxTextbox").value;
+    makeRequest("test.php", userName);
+  };
 
-    evtSource.onopen = function() {
-      console.log("Connection to server opened.");
-    };
+  function makeRequest(url, userName) {
+    httpRequest = new XMLHttpRequest();
 
-    evtSource.onmessage = function(e) {
-      const newElement = document.createElement("li");
+    if (!httpRequest) {
+      alert('中断 :( XMLHTTP インスタンスを生成できませんでした');
+      return false;
+    }
 
-      newElement.textContent = "message: " + e.data;
-      eventList.appendChild(newElement);
-    };
+    httpRequest.onreadystatechange = alertContents;
+    httpRequest.open("POST", url);
+    httpRequest.setRequestHeader(
+      "Content-Type",
+      "application/x-www-form-urlencoded"
+    );
+    httpRequest.send(`userName=${encodeURIComponent(userName)}`);
+  }
 
-    evtSource.onerror = function() {
-      console.log("EventSource failed.");
-    };
-
-    button.onclick = function() {
-      console.log('Connection closed');
-      evtSource.close();
-    };
-
-    // evtSource.addEventListener("ping", function(e) {
-    //   var newElement = document.createElement("li");
-    //
-    //   var obj = JSON.parse(e.data);
-    //   newElement.innerHTML = "ping at " + obj.time;
-    //   eventList.appendChild(newElement);
-    // }, false);
-  </script>
+  function alertContents() {
+    if (httpRequest.readyState === XMLHttpRequest.DONE) {
+      if (httpRequest.status === 200) {
+        const response = JSON.parse(httpRequest.responseText);
+        alert(response.computedString);
+      } else {
+        alert("There was a problem with the request.");
+      }
+    }
+  }
+</script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+{
+  "title" : "Server-sent events",
+  "description" : "サーバー送信イベント",
+  "author" : "How to Coding",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+  ],
+
+  "links" : [
+    {
+      "date" : "Web API",
+      "name" : "Server-sent events",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Server-sent_events",
+      "language" : "js",
+      "status" : "basic"
+    }
+  ]
+}
