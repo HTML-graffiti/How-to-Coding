@@ -1,43 +1,39 @@
-'use strict';
-const storage = localStorage;
+'use strict'
 
+const storage = localStorage;
 const fontSize = document.querySelector('#fontSize');
+
 if(!storage.getItem('fontSize')) {
-  populateStorage();
-  themeStorage()
+  setfontSize();
 } else {
   setStyles();
 }
 
-function populateStorage() {
+function setfontSize() {
   storage.setItem('fontSize', fontSize.value);
   setStyles();
 }
+
+const themes = document.querySelectorAll('#theme input');
+for (const theme of themes) {
+  theme.addEventListener('change', function() {
+    storage.setItem('theme', theme.value);
+    setStyles();
+  });
+};
 
 function setStyles() {
   const html = document.documentElement;
   const body = document.body;
 
   const currentSize = storage.getItem('fontSize');
-  const currentTheme = storage.getItem('theme');
 
   fontSize.value = currentSize;
   html.style.fontSize = currentSize;
-  body.className = currentTheme;
+  body.className = storage.getItem('theme');
 }
 
-fontSize.onchange = populateStorage;
-
-
-function themeStorage() {
-  storage.setItem('theme', event.currentTarget.value);
-  setStyles();
-}
-
-const themes = document.querySelectorAll('#theme input');
-for (const theme of themes) {
-  theme.addEventListener('change', themeStorage);
-}
+fontSize.onchange = setfontSize;
 
 
 // Click #openButton button open the <dialog> modally
