@@ -10,6 +10,15 @@ function geoFindMe() {
 
     myLocation.innerHTML = `Latitude: ${latitude} °, Longitude: ${longitude} ° | Altitude Accuracy: ${accuracy} m`;
 
+    const geolocation = {
+      latitude : latitude,
+      longitude : longitude,
+      accuracy : accuracy
+    }
+    const gpsJSON = JSON.stringify(geolocation);
+    localStorage.setItem('geolocation', gpsJSON);
+    console.log('geolocation', gpsJSON);
+
     const mapIframe = document.createElement('iframe');
     mapIframe.name = 'mapIframe';
     mapIframe.src = `https://www.openstreetmap.org/export/embed.html?bbox=${longitude}%2C${latitude}&amp;layer=mapnik`;
@@ -30,32 +39,19 @@ function geoFindMe() {
 
     mapLink.addEventListener('click', () => {
       open(`https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`, '_blank');
-    });
+      });
+    }
+
+    function error() {
+      myLocation.textContent = 'Unable to retrieve your location';
+    }
+
+    if(!navigator.geolocation) {
+      myLocation.textContent = 'Geolocation is not supported by your browser';
+    } else {
+      myLocation.textContent = 'Locating…';
+      navigator.geolocation.getCurrentPosition(success, error);
+    }
   }
 
-  function error() {
-    myLocation.textContent = 'Unable to retrieve your location';
-  }
-
-  if(!navigator.geolocation) {
-    myLocation.textContent = 'Geolocation is not supported by your browser';
-  } else {
-    myLocation.textContent = 'Locating…';
-    navigator.geolocation.getCurrentPosition(success, error);
-  }
-
-  setJSON()
-}
-
-function setJSON() {
-  const geolocation = {
-    latitude : latitude,
-    longitude : longitude,
-    accuracy : accuracy
-  }
-  const gpsJSON = JSON.stringify(geolocation);
-  localStorage.setItem('geolocation', gpsJSON);
-  console.log('geolocation', gpsJSON);
-}
-
-document.querySelector('#myBtn').addEventListener('click', geoFindMe);
+  document.querySelector('#myBtn').addEventListener('click', geoFindMe);
