@@ -46,13 +46,6 @@
     },
     {
       "date" : "Web API",
-      "name" : "Web Storage API",
-      "url" : "/coding/js/web-storage/",
-      "language" : "api",
-      "status" : "guide"
-    },
-    {
-      "date" : "Web API",
       "name" : "Geolocation API",
       "url" : "/coding/js/window/geolocation.html",
       "language" : "api",
@@ -64,6 +57,13 @@
       "url" : "/coding/js/window/battery.html",
       "language" : "api",
       "status" : "tools"
+    },
+    {
+      "date" : "Web API",
+      "name" : "Web Storage API",
+      "url" : "/coding/web-storage/",
+      "language" : "api",
+      "status" : "guide"
     }
   ],
 
