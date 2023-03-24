@@ -32,6 +32,11 @@ h1 {
   font-family: "ipag", monospace;
 }
 
+form {
+  color: #fff;
+  mix-blend-mode: difference;
+}
+
 h1 {
   margin: 0.5rem 0.25rem;
 }
