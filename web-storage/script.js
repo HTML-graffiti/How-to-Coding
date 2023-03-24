@@ -62,5 +62,3 @@ function removeallStorage() {
   storage.clear();
   viewStorage();
 }
-
-fontSize.onchange = populateStorage;
