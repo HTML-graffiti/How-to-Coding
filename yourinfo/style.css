@@ -20,13 +20,12 @@ body {
 #now {
   box-sizing: border-box;
   display: flex;
+  position: fixed;
   margin: 0;
   width: 100%;
 }
 
 #log {
-  position: fixed;
-  z-index: 2;
   list-style: none;
   align-items: stretch;
   flex-flow: row-reverse wrap-reverse;
@@ -34,17 +33,17 @@ body {
   padding: 0.25rem;
   overflow: auto;
   max-height: -webkit-fill-available;
+  z-index: 2;
 }
 
 #now {
-  flex-direction: row;
+  flex-flow: row;
   justify-content: space-between;
-  position: fixed;
+  padding: 0.5rem;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 99;
-  padding: 0.5rem;
 }
 
 #log li {
@@ -104,6 +103,8 @@ form select {
 #log button,
 #hidden button,
 form select {
+  appearance : none;
+  outline: none;
   border: solid 2px;
   border-radius: 1rem;
   padding: 0.25rem 0.5rem;

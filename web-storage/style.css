@@ -32,11 +32,6 @@ h1 {
   font-family: "ipag", monospace;
 }
 
-form {
-  color: #fff;
-  mix-blend-mode: difference;
-}
-
 h1 {
   margin: 0.5rem 0.25rem;
 }
@@ -67,6 +62,18 @@ h1 {
   word-break: break-all;
 }
 
+form button {
+  appearance : none;
+  background: transparent;
+  border: solid 0.1rem;
+  border-radius: 1.5rem;
+  color : inherit;
+  font-family : inherit;
+  font-size : 100%;
+  padding: 0.5rem 1rem;
+  outline: none;
+}
+
 /* Light theme */
 .light {
   background: linear-gradient(180deg, #B3CBF6, #FFC778, #EEE) fixed;
@@ -74,9 +81,21 @@ h1 {
   animation: sky 10s ease infinite;
 }
 
+.light form,
+.light #contents a,
+.light #links a {
+  color: #000;
+}
+
 /* Dark theme */
 .dark {
   background: radial-gradient(circle at bottom, #222, #111, #000) fixed;
+}
+
+.dark form,
+.dark #contents a,
+.dark #links a {
+  color: #fff;
 }
 
 /* OS Default */
@@ -86,11 +105,23 @@ h1 {
     background-size: 400% 400%;
     animation: sky 10s ease infinite;
   }
+
+  form,
+  #contents a,
+  #links a {
+    color: #000;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   body {
     background: radial-gradient(circle at bottom, #222, #111, #000) fixed;
+  }
+
+  form,
+  #contents a,
+  #links a {
+    color: #fff;
   }
 }
 

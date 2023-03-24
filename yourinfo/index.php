@@ -15,7 +15,6 @@ if (extension_loaded('mbstring')) {
 function e($html) {
   return htmlspecialchars($html, ENT_QUOTES);
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -27,6 +26,7 @@ function e($html) {
 
   <script src="../readme/index.js" async></script>
   <script src="../js/online/script.js"></script>
+
   <script type="text/javascript" async>
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     document.addEventListener('readystatechange', (event) => {

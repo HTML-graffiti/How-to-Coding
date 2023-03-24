@@ -1,32 +1,47 @@
 'use strict';
+
+// Web Storageの種類を設定
 const storage = localStorage;
 
-if(!storage.getItem('fontSize')) {
-  populateStorage();
+// Web Storageにアイテムが存在しているかを確認する
+if(!localStorage.getItem('color')) {
+  // アイテムが存在しない場合に値を設定する
+  setStyles();
 } else {
+  // アイテムが存在する場合にデータを表示する
   viewStorage();
 }
 
-function populateStorage() {
-  storage.setItem('fontSize', fontSize.value);
-  getStyle();
+// ストレージに値を設定する
+function setStyles() {
+  storage.setItem('color', '#000');
+  storage.setItem('bgcolor', '#fff');
+
+  // Web Storageのデータを表示
+  viewStorage();
 }
 
-function viewStorage() {
-  // localStorageすべての情報の取得
-  for (var i=0; i < storage.length; i++) {
-    const list = document.querySelector("#list")
-    let itemStorage = storage.key(i);
 
-    // localStorageのキーと値を表示
+// Web Storageのデータを表示
+function viewStorage() {
+  const list = document.querySelector("#list");
+  list.innerHTML = "";
+
+  // Web Storageに保存されているデータアイテムの数を取得
+  for (let i=0; i < storage.length; i++) {
+
+    // 各データアイテムのキーの名称(storage.key)
+    // キーに対する値(storage.getItem)を取得
+    let itemStorage = storage.key(i);
     let listP = document.createElement("p");
     let listKey = document.createElement("small");
     let listValue = document.createElement("u");
+    listKey.innerHTML = itemStorage;
+    listValue.innerHTML = storage.getItem(itemStorage);
+
     list.appendChild(listP);
     listP.appendChild(listKey);
     listP.appendChild(listValue);
-    listKey.innerHTML = itemStorage;
-    listValue.innerHTML = storage.getItem(itemStorage);
   }
 
   getStyle();
@@ -46,7 +61,6 @@ function getStyle() {
 function removeallStorage() {
   storage.clear();
   viewStorage();
-  getStyle();
 }
 
 fontSize.onchange = populateStorage;
