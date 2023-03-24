@@ -59,9 +59,7 @@
   <p>
     <button type="button" onclick="howtoCoding()">フォーム関連要素</button>
   </p>
-  <h1>
-    Form-associated Content
-  </h1>
+  <h1>Form-associated Content</h1>
   <p>フォームとは、ウェブサイトやアプリケーションとユーザーとの対話の要となる仕組みです。</p>
   <p><small>フォームは 1つ以上のコントロール（ウィジェットともいいます）と、フォーム全体を構成するのに役立つ関連要素で作られます。</small></p>
   <hr/>
@@ -87,12 +85,13 @@
         <small>大量のデータを送信する必要があるなら、POST が好ましいメソッドです。</small>
       </p>
       <hr/>
-      <p>target="<i>閲覧コンテキスト</i>"<br/>
-        <i>_self</i>: <small>現在と同じ閲覧コンテキスト</small><br/>
-        <i>_blank</i>: <small>無名の新しい閲覧コンテキスト</small><br/>
-        <i>_parent</i>: <small>現在の親の閲覧コンテキスト</small><br/>
-        <i>_top</i>: <small>上位の閲覧コンテキスト</small>
-      </p>
+      <fieldset>
+        <legend>target="<i>閲覧コンテキスト</i>"</legend>
+          <i>_self</i>: <small>現在と同じ閲覧コンテキスト</small><br/>
+          <i>_blank</i>: <small>無名の新しい閲覧コンテキスト</small><br/>
+          <i>_parent</i>: <small>現在の親の閲覧コンテキスト</small><br/>
+          <i>_top</i>: <small>上位の閲覧コンテキスト</small>
+      </fieldset>
     </details>
     <hr/>
     <details>
@@ -152,9 +151,16 @@
           <small>入力される電話番号の長さの最大値は maxlength 属性で設定することができます。</small><br/>
           <small>特定のパターンに適合させたい場合は、pattern属性を使用してください。</small>
         </p>
+        <p>
+          <b class="input_tag">type="<i>password</i>"</b><br/>
+          <small>テキストが読み取られることがないように、文字がアスタリスク ("*") やドット ("•") のような記号に置き換えられる入力欄です。</small><br/>
+          <small>パスワードを自動的に入力するため、ユーザーのパスワードマネージャを許可するには、autocomplete 属性を指定します。</small><br/>
+          <small>minlength 属性や maxlength 属性を使って、許容する最小の長さと最大の長さをパスワードに適用することができます。</small><br/>
+          <small>pattern 属性を使って、パスワードがそれらの要件に合致しているか自動的に確認するための正規表現を設定することができます。</small>
+        </p>
         <hr/>
-        <details>
-          <summary>入力欄に共通する属性</summary>
+        <fieldset>
+          <legend>入力欄に共通する属性</legend>
           <p>
             <small>required</small><br/>
             入力欄への入力を必須に設定します。
@@ -171,7 +177,7 @@
             <small>autocorrect="on"</small><br/>
             打ち間違いの自動修正や、テキストの置き換え処理を有効にします。
           </p>
-        </details>
+        </fieldset>
       </section>
       <hr/>
       <p style="text-align: center;">/* ~~~ */</p>
@@ -186,14 +192,6 @@
           チェック項目のラベル（キャプション付け）には label 要素を使用し、
           label要素のfor属性の値 と input要素のid属性の値 に共通の名前を設定します。
         </p>
-        <p>
-          name 属性に同じ値を持つ項目を、同一のグループにグループ付けします。<br/>
-          <small>fieldset で 同一グループの項目をまとめると便利です。</small><br/>
-        </p>
-        <p>
-          value 属性に、項目が選択されたときに送信する値を設定します。<br/>
-          <small>checked 属性が設定された項目は、ページが読み込まれたときに自動的に選択されます。</small>
-        </p>
         <fieldset class="input_tag">
           <legend class="label_tag">for="<i>ラベル名</i>"></legend>
           type="<b>checkbox</b>" name="<u>グループ名</u>" id="<i>ラベル名</i>" value="チェックボックスの値"
@@ -202,17 +200,18 @@
           <legend class="label_tag">for="<i>ラベル名</i>"></legend>
           type="<b>radio</b>" name="<u>グループ名</u>" id="<i>ラベル名</i>" value="ラジオボタンの値"
         </fieldset>
+        <p>
+          同一のグループに属するチェック項目の name 属性に同じ値(グループ名)を設定します。<br/>
+          <small>fieldset で 同一グループの項目をまとめると便利です。</small><br/>
+        </p>
+        <p>
+          value 属性に、項目が選択されたときに送信する値を設定します。<br/>
+          <small>checked 属性が設定された項目は、ページが読み込まれたときに自動的に選択されます。</small>
+        </p>
       </section>
       <hr/>
       <p style="text-align: center;">/* ~~~ */</p>
       <hr/>
-      <p>
-        <b class="input_tag">type="<i>password</i>"</b><br/>
-        <small>テキストが読み取られることがないように、文字がアスタリスク ("*") やドット ("•") のような記号に置き換えられる入力欄です。</small><br/>
-        <small>パスワードを自動的に入力するため、ユーザーのパスワードマネージャを許可するには、autocomplete 属性を指定します。</small><br/>
-        <small>minlength 属性や maxlength 属性を使って、許容する最小の長さと最大の長さをパスワードに適用することができます。</small><br/>
-        <small>pattern 属性を使って、パスワードがそれらの要件に合致しているか自動的に確認するための正規表現を設定することができます。</small>
-      </p>
     </details>
     <hr/>
     <details class="select_element">

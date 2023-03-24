@@ -2,9 +2,9 @@ button,
 input,
 select,
 textarea {
+  appearance: none;
   font-family: inherit;
   font-size: 1rem;
-  appearance: none;
   transition: 0.5s;
 }
 
@@ -12,8 +12,8 @@ button,
 input,
 select,
 textarea {
-  box-sizing: border-box;
   border: 0.1rem solid;
+  box-sizing: border-box;
 }
 
 input[type="text"],
@@ -45,8 +45,8 @@ select {
 
 fieldset,
 legend {
-  box-sizing: border-box;
   border: 0.2rem double;
+  box-sizing: border-box;
 }
 
 fieldset {
@@ -57,11 +57,11 @@ fieldset {
 
 legend {
   background: #000;
-  color: #fff;
   border-radius: 0.25rem;
+  color: #fff;
   font-size: 75%;
-  padding: 0.25rem 0.5rem;
   text-align: center;
+  padding: 0.25rem 0.5rem;
 }
 
 
@@ -151,9 +151,9 @@ input:valid {
 
 .checkbox label,
 .radio label {
-  box-sizing: border-box;
-  border: 0.1rem solid;
   background: #fff;
+  border: 0.1rem solid;
+  box-sizing: border-box;
   color: #000;
   display: inline-block;
   margin: 0.125rem 0;

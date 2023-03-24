@@ -1,54 +1,194 @@
-<strong>日時</strong>
-<p>
-  <label for="typeD">type="<i>date</i>"</label>
-  <input id="typeD" type="date"></input>
-</p>
-<p>
-  <small>日付（時刻を除いた年、月、日）を入力するためのコントロールです。</small><br/>
-  <small>日付は ISO8601 に従って書式化されます。</small><br/>
-</p>
-<hr/>
-<p>
-  <label for="typeDL">type="<i>datetime-local</i>"</label>
-  <input id="typeDL" type="datetime-local"></input>
-</p>
-<p>
-  <small>タイムゾーン情報がない日付と時刻を入力するためのコントロールです。</small><br/>
-  <small>対応しているブラウザーでは、アクティブになったときに日付ピッカーまたは日付および時刻部分の数値のホイールが開きます。</small><br/>
-  <small>ユーザーに日時入力と共にタイムゾーンを入力できるようにする必要がある場合、 select 要素などでタイムゾーンを入力する手段を提供することができます。</small><br/>
-</p>
-<hr/>
-<p>
-  <label for="typeTT">type="<i>time</i>"</label>
-  <input id="typeTT" type="time"></input>
-</p>
-<p>
-  <small>時刻を入力するためのコントロールです。</small><br/>
-  <small>時刻 (時と分、任意で秒) を入力できるように設計された入力欄を生成します。</small><br/>
-  <small>step 属性の値で 時刻を入力できる単位を設定できます。（step の既定値は 60 であり、 60 秒 (1 分、60,000 ミリ秒) を表します。）</small>
-</p>
-<hr/>
-<p>
-  <label for="month">type="<i>month</i>"</label>
-  <input id="month" type="month"></input>
-</p>
-<p>
-  <small>年と月を入力するためのコントロールです。</small><br/>
-  <small>ユーザーが年と月を入力できるようにする入力フィールドを作成し、年と月を簡単に入力できるようにします。</small>
-</p>
-<hr/>
-<p>
-  <label for="">type="<i>week</i>"</label>
-  <input id="" type="week"></input>
-</p>
-<p>
-  <small>年と週番号で構成される日付を入力するためのコントロールです。</small><br/>
-  <small>年と、その年の ISO 8601 週番号 (つまり、第 1 週から第 52 または 53 週) を簡単に入力することができる入力欄を生成します。</small><br/>
-  <small></small><br/>
-  <small></small><br/>
-</p>
-<hr/>
-<p>
-  <small>min および max を使用して有効な日付を制限したり、 required 属性を使用して日時の入力を必須にしたりすることができます。</small>
-</p>
-<hr/>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width">
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../html/elements.css">
+  <style type="text/css">
+  h1 {
+    font-size: 200%;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 small {
+    font-size: 55%;
+    line-height: 55%;
+  }
+
+  h2 {
+    font-size: 125%;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+  }
+
+  summary {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  summary::marker,
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary::before {
+    content: "→";
+    display: inline-block;
+    background-color: #000;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 125%;
+    padding: 0.25rem 0.5rem;
+    margin: 0.25rem 0.5rem 0.25rem 0;
+    transition: 0.5s;
+  }
+
+  #dateForm {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  #dateForm p {
+    padding: 0;
+    margin: 0 0.25rem 0.25rem 0;
+  }
+
+  /* オープン時 */
+  details[open] summary::before {
+    transform: rotate(90deg); /* 90度回転 */
+  }
+  </style>
+</head>
+<body>
+  <p>
+    <button type="button" onclick="howtoCoding()">フォーム関連要素</button>
+  </p>
+  <h1>Form-associated Content</h1>
+  <p>日付・日時</p>
+  <p><small>date・datetime-local・time・month・week</small></p>
+  <hr/>
+  <details>
+    <summary>
+      <font class="input_tag">type="<i>date</i>"</font>
+    </summary>
+    <p>
+      <input type="date"></input>
+    </p>
+    <p>
+      日付（時刻を除いた年、月、日）を入力するためのコントロールです。<br/>
+      <small>結果の値は、 YYYY-MM-DD 形式 で 年・月・日を含みますが、時刻は含まれません。</small>
+    </p>
+    <p>
+      <small>日付の入力欄の既定値を value 属性に設定することができます。</small><br/>
+      <small>min および max 属性を使用して、ユーザーが選択できる日付を制限することができます。</small>
+    </p>
+    <hr/>
+    <fieldset>
+      <legend class="input_tag">type="<i>datetime-local</i>"</legend>
+      <input type="datetime-local"></input>
+      <p>
+        タイムゾーン情報がない日付と時刻を入力するためのコントロールです。
+      </p>
+      <p>
+        <small>対応しているブラウザーでは、アクティブになったときに日付ピッカーまたは日付および時刻部分の数値のホイールが開きます。</small><br/>
+        <small>ユーザーに日時入力と共にタイムゾーンを入力できるようにする必要がある場合、 select 要素などでタイムゾーンを入力する手段を提供することができます。</small><br/>
+      </p>
+      <p>
+        日付や時刻の value は常に YYYY-MM-DDThh:mm の書式です。<br/>
+        <small>表示される日付と時刻の書式は実際の value とは異なり、オペレーティングシステムからの報告に従ってユーザーのロケールによって書式化されます。</small><br/>
+        <small>min および max 属性を使用して、ユーザーが選択できる日時を制限することができます。</small><br/>
+      </p>
+    </fieldset>
+  </details>
+  <details>
+    <summary>
+      <font class="input_tag">type="<i>time</i>"</font>
+    </summary>
+    <p>
+      <input type="time"></input>
+    </p>
+    <p>時刻を入力するためのコントロールです。</p>
+    <p>
+      時刻の値は、常に先頭にゼロを含む 24 時制で hh:mm の書式で、秒を含む場合は、書式は常に hh:mm:ss です。<br/>
+      <small>時刻 (時と分、任意で秒) を入力できるように設計された入力欄を生成します。</small><br/>
+      <small>value 属性に時刻を指定することで、既定値を設定することができます。</small><br/>
+    </p>
+    <p>
+      step 属性の値で 時刻を入力できる単位を設定できます。<br/>
+      <small>step の既定値は 60 であり、 60 秒 (1 分、60,000 ミリ秒) を表します。</small><br/>
+      <small>ユーザーが選択できる時刻を制限する場合は、min および max 属性を使用します。</small>
+    </p>
+    <hr/>
+  </details>
+  <details>
+    <summary>
+      <font class="input_tag">type="<i>month</i>"</font>
+    </summary>
+    <p>
+      <input type="month"></input>
+    </p>
+    <p>
+      年と月を入力するためのコントロールです。<br/>
+      <small>値は "YYYY-MM" の形式の文字列で、 YYYY は 4 桁の年、 MM は月の番号です。</small>
+    </p>
+    <p>
+      ユーザーが年と月を入力できるようにする入力フィールドを作成し、年と月を簡単に入力できるようにします。<br/>
+      <small>このコントロールのユーザーインターフェイスは、現時点では対応が不安定であり、デスクトップ版の Chrome/Opera と Edge — および最新のバージョンのモバイルブラウザー — のみが対応しています。 </small><br/>
+    </p>
+    <hr/>
+  </details>
+  <details>
+    <summary>
+      <font class="input_tag">type="<i>week</i>"</font>
+    </summary>
+    <p>
+      <input type="week"></input>
+    </p>
+    <p>
+      年と週番号で構成される日付を入力するためのコントロールです。<br/>
+      <small>年と、その年の ISO 8601 週番号 (つまり、第 1 週から第 52 または 53 週) を簡単に入力することができる入力欄を生成します。</small>
+    </p>
+    <p>
+      <small>このコントロールのユーザーインターフェイスは、現時点では対応が不安定であり、Chrome/Opera と Microsoft Edge のみが対応しています。 </small><br/>
+    </p>
+    <hr/>
+  </details>
+  <hr/>
+
+  <form id="dateForm">
+    <p>
+      <select id="yearForm" name="year"></select>
+      <label for="yearForm">年</label>
+    </p>
+    <p>
+      <select id="monthForm" name="month">
+        <option value="01">JAN</option>
+        <option value="02">FEB</option>
+        <option value="03">MAR</option>
+        <option value="04">APR</option>
+        <option value="05">MAY</option>
+        <option value="06">JUN</option>
+        <option value="07">JUL</option>
+        <option value="08">AUG</option>
+        <option value="09">SEP</option>
+        <option value="10">OCT</option>
+        <option value="11">NOV</option>
+        <option value="12">DEC</option>
+      </select>
+      <label for="monthForm">月</label>
+    </p>
+    <p>
+      <select id="dayForm" name="day">
+      </select>
+      <label for="dayForm">日</label>
+    </p>
+  </form>
+  <script src="date.js"></script>
+</body>
+</html>
