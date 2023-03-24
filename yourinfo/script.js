@@ -1,3 +1,5 @@
+'use strict';
+
 const storage = localStorage;
 
 const bgcolorForm = document.querySelector('#bgcolor');

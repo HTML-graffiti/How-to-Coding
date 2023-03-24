@@ -1,3 +1,7 @@
+'use strict'
+
+const storage = localStorage;
+
 function geoFindMe() {
   const myLocation = document.querySelector('#myLocation');
   myLocation.textContent = '';
@@ -9,6 +13,19 @@ function geoFindMe() {
     const accuracy = position.coords.accuracy;
 
     myLocation.innerHTML = `Latitude: ${latitude} °, Longitude: ${longitude} ° | Altitude Accuracy: ${accuracy} m`;
+
+    function setJSON() {
+
+      const geolocation = {
+        latitude : latitude,
+        longitude : longitude,
+        accuracy : accuracy
+      }
+
+      const gpsJSON = JSON.stringify(geolocation);
+      storage.setItem('geolocation', gpsJSON);
+      console.log('geolocation', gpsJSON);
+    }
 
     const mapIframe = document.createElement('iframe');
     mapIframe.name = 'mapIframe';
