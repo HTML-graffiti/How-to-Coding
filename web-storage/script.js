@@ -1,8 +1,6 @@
 'use strict';
 const storage = localStorage;
 
-const fontSize = document.querySelector('#fontSize');
-
 if(!storage.getItem('fontSize')) {
   populateStorage();
 } else {
@@ -15,38 +13,39 @@ function populateStorage() {
 }
 
 function viewStorage() {
-  var list = document.querySelector("#list")
-
   // localStorageすべての情報の取得
   for (var i=0; i < storage.length; i++) {
-    var itemStorage = storage.key(i);
+    const list = document.querySelector("#list")
+    let itemStorage = storage.key(i);
 
     // localStorageのキーと値を表示
-    var listP = document.createElement("p");
-    var listKey = document.createElement("small");
-    var listValue = document.createElement("u");
+    let listP = document.createElement("p");
+    let listKey = document.createElement("small");
+    let listValue = document.createElement("u");
     list.appendChild(listP);
     listP.appendChild(listKey);
     listP.appendChild(listValue);
     listKey.innerHTML = itemStorage;
     listValue.innerHTML = storage.getItem(itemStorage);
   }
-  
+
   getStyle();
 }
 
 function getStyle() {
   const html = document.documentElement;
+  const body = document.body;
+  const list = document.querySelector("#list")
 
-  const currentSize = storage.getItem('fontSize');
-  fontSize.value = currentSize;
-
-  html.style.fontSize = currentSize;
+  html.style.fontSize = storage.getItem('fontSize');
+  body.className = storage.getItem('theme');
+  list.style.color = storage.getItem('color');
+  list.style.background = storage.getItem('bgcolor');
 }
 
 function removeallStorage() {
   storage.clear();
-  viewStorage()
+  viewStorage();
   getStyle();
 }
 

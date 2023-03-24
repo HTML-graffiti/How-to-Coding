@@ -22,37 +22,27 @@
 
   </script>
 
-  <script src="../../readme/index.js" async></script>
+  <script src="../readme/index.js" async></script>
 
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="theme.css" />
-  <link rel="stylesheet" href="../../readme/index.css" />
+  <link rel="stylesheet" href="../readme/index.css" />
 </head>
 <body>
   <aside id="contents"></aside>
+  <form class="readme">
+    <h1></h1>
+    <p>
+      <button type="button" id="button" onclick="removeallStorage()">storage.clear()</button>
+    </p>
+  </form>
 
   <article class="readme">
-    <form>
-      <h1></h1>
-      <p>
-        <button type="button" id="button" onclick="removeallStorage()">storage.clear()</button>
-      </p>
-    </form>
-    <section id="list"></section>
+    <section id="list" class="readme"></section>
   </article>
 
   <aside id="links"></aside>
 
-  <script type="text/javascript">
-
-  const newColorAll = document.querySelectorAll('h1, form');
-  for (const newColor of newColorAll) {
-    newColor.classList.add("color")
-  }
-
-  </script>
-
   <script src="script.js" defer></script>
-  <script src="jscolor.js"></script>
 </body>
 </html>
