@@ -10,17 +10,6 @@ function geoFindMe() {
 
     myLocation.innerHTML = `Latitude: ${latitude} °, Longitude: ${longitude} ° | Altitude Accuracy: ${accuracy} m`;
 
-    function setJSON() {
-      const geolocation = {
-        latitude : latitude,
-        longitude : longitude,
-        accuracy : accuracy
-      }
-      const gpsJSON = JSON.stringify(geolocation);
-      localStorage.setItem('geolocation', gpsJSON);
-      console.log('geolocation', gpsJSON);
-    }
-
     const mapIframe = document.createElement('iframe');
     mapIframe.name = 'mapIframe';
     mapIframe.src = `https://www.openstreetmap.org/export/embed.html?bbox=${longitude}%2C${latitude}&amp;layer=mapnik`;
@@ -55,6 +44,18 @@ function geoFindMe() {
     navigator.geolocation.getCurrentPosition(success, error);
   }
 
+  setJSON()
+}
+
+function setJSON() {
+  const geolocation = {
+    latitude : latitude,
+    longitude : longitude,
+    accuracy : accuracy
+  }
+  const gpsJSON = JSON.stringify(geolocation);
+  localStorage.setItem('geolocation', gpsJSON);
+  console.log('geolocation', gpsJSON);
 }
 
 document.querySelector('#myBtn').addEventListener('click', geoFindMe);
