@@ -407,7 +407,7 @@
     {
       "date" : "Web API",
       "name" : "Web Storage API | ウェブストレージ",
-      "url" : "/coding/js/web-storage/",
+      "url" : "/coding/web-storage/",
       "language" : "api",
       "status" : "guide"
     },
