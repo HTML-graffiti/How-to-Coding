@@ -24,6 +24,10 @@
 </p>
 <p>使用するデバイスに応じてウェブサイトの表示を最適化できるように、ブラウザは自動的にさまざまな情報を送信します。</p>
 <hr/>
+<p>
+  <font>これらは、個人情報を直接含むような情報ではなく、インターネットに接続する際に必ず送信しなければいけない情報です。</font>
+</p>
+<br/>
 <section id="network">
   <p>
     <a href="https://developer.mozilla.org/ja/docs/Web/API/Network_Information_API" target="_blank" rel="noreferrer">Network Information API</a><br/>
@@ -79,14 +83,10 @@ if (connectionInfo !== undefined) {
     </tbody>
   </table>
 </section>
-<br/>
-<p>
-  <font>これらは、個人情報を直接含むような情報ではなく、インターネットに接続する際に必ず送信しなければいけない情報です。</font>
-</p>
 
 <script type="text/javascript">
   "use strict"
-  
+
   const connectionInfo = navigator.connection;
 
   if (connectionInfo !== undefined) {
