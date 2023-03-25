@@ -102,20 +102,11 @@ function e($html) {
     </select>
   </form>
 
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script type="text/javascript">
-  const xhr = new XMLHttpRequest(),
-  method = "GET",
-  url = "howto.html"; //読み込まれるHTMLを指定
-  const box = document.getElementById("howto"); //読み込みたい位置を指定
-
-  xhr.open(method, url, true);
-  xhr.onreadystatechange = function () {
-    if(xhr.readyState === 4 && xhr.status === 200) {
-      const restxt = xhr.responseText; //String型で取得
-      box.innerHTML = restxt; //完了
-    }
-  };
-  xhr.send();
+  $(function() {
+    $("#howto").load("howto.html");
+  });
 
   const newBGColorAll = document.querySelectorAll('form select, #log button, #hidden, #hidden button');
   for (const newBGColor of newBGColorAll) {
