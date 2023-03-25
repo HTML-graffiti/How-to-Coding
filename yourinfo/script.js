@@ -38,6 +38,8 @@ function setStyles() {
   for (const color of colorAll) {
     color.style.color = currentColor;
   }
+
+  console.info("Background Color:", currentBG, ". Color:", currentColor);
 }
 
 bgcolorForm.onchange = setBGcolor;
