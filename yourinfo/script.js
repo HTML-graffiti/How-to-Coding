@@ -6,13 +6,18 @@ const bgcolorForm = document.querySelector('#bgcolor');
 const colorForm = document.querySelector('#color');
 
 if(!storage.getItem('bgcolor')) {
-  populateStorage();
+  setBGcolor();
+  setCcolor();
 } else {
   setStyles();
 }
 
-function populateStorage() {
+function setBGcolor() {
   storage.setItem('bgcolor', bgcolorForm.value);
+  setStyles();
+}
+
+function setCcolor() {
   storage.setItem('color', colorForm.value);
   setStyles();
 }
@@ -35,5 +40,5 @@ function setStyles() {
   }
 }
 
-bgcolorForm.onchange = populateStorage;
-colorForm.onchange = populateStorage;
+bgcolorForm.onchange = setBGcolor;
+colorForm.onchange = setCcolor;
