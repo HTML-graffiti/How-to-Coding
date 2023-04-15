@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="../../readme/style.css" />
   <link rel="stylesheet" href="../pseudo-classes/lightbox.css" />
   <style type="text/css">
-
   html {
     height: -webkit-fill-available;
   }
@@ -109,9 +108,7 @@
     mix-blend-mode: difference;
     word-break: break-word;
   }
-
   </style>
-
 </head>
 <body>
   <nav id="nav">
@@ -128,18 +125,18 @@
   <p id="lastModified"></p>
 
   <article class="lightbox" id="normal">
-    <a href="#" class="close" onclick="randomBG()"></a>
+    <a href="#" class="close" onclick="window.history.back(); return false;"></a>
     <section class="readme translate_center">
       <h2>通常フロー</h2>
       <p>ページレイアウトの制御を何もしない場合のレイアウト方法</p>
       <br/>
       <pre>
-#main {
-  width: 100%;
-  max-width: 550px;
-  padding: 1rem 2.5%;
-  margin: auto;
-}
+        #main {
+          width: 100%;
+          max-width: 550px;
+          padding: 1rem 2.5%;
+          margin: auto;
+        }
       </pre>
       <p>デフォルトでは、ブロックレベル要素はその親要素の幅の 100%・高さはそのコンテンツと同じ、インライン要素の 幅・高さ はコンテンツと同じです。</p>
       <p><i>パディング (padding)・マージン (margin)・ボーダー (border) を追加することによってボックスモデルをレイアウトし、width・height で幅と高さを指定します。</i></p>
@@ -147,45 +144,45 @@
   </article>
 
   <article class="lightbox" id="float">
-    <a href="#" class="close" onclick="randomBG()"></a>
+    <a href="#" class="close" onclick="window.history.back(); return false;"></a>
     <section class="readme translate_center">
       <h2>フロート</h2>
       <p>要素をブロックの左右どちらかの側に沿うように設置し、それに続く要素がその周りを回りこめるように定義する</p>
       <br/>
       <pre>
-#main p:nth-child(2n+1) {
-  float: left;
-  width: 47.5%;
-}
+        #main p:nth-child(2n+1) {
+          float: left;
+          width: 47.5%;
+        }
 
-#main p:nth-child(2n) {
-  float: right;
-  width: 47.5%;
-}
+        #main p:nth-child(2n) {
+          float: right;
+          width: 47.5%;
+        }
       </pre>
       <br/>
       <h2>clear</h2>
       <p>要素をその前にある float 要素の下に移動 (clear) するかどうかを設定する</p>
       <br/>
       <pre>
-/* クリアを設定しない (既定値) */
-clear: none;
+        /* クリアを設定しない (既定値) */
+        clear: none;
 
-/* float: left; の回り込みをクリア */
-clear: left;
+        /* float: left; の回り込みをクリア */
+        clear: left;
 
-/* float: right; の回り込みをクリア */
-clear: right;
+        /* float: right; の回り込みをクリア */
+        clear: right;
 
-/* 左右両方の float の回り込みをクリア  */
-clear: both;
+        /* 左右両方の float の回り込みをクリア  */
+        clear: both;
       </pre>
       <br/>
     </section>
   </article>
 
   <article class="lightbox" id="position">
-    <a href="#" class="close" onclick="randomBG()"></a>
+    <a href="#" class="close" onclick="window.history.back(); return false;"></a>
     <section class="readme translate_center">
       <h2>位置指定</h2>
       <p>通常のドキュメントレイアウトフローから要素を取り出して異なるふるまいを指定</p>
@@ -204,9 +201,9 @@ clear: both;
       </p>
       <br/>
       <pre>
-#main p {
-  position: relative;
-}
+        #main p {
+          position: relative;
+        }
       </pre>
       <p>
         要素の位置変更には、top・right・bottom・left を設定する必要があります。<br/>
@@ -221,11 +218,11 @@ clear: both;
       </p>
       <br/>
       <pre>
-#main h1 {
-  position: absolute;
-  top: 15px;
-  left: 10px;
-}
+        #main h1 {
+          position: absolute;
+          top: 15px;
+          left: 10px;
+        }
       </pre>
       <p>
         <i>最終的な位置は、top・right・bottom・left で設定します。</i>
@@ -239,14 +236,14 @@ clear: both;
       </p>
       <br/>
       <pre>
-#main h2 {
-  position: fixed;
-  bottom: 1.25%;
-  right: 1.25%;
-  z-index: 2;
-  width: 300px;
-  max-width: 75%;
-}
+        #main h2 {
+          position: fixed;
+          bottom: 1.25%;
+          right: 1.25%;
+          z-index: 2;
+          width: 300px;
+          max-width: 75%;
+        }
       </pre>
       <p>
         <i>最終的な位置は、top・right・bottom・left で設定します。</i>
@@ -256,7 +253,7 @@ clear: both;
   </article>
 
   <aside class="lightbox" id="etc">
-    <a href="#" class="close" onclick="randomBG()"></a>
+    <a href="#" class="close" onclick="window.history.back(); return false;"></a>
     <section id="contents" class="translate_center"></section>
     <section id="links" class="fixed_bottom"></section>
   </aside>
@@ -269,7 +266,6 @@ clear: both;
   })
 
   let lastModified = document.querySelector('#lastModified');
-
   lastModified.innerHTML =
   'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
 
@@ -289,8 +285,14 @@ clear: both;
       bgItem.style.background = randomRGB();
     }
   }
-
   randomBG()
+
+  let closeAll = document.querySelectorAll('.close');
+  for (let close of closeAll) {
+    close.addEventListener('click', event => {
+      randomBG()
+    });
+  }
   </script>
 </body>
 </html>
