@@ -6,6 +6,7 @@ document.onreadystatechange = function() {
     break;
 
     case "interactive":
+    document.body.style.background = "#000"
     break;
 
     case "complete":
