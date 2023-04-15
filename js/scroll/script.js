@@ -55,13 +55,10 @@ document.querySelector('#scrollByminus').addEventListener('click', event => {
   });
 });
 
-
 let scale = 1;
 const wheel = document.querySelector('#three');
-
 wheel.addEventListener('wheel', event => {
   event.preventDefault();
-
   scale += event.deltaY * -0.01;
 
   // Restrict scale
