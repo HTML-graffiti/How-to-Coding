@@ -46,6 +46,17 @@ function wheelEvent(event) {
   log(msg);
 }
 
+function touchHSL(xy) {
+  let hueraw = parseInt(360 - Math.round((xy.pageY + 0.1) / (window.innerHeight) * 360));
+
+  if ((xy.pageX <= window.innerWidth / 1)) {
+    let sraw = parseInt(100 - Math.round((xy.pageX + 0.1) / (window.innerWidth) * 100));
+    let lraw = parseInt(Math.round((xy.pageX + 0.1) / (window.innerWidth) * 100));
+
+    document.body.style.background = 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)';
+  }
+};
+
 document.body.addEventListener("click", mouseEvent);
 document.body.addEventListener("dblclick", mouseEvent);
 document.body.addEventListener("mousemove", mouseEvent);
@@ -58,6 +69,12 @@ document.body.addEventListener('touchstart', touchEvent);
 document.body.addEventListener('touchend', touchEvent);
 document.body.addEventListener('touchcancel', touchEvent);
 document.body.addEventListener('touchmove', touchEvent);
+
+document.addEventListener('mousemove', touchHSL);
+document.addEventListener('touchstart', touchHSL);
+document.addEventListener('touchend', touchHSL);
+document.addEventListener('touchcancel', touchHSL);
+document.addEventListener('touchmove', touchHSL);
 
 document.body.addEventListener('keydown', keyEvent);
 document.body.addEventListener('keyup', keyEvent);
