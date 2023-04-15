@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
 
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script src="../../readme/index.js" async></script>
   <script src="../../js/online/script.js" defer></script>
 
@@ -34,12 +33,13 @@
 
   #contents::before,
   #links::before {
-    text-decoration: underline;
     display: block;
+    text-decoration: underline;
     margin: 0.5rem 0.25rem;
   }
 
   #flow_contents {
+    background: yellow;
     font-size: 95%;
     height: 95%;
   }
@@ -56,7 +56,7 @@
 
   #lastModified {
     text-align: right;
-    line-height: 125%;
+    line-height: 150%;
     word-break: break-word;
   }
   </style>
@@ -65,7 +65,7 @@
   <main id="left">
     <font id="status">(Unknown)</font>
     <br/>
-    <mark id="flow_contents" class="hide_offline"></mark>
+    <section id="flow_contents" class="hide_offline"></section>
     <hr/>
     <section id="greeting" class="hide_online"></section>
     <hr/>
@@ -82,6 +82,7 @@
 
   <h1 id="title">BODY | Hypertext Markup Language</h1>
 
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script type="text/javascript">
   $(function() {
     $("#greeting").load("../flow-content.html");
