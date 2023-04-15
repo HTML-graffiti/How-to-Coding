@@ -71,8 +71,7 @@
   </section>
 
   <main>
-    <ol id="ordered" class="ol_element">
-    </ol>
+    <ol id="ordered" class="ol_element"></ol>
     <script>
     let olArr = [
       'ol :nth-last-child(9)',
@@ -101,17 +100,17 @@
   <p id="lastModified"></p>
 
   <article class="lightbox" id="one">
-    <a href="#" class="close"></a>
+    <a href="#" class="close" onclick="window.history.back(); return false;"></a>
     <section id="child" class="readme translate_center"></section>
   </article>
 
   <article class="lightbox" id="two">
-    <a href="#" class="close"></a>
+    <a href="#" class="close" onclick="window.history.back(); return false;"></a>
     <section id="type" class="readme translate_center"></section>
   </article>
 
   <aside class="lightbox" id="etc">
-    <a href="#" class="close"></a>
+    <a href="#" class="close" onclick="window.history.back(); return false;"></a>
     <section id="contents" class="translate_center"></section>
     <section id="links" class="fixed_bottom"></section>
   </aside>

@@ -11,18 +11,35 @@
 
 <body>
   <canvas id="drawarea" onmousedown="startDraw(event)" onmousemove="Draw(event)" onmouseup="endDraw(event)"></canvas>
+
   <table id="control">
     <tbody>
       <tr>
         <td>
-          <label for="free"><input type="radio" name="type" value="free" id="free" checked>フリーハンド</label>
-          <label for="line"><input type="radio" name="type" value="line" id="line">直線</label>
-          <label for="rect"><input type="radio" name="type" value="rect" id="rect">四角形（枠線のみ）</label>
-          <label for="fillrect"><input type="radio" name="type" value="fillrect" id="fillrect">四角形（塗り潰し）</label>
-          <label for="arc"><input type="radio" name="type" value="arc" id="arc">円（枠線のみ）</label>
-          <label for="fillarc"><input type="radio" name="type" value="fillarc" id="fillarc">円（塗り潰し）</label>
-          <label for="erase"><input type="radio" name="type" value="erase" id="erase">消しゴム（白線）</label>
-          <label for="clear"><input type="radio" name="type" value="clear" id="clear">エリア消去</label>
+          <label for="free">
+            <input type="radio" name="type" value="free" id="free" checked>フリーハンド
+          </label>
+          <label for="line">
+            <input type="radio" name="type" value="line" id="line">直線
+          </label>
+          <label for="rect">
+            <input type="radio" name="type" value="rect" id="rect">四角形（枠線のみ）
+          </label>
+          <label for="fillrect">
+            <input type="radio" name="type" value="fillrect" id="fillrect">四角形（塗り潰し）
+          </label>
+          <label for="arc">
+            <input type="radio" name="type" value="arc" id="arc">円（枠線のみ）
+          </label>
+          <label for="fillarc">
+            <input type="radio" name="type" value="fillarc" id="fillarc">円（塗り潰し）
+          </label>
+          <label for="erase">
+            <input type="radio" name="type" value="erase" id="erase">消しゴム（白線）
+          </label>
+          <label for="clear">
+            <input type="radio" name="type" value="clear" id="clear">エリア消去
+          </label>
         </td>
       </tr>
       <tr>

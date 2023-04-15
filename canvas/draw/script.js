@@ -182,7 +182,7 @@ createBtn.style.zIndex = "100";
 createBtn.style.top = "0";
 createBtn.style.left = "0";
 
-const ImgArea = document.getElementById("imgarea");
+const ImgArea = document.querySelector("#imgarea");
 ImgArea.style.position = "fixed";
 ImgArea.style.zIndex = "10";
 ImgArea.style.bottom = "0";
