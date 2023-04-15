@@ -10,12 +10,18 @@
 
 @font-face {
   font-family: "ipag";
-  src: url("https://creative-community.space/ver/ipag.ttf");
+  src: url("https://creative-community.space/ipag.ttf");
+}
+
+html {
+  height: -webkit-fill-available;
 }
 
 body {
   padding: 0 1rem 1rem;
   margin: 0;
+  height: 100vh;
+  max-height: -webkit-fill-available;
 }
 
 h1,
@@ -50,4 +56,43 @@ u {
 
 hr {
   border: none;
+}
+iframe {
+  box-sizing: border-box;
+  border: none;
+}
+
+@media (orientation: landscape) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #left {
+    background: #fff;
+    filter: invert();
+  }
+
+  iframe {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    display: grid;
+    place-items: center;
+  }
+
+  #right {
+    background: #fff;
+    filter: invert();
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
 }
