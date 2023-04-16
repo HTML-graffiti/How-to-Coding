@@ -8,10 +8,10 @@
   <script src="../readme/index.js" defer></script>
 
   <base target="_blank" rel="noopener noreferrer">
+  <link rel="stylesheet" href="../readme/style.css" />
   <link rel="stylesheet" href="../cover/style.css" />
   <link rel="stylesheet" href="../cover/mobile.css" />
   <style>
-
   #contents::before {
     content:'関連記事';
   }
@@ -35,30 +35,25 @@
     line-height: 125%;
     word-break: break-word;
   }
-
   </style>
 </head>
 <body id="cover">
   <main id="left">
-    <div id="greeting" class="readme data_show"></div>
+    <div id="greeting" class="readme data_show">
+      <?php include('hello.html'); ?>
+    </div>
   </main>
   <article id="right">
     <div id="links"></div>
     <br/>
-    <div id="hello" class="data_show"></div>
+    <div id="hello" class="data_show">
+      <?php include('howto.html'); ?>
+    </div>
     <br/>
     <div id="contents"></div>
     <br/>
     <p id="lastModified">Copyright (C) 2021 creative-community.space</p>
   </article>
   <h1 id="title">The Greeting Page | How to Coding</h1>
-
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-  <script type="text/javascript">
-  $(function() {
-    $("#greeting").load("hello.html");
-    $("#hello").load("howto.html");
-  })
-  </script>
 </body>
 </html>
