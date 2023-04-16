@@ -41,12 +41,13 @@
   を記述します。
 </details>
 <hr/>
-<details class="script_tag">
-  <summary>$(function() {$('#idの値').load('〇〇.html');})</summary>
+<details class="php">
+  <summary><b class="red">include</b>('呼び出したいページのURL');</summary>
   <p>
-    <a href="https://api.jquery.com/load/">.load()</a>
-    メソッドを使って、
-    #left と #right に 特定のページを呼びだします。
+    PHP の
+    <a href="https://www.php.net/manual/ja/function.include.php">include</a>
+    式を使って、
+    #left と #right に 特定のファイルを呼びだします。
   </p>
 </details>
 <hr/>
@@ -64,40 +65,40 @@
     h1#titleは、ページ右上の position に fixed します。
   </p>
   <pre>
-#cover {
-  position: static;
-  width: 100%;
-  height: auto;
-  max-height: auto;
-}
+    #cover {
+      position: static;
+      width: 100%;
+      height: auto;
+      max-height: auto;
+    }
 
-#left,
-#right {
-  clear: both;
-  float: none;
-  position: relative;
-  padding: 5% 10% 5% 5%;
-  margin-top: 0;
-  width: 100%;
-  height: auto;
-  min-height: -webkit-fill-available;
-  transform: rotate(0) skew(0, 0);
-}
+    #left,
+    #right {
+      clear: both;
+      float: none;
+      position: relative;
+      padding: 5% 10% 5% 5%;
+      margin-top: 0;
+      width: 100%;
+      height: auto;
+      min-height: -webkit-fill-available;
+      transform: rotate(0) skew(0, 0);
+    }
 
-h1#title {
-  font-size: 4vh;
-  position: fixed;
-  top: 2.5%;
-  right: 2.5%;
-  padding: 0;
-  height: 100%;
-}
+    h1#title {
+      font-size: 4vh;
+      position: fixed;
+      top: 2.5%;
+      right: 2.5%;
+      padding: 0;
+      height: 100%;
+    }
 
-@media screen and (max-width: 550px) {
-  h1#title {
-    font-size: 4.5vw;
-  }
-}
+    @media screen and (max-width: 550px) {
+      h1#title {
+        font-size: 4.5vw;
+      }
+    }
   </pre>
 </details>
 <br/>

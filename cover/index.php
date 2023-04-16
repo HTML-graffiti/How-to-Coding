@@ -9,6 +9,7 @@
 
   <base target="_blank" rel="noopener noreferrer">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../readme/style.css" />
   <style>
 
   #contents::before {
@@ -46,26 +47,21 @@
 
 <body id="cover">
   <main id="left" class="randomGradient">
-    <section id="greeting" class="readme data_show"></section>
+    <section id="greeting" class="readme data_show">
+      <?php include('hello.html'); ?>
+    </section>
     <br/>
     <aside id="links"></aside>
   </main>
   <article id="right" class="randomGradient">
-    <section id="howto" class="readme data_show"></section>
+    <section id="howto" class="readme data_show">
+      <?php include('howto.html'); ?>
+    </section>
     <hr/>
     <nav id="contents"></nav>
     <hr/>
     <p id="lastModified">Copyright (C) 2020 creative-community.space</p>
   </article>
-
   <h1 id="title">The Coverpage | How to Coding</h1>
-
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-  <script type="text/javascript">
-  $(function() {
-    $("#greeting").load("hello.html");
-    $("#howto").load("howto.html");
-  })
-  </script>
 </body>
 </html>

@@ -96,6 +96,14 @@
   content: '</noscript>';
 }
 
+.php::before {
+  content: '<?php ';
+}
+
+.php::after {
+  content: ' ?>';
+}
+
 .body::before {
   content: '<body>';
 }
