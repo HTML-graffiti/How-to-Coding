@@ -17,23 +17,16 @@
 </head>
 
 <body id="cover" ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
-
   <main id="left">
-    <section id="hello" class="data_show"></section>
+    <section id="hello" class="data_show">
+      <?php require('hello.html'); ?>
+    </section>
     <br/>
     <section id="contents"></section>
   </main>
-
   <article id="right">
     <p><font id="status">(Unknown)</font></p>
     <section id="links"></section>
   </article>
-
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-  <script type="text/javascript">
-  $(function() {
-    $("#hello").load("hello.html");
-  });
-  </script>
 </body>
 </html>
