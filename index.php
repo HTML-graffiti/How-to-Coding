@@ -19,8 +19,8 @@
 <body id="cover" ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
   <main id="left">
     <section id="hello" class="data_show">
-      <?php require('hello.html'); ?>
-    </section>
+<?php require('hello.html'); ?>
+</section>
     <br/>
     <section id="contents"></section>
   </main>
