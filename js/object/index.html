@@ -7,7 +7,6 @@
 
   <script src="../../readme/index.js" async></script>
   <script type="text/javascript" async>
-
   document.addEventListener('readystatechange', (event) => {
     if (event.target.readyState === 'interactive') {
       const titleH1 = document.querySelector('#cover h1');
@@ -15,9 +14,7 @@
 
       const hello = document.querySelector('#hello');
       hello.style.display = "none";
-    }
-
-    else if (event.target.readyState === 'complete') {
+    } else if (event.target.readyState === 'complete') {
       const titleH1 = document.querySelector('h1');
       titleH1.textContent = 'Object & Arrays';
       titleH1.insertAdjacentHTML ( 'beforebegin', '<p>オブジェクト・配列</p>' )
@@ -26,14 +23,12 @@
       hello.style.display = "block";
     }
   });
-
   </script>
 
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../../readme/style.css" />
   <link rel="stylesheet" href="../../readme/active.css" />
   <style>
-
   body {
     transition: background 1s;
   }
@@ -61,11 +56,9 @@
     text-decoration: underline;
     margin: 0.5rem 0.75rem 0.5rem 0.25rem;
   }
-
   </style>
 </head>
 <body>
-
   <nav id="menu">
     <a href="#object">オブジェクト</a>
     <a href="#arrays">配列</a>
