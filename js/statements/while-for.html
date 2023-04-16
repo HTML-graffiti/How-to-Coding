@@ -129,5 +129,21 @@
 <h3 id="listArr"></h3>
 <hr/>
 
-<script src="../../css/colors/names.js" defer></script>
-<script src="while-for.js" defer></script>
+<script src="../../css/colors/names.js"></script>
+<script type="text/javascript">
+  "use strict"
+
+  let listArr = document.querySelector('#listArr');
+
+
+  for (let color of colors) {
+    let codeArr = document.createElement('code');
+    codeArr.textContent = color;
+    codeArr.style.color = color;
+    codeArr.style.margin = "5px";
+
+    listArr.appendChild(codeArr);
+  }
+
+  listArr.style.background = '#fff';
+</script>
