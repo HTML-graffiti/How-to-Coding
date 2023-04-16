@@ -6,25 +6,19 @@
   <meta name="format-detection" content="telephone=no" />
 
   <script async src="../../readme/index.js" async></script>
-
   <script type="text/javascript" async>
-
   document.addEventListener('readystatechange', (event) => {
     if (event.target.readyState === 'interactive') {
       let lastModified = document.querySelector('#cover h1');
       lastModified.innerHTML =
       'Last Modified<br/><time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
-    }
-
-    else if (event.target.readyState === 'complete') {
+    } else if (event.target.readyState === 'complete') {
       const TITLE = ' | How to Coding',
       titleH1 = document.querySelector('#cover h1');
-
       titleH1.innerHTML = `<i>Document Object Model</i><br/>Window`;
       titleH1.style.textAlign = "center";
     }
   });
-
   </script>
 
   <link rel="stylesheet" href="style.css" />
@@ -66,7 +60,6 @@
   </style>
 </head>
 <body>
-
   <nav>
     <a href="#api">Window</a>
     <a href="#console">Console</a>
@@ -134,7 +127,6 @@
 
   <aside id="contents"></aside>
 
-  <script src="script.js" defer></script>
   <script src="../../readme/script.js" defer></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script type="text/javascript">
