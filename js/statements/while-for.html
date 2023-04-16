@@ -112,7 +112,6 @@
   <i>const・let・var で各ループ処理を宣言</i>
 </p>
 <hr/>
-<!--
 <p>let listArr = document.querySelector('#listArr');</p>
 <details>
   <summary><code>for (let <code class="red">color</code> of <code class="red">colors</code>)</code> {</summary>
@@ -127,6 +126,22 @@
 </details>
 <p><code>}</code></p>
 <hr/>
--->
 
 <script src="../../css/colors/names.js"></script>
+<script type="text/javascript">
+  "use strict"
+
+  let listArr = document.querySelector('#listArr');
+
+
+  for (let color of colors) {
+    let codeArr = document.createElement('code');
+    codeArr.textContent = color;
+    codeArr.style.color = color;
+    codeArr.style.margin = "5px";
+
+    listArr.appendChild(codeArr);
+  }
+
+  listArr.style.background = '#fff';
+</script>
