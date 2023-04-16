@@ -38,7 +38,6 @@
 <details>
   <summary><code>i 0 から <= colors.length まで ++ 1 を加算し ループを実行</code></summary>
 <p>let colors = [</p>
-<ul id="names"></ul>
 <p>];</p>
 <hr/>
 </details>
@@ -126,22 +125,3 @@
 </details>
 <p><code>}</code></p>
 <hr/>
-
-<script src="../../css/colors/names.js"></script>
-<script type="text/javascript">
-  "use strict"
-
-  let listArr = document.querySelector('#listArr');
-
-
-  for (let color of colors) {
-    let codeArr = document.createElement('code');
-    codeArr.textContent = color;
-    codeArr.style.color = color;
-    codeArr.style.margin = "5px";
-
-    listArr.appendChild(codeArr);
-  }
-
-  listArr.style.background = '#fff';
-</script>
