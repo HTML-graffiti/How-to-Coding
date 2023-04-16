@@ -6,7 +6,7 @@
   <meta name="format-detection" content="telephone=no" />
 
   <script src="index.js" async></script>
-  <script src="readme/index.js"></script>
+  <script src="readme/index.js" async></script>
   <script src="js/online/script.js"></script>
 
   <link rel="icon" href="/ver/logo.png">
