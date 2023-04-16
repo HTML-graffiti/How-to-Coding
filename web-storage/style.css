@@ -10,12 +10,12 @@ body {
 
 @font-face {
   font-family: "San Francisco";
-  src: url("https://creative-community.space/coding/readme/san-francisco/SF-Pro.ttf");
+  src: url("https://creative-community.space/ver/font/san-francisco/SF-Pro.ttf");
 }
 
 @font-face {
   font-family: "NewYork";
-  src: url("https://creative-community.space/coding/cover/NewYork.otf");
+  src: url("https://creative-community.space/ver/font/NewYork.otf");
 }
 
 h1 {
