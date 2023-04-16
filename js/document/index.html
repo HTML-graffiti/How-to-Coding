@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
 
+  <script src="../../readme/index.js" async></script>
   <script type="text/javascript" async>
   document.addEventListener('readystatechange', (event) => {
     if (event.target.readyState === 'interactive') {
@@ -13,14 +14,11 @@
       const modName = "HTML";
       const modVer = "2.0";
       const conformTest = document.implementation.hasFeature(modName, modVer);
-
       coverH1.innerHTML = `DOM ${modName} ${modVer} supported?: ${conformTest}`;
-    }
-
-    else if (event.target.readyState === 'complete') {
+    } else if (event.target.readyState === 'complete') {
       let coverH1 = document.querySelector('#cover h1');
-      coverH1.innerHTML = `Document`;
 
+      coverH1.innerHTML = `Document`;
       documentJS.innerHTML =
       '<i>document.characterSet</i> ' + document.characterSet + '<br/>' +
       '<i>document.body.childElementCount</i> ' + document.body.childElementCount + '<br/>' +
@@ -40,9 +38,7 @@
       });
     }
   });
-  </script>
-  <script src="../../readme/index.js" async></script>
-  <script defer>
+
   function setBodyAttr(attr, value) {
     if (document.body) document.body[attr] = value;
     else throw new Error("no support");
@@ -55,7 +51,6 @@
   <link rel="stylesheet" href="../../readme/active.css" />
   <link rel="stylesheet" href="../../html/elements.css" />
   <style>
-
   #contents::before {
     content:'関連記事';
     display: inline-block;
@@ -75,7 +70,6 @@
     text-decoration: underline;
     margin: 0.5rem 0.75rem 0.5rem 0.25rem;
   }
-
   </style>
 </head>
 <body>

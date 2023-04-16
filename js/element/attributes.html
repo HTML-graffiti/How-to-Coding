@@ -117,7 +117,6 @@ anchorLinks.forEach((link) => {
   "use strict"
 
   const result = document.getElementById("result");
-
   const attributes = document.querySelectorAll(".readme section");
   for (const attribute of attributes) {
     if (attribute.hasAttributes()) {
@@ -130,6 +129,5 @@ anchorLinks.forEach((link) => {
     } else {
       result.innerHTML = "表示する属性はありません";
     }
-
   }
 </script>
