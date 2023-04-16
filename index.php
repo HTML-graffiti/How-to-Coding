@@ -7,7 +7,6 @@
 
   <script src="index.js" async></script>
   <script src="readme/index.js" async></script>
-  <script src="js/online/script.js"></script>
 
   <link rel="icon" href="/ver/logo.png">
   <link rel="apple-touch-icon" href="/ver/logo.png">
@@ -28,5 +27,6 @@
     <p><font id="status">(Unknown)</font></p>
     <section id="links"></section>
   </article>
+  <script src="js/online/script.js"></script>
 </body>
 </html>
