@@ -26,21 +26,10 @@ function e($html) {
 
   <script src="../readme/index.js" async></script>
   <script src="../js/online/script.js"></script>
-
   <script type="text/javascript" async>
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    document.addEventListener('readystatechange', (event) => {
-      if (event.target.readyState === 'loading') {
-      }
-
-      else if (event.target.readyState === 'interactive') {
-      }
-
-      else if (event.target.readyState === 'complete') {
-        const battery = document.querySelector('#battery');
-        battery.style.display = "none"
-      }
-    });
+    const battery = document.querySelector('#battery');
+    battery.style.display = "none"
   }
   </script>
 
@@ -59,12 +48,6 @@ function e($html) {
         <i id="chargingTime"></i>
         <i id="dischargingTime"></i>
       </span>
-    </li>
-    <li>
-      <span>現在位置情報</span>
-      <span><button id="myBtn">GeoLocation API</button></span>
-      <span id="map-link" class="nowValue"></span>
-      <span id="myLocation"></span>
     </li>
     <li id="info">
       <span id="status">(Online or Offline?)</span>
@@ -87,7 +70,9 @@ function e($html) {
   <article id="hidden">
     <button>通信情報／ブラウザ等情報</button>
     <aside id="links"></aside>
-    <section id="howto" class="readme"></section>
+    <section id="howto" class="readme">
+      <?php require('hello.html'); ?>
+    </section>
     <hr/>
     <br/>
     <nav id="contents"></nav>
@@ -102,12 +87,7 @@ function e($html) {
     </select>
   </form>
 
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script type="text/javascript">
-  $(function() {
-    $("#howto").load("howto.html");
-  });
-
   const newBGColorAll = document.querySelectorAll('form select, #log button, #hidden, #hidden button');
   for (const newBGColor of newBGColorAll) {
     newBGColor.classList.add("bgcolor")
@@ -130,6 +110,5 @@ function e($html) {
   <script src="script.js" defer></script>
   <script src="jscolor.js" defer></script>
   <script src="../js/window/battery.js" defer></script>
-  <script src="../js/window/geolocation.js" defer></script>
 </body>
 </html>

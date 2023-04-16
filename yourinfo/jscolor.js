@@ -142,14 +142,14 @@ let colors = [
 	'yellow',
 	'yellowgreen',
 	'transparent'
-];
+]
 
-let namesForm = document.querySelectorAll('#bgcolor, #color');
+let namesForm = document.querySelectorAll('#bgcolor, #color')
 for (const names of namesForm) {
 	for (let i = 0; i < colors.length; i++) {
-		let option = document.createElement('option');
-		option.textContent = colors[i];
-		option.value = colors[i];
-		names.appendChild(option);
+		let option = document.createElement('option')
+		option.textContent = colors[i]
+		option.value = colors[i]
+		names.appendChild(option)
 	}
 }
