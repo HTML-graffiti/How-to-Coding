@@ -20,7 +20,7 @@ function pageResize() {
   BodySize();
 }
 
-let clientRect = document.querySelector(".readme")
+let clientRect = document.querySelector("#rect")
 
 let rect = clientRect.getBoundingClientRect();
 for (var key in rect) {
@@ -32,7 +32,7 @@ for (var key in rect) {
 }
 
 function HTMLsize() {
-  const readme = document.querySelector(".readme")
+  const readme = document.querySelector("#rect")
 
   const outoffsetWidth = document.getElementById("outoffsetWidth")
   outoffsetWidth.innerText = readme.offsetWidth;
