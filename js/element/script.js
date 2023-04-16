@@ -1,5 +1,7 @@
 "use strict"
 
+let cover = document.querySelector('#cover');
+
 let buttonClick = () => {
   const titleH1 = document.querySelector('#cover h1')
   titleH1.style.textAlign = "center"
@@ -33,8 +35,6 @@ function removeLog() {
     coverP.remove()
   }
 }
-
-let cover = document.querySelector('#cover');
 
 cover.addEventListener("click", clickEvent);
 cover.addEventListener("dblclick", clickEvent);
