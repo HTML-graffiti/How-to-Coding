@@ -26,21 +26,10 @@ function e($html) {
 
   <script src="../readme/index.js" async></script>
   <script src="../js/online/script.js"></script>
-
   <script type="text/javascript" async>
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    document.addEventListener('readystatechange', (event) => {
-      if (event.target.readyState === 'loading') {
-      }
-
-      else if (event.target.readyState === 'interactive') {
-      }
-
-      else if (event.target.readyState === 'complete') {
-        const battery = document.querySelector('#battery');
-        battery.style.display = "none"
-      }
-    });
+    const battery = document.querySelector('#battery');
+    battery.style.display = "none"
   }
   </script>
 
@@ -97,6 +86,10 @@ function e($html) {
     </select>
   </form>
 
+  <script src="script.js"></script>
+  <script src="jscolor.js"></script>
+  <script src="../js/window/battery.js"></script>
+
   <script type="text/javascript">
   const newBGColorAll = document.querySelectorAll('form select, #log button, #hidden, #hidden button');
   for (const newBGColor of newBGColorAll) {
@@ -116,9 +109,5 @@ function e($html) {
     });
   }
   </script>
-
-  <script src="script.js"></script>
-  <script src="jscolor.js"></script>
-  <script src="../js/window/battery.js"></script>
 </body>
 </html>
