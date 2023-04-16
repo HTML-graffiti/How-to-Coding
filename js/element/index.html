@@ -6,29 +6,22 @@
   <meta name="format-detection" content="telephone=no" />
 
   <script src="../../readme/index.js" async></script>
-
   <script type="text/javascript" async>
-
   document.addEventListener('readystatechange', (event) => {
     if (event.target.readyState === 'interactive') {
       let titleH1 = document.querySelector('#cover h1');
       titleH1.textContent = `How to Coding`;
-    }
-
-    else if (event.target.readyState === 'complete') {
+    } else if (event.target.readyState === 'complete') {
       const titleH1 = document.querySelector('h1');
 
       titleH1.innerHTML = '.cover H1';
       titleH1.style.textAlign = "center";
-
       titleH1.insertAdjacentHTML ( 'afterend', '<button type="button" id="lastModified" onclick="buttonClick()"></button>' );
-
       let lastModified = document.querySelector('#lastModified');
       lastModified.innerHTML =
       'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
     }
   });
-
   </script>
 
   <link rel="stylesheet" href="style.css" />
@@ -37,7 +30,6 @@
   <link rel="stylesheet" href="../../readme/style.css" />
   <link rel="stylesheet" href="../../readme/active.css" />
   <style>
-
   #contents::before {
     content:'関連記事';
     display: inline-block;
@@ -66,7 +58,6 @@
   #lastModified {
     padding: 0.25rem;
   }
-
   </style>
 </head>
 <body>
@@ -92,7 +83,7 @@
 
   <aside id="contents"></aside>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script type="text/javascript">
   $(function() {
     $("#api").load("api.html");
