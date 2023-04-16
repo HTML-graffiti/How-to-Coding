@@ -4,10 +4,6 @@ sizeCSS.type = "text/css";
 sizeCSS.rel = "stylesheet";
 document.getElementsByTagName("head")[0].appendChild(sizeCSS);
 
-
-HTMLsize();
-BodySize();
-
 window.onresize = bodyResize;
 function bodyResize() {
   if (typeof pageResize == "function") {
@@ -20,9 +16,9 @@ function pageResize() {
   BodySize();
 }
 
-let clientRect = document.querySelector(".readme")
+let size = document.querySelector(".cover")
 
-let rect = clientRect.getBoundingClientRect();
+let rect = size.getBoundingClientRect();
 for (var key in rect) {
   if(typeof rect[key] !== 'function') {
     let rectKey = document.createElement('h3');
@@ -32,25 +28,23 @@ for (var key in rect) {
 }
 
 function HTMLsize() {
-  const readme = document.querySelector(".readme")
-
   const outoffsetWidth = document.getElementById("outoffsetWidth")
-  outoffsetWidth.innerText = readme.offsetWidth;
+  outoffsetWidth.innerText = size.offsetWidth;
 
   const outoffsetHeight = document.getElementById("outoffsetHeight")
-  outoffsetHeight.innerText = readme.offsetHeight;
+  outoffsetHeight.innerText = size.offsetHeight;
 
   const outElementClientWidth = document.getElementById("outElementClientWidth")
-  outElementClientWidth.innerText = readme.clientWidth;
+  outElementClientWidth.innerText = size.clientWidth;
 
   const outElementClientHeight = document.getElementById("outElementClientHeight")
-  outElementClientHeight.innerText = readme.clientHeight;
+  outElementClientHeight.innerText = size.clientHeight;
 
   const outElementScrollWidth = document.getElementById("outElementScrollWidth")
-  outElementScrollWidth.innerText = readme.scrollWidth;
+  outElementScrollWidth.innerText = size.scrollWidth;
 
   const outElementScrollHeight = document.getElementById("outElementScrollHeight")
-  outElementScrollHeight.innerText = readme.scrollHeight;
+  outElementScrollHeight.innerText = size.scrollHeight;
 }
 
 function BodySize() {
@@ -66,3 +60,6 @@ function BodySize() {
   const outBodyScrollHeight = document.getElementById("outBodyScrollHeight")
   outBodyScrollHeight.innerHTML = document.documentElement.scrollHeight;
 }
+
+HTMLsize();
+BodySize();
