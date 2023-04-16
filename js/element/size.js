@@ -8,18 +8,6 @@ document.getElementsByTagName("head")[0].appendChild(sizeCSS);
 HTMLsize();
 BodySize();
 
-window.onresize = bodyResize;
-function bodyResize() {
-  if (typeof pageResize == "function") {
-    pageResize();
-  }
-}
-
-function pageResize() {
-  HTMLsize();
-  BodySize();
-}
-
 let clientRect = document.querySelector(".readme")
 
 let rect = clientRect.getBoundingClientRect();
