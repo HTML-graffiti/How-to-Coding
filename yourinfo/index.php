@@ -81,9 +81,10 @@ function e($html) {
   <article id="hidden">
     <button>通信情報／ブラウザ等情報</button>
     <aside id="links"></aside>
-    <section id="howto" class="readme"></section>
+    <section id="howto" class="readme">
+      <?php require('howto.html'); ?>
+    </section>
     <hr/>
-    <br/>
     <nav id="contents"></nav>
   </article>
 
@@ -96,12 +97,7 @@ function e($html) {
     </select>
   </form>
 
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script type="text/javascript">
-  $(function() {
-    $("#howto").load("howto.html");
-  });
-
   const newBGColorAll = document.querySelectorAll('form select, #log button, #hidden, #hidden button');
   for (const newBGColor of newBGColorAll) {
     newBGColor.classList.add("bgcolor")
