@@ -124,6 +124,5 @@ function e($html) {
   <script src="script.js" defer></script>
   <script src="jscolor.js" defer></script>
   <script src="../js/window/battery.js" defer></script>
-  <script src="../js/window/geolocation.js" defer></script>
 </body>
 </html>
