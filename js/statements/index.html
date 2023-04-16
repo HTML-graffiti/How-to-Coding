@@ -7,6 +7,34 @@
 
   <script src="../../readme/index.js" async></script>
   <script type="text/javascript" async>
+  function documentInfo() {
+    let objectDiv = document.querySelector('div#object');
+
+    let documentInfo = {
+      'URL: ': document.location,
+      'LastModified: ': document.lastModified,
+      'Referrer: ': document.referrer
+    };
+
+    for (let property in documentInfo) {
+      objectDiv.innerHTML += (`<p>${property} <code>${documentInfo[property]}</code></p>`);
+    }
+  }
+
+  function viewColors() {
+    let okCancel = confirm('このページの情報を表示する')
+
+    switch (okCancel) {
+      case true:
+      documentInfo()
+
+      let helloButton = document.querySelector('#hello button');
+      helloButton.remove()
+      break;
+
+      default:
+    }
+  }
 
   document.addEventListener('readystatechange', (event) => {
     if (event.target.readyState === 'interactive') {
@@ -15,11 +43,8 @@
 
       let hello = document.querySelector('#hello');
       hello.style.display = "none";
-    }
-
-    else if (event.target.readyState === 'complete') {
+    } else if (event.target.readyState === 'complete') {
       const titleH1 = document.querySelector('h1');
-
       titleH1.innerHTML = '<i>文と宣言</i><br/>Statements & Declarations';
       titleH1.style.textAlign = "center";
 
@@ -27,14 +52,12 @@
       hello.style.display = "block";
     }
   });
-
   </script>
 
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../../readme/style.css" />
   <link rel="stylesheet" href="../../readme/active.css" />
   <style>
-
   #contents::before {
     content:'関連記事';
     display: inline-block;
@@ -67,7 +90,6 @@
     text-decoration: underline;
     margin: 0.5rem 0.75rem 0.5rem 0.25rem;
   }
-
   </style>
 </head>
 <body>
@@ -95,7 +117,7 @@
   </article>
 
   <aside id="contents"></aside>
-
+  <script src="../../readme/script.js" defer></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script type="text/javascript">
   $(function() {
@@ -104,7 +126,5 @@
     $("#while-for").load("while-for.html");
   })
   </script>
-
-  <script src="../../readme/script.js" defer></script>
 </body>
 </html>
