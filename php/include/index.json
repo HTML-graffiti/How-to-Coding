@@ -1,0 +1,30 @@
+{
+  "title" : "include",
+  "description" : "",
+  "author" : "Personal Home Page Tools",
+  "email" : "pehu@creative-community.space",
+  "type" : "website",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "___",
+
+  "contents" : [
+  ],
+
+  "links" : [
+    {
+      "date" : "制御構造",
+      "name" : "include",
+      "url" : "https://www.php.net/manual/ja/function.include.php",
+      "language" : "etc",
+      "status" : "guide"
+    },
+    {
+      "date" : "制御構造",
+      "name" : "require",
+      "url" : "https://www.php.net/manual/ja/function.require.php",
+      "language" : "etc",
+      "status" : "guide"
+    }
+  ]
+}
