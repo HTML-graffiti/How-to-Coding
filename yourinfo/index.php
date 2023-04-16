@@ -117,8 +117,8 @@ function e($html) {
   }
   </script>
 
-  <script src="script.js" defer></script>
-  <script src="jscolor.js" defer></script>
-  <script src="../js/window/battery.js" defer></script>
+  <script src="script.js"></script>
+  <script src="jscolor.js"></script>
+  <script src="../js/window/battery.js"></script>
 </body>
 </html>
