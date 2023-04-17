@@ -62,6 +62,11 @@
     battery.style.display = "none"
   }
 
+  function update(online) {
+    document.querySelector('#status').textContent =
+    online ? 'You are: Online' : 'You are: Offline';
+  }
+
   const newBGColorAll = document.querySelectorAll('form select, #hidden, button')
   for (const newBGColor of newBGColorAll) {
     newBGColor.classList.add("bgcolor")
