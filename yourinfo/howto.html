@@ -1,19 +1,10 @@
-<script type="text/javascript" async>
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    const network = document.querySelector('#network');
-    network.style.display = "none"
-  }
-</script>
-
-<h1>
-  ウェブサイトにアクセスすると送信される情報
-</h1>
+<h1>ウェブサイトにアクセスすると送信される情報</h1>
 <p><u>通信に必要な情報</u></p>
 <p>
   <font>IPアドレス</font> あなたの使用しているグローバルIPアドレス<br/>
   <font>ポート番号</font> 通信しているポート情報<br/>
 </p>
-<p>安心・安全なインターネット環境からウェブサイトにアクセスされているかを、ウェブサイトの制作者やウェブサイトを公開（管理）しているサーバーが確認するための仕組みとして、通信に必要な情報が送信されます。</p>
+<p>安心・安全な環境からインターネットにアクセスされているかを、ウェブサイトの制作者やウェブサイトを公開（管理）しているサーバーが確認するための仕組みとして、通信に必要な情報が送信されます。</p>
 <hr/>
 <p><u>ブラウザ等情報</u></p>
 <p>
@@ -31,7 +22,7 @@
 <hr/>
 <section id="network">
   <p>
-    <a href="https://developer.mozilla.org/ja/docs/Web/API/Network_Information_API" target="_blank" rel="noreferrer">Network Information API</a><br/>
+    <a href="https://developer.mozilla.org/ja/docs/Web/API/Network_Information_API" target="_blank" rel="noreferrer">Network Information API</a>
   </p>
   <p><font>ネットワーク情報 API</font></p>
   <pre>
@@ -84,7 +75,6 @@ if (connectionInfo !== undefined) {
     </tbody>
   </table>
 </section>
-
 <script type="text/javascript">
   "use strict"
 
@@ -104,5 +94,10 @@ if (connectionInfo !== undefined) {
     } else if ('ontypechange' in connectionInfo) {
       connectionInfo.addEventListener('typechange', init);
     }
+  }
+
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    const network = document.querySelector('#network');
+    network.style.display = "none"
   }
 </script>

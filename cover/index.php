@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="../readme/style.css" />
   <style>
-
   #contents::before {
     content:'関連記事';
   }
@@ -41,7 +40,6 @@
       font-size: 2vw;
     }
   }
-
   </style>
 </head>
 

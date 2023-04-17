@@ -25,7 +25,6 @@ function e($html) {
   <meta name="format-detection" content="telephone=no" />
 
   <script src="../readme/index.js" async></script>
-  <script src="../js/online/script.js"></script>
   <script type="text/javascript" async>
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     const battery = document.querySelector('#battery');
@@ -54,7 +53,7 @@ function e($html) {
       <?php
       echo "<span>LANGUAGE " . $_SERVER['HTTP_ACCEPT_LANGUAGE'] . "</span>";
       echo "<span>ENCODING " . $_SERVER['HTTP_ACCEPT_ENCODING'] . "</span>";
-      echo "<span>" . $_SERVER['HTTP_ACCEPT'] . "</span>";
+      echo "<span>" . $_SERVER['HTTP_ACCEPT'] . "</spsan>";
       ?>
     </li>
     <li id="info">
@@ -68,46 +67,48 @@ function e($html) {
   </ul>
 
   <article id="hidden">
-    <button>通信情報／ブラウザ等情報</button>
     <aside id="links"></aside>
     <section id="howto" class="readme">
       <?php require('howto.html'); ?>
     </section>
     <hr/>
     <nav id="contents"></nav>
+    <br/>
+    <button>Close</button>
   </article>
 
   <form id="now" action="" method="GET">
-    <select class="color" id="bgcolor">
+    <select class="color bgcolor" id="bgcolor">
       <option selected>Background Color</option>
     </select>
-    <select class="color" id="color">
+    <select class="color bgcolor" id="color">
       <option selected>Color</option>
     </select>
   </form>
 
-  <script src="script.js"></script>
-  <script src="jscolor.js"></script>
-  <script src="../js/window/battery.js"></script>
-
   <script type="text/javascript">
-  const newBGColorAll = document.querySelectorAll('form select, #log button, #hidden, #hidden button');
+  const newBGColorAll = document.querySelectorAll('form select, #log button, #hidden, #hidden button')
   for (const newBGColor of newBGColorAll) {
     newBGColor.classList.add("bgcolor")
   }
 
-  const newColorAll = document.querySelectorAll('#log, #log button, #hidden, #hidden button');
+  const newColorAll = document.querySelectorAll('#log, #log button, #hidden')
   for (const newColor of newColorAll) {
     newColor.classList.add("color")
   }
 
-  const buttonAll = document.querySelectorAll('#info button, #hidden button');
-  const body = document.querySelector('body');
+  const buttonAll = document.querySelectorAll('#info button, #hidden button')
+  const body = document.querySelector('body')
   for (const button of buttonAll) {
     button.addEventListener('click', event => {
-      body.classList.toggle('open');
+      body.classList.toggle('open')
     });
   }
   </script>
+
+  <script src="script.js"></script>
+  <script src="jscolor.js"></script>
+  <script src="../js/online/script.js"></script>
+  <script src="../js/window/battery.js"></script>
 </body>
 </html>
