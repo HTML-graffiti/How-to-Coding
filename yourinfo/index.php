@@ -46,8 +46,6 @@
     </section>
     <hr/>
     <nav id="contents"></nav>
-    <br/>
-    <button>Close</button>
   </article>
 
   <form id="now" action="" method="GET">
