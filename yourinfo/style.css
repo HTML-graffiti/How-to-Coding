@@ -67,6 +67,7 @@ form select {
 }
 
 #log li {
+  box-sizing: border-box;
   flex: 1 250px;
   padding: 0.25rem;
   margin: 0;
