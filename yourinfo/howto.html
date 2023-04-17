@@ -21,7 +21,8 @@
   <font>ブラウザの言語</font> ブラウザがサポートする言語と優先順位<br/>
   <font>エンコード方式</font> ブラウザがサポートする圧縮形式<br/>
 </h3>
-<p>使用するデバイスに応じてウェブサイトの表示を最適化できるように、ブラウザは自動的にさまざまな情報を送信します。</p>
+<p><font>ウェブサイトの表示を最適化するために、あなたが使用しているブラウザ・使用している機器などの情報が自動的に発信されます。</font></p>
+<p>この情報は、レジストリの変更やブラウザの設定により加工（偽装）することができるため、100%の精度ではありません。</p>
 <br/>
 <hr/>
 <section id="network">
@@ -79,29 +80,5 @@
     </tbody>
   </table>
 </section>
-<script type="text/javascript">
-  "use strict"
 
-  const connectionInfo = navigator.connection;
-  if (connectionInfo !== undefined) {
-    const init = function() {
-      document.getElementById('type').textContent = connectionInfo.type;
-      document.getElementById('effectiveType').textContent = connectionInfo.effectiveType;
-      document.getElementById('downlink').textContent = connectionInfo.downlink + ' Mb/s';
-      document.getElementById('downlinkMax').textContent = connectionInfo.downlinkMax + ' Mb/s';
-      document.getElementById('rtt').textContent = connectionInfo.rtt + ' ms';
-    };
-    init();
-
-    if ('onchange' in connectionInfo) {
-      connectionInfo.addEventListener('change', init);
-    } else if ('ontypechange' in connectionInfo) {
-      connectionInfo.addEventListener('typechange', init);
-    }
-  }
-
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    const network = document.querySelector('#network');
-    network.style.display = "none"
-  }
-</script>
+<script src="network.js"></script>

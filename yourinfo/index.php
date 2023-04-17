@@ -29,6 +29,18 @@
         <i id="dischargingTime"></i>
       </span>
     </li>
+    <li id="screen">
+      <span>Screen</span>
+      <span>Orientation <b id="orientation"></b></span>
+      <span>
+        Color <b id="colorDepth"></b> Depth |
+        Pixel <b id="pixelDepth"></b> Depth
+      </span>
+      <span>
+        Width <b id="outScreenWidth"></b> px |
+        Height <b id="outScreenheight"></b> px
+      </span>
+    </li>
     <li id="info">
       <span id="status">(Online or Offline?)</span>
       <?php
@@ -49,7 +61,9 @@
 
   <article id="hidden">
     <aside id="links"></aside>
-    <section id="howto" class="readme"></section>
+    <section id="howto" class="readme">
+      <?php require('howto.html'); ?>
+    </section>
     <hr/>
     <nav id="contents"></nav>
     <br/>
@@ -66,15 +80,6 @@
   </form>
 
   <script type="text/javascript">
-  async function howto() {
-    fetch('howto.html')
-    .then(response => response.text())
-    .then(readme => {
-      document.querySelector('#howto').innerHTML = readme;
-    });
-  }
-  howto();
-
   const newBGColorAll = document.querySelectorAll('form select, #log button, #hidden, #hidden button')
   for (const newBGColor of newBGColorAll) {
     newBGColor.classList.add("bgcolor")
@@ -97,6 +102,7 @@
   <script src="script.js"></script>
   <script src="jscolor.js"></script>
   <script src="../js/online/script.js"></script>
+  <script src="../js/window/script.js"></script>
   <script src="../js/window/battery.js"></script>
 </body>
 </html>
