@@ -87,7 +87,7 @@ form select {
 
 #hidden button {
   float: right;
-  margin: 0.5rem;
+  margin: 0 0.5rem;
 }
 
 #log li span:nth-of-type(2),
