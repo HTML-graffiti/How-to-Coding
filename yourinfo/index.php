@@ -30,7 +30,7 @@
       ?>
     </li>
     <li id="info">
-      <span><button>あなたの通信情報／ブラウザ等情報</button></span>
+      <span><button>通信情報／ブラウザ等情報</button></span>
       <?php
       echo "<span>IP " . $_SERVER['REMOTE_ADDR'] . "</span>";
       echo "<span>PORT " . $_SERVER['REMOTE_PORT'] . "</span>";
