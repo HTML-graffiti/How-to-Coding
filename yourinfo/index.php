@@ -29,22 +29,6 @@
         <i id="dischargingTime"></i>
       </span>
     </li>
-    <li>
-      <span>Screen & Window</span>
-      <span>
-        Color <b id="colorDepth"></b> Depth
-      </span>
-      <span>
-        Pixel <b id="pixelDepth"></b> Depth
-      </span>
-      <span>
-        <u id="orientation"></u><br/>
-        Screen Width <b id="outScreenWidth"></b> px |
-        Window Width <b id="outInnerWidth"></b> px |
-        Screen Height <b id="outScreenheight"></b> px |
-        Window Height <b id="outInnerHeight"></b> px |
-      </span>
-    </li>
     <li id="info">
       <span id="status">(Online or Offline?)</span>
       <?php

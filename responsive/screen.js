@@ -22,12 +22,6 @@ function windowScreen() {
 
   const outScreenheight = document.getElementById("outScreenheight")
   outScreenheight.innerText = screen.height;
-
-  const outInnerWidth = document.getElementById("outInnerWidth")
-  outInnerWidth.innerText = window.innerWidth;
-
-  const outInnerHeight = document.getElementById("outInnerHeight")
-  outInnerHeight.innerText = window.innerHeight;
 }
 
 const colorDepth = document.getElementById("colorDepth")
