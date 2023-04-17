@@ -1,6 +1,7 @@
-<h1>あなたの通信情報／ブラウザ等情報</h1>
-<button>Close</button>
-
+<h1>
+  あなたの通信情報／ブラウザ等情報
+  <button>Close</button>
+</h1>
 <p>
   インターネットに接続してウェブサイトにアクセスすると、
   ウェブサイトの管理人やウェブサイトを公開（管理）しているサーバーに、
@@ -32,10 +33,10 @@
   <p><font>ネットワーク接続状態</font></p>
   <p>body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)"</p>
   <pre>
-function update<font>(online)</font> {
-  document.querySelector('#status').textContent =
-  <font>online ?</font> 'You are: Online' : 'You are: Offline';
-}
+    function update<font>(online)</font> {
+      document.querySelector('#status').textContent =
+      <font>online ?</font> 'You are: Online' : 'You are: Offline';
+    }
   </pre>
 </section>
 <section id="network">
@@ -44,24 +45,24 @@ function update<font>(online)</font> {
   </h2>
   <p><font>ネットワーク情報 API</font></p>
   <pre>
-const connectionInfo = <font>navigator.connection</font>;
+    const connectionInfo = <font>navigator.connection</font>;
 
-if (connectionInfo !== undefined) {
-  const init = function() {
-    document.getElementById('type').textContent = connectionInfo<font>.type</font>;
-    document.getElementById('effectiveType').textContent = connectionInfo<font>.effectiveType</font>;
-    document.getElementById('downlink').textContent = connectionInfo<font>.downlink</font> + ' Mb/s';
-    document.getElementById('downlinkMax').textContent = connectionInfo<font>.downlinkMax</font> + ' Mb/s';
-    document.getElementById('rtt').textContent = connectionInfo<font>.rtt</font> + ' ms';
-  };
-  init();
+    if (connectionInfo !== undefined) {
+      const init = function() {
+        document.getElementById('type').textContent = connectionInfo<font>.type</font>;
+        document.getElementById('effectiveType').textContent = connectionInfo<font>.effectiveType</font>;
+        document.getElementById('downlink').textContent = connectionInfo<font>.downlink</font> + ' Mb/s';
+        document.getElementById('downlinkMax').textContent = connectionInfo<font>.downlinkMax</font> + ' Mb/s';
+        document.getElementById('rtt').textContent = connectionInfo<font>.rtt</font> + ' ms';
+      };
+      init();
 
-  if ('onchange' in connectionInfo) {
-    connectionInfo.addEventListener('change', init);
-  } else if ('ontypechange' in connectionInfo) {
-    connectionInfo.addEventListener('typechange', init);
-  }
-}
+      if ('onchange' in connectionInfo) {
+        connectionInfo.addEventListener('change', init);
+      } else if ('ontypechange' in connectionInfo) {
+        connectionInfo.addEventListener('typechange', init);
+      }
+    }
   </pre>
   <table class="size">
     <tbody>
