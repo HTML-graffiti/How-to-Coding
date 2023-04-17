@@ -79,6 +79,7 @@
   }
   </script>
 
+  <script src="script.js"></script>
   <script src="jscolor.js"></script>
   <script src="../js/online/script.js"></script>
   <script src="../js/window/battery.js"></script>
