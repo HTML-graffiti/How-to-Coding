@@ -40,9 +40,9 @@
     <li id="info">
       <?php
       echo "<span><button>あなたの通信情報／ブラウザ等情報</button></span>";
-      echo "<span>HOST " . gethostbyaddr($_SERVER['REMOTE_ADDR']) . "</span>";
-      echo "<span>IP " . $_SERVER['REMOTE_ADDR'] . " | PORT " . $_SERVER['REMOTE_PORT'] . "</span>";
-      echo "<span>USER AGENT " . e($_SERVER['HTTP_USER_AGENT']) . "</span>";
+      echo "<span>IP " . $_SERVER['REMOTE_ADDR'] . "</span>";
+      echo "<span>HOST " . gethostbyaddr($_SERVER['REMOTE_ADDR']) . " | PORT " . $_SERVER['REMOTE_PORT'] . "</span>";
+      echo "<span>USER AGENT " . $_SERVER['HTTP_USER_AGENT'] . "</span>";
       ?>
     </li>
   </ul>
