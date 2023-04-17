@@ -24,9 +24,6 @@ if (connectionInfo !== undefined) {
 }
 
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-  const network = document.querySelector('#network')
-  network.style.display = "none"
-
-  const online = document.querySelector('#online')
-  online.style.display = "none"
+  const javascript = document.querySelector('#javascript')
+  javascript.style.display = "none"
 }
