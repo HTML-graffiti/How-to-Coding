@@ -73,6 +73,7 @@ form select {
   margin: 0;
   pointer-events: none;
   user-select: none;
+  max-width: 100%;
 }
 
 #log li:last-of-type {
