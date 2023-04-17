@@ -4,15 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-
   <script src="../readme/index.js" async></script>
-  <script type="text/javascript" async>
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    const battery = document.querySelector('#battery');
-    battery.style.display = "none"
-  }
-  </script>
-
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="../readme/style.css" />
   <link rel="stylesheet" href="../js/window/style.css" />
@@ -29,7 +21,7 @@
         <i id="dischargingTime"></i>
       </span>
     </li>
-    <li id="info">
+    <li>
       <span id="status">(Online or Offline?)</span>
       <?php
       echo "<span>LANGUAGE " . $_SERVER['HTTP_ACCEPT_LANGUAGE'] . "</span>";
@@ -37,7 +29,7 @@
       echo "<span>" . $_SERVER['HTTP_ACCEPT'] . "</spsan>";
       ?>
     </li>
-    <li id="info">
+    <li>
       <?php
       echo "<span><button>あなたの通信情報／ブラウザ等情報</button></span>";
       echo "<span>IP " . $_SERVER['REMOTE_ADDR'] . "</span>";
@@ -87,7 +79,6 @@
   }
   </script>
 
-  <script src="script.js"></script>
   <script src="jscolor.js"></script>
   <script src="screen.js"></script>
   <script src="../js/online/script.js"></script>
