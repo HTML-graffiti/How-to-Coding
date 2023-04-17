@@ -29,11 +29,11 @@
       echo "<span>" . $_SERVER['HTTP_ACCEPT'] . "</spsan>";
       ?>
     </li>
-    <li>
+    <li id="info">
+      <span><button>あなたの通信情報／ブラウザ等情報</button></span>
       <?php
-      echo "<span><button>あなたの通信情報／ブラウザ等情報</button></span>";
       echo "<span>IP " . $_SERVER['REMOTE_ADDR'] . "</span>";
-      echo "<span>HOST " . gethostbyaddr($_SERVER['REMOTE_ADDR']) . " | PORT " . $_SERVER['REMOTE_PORT'] . "</span>";
+      echo "<span>PORT " . $_SERVER['REMOTE_PORT'] . "</span>";
       echo "<span>USER AGENT " . $_SERVER['HTTP_USER_AGENT'] . "</span>";
       ?>
     </li>
@@ -60,7 +60,7 @@
   </form>
 
   <script type="text/javascript">
-  const newBGColorAll = document.querySelectorAll('form select, #log button, #hidden, #hidden button')
+  const newBGColorAll = document.querySelectorAll('form select, #hidden, button')
   for (const newBGColor of newBGColorAll) {
     newBGColor.classList.add("bgcolor")
   }
@@ -81,7 +81,6 @@
 
   <script src="script.js"></script>
   <script src="jscolor.js"></script>
-  <script src="../js/online/script.js"></script>
   <script src="../js/window/battery.js"></script>
 </body>
 </html>

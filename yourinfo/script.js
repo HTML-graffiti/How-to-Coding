@@ -45,8 +45,7 @@ function setStyles() {
 bgcolorForm.onchange = setBGcolor
 colorForm.onchange = setCcolor
 
-
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-  const battery = document.querySelector('#battery');
+  const battery = document.querySelector('#battery')
   battery.style.display = "none"
 }

@@ -9,8 +9,8 @@
   <font>IPアドレス</font> あなたの使用しているグローバルIPアドレス<br/>
   <font>ポート番号</font> 通信しているポート情報<br/>
 </h2>
-<p><font>インターネットに接続する際に、IPアドレス・ポート番号などの情報が必ず発信(送信)されます。</font></p>
-<p>この情報は不正に発信されているのではなく、インターネットの仕組みとして、すべてのウェブサイトへ必ず発信されます。</p>
+<p><font>インターネットに接続する際に、IPアドレス・ポート番号などの通信に必要な情報が必ず発信(送信)されます。</font></p>
+<p>この情報は不正に発信されているのではなく、インターネットの仕組みとして、すべてのウェブサイトへ必ず発信しなければいけない情報です。</p>
 <hr/>
 <h3>
 <u>ブラウザ等情報</u><br/>
@@ -20,9 +20,23 @@
   <font>エンコード方式</font> ブラウザがサポートする圧縮形式<br/>
 </h3>
 <p><font>ウェブサイトの表示を最適化するために、あなたが使用しているブラウザ・使用している機器などの情報が自動的に発信されます。</font></p>
-<p>この情報は、レジストリの変更やブラウザの設定により加工（偽装）することができるため、100%の精度ではありません。</p>
+<p>この情報は、レジストリの変更やブラウザの設定により加工(偽装)することができるため、100%の精度ではありません。</p>
 <br/>
 <hr/>
+<section id="online">
+  <h2>
+    <a href="/coding/js/online/">Online/Offline Events‎</a>
+  </h2>
+  <p>
+body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)"
+  </p>
+  <pre>
+function update<font>(online)</font> {
+  document.querySelector('#status').textContent =
+  <font>online ?</font> 'You are: Online' : 'You are: Offline';
+}
+  </pre>
+</section>
 <section id="network">
   <p>
     <a href="https://developer.mozilla.org/ja/docs/Web/API/Network_Information_API" target="_blank" rel="noreferrer">Network Information API</a>

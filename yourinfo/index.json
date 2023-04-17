@@ -39,13 +39,6 @@
     },
     {
       "date" : "Web API",
-      "name" : "Online or Offline?",
-      "url" : "/coding/js/online/",
-      "language" : "api",
-      "status" : "guide"
-    },
-    {
-      "date" : "Web API",
       "name" : "Battery Status API",
       "url" : "/coding/js/window/battery.html",
       "language" : "api",
