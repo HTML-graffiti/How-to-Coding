@@ -23,12 +23,18 @@ function windowScreen() {
   const outScreenheight = document.getElementById("outScreenheight")
   outScreenheight.innerText = screen.height;
 
-  const colorDepth = document.getElementById("colorDepth")
-  colorDepth.innerText = screen.colorDepth;
+  const outInnerWidth = document.getElementById("outInnerWidth")
+  outInnerWidth.innerText = window.innerWidth;
 
-  const pixelDepth = document.getElementById("pixelDepth")
-  pixelDepth.innerText = screen.pixelDepth;
-
-  const orientation = document.getElementById("orientation")
-  orientation.innerText = screen.orientation;
+  const outInnerHeight = document.getElementById("outInnerHeight")
+  outInnerHeight.innerText = window.innerHeight;
 }
+
+const colorDepth = document.getElementById("colorDepth")
+colorDepth.innerText = screen.colorDepth;
+
+const pixelDepth = document.getElementById("pixelDepth")
+pixelDepth.innerText = screen.pixelDepth;
+
+const orientation = document.getElementById("orientation")
+orientation.innerText = screen.orientation;

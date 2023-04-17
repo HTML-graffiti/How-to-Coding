@@ -29,16 +29,22 @@
         <i id="dischargingTime"></i>
       </span>
     </li>
-    <li id="screen">
-      <span>Screen</span>
-      <span>Orientation <b id="orientation"></b></span>
+    <li>
+      <span>Screen & Window</span>
       <span>
-        Color <b id="colorDepth"></b> Depth |
+        Color <b id="colorDepth"></b> Depth
+      </span>
+      <span>
         Pixel <b id="pixelDepth"></b> Depth
       </span>
       <span>
-        Width <b id="outScreenWidth"></b> px |
-        Height <b id="outScreenheight"></b> px
+        Screen Width <b id="outScreenWidth"></b> px |
+        Window Width <b id="outInnerWidth"></b> px
+        <br/>
+        Screen Height <b id="outScreenheight"></b> px |
+        Window Height <b id="outInnerHeight"></b> px
+        <br/>
+        <b id="orientation"></b>
       </span>
     </li>
     <li id="info">
@@ -101,8 +107,8 @@
 
   <script src="script.js"></script>
   <script src="jscolor.js"></script>
+  <script src="screen.js"></script>
   <script src="../js/online/script.js"></script>
-  <script src="../js/window/script.js"></script>
   <script src="../js/window/battery.js"></script>
 </body>
 </html>
