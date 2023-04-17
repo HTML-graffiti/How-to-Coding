@@ -31,8 +31,8 @@
     <li id="info">
       <span><button>通信情報／ブラウザ等情報</button></span>
       <?php
-      echo "<span>IP " . $_SERVER['REMOTE_ADDR'] . "</span>";
       echo "<span>PORT " . $_SERVER['REMOTE_PORT'] . "</span>";
+      echo "<span>IP " . $_SERVER['REMOTE_ADDR'] . "</span>";
       echo "<span>USER AGENT " . $_SERVER['HTTP_USER_AGENT'] . "</span>";
       ?>
     </li>
