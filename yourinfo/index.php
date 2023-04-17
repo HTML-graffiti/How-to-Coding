@@ -71,7 +71,7 @@
     newBGColor.classList.add("bgcolor")
   }
 
-  const newColorAll = document.querySelectorAll('#log, #hidden, button, #links a, #contents a')
+  const newColorAll = document.querySelectorAll('#log, #hidden, button')
   for (const newColor of newColorAll) {
     newColor.classList.add("color")
   }

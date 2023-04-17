@@ -24,7 +24,7 @@ function setCcolor() {
 
 function setStyles() {
   const bgcolorAll = document.querySelectorAll('html, .bgcolor')
-  const colorAll = document.querySelectorAll('html, .color')
+  const colorAll = document.querySelectorAll('html, .color, #links a, #contents a')
 
   const currentBG = storage.getItem('bgcolor')
   const currentColor = storage.getItem('color')
