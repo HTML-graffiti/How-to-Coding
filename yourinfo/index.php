@@ -43,7 +43,6 @@
     <section id="howto" class="readme">
       <?php require('howto.html'); ?>
     </section>
-    <hr/>
     <nav id="contents"></nav>
   </article>
 
