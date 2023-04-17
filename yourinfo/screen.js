@@ -36,5 +36,18 @@ colorDepth.innerText = screen.colorDepth;
 const pixelDepth = document.getElementById("pixelDepth")
 pixelDepth.innerText = screen.pixelDepth;
 
-const orientation = document.getElementById("orientation")
-orientation.innerText = screen.orientation;
+const screenOrientation = screen.orientation ;
+screenOrientation.onchange = getOrientationInfo ;
+
+getOrientationInfo() ;
+
+function getOrientationInfo() {
+	document.getElementById("orientation").textContent = "" ;
+	appendText(screenOrientation);
+	appendText(" Type : " + screenOrientation.type + " |");
+	appendText(" Angle : " + screenOrientation.angle + "\n");
+}
+
+function appendText ( text ) {
+	document.getElementById("orientation").appendChild(document.createTextNode(text)) ;
+}

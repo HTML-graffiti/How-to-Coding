@@ -38,13 +38,11 @@
         Pixel <b id="pixelDepth"></b> Depth
       </span>
       <span>
+        <u id="orientation"></u><br/>
         Screen Width <b id="outScreenWidth"></b> px |
-        Window Width <b id="outInnerWidth"></b> px
-        <br/>
+        Window Width <b id="outInnerWidth"></b> px |
         Screen Height <b id="outScreenheight"></b> px |
-        Window Height <b id="outInnerHeight"></b> px
-        <br/>
-        <b id="orientation"></b>
+        Window Height <b id="outInnerHeight"></b> px |
       </span>
     </li>
     <li id="info">
