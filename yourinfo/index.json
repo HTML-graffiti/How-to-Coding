@@ -10,20 +10,6 @@
 
   "contents" : [
     {
-      "date" : "Cascading Style Sheets",
-      "name" : "Colors",
-      "url" : "/coding/css/colors/",
-      "language" : "css",
-      "status" : "guide"
-    },
-    {
-      "date" : "Cascading Style Sheets",
-      "name" : "Backgrounds",
-      "url" : "/coding/css/backgrounds/",
-      "language" : "css",
-      "status" : "guide"
-    },
-    {
       "date" : "PHP ($_SERVER)",
       "name" : "Server Information & The User-Agent",
       "url" : "/coding/php/server/",
@@ -45,17 +31,17 @@
       "status" : "guide"
     },
     {
-      "date" : "Web API",
-      "name" : "Battery Status API",
-      "url" : "/coding/js/window/battery.html",
-      "language" : "api",
-      "status" : "tools"
+      "date" : "Cascading Style Sheets",
+      "name" : "Colors",
+      "url" : "/coding/css/colors/",
+      "language" : "css",
+      "status" : "guide"
     },
     {
-      "date" : "Web API",
-      "name" : "Network Information API",
-      "url" : "/coding/js/window/network.html",
-      "language" : "api",
+      "date" : "Cascading Style Sheets",
+      "name" : "Backgrounds",
+      "url" : "/coding/css/backgrounds/",
+      "language" : "css",
       "status" : "guide"
     },
     {
