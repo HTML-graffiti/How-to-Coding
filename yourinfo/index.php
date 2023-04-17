@@ -1,22 +1,3 @@
-<?php
-// set time zone
-date_default_timezone_set("Asia/Tokyo");
-
-// set default encoding
-if (extension_loaded('mbstring')) {
-  mb_internal_encoding('UTF-8');
-}
-
-//----------
-// 関数定義
-//----------
-
-// HTMLエスケープ
-function e($html) {
-  return htmlspecialchars($html, ENT_QUOTES);
-}
-?>
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -58,9 +39,9 @@ function e($html) {
     </li>
     <li id="info">
       <?php
-      echo "<span><button>通信情報／ブラウザ等情報</button></span>";
-      echo "<span>PORT " . e($_SERVER['REMOTE_PORT']) . "</span>";
-      echo "<span>IP " . e($_SERVER['REMOTE_ADDR']) . "</span>";
+      echo "<span><button>あなたの通信情報／ブラウザ等情報</button></span>";
+      echo "<span>HOST " . gethostbyaddr($_SERVER['REMOTE_ADDR']) . "</span>";
+      echo "<span>IP " . $_SERVER['REMOTE_ADDR'] . " | PORT " . $_SERVER['REMOTE_PORT'] . "</span>";
       echo "<span>USER AGENT " . e($_SERVER['HTTP_USER_AGENT']) . "</span>";
       ?>
     </li>
@@ -68,9 +49,7 @@ function e($html) {
 
   <article id="hidden">
     <aside id="links"></aside>
-    <section id="howto" class="readme">
-      <?php require('howto.html'); ?>
-    </section>
+    <section id="howto" class="readme"></section>
     <hr/>
     <nav id="contents"></nav>
     <br/>
@@ -87,6 +66,15 @@ function e($html) {
   </form>
 
   <script type="text/javascript">
+  async function howto() {
+    fetch('howto.html')
+    .then(response => response.text())
+    .then(readme => {
+      document.querySelector('#howto').innerHTML = readme;
+    });
+  }
+  howto();
+
   const newBGColorAll = document.querySelectorAll('form select, #log button, #hidden, #hidden button')
   for (const newBGColor of newBGColorAll) {
     newBGColor.classList.add("bgcolor")

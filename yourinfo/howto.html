@@ -1,23 +1,27 @@
-<h1>ウェブサイトにアクセスすると送信される情報</h1>
-<p><u>通信に必要な情報</u></p>
+<h1>あなたの通信情報／ブラウザ等情報</h1>
 <p>
+  インターネットに接続してウェブサイトにアクセスすると、
+  ウェブサイトの管理人やウェブサイトを公開（管理）しているサーバーに、
+  さまざまな情報が送信されます。
+</p>
+<h2>
+  <u>通信に必要な情報	</u><br/>
   <font>IPアドレス</font> あなたの使用しているグローバルIPアドレス<br/>
   <font>ポート番号</font> 通信しているポート情報<br/>
-</p>
-<p>安心・安全な環境からインターネットにアクセスされているかを、ウェブサイトの制作者やウェブサイトを公開（管理）しているサーバーが確認するための仕組みとして、通信に必要な情報が送信されます。</p>
-<hr/>
-<p><u>ブラウザ等情報</u></p>
+</h2>
 <p>
+<font>IPアドレスとポート番号は、個人情報を直接含むような情報ではなく、インターネットに接続する際に必ず送信しなければいけない情報です。</font>
+</p>
+<p>この情報は不正に発信されているのではなく、インターネットの仕組みとして、すべてのウェブサイトへ必ず発信されます。</p>
+<hr/>
+<h3>
+<u>ブラウザ等情報</u><br/>
   <font>ユーザエージェント</font> あなたの使用しているOSやブラウザ、使用機器などの情報<br/>
   <font>サポートMINEタイプ</font> ブラウザがサポートするメディアタイプと優先順位<br/>
   <font>ブラウザの言語</font> ブラウザがサポートする言語と優先順位<br/>
   <font>エンコード方式</font> ブラウザがサポートする圧縮形式<br/>
-</p>
+</h3>
 <p>使用するデバイスに応じてウェブサイトの表示を最適化できるように、ブラウザは自動的にさまざまな情報を送信します。</p>
-<hr/>
-<p>
-  <font>これらは、個人情報を直接含むような情報ではなく、インターネットに接続する際に必ず送信しなければいけない情報です。</font>
-</p>
 <br/>
 <hr/>
 <section id="network">
@@ -26,24 +30,24 @@
   </p>
   <p><font>ネットワーク情報 API</font></p>
   <pre>
-const connectionInfo = <font>navigator.connection</font>;
+    const connectionInfo = <font>navigator.connection</font>;
 
-if (connectionInfo !== undefined) {
-  const init = function() {
-    document.getElementById('type').textContent = connectionInfo<font>.type</font>;
-    document.getElementById('effectiveType').textContent = connectionInfo<font>.effectiveType</font>;
-    document.getElementById('downlink').textContent = connectionInfo<font>.downlink</font> + ' Mb/s';
-    document.getElementById('downlinkMax').textContent = connectionInfo<font>.downlinkMax</font> + ' Mb/s';
-    document.getElementById('rtt').textContent = connectionInfo<font>.rtt</font> + ' ms';
-  };
-  init();
+    if (connectionInfo !== undefined) {
+      const init = function() {
+        document.getElementById('type').textContent = connectionInfo<font>.type</font>;
+        document.getElementById('effectiveType').textContent = connectionInfo<font>.effectiveType</font>;
+        document.getElementById('downlink').textContent = connectionInfo<font>.downlink</font> + ' Mb/s';
+        document.getElementById('downlinkMax').textContent = connectionInfo<font>.downlinkMax</font> + ' Mb/s';
+        document.getElementById('rtt').textContent = connectionInfo<font>.rtt</font> + ' ms';
+      };
+      init();
 
-  if ('onchange' in connectionInfo) {
-    connectionInfo.addEventListener('change', init);
-  } else if ('ontypechange' in connectionInfo) {
-    connectionInfo.addEventListener('typechange', init);
-  }
-}
+      if ('onchange' in connectionInfo) {
+        connectionInfo.addEventListener('change', init);
+      } else if ('ontypechange' in connectionInfo) {
+        connectionInfo.addEventListener('typechange', init);
+      }
+    }
   </pre>
   <table class="size">
     <tbody>
