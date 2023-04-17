@@ -48,7 +48,7 @@
     <nav id="contents"></nav>
     <hr/>
     <h3><button>Close</button></h3>
-    <hr/>
+    <br/>
   </article>
 
   <form id="now" action="" method="GET">
