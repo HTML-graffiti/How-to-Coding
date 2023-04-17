@@ -7,7 +7,6 @@
   <script src="../readme/index.js" async></script>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="../readme/style.css" />
-  <link rel="stylesheet" href="../js/window/style.css" />
 </head>
 <body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
   <ul id="log" class="close">
@@ -58,6 +57,11 @@
   </form>
 
   <script type="text/javascript">
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    const battery = document.querySelector('#battery')
+    battery.style.display = "none"
+  }
+
   const newBGColorAll = document.querySelectorAll('form select, #hidden, button')
   for (const newBGColor of newBGColorAll) {
     newBGColor.classList.add("bgcolor")

@@ -31,6 +31,13 @@
       "status" : "guide"
     },
     {
+      "date" : "JavaScript",
+      "name" : "Online or Offline?",
+      "url" : "/coding/js/online/",
+      "language" : "api",
+      "status" : "guide"
+    },
+    {
       "date" : "Web API",
       "name" : "Window | Document Object Model",
       "url" : "/coding/js/window/",
@@ -43,6 +50,13 @@
       "url" : "/coding/js/window/battery.html",
       "language" : "api",
       "status" : "tools"
+    },
+    {
+      "date" : "Web API",
+      "name" : "Network Information API",
+      "url" : "/coding/js/window/network.html",
+      "language" : "api",
+      "status" : "guide"
     },
     {
       "date" : "Web API",

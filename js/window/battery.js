@@ -8,10 +8,10 @@ navigator.getBattery().then((battery) => {
 
   updateAllBatteryInfo();
 
-
   battery.addEventListener("chargingchange", () => {
     updateChargeInfo();
   });
+
   function updateChargeInfo() {
     document.querySelector('#charging').innerText = `${battery.charging ? "充電中" : "放電中"}`;
   }
@@ -19,6 +19,7 @@ navigator.getBattery().then((battery) => {
   battery.addEventListener("levelchange", () => {
     updateLevelInfo();
   });
+
   function updateLevelInfo() {
     document.querySelector('#level').innerText = `${battery.level * 100} %`;
     document.querySelector('#progress').value = `${battery.level * 100}`;
@@ -27,6 +28,7 @@ navigator.getBattery().then((battery) => {
   battery.addEventListener("chargingtimechange", () => {
     updateChargingInfo();
   });
+
   function updateChargingInfo() {
     if (battery.chargingTime === Infinity) {
       document.querySelector('#chargingTime').innerText = '-';
@@ -38,6 +40,7 @@ navigator.getBattery().then((battery) => {
   battery.addEventListener("dischargingtimechange", () => {
     updateDischargingInfo();
   });
+
   function updateDischargingInfo() {
     if (battery.dischargingTime === Infinity) {
       document.querySelector('#dischargingTime').innerText = '-';
