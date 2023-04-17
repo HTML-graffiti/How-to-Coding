@@ -66,12 +66,12 @@
     online ? 'You are: Online' : 'You are: Offline';
   }
 
-  const newBGColorAll = document.querySelectorAll('form select, #hidden, button')
+  const newBGColorAll = document.querySelectorAll('#hidden, button')
   for (const newBGColor of newBGColorAll) {
     newBGColor.classList.add("bgcolor")
   }
 
-  const newColorAll = document.querySelectorAll('#log, #log button, #hidden')
+  const newColorAll = document.querySelectorAll('#log, #hidden, button')
   for (const newColor of newColorAll) {
     newColor.classList.add("color")
   }
