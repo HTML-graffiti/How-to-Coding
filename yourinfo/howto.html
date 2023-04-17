@@ -13,7 +13,7 @@
 <p>この情報は不正に発信されているのではなく、インターネットの仕組みとして、すべてのウェブサイトへ必ず発信しなければいけない情報です。</p>
 <hr/>
 <h3>
-<u>ブラウザ等情報</u><br/>
+  <u>ブラウザ等情報</u><br/>
   <font>ユーザエージェント</font> あなたの使用しているOSやブラウザ、使用機器などの情報<br/>
   <font>サポートMINEタイプ</font> ブラウザがサポートするメディアタイプと優先順位<br/>
   <font>ブラウザの言語</font> ブラウザがサポートする言語と優先順位<br/>
@@ -27,9 +27,8 @@
   <h2>
     <a href="/coding/js/online/">Online/Offline Events‎</a>
   </h2>
-  <p>
-body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)"
-  </p>
+  <p><font>ネットワーク接続状態</font></p>
+  <p>body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)"</p>
   <pre>
 function update<font>(online)</font> {
   document.querySelector('#status').textContent =
