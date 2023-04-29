@@ -57,7 +57,7 @@
     {
       "date" : "Access Log",
       "name" : "creative-community.space",
-      "url" : "/log/",
+      "url" : "/ver/log/",
       "language" : "api",
       "status" : "tools"
     }
