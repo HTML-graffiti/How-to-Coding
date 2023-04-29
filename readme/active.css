@@ -6,11 +6,9 @@
 }
 
 @media (orientation: portrait) {
-
   .readme {
     height: 70vh;
   }
-
 }
 
 .readme section {

@@ -4,15 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-
   <script src="../../readme/index.js" async></script>
-
   <link rel="stylesheet" href="../cascading.css" />
   <link rel="stylesheet" href="../../html/elements.css" />
   <link rel="stylesheet" href="../../readme/style.css" />
   <link rel="stylesheet" href="../pseudo-classes/lightbox.css" />
   <style type="text/css">
-
   #contents::before {
     content:'関連記事';
     font-size: 90%;
@@ -49,12 +46,9 @@
     position: relative;
     top: 0;
   }
-
   </style>
-
 </head>
 <body class="body">
-
   <nav class="nav special buttons">
     <br/>
     <a href="#howto" class="special a_tag">ボックスモデル</a>
@@ -123,12 +117,16 @@
 
   <article class="lightbox" id="howto">
     <a href="#" class="close" onclick="window.history.back(); return false;"></a>
-    <section id="coding" class="readme translate_center"></section>
+    <section id="coding" class="readme translate_center">
+      <?php readfile('howto.html'); ?>
+    </section>
   </article>
 
   <article class="lightbox" id="style_css">
     <a href="#" class="close" onclick="window.history.back(); return false;"></a>
-    <section id="stylesheet" class="readme translate_center"></section>
+    <section id="stylesheet" class="readme translate_center">
+      <?php readfile('stylesheet.html'); ?>
+    </section>
   </article>
 
   <aside class="lightbox" id="etc">
@@ -151,14 +149,6 @@
 
   lastModified.innerHTML =
   'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>' + '</time>';
-  </script>
-
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript">
-  $(function() {
-    $("#coding").load("howto.html");
-    $("#stylesheet").load("stylesheet.html");
-  })
   </script>
 </body>
 </html>

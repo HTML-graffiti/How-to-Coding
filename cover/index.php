@@ -18,15 +18,13 @@
 
   #contents::before,
   #links::before {
-    text-decoration: underline;
     display: block;
-    font-family: "ipag", monospace;
     font-size: 75%;
+    text-decoration: underline;
     margin: 0.5rem 0.25rem;
   }
 
   #lastModified {
-    font-family: "ipag", monospace;
     text-align: right;
     line-height: 125%;
     word-break: break-word;

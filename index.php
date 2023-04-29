@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <script src="readme/index.js" async></script>
   <script src="index.js" async></script>
+  <script src="readme/index.js" async></script>
   <link rel="stylesheet" href="readme/style.css">
   <link rel="stylesheet" href="cover/style.css">
   <link rel="stylesheet" href="cover/mobile.css" media="screen and (max-width: 820px)">

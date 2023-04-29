@@ -6,20 +6,23 @@
 }
 
 @font-face {
-  font-family: "San Francisco";
-  src: url("https://creative-community.space/ver/font/san-francisco/SF-Pro.ttf");
+  font-family: "NewYork";
+  src: url("https://creative-community.space/ver/font/NewYork.otf");
 }
 
 @font-face {
-  font-family: "NewYork";
-  src: url("https://creative-community.space/ver/font/NewYork.otf");
+  font-family: "San Francisco";
+  src: url("https://creative-community.space/ver/font/san-francisco/SF-Pro.ttf");
 }
 
 .readme h1 i,
 .readme h3,
 font,
 pre,
-#links a {
+#links a,
+#contents::before,
+#links::before,
+#lastModified {
   font-family: "ipag", monospace;
   word-break: break-word;
 }
@@ -181,7 +184,6 @@ nav a,
 }
 
 @media screen and (max-width: 750px) {
-
   .readme {
     font-size: 2.25vw;
   }
@@ -241,11 +243,9 @@ nav a,
   .readme object.half {
     width: 100%;
   }
-
 }
 
 @media screen and (max-width: 500px) {
-
   .readme {
     font-size: 3vw;
   }
@@ -257,5 +257,4 @@ nav a,
     padding: 0.5vw 2vw;
     margin: 0.5vw 0;
   }
-
 }
