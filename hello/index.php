@@ -4,10 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-
   <script src="../readme/index.js" defer></script>
-
-  <base target="_blank" rel="noopener noreferrer">
   <link rel="stylesheet" href="../readme/style.css" />
   <link rel="stylesheet" href="../cover/style.css" />
   <link rel="stylesheet" href="../cover/mobile.css" />
@@ -36,18 +33,19 @@
     word-break: break-word;
   }
   </style>
+  <base target="_blank" rel="noopener noreferrer">
 </head>
 <body id="cover">
   <main id="left">
     <div id="greeting" class="readme data_show">
-      <?php include('hello.html'); ?>
+      <?php readfile('hello.html'); ?>
     </div>
   </main>
   <article id="right">
     <div id="links"></div>
     <br/>
     <div id="hello" class="data_show">
-      <?php include('howto.html'); ?>
+      <?php readfile('howto.html'); ?>
     </div>
     <br/>
     <div id="contents"></div>

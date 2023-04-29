@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <script src="../readme/index.js" defer></script>
   <script src="randomGradient.js" defer></script>
-
-  <base target="_blank" rel="noopener noreferrer">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="../readme/style.css" />
   <style>
@@ -41,6 +38,7 @@
     }
   }
   </style>
+  <base target="_blank" rel="noopener noreferrer">
 </head>
 
 <body id="cover">

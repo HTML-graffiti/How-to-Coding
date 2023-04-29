@@ -4,15 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-
   <script src="../../readme/index.js" async></script>
-
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../elements.css" />
   <link rel="stylesheet" href="../../readme/style.css" />
   <link rel="stylesheet" href="../../css/pseudo-classes/lightbox.css" />
   <style>
-
   * {
     transition: 2.5s;
   }
@@ -60,7 +57,7 @@
 
   @font-face {
     font-family: "NewYork";
-    src: url("https://creative-community.space/coding/cover/NewYork.otf");
+    src: url("https://creative-community.space/ver/font/NewYork.otf");
   }
 
   h1#title {
@@ -163,8 +160,12 @@
     <span class="span_element" contenteditable="true"></span>
   </main>
   <br/>
-  <article id="sample" class="readme"></article>
-  <article id="howto"></article>
+  <article id="sample" class="readme">
+    <?php readfile('sample.html'); ?>
+  </article>
+  <article id="howto">
+    <?php readfile('howto.html'); ?>
+  </article>
   <hr/>
   <br/>
   <p id="lastModified"></p>
@@ -175,13 +176,7 @@
     <section id="links" class="fixed_bottom"></section>
   </aside>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script type="text/javascript">
-  $(function() {
-    $("#sample").load("sample.html");
-    $("#howto").load("howto.html");
-  })
-
   document.addEventListener('readystatechange', (event) => {
     if (event.target.readyState === 'interactive') {
       let lastModified = document.querySelector('#lastModified');
