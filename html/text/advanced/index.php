@@ -8,16 +8,13 @@
   <script src="../../../readme/index.js" async></script>
 
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../../style.css" />
   <link rel="stylesheet" href="../../elements.css" />
   <link rel="stylesheet" href="../../../readme/style.css" />
   <link rel="stylesheet" href="../../../css/pseudo-classes/lightbox.css" />
   <style>
 
-  #one,
-  #two,
-  #three,
-  #four,
   .sample {
     position: fixed;
     top: 50%;
@@ -25,50 +22,17 @@
     transform: translate(-50%, -50%);
   }
 
-  #one,
-  #two,
-  #three,
-  #four {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    width: 0;
-    height: 0;
-    opacity: 0;
-    overflow: hidden;
-    user-select: none;
-    pointer-events: none;
-    transition: 2.5s;
-    z-index: 100;
-  }
-
   #one:target,
   #two:target,
   #three:target,
   #four:target {
-    padding: 1rem;
-    width: 95%;
-    height: 75%;
     color: #fff;
     background: #000;
-    opacity: 1;
-    overflow: auto;
-    user-select: auto;
-    pointer-events: auto;
   }
 
   .readme a {
     color: #000;
     filter: invert();
-  }
-
-  @font-face {
-    font-family: "NewYork";
-    src: url("https://creative-community.space/coding/cover/NewYork.otf");
-  }
-
-  h1#title {
-    font-family: "NewYork", serif;
   }
 
   #contents::before {
@@ -116,11 +80,9 @@
   }
 
   @media screen and (max-width: 820px) {
-
     .sample {
       font-size: 3.21vw;
     }
-
   }
 
   </style>
@@ -149,7 +111,9 @@
     <mark class="mark_element" contenteditable="true"></mark>
   </h1>
 
-  <article id="howto"></article>
+  <article id="howto">
+    <?php readfile('howto.html'); ?>
+  </article>
 
   <aside class="lightbox" id="etc">
     <a href="#" class="close" onclick="window.history.back(); return false;"></a>
@@ -160,12 +124,7 @@
   <br/>
   <p id="lastModified"></p>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script type="text/javascript">
-  $(function() {
-    $("#howto").load("howto.html");
-  })
-
   document.addEventListener('readystatechange', (event) => {
     if (event.target.readyState === 'interactive') {
       let lastModified = document.querySelector('#lastModified');

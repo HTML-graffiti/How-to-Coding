@@ -5,63 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
   <script src="../../readme/index.js" async></script>
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../elements.css" />
   <link rel="stylesheet" href="../../readme/style.css" />
   <link rel="stylesheet" href="../../css/pseudo-classes/lightbox.css" />
   <style>
-  * {
-    transition: 2.5s;
-  }
-
-  #one,
-  #two,
-  #three,
-  #four {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    width: 0;
-    height: 0;
-    opacity: 0;
-    overflow: hidden;
-    user-select: none;
-    pointer-events: none;
-    transition: 2.5s;
-  }
-
   #one:target,
   #two:target,
   #three:target,
   #four:target {
-    padding: 1rem;
-    width: 95%;
-    height: 75%;
     color: #000;
-    opacity: 1;
-    overflow: auto;
-    user-select: auto;
-    pointer-events: auto;
     filter: invert();
-  }
-
-  .readme .close {
-    color: #fff;
-    filter: invert();
-  }
-
-  @font-face {
-    font-family: "NewYork";
-    src: url("https://creative-community.space/ver/font/NewYork.otf");
-  }
-
-  h1#title {
-    font-family: "NewYork", serif;
   }
 
   h1#title::before {
@@ -119,13 +74,11 @@
   }
 
   @media screen and (max-width: 820px) {
-
     .sample {
       font-size: 3.21vw;
       padding: 20% 2.5% 10%;
       min-height: -webkit-fill-available;
     }
-
   }
 
   </style>
