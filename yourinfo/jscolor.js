@@ -140,8 +140,7 @@ let colors = [
 	'white',
 	'whitesmoke',
 	'yellow',
-	'yellowgreen',
-	'transparent'
+	'yellowgreen'
 ]
 
 let namesForm = document.querySelectorAll('#bgcolor, #color')

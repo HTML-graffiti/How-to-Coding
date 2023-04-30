@@ -12,17 +12,7 @@
     {
       "date" : "JSON",
       "name" : "JavaScript Object Notation",
-      "url" : "/coding/js/json/"
-    },
-    {
-      "date" : "DOM",
-      "name" : "Document Object Model",
-      "url" : "/coding/js/document/"
-    },
-    {
-      "date" : "Web API",
-      "name" : "Element",
-      "url" : "/coding/js/element/"
+      "url" : "/coding/json/"
     },
     {
       "date" : "HTML",
